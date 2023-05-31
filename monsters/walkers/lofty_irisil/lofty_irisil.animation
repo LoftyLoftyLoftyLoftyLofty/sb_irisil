@@ -27,21 +27,18 @@
             "cycle" : 0.25,
             "mode" : "loop"
           },
-          "windup" : {
-            "frames" : 8,
-            "cycle" : 0.25
-          },
-          "fire" : {
-            "frames" : 5,
-            "cycle" : 0.25
-          },
 		  "jump" : {
             "frames" : 2,
 			"cycle" : 0.25
           },
+		  "shakeit" : {
+            "frames" : 4,
+			"cycle" : 0.25,
+			"mode" : "loop"
+          },
 		  "hop" : {
             "frames" : 4,
-            "cycle" : 0.25,
+            "cycle" : 0.125,
             "mode" : "loop",
             "properties" : {
               "immediateSound" : "/sfx/npc/monsters/monster_hop.ogg",
@@ -127,6 +124,11 @@
                 "image" : "<partImage>:jump.<frame>"
               }
             },
+			"shakeit" : {
+              "properties" : {
+                "image" : "<partImage>:shakeit.<frame>"
+              }
+            },
             "fall" : {
               "properties" : {
                 "image" : "<partImage>:fall.<frame>"
@@ -140,16 +142,6 @@
 			"land" : {
               "properties" : {
                 "image" : "<partImage>:land.<frame>"
-              }
-            },
-            "windup" : {
-              "properties" : {
-                "image" : "<partImage>:windup.<frame>"
-              }
-            },
-            "fire" : {
-              "properties" : {
-                "image" : "<partImage>:fire.<frame>"
               }
             }
           },

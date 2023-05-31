@@ -1,0 +1,9 @@
+[
+  {
+    "op": "add",
+    "path" : "/baseParameters/statusSettings/stats/lofty_irisil_slowStatusImmunity",
+    "value": {
+	  "baseValue" : 1.0
+	}
+  }
+]

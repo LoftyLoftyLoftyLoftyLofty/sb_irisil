@@ -1,0 +1,17 @@
+[
+  {
+    "op": "add",
+    "path": "/baseParameters/monsterSpawnGroups/-",
+    "value": {
+      "monsters": [ "eyepodcritter", "lofty_irisil", "eyepodcritter" ],
+      "biome": "eyepatch"
+    }
+  },
+  {
+    "op": "add",
+    "path" : "/baseParameters/statusSettings/stats/lofty_irisil_slowStatusImmunity",
+    "value": {
+	  "baseValue" : 1.0
+	}
+  }
+]

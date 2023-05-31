@@ -1,5 +1,7 @@
 {
   "name" : "lofty_irisil_slow_5",
+  "blockingStat" : "lofty_irisil_slowStatusImmunity",
+  
   "effectConfig" : {},
   "defaultDuration" : 5,
 
