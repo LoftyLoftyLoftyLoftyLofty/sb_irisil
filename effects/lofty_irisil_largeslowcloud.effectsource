@@ -1,0 +1,29 @@
+{
+  "kind" : "lofty_irisil_largeslowcloud",
+  "definition" : {
+    "duration" : 0.04,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ "lofty_irisil_largeslowcloud1", "lofty_irisil_largeslowcloud3", "lofty_irisil_largeslowcloud2", "lofty_irisil_largeslowcloud1", "lofty_irisil_largeslowcloud3", "lofty_irisil_largeslowcloud2", "lofty_irisil_largeslowcloud1", "lofty_irisil_largeslowcloud3", "lofty_irisil_largeslowcloud2" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    },
+    "particles" : [
+      [ "lofty_irisil_largeslowcloud1", "lofty_irisil_largeslowcloud3", "lofty_irisil_largeslowcloud2" ]
+    ],
+    "sounds" : [
+      [ ]
+    ],
+    "stop" : {
+      "particles" : [
+        [ "lofty_irisil_largeslowcloud4", "lofty_irisil_largeslowcloud4", "lofty_irisil_largeslowcloud4", "lofty_irisil_largeslowcloud4", "lofty_irisil_largeslowcloud4", "lofty_irisil_largeslowcloud4" ]
+      ],
+      "sounds" : [
+        [ ]
+      ]
+    }
+  }
+}

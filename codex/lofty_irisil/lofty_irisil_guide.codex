@@ -1,0 +1,94 @@
+{
+  "id" : "lofty_irisil_guide",
+  "title" : "Irisil Field Guide",
+  "description" : "Everything you need to know (and then some) about irisil.",
+  "icon" : "lofty_irisil_guide.png",
+  "contentPages" : [
+
+"Irisil Field Guide ^#888888;(First Edition)^reset;
+By ^red;Lofty^reset;
+
+-  1 Table of Contents
+-  2 Introduction
+-  3 Appearance
+-  4 Location
+-  5 Behavior
+-  6 Treasure
+-  7 History (1/2)
+-  8 History (2/2)
+-  9 Project Info
+- 10 Licensing (1/3)
+- 11 Licensing (2/3)
+- 12 Licensing (3/3)",
+
+"^yellow;INTRODUCTION^reset;
+
+Since their recent discovery, ^cyan;irisil^reset; (singular irisa) have become a topic of intense interest in a multitude of interstellar circles. Their innocuous appearance and impish stature landed irisil in the hearts of countless fans and spawned a plethora of advertising campaigns, mascots, and grassroots movements with a renewed interest in ^cyan;eyepatch^reset; habitat preservation and awareness, ^red;despite irisil being both invasive and highly prolific^reset;.",
+
+"^yellow;APPEARANCE^reset;
+
+Irisil are bipedal, standing around 3 feet (90cm) tall. Their arms are short with dainty paws, and their muscular legs are elongated from the hips toward their double-jointed knees. The short fur covering their bodies is a creamy tan in color, with lighter fur on their bellies and the interior of their wing-shaped ears. Irisa tails curl in a tightly tucked spiral. The largest of an irisa's five eyes is socketed in the center of their skull, with two more eyes to either side.",
+
+"^yellow;LOCATION^reset;
+
+Habitually covering themselves in dirt, dust, or other particulate to better blend with their natural surroundings, irisil are often mistaken for native fauna on the planets they spread to. 
+
+Irisil are generally found on ^#7800ff;mutated^reset; or ^#12a003;jungle^reset; planets with large clusters of ^cyan;eyepatch trees^reset;. Their primary source of food is ^yellow;oculemons^reset;, but irisil are known to attack spacefarers to eat their eyes, and are particularly hostile toward hylotl.",
+
+"^yellow;BEHAVIOR^reset;
+
+Opportunists and scavengers, irisil will typically try to flee when threatened. They will throw whatever items they have on hand at their aggressor, which usually includes eyes or other spherical objects. Irisil are also capable of shaking the dust out of their fur, releasing a cloud of oily flakes that can cause allergic reactions, dizziness and numbness. Irisa legs possess a unique plate similar to Earth's fleas, allowing irisil to leap into the air to escape danger.",
+
+"^yellow;TREASURE^reset;
+
+Much like the rest of this universe's inhabitants, irisil are compulsive hoarders. They collect eyes and eye-shaped items and jealously guard lairs full of their trophies.",
+
+"^yellow;HISTORY (1/2)^reset;
+
+The first known encounter with irisil is detailed in the ship log of a cargo hauler operated by the Letheia Corporation returning from Exibiir Traverse II. The log describes the incident as follows:
+
+^#8888CC;\"We opened the rear bay to refuel and it was like we hit the jackpot at one of those hylotl stuffed animal arcades. They poured out of the back of the ship, climbing over us and each other, scattering everywhere.\"^reset;",
+
+"^yellow;HISTORY (2/2)^reset;
+
+^#8888CC;\"By the time we were done coughing and rinsing our eyes out, they were in the vents, under the furniture, digging holes in the insulation, and setting off alarms all over the facility. Our shipment had to be delivered before it expired and we didn't have sufficient space to store it in the depot- we had no choice but to continue with our route.\"^reset;
+Letheia Corporation has yet to respond to requests for any further information regarding this incident.",
+
+"^yellow;PROJECT INFO^reset;
+
+Project Irisil was a lot of fun.
+Started: 2023/05/28
+Version 1.0 Released: 2023/05/31
+
+If you want to spawn irisil that aren't biome-colored, you can use this command:
+^green;/spawnmonster ^cyan;lofty_irisil 
+^yellow;10 ^green;'^red;{ ^white;\"^#8888cc;colors^white;\" ^#888888;: ^white;\"^#8888cc;default^white;\" ^red;}^green;'^reset;
+
+Source files available here:
+^#888888;github.com^white;/^red;LoftyLoftyLoftyLoftyLofty^white;/^cyan;sb_irisil^reset;",
+
+"^yellow;LICENSING (1/3)^reset;
+^cyan;Irisil^reset; Copyright 2023 ^red;Lofty Games^reset;
+
+Permission is hereby granted, ^green;free of charge^reset;, to any person obtaining a copy of this software and associated documentation files (the \"^yellow;Software^reset;\"), to deal in the ^yellow;Software^reset; without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the ^yellow;Software^reset;, and to permit persons to whom the ^yellow;Software^reset; is furnished to do so, subject to the ^red;following conditions^reset;:",
+
+"^yellow;LICENSING (2/3)^reset;
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the ^yellow;Software^reset;.
+
+^red;THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.",
+
+"^yellow;LICENSING (3/3)^reset;
+
+^red;IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.^reset;
+
+Irisil are ^green;open^reset; and ^green;free^reset;. 
+Permission is granted to include them anywhere you see fit. Enjoy!
+-^red;Lofty^reset;"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

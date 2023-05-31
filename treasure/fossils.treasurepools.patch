@@ -1,0 +1,29 @@
+[
+	{
+		"op" : "add",
+		"path" : "/smallfossil/0/1/pool/-",
+		"value" :
+		{
+			"weight" : 0.025, 
+			"item" : "lofty_irisilfossil_head"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/smallfossil/0/1/pool/-",
+		"value" :
+		{
+			"weight" : 0.025, 
+			"item" : "lofty_irisilfossil_torso"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/smallfossil/0/1/pool/-",
+		"value" :
+		{
+			"weight" : 0.025, 
+			"item" : "lofty_irisilfossil_legs"
+		}
+	}
+]

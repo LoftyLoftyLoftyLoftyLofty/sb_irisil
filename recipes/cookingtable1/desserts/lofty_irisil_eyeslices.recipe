@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+    { "item" : "luckydip", "count" : 1 },
+    { "item" : "thornjuice", "count" : 1 },
+    { "item" : "alienfruitjam", "count" : 1 }
+  ],
+  "output" : { "item" : "lofty_irisil_eyeslices", "count" : 1 },
+  "groups" : [ "craftingfood", "desserts" ],
+  "collectables" : { "cooking" : "lofty_irisil_eyeslices" }
+}

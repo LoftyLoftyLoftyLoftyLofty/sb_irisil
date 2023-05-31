@@ -1,0 +1,12 @@
+{
+  "name" : "lofty_irisil_slow_5",
+  "effectConfig" : {},
+  "defaultDuration" : 5,
+
+  "scripts" : [
+    "lofty_irisil_slow.lua"
+  ],
+
+  "label" : "Slow",
+  "icon" : "/interface/statuses/lofty_irisil_slow_5.png"
+}

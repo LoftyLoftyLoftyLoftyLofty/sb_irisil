@@ -1,0 +1,12 @@
+[
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil",
+		"value" : 
+		{
+		  "order" : 9001,
+		  "monsterType" : "lofty_irisil",
+		  "icon" : "/monsters/walkers/lofty_irisil/body/irisil.png:idle.1"
+		}
+	}
+]

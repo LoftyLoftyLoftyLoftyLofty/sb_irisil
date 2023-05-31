@@ -1,0 +1,77 @@
+{
+  "lofty_irisilTreasure" : [
+    [1, {
+      "pool" : [
+	  
+		//69.69% chance of just getting pixels
+	    {"weight" : 0.6969, "pool" : "money"},
+		
+		//7% chance of an eye drop
+		{"weight" : 0.07, "item" : ["lofty_irisileye", 1]},
+		
+		//25.06% chance of misc eye stuff
+		{"weight" : 0.0501, "item" : ["oculemon", 1]},
+		{"weight" : 0.0401, "item" : ["oculemon", 2]},
+		{"weight" : 0.0301, "item" : ["oculemon", 3]},
+		{"weight" : 0.0401, "item" : ["oculemonseed", 1]},
+		{"weight" : 0.0301, "item" : ["oculemonseed", 2]},
+		{"weight" : 0.0351, "item" : ["eyepiles", 5]},
+		{"weight" : 0.0050, "item" : ["jellyblock", 1]},
+		
+		//all of these together should sum to ~0.25%
+		
+		//misc rare drops - MMM are intended to be 8% on a 1% chance of even rolling the table
+		{"weight" : 0.0008, "item" : "manipulatormodule"},
+        {"weight" : 0.0003, "item" : "techcard"},
+        {"weight" : 0.0001, "item" : "upgrademodule"},
+		
+		//eye shield used to balance out drop rate at 0.0025
+		{"weight" : 0.0003, "item" : "eyeshield"},
+		
+		//action figure drop rate - very slightly smaller than the normal 0.001 to compensate for the additional weapons
+        {"weight" : 0.00098, "item" : ["lofty_irisilaf" , 1, {} ] },
+		
+		//excessively rare drops
+		{"weight" : 0.00001, "item" : "eyesword"},
+		{"weight" : 0.00001, "item" : "evileye"}
+      ],
+      "poolRounds" : [
+        [0.40, 1],
+        [0.60, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  "lofty_irisilHunting" : [
+    [1, {
+      "pool" : [
+	  
+		//55% chance of oculemon
+        {"weight" : 0.25, "item" : ["oculemon",1]},
+        {"weight" : 0.20, "item" : ["oculemon",2]},
+        {"weight" : 0.10, "item" : ["oculemon",3]},
+		
+		//30% chance of t4 food
+        {"weight" : 0.075, "item" : ["cyanider",1]},
+		{"weight" : 0.075, "item" : ["oculemonstew",1]},
+		{"weight" : 0.075, "item" : ["oculemonmeringue",1]},
+		{"weight" : 0.075, "item" : ["reefpodsurprise",1]},
+		
+		//10% chance of t5 food
+        {"weight" : 0.1, "item" : ["eyebowls",1]},
+        
+        //5% chance of t6 food, minus AF offsets
+        {"weight" : 0.024, "item" : ["burningeyeballs",1]},
+        {"weight" : 0.024, "item" : ["ultimatejuice",1]},
+		
+		//0.2% chance of AF
+        {"weight" : 0.002, "item" : "irisilaf"}
+      ],
+      "poolRounds" : [
+        [0.60, 1],
+        [0.40, 0]
+      ],
+      "allowDuplication" : false
+    }]
+  ]
+}

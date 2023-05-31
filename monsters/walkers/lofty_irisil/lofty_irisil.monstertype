@@ -1,0 +1,579 @@
+{
+  "type" : "lofty_irisil",
+  "shortdescription" : "Irisil",
+  "description" : "These deceptively cute creatures are known to steal eyes from unsuspecting travelers.",
+
+  "categories" : [ "lofty_irisil" ],
+  "parts" : [ "body" ],
+
+  "animation" : "lofty_irisil.animation",
+
+  //include support for the avikan hunting drop pools
+  "dropPools" : [ { "default" : "lofty_irisilTreasure", "bow" : "lofty_irisilHunting", "avikanhunting" : "lofty_irisilHunting", "keffridersspear" : "lofty_irisilHunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+	"seeThroughLiquid" : true,
+	
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 40,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 5.0,
+
+      "foundTargetActions" : [ { "name" : "action-aggrohop" } ],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+		//player within firing range and out of the desired flee radius, light 'em up
+		//fire 5
+        {
+          "name" : "action-fire",
+          "cooldown" : 13.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "minimumRange" : 35,
+			"maximumRange" : 50,
+			
+			"maxYRange" : 14,
+			
+            "windupState" : "windup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "lofty_irisil_eyeball",
+            "fireOffset" : [1, 0.35],
+			"projectileParameters" : {
+              "speed" : 49
+            },
+            "projectileCount" : 5,
+            "projectileInterval" : 0.01,
+			"inaccuracy" : 0.2,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : true,
+            "fireSound" : "fire",
+            "fireState" : "fire",
+			"fireArc": true,
+			"onGround" : false,
+            "projectileSpeed": 49,
+            "gravityMultiplier": 0.6,
+
+            "winddownState" : "",
+            "winddownTime" : 0.3
+          }
+        },
+		//fire 4
+		{
+          "name" : "action-fire",
+          "cooldown" : 10.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "minimumRange" : 30,
+			"maximumRange" : 50,
+			
+			"maxYRange" : 12,
+			
+            "windupState" : "windup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "lofty_irisil_eyeball",
+            "fireOffset" : [1, 0.35],
+			"projectileParameters" : {
+              "speed" : 49
+            },
+            "projectileCount" : 4,
+            "projectileInterval" : 0.01,
+			"inaccuracy" : 0.15,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : true,
+            "fireSound" : "fire",
+            "fireState" : "fire",
+			"fireArc": true,
+			"onGround" : false,
+            "projectileSpeed": 49,
+            "gravityMultiplier": 0.6,
+
+            "winddownState" : "",
+            "winddownTime" : 0.3
+          }
+        },
+		//fire 3
+		{
+          "name" : "action-fire",
+          "cooldown" : 7.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "minimumRange" : 25,
+			"maximumRange" : 50,
+			
+			"maxYRange" : 10,
+			
+            "windupState" : "windup",
+            "windupTime" : 0.1,
+
+            "projectileType" : "lofty_irisil_eyeball",
+            "fireOffset" : [1, 0.35],
+			"projectileParameters" : {
+              "speed" : 49
+            },
+            "projectileCount" : 3,
+            "projectileInterval" : 0.01,
+			"inaccuracy" : 0.1,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : true,
+            "fireSound" : "fire",
+            "fireState" : "fire",
+			"fireArc": true,
+			"onGround" : false,
+            "projectileSpeed": 49,
+            "gravityMultiplier": 0.6,
+
+            "winddownState" : "",
+            "winddownTime" : 0.3
+          }
+        },
+		//fire 2
+		{
+          "name" : "action-fire",
+          "cooldown" : 4.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "minimumRange" : 20,
+			"maximumRange" : 50,
+			
+			"maxYRange" : 8,
+			
+            "windupState" : "windup",
+            "windupTime" : 0.4,
+
+            "projectileType" : "lofty_irisil_eyeball",
+            "fireOffset" : [1, 0.35],
+			"projectileParameters" : {
+              "speed" : 49
+            },
+            "projectileCount" : 2,
+            "projectileInterval" : 0.01,
+			"inaccuracy" : 0.05,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : true,
+            "fireSound" : "fire",
+            "fireState" : "fire",
+			"fireArc": true,
+			"onGround" : false,
+            "projectileSpeed": 49,
+            "gravityMultiplier": 0.6,
+
+            "winddownState" : "",
+            "winddownTime" : 0.3
+          }
+        },
+		//desperation eyeball
+		{
+          "name" : "action-fire",
+          "cooldown" : 1.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "minimumRange" : 10,
+			"maximumRange" : 25,
+			
+			//no max Y range on this one
+			
+            "windupState" : "windup",
+            "windupTime" : 0.2,
+
+            "projectileType" : "lofty_irisil_eyeball",
+            "fireOffset" : [1, 0.35],
+			"projectileParameters" : {
+              "speed" : 49
+            },
+            "projectileCount" : 1,
+            "projectileInterval" : 0.01,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : true,
+            "fireSound" : "fire",
+            "fireState" : "fire",
+			"fireArc": true,
+			"onGround" : false,
+            "projectileSpeed": 49,
+            "gravityMultiplier": 0.6,
+
+            "winddownState" : "",
+            "winddownTime" : 0.1
+          }
+        },
+		//player is WAY too close, try to freeze enemy so we can get away
+		{
+          "name" : "action-fire",
+          "cooldown" : 3.0,
+          "parameters" : {
+            "requireLineOfSight" : true,
+			"minimumRange" : 0,
+            "maximumRange" : 10,
+			
+			"canJump" : true,
+			"maxJumps" : 3,
+			
+            "windupState" : "",
+            "windupTime" : 0.0,
+
+            "projectileType" : "lofty_irisil_largeslowcloud",
+            "projectileParameters" : {
+              "speed" : 10,
+              "timeToLive" : 1.5
+            },
+            "fireOffset" : [-0.5, 0.5],
+            "aimAtTarget" : false,
+            "aimDirection" : [0, 1],
+            "inaccuracy" : 2.0,
+            "projectileCount" : 8,
+            "projectileInterval" : 0.00,
+            "fireState" : "fire",
+            "fireDelay" : 0.2,
+            "fireSound" : "hiss",
+
+            "winddownState" : "",
+            "winddownTime" : 0.5
+          }
+        },
+		//get hoppity if player too close
+		{
+          "name" : "action-hop",
+          "cooldown" : 3.0,
+          "parameters" : {
+			"minimumRange" : 0,
+            "maximumRange" : 8,
+			
+			"canJump" : true,
+			"maxJumps" : 3,
+			
+            "verticalSpeed" : 50,
+            "horizontalSpeed" : -25,
+            "hopSequence" : 1,
+            "windupTime" : 0,
+            "landTime" : 0.25,
+            "timeBetweenHops" : 0.00,
+            "hopAwayFromWall" : false
+          }
+        }
+      ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+        //player within 15 blocks, time to scoot
+        {
+          "name" : "lofty-irisil-fleetarget",
+          "cooldown" : 0.5,
+          "parameters" : {
+            "minimumRange" : 0,
+            "maximumRange" : 15,
+			
+			//kitbashing parameters from thea's kelbet here
+            "canJump" : true,
+            "maxJumps" : 3,
+			"jumpXVelocity": 25,
+			"jumpYVelocity": 35,
+            "moveState" : "run",
+            "run" : true
+          }
+        },
+		//player between 15 and 25 blocks, keep at range
+		{
+          "name" : "lofty-irisil-fleetarget",
+          "cooldown" : 0.5,
+          "parameters" : {
+            "minimumRange" : 15,
+            "maximumRange" : 25,
+			
+			//kitbashing parameters from thea's kelbet here
+            "canJump" : true,
+            "maxJumps" : 3,
+			"jumpXVelocity": 25,
+			"jumpYVelocity": 35,
+            "moveState" : "walk",
+            "run" : false
+          }
+        },
+		//player > 35 blocks, move into range
+		{
+          "name" : "approach-walk",
+          "cooldown" : 0.5,
+          "parameters" : {
+            "minimumRange" : 35,
+            "maximumRange" : 50,
+			
+			//kitbashing parameters from thea's kelbet here
+            "canJump" : true,
+            "maxJumps" : 3,
+			"jumpXVelocity": 25,
+			"jumpYVelocity": 35,
+            "moveState" : "walk",
+            "run" : false
+          }
+        },
+		//get hoppity if player too close - this sends us toward the player with a high cd with the hopes we will then immediately jump away
+		{
+          "name" : "action-hop",
+          "cooldown" : 9.0,
+          "parameters" : {
+			"minimumRange" : 0,
+            "maximumRange" : 8,
+			
+			"canJump" : true,
+			"maxJumps" : 3,
+			
+            "verticalSpeed" : 25,
+            "horizontalSpeed" : 12.5,
+            "hopSequence" : 1,
+            "windupTime" : 0,
+            "landTime" : 0.25,
+            "timeBetweenHops" : 0.00,
+            "hopAwayFromWall" : true
+          }
+		},
+		//get hoppity if player too close
+		{
+          "name" : "action-hop",
+          "cooldown" : 3.0,
+          "parameters" : {
+			"minimumRange" : 0,
+            "maximumRange" : 8,
+			
+			"canJump" : true,
+			"maxJumps" : 3,
+			
+            "verticalSpeed" : 50,
+            "horizontalSpeed" : -25,
+            "hopSequence" : 1,
+            "windupTime" : 0,
+            "landTime" : 0.25,
+            "timeBetweenHops" : 0.00,
+            "hopAwayFromWall" : false
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+			"moveState" : "walk",
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+			"run" : false
+          }
+        },
+		{
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+			"moveState" : "run",
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+			"run" : true
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        //get hoppity if bored or stuck
+		{
+          "name" : "action-hop",
+          "cooldown" : 120.0,
+          "parameters" : {
+		  
+			"canJump" : true,
+			"maxJumps" : 3,
+			
+            "verticalSpeed" : 50,
+            "horizontalSpeed" : 25,
+            "hopSequence" : 1,
+            "windupTime" : 0,
+            "landTime" : 0.25,
+            "timeBetweenHops" : 0.00,
+            "hopAwayFromWall" : true
+          }
+        },
+		{
+          "name" : "wander-walk",
+          "cooldown" : 15.0,
+          "parameters" : {
+			"moveState" : "walk",
+            "wanderTime" : [3, 12],
+			"run" : false
+          }
+        },
+		{
+          "name" : "wander-walk",
+          "cooldown" : 30.0,
+          "parameters" : {
+			"moveState" : "run",
+            "wanderTime" : [1, 5],
+			"run" : true
+          }
+        },
+		{
+          "name" : "action-hop",
+          "cooldown" : 30.0,
+          "parameters" : {
+		  
+			"canJump" : true,
+			"maxJumps" : 3,
+			
+            "verticalSpeed" : 50,
+            "horizontalSpeed" : 25,
+            "hopSequence" : 1,
+            "windupTime" : 0,
+            "landTime" : 0.25,
+            "timeBetweenHops" : 0.00,
+            "hopAwayFromWall" : false
+          }
+        }
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [0.625, 0.875], [1.125, 0.375], [1.125, -0.875], [0.625, -1.375], [-0.625, -1.35], [-1.125, -0.875], [-1.125, 0.375], [-0.625, 0.875] ],
+      "damage" : 13,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [0.625, 0.875], [1.125, 0.375], [1.125, -0.875], [0.625, -1.375], [-0.625, -1.35], [-1.125, -0.875], [-1.125, 0.375], [-0.625, 0.875] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 6,
+      "runSpeed" : 14,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 45.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+	//"colors" : "generated",
+	
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 69
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "tarStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.25
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.25
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : 0.25
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.25
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 0.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "lofty_irisil" }
+  }
+}

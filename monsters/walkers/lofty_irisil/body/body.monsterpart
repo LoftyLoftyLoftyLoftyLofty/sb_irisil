@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil",
+  "category" : "lofty_irisil",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "irisil.png"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "objectName" : "lofty_irisilaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "lofty_irisilaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"These deceptively cute creatures are known to steal eyes from unsuspecting travelers.\"",
+  "shortdescription" : "Irisil Figurine",
+
+  "inventoryIcon" : "lofty_irisilaf.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisilaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisilaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

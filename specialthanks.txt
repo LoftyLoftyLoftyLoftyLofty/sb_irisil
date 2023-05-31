@@ -1,0 +1,8 @@
+Special thanks:
+
+Aegonian & The Elithian Races Team
+-> This mod was used as a reference in many ways to learn how to properly patch things.
+-> "Borrowed" Kelbet's fleeing behavior. Love you etc
+
+Frykas & The Starforge Team
+-> This mod was used as a reference in many ways to learn how to properly patch things, especially treasure and spawn tables.

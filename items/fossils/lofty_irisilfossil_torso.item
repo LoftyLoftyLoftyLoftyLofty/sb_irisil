@@ -1,0 +1,33 @@
+{
+  "itemName" : "lofty_irisilfossil_torso",
+  "rarity" : "Uncommon",
+  "itemTags" : ["fossil"],
+
+  "shortdescription" : "Irisa Torso",
+  "description" : "A fossilised ribcage with a spiraling tail.",
+  "category" : "mediumFossil",
+
+  "race" : "generic",
+  "price" : 50,
+
+  "inventoryIcon" : "lofty_irisilfossilicon_torso.png",
+
+  "completeSetDescriptions" : {
+    "price" : 300,
+    "shortdescription" : "Irisa Fossil",
+
+    "description" : "Over the millenia, the remains of irisil have occasionally been preserved on the planets they've spread across."
+
+  },
+
+  "displayImage" : "/objects/fossils/humanoidfossils/fossilirisil/lofty_irisilfossil_displaytorso.png",
+  "displayoffset" :[0, 0],
+
+  "fossilSetName" : "lofty_irisilfossil",
+  "setIndex" : 2,
+  "setCount" : 3,
+  "setCollectables" : { "fossils" : "lofty_irisilfossil" },
+
+  "completeFossilIcon" : "/objects/fossils/humanoidfossils/humanoidskeletonicon.png"
+
+}

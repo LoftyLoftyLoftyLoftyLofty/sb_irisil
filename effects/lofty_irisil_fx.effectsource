@@ -1,0 +1,24 @@
+{
+  "kind" : "lofty_irisil_fx",
+  "location" : "mouth",
+  "definition" : {
+    "duration" : 0.03,
+    "loops" : true,
+    "start" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    },
+    "particles" : [
+      [ "lofty_irisil_fx1" ], [ "lofty_irisil_fx2" ]
+    ],
+    "sounds" : [ [ ] ],
+    "stop" : {
+      "particles" : [
+        [ ]
+      ],
+      "sounds" : [ [ ] ]
+    }
+  }
+}

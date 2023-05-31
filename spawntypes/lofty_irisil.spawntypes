@@ -1,0 +1,41 @@
+[
+	{
+		"name" : "lofty_irisil_colorful",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.0025,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil"]
+		],
+		"monsterParameters" : 
+		{
+			"aggressive" : true
+		}
+	},
+	{
+		"name" : "lofty_irisil_tan",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.0025,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil"]
+		],
+		"monsterParameters" : 
+		{
+			"aggressive" : true,
+			"colors" : "default"
+		}
+	}
+]

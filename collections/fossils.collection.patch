@@ -1,0 +1,13 @@
+[
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisilfossil",
+		"value" : 
+		{
+		  "order" : 9001,
+		  "title" : "Irisa Fossil",
+		  "description" : "Over the millenia, the remains of irisil have occasionally been preserved on the planets they've spread across.",
+		  "icon" : "/objects/fossils/humanoidfossils/fossilirisil/lofty_irisilfossilicon_collection.png"
+		}
+	}
+]

@@ -1,0 +1,19 @@
+[
+  { 
+	"op" : "add",
+	"path" : "/spawnProfile/groups/-",
+	"value" : 
+	{
+      "select": 1,
+      "pool": 
+	  [
+		[ 
+			0.25, 
+			"lofty_irisil_tan",
+			0.75,
+			"lofty_irisil_colorful"
+		]
+      ]
+    }
+  }
+]

@@ -1,0 +1,7 @@
+[
+	{
+		"op" : "add",
+		"path" : "/eyeTreasure/0/1/pool/-",
+		"value" : { "weight" : 0.1, "item" : "lofty_irisil_guide-codex" }
+	}
+]
