@@ -1,8 +1,14 @@
 Special thanks:
 
+FlynnLikesTrees
+-> Thank you for the incredible guide on microdungeon setup.
+
+Lemon Drops (Maple32)
+-> Additional help with microdungeons.
+
 Aegonian & The Elithian Races Team
 -> This mod was used as a reference in many ways to learn how to properly patch things.
--> "Borrowed" Kelbet's fleeing behavior. Love you etc
+-> also I "borrowed" your kelbet's fleeing behavior - love you, etc.
 
 Frykas & The Starforge Team
 -> This mod was used as a reference in many ways to learn how to properly patch things, especially treasure and spawn tables.

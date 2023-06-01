@@ -73,5 +73,191 @@
       ],
       "allowDuplication" : false
     }]
+  ],
+  
+  "lofty_irisil_eyehoardTreasureSphericalThings" : 
+  [
+	[
+		1, 
+		{
+			"pool" : 
+			[
+				//eye
+				{"weight" : 0.05, "item" : ["lofty_irisileye",1]},
+				
+				//food
+				{"weight" : 0.05, "item" : ["oculemon", 1]},
+				{"weight" : 0.05, "item" : ["alienfruit", 1]},
+				{"weight" : 0.05, "item" : ["automato", 1]},
+				{"weight" : 0.05, "item" : ["kiwi", 1]},
+				{"weight" : 0.05, "item" : ["orange", 1]},
+				{"weight" : 0.05, "item" : ["pearlpea", 1]},
+				{"weight" : 0.05, "item" : ["potato", 1]},
+				{"weight" : 0.05, "item" : ["redapple", 1]},
+				{"weight" : 0.05, "item" : ["thornfruit", 1]},
+				{"weight" : 0.05, "item" : ["tomato", 1]},
+				{"weight" : 0.05, "item" : ["egg", 1]},
+				
+				//mech parts
+				{"weight" : 0.05, "item" : ["salvagetier6", 1]},
+				
+				//crafting
+				{"weight" : 0.05, "item" : [ "cottonwool", 1]},
+				{"weight" : 0.05, "item" : [ "toxicwaste", 1]},
+				{"weight" : 0.05, "item" : [ "greenslime", 1]},
+				
+				//blocks
+				{"weight" : 0.05, "item" : ["eyepiles", 50]},
+				
+				//throwables
+				{"weight" : 0.05, "item" : [ "beachball", 1]},
+				{"weight" : 0.05, "item" : [ "bomb", 1]},
+				{"weight" : 0.05, "item" : [ "bouncyball", 1]},
+				{"weight" : 0.05, "item" : [ "bowlingball", 1]},
+				{"weight" : 0.05, "item" : [ "capturepod", 1]},
+				{"weight" : 0.05, "item" : [ "coconut", 1]},
+				{"weight" : 0.05, "item" : [ "lavaballoon", 1]},
+				{"weight" : 0.05, "item" : [ "petball", 1]},
+				{"weight" : 0.05, "item" : [ "snowball", 1]},
+				{"weight" : 0.05, "item" : [ "mediumsnowball", 1]},
+				{"weight" : 0.05, "item" : [ "largesnowball", 1]},
+				{"weight" : 0.05, "item" : [ "giganticsnowball", 1]},
+				{"weight" : 0.05, "item" : [ "tarball", 1]},
+				{"weight" : 0.05, "item" : [ "thorngrenade", 1]},
+				{"weight" : 0.05, "item" : [ "throwingboulder", 1]},
+				{"weight" : 0.05, "item" : [ "waterballoon", 1]},
+				
+				//magnorbs
+				{"weight" : 0.05, "item" : [ "magnorbs", 1]},
+				
+				//furniture and decorations
+				{"weight" : 0.05, "item" : [ "earthmodel", 1]},
+				{"weight" : 0.05, "item" : [ "jupitermodel", 1]},
+				{"weight" : 0.05, "item" : [ "marsmodel", 1]},
+				{"weight" : 0.05, "item" : [ "mercurymodel", 1]},
+				{"weight" : 0.05, "item" : [ "neptunemodel", 1]},
+				{"weight" : 0.05, "item" : [ "plutomodel", 1]},
+				{"weight" : 0.05, "item" : [ "saturnmodel", 1]},
+				{"weight" : 0.05, "item" : [ "sunmodel", 1]},
+				{"weight" : 0.05, "item" : [ "uranusmodel", 1]},
+				{"weight" : 0.05, "item" : [ "venusmodel", 1]},
+				{"weight" : 0.05, "item" : [ "eggchair", 1]},
+				{"weight" : 0.05, "item" : [ "hylotllamp", 1]},
+				{"weight" : 0.05, "item" : [ "doomlight", 1]},
+				{"weight" : 0.05, "item" : [ "apexlamp3", 1]},
+				{"weight" : 0.05, "item" : [ "spookypumpkinhead", 1]},
+				{"weight" : 0.05, "item" : [ "tarlight", 1]},
+				{"weight" : 0.05, "item" : [ "hylotllantern1", 1]},
+				{"weight" : 0.05, "item" : [ "applebasket", 1]},
+				{"weight" : 0.05, "item" : [ "badgooplush", 1]},
+				{"weight" : 0.05, "item" : [ "ballandchain", 1]},
+				{"weight" : 0.05, "item" : [ "football", 1]},
+				{"weight" : 0.05, "item" : [ "giantglobe", 1]},
+				{"weight" : 0.05, "item" : [ "medievalglobe", 1]},
+				{"weight" : 0.05, "item" : [ "snowglobe1", 1]},
+				{"weight" : 0.05, "item" : [ "snowglobe2", 1]},
+				{"weight" : 0.05, "item" : [ "spookycauldron", 1]},
+				{"weight" : 0.05, "item" : [ "stationhologram", 1]},
+				{"weight" : 0.05, "item" : [ "steampunkglobe", 1]},
+				{"weight" : 0.05, "item" : [ "plainorbplush", 1]},
+				{"weight" : 0.05, "item" : [ "ancientbouldertrap", 1]},
+				
+				//wire
+				{"weight" : 0.05, "item" : [ "liquidsensor", 1]},
+				{"weight" : 0.05, "item" : [ "wallb", 1]},
+				
+				//placeable breakables
+				{"weight" : 0.05, "item" : [ "hivelight1", 1]},
+				
+				//ores
+				{"weight" : 0.05, "item" : [ "copperore", 1]},
+				{"weight" : 0.05, "item" : [ "goldore", 1]},
+				{"weight" : 0.05, "item" : [ "silverore", 1]},
+				{"weight" : 0.05, "item" : [ "platinumore", 1]},
+				{"weight" : 0.05, "item" : [ "titaniumore", 1]},
+				{"weight" : 0.05, "item" : [ "refinedviolium", 1]},
+				
+				//misc
+				{"weight" : 0.05, "item" : [ "geode", 1]},
+				{"weight" : 0.05, "item" : [ "teleportercore", 1]},
+				{"weight" : 0.05, "item" : [ "dubloon", 1]},
+				
+				//hats
+				//clown nose
+				{"weight" : 0.05, "item" : [ "gagnosehead", 1]},
+				//berry
+				{"weight" : 0.05, "item" : [ "berryhead", 1]},
+				//glowy orb hat from biolum biomes
+				{"weight" : 0.05, "item" : [ "lighthelmhead", 1]},
+				//captains fro
+				{"weight" : 0.05, "item" : [ "afrowighead", 1]},
+				//spacesuit helmet
+				{"weight" : 0.05, "item" : [ "spacesuithead", 1]},
+				//ocean helm
+				{"weight" : 0.05, "item" : [ "hylotltier5shead", 1]}
+				
+			],
+			"poolRounds" : 
+			[
+				[1, 1]
+			]
+		}
+	]
+  ],
+  
+  "lofty_irisil_eyehoardTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisileye", 1]},
+				{"pool" : "lofty_irisil_eyehoardTreasureSphericalThings"}
+			],
+			"pool" : 
+			[
+				{"weight" : 0.25, "item" : ["lofty_irisileye",1]},
+				{"weight" : 0.10, "item" : ["oculemon", 3]},
+				{"weight" : 0.15, "item" : ["oculemon", 2]},
+				{"weight" : 0.20, "item" : ["oculemon", 1]},
+				{"weight" : 0.05, "item" : ["alienfruit", 1]},
+				{"weight" : 0.10, "item" : ["oculemonseed", 1]},
+				{"weight" : 0.05, "item" : ["oculemonseed", 2]},
+				{"weight" : 0.05, "item" : ["eyepiles", 50]},
+				{"weight" : 0.05, "item" : [ "capturepod", 1]},
+				{"weight" : 0.05, "pool" : "chestMoney"},
+				{"weight" : 0.05, "pool" : "eyeTreasure"},
+				{"weight" : 0.05, "pool" : "lofty_irisil_eyehoardTreasureSphericalThings"},
+				{"weight" : 0.01, "item" : "manipulatormodule"},
+				{"weight" : 0.01, "item" : "techcard"},
+				{"weight" : 0.01, "item" : "upgrademodule"},
+				{"weight" : 0.01, "item" : "autochip"},
+				{"weight" : 0.01, "item" : "teleportercore"},
+				
+				//monocle
+				{"weight" : 0.005, "item" : [ "glasses2head", 1]},
+				
+				//bubble gun
+				{"weight" : 0.01, "item" : [ "bubblegun", 1]},
+				
+				//eye sword again
+				{"weight" : 0.001, "item" : "eyesword"},
+				
+				//evil eye again
+				{"weight" : 0.001, "item" : [ "evileye", 1]}
+				
+			],
+			"poolRounds" : 
+			[
+				[0.10, 1],
+				[0.15, 2],
+				[0.35, 3],
+				[0.25, 4],
+				[0.15, 5]
+			],
+			"allowDuplication" : true
+		}
+	]
   ]
 }

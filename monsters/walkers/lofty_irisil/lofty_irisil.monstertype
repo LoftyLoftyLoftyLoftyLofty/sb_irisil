@@ -578,7 +578,11 @@
         },
         "poisonStatusImmunity" : {
           "baseValue" : 0.0
-        }
+        },
+		//immune to slime slow because there's slime in their microdungeon
+		"slimeImmunity" : {
+		  "baseValue" : 1.0
+		}
       },
 
       "resources" : {

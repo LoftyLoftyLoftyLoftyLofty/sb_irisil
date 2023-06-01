@@ -1,0 +1,15 @@
+[
+  //Irisil Den
+  { 
+	"op" : "add",
+	"path" : "/lofty_irisil",
+	"value" : 
+	{
+	  "lofty_irisilden" : 
+	  {
+		"name" : "irisil den",
+		"tags" : [ "lofty_irisil" ]
+	  }
+	}
+  }
+]
