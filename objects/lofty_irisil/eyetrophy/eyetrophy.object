@@ -1,0 +1,44 @@
+{
+  "objectName" : "lofty_irisil_eyetrophy",
+  "colonyTags" : ["hoard","valuable","pretty","lofty_irisil","eyepatch","odd","evil","nature"],
+  "rarity" : "Uncommon",
+  "description" : "A sinister-looking eye on display.",
+  "shortdescription" : "Irisa Eye Trophy",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 350,
+
+  "apexDescription" : "Modern art has a way of looking into your soul.",
+  "avianDescription" : "Not exactly my niche.",
+  "floranDescription" : "Thisss make floran hungry.",
+  "glitchDescription" : "Disgusted. This belongs in a socket!",
+  "humanDescription" : "I have a strong urge to see how far I can kick this.",
+  "hylotlDescription" : "A gentle reminder to look for the beauty in the ugly things we experience.",
+  "novakidDescription" : "Y'reckon it'll bounce if it gets knocked over?",
+
+  "inventoryIcon" : "eyetrophyicon.png",
+  "orientations" : [
+    {
+	  "image" : "eyetrophyleft.png:<color>",
+	  "direction" : "left",
+	  
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+	  "image" : "eyetrophyright.png:<color>",
+	  "direction" : "right",
+	  
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -276,6 +276,10 @@
 				{"weight" : 0.01, "item" : "autochip"},
 				{"weight" : 0.01, "item" : "teleportercore"},
 				
+				//other objects added by the mod
+				{"weight" : 0.025, "item" : "lofty_irisil_lurkingirisa"},
+				{"weight" : 0.075, "item" : "lofty_irisil_eyetrophy"},
+				
 				//monocle
 				{"weight" : 0.005, "item" : [ "glasses2head", 1]},
 				

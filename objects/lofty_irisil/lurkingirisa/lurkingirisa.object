@@ -1,0 +1,48 @@
+{
+  "objectName" : "lofty_irisil_lurkingirisa",
+  "colonyTags" : ["lofty_irisil","eyepatch","odd","evil","nature"],
+  "rarity" : "Common",
+  "category" : "decorative",
+  "price" : 70,
+
+  "shortdescription" : "Lurking Irisa",
+  "description" : "This irisa is looking at me!",
+  "race" : "generic",
+
+  "apexDescription" : "I don't want to think about what the Miniknog will do to those things.",
+  "avianDescription" : "I can't tell if it looks cute or gross.",
+  "floranDescription" : "Sssidekick!",
+  "glitchDescription" : "Observant. I am being observed.",
+  "humanDescription" : "I've been seeing these everywhere lately. I guess they see me too.",
+  "hylotlDescription" : "These things are a menace!",
+  "novakidDescription" : "Getting right sick of all of these big-eyed space critters.",
+
+  "inventoryIcon" : "lurkingirisaicon.png",
+  "orientations" : [
+    {
+      "image" : "lurkingirisa.png:<color>",
+      "imagePosition" : [-8, -9],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+	  "flipImages" : true,
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    },
+	{
+      "image" : "lurkingirisa.png:<color>",
+      "imagePosition" : [-8, -9],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+	  
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ]
+}
