@@ -278,6 +278,7 @@
 				
 				//other objects added by the mod
 				{"weight" : 0.025, "item" : "lofty_irisil_lurkingirisa"},
+				{"weight" : 0.050, "item" : "lofty_irisil_clingy"},
 				{"weight" : 0.075, "item" : "lofty_irisil_eyetrophy"},
 				
 				//monocle
