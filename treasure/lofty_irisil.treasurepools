@@ -82,21 +82,31 @@
 		{
 			"pool" : 
 			[
+				//the chance of each object is determined partially by the object's rarity - but mostly by the object's ingame size or weight, since that would be more relevant to irisil
+				
 				//eye
 				{"weight" : 0.05, "item" : ["lofty_irisileye",1]},
 				
-				//food
-				{"weight" : 0.05, "item" : ["oculemon", 1]},
-				{"weight" : 0.05, "item" : ["alienfruit", 1]},
+				//round food items
+				
+				//slightly higher chance of oculemons or alien fruit because those are likely to be on irisil homeworlds
+				{"weight" : 0.10, "item" : ["oculemon", 1]},
+				{"weight" : 0.10, "item" : ["alienfruit", 1]},
+				
+				//produce
 				{"weight" : 0.05, "item" : ["automato", 1]},
 				{"weight" : 0.05, "item" : ["kiwi", 1]},
-				{"weight" : 0.05, "item" : ["orange", 1]},
 				{"weight" : 0.05, "item" : ["pearlpea", 1]},
 				{"weight" : 0.05, "item" : ["potato", 1]},
 				{"weight" : 0.05, "item" : ["redapple", 1]},
 				{"weight" : 0.05, "item" : ["thornfruit", 1]},
 				{"weight" : 0.05, "item" : ["tomato", 1]},
+				
+				//not technically produce but edible
 				{"weight" : 0.05, "item" : ["egg", 1]},
+				
+				//oranges were removed from vanilla but irisil don't really care about that so long as they can steal it
+				{"weight" : 0.05, "item" : ["orange", 1]},
 				
 				//mech parts
 				{"weight" : 0.05, "item" : ["salvagetier6", 1]},
@@ -109,11 +119,10 @@
 				//blocks
 				{"weight" : 0.05, "item" : ["eyepiles", 50]},
 				
-				//throwables
+				//throwables that would be easy to steal
 				{"weight" : 0.05, "item" : [ "beachball", 1]},
 				{"weight" : 0.05, "item" : [ "bomb", 1]},
 				{"weight" : 0.05, "item" : [ "bouncyball", 1]},
-				{"weight" : 0.05, "item" : [ "bowlingball", 1]},
 				{"weight" : 0.05, "item" : [ "capturepod", 1]},
 				{"weight" : 0.05, "item" : [ "coconut", 1]},
 				{"weight" : 0.05, "item" : [ "lavaballoon", 1]},
@@ -124,13 +133,18 @@
 				{"weight" : 0.05, "item" : [ "giganticsnowball", 1]},
 				{"weight" : 0.05, "item" : [ "tarball", 1]},
 				{"weight" : 0.05, "item" : [ "thorngrenade", 1]},
-				{"weight" : 0.05, "item" : [ "throwingboulder", 1]},
 				{"weight" : 0.05, "item" : [ "waterballoon", 1]},
+				
+				//heavier and harder to steal
+				{"weight" : 0.04, "item" : [ "bowlingball", 1]},
+				{"weight" : 0.03, "item" : [ "throwingboulder", 1]},
 				
 				//magnorbs
 				{"weight" : 0.05, "item" : [ "magnorbs", 1]},
 				
 				//furniture and decorations
+				
+				//in my mind, I imagine these models as being slightly awkward but not very heavy, thus easy to steal
 				{"weight" : 0.05, "item" : [ "earthmodel", 1]},
 				{"weight" : 0.05, "item" : [ "jupitermodel", 1]},
 				{"weight" : 0.05, "item" : [ "marsmodel", 1]},
@@ -141,26 +155,48 @@
 				{"weight" : 0.05, "item" : [ "sunmodel", 1]},
 				{"weight" : 0.05, "item" : [ "uranusmodel", 1]},
 				{"weight" : 0.05, "item" : [ "venusmodel", 1]},
-				{"weight" : 0.05, "item" : [ "eggchair", 1]},
+				
+				//packing one of these chairs around would be cumbersome and annoying
+				{"weight" : 0.025, "item" : [ "eggchair", 1]},
+				
+				//lights easy to steal
 				{"weight" : 0.05, "item" : [ "hylotllamp", 1]},
 				{"weight" : 0.05, "item" : [ "doomlight", 1]},
 				{"weight" : 0.05, "item" : [ "apexlamp3", 1]},
 				{"weight" : 0.05, "item" : [ "spookypumpkinhead", 1]},
 				{"weight" : 0.05, "item" : [ "tarlight", 1]},
 				{"weight" : 0.05, "item" : [ "hylotllantern1", 1]},
+				
+				//why steal one apple when you can steal the whole basket
 				{"weight" : 0.05, "item" : [ "applebasket", 1]},
+				
+				//spherical plushies
 				{"weight" : 0.05, "item" : [ "badgooplush", 1]},
-				{"weight" : 0.05, "item" : [ "ballandchain", 1]},
 				{"weight" : 0.05, "item" : [ "football", 1]},
-				{"weight" : 0.05, "item" : [ "giantglobe", 1]},
+				
+				//heavy and hard to steal
+				{"weight" : 0.035, "item" : [ "ballandchain", 1]},
+				
+				//this is huge and irisil would have a lot of trouble stealing it. maybe if they work together!
+				{"weight" : 0.01, "item" : [ "giantglobe", 1]},
+				
+				//easy to steal
 				{"weight" : 0.05, "item" : [ "medievalglobe", 1]},
 				{"weight" : 0.05, "item" : [ "snowglobe1", 1]},
 				{"weight" : 0.05, "item" : [ "snowglobe2", 1]},
-				{"weight" : 0.05, "item" : [ "spookycauldron", 1]},
+				
+				//cumbersome
+				{"weight" : 0.04, "item" : [ "spookycauldron", 1]},
+				
+				//not sure if this would be hard to steal or not, leaning toward no
 				{"weight" : 0.05, "item" : [ "stationhologram", 1]},
+				
+				//easy to steal
 				{"weight" : 0.05, "item" : [ "steampunkglobe", 1]},
 				{"weight" : 0.05, "item" : [ "plainorbplush", 1]},
-				{"weight" : 0.05, "item" : [ "ancientbouldertrap", 1]},
+				
+				//where did you get this, little guy?
+				{"weight" : 0.01, "item" : [ "ancientbouldertrap", 1]},
 				
 				//wire
 				{"weight" : 0.05, "item" : [ "liquidsensor", 1]},
@@ -185,16 +221,21 @@
 				//hats
 				//clown nose
 				{"weight" : 0.05, "item" : [ "gagnosehead", 1]},
+				
 				//berry
 				{"weight" : 0.05, "item" : [ "berryhead", 1]},
+				
 				//glowy orb hat from biolum biomes
 				{"weight" : 0.05, "item" : [ "lighthelmhead", 1]},
+				
 				//captains fro
 				{"weight" : 0.05, "item" : [ "afrowighead", 1]},
-				//spacesuit helmet
+				
+				//spacesuit helmet - i am torn about whether or not this should be here since the intended method to get spacesuit helmet is mining base, but it's so trivial to get one that it seems silly to be stingy about it
 				{"weight" : 0.05, "item" : [ "spacesuithead", 1]},
-				//ocean helm
-				{"weight" : 0.05, "item" : [ "hylotltier5shead", 1]}
+				
+				//ocean helm - slightly lower chance of this particular drop since eyepatch biomes can appear on early worlds, but it *is* just a helmet which would otherwise be simple to steal
+				{"weight" : 0.025, "item" : [ "hylotltier5shead", 1]}
 				
 			],
 			"poolRounds" : 
@@ -213,22 +254,22 @@
 			"fill" : 
 			[
 				{"item" : [ "lofty_irisileye", 1]},
-				{"pool" : "lofty_irisil_eyehoardTreasureSphericalThings"}
+				{"pool" : "lofty_irisil_eyehoardTreasureSphericalThings"},
+				{"weight" : 0.05, "item" : ["eyepiles", 50]}
 			],
 			"pool" : 
 			[
 				{"weight" : 0.25, "item" : ["lofty_irisileye",1]},
-				{"weight" : 0.10, "item" : ["oculemon", 3]},
-				{"weight" : 0.15, "item" : ["oculemon", 2]},
-				{"weight" : 0.20, "item" : ["oculemon", 1]},
-				{"weight" : 0.05, "item" : ["alienfruit", 1]},
-				{"weight" : 0.10, "item" : ["oculemonseed", 1]},
-				{"weight" : 0.05, "item" : ["oculemonseed", 2]},
-				{"weight" : 0.05, "item" : ["eyepiles", 50]},
+				//no oculemons or alienfruit in this drop table directly as they are weighted more heavily in spherical objects table and it was prettymuch always rolling those
+				
 				{"weight" : 0.05, "item" : [ "capturepod", 1]},
 				{"weight" : 0.05, "pool" : "chestMoney"},
 				{"weight" : 0.05, "pool" : "eyeTreasure"},
-				{"weight" : 0.05, "pool" : "lofty_irisil_eyehoardTreasureSphericalThings"},
+				
+				//slight bias toward more spherical objects
+				{"weight" : 0.1, "pool" : "lofty_irisil_eyehoardTreasureSphericalThings"},
+				
+				//misc useful things as treasure
 				{"weight" : 0.01, "item" : "manipulatormodule"},
 				{"weight" : 0.01, "item" : "techcard"},
 				{"weight" : 0.01, "item" : "upgrademodule"},
