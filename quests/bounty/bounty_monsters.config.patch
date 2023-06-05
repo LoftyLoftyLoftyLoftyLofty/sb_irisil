@@ -1,0 +1,14 @@
+[
+	{
+		"op" : "add",
+		"path" : "/monsters/-",
+		"value" : 
+		{ 
+			"lofty_irisil" : 
+			{
+				"portraitCenter" : [0.0, 0.0],
+				"portraitScale" : 1
+			}
+		}
+	}
+]
