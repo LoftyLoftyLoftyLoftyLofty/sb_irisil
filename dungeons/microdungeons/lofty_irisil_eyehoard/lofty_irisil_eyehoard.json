@@ -769,7 +769,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"locationType\":\"lofty_irisil.lofty_irisilden\"}"
+                         "value":"{\"locationType\":\"eyepatch.lofty_irisilden\"}"
                         }, 
                         {
                          "name":"stagehand",
