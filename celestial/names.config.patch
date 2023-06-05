@@ -1,0 +1,123 @@
+[
+	//names
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Eye"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Irisa"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Irisil"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Sil"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Optic"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Oculus"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Oculi"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Tear"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Teardrop"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemNames/-",
+		"value" : [1.0, "Five Eyes"]
+	},
+	
+	//suffixes
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Eye"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Aperture"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Lens"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Sil"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Oculus"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Oculi"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Tear"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Teardrop"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "View"]
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/systemSuffixNames/-",
+		"value" : [1.0, "Contact"]
+	}
+]
