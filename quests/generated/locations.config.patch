@@ -2,12 +2,12 @@
   //Irisil Den
   { 
 	"op" : "add",
-	"path" : "/lofty_irisil",
+	"path" : "/eyepatch/-",
 	"value" : 
 	{
 	  "lofty_irisilden" : 
 	  {
-		"name" : "irisil den",
+		"name" : "irisa den",
 		"tags" : [ "lofty_irisil", "largespace" ]
 	  }
 	}
