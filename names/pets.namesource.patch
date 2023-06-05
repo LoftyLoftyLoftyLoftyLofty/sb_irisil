@@ -1,52 +1,146 @@
 [
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Squeaky"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Teardrop"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Blinky"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Eekers"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Beeps"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Boops"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Scooty"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Tabby"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Callie"
-	},
-	{
-		"op" : "add",
-		"path" : "/sourceNames/-",
-		"value" : "Tortilla"
-	}
+	//don't add dupe names
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Squeaky",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Squeaky"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Teardrop",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Teardrop"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Blinky",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Blinky"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Eekers",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Eekers"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Beepsy",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Beepsy"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Boopsy",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Boopsy"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Scooty",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Scooty"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Tabby",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Tabby"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Callie",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Callie"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Tortilla",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Tortilla"
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/sourceNames/-",
+			"value" : "Burrito",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/sourceNames/-",
+			"value" : "Burrito"
+		}
+	]
 ]
