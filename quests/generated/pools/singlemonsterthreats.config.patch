@@ -1,0 +1,14 @@
+[
+	{
+		"op" : "add",
+		"path" : "/0/1/-",
+		"value" : 
+		[
+			[ "lofty_irisil", "largespace" ],
+			{
+				"name" : "Irisa",
+				"typeName" : "lofty_irisil"
+			}
+		]
+	}
+]
