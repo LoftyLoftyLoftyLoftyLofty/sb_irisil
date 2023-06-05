@@ -1,52 +1,52 @@
 [
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Squeaky"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Teardrop"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Blinky"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Eekers"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Beeps"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Boops"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Scooty"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Tabby"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Callie"
 	},
 	{
 		"op" : "add",
-		"path" : "/sourceNames",
+		"path" : "/sourceNames/-",
 		"value" : "Tortilla"
 	}
 ]
