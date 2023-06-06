@@ -1,3 +1,7 @@
+//bounty pet names pull from the pets namesource by default and markov the entries together to create synthesized names
+//these entries will only seed the possibilities of a particular name - I've seen "Eekers" mutate into "Beekers" and "Eek", for example
+//https://community.playstarbound.com/threads/namegen-files-how-they-work.146261/
+
 [
 	//don't add dupe names
 	[
