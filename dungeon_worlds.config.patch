@@ -4,7 +4,7 @@
     "path" : "/lofty_irisil_miniknoglab",
     "value" : {
 	  "primaryDungeon" : "lofty_irisil_miniknoglab",
-	  "threatLevel" : 8,
+	  "threatLevel" : 7,
 	  "gravity" : 0,
 	  "airless" : true,
 	  "worldSize" : [1200, 200],

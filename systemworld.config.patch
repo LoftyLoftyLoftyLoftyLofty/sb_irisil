@@ -1,15 +1,15 @@
 [
   //Uncomment this field to reset system object list and force custom system objects to spawn
-  {
+  /*{
     "op": "replace",
     "path": "/objectSpawnPool",
     "value": []
-  },
+  },*/
   
   //Temporary Locations
   {
     "op": "add",
     "path": "/objectSpawnPool/-",
-    "value": [100.04, "lofty_irisil_miniknoglab"]
+    "value": [0.025, "lofty_irisil_miniknoglab"]
   }
 ]

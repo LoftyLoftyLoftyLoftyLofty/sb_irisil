@@ -4,7 +4,7 @@
     "path": "/lofty_irisil_miniknoglab",
 	"value": {
 	  "warpAction" : "InstanceWorld:lofty_irisil_miniknoglab",
-	  "threatLevel" : 8,
+	  "threatLevel" : 7,
 	  "skyParameters" : {
 		"seed" : 0,
 		"horizonClouds" : false,
