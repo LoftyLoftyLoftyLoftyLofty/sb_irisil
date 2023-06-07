@@ -317,7 +317,7 @@
 				{"item" : [ "electrobaton", 1]},
 				{"item" : [ "lofty_irisil_apex-codex", 1]},
 				{"item" : ["money", 555]}
-			]
+			],
 			"allowDuplication" : false
 		}
 	]
