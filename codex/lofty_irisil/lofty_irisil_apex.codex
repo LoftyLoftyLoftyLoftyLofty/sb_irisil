@@ -1,0 +1,13 @@
+{
+  "id" : "lofty_irisil_apex",
+  "title" : "Irisil Research Notes",
+  "description" : "A classified report detailing an invasive alien species.",
+  "icon" : "lofty_irisil_apex.png",
+  "contentPages" : [
+	"TODO"
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}
