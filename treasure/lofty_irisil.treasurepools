@@ -366,5 +366,19 @@
 			"allowDuplication" : false
 		}
 	]
+  ],
+  
+  "canYouPLEASEReplaceTheBagNextTime" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "trashbag", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
   ]
 }
