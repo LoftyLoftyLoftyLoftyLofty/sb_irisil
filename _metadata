@@ -1,10 +1,10 @@
 {
   "author" : "Lofty",
-  "description" : "TODO",
+  "description" : "[h1]Project Irisil[/h1] \nThis mod adds the following new content to Starbound:\n[hr][/hr]\n[b]A new monster species, Irisil[/b]\nIrisil can be found in the eyepatch biome on alien planets.\n\n[b]A new microdungeon, Irisil Den[/b]\nThese dens can also be found in the eyepatch biome on alien planets.\n\n[b]3 new fossils[/b]\nDig up the remains of irisil! Fascinating!\n\n[b]A new cooking recipe[/b]\nNew treats! What could possibly go wrong?\n\n[b]A new codex[/b]\nThe Irisil Field Guide has everything you need to know about these weird creatures.\n\n[b]2 new status effects[/b]\nIrisil are able to defend themselves in a variety of ways. Be prepared!\n\n[b]A new crafting material[/b]\nIt's the eye in the preview image. The theme is eyes. Hopefully you can [b]see[/b] that by now.\n\n[b]A new cosmetic back item[/b]\nAdopt an interstellar furry friend! Or don't. Up to you, really.\n\n[b]3 new placeable decorations[/b]\nCollect new trophies from your encounters!\n\n[b]A new critter[/b]\nThese can be found in irisil dens.\n\n[hr][/hr]\nDiscord server if you want to come visit:\nhttps://discord.gg/A2UgshjkJ2",
   "friendlyName" : "Irisil",
   "link" : "steam://url/CommunityFilePage/2983639797",
   "name" : "lofty_irisil",
   "steamContentId" : "2983639797",
-  "tags" : "Miscellaneous|Planets and Environments|NPCs and Creatures|Dungeons|Furniture and Objects|Food and Farming|Armor and Clothes",
-  "version" : "1.0"
+  "tags" : "Miscellaneous|Planets and Environments|NPCs and Creatures|Quests|Dungeons|Furniture and Objects|Food and Farming|Armor and Clothes",
+  "version" : "1.1"
 }
