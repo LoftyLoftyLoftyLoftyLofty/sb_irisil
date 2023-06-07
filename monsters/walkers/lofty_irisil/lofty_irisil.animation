@@ -129,6 +129,12 @@
                 "image" : "<partImage>:shakeit.<frame>"
               }
             },
+			//somewhere something is using 'fire' instead of 'shakeit' but it might be a game bug
+			"fire" : {
+              "properties" : {
+                "image" : "<partImage>:shakeit.<frame>"
+              }
+            },
             "fall" : {
               "properties" : {
                 "image" : "<partImage>:fall.<frame>"

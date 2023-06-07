@@ -3,8 +3,34 @@
   "title" : "Irisil Research Notes",
   "description" : "A classified report detailing an invasive alien species.",
   "icon" : "lofty_irisil_apex.png",
+  
+  "species" : "apex",
+  
   "contentPages" : [
-	"^red;[PROJECT NAME EXPUNGED] ^green;Quarterly Report"
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+Our team has worked tirelessly over the last several months establishing trust and rapport with the irisil that were delivered to our facility. Several of our personnel have suffered non-life-threatening injuries, but we are confident that the successes outlined in this report will qualify us for the additional medical rations necessary to continue our work.",
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+The three specimens (named '^red;Squeaky^reset;', '^yellow;Nibbles^reset;', and '^blue;Little Big Ape^reset;' by our lab team) exhibit intelligence vastly exceeding our intial expectations, with varying personality traits and levels of trust. We have confirmed that these irisil can and do communicate with each other, but is limited by the amount of body language involved in conveying their messages.",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^red;Squeaky^reset; is skittish and actively avoids the areas in direct line of sight of our cameras. Most of the team's injuries were sustained from entering the artificial habitat to verify a headcount. After several incidents, the headcount standard operation procedure was amended to assume ^red;Squeaky^reset;'s presence in the habitat.",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^yellow;Nibbles^reset; enjoys being fed and amicably interacts with the lab team. Last week, in an incredible breakthrough,^yellow;Nibbles^reset; was given the choice between a refrigerated yokat eye and a banana and chose the latter out of preference.",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^blue;Little Big Ape^reset; is named for their exhibition of the traits of our Great Leader. Fearlessly standing their ground in intial encounters with lab staff, it took the entire team nearly two hours to subdue the creature after it broke out of its shipping crate- we had to slowly vent atmosphere from the hangar until it passed out."
+
   ],
     "itemConfig" : {
     "rarity" : "Common",
