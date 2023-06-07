@@ -13,3 +13,6 @@ Aegonian & The Elithian Races Team
 
 Frykas & The Starforge Team
 -> This mod was used as a reference in many ways to learn how to properly patch things, especially treasure and spawn tables.
+
+Armok
+-> Bug reporting
