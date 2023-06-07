@@ -1,7 +1,7 @@
 {
   "id" : "lofty_irisil_apex",
   "title" : "Irisil Research Notes",
-  "description" : "A classified report detailing an invasive alien species.",
+  "description" : "A classified report detailing laboratory behavioral experiments with an invasive alien species.",
   "icon" : "lofty_irisil_apex.png",
   
   "species" : "apex",
@@ -10,26 +10,93 @@
 "^red;[PROJECT NAME EXPUNGED] 
 ^green;Quarterly Report^reset;
 
-Our team has worked tirelessly over the last several months establishing trust and rapport with the irisil that were delivered to our facility. Several of our personnel have suffered non-life-threatening injuries, but we are confident that the successes outlined in this report will qualify us for the additional medical rations necessary to continue our work.",
+Our team has worked tirelessly over the last several months establishing trust and rapport with the irisil that were delivered to our facility. Several of our personnel have suffered non-life-threatening injuries, but we are confident that the successes outlined in this report will qualify us for the additional medical rations necessary to continue our work.
+
+^#8888CC;>>",
 "^red;[PROJECT NAME EXPUNGED] 
 ^green;Quarterly Report^reset;
 
-The three specimens (named '^red;Squeaky^reset;', '^yellow;Nibbles^reset;', and '^blue;Little Big Ape^reset;' by our lab team) exhibit intelligence vastly exceeding our intial expectations, with varying personality traits and levels of trust. We have confirmed that these irisil can and do communicate with each other, but is limited by the amount of body language involved in conveying their messages.",
+The three specimens (named '^red;Squeaky^reset;', '^yellow;Nibbles^reset;', and '^blue;Little Big Ape^reset;' by our lab team) exhibit intelligence vastly exceeding our intial expectations, with varying personality traits and levels of trust. We have confirmed that these irisil can and do communicate with each other, but are limited by the amount of body language involved in conveying their messages.
 
-"^red;[PROJECT NAME EXPUNGED] 
-^green;Quarterly Report^reset;
-
-^red;Squeaky^reset; is skittish and actively avoids the areas in direct line of sight of our cameras. Most of the team's injuries were sustained from entering the artificial habitat to verify a headcount. After several incidents, the headcount standard operation procedure was amended to assume ^red;Squeaky^reset;'s presence in the habitat.",
-
-"^red;[PROJECT NAME EXPUNGED] 
-^green;Quarterly Report^reset;
-
-^yellow;Nibbles^reset; enjoys being fed and amicably interacts with the lab team. Last week, in an incredible breakthrough,^yellow;Nibbles^reset; was given the choice between a refrigerated yokat eye and a banana and chose the latter out of preference.",
+^#8888CC;>>",
 
 "^red;[PROJECT NAME EXPUNGED] 
 ^green;Quarterly Report^reset;
 
-^blue;Little Big Ape^reset; is named for their exhibition of the traits of our Great Leader. Fearlessly standing their ground in intial encounters with lab staff, it took the entire team nearly two hours to subdue the creature after it broke out of its shipping crate- we had to slowly vent atmosphere from the hangar until it passed out."
+^green;Specimen Profile^reset;: ^red;Squeaky^reset;
+Squeaky is skittish and actively avoids the areas in direct line of sight of our cameras. Most of the team's injuries were sustained from entering the artificial habitat to verify a headcount. After several incidents, the headcount standard operation procedure was amended to assume Squeaky's presence in the habitat.
+
+^#8888CC;>>",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^green;Specimen Profile^reset;: ^yellow;Nibbles^reset;
+Nibbles enjoys being fed and amicably interacts with the lab team. Last week, in an incredible breakthrough, Nibbles was given the choice between an oculob eye and a banana and chose the latter out of preference.
+
+^#888888;We have included an intake request form with this report for childrens' educational materials for Nibbles.^reset;
+^#8888CC;>>",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^green;Specimen Profile^reset;: ^blue;Little Big Ape^reset;
+Little Big Ape is named for their exhibition of the traits of our Great Leader. Fearlessly standing their ground in intial encounters with lab staff, it took the entire team nearly two hours to subdue the creature after it broke out of its shipping crate- we had to vent atmosphere from the hangar until it passed out.
+
+^#8888CC;>>",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^green;Behavioral Analysis^reset; (1/2):
+All three specimens jealously guard the small, eye-shaped lifeforms that were included in their artificial habitat. It is unclear if they consider these smaller fauna to be family or simply pets, but the irisil exhibit clear (and very vocal) separation anxiety when the smaller creatures are periodically removed from the habitat for analysis.
+
+^#8888CC;>>",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^green;Behavioral Analysis^reset; (2/2):
+Attempting to use separation as a means to train the irisil resulted in a coordinated ambush that left one of our scientists without an eye and another with a broken arm. 
+
+^red;Further separation testing has been suspended pending additional protective equipment and medical ration delivery.^reset;
+^#8888CC;>>",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^green;Summary^reset;:
+The irisil at our facility have demonstrated an incredible aptitude for learning and continue to develop relationships with our lab staff. We believe that sufficient iteration on a training regimen will produce capable footsoldiers worthy to stand beside the likes of our own Miniknog operatives.
+
+^#8888CC;>>",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+We hope you find the results of our time spent satisfactory, and have included an itemized list of required materials to move forward with our research.
+
+Hail Big Ape,
+^red;[NAME EXPUNGED]^reset;
+
+
+
+^#8888CC;>>",
+
+"^red;[PROJECT NAME EXPUNGED] 
+^green;Quarterly Report^reset;
+
+^green;Intake Request Forms^reset;:
+- Slash-resistant HAZMAT suit (22)
+- Full face respirator mask (22)
+- CORNEO Optica720A Artificial Eye (1)
+- Red flower petal (1500)
+- Living root (300)
+- Medical syringe (300)
+- Additional banana ration
+- Childrens' educational materials
+
+^green;Deliver to^reset;:
+^red;[COORDINATES EXPUNGED]^reset;"
 
   ],
     "itemConfig" : {
