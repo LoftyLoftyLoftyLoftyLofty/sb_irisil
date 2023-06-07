@@ -1,0 +1,28 @@
+[
+  {
+    "op": "add",
+    "path": "/lofty_irisil_miniknoglab",
+	"value": {
+	  "warpAction" : "InstanceWorld:lofty_irisil_miniknoglab",
+	  "threatLevel" : 8,
+	  "skyParameters" : {
+		"seed" : 0,
+		"horizonClouds" : false,
+		"horizonImages" : [ { "left": "/celestial/system/anomaly/anomalyhorizonleft.png", "right": "/celestial/system/anomaly/lofty_irisil_miniknoglab_anomalyhorizonright.png" } ]
+	  },
+
+	  "moving" : false,
+	  "speed" : 0,
+	  "orbitRange" : [0, 0],
+	  "generatedParameters" : {
+		"displayName" : "/celestial/lofty_irisil_anomalynames.config:nameGen"
+	  },
+	  "lifeTime" : [1500, 2100],
+	  "parameters" : {
+		"icon" : "/celestial/system/anomaly/lofty_irisil_miniknoglab_map_icon.png",
+		"displayName" : "???",
+		"description" : "This asteroid isn't emitting any signals at all, which is suspicious for an object of its size."
+	  }
+	}
+  }
+]

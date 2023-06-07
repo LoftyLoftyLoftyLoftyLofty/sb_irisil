@@ -1,0 +1,39 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_miniknoglab",
+  "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "lofty_irisil_miniknoglab" ],
+    "gravity" : 80,
+    "breathable" : true,
+    "maxRadius" : 1000000,
+    "maxParts" : 2,
+    "protected" : true
+},
+
+  "parts" : [
+
+    // SAFE ZONE
+    {
+      "name" : "safe-empty",
+      "rules" : [
+        [ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "/dungeons/space/hazards/safe-empty.json" ],
+      "chance" : 0,
+      "markDungeonId" : false
+    },
+
+    // MERCHANT SHIP
+
+    {
+      "name" : "lofty_irisil_miniknoglab",
+      "rules" : [
+        [ "doNotCombineWith", [ "lofty_irisil_miniknoglab" ] ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_miniknoglab.json" ],
+      "chance" : 1.0
+    }
+  ]
+}

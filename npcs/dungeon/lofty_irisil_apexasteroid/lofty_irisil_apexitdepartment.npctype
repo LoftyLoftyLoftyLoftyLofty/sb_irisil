@@ -1,0 +1,37 @@
+{
+  "type" : "lofty_irisil_apexitdepartment",
+  "baseType" : "hostile",
+
+  "levelVariance" : [2, 2],
+
+  "dropPools" : [ "lofty_irisil_apexITdepartment" ],
+
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/lofty_irisil_apexitdepartment.config:attack"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+			//9 should be the purple one
+            "head" : [ { "name" : "visorhead" , "parameters" : { "colorIndex" : 9 }} ],
+            "chest" : [ { "name" : "scientistchest", "parameters" : { "colorIndex" : 1 } } ], 
+            "legs" : [ { "name" : "scientistlegs", "parameters" : { "colorIndex" : 1 } } ],
+            "back" : [ { "name" : "heatprotection" } ],
+			
+			//rare electric monsters
+            "primary" : [
+              {"name": "npcpetcapturepod", "parameters" : { "pets" : ["electricyokat", "electricvoltip", "electriccrutter", "electricsnaunt", "electricquagmutt", "electricpetricub", "electrichemogoblin", "electriccapricoat" ] }}
+            ],
+			
+            "sheathedprimary" : [ 
+              { "name" : "electrobaton" }
+            ]
+          }
+        ] ]
+    ]
+  }
+}

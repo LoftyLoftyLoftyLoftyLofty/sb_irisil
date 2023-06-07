@@ -1,0 +1,54 @@
+{
+  "type" : "labscientist",
+  "baseType" : "hostile",
+  
+  "dropPools" : [ "money" ],
+  
+  "scriptConfig" : {
+    "dialog" : {
+      "attack" : "/dialog/scientist.config:attack"
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+              { "name" : "hazmathead", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "chest" : [
+              { "name" : "hazmatchest", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "back" : [
+              { "name" : "hazmatback", "parameters" : { "colorIndex" : 0 } }
+            ],
+            "legs" : [
+              { "name" : "hazmatlegs", "parameters" : { "colorIndex" : 0 } }
+            ]"primary" : [
+              "npcpistol"
+            ],
+            "sheathedprimary" : [
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 50.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.5
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

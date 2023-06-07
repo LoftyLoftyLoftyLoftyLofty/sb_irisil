@@ -1,0 +1,21 @@
+[
+  {
+    "op" : "add",
+    "path" : "/lofty_irisil_miniknoglab",
+    "value" : {
+	  "primaryDungeon" : "lofty_irisil_miniknoglab",
+	  "threatLevel" : 8,
+	  "gravity" : 0,
+	  "airless" : true,
+	  "worldSize" : [1200, 200],
+	  "dungeonBaseHeight" : 150,
+	  "dungeonSurfaceHeight" : 150,
+	  "ambientLightLevel" : [32, 32, 32],
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/inviolate-loop.ogg",
+	  "environmentStatusEffects" : ["biomeairless", "dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom",
+	  "biome" : "space"
+    }
+  }
+]

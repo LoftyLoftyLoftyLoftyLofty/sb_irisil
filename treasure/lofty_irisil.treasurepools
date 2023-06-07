@@ -255,7 +255,7 @@
 			[
 				{"item" : [ "lofty_irisileye", 1]},
 				{"pool" : "lofty_irisil_eyehoardTreasureSphericalThings"},
-				{"weight" : 0.05, "item" : ["eyepiles", 50]}
+				{"item" : ["eyepiles", 50]}
 			],
 			"pool" : 
 			[
@@ -303,6 +303,22 @@
 				[0.15, 5]
 			],
 			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  "lofty_irisil_apexITdepartment" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "electrobaton", 1]},
+				{"item" : [ "lofty_irisil_apex-codex", 1]},
+				{"item" : ["money", 555]}
+			]
+			"allowDuplication" : false
 		}
 	]
   ]
