@@ -21,7 +21,7 @@
 	  "parameters" : {
 		"icon" : "/celestial/system/anomaly/lofty_irisil_miniknoglab_map_icon.png",
 		"displayName" : "???",
-		"description" : "This asteroid isn't emitting any signals at all, which is suspicious for an object of its size."
+		"description" : "This asteroid isn't emitting any signals at all, which is suspicious for an object of this size."
 	  }
 	}
   }
