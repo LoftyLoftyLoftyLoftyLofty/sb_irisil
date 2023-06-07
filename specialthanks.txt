@@ -5,6 +5,7 @@ FlynnLikesTrees
 
 Lemon Drops (Maple32)
 -> Additional help with microdungeons.
+-> Even more help with microdungeons.
 
 Aegonian & The Elithian Races Team
 -> This mod was used as a reference in many ways to learn how to properly patch things.
