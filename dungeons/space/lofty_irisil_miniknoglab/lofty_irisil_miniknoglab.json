@@ -3543,7 +3543,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"color\" : \"?setcolor=00000000\"}"
+                         "value":"{\"color\" : \"?multiply=00000000\"}"
                         }],
                  "rotation":0,
                  "type":"",
