@@ -307,7 +307,22 @@
 	]
   ],
   
-  "lofty_irisil_apexITdepartment" : 
+  "lofty_irisil_miniknogLabTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_lurkingirisa", 1]},
+				{"item" : [ "lofty_irisileye", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_apexITdepartmentTreasure" : 
   [
 	[
 		1, 
@@ -315,8 +330,38 @@
 			"fill" : 
 			[
 				{"item" : [ "electrobaton", 1]},
-				{"item" : [ "lofty_irisil_apex-codex", 1]},
 				{"item" : ["money", 555]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_apexCodexTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_apex-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_apexHazmatTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "hazmathead", 1]},
+				{"item" : [ "hazmatchest", 1]},
+				{"item" : [ "hazmatlegs", 1]},
+				{"item" : [ "hazmatback", 1]}
 			],
 			"allowDuplication" : false
 		}

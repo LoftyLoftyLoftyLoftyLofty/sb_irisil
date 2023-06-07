@@ -26,10 +26,8 @@
             "legs" : [
               { "name" : "hazmatlegs", "parameters" : { "colorIndex" : 0 } }
             ],
-			"primary" : [
-              "npcpistol"
-            ],
             "sheathedprimary" : [
+			"npcpistol"
             ]
           }
         ] ]
