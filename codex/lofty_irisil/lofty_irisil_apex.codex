@@ -4,7 +4,7 @@
   "description" : "A classified report detailing an invasive alien species.",
   "icon" : "lofty_irisil_apex.png",
   "contentPages" : [
-	"TODO"
+	"^red;[PROJECT NAME EXPUNGED] ^green;Quarterly Report"
   ],
     "itemConfig" : {
     "rarity" : "Common",

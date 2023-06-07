@@ -20,7 +20,7 @@
             "head" : [ { "name" : "visorhead" , "parameters" : { "colorIndex" : 9 }} ],
             "chest" : [ { "name" : "scientistchest", "parameters" : { "colorIndex" : 1 } } ], 
             "legs" : [ { "name" : "scientistlegs", "parameters" : { "colorIndex" : 1 } } ],
-            "back" : [ { "name" : "heatprotection" } ],
+            "back" : [ { "name" : "heatprotectionback" } ],
 			
 			//rare electric monsters
             "primary" : [
