@@ -22,15 +22,15 @@
   "inventoryIcon" : "dockingfieldicon.png",
   "orientations" : [
     {
-      "image" : "hideme.png:<color>.off",
+      "image" : "dockingfieldsmall.png:<color>.off",
       "imagePosition" : [-4, 0],
 
       "direction" : "left",
       "flipImages" : true,
 
       "animationParts" : {
-        "bg" : "hideme.png",
-        "fg" : "hideme.png"
+        "bg" : "dockingfieldsmall.png",
+        "fg" : "dockingfieldsmalllit.png"
       },
       "animationPosition" : [-4, 0],
 
@@ -42,14 +42,14 @@
       "enableCollision" : "barrierVertical"
     },
     {
-      "image" : "hideme.png:<color>.off",
+      "image" : "dockingfieldsmall.png:<color>.off",
       "imagePosition" : [-4, 0],
 
       "direction" : "right",
 
       "animationParts" : {
-        "bg" : "hideme.png",
-        "fg" : "hideme.png"
+        "bg" : "dockingfieldsmall.png",
+        "fg" : "dockingfieldsmalllit.png"
       },
       "animationPosition" : [-4, 0],
 
@@ -61,15 +61,15 @@
       "enableCollision" : "barrierVertical"
     },
     {
-      "image" : "hideme.png:<color>.off",
+      "image" : "dockingfieldhorizontalsmall.png:<color>.off",
       "imagePosition" : [-32, 4],
 
       "direction" : "left",
       "flipImages" : true,
 
       "animationParts" : {
-        "bg" : "hideme.png",
-        "fg" : "hideme.png"
+        "bg" : "dockingfieldhorizontalsmall.png",
+        "fg" : "dockingfieldhorizontalsmalllit.png"
       },
       "animationPosition" : [-32, 4],
 
@@ -81,14 +81,14 @@
       "enableCollision" : "barrierHorizontal"
     },
     {
-      "image" : "hideme.png:<color>.off",
+      "image" : "dockingfieldhorizontalsmall.png:<color>.off",
       "imagePosition" : [-32, 4],
 
       "direction" : "right",
 
       "animationParts" : {
-        "bg" : "hideme.png",
-        "fg" : "hideme.png"
+        "bg" : "dockingfieldhorizontalsmall.png",
+        "fg" : "dockingfieldhorizontalsmalllit.png"
       },
       "animationPosition" : [-32, 4],
 
@@ -127,11 +127,11 @@
   },
 
   "scripts" : [
-    "invisibledockingfieldsmall.lua"
+    "dockingfield.lua"
   ],
   "scriptDelta" : 5,
 
-  "animation" : "lofty_irisil_invisibledockingfield.animation",
+  "animation" : "dockingfield.animation",
 
   "outputNodes" : [ [0, 0] ],
 
