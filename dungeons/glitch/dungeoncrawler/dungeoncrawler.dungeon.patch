@@ -18,9 +18,7 @@
 				[ "doNotConnectToPart", [ "dungeoncrawler4a", "lofty_irisil_dungeoncrawler4b" ] ]
 			],
 			"def" : [ "tmx", "lofty_irisil_dungeoncrawler4b.json" ],
-			
-			//since the other option is 1.0, this effectively makes the irisil version 1/5 chance which is probably rare enough to be special for these dungeons
-			"chance" : .25
+			"chance" : 0.25
 		}
 	}
 ]
