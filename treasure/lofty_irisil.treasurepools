@@ -351,6 +351,42 @@
 	]
   ],
   
+  "lofty_irisil_apexMDFTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "reefcola", 1]},
+				{"item" : [ "reefcola", 1]},
+				{"item" : [ "reefcola", 1]},
+				{"item" : [ "reefcola", 1]},
+				{"item" : [ "reefcola", 1]},
+				{"item" : [ "reefcola", 1]},
+				
+				{"item" : [ "bananacon", 1]},
+				{"item" : [ "electricbombcollar", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  "lofty_irisil_apexBathroomTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "poisonbombcollar", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
   "lofty_irisil_apexHazmatTreasure" : 
   [
 	[
@@ -359,6 +395,36 @@
 			"fill" : 
 			[
 				{"item" : [ "hazmathead", 1]},
+				{"item" : [ "hazmatchest", 1]},
+				{"item" : [ "hazmatlegs", 1]},
+				{"item" : [ "hazmatback", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_apexHazmatHelmetTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "hazmathead", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_apexHazmatTreasureNoHelmet" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
 				{"item" : [ "hazmatchest", 1]},
 				{"item" : [ "hazmatlegs", 1]},
 				{"item" : [ "hazmatback", 1]}
@@ -378,6 +444,36 @@
 				{"item" : [ "trashbag", 1]}
 			],
 			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_dungeoncrawlerTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_glitch-codex", 1]},
+				{"item" : [ "lanternstickback", 1]},
+				{"item" : [ "rarespear", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_robotChickenTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "money", 5500]}
+			],
+			"allowDuplication" : true
 		}
 	]
   ]
