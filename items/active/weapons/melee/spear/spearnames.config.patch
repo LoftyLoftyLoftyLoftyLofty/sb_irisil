@@ -1,0 +1,14 @@
+//add small possibility of 'Irisil Eyestabber', 'Irisil Eyepoker' etc. to spear names
+[
+	{
+		"op" : "add",
+		"path" : "/nameGen/1/1/-",
+		"value" : "Irisil"
+	},
+	
+	{
+		"op" : "add",
+		"path" : "/nameGen/1/2/-",
+		"value" : "Eye"
+	}
+]
