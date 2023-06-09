@@ -18,6 +18,8 @@
 				[ "doNotConnectToPart", [ "dungeoncrawler4a", "lofty_irisil_dungeoncrawler4b" ] ]
 			],
 			"def" : [ "tmx", "lofty_irisil_dungeoncrawler4b.json" ],
+			
+			//the other dungeon endpiece is weighted 1.0 so this is approx 1/5 chance of irisil, which is probably rare enough to be special
 			"chance" : 0.25
 		}
 	}

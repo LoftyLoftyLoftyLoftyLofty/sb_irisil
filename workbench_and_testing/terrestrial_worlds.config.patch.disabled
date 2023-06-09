@@ -1,0 +1,22 @@
+[
+	{
+		"op" : "add",
+		"path" : "/planetTypes/forest/layers/surface/dungeons/-",
+		"value" : [100.0, "dungeoncrawler"]
+	},
+	{
+		"op" : "add",
+		"path" : "/planetTypes/desert/layers/surface/dungeons/-",
+		"value" : [100.0, "dungeoncrawler"]
+	},
+	{
+		"op" : "add",
+		"path" : "/planetTypes/snow/layers/surface/dungeons/-",
+		"value" : [100.0, "dungeoncrawler"]
+	},
+	{
+		"op" : "add",
+		"path" : "/planetTypes/savannah/layers/surface/dungeons/-",
+		"value" : [100.0, "dungeoncrawler"]
+	}
+]
