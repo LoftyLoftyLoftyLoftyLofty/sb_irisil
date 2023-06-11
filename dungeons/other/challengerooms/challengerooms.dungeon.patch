@@ -1,0 +1,22 @@
+[
+	{
+		"op" : "replace",
+		"path" : "/metadata/anchor",
+		"value" : ["lofty_irisil_threadTheNeedle"]
+	},
+	{
+		"op" : "replace",
+		"path" : "/parts",
+		"value" :
+		[
+			{
+				"name" : "lofty_irisil_threadTheNeedle",
+				"rules" : 
+				[
+					[ "maxSpawnCount", [1] ]
+				],
+				"def" : [ "tmx", "lofty_irisil_threadTheNeedle.json" ]
+			}
+		]
+	}
+]
