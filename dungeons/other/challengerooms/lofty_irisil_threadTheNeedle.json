@@ -70,7 +70,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{\"treasurePools\":[\"challengeChestTreasure\"]}"
+                         "value":"{\"treasurePools\":[\"lofty_irisil_threadTheNeedleChallengeChestTreasure\"]}"
                         }],
                  "rotation":0,
                  "type":"",
