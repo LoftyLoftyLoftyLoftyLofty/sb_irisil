@@ -1,0 +1,30 @@
+{
+  "id" : "lofty_irisil_threadtheneedlelore",
+  "title" : "Thread The Needle",
+  "description" : "A series of haiku diary entries from an unnamed Hylotl poet.",
+  "icon" : "lofty_irisil_threadTheNeedleLore.png",
+  "contentPages" : [
+
+"Soaring, vivacious,
+beautiful and merciless-
+please don't eat my eyes.
+
+Dainty, elegant,
+dazzling, magnificent,
+ferocious, sublime.
+
+Sparkles in the air
+your venom stings with each breath
+yet I stay and cough.
+
+Maybe you and I
+can spend some time together.
+Peacefully, of course.
+^#8888CC;>>"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}
