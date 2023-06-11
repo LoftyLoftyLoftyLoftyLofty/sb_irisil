@@ -457,7 +457,7 @@
 			[
 				{"item" : [ "lofty_irisil_glitch-codex", 1]},
 				{"item" : [ "lanternstickback", 1]},
-				{"item" : [ "rarespear", 1]}
+				{"item" : [ "uncommonspear", 1]}
 			],
 			"allowDuplication" : false
 		}
@@ -474,6 +474,43 @@
 				{"item" : [ "money", 5500]}
 			],
 			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  //this is the challengeChestTreasure table from common.treasurepools with some extra content filled in 
+  "lofty_irisil_threadTheNeedleChallengeChestTreasure" : 
+  [
+    [0, {
+      "fill" : [
+        {"pool" : "goodWeapon"},
+        {"pool" : "valuableTreasure"},
+		{"item" : [ "lofty_irisil_threadtheneedlelore-codex", 1] }
+      ],
+      "poolRounds" : [
+        [0.4, 1],
+        [0.4, 2],
+        [0.2, 3]
+      ],
+      "pool" : [
+        {"weight" : 0.8, "pool" : "basicTreasure"},
+        {"weight" : 0.1, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "pool" : "costume"},
+        {"weight" : 0.05, "pool" : "instrument"}
+      ]
+    }]
+  ],
+  
+  "lofty_irisil_challengeCheaterTreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "poop", 1]}
+			],
+			"allowDuplication" : false
 		}
 	]
   ]
