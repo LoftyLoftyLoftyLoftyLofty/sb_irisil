@@ -1,0 +1,55 @@
+{
+  "animationParts" : { },
+  "animationCustom" : {
+    "sounds" : {
+      "flurry" : [ "/sfx/melee/spear_flurry.ogg" ]
+    }
+  },
+
+  "ability" : {
+    "name" : "Poke",
+    "type" : "lofty_irisil_pokepoke",
+    "scripts" : ["/items/active/weapons/melee/abilities/spear/flurry/flurry.lua"],
+    "class" : "Flurry",
+
+    "cooldownResetTime" : 0.0625,
+    "maxCooldownTime" : 0.0625,
+    "minCooldownTime" : 0.0625,
+    "cooldownSwingReduction" : 0.05,
+
+    "energyUsage" : 18.0,
+    "cooldownTime" : 0.0625,
+
+    "damageConfig" : {
+      "damageSourceKind" : "spear",
+      "statusEffects" : [ ],
+      "baseDamage" : 6,
+      "knockback" : 10,
+      "timeout" : 0.0625,
+      "timeoutGroup" : "alt"
+    },
+
+    "cycleRotationOffsets" : [0, 7.5, -7.5],
+    "stances" : {
+	    "idle" : {
+	      "armRotation" : -90,
+	      "weaponRotation" : 0,
+	      "twoHanded" : false,
+	      "weaponOffset" : [0, 0.5],
+
+	      "allowRotate" : true,
+	      "allowFlip" : true
+	    },
+      "swing" : {
+        "duration" : 0.0625,
+        "armRotation" : -15,
+        "weaponRotation" : -75,
+        "twoHanded" : true,
+        "weaponOffset" : [0.0, 0.0],
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  }
+}
