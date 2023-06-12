@@ -464,6 +464,20 @@
 	]
   ],
   
+  "lofty_irisil_covetedglowingballcrittertreasure" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisileye", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
+  ],
+  
   "lofty_irisil_robotChickenTreasure" : 
   [
 	[
