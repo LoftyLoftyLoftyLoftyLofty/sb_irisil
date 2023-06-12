@@ -1,9 +1,30 @@
 {
   "id" : "lofty_irisil_threadtheneedlelore",
-  "title" : "Thread The Needle",
+  "title" : "Poet's Journal",
   "description" : "A series of haiku diary entries from an unnamed Hylotl poet.",
   "icon" : "lofty_irisil_threadTheNeedleLore.png",
-  "contentPages" : [
+  
+  "species" : "hylotl",
+  
+  "contentPages" : 
+[
+
+"^#888888;This diary looks like it's seen better days. The first several pages contain coordinates and scattered notes, with a handful of lines crossed out that look like attempts at poetry.
+
+You can gather from the haphazardly scrawled text that the author was forced to make an emergency landing on an ^#7800ff;alien planet^#888888; to repair and refuel their ship- a process that took several weeks. 
+
+
+^#8888CC;>>",
+
+"^#888888;During their downtime, it seems the author of this diary was suffering from some degree of writer's block- frustration about this is expressed in their notes.
+
+At the bottom of a long rant, the handwriting changes to a more formal, calligraphic style:
+
+^reset;Today I saw her.
+Chittering inspiration!
+Dusty tan and cream.
+
+^#8888CC;>>",
 
 "Soaring, vivacious,
 beautiful and merciless-
@@ -13,14 +34,59 @@ Dainty, elegant,
 dazzling, magnificent,
 ferocious, sublime.
 
-Sparkles in the air
-your venom stings with each breath
-yet I stay and cough.
+^#888888;A crude drawing of a creature with five eyes peeks up from the bottom of this page. The words 'CLAWING MUSE' are underlined next to the art.
+
+
+^#8888CC;>>",
+
+"^#888888;The next page is covered in a filmy layer of scaly flakes- it seems the author tried to scrapbook an irisa's dander. Just looking at it is enough to make your hands itch.^reset;
 
 Maybe you and I
 can spend some time together.
 Peacefully, of course.
-^#8888CC;>>"
+
+Sparkles in the air
+your venom stings with each breath
+yet I stay and cough.
+
+^#8888CC;>>",
+
+"Perhaps if I give
+some food, time, and attention,
+you won't take my eyes?
+
+^#888888;A streak of dried blood stains this page alongside messy math calculating the costs of medical rations. There's an error in the math that is scratched out and corrected on the side.^reset;
+
+^red;Terrible idea^reset;.
+This must be what it feels like
+to be a human.
+
+^#8888CC;>>",
+
+"^#888888;The text on this page is uneven and shaky- some of it is smudged.^reset;
+
+My eye is healing.
+At least it's still in my head.
+Can we be friends now?
+
+Here, take this orange.
+It's the last one I have left.
+Chew on that instead.
+
+I'm glad you like it.
+Just in case it wasn't clear,
+I want to be friends!
+^#8888CC;>>",
+
+"^#888888;The last page in the diary showcases a rough pencil sketch of a hylotl holding hands with an irisa. The hylotl's face is marred by a diagonal scar that crosses his third eye and stretches down his cheek.^reset;
+
+Watching you explore
+the corridors of my ship
+brings me a strange joy.
+
+Let us depart now.
+Free from this wretched planet!
+Just the two of us."
 
   ],
     "itemConfig" : {

@@ -1,9 +1,17 @@
 [
+/*
 	{
 		"op" : "replace",
 		"path" : "/metadata/anchor",
 		"value" : ["lofty_irisil_threadTheNeedle"]
 	},
+*/
+	{
+		"op" : "add",
+		"path" : "/metadata/anchor/-",
+		"value" : "lofty_irisil_threadTheNeedle"
+	},
+/*
 	{
 		"op" : "replace",
 		"path" : "/parts",
@@ -18,5 +26,19 @@
 				"def" : [ "tmx", "lofty_irisil_threadTheNeedle.json" ]
 			}
 		]
+	},
+*/
+	{
+		"op" : "add",
+		"path" : "/parts/-",
+		"value" :
+		{
+			"name" : "lofty_irisil_threadTheNeedle",
+			"rules" : 
+			[
+				[ "maxSpawnCount", [1] ]
+			],
+			"def" : [ "tmx", "lofty_irisil_threadTheNeedle.json" ]
+		}
 	}
 ]
