@@ -1,7 +1,7 @@
 {
   "id" : "lofty_irisil_apex",
   "title" : "Irisil Research Notes",
-  "description" : "A classified report detailing laboratory behavioral experiments with an invasive alien species.",
+  "description" : "A classified report detailing behavioral experiments with an invasive alien species.",
   "icon" : "lofty_irisil_apex.png",
   
   "species" : "apex",

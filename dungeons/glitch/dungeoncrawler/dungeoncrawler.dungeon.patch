@@ -20,7 +20,8 @@
 			"def" : [ "tmx", "lofty_irisil_dungeoncrawler4b.json" ],
 			
 			//the other dungeon endpiece is weighted 1.0 so this is approx 1/5 chance of irisil, which is probably rare enough to be special
-			"chance" : 0.25
+			//this ended up being slightly too rare (mostly because so many other dungeons saturate the pool) so I'm bumping it to 1/3
+			"chance" : 0.5
 		}
 	}
 ]
