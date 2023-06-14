@@ -14,6 +14,7 @@
   "glitchDescription" : "Impressed. This statue is a fascimile of the real thing.",
   "humanDescription" : "People make statues out of the weirdest things.",
   "hylotlDescription" : "It's a pity that all of this artisanry was wasted on such a foul creature.",
+  "novakidDescription" : "That one can't bite, but I'm keepin' my distance anyway.",
 
   "inventoryIcon" : "irisastatueicon.png",
   "orientations" : [

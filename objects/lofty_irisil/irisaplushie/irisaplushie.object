@@ -1,0 +1,33 @@
+{
+  "objectName" : "lofty_irisil_irisaplushie",
+  "colonyTags" : ["pretty","lofty_irisil"],
+  "rarity" : "Common",
+  "description" : "An Irisa plush toy. It chitters when you squeeze it.",
+  "shortdescription" : "Irisa Plushie",
+  "category" : "decorative",
+  "price" : 50,
+
+  "apexDescription" : "You could hide a panoramic camera in an eye that large.",
+  "avianDescription" : "I don't want this thing anywhere near my bed.",
+  "floranDescription" : "Thisss not food. Floran unimpresssed.",
+  "glitchDescription" : "Demeaning. Not so tough now, are you?",
+  "humanDescription" : "It's endearing in a macabre way.",
+  "hylotlDescription" : "I can't wait for this fad to be over.",
+  "novakidDescription" : "Real good for target practice.",
+  
+  "inventoryIcon" : "irisaplushieicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "irisaplushie.png:<color>",
+
+      "imagePosition" : [-4, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaces" : [ [0, 0], [0, 1], [1, 0], [1, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "npcToy" : {}
+}

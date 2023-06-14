@@ -1,0 +1,68 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_alpacairisillair",
+    "species" : "alpaca",
+    "rules" : [
+    ],
+    "anchor" : [ "lofty_irisil_alpacairisillair" ],
+    "maxRadius" : 1000000,
+    "maxParts" : 65,
+    "extendSurfaceFreeSpace" : 100,
+    "protected" : false
+  },
+
+  "parts" : [
+  
+	//the house atop the cliff
+    {
+      "name" : "lofty_irisil_alpacairisillair",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ],
+		[ "doNotCombineWith", [ "lofty_irisil_alpacairisillair" ] ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair.json" ]
+    },
+	
+	//permutations of the mineshaft side rooms
+    {
+      "name" : "lofty_irisil_alpacairisillair_stairwellroom_left_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_left_1.json" ],
+      "chance" : 1
+    },
+	
+	{
+      "name" : "lofty_irisil_alpacairisillair_stairwellroom_left_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_left_2.json" ],
+      "chance" : 1
+    },
+	
+	{
+      "name" : "lofty_irisil_alpacairisillair_stairwellroom_right_1",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_right_1.json" ],
+      "chance" : 1
+    },
+	
+	//permutations of layer 1 of the mineshaft
+	{
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_a",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_a.json" ]
+    }
+  ]
+}

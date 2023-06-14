@@ -26,5 +26,45 @@
 		"range" : 1600
 	  }
 	}
+  },
+  //ALPACA HOUSE ALPACA HOUSE ALPACA HOUSE
+  { 
+	"op" : "add",
+	"path" : "/alpine",
+	"value" : 
+	{
+	  "lofty_irisil_alpacamininghouse_kitchen" : 
+	  {
+		"name" : "kitchen in the Alpaca longhouse",
+		"tags" : [ "generic", "friendly", "largespace" ],
+		"range" : 1600
+	  }
+	}
+  },
+  { 
+	"op" : "add",
+	"path" : "/alpine",
+	"value" : 
+	{
+	  "lofty_irisil_alpacamininghouse_bedroom" : 
+	  {
+		"name" : "bedroom atop the Alpaca longhouse",
+		"tags" : [ "generic", "friendly", "largespace" ],
+		"range" : 1600
+	  }
+	}
+  },
+  { 
+	"op" : "add",
+	"path" : "/alpine",
+	"value" : 
+	{
+	  "lofty_irisil_alpacamininghouse_hearth" : 
+	  {
+		"name" : "hearth in the Alpaca longhouse",
+		"tags" : [ "generic", "friendly", "largespace" ],
+		"range" : 1600
+	  }
+	}
   }
 ]
