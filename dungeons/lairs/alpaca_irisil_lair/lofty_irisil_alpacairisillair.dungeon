@@ -13,7 +13,10 @@
 
   "parts" : [
   
+	//////////////////////////////////////////////////////////////////////
 	//the house atop the cliff
+	//////////////////////////////////////////////////////////////////////
+	
     {
       "name" : "lofty_irisil_alpacairisillair",
       "rules" : [
@@ -24,7 +27,10 @@
       "def" : [ "tmx", "lofty_irisil_alpacairisillair.json" ]
     },
 	
-	//permutations of the mineshaft side rooms
+	//////////////////////////////////////////////////////////////////////
+	//permutations of the entry left side rooms, up to one of each
+	//////////////////////////////////////////////////////////////////////
+	
     {
       "name" : "lofty_irisil_alpacairisillair_stairwellroom_left_1",
       "rules" : [
@@ -46,6 +52,20 @@
     },
 	
 	{
+      "name" : "lofty_irisil_alpacairisillair_stairwellroom_left_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_left_3.json" ],
+      "chance" : 1
+    },
+	
+	//////////////////////////////////////////////////////////////////////
+	//permutations of the entry right side rooms, up to one of each
+	//////////////////////////////////////////////////////////////////////
+	
+	{
       "name" : "lofty_irisil_alpacairisillair_stairwellroom_right_1",
       "rules" : [
         [ "maxSpawnCount", [1] ],
@@ -55,7 +75,31 @@
       "chance" : 1
     },
 	
-	//permutations of layer 1 of the mineshaft
+	{
+      "name" : "lofty_irisil_alpacairisillair_stairwellroom_right_2",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_right_2.json" ],
+      "chance" : 1
+    },
+	
+	{
+      "name" : "lofty_irisil_alpacairisillair_stairwellroom_right_3",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_right_3.json" ],
+      "chance" : 1
+    },
+	
+	//////////////////////////////////////////////////////////////////////
+	//mineshaft layer permutations, up to one of each
+	//////////////////////////////////////////////////////////////////////
+	
+	//crustoise bone pit
 	{
       "name" : "lofty_irisil_alpacairisillair_mine_layer1_a",
       "rules" : [
@@ -63,6 +107,58 @@
 		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_a.json" ]
+    },
+	
+	//petricub cavern
+	{
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_b",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_b.json" ]
+    },
+	
+	//beeg splitter
+	{
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c.json" ]
+    },
+	
+	//////////////////////////////////////////////////////////////////////
+	//32x32 encounter zones
+	//////////////////////////////////////////////////////////////////////
+	{
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1",
+      "rules" : [
+        //[ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1.json" ]
+    },
+	{
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter2",
+      "rules" : [
+        //[ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter2.json" ]
+    },
+	
+	//////////////////////////////////////////////////////////////////////
+	//endcaps - these are set to 0 chance but once they are the only remaining option they will always spawn
+	//////////////////////////////////////////////////////////////////////
+	{
+      "name" : "lofty_irisil_alpacairisillair_verticalendcap",
+      "rules" : [
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_verticalendcap.json" ],
+      "chance" : 0
     }
   ]
 }

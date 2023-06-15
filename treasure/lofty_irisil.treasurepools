@@ -527,5 +527,73 @@
 			"allowDuplication" : false
 		}
 	]
-  ]
+  ],
+  
+  //alpaca house stuff
+	"lofty_irisil_alpacamine_smallbarreltreasure" : 
+	[
+		[
+			0, 
+			{
+				"poolRounds" : 
+				[
+					[0.3, 0],
+					[0.3, 1],
+					[0.2, 2],
+					[0.2, 3]
+				],
+				"pool" : 
+				[
+					{"weight" : 0.45, "pool" : "basicTreasure"},
+					{"weight" : 0.05, "pool" : "valuableTreasure"},
+					{"weight" : 0.5, "pool" : "nonTieredOre"}
+				]
+			}
+		]
+	],
+	
+	"lofty_irisil_alpacamine_largebarreltreasure" : 
+	[
+		[
+			0, 
+			{
+				"poolRounds" : 
+				[
+					[0.3, 0],
+					[0.3, 1],
+					[0.2, 2],
+					[0.2, 3]
+				],
+				"pool" : 
+				[
+					{"weight" : 0.25, "pool" : "basicTreasure"},
+					{"weight" : 0.05, "pool" : "valuableTreasure"},
+					{"weight" : 0.7, "pool" : "nonTieredOre"}
+				]
+			}
+		]
+	],
+	
+	"lofty_irisil_alpacamine_miningcratetreasure" : 
+	[
+		[
+			0, 
+			{
+				"poolRounds" : 
+				[
+					[0.3, 0],
+					[0.3, 1],
+					[0.2, 2],
+					[0.2, 3]
+				],
+				"pool" : 
+				[
+					{"weight" : 0.35, "pool" : "basicTreasure"},
+					{"weight" : 0.05, "pool" : "valuableTreasure"},
+					{"weight" : 0.15, "pool" : "diggingTool"},
+					{"weight" : 0.45, "pool" : "nonTieredOre"}
+				]
+			}
+		]
+	]
 }
