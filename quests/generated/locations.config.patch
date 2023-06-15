@@ -2,69 +2,54 @@
   //Irisil Den @ eyepatch
   { 
 	"op" : "add",
-	"path" : "/eyepatch",
+	"path" : "/eyepatch/lofty_irisilden",
 	"value" : 
-	{
-	  "lofty_irisilden" : 
 	  {
 		"name" : "irisa den",
 		"tags" : [ "lofty_irisil", "largespace" ],
 		"range" : 1600
 	  }
-	}
   },
   //Irisil Den @ Glitch Dungeon Crawler
   { 
 	"op" : "add",
-	"path" : "/dungeoncrawler",
+	"path" : "/dungeoncrawler/lofty_irisilden",
 	"value" : 
-	{
-	  "lofty_irisilden" : 
 	  {
 		"name" : "monster lair below the old Glitch dungeon",
 		"tags" : [ "lofty_irisil", "largespace" ],
 		"range" : 1600
 	  }
-	}
   },
   //ALPACA HOUSE ALPACA HOUSE ALPACA HOUSE
   { 
 	"op" : "add",
-	"path" : "/alpine",
+	"path" : "/alpine/lofty_irisil_alpacamininghouse_kitchen",
 	"value" : 
-	{
-	  "lofty_irisil_alpacamininghouse_kitchen" : 
 	  {
 		"name" : "kitchen in the Alpaca longhouse",
 		"tags" : [ "generic", "friendly", "largespace" ],
 		"range" : 1600
 	  }
-	}
   },
   { 
 	"op" : "add",
-	"path" : "/alpine",
+	"path" : "/alpine/lofty_irisil_alpacamininghouse_bedroom",
 	"value" : 
-	{
-	  "lofty_irisil_alpacamininghouse_bedroom" : 
 	  {
 		"name" : "bedroom atop the Alpaca longhouse",
 		"tags" : [ "generic", "friendly", "largespace" ],
 		"range" : 1600
 	  }
-	}
   },
   { 
 	"op" : "add",
-	"path" : "/alpine",
+	"path" : "/alpine/"lofty_irisil_alpacamininghouse_hearth",
 	"value" : 
-	{
-	  "lofty_irisil_alpacamininghouse_hearth" : 
 	  {
 		"name" : "hearth in the Alpaca longhouse",
 		"tags" : [ "generic", "friendly", "largespace" ],
 		"range" : 1600
 	  }
-	}
   }
 ]

@@ -1078,7 +1078,7 @@
                 {
                  "height":8,
                  "id":726,
-                 "name":"",
+                 "name":"Alpaca",
                  "properties":[
                         {
                          "name":"npc",
@@ -1100,7 +1100,7 @@
                 {
                  "height":8,
                  "id":793,
-                 "name":"",
+                 "name":"Alpaca",
                  "properties":[
                         {
                          "name":"npc",
@@ -1122,7 +1122,7 @@
                 {
                  "height":8,
                  "id":798,
-                 "name":"",
+                 "name":"Alpaca",
                  "properties":[
                         {
                          "name":"npc",
@@ -1144,7 +1144,7 @@
                 {
                  "height":8,
                  "id":888,
-                 "name":"",
+                 "name":"Alpaca",
                  "properties":[
                         {
                          "name":"npc",
@@ -1894,7 +1894,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }],

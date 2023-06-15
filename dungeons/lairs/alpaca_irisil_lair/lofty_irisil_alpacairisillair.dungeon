@@ -132,6 +132,8 @@
 	//////////////////////////////////////////////////////////////////////
 	//32x32 encounter zones
 	//////////////////////////////////////////////////////////////////////
+	
+	//crystal geode with diamonds
 	{
       "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1",
       "rules" : [
@@ -140,6 +142,8 @@
       ],
       "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1.json" ]
     },
+	
+	//green geode with squeem
 	{
       "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter2",
       "rules" : [
@@ -147,6 +151,16 @@
 		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter2.json" ]
+    },
+	
+	//alpaca forgemaster
+	{
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter3",
+      "rules" : [
+        //[ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter3.json" ]
     },
 	
 	//////////////////////////////////////////////////////////////////////
