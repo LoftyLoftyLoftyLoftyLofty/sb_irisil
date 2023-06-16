@@ -6,7 +6,7 @@
   "category" : "eppAugment",
   "inventoryIcon" : "dandruffaugment.png",
   "description" : "An EPP module that releases venomous dander when you take damage. Yuck.",
-  "shortdescription" : "Irisa Dandruff Augment",
+  "shortdescription" : "Irisa Dander Augment",
 
   "augment" : {
     "type" : "back",

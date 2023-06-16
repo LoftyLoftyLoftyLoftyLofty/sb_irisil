@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "bananacon", "count" : 1 },
+	{ "item" : "crayonyellowback", "count" : 1 },
+	{ "item" : "bookpiles", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_apex-codex",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop" ]
+}

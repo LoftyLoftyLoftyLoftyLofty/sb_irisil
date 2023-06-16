@@ -1,0 +1,13 @@
+{
+  "input" : [
+	{ "item" : "lofty_irisileye", "count" : 1 },
+    { "item" : "lofty_irisil_lurkingirisa", "count" : 1 },
+	{ "item" : "venusdepixel", "count" : 1 },    
+    { "item" : "diamonddrill", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_irisastatue",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop" ]
+}

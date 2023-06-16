@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzTYGBg0CABG+DAGkg0MWxc5gAAud8GIQ==",
+         "data":"eJx7w8DAoIEDv4FiQvIGODCyfgMkfQZYzMcnj898AIV6ETE=",
          "encoding":"base64",
          "height":6,
          "id":1,
@@ -13,13 +13,13 @@
          "opacity":0.5,
          "type":"tilelayer",
          "visible":true,
-         "width":6,
+         "width":8,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgY8BqIDdAwSAwAJMQClw==",
+         "data":"eJxjYBjc4C4UG6BhmDgATGgENQ==",
          "encoding":"base64",
          "height":6,
          "id":2,
@@ -27,7 +27,7 @@
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":6,
+         "width":8,
          "x":0,
          "y":0
         }, 
@@ -50,20 +50,20 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":2147488710,
-                 "height":16,
+                 "gid":2147490967,
+                 "height":24,
                  "id":905,
                  "name":"",
                  "properties":[
                         {
                          "name":"object",
                          "type":"string",
-                         "value":"lofty_irisil_irisaplushie"
+                         "value":"lofty_irisil_irisamerchantv1"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
+                 "width":32,
                  "x":16,
                  "y":40
                 }],
@@ -96,8 +96,7 @@
          "visible":true,
          "x":0,
          "y":0
-        },
-    
+        }, 
         {
          "color":"#00ffff",
          "draworder":"topdown",
@@ -120,7 +119,8 @@
          "visible":true,
          "x":0,
          "y":0
-        }, 
+        },
+    
         {
          "draworder":"topdown",
          "id":9,
@@ -173,8 +173,7 @@
         {
          "firstgid":2271,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/ancient.json"
-        },
-    
+        }, 
         {
          "firstgid":2434,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/apex.json"
@@ -182,7 +181,8 @@
         {
          "firstgid":2805,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/avian.json"
-        }, 
+        },
+    
         {
          "firstgid":3110,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/floran.json"
@@ -198,8 +198,7 @@
         {
          "firstgid":3819,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/hylotl.json"
-        },
-    
+        }, 
         {
          "firstgid":4051,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-race\/novakid.json"
@@ -215,7 +214,8 @@
         {
          "firstgid":5636,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/door.json"
-        }, 
+        },
+    
         {
          "firstgid":5768,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/farmable.json"
@@ -223,8 +223,7 @@
         {
          "firstgid":5843,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/furniture.json"
-        },
-    
+        }, 
         {
          "firstgid":6197,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-category\/light.json"
@@ -273,8 +272,7 @@
         {
          "firstgid":8273,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-type\/farmable.json"
-        },
-    
+        }, 
         {
          "firstgid":8351,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-type\/loungeable.json"
@@ -282,7 +280,8 @@
         {
          "firstgid":8632,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-type\/noisy.json"
-        }, 
+        },
+    
         {
          "firstgid":8673,
          "source":"..\/..\/..\/tilesets\/packed\/objects-by-type\/teleporter.json"
@@ -298,5 +297,5 @@
  "tilewidth":8,
  "type":"map",
  "version":"1.10",
- "width":6
+ "width":8
 }

@@ -1,0 +1,68 @@
+{
+  "objectName" : "lofty_irisil_irisamerchantv1",
+  "colonyTags" : ["pretty","lofty_irisil"],
+  "rarity" : "Common",
+  "description" : "Get your five-eyed cutie paraphernalia here!",
+  "shortdescription" : "Irisa Merchant",
+  "category" : "decorative",
+  "price" : 50,
+  
+  "apexDescription" : "She sells souvenirs that wouldn't be legal back home.",
+  "avianDescription" : "She sells things that yick me out.",
+  "floranDescription" : "Ssshe sssells thingsss.",
+  "glitchDescription" : "Enamored. Simultaneous dancing and entrepreneurship is inspiring.",
+  "humanDescription" : "She'll get tired eventually... maybe. In the meantime, I can buy stuff from her.",
+  "hylotlDescription" : "There is nothing cute about this merchant or her goods.",
+  "novakidDescription" : "Just like the saloon, except more eyes, and selling different stuff.",
+  "irisaDescription" : "It's really hard to animate something like this at this resolution.",
+  
+  "interactAction" : "OpenCraftingInterface",
+  "interactData" : {
+    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "paneLayoutOverride" : {
+      "windowtitle" : {
+        "title" : "Irishop",
+        "subtitle" : "An eye for an eye! Let's trade!",
+        "icon" : {
+          "file" : "/interface/crafting/lofty_irisil_storeicon.png"
+        }
+      },
+      "imgPlayerMoneyIcon" : {
+        "visible" : false
+      },
+      "lblPlayerMoney" : {
+        "visible" : false
+      }
+    },
+    "filter" : [ "lofty_irisil_irishop" ]
+  },
+  
+  "inventoryIcon" : "irisamerchantv1icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "irisamerchantv1.png:<color>.<frame>" } ],
+	  "flipImages" : true,
+	  "direction" : "left",
+	  
+      "imagePosition" : [-16, 0],
+      "frames" : 12,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "imageLayers" : [ { "image" : "irisamerchantv1.png:<color>.<frame>" } ],
+	  "direction" : "right",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 12,
+      "animationCycle" : 1.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "npcToy" : {}
+}

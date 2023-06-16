@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "eyepiles", "count" : 1 },
+	{ "item" : "treasurehoard", "count" : 1 },
+	{ "item" : "bookpiles", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_guide-codex",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop" ]
+}

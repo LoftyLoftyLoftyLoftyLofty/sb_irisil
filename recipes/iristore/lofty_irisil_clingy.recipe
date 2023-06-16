@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "lofty_irisil_lurkingirisa", "count" : 1 },
+	{ "item" : "hikerback", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_clingy",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop" ]
+}

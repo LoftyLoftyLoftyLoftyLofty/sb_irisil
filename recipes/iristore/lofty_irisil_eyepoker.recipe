@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "drillspear", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_eyepoker",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop" ]
+}

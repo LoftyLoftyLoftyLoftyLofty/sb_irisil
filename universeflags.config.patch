@@ -7,7 +7,7 @@
 			"type" : "placeDungeon",
 			"dungeonId" : "lofty_irisil_irisamerchant",
 			"targetInstance" : "outpost",
-			"targetPosition" : [603, 650]
+			"targetPosition" : [602, 650]
 		}
 	}
 ]

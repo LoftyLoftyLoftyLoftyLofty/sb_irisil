@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "glitchdecree", "count" : 1 },
+	{ "item" : "smallbattery", "count" : 1 },
+	{ "item" : "bookpiles", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_glitch-codex",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop" ]
+}
