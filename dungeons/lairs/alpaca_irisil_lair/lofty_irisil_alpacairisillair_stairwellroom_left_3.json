@@ -239,7 +239,7 @@
                  "visible":true,
                  "width":30,
                  "x":112,
-                 "y":96
+                 "y":104
                 }, 
                 {
                  "gid":2147487086,
@@ -445,7 +445,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 

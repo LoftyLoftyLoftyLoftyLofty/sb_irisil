@@ -110,6 +110,14 @@
     },
 	
 	//spookit graveyard
+	{
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_b",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_b.json" ]
+    },
 	
 	//snuffish fountain
 	
@@ -124,7 +132,7 @@
 	//////////////////////////////////////////////////////////////////////
 	//32x32 encounter zones
 	//////////////////////////////////////////////////////////////////////
-	
+	/*
 	//crystal geode with diamonds and skimbus
 	{
       "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1",
@@ -146,7 +154,7 @@
     },
 	
 	//purple geode with monopus
-	
+	*/
 	//////////////////////////////////////////////////////////////////////
 	//endcaps - these are set to 0 chance but once they are the only remaining option they will always spawn
 	//////////////////////////////////////////////////////////////////////

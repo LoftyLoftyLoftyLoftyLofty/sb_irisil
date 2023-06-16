@@ -595,5 +595,37 @@
 				]
 			}
 		]
-	]
+	],
+	
+	"lofty_irisil_alpacamine_tombhiddentreasure" : 
+	[
+		[
+			1, 
+			{
+				"fill" : 
+				[
+					{"item" : [ "lofty_irisil_alpaca-codex", 1]},
+					{"item" : [ "diamond", 1]}
+				],
+				"allowDuplication" : false
+			}
+		]
+  ],
+	
+  "lofty_irisil_alpacamine_tombtreasure" : 
+	[
+		[
+			1, 
+			{
+				"fill" : 
+				[
+					{"item" : [ "alpacafossil1", 1]},
+					{"item" : [ "commonsmallshield", 1]},
+					{"item" : [ "rareaxe", 1]},
+					{"item" : [ "treasurehoard", 50]}
+				],
+				"allowDuplication" : false
+			}
+		]
+  ]
 }

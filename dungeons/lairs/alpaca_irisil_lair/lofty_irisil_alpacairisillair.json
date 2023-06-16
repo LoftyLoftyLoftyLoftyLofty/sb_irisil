@@ -1850,7 +1850,7 @@
                  "y":328
                 }, 
                 {
-                 "height":48,
+                 "height":80,
                  "id":834,
                  "name":"",
                  "properties":[
@@ -2001,6 +2001,23 @@
                  "width":24,
                  "x":768,
                  "y":432
+                }, 
+                {
+                 "height":112,
+                 "id":927,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"stagehand",
+                         "type":"string",
+                         "value":"objecttracker"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":176,
+                 "x":536,
+                 "y":104
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -2009,7 +2026,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":927,
+ "nextobjectid":928,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

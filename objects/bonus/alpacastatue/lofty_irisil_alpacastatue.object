@@ -1,0 +1,36 @@
+{
+  "objectName" : "lofty_irisil_alpacastatue",
+  "colonyTags" : ["pretty","valuable","alpaca"],
+  "rarity" : "Legendary",
+  "description" : "An Alpaca chiseled outtae stone.",
+  "shortdescription" : "Alpaca Statue",
+  "category" : "decorative",
+  "price" : 200,
+  "printable" : false,
+
+  "apexDescription" : "Seeing things like this makes me want to climb a mountain.",
+  "avianDescription" : "How majestic!",
+  "floranDescription" : "Alpaca flavor worth making ssstatue for.",
+  "glitchDescription" : "Awed. This mighty warrior would have made a perfect royal guard.",
+  "humanDescription" : "Not as fluffy as the real thing.",
+  "hylotlDescription" : "Someday this race will be as noble as ours.",
+  "novakidDescription" : "Never did meet one of them 'pacas that wasn't easy to get along with.",
+
+  "inventoryIcon" : "lofty_irisil_alpacastatueicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "lofty_irisil_alpacastatue.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+	  "spaceScan" : 0.1,
+      //"spaces" : [ [1, 0], [1, 1], [1, 2], [1, 3], [2, 0], [2, 1], [2, 2], [2, 3], [2, 4], [2, 5], [2, 6], [3, 0], [3, 1], [3, 2], [3, 3], [3, 4], [3, 5], [3, 6] ],
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "npcToy" : {}
+}
