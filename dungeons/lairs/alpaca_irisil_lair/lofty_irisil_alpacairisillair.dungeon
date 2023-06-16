@@ -96,7 +96,7 @@
     },
 	
 	//////////////////////////////////////////////////////////////////////
-	//mineshaft layer permutations, up to one of each
+	//mineshaft first layer (monster den) permutations, up to one of each
 	//////////////////////////////////////////////////////////////////////
 	
 	//crustoise bone pit
@@ -109,31 +109,23 @@
       "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_a.json" ]
     },
 	
-	//petricub cavern
-	{
-      "name" : "lofty_irisil_alpacairisillair_mine_layer1_b",
-      "rules" : [
-        [ "maxSpawnCount", [1] ],
-		[ "ignorePartMaximumRule" ]
-      ],
-      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_b.json" ]
-    },
+	//spookit graveyard
 	
-	//beeg splitter
-	{
-      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c",
-      "rules" : [
-        [ "maxSpawnCount", [1] ],
-		[ "ignorePartMaximumRule" ]
-      ],
-      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c.json" ]
-    },
+	//snuffish fountain
+	
+	//////////////////////////////////////////////////////////////////////
+	//mineshaft second layer (encounter zone) permutations, up to one of each
+	//////////////////////////////////////////////////////////////////////
+	
+	//////////////////////////////////////////////////////////////////////
+	//mineshaft third layer (irisil lair)
+	//////////////////////////////////////////////////////////////////////
 	
 	//////////////////////////////////////////////////////////////////////
 	//32x32 encounter zones
 	//////////////////////////////////////////////////////////////////////
 	
-	//crystal geode with diamonds
+	//crystal geode with diamonds and skimbus
 	{
       "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1",
       "rules" : [
@@ -153,15 +145,7 @@
       "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter2.json" ]
     },
 	
-	//alpaca forgemaster
-	{
-      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter3",
-      "rules" : [
-        //[ "maxSpawnCount", [1] ],
-		[ "ignorePartMaximumRule" ]
-      ],
-      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter3.json" ]
-    },
+	//purple geode with monopus
 	
 	//////////////////////////////////////////////////////////////////////
 	//endcaps - these are set to 0 chance but once they are the only remaining option they will always spawn

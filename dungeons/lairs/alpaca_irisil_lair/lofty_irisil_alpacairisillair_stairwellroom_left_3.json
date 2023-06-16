@@ -126,6 +126,12 @@
                  "height":16,
                  "id":874,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"healingItem\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -138,6 +144,12 @@
                  "height":16,
                  "id":875,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"stim\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -433,7 +445,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 

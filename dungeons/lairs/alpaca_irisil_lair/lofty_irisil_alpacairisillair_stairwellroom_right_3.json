@@ -66,6 +66,12 @@
                  "height":40,
                  "id":954,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"alpineTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,

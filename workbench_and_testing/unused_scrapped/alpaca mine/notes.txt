@@ -1,0 +1,6 @@
+This was my first real foray into making dungeons hook together procedurally in Starbound.
+
+At first, I wanted a big, sprawling mine beneath this Alpaca hut. 
+Eventually, the scale of the mine dwarfed the hut entirely and it just didn't feel Alpaca down there anymore.
+
+I opted for a much smaller design that felt 'cozy' and 'alpaca sized', but am keeping my experiments in this folder for posterity.

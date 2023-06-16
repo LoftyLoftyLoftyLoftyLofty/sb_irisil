@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt3E1u3DAMBWCfpJdIN7nbLHKAbgsUmJyn2aVXag3EgCuIMiU+iqTMAR4KdMa1fr6RacXpx7ZtH5lMJpPJZDKZTCaTyWQymYxifoNj3Z+MXxvpZr3MNJJu4sXaR7rxH2sL6SZGRues9qI++15JuokV6VzVXhwnaDfW47h6UNeE2qvHSbrxHWT9QHkZcYJ0Yz3G0YM24t1LmvFppXU9evzLTyL7e69EHqB2WY97tGg78e4lzehaGb1u1F5evKQZvBVErVFzw\/FStkXDS5rBWEE5odx48pJmxq1oOSnD8VIeo+klzcT3QtUvP4ikmblWjlzNFzXP3Pnevv58Erl6T9NLmhn3QtUPXC\/HccfrmO9ta5tq5TnQn\/SiZ0XTy8vXe7Ouee+D\/b+zGYkXqt7keqGOn+lF4sZ67rx5oeoA7frFwsuIG+u582Tlrl563VjPoRcrrew15RsRjpf9c6t4uYsZiZd9Xn9VglpfrI\/PGhhn5fDieb6tvKxqBuGFGnMP823pZTU3iLHw4oVql\/R4xBit4AY1BunlHm5meaF+tsP9+Q93vst7ml4v1PEaXqKZQfX5c\/vfx0uRN2FWqV8iu0FaObzU7qelWanejWoGbaVcX9Dx4EX7eQivbjSsaORcDyHqH+nxM714MaNpRWtd6Vkf3k4510\/7e98v8tjoemvG8zOe3CDbz1kPkHVL7\/XkOLb08u0iZy9lH15P\/VzZDLrd3OuH1fpC\/Tvl\/RqVVlvOfV3NjEZ7e+oNRB9GvZzdXK0pVCgnK5rRamtEL4hwavOIZma0NZIX7fs3KzdRrFyZWdXLHyJRzcy00jKzqhePbiJZsfLC2W+bcT3imvG2xniy4nF9QafXi6c1xpsVj17Qe4aR1xhvVjx6QYXrxcKMRy\/c67mGl\/Oc9XpBm5XUv5ZmPBipjRl6rvY8tzW8aJqx9CK5T9DwIrkeaXvxYma2FdQ9ZXrhmUHbmeFlxMjVGN3Ri9QMwo+mF4mTq7HRrl969+s8eLE2Y2GEMyalF3Q8ry9IM5ZeZjmpeUH\/jkB0L9pmpF5mW8n1BWdmphcLJ1r1y+j+7hGPXrTum7heED6kTrx5eYLOr+VlphmvVjx5eYDOn170rKQXezPp5d5ees1QfdCocyN44e7XRahfuF64bq76oXWf5NlL7\/0R8l7e2suVG6kXiaHIXtD\/jwjHi+Q7Nvq97vUyaobrJqoXjfXliCcvpRnumGqZ8eJFsr8rmYsZ1++WF66pHivezKC97JE8X+fdCtdL63MjXrTMePAief4lqpdeW63xax3DMaBZw9zJC8JKr5deM9rfl\/Qy10pt\/iXXMAsjo+PyuenXL9a\/D4t0Mmql5SWSldKLxp6Z5fqibWV0zDX7iB6b8rjzXHl4vs6jE+naouFl9DzS9mrulVl4mWVl9Fwz+odeUzQzur8r9aLlBGlldC4+hOeY6dm7l1k+UOekPFB\/X6b3HB6NrOBF0mcNL9x7UcnaYulkthdLH6Ntoo6r7dWN7GNYz71nLz1zZT0mV6Hme1UjLS+z9+si+Gi5sG6LhZeR++mr51VWDmpfPZPJZMr8BZNVSl0=",
+         "data":"eJzt3U1u2zAQBWCdpJdIN7mbFzlAtwUKOOdpdu2VWqERwBIaiT\/z80g+Aw8N4jARyc\/jkeykH9u2fTAMwzAMwzAMwzBMYX4qJ3o+zNjR9ki3jFaibNIsU5Joj\/TKjGqTXtdOtDVaZWa1Sa9zJ9oSrTLeNs9u0te+n4RWGWujpU7PfHp4jV53Jt5nidMSn9Zeo\/eAiTcqOW3xaek1ei+YOJ8jOaVVrHgblZzun3\/8zXch+32vQh6Gxxq9P0yMUTplvI22Pj+f3VCd0uq4RjV6yTOvJU7zY\/FwSqtjOdXyKXlFdkqr+EatfOYpcZqP8XRKq7hG0ZxK\/ek3IXQ6Xnr2586J5KvU2fb571PI3X1eTmkV12jqNP98rdNj3HE7nG3bteWrPBXmR6sYQXX68nmfV2\/xrrAWtIppNHUqnceUOpXGezrV9Bq9t7Okdt2lPs+6P41wquE1en9nCZ3ae43e4xmi1Yvt5ypvQkqc7l83q1NaxTC6Z\/f04yRa9TR6PHvV8Y0eTpGdITilVwyn0l4jOENySqsxRpGcSsfVO95izWiWTkdySq8+RkucSq+9l74+X+osP0evdSqN93BKq7ZGf23\/u3zJ8taZGftTevU3ejg9uy7Vm1nPo+jV32heT7WD4NTzfYErWvUwapG039Xob3vHRzqd3aunUas6WlMP35Kk\/fF+39ebPDa5n454\/+oqVr3raOpKsy+tfd4+xuZOv9wkdZrP4TWZZ7TTWbxark3p83RUPZW+T379QcrVsaRzjTY6utUoo7lTjbm0Ok293tXQvJ4eH0s+Ea2O5tV6LUZ02lK7r+oostlofwhGS6zO4rTnGgWtxhu9szqr099CUK0ieo1ah5Wcjuo12uaqTkuu03s875dajXaK4hXJ6Az19C61TmkVzyiiU+3XGkauqVFW0YwiOtVKqdMRrHp7RfJ57JGF09RKrVPtx0rPeVW0zQirCDbP9krbyJ7nNofTFa0i+DzbJwunPc\/71k5Htzqa0RqbV\/tDp2VWkcyiO22xebc3KzrttRrtFtVpj8+7PbHuT2uv8yM4XdVqhM2Svcidage5nmpaXdGpl88zp9q\/czq6U2SrkU69jbKe6lmdoaYi+rTqT1tfjzqC6BT1OoC1Uw2XvT7RnD4V19vCKaJVS6dIRpGcPhTXexWn2lYtnGoYpdPxrdIpnbY49baq6TS3qmV2BKel1\/lH6E9LnXp61XYqWdVwi+y09nxf85pYtFMvr95Oe+yO7FT771mWOO15bLfWk1Gctlot9TqqU4t6egTJqZVVC6eWVlGc9rwe1TLGs0+6clpjeQSnSFa1ne7peT+\/tdNeo6VOPa1aOrWyiuC0x9yoTnt7BASn0rGlVkvmYLEPKznVMFrrtMZqq1lLo1ahU1ujZ+56egUNt6PYbN2PX5t9f1r7fv6WMV4+W432Or3KSDW01WjuNDIW9dTaaOuao1jVtKZtNB+X7rfF\/yNl+Tf9JafaPntr6UxOW+fXu07RdVS7nnoZbf1ZKEZrrfbMLfpxrBUNp1Y+NY1q74XW+YRGDTybW+TjF9Gph0sNo6hOc68ac5vFJprTmuNFcKptNI3GvGbyGem095hnq6U9ZqP9zOLU+vgjfr6XU8lttBkEp7XX+Vd7fEcZlfrZVZJfnyqtp0eij39VpwzDMMy\/\/AGtXTa3",
          "encoding":"base64",
          "height":90,
          "id":1,
@@ -13,13 +13,13 @@
          "opacity":0.5,
          "type":"tilelayer",
          "visible":true,
-         "width":140,
+         "width":170,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJztm21u3SAQRd1fXVP29n68BXQBlZo1vW6ptRpUQvgY4M4M2PdIo0ZqwDYc8zHBx0EIIYQQQgghhBBCCCGEEEIIIUSL90wQkpLzhN6QFIkn9IaMeEJv7gt9Ib08jMuRvaEv1wY9b5z9\/v3bv+iBvqwNYq2R84b9fi1QnpS8oS\/XQMuTNOjLNdjVlx\/g+ogczXf\/kfyLgr5ck9iX50D8in4O+6uRfRbZg9MTqzkvty8je2HtC73B4THne\/lCb+a5oy\/0Zpx0vfg8vq4p00jL5KL2e\/Tlerz9jZ+ZePv4\/533Ig\/vG9ic3BhwelGKuNyO0Bc8pxeP47MfOXZ0hr7MkxtfJL6EsjtBX\/D0+HJSckYr\/9pab9egLxhGx5e4PLknufVt4DkZ9Oo6xONLbj89G1fYj5Ov1PbTsxFYzRmehxjjpRCl9dBKztCXPtL+RUfwRfL3hPhvE89j3Ku0njN4fmaO1niAWrf05nPCtUfXPGk98b28+qoiH0jmD\/T4UiN2Ii77nIjYuxDhOTm2yBhdb4wiqS\/tM9QYF\/uSPieRsZovufdbY4xLn5Nji5xVfCn1V1xGY8\/GMaYfb19q77aGL78LQW\/kePnSmgc0x5eaNxx\/6nj4IlkzWMxHdKYPj\/lImq\/TWO+m616pL3Sm\/t557KcDcZ5NK2fIMaaP1jjt5Uuar9PKGXItI0M6n2v4EqJELV+HuofSeojO\/Gdk7YfuqxatfB0ClC9XdWZmn2DpiyRfh6C137qjM6g9pZUv0nwdglFfas7s6M6II602svClJ1+HQJLPmXFmdX9mPGm1jbYvvfk6BLO+7OjMrCOSNkl9QcdIvg6BNF+McsYTK09yvmh8H1Ajl69DgPJldWesXdEeX2qU8nUIkL5InbHEwxOt9Yukvly+TuLYyD2g2szTF4Qfs554+WJxxk3DFy9nVnLF2her85D0RccVS18sz85q+eLhzB19sT5n7emL1jhzCK+9+3zkcSbf2xdtbwIe3mj60pOvQ8cKvlh5E6PtjMd+OlD6jlXrfB3qHRt9ry3RcsbLl9L3sOhYyZfVnFnFl1burXa+bqYvLObvmi9SpyxBtwXalxat83WruyL1pfZ71uzqi\/f3sJq+9LpVQ1JGMn5ptIeVL9bfw2q50utLrzPa78sOvnh+D4t2Jdf\/M3PYofjM6HZ5Hfq+eH8Pi\/Rk1JWaLzu5kvqCjpHzdTu5Mtrmms+Ibpu0XNxXK5yvW9GT2bFFw5fR68zer2aurEbpfN0uroxey+L50GOKZkjWQxr5Oi1PkK6M9sXsNSx9RvuCztdZ+YG6Zq6+A3yd3jqsHZH6gs7XWTpi7Quq\/lU9afmCzNdZ+4G6h1JdAa36V46cL+h83WrtOHv9wMhzevc32hetfN2V2jBG+pze96zhi3e+bpcghBAt\/gBI2xT+",
+         "data":"eJztnEFu3DAMRd1Vz5S7zWIO0AMUaM+TZXulZtAIcFVZpqhPkZL+A4gEyDhjWc+0RNk+DkIIIYQQQgghhBBCCCGEEEIIIYQQQsgIfhaCkCiU\/KSvJAoSP+kr8ULjJ30lo6GnZBYeH\/GuiIfHzpJtoafEAvT1+eXb1y9\/g56SXhBjyZKv2nxKyBmUn1e+0lPSg5WfedBT0sOsnn7rbzqZDK1DLfMgekoQjPD0qYgfp99TvSAF2Q9LT0eNLUp1BrIWq3hKX+enNqZbzVP6Oi87ekpf5yOfhzyP\/+cqeeTblKL2OXpKULx9xPdCvH3+vXVNPlI8YEeJjKSU814+XsV5O2\/n6OnevHx8HP96WWJGV+npvJTyqcTTtK23e\/R0T1o8fXHlau4\/yrW7eRw9XRdtPj1v750rJUHWoTRvSjw7w9tnMj\/nfFqqS2njnJ\/TdZuekl5qdSltnD31dPUK3hc4F78MouSpl6tX0NM5yL2yyqeSddfzGu7z0Puc\/59X8P7VObnLfxbj0zu33rNtjqPd1eRd3oa3zzaSeZBcp63GpzVHc0+fHZE8Pe9LaidzaWxaxpMIJJ7m+VKb0\/Ptzj\/zdpLYRPO0dE1H5O488nYyl8YniqfoOf\/5uyS1CBIfb08t6lI1T39fBH2Nj5enVrVTST6t+cp8GxMPTy3r+y3Xfbo6Bx7XfWmd36I2ls+npJ7SVT+izKOu5lWWaw3MqXMQrS51V+dHrzVwrBob6XjNwtMUmjo\/ah80dQC6OgZJDTHvK7QjCamjkT2lq1ikfpb6aaSnV3P\/kZ7S1bG0uFnrn1Ge1upTUTytuUpn5WjcvOubEZ7e1VBHe9rrKr0t0+PnXZ9Yeyqp80fzlK7K6XVT0he5p+jQ1PkRSNepUK7uyCg\/S56inzvV1PkRoDylq2VGO2qdTzV1fgRIT6Wu7oCHn1bjU8l6VKnOnwK9D6hjtqOnCC97\/fTy9GpehcTC091cjeToaE9rc38k9LSfSI6O9PSuPoXEytOdXN3RU0kNFYmnpyu5mojgqrWn0vv5kXh7uqqvCQ9fLT1tqfOjI4Knq\/t6xtpVj7pUrc5veT8\/6tzW5pMdsHLVy1Pr+\/lTRPKUrsby9G49qlbnl4xlc7dHjpNqnra4vDroPkB7mpA6qg2tp72OSj2lq\/N6inyWP5qnvWOECEj2TdIGi34Y5an3u6VQjrZ62uKqp7Ot+9gbET0d\/W4pS0dL3vWMFTy9He2mtj9en7f21PPdUmg\/tY72emrl8CyO5p5GCM0zAF6Oao95FFeRrqEdzbdD19g9ngGw9rM3l67kqbZ9vcfJO3\/mIXG05ukoR7XfFcXRBDIPonNotDg7J3G05KmVn0hH0X2BApEDS23zPH89PL17188ILxGORvU0gTwHV3FT6qnkXT8j3IzmqSWIdq3k552n0nf9ePiyWi69YsW8iPS05V0\/3sfR4\/u92M3Nmqet7\/rZ7fyOgvdx8PQUWedfNQghhMTiD9F3cUs=",
          "encoding":"base64",
          "height":90,
          "id":2,
@@ -27,7 +27,7 @@
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":140,
+         "width":170,
          "x":0,
          "y":0
         }, 
@@ -490,7 +490,7 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":560,
+                 "x":664,
                  "y":656
                 }, 
                 {
@@ -574,7 +574,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":536,
+                 "x":640,
                  "y":672
                 }, 
                 {
@@ -612,18 +612,6 @@
                  "width":40,
                  "x":496,
                  "y":624
-                }, 
-                {
-                 "gid":210,
-                 "height":8,
-                 "id":771,
-                 "name":"60 tiles left or right from exterior",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":560,
-                 "y":712
                 }, 
                 {
                  "gid":5062,
@@ -996,6 +984,12 @@
                  "height":16,
                  "id":892,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"alpineTreasure\"]}"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1050,6 +1044,132 @@
                  "width":16,
                  "x":432,
                  "y":232
+                }, 
+                {
+                 "gid":3400,
+                 "height":40,
+                 "id":919,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":600,
+                 "y":624
+                }, 
+                {
+                 "gid":2147489897,
+                 "height":16,
+                 "id":920,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":640,
+                 "y":600
+                }, 
+                {
+                 "gid":2147489897,
+                 "height":16,
+                 "id":921,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":696,
+                 "y":600
+                }, 
+                {
+                 "gid":7346,
+                 "height":24,
+                 "id":922,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"lofty_irisil_alpacamine_largebarreltreasure\", \"instrument\" ] }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":640,
+                 "y":408
+                }, 
+                {
+                 "gid":7346,
+                 "height":24,
+                 "id":923,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"lofty_irisil_alpacamine_largebarreltreasure\" ] }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":664,
+                 "y":408
+                }, 
+                {
+                 "gid":7348,
+                 "height":16,
+                 "id":924,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"lofty_irisil_alpacamine_smallbarreltreasure\", \"augments\" ] }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":688,
+                 "y":408
+                }, 
+                {
+                 "gid":7348,
+                 "height":16,
+                 "id":925,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"lofty_irisil_alpacamine_smallbarreltreasure\" ] }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":704.666666666667,
+                 "y":407.666666666667
+                }, 
+                {
+                 "gid":7348,
+                 "height":16,
+                 "id":926,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"lofty_irisil_alpacamine_smallbarreltreasure\", \"seed\" ] }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":624,
+                 "y":408
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1096,28 +1216,6 @@
                  "width":8,
                  "x":568,
                  "y":304
-                }, 
-                {
-                 "height":8,
-                 "id":793,
-                 "name":"Alpaca",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"human"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"alpaca"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":456,
-                 "y":216
                 }, 
                 {
                  "height":8,
@@ -1446,7 +1544,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":16,
+                 "x":32,
                  "y":464
                 }, 
                 {
@@ -1458,8 +1556,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":216,
-                 "y":272
+                 "x":200,
+                 "y":264
                 }, 
                 {
                  "gid":202,
@@ -1470,8 +1568,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":352,
-                 "y":128
+                 "x":344,
+                 "y":112
                 }, 
                 {
                  "gid":202,
@@ -1483,7 +1581,7 @@
                  "visible":true,
                  "width":8,
                  "x":576,
-                 "y":72
+                 "y":48
                 }, 
                 {
                  "gid":202,
@@ -1494,8 +1592,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":800,
-                 "y":160
+                 "x":832,
+                 "y":152
                 }, 
                 {
                  "gid":202,
@@ -1506,8 +1604,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":952,
-                 "y":296
+                 "x":992,
+                 "y":304
                 }, 
                 {
                  "gid":202,
@@ -1518,8 +1616,8 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":1048,
-                 "y":512
+                 "x":1208,
+                 "y":464
                 }, 
                 {
                  "gid":203,
@@ -1530,7 +1628,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":1112,
+                 "x":1240,
                  "y":632
                 }, 
                 {
@@ -1542,7 +1640,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":1112,
+                 "x":1240,
                  "y":624
                 }, 
                 {
@@ -1578,7 +1676,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":1112,
+                 "x":1240,
                  "y":608
                 }, 
                 {
@@ -1676,10 +1774,22 @@
                  "width":8,
                  "x":624,
                  "y":536
+                }, 
+                {
+                 "gid":210,
+                 "height":8,
+                 "id":918,
+                 "name":"60 tiles left or right from exterior",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":664,
+                 "y":712
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -1899,7 +2009,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":918,
+ "nextobjectid":927,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
@@ -2052,5 +2162,5 @@
  "tilewidth":8,
  "type":"map",
  "version":"1.10",
- "width":140
+ "width":170
 }
