@@ -1,0 +1,15 @@
+[
+  {
+	"op" : "add", 
+	"path" : "/surfacePlaceables/items/-", 
+	"value" : 
+	{
+		"mode" : "floor",
+		"priority" : 1,
+		"variants" : 1,
+		"distribution" : "/biomes/distributions.config:mainBiomeMicrodungeon",
+		"type" : "microdungeon",
+		"microdungeons" : [ "lofty_irisil_alpacairisillair" ]
+	}
+  }
+]

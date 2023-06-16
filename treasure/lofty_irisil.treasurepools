@@ -448,6 +448,23 @@
 	]
   ],
   
+  "lofty_irisil_irisilweapons" : 
+  [
+	[
+		0, 
+		{
+			"poolRounds" : 
+			[
+				[1.0, 1]
+			],
+			"pool" : 
+			[
+				{"weight" : 1.0, "item" : [ "lofty_irisil_eyepoker", 1]}
+			]
+		}
+	]
+  ],
+  
   "lofty_irisil_dungeoncrawlerTreasure" : 
   [
 	[
@@ -457,7 +474,7 @@
 			[
 				{"item" : [ "lofty_irisil_glitch-codex", 1]},
 				{"item" : [ "lanternstickback", 1]},
-				{"item" : [ "lofty_irisil_eyepoker", 1]}
+				{"pool" : "lofty_irisil_irisilweapons"}
 			],
 			"allowDuplication" : false
 		}
@@ -627,5 +644,40 @@
 				"allowDuplication" : false
 			}
 		]
+  ],
+  
+  //it's yours my friend
+  "lofty_irisil_alpacamine_miningcratebombs" : 
+  [
+		[
+			1, 
+			{
+				"fill" : 
+				[
+					{"item" : [ "mininglantern", 1]},
+					{"item" : [ "climbingrope", 1]},
+					{"item" : [ "bomb", 5]},
+					{"item" : [ "money", 35]}
+				],
+				"allowDuplication" : false
+			}
+		]
+  ],
+  
+  "lofty_irisil_alpacamininghousetreasurebarrel" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lanternstickback", 1]},
+				{"item" : [ "climbingrope", 10]},
+				{"pool" : "healingItem"},
+				{"pool" : "lofty_irisil_irisilweapons"}
+			],
+			"allowDuplication" : false
+		}
+	]
   ]
 }

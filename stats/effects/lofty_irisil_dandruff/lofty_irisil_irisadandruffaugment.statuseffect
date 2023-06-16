@@ -1,0 +1,24 @@
+{
+  "name" : "lofty_irisil_irisadandruffaugment",
+  "effectConfig" : {
+    "range" : 3,
+
+    // For the old visual effect, optional
+    "visualProjectileCount" : 0,
+    "visualProjectileType" : "lofty_irisil_largeslowcloud",
+    "visualProjectileSpeed" : 10,
+    "visualProjectileTime" : 1.5,
+    // "visualDuration" : 0.2,
+
+    "damageProjectileType" : "lofty_irisil_largeslowcloud",
+    "damageMultiplier" : 1,
+
+    "cooldown" : 3
+
+  },
+  "defaultDuration" : 60,
+
+  "scripts" : [
+    "thorns_except_dandruff.lua"
+  ]
+}

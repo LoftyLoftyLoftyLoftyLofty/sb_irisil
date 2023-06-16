@@ -1,0 +1,22 @@
+{
+  "itemName" : "lofty_irisil_irisadandruffaugment",
+  "price" : 15000,
+  "rarity" : "Legendary",
+  "tooltipKind" : "eppaugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "dandruffaugment.png",
+  "description" : "An EPP module that releases venomous dander when you take damage. Yuck.",
+  "shortdescription" : "Irisa Dandruff Augment",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "lofty_irisil_irisadandruff",
+    "displayName" : "Irisa Dander",
+    "displayIcon" : "/items/augments/back/dandruffaugment.png",
+    "effects" : [ "lofty_irisil_irisadandruffaugment" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

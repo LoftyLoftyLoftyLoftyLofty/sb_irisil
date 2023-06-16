@@ -96,7 +96,7 @@
     },
 	
 	//////////////////////////////////////////////////////////////////////
-	//mineshaft first layer (monster den) permutations, up to one of each
+	//mineshaft upper layers, one of each
 	//////////////////////////////////////////////////////////////////////
 	
 	//crustoise bone pit
@@ -119,51 +119,27 @@
       "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_b.json" ]
     },
 	
-	//snuffish fountain
-	
-	//////////////////////////////////////////////////////////////////////
-	//mineshaft second layer (encounter zone) permutations, up to one of each
-	//////////////////////////////////////////////////////////////////////
-	
-	//////////////////////////////////////////////////////////////////////
-	//mineshaft third layer (irisil lair)
-	//////////////////////////////////////////////////////////////////////
-	
-	//////////////////////////////////////////////////////////////////////
-	//32x32 encounter zones
-	//////////////////////////////////////////////////////////////////////
-	/*
-	//crystal geode with diamonds and skimbus
+	//cave-in
 	{
-      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1",
+      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c",
       "rules" : [
-        //[ "maxSpawnCount", [1] ],
+        [ "maxSpawnCount", [1] ],
 		[ "ignorePartMaximumRule" ]
       ],
-      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter1.json" ]
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c.json" ]
     },
 	
-	//green geode with squeem
-	{
-      "name" : "lofty_irisil_alpacairisillair_mine_layer1_c_encounter2",
-      "rules" : [
-        //[ "maxSpawnCount", [1] ],
-		[ "ignorePartMaximumRule" ]
-      ],
-      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer1_c_encounter2.json" ]
-    },
+	//////////////////////////////////////////////////////////////////////
+	//irisil lair
+	//////////////////////////////////////////////////////////////////////
 	
-	//purple geode with monopus
-	*/
-	//////////////////////////////////////////////////////////////////////
-	//endcaps - these are set to 0 chance but once they are the only remaining option they will always spawn
-	//////////////////////////////////////////////////////////////////////
+	//this is set to chance 0 so it spawns last
 	{
       "name" : "lofty_irisil_alpacairisillair_verticalendcap",
       "rules" : [
 		[ "ignorePartMaximumRule" ]
       ],
-      "def" : [ "tmx", "lofty_irisil_alpacairisillair_verticalendcap.json" ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_mine_layer2.json" ],
       "chance" : 0
     }
   ]

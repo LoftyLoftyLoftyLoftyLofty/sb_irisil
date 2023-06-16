@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_irisamerchant",
+    "species" : "generic",
+    "rules" : [
+    ],
+
+    "anchor" : [ "lofty_irisil_irisamerchant" ],
+
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "lofty_irisil_irisamerchant",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_irisamerchant.json" ]
+    }
+  ]
+}

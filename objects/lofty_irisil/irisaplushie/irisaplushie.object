@@ -18,13 +18,26 @@
   "inventoryIcon" : "irisaplushieicon.png",
   "orientations" : [
     {
-      "dualImage" : "irisaplushie.png:<color>",
-
-      "imagePosition" : [-4, 0],
+      "imageLayers" : [ { "image" : "irisaplushie.png:<color>" } ],
+	  "flipImages" : true,
+	  "direction" : "left",
+	  
+      "imagePosition" : [0, 0],
       "frames" : 1,
       "animationCycle" : 1.0,
 
       "spaces" : [ [0, 0], [0, 1], [1, 0], [1, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+	{
+      "imageLayers" : [ { "image" : "irisaplushie.png:<color>" } ],
+	  "direction" : "right",
+
+      "imagePosition" : [-12, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaces" : [ [0, 0], [0, 1], [-1, 0], [-1, 1] ],
       "anchors" : [ "bottom" ]
     }
   ],

@@ -830,7 +830,7 @@
                  "y":272
                 }, 
                 {
-                 "gid":5910,
+                 "gid":2147489558,
                  "height":8,
                  "id":792,
                  "name":"",
@@ -1789,7 +1789,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -2021,7 +2021,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }],
