@@ -9,5 +9,5 @@
     "item" : "lofty_irisil_apex-codex",
     "count" : 1
   },
-  "groups" : [ "lofty_irisil_irishop" ]
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_codices" ]
 }

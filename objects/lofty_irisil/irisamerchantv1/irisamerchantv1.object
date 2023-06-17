@@ -18,15 +18,8 @@
   
   "interactAction" : "OpenCraftingInterface",
   "interactData" : {
-    "config" : "/interface/windowconfig/craftingmerchant.config",
+    "config" : "/interface/windowconfig/lofty_irisil_irisamerchant.config",
     "paneLayoutOverride" : {
-      "windowtitle" : {
-        "title" : "Irishop",
-        "subtitle" : "An eye for an eye! Let's trade!",
-        "icon" : {
-          "file" : "/interface/crafting/lofty_irisil_storeicon.png"
-        }
-      },
       "imgPlayerMoneyIcon" : {
         "visible" : false
       },
@@ -34,7 +27,7 @@
         "visible" : false
       }
     },
-    "filter" : [ "lofty_irisil_irishop" ]
+	"filter" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_special" ]
   },
   
   "inventoryIcon" : "irisamerchantv1icon.png",

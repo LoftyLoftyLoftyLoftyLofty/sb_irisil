@@ -1,0 +1,37 @@
+{
+  "itemName" : "lofty_irisil_irislushie",
+  "rarity" : "Rare",
+  "price" : 540,
+  "category" : "preparedFood",
+  "inventoryIcon" : "lofty_irisil_irislushie.png",
+  "description" : "Shaved ice and sweet blended juices whirled around an enormous alien eyeball.",
+  "shortdescription" : "Irislushie",
+  "effects" : [ [
+    {
+        "effect" : "lowgrav",
+        "duration" : 240
+    },
+	{
+        "effect" : "jumpboost",
+        "duration" : 240
+    },
+	{
+        "effect" : "nofalldamage",
+        "duration" : 240
+    },
+	{
+        "effect" : "lofty_irisil_slow_5",
+        "duration" : 15
+    }
+  ] ],
+  "foodValue" : 35,
+  "tooltipKind" : "food",
+  "builder" : "/items/buildscripts/buildfood.lua",
+  "maxStack" : 1,
+  "itemAgingScripts" : ["/scripts/items/rotting.lua"],
+  "rottingMultiplier" : 1.0,
+  "blockingEffects" : [
+    "wellfed"
+  ],
+  "learnBlueprintsOnPickup" : [ ]
+}

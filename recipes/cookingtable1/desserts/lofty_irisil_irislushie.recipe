@@ -1,0 +1,12 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+    { "item" : "snowcone", "count" : 1 },
+    { "item" : "carrotjuice", "count" : 1 },
+    { "item" : "kiwijuice", "count" : 1 },
+    { "item" : "alienfruitjuice", "count" : 1 }
+  ],
+  "output" : { "item" : "lofty_irisil_irislushie", "count" : 1 },
+  "groups" : [ "craftingfood", "desserts" ],
+  "collectables" : { "cooking" : "lofty_irisil_irislushie" }
+}

@@ -7,5 +7,5 @@
     "item" : "lofty_irisil_eyepoker",
     "count" : 1
   },
-  "groups" : [ "lofty_irisil_irishop" ]
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_combat" ]
 }

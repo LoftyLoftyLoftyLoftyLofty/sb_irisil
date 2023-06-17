@@ -7,6 +7,7 @@
 
 "Irisil Field Guide ^#888888;(First Edition)^reset;
 By ^red;Lofty^reset;
+
 -  1 Table of Contents
 -  2 Introduction
 -  3 Appearance
@@ -15,8 +16,9 @@ By ^red;Lofty^reset;
 -  6 Treasure
 -  7 History
 -  9 Project Info
-- 10 Special Thanks
-- 12 Licensing",
+- 11 Special Thanks
+- 13 Licensing
+- 16 Item IDs",
 
 "^yellow;INTRODUCTION^reset;
 
@@ -34,29 +36,36 @@ Irisil are generally found on ^#7800ff;mutated^reset; or ^#12a003;jungle^reset; 
 
 "^yellow;BEHAVIOR^reset;
 
-Opportunists and scavengers, irisil will typically try to flee when threatened. They will throw whatever items they have on hand at their aggressor, which usually includes eyes or other spherical objects. Irisil are also capable of shaking the dust out of their fur, releasing a cloud of oily flakes that can cause allergic reactions, dizziness and numbness. Irisa legs possess a unique plate similar to Earth's fleas, allowing irisil to leap into the air to escape danger.",
+Opportunists and scavengers, irisil will typically ^yellow;try to flee^reset; when threatened. They will ^red;throw items^reset; they may have on hand at their aggressor, which usually includes eyes or other spherical objects. Irisil are also capable of shaking the dust out of their fur, ^red;releasing a cloud^reset; of oily flakes that can cause allergic reactions, dizziness and numbness. Irisa legs possess a unique plate similar to Earth's fleas, allowing irisil to ^red;leap into the air^reset; to escape danger.",
 
 "^yellow;TREASURE^reset;
 
-Much like the rest of this universe's inhabitants, irisil are compulsive hoarders. They collect eyes and eye-shaped items and jealously guard the unevenly-stacked hoards of rounded oddities within their lairs.
+^red;Much like the rest of this universe's inhabitants, irisil are compulsive hoarders^reset;. They collect eyes and eye-shaped items and jealously guard the unevenly-stacked hoards of rounded oddities within their lairs.
 In a macabre display of cosmic irony, ^yellow;irisil eyes^reset; are considered a ^green;culinary delicacy^reset; on several planets. Florans have been observed taking these large eyes as rites of passage or keeping irisil as pets, kindred spirits for carving trophies out of their prey.",
 
 "^yellow;HISTORY (1/2)^reset;
 
-The first known encounter with irisil is detailed in the ship log of a cargo hauler operated by the Letheia Corporation returning from Exibiir Traverse II. The log describes the incident as follows:
-
-^#8888CC;\"We opened the rear bay to refuel and it was like we hit the jackpot at one of those hylotl stuffed animal arcades. They poured out of the back of the ship, climbing over us and each other, scattering everywhere.\"^reset;",
+^#888888;The first known encounter with irisil is detailed in the ship log of a cargo hauler operated by the Letheia Corporation returning from Exibiir Traverse II. The log describes the incident as follows:
+^reset;\"We opened the rear bay to refuel and it was like we hit the jackpot at one of those hylotl stuffed animal arcades. They poured out of the back of the ship, climbing over us and each other, scattering everywhere.\"
+^#8888CC;>>^reset;",
 
 "^yellow;HISTORY (2/2)^reset;
 
-^#8888CC;\"By the time we were done coughing and rinsing our eyes out, they were in the vents, under the furniture, digging holes in the insulation, and setting off alarms all over the facility. Our shipment had to be delivered before it expired and we didn't have sufficient space to store it in the depot- we had no choice but to continue with our route.\"^reset;
-Letheia Corporation has yet to respond to requests for any further information regarding this incident.",
+\"By the time we were done coughing and rinsing our eyes out, they were in the vents, under the furniture, digging holes in the insulation, and setting off alarms all over the facility. Our shipment had to be delivered before it expired and we didn't have sufficient space to store it in the depot- we had no choice but to continue with our route.\"^reset;
+^#888888;Letheia Corporation has yet to respond to requests for any further information regarding this incident.",
 
-"^yellow;PROJECT INFO^reset;
+"^yellow;PROJECT INFO (1/2)^reset;
 
-Project Irisil was a lot of fun.
-Started: 2023/05/28
-Version 1.0 Released: 2023/06/01
+Project Irisil has been a lot of fun!
+If you have suggestions or feedback, share them on the mod's Steam Workshop page.
+
+Project Started: 2023/05/28
+Version ^green;1.0^reset; Released: 2023/06/01
+Version ^green;1.1^reset; Released: 2023/06/07
+Version ^green;1.2^reset; Released: 2023/06/12
+Version ^green;1.3^reset; Released: 2023/06/17",
+
+"^yellow;PROJECT INFO (2/2)^reset;
 
 If you want to spawn irisil that aren't biome-colored, you can use this command:
 ^green;/spawnmonster ^cyan;lofty_irisil 
@@ -68,27 +77,26 @@ Source files available here:
 "^yellow;SPECIAL THANKS (1/2)^reset;
 
 ^cyan;Lemon Drops^reset;
-Tons of help with lots of things!
+This mod would not have been possible without your help and patience. 
+Thank you!
+
 ^cyan;FlynnLikesTrees^reset;
 Thank you for the incredible guide on microdungeon setup.
+
 ^cyan;Aegonian & The Elithian Races Team^reset;
-This mod was used as a reference in many ways. ^#888888;also I \"borrowed\" kelbet fleeing behavior - love you, etc.^reset;
-^cyan;Frykas & The Starforge Team^reset;
-This mod was used as a reference in many ways, especially treasure and mob spawntables.
-",
+This mod was used as a reference in many ways. ^#888888;also I \"borrowed\" kelbet fleeing behavior - love you, etc.^reset;",
 
 "^yellow;SPECIAL THANKS (2/2)^reset;
 
-^cyan;Armok
-Bluey
-Crimsie
-Nori
-NotGhost
-WinterLune^reset;
-Testing and bug reports.
+^cyan;Frykas & The Starforge Team^reset;
+This mod was used as a reference in many ways, especially treasure and mob spawntables.
+
+^cyan;Armok^reset;, ^cyan;Bluey^reset;, ^cyan;Crimsie^reset;, 
+^cyan;Nori^reset;, ^cyan;NotGhost^reset;, ^cyan;WinterLune^reset;
+Testing, feedback, and bug reports.
+
 ^cyan;Lieutenant Suisei^reset;
-Irislushie expert.
-",
+Irislushie expert.",
 
 "^yellow;LICENSING (1/3)^reset;
 
@@ -107,7 +115,56 @@ The above copyright notice and this permission notice shall be included in all c
 
 Irisil are ^green;open^reset; and ^green;free^reset;. 
 Permission is granted to include them anywhere you see fit. Enjoy!
--^red;Lofty^reset;"
+-^red;Lofty^reset;",
+
+//we can fit 15 lines of text per page, so 13 if including page title and whitespace
+"^yellow;ITEM IDS (1/4)^reset;
+
+^cyan;Crafting Materials^reset;:
+lofty_irisileye
+
+^cyan;Costume Parts^reset;:
+lofty_irisil_clingy
+
+^cyan;Food^reset;:
+lofty_irisil_eyeslices",
+
+"^yellow;ITEM IDS (2/4)^reset;
+
+^cyan;Decorations^reset;:
+lofty_irisilaf
+lofty_irisil_alpacastatue
+lofty_irisil_irisastatue
+lofty_irisil_challengeroomarrow_upleft
+lofty_irisil_eyetrophy
+lofty_irisil_irisaplushie
+lofty_irisil_lurkingirisa
+
+^cyan;Other Objects^reset;:
+lofty_irisil_invisibledockingfieldsmall
+lofty_irisil_irisamerchantv1",
+
+"^yellow;ITEM IDS (3/4)^reset;
+
+^cyan;Codices^reset;:
+lofty_irisil_alpaca-codex
+lofty_irisil_apex-codex
+lofty_irisil_glitch-codex
+lofty_irisil_guide-codex
+lofty_irisil_threadtheneedlelore-codex
+
+^cyan;Fossils^reset;:
+lofty_irisilfossil_head
+lofty_irisilfossil_torso
+lofty_irisilfossil_legs",
+
+"^yellow;ITEM IDS (4/4)^reset;
+
+^cyan;Weapons^reset;:
+lofty_irisil_eyepoker
+
+^cyan;Augments^reset;:
+lofty_irisil_irisadandruffaugment"
 
   ],
     "itemConfig" : {

@@ -2,7 +2,7 @@
   "itemName" : "lofty_irisil_irisadandruffaugment",
   "price" : 15000,
   "rarity" : "Legendary",
-  "tooltipKind" : "eppaugment",
+  //"tooltipKind" : "eppAugment",
   "category" : "eppAugment",
   "inventoryIcon" : "dandruffaugment.png",
   "description" : "An EPP module that releases venomous dander when you take damage. Yuck.",

@@ -474,7 +474,8 @@
 			[
 				{"item" : [ "lofty_irisil_glitch-codex", 1]},
 				{"item" : [ "lanternstickback", 1]},
-				{"pool" : "lofty_irisil_irisilweapons"}
+				{"item" : [ "rarespear", 1]}
+				//{"pool" : "lofty_irisil_irisilweapons"}
 			],
 			"allowDuplication" : false
 		}
@@ -674,7 +675,8 @@
 				{"item" : [ "lanternstickback", 1]},
 				{"item" : [ "climbingrope", 10]},
 				{"pool" : "healingItem"},
-				{"pool" : "lofty_irisil_irisilweapons"}
+				{"item" : [ "rarespear", 1]}
+				//{"pool" : "lofty_irisil_irisilweapons"}
 			],
 			"allowDuplication" : false
 		}

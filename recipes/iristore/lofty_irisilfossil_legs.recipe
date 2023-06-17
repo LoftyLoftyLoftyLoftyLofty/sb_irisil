@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "fossilbrushmaster", "count" : 1 },
+	{ "item" : "bonematerial", "count" : 500 },
+	{ "item" : "penguinlegs", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisilfossil_legs",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_fossils" ]
+}
