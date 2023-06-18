@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcHwI4RognkoBrqGjmbMpwPR051AxczQ8B1d4WtLAnUPZTGqH52DHAN7IAB8=",
+         "data":"eJw7zsDAcHwI4RognooFo4vjUzdqJu3NnI0Fo4vjU0eKmeS6cwYWbAlVOwcJ10DFsalHN9MSB64hwEfG2PyOy0xs7sSmDpeZx5AwPnfiUkesmdjcSYqZyPrxuROXOmqHJylmEhPv2Mwc7BgAZrLnAg==",
          "encoding":"base64",
          "height":19,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFQwmwM5KPRwEmGA1P6oLR8Bw5AABrSwFp",
+         "data":"eJxjYBha4BgV8KiZQ8\/MBhyYnRET41KLDmZgwZY43GOJQz06sMSBj6G59RgeteiA3nGE7k5izaWGO0kxc6i4k5J4GswAALGjses=",
          "encoding":"base64",
          "height":19,
          "id":2,
@@ -74,299 +74,250 @@
                  "y":48
                 }, 
                 {
-                 "gid":3310,
-                 "height":24,
-                 "id":859,
+                 "gid":2147489642,
+                 "height":16,
+                 "id":854,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":24,
+                 "width":16,
                  "x":24,
-                 "y":136
+                 "y":104
                 }, 
                 {
-                 "gid":3310,
-                 "height":24,
-                 "id":860,
+                 "gid":2147487116,
+                 "height":16,
+                 "id":858,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"produce\", \"seed\" ] }"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":48,
-                 "y":136
+                 "x":128,
+                 "y":64
                 }, 
                 {
-                 "gid":3310,
-                 "height":24,
-                 "id":862,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":72,
-                 "y":136
-                }, 
-                {
-                 "gid":3310,
+                 "gid":2147489622,
                  "height":24,
                  "id":865,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":24,
-                 "x":24,
-                 "y":104
+                 "width":48,
+                 "x":104,
+                 "y":136
                 }, 
                 {
-                 "gid":3310,
+                 "gid":6016,
                  "height":24,
                  "id":866,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":24,
+                 "width":48,
+                 "x":16,
+                 "y":136
+                }, 
+                {
+                 "gid":2147489576,
+                 "height":16,
+                 "id":867,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
                  "x":48,
                  "y":104
                 }, 
                 {
-                 "gid":3310,
-                 "height":24,
+                 "gid":2147489642,
+                 "height":16,
                  "id":868,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":24,
-                 "x":72,
+                 "width":16,
+                 "x":104,
                  "y":104
                 }, 
                 {
-                 "gid":3310,
-                 "height":24,
+                 "gid":2147489576,
+                 "height":16,
+                 "id":869,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":128,
+                 "y":104
+                }, 
+                {
+                 "gid":2147487116,
+                 "height":16,
                  "id":870,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"produce\", \"seed\" ] }"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":24,
-                 "y":72
+                 "x":104,
+                 "y":64
                 }, 
                 {
-                 "gid":3310,
-                 "height":24,
+                 "gid":2147487116,
+                 "height":16,
                  "id":871,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"produce\", \"seed\" ] }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":112,
+                 "y":48
+                }, 
+                {
+                 "gid":3480,
+                 "height":8,
+                 "id":872,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":24,
-                 "x":48,
-                 "y":72
+                 "width":40,
+                 "x":24,
+                 "y":64
                 }, 
                 {
-                 "gid":3310,
-                 "height":24,
+                 "gid":2147484853,
+                 "height":12,
                  "id":873,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":24,
+                 "width":21,
                  "x":72,
-                 "y":72
+                 "y":80
                 }, 
                 {
-                 "gid":4782,
+                 "gid":1206,
+                 "height":12,
+                 "id":874,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":21,
+                 "x":72,
+                 "y":96
+                }, 
+                {
+                 "gid":1216,
+                 "height":12,
+                 "id":875,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":21,
+                 "x":72,
+                 "y":112
+                }, 
+                {
+                 "gid":1217,
+                 "height":12,
+                 "id":876,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":21,
+                 "x":72,
+                 "y":128
+                }, 
+                {
+                 "gid":2147492516,
                  "height":8,
-                 "id":878,
+                 "id":877,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":72,
-                 "y":24
+                 "x":104,
+                 "y":48
                 }, 
                 {
-                 "gid":4930,
-                 "height":16,
+                 "gid":2147489174,
+                 "height":24,
                  "id":879,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":64,
-                 "y":32
+                 "x":96,
+                 "y":136
                 }, 
                 {
-                 "gid":4782,
+                 "gid":2147484413,
                  "height":8,
-                 "id":880,
+                 "id":884,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":104,
+                 "x":72,
                  "y":24
                 }, 
                 {
-                 "gid":7062,
-                 "height":16,
-                 "id":894,
+                 "gid":2147484594,
+                 "height":24,
+                 "id":885,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":104,
-                 "y":104
+                 "x":64,
+                 "y":64
                 }, 
                 {
-                 "gid":7062,
+                 "gid":2147484795,
                  "height":16,
-                 "id":895,
+                 "id":886,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":112,
-                 "y":104
-                }, 
-                {
-                 "gid":7062,
-                 "height":16,
-                 "id":896,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":120,
-                 "y":104
-                }, 
-                {
-                 "gid":7062,
-                 "height":16,
-                 "id":897,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":128,
-                 "y":104
-                }, 
-                {
-                 "gid":7062,
-                 "height":16,
-                 "id":898,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":104,
-                 "y":72
-                }, 
-                {
-                 "gid":7062,
-                 "height":16,
-                 "id":899,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":112,
-                 "y":72
-                }, 
-                {
-                 "gid":7062,
-                 "height":16,
-                 "id":900,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":120,
-                 "y":72
-                },
-            
-                {
-                 "gid":7062,
-                 "height":16,
-                 "id":901,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":128,
-                 "y":72
-                }, 
-                {
-                 "gid":7324,
-                 "height":16,
-                 "id":902,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"lofty_irisil_rootbeercrate\"]}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":120,
-                 "y":136
-                }, 
-                {
-                 "gid":2147490972,
-                 "height":16,
-                 "id":903,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"lofty_irisil_rootbeercratewithtreasure\"]}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":40,
-                 "y":40
-                }, 
-                {
-                 "gid":7324,
-                 "height":16,
-                 "id":904,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"lofty_irisil_rootbeercrate\"]}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":96,
-                 "y":136
+                 "x":16,
+                 "y":32
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -391,7 +342,58 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":846,
+                 "name":"Little Green Doowop Mans",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"snorecritter"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":40,
+                 "y":40
+                }, 
+                {
+                 "height":8,
+                 "id":881,
+                 "name":"Little Green Doowop Mans",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"snorecritter"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":80,
+                 "y":40
+                }, 
+                {
+                 "height":8,
+                 "id":882,
+                 "name":"Little Green Doowop Mans",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"snorecritter"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":112,
+                 "y":16
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -446,7 +448,7 @@
                 }, 
                 {
                  "height":120,
-                 "id":892,
+                 "id":864,
                  "name":"",
                  "properties":[
                         {
@@ -479,7 +481,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":905,
+ "nextobjectid":887,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

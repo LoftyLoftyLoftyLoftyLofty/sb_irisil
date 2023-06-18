@@ -1,0 +1,34 @@
+[
+	[
+	 {
+		"op": "add",
+		"path": "/planetTypes/snow/layers/surface/dungeons/-",
+		"value": [
+		  100,
+		  "lofty_irisil_alpacairisillair"
+		]
+	  },
+	  {
+		"op": "add",
+		"path": "/planetTypes/tundra/layers/surface/dungeons/-",
+		"value": [
+		  100,
+		  "lofty_irisil_alpacairisillair"
+		]
+	  }
+	],
+	[
+	  {
+		"op": "test",
+		"path": "/planetTypes/m32steppe/layers/surface/dungeons/-"
+	  },
+	  {
+		"op": "add",
+		"path": "/planetTypes/m32steppe/layers/surface/dungeons/-",
+		"value": [
+		  100,
+		  "lofty_irisil_alpacairisillair"
+		]
+	  }
+	]
+]

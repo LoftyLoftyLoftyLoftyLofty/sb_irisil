@@ -21,8 +21,7 @@
       "name" : "lofty_irisil_alpacairisillair",
       "rules" : [
         [ "maxSpawnCount", [1] ],
-		[ "ignorePartMaximumRule" ],
-		[ "doNotCombineWith", [ "lofty_irisil_alpacairisillair" ] ]
+		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "lofty_irisil_alpacairisillair.json" ]
     },
@@ -58,6 +57,16 @@
 		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_left_3.json" ],
+      "chance" : 1
+    },
+	
+	{
+      "name" : "lofty_irisil_alpacairisillair_stairwellroom_left_4",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_alpacairisillair_stairwellroom_left_4.json" ],
       "chance" : 1
     },
 	
