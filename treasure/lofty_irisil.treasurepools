@@ -690,22 +690,18 @@
 		{
 			"fill" : 
 			[
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]}
+				{"item" : [ "smashabledrink2", 4]}
+			],
+			"poolRounds" : 
+			[
+				[0.75, 1],
+				[0.25, 2]
+			],
+			"pool" : 
+			[
+				{"weight" : 1.0, "item" : [ "smashabledrink2", 1]},
+				{"weight" : 1.0, "item" : [ "smashabledrink2", 2]},
+				{"weight" : 1.0, "item" : [ "smashabledrink2", 3]}
 			],
 			"allowDuplication" : true
 		}
@@ -719,33 +715,22 @@
 		{
 			"fill" : 
 			[
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]},
-				{"item" : [ "smashabledrink2", 1]}
+				{"item" : [ "smashabledrink2", 3]}
 			],
 			"poolRounds" : 
 			[
-				[1.0, 1]
+				[0.75, 1],
+				[0.25, 2]
 			],
 			"pool" : 
 			[
 				{"weight" : 0.8, "pool" : "basicTreasure"},
 				{"weight" : 0.1, "pool" : "valuableTreasure"},
 				{"weight" : 0.05, "pool" : "costume"},
-				{"weight" : 0.05, "pool" : "instrument"}
-			]
+				{"weight" : 0.05, "pool" : "instrument"},
+				{"weight" : 1.0, "item" : [ "smashabledrink2", 1]},
+				{"weight" : 1.0, "item" : [ "smashabledrink2", 2]}
+			],
 			"allowDuplication" : true
 		}
 	]
