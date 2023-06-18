@@ -7,6 +7,6 @@
   "description" : "A large, grotesque eyeball. Can be used for crafting.",
   "shortdescription" : "Irisa Eye",
   "itemTags" : [ "reagent" ],
-  "learnBlueprintsOnPickup" : [ "lofty_irisil_eyeslices" ],
+  "learnBlueprintsOnPickup" : [ "lofty_irisil_eyeslices", "lofty_irisil_irislushie" ],
   "maxStack" : 1000
 }
