@@ -1,0 +1,27 @@
+{
+  "objectName" : "lofty_irisil_scleramite",
+  "colonyTags" : ["nature", "lofty_irisil"],
+  "rarity" : "Common",
+  "price" : 50,
+  "printable" : false,
+  "description" : "A parasite found inside giant alien eyes. Ew!",
+  "shortdescription" : "Scleramite",
+  "race" : "generic",
+  "category" : "bug",
+  "collectablesOnPickup" : { "bugs" : "lofty_irisil_scleramite" },
+
+  "itemTags" : [ "bug" ],
+
+  "inventoryIcon" : "lofty_irisil_scleramiteicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "lofty_irisil_scleramite.png:<color>.<frame>",
+      "imagePosition" : [-1, 0],
+      "frames" : 27,
+      "animationCycle" : 2.3,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

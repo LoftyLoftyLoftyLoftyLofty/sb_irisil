@@ -1,9 +1,9 @@
 {
-  "name" : "scleramite",
-  "category" : "scleramite",
+  "name" : "lofty_irisil_scleramite",
+  "category" : "lofty_irisil_scleramite",
   "type" : "body",
 
   "frames" : {
-    "body" : "scleramite.png"
+    "body" : "lofty_irisil_scleramite.png"
   }
 }

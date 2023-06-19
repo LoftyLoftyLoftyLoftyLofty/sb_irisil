@@ -37,5 +37,22 @@
 			"aggressive" : true,
 			"colors" : "default"
 		}
+	},
+	{
+		"name" : "lofty_irisil_scleramite",
+
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "exposed",
+			"time" : "day"
+		},
+
+		"spawnChance" : 0.001,
+		"monsterType" : "lofty_irisil_scleramite",
+		"monsterParameters" : 
+		{
+			"aggressive" : false
+		}
 	}
 ]
