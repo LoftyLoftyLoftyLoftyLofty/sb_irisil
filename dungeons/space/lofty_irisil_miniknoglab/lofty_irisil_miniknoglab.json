@@ -5438,6 +5438,23 @@
                  "width":8,
                  "x":1352,
                  "y":896
+                }, 
+                {
+                 "height":8,
+                 "id":2424,
+                 "name":"Scleramite",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"lofty_irisil_scleramite"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1432,
+                 "y":856
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -5525,7 +5542,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2424,
+ "nextobjectid":2425,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

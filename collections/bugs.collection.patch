@@ -1,0 +1,11 @@
+[
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_scleramite",
+		"value" : 
+		{
+		  "order" : 9001,
+		  "item" : "lofty_irisil_scleramite"
+		}
+	}
+]

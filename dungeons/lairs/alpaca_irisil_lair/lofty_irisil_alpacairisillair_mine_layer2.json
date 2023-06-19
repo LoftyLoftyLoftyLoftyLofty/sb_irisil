@@ -2896,7 +2896,41 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":1333,
+                 "name":"Scleramite",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"lofty_irisil_scleramite"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":552,
+                 "y":480
+                }, 
+                {
+                 "height":8,
+                 "id":1334,
+                 "name":"Scleramite",
+                 "properties":[
+                        {
+                         "name":"monster",
+                         "type":"string",
+                         "value":"lofty_irisil_scleramite"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":1072,
+                 "y":288
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -2961,7 +2995,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1333,
+ "nextobjectid":1335,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

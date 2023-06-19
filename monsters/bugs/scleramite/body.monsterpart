@@ -1,0 +1,9 @@
+{
+  "name" : "scleramite",
+  "category" : "scleramite",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "scleramite.png"
+  }
+}

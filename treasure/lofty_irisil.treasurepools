@@ -107,6 +107,7 @@
 				
 				//oranges were removed from vanilla but irisil don't really care about that so long as they can steal it
 				{"weight" : 0.05, "item" : ["orange", 1]},
+				{"weight" : 0.05, "item" : ["greenapple", 1]},
 				
 				//mech parts
 				{"weight" : 0.05, "item" : ["salvagetier6", 1]},
