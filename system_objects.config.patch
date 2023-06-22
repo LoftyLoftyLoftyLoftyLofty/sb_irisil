@@ -35,7 +35,7 @@
 	  "skyParameters" : {
 		"seed" : 0,
 		"horizonClouds" : false,
-		"horizonImages" : [ { "left": "/celestial/system/anomaly/anomalyhorizonleft.png", "right": "/celestial/system/anomaly/lofty_irisil_miniknoglab_anomalyhorizonright.png" } ]
+		"horizonImages" : [ { "left": "/celestial/system/anomaly/anomalyhorizonleft.png", "right": "/celestial/system/anomaly/lofty_irisil_fisheye_anomalyhorizonright.png" } ]
 	  },
 
 	  "moving" : false,
@@ -46,7 +46,7 @@
 	  },
 	  "lifeTime" : [1500, 2100],
 	  "parameters" : {
-		"icon" : "/celestial/system/anomaly/lofty_irisil_miniknoglab_map_icon.png",
+		"icon" : "/celestial/system/anomaly/lofty_irisil_fisheye_map_icon.png",
 		"displayName" : "???",
 		"description" : "This appears to be a giant eyeball drifting through space."
 	  }
