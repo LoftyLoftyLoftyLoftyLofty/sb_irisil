@@ -32,5 +32,45 @@
 		}
 	  }
 	}
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/lofty_irisil_fisheye",
+	"value" : {
+	
+	  "worldProperties" : {
+      "nonCombat" : true
+      },
+	
+	  "type" : "FloatingDungeon",
+	  "dungeonWorld" : "lofty_irisil_fisheye",
+	  "beamUpRule" : "Anywhere",
+	  "disableDeathDrops" : true,
+
+	  "tempWorldDeleteTime" : 600000,
+
+	  "skyParameters" : {
+		"dayLength" : 1200,
+		"surfaceLevel" : 1000,
+		"spaceLevel" : 3000,
+		"seed" : -5288806180628666923,
+
+		"skyType" : "barren",
+		"skyColoring" : {
+		  "mainColor" : [200, 200, 255],
+
+		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
+		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
+		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+		  "morningLightColor" : [140, 71, 0],
+		  "dayLightColor" : [200, 200, 200],
+		  "eveningLightColor" : [160, 120, 180],
+		  "nightLightColor" : [40, 20, 60]
+		}
+	  }
+	}
   }
 ]

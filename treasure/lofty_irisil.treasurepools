@@ -735,5 +735,71 @@
 			"allowDuplication" : true
 		}
 	]
+  ],
+  
+  "lofty_irisil_fishinggearbox" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "swamphat", 1]},
+				{"item" : [ "durablefishingrod", 1]},
+				{"item" : [ "lofty_irisil_slimefishinglure", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  "lofty_irisil_tertiaryfishinggear" : 
+  [
+	[
+		1, 
+		{
+			"poolRounds" : 
+			[
+				[0.75, 1],
+				[0.25, 2]
+			],
+			"pool" : 
+			[
+				{"weight" : 0.4, "pool" : "fishingUpgrade"},
+				{"weight" : 0.8, "item" : [ "lofty_irisil_slimefishinglure", 1]},
+				{"weight" : 0.6, "item" : [ "smashabledrink1", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  "lofty_irisil_fishinglore" : 
+	[
+		[
+			1, 
+			{
+				"fill" : 
+				[
+					{"item" : [ "lofty_irisil_frog-codex", 1]}
+				],
+				"allowDuplication" : false
+			}
+		]
+  ],
+  
+  "lofty_irisil_petCollarAndBall" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"pool" : "petcollars"},
+				{"item" : [ "petball", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
   ]
 }

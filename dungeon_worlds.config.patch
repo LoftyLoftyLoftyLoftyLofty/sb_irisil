@@ -17,5 +17,24 @@
 	  "worldEdgeForceRegions" : "TopAndBottom",
 	  "biome" : "space"
     }
+  },
+  
+  {
+    "op" : "add",
+    "path" : "/lofty_irisil_fisheye",
+    "value" : {
+	  "primaryDungeon" : "lofty_irisil_fisheye",
+	  "threatLevel" : 1,
+	  "gravity" : 80,
+	  "airless" : false,
+	  "worldSize" : [1200, 1000],
+	  "dungeonBaseHeight" : 750,
+	  "ambientLightLevel" : [32, 32, 32],
+	  "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+	  "musicTrack" : "/music/planetarium.ogg",
+	  "environmentStatusEffects" : ["dontstarve"],
+	  "worldEdgeForceRegions" : "TopAndBottom",
+	  "biome" : "lofty_irisil_fisheye"
+    }
   }
 ]

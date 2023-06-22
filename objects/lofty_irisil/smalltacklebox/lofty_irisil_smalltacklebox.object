@@ -1,0 +1,40 @@
+{
+  "objectName" : "lofty_irisil_smalltacklebox",
+  "colonyTags" : ["storage", "fishing"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "category" : "storage",
+  "price" : 50,
+  "description" : "A small tackle box filled with lures and bait.",
+  "shortdescription" : "Small Tackle Box",
+  "race" : "generic",
+  "health" : 1.5,
+
+  "apexDescription" : "This looks standard issue.",
+  "avianDescription" : "I've always enjoyed fishing.",
+  "floranDescription" : "Containsss fake food for luring prey.",
+  "glitchDescription" : "Disgust. Imagine being this easy to bait.",
+  "humanDescription" : "I remember fishing on Earth. I wonder how the fish are doing?",
+  "hylotlDescription" : "Tools of evil.",
+  "novakidDescription" : "Can't land a whopper without right proper equipment!",
+
+  "inventoryIcon" : "lofty_irisil_smalltackleboxicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "lofty_irisil_smalltacklebox.png:<color>.<key>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/chest_small_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/chest_small_close.ogg" ],
+  "slotCount" : 8,
+  "uiConfig" : "/interface/chests/lofty_irisil_chest8.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

@@ -1,0 +1,47 @@
+{
+  "id" : "lofty_irisil_frog",
+  "title" : "Frogg Mentality",
+  "description" : "A philosophical essay on species, civilizations, and the Ruin.",
+  "icon" : "lofty_irisil_frog.png",
+  
+  "contentPages" : [
+"Watching humanity scatter with the destruction of their homeworld, Earth, was a terrible sight to behold. The immediate upheavals in intergalactic politics and trade were to be expected with Earth being the hub for commerce that it was, but so too with the loss of a homeworld came a loss of respect for humanity from many 'civilized' races. Indeed, this paradigm shift reveals the truth of stellar diplomacy:
+^yellow;If you want your race to be respected, where you come from has to be safe and respectable.^reset; Simple as.
+^#8888CC;>>",
+
+"Visible empathy for humans evaporated in a cosmic instant when their planet was consumed by the Ruin, and despite their ongoing attempts to regroup and recover Earth, humanity has not yet found success in reclaiming their home. 
+One would expect their survival to be celebrated in the face of the incomprehensible scale of the enemy that attacked Earth, but humans are instead regarded as having been ^red;too weak to defend themselves- too busy with politics to save their own planet!^reset;
+^#8888CC;>>",
+
+"Reflecting upon this catastrophe from the perspective of my own species, it is immediately clear why so little respect is shown to my people: ^red;not only do most of us not even know the name or location of our homeworld, but there is a widespread lack of any intrinsic desire to pursue such knowledge.^reset; We have stagnated as a species, subsisting on charity- ^#888888;or in some cases, apathy, depending on the planet.^reset; It thus comes as no surprise that so many regard us as ^red;unsightly, swamp-dwelling, fly-eating parasites.^reset;
+^#8888CC;>>",
+
+"\"^yellow;How did we get to where we are?^reset;\"
+It is this very question that I ponder as I gaze out upon the stars. My own personal journey for literacy, freedom, and sovereignty led me away from the swamp in which I was born and out into the great expanse of space- a remarkable achievement for one of my kind, but so small in scale compared to the spacefaring populations of other races! From my vantage point in orbit, I am able to see the planet upon which I was born-
+^#888888;In a way, I am glad to be rid of it.^reset;
+^#8888CC;>>",
+
+"I am not the first of my species to cross the stars. In fact, among our myriad we may have spread to more planets than humanity did before the collapse of the Terrene Protectorate- ^red;but we have never established ourselves or held ourselves in the way a mature race does,^reset; and our failure to do so has rendered us as ^red;incompetent liabilities^reset; in the eyes of others. When someone asks, \"^yellow;What is the culture of a Frogg?^reset;\" the response is usually just epithets about lethargic ignorance-
+^red;...and they're right.^reset;
+^#8888CC;>>",
+
+"It is difficult to approach these topics without selfishly indulging in the contempt that other races feel for us. Even in my own shallow enlightenment, I share the distaste for the status quo that has befallen my people. 
+I want to see a change, but it must come from the heart- the core- the source-spring of our being! 
+^yellow;We must return to our homeworld!^reset;
+If we can instill a ^green;sense of pride^reset; there, ^green;a new Frogg mentality,^reset; it may trickle outward to the rest of our species over time.
+^#8888CC;>>",
+
+"^yellow;Know this, my friends:^reset;
+If you are able to read and understand these words, you have already taken the first step toward elevating your race and casting off the shackles of generations of entrenched ignorance.
+^green;I am proud of you, ^reset;and I look forward to ^yellow;meeting you on our homeworld!^reset;
+Together, perhaps we can finally earn ^cyan;respect for our people^reset; among our starbound peers.
+
+See you there,
+-^green;Ribbedeau Croakske^reset;"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

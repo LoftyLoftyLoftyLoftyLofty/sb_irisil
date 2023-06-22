@@ -1,0 +1,31 @@
+{
+  "objectName" : "lofty_irisil_daynightsensor",
+  "colonyTags" : ["wired"],
+  "rarity" : "Common",
+  "category" : "wire",
+  "printable" : false,
+  "price" : 250,
+  "description" : "Outputs true when it's nighttime.",
+  "shortdescription" : "Night Sensor",
+  "race" : "generic",
+
+  "inventoryIcon" : "lofty_irisil_daynightsensoricon.png",
+  "orientations" : [
+    {
+	  "image" : "lofty_irisil_daynightsensor.png:<color>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [0, 0] ],
+      "anchors" : []
+    }
+  ],
+
+  "scripts" : [
+    "lofty_irisil_daynightsensor.lua"
+  ],
+  "scriptDelta" : 5,
+
+  "outputNodes" : [ [0, 0] ]
+}
