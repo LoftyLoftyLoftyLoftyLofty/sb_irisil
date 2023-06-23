@@ -1,0 +1,14 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "alpacalegs", "count" : 1 },
+    { "item" : "throwingboulder", "count" : 1 },
+    { "item" : "diamonddrill", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_alpacastatue",
+    "count" : 1
+  },
+  //this doesn't really belong in the irisa vendor but we don't have a better place to put it right now and i want people to be able to get the items
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_special" ]
+}

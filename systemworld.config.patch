@@ -16,6 +16,6 @@
   {
     "op": "add",
     "path": "/objectSpawnPool/-",
-    "value": [100.025, "lofty_irisil_fisheye"]
+    "value": [0.025, "lofty_irisil_fisheye"]
   }
 ]

@@ -1,0 +1,134 @@
+{
+  "distanceRange" : [8, 14],
+  "checkRegion" : [-3, -2, 3, 2],
+  "liquidThreshold" : 0.9,
+  
+  /*
+	Lofty note:
+	
+	In my own experience I've found the default numbers to be a really awful grind.
+	This fishing area is also a rather confined space and sometimes the fish get stuck on the edge which can be frustrating.	
+	I have adjusted the spawn rates accordingly.
+	
+	For right now, there's only one fish design that I'm happy with, but I will likely expand on these over time and revisit them.
+	
+	I don't want to waste someone's time making them grind fish for hours in a tiny pond.
+	I just want them to have some fun with the fish minigame for at most like 45 minutes.
+  */
+  
+  //it rolls between 0 and 1 and chooses a result
+  "rarities" : [
+    [0.01, "legendary"],	//~1% legendary
+    [0.075, "rare"],		//7.5% rare
+    [0.3, "uncommon"],		//30% uncommon
+    [100, "common"]			//70% common
+  ],
+  "initialBias" : 0.2,
+  "biasDropPerSpawn" : 0.1,
+  "dayRange" : [0, 0.5],
+  "nightRange" : [0.5, 1.0],
+  "minDepth" : 4,
+  "deepDepth" : 18,
+  
+  "allowedInstances" :
+  {
+	"lofty_irisil_fisheye" : { "oceanLevel" : 661 }
+  },
+  
+  "pools" : {
+    "lofty_irisil_fisheye" : {
+      "common" : [
+        /*{
+          "monster" : "lofty_irisil_smallfish_nagurchin",
+          "day" : true,
+          "night" : true,
+          "shallow" : true,
+          "deep" : false
+        },*/
+        {
+          "monster" : "lofty_irisil_smallfish_peepgill",
+          "day" : true,
+          "night" : true,
+          "shallow" : true,
+          "deep" : true
+        }/*,
+        {
+          "monster" : "lofty_irisil_mediumfish_jawlatch",
+          "day" : true,
+          "night" : true,
+          "shallow" : false,
+          "deep" : true
+        }*/
+      ]/*,
+      "uncommon" : [
+        {
+          "monster" : "lofty_irisil_mediumfish_yargle",
+          "day" : true,
+          "night" : false,
+          "shallow" : true,
+          "deep" : false
+        },
+        {
+          "monster" : "lofty_irisil_smallfish_nibblesnatch",
+          "day" : true,
+          "night" : false,
+          "shallow" : true,
+          "deep" : true
+        },
+        {
+          "monster" : "lofty_irisil_mediumfish_whiskermaw",
+          "day" : false,
+          "night" : true,
+          "shallow" : true,
+          "deep" : false
+        },
+        {
+          "monster" : "lofty_irisil_mediumfish_yeekfish",
+          "day" : false,
+          "night" : true,
+          "shallow" : false,
+          "deep" : true
+        }
+      ],
+      "rare" : [
+        {
+          "monster" : "lofty_irisil_largefish_glareskate",
+          "day" : true,
+          "night" : false,
+          "shallow" : true,
+          "deep" : false
+        },
+        {
+          "monster" : "lofty_irisil_mediumfish_quipnunch",
+          "day" : true,
+          "night" : false,
+          "shallow" : false,
+          "deep" : true
+        },
+        {
+          "monster" : "lofty_irisil_largefish_rockrag",
+          "day" : false,
+          "night" : true,
+          "shallow" : true,
+          "deep" : true
+        },
+        {
+          "monster" : "lofty_irisil_smallfish_wardperch",
+          "day" : false,
+          "night" : true,
+          "shallow" : true,
+          "deep" : true
+        }
+      ],
+      "legendary" : [
+        {
+          "monster" : "lofty_irisil_largefish_luremunch",
+          "day" : true,
+          "night" : true,
+          "shallow" : false,
+          "deep" : true
+        }
+      ]*/
+    }
+  }
+}

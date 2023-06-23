@@ -51,7 +51,7 @@
 	  "tempWorldDeleteTime" : 600000,
 
 	  "skyParameters" : {
-		"dayLength" : 1200,
+		"dayLength" : 600,
 		"surfaceLevel" : 1000,
 		"spaceLevel" : 3000,
 		"seed" : -5288806180628666923,

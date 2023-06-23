@@ -1,0 +1,50 @@
+{
+  "objectName" : "lofty_irisil_froggoclocksomewhere",
+  "colonyTags" : ["valuable","pretty","lofty_irisil","swamp","odd","frogg","cabin","electronic","light"],
+  "rarity" : "Legendary",
+  "description" : "It's Frogg O'Clock Somewhere.",
+  "shortdescription" : "Frogg O'Clock Somewhere",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 2003,
+  
+  "lightColor" : [230, 180, 220],
+
+  "apexDescription" : "It must be nice to be so easily distracted from all the evil in the universe.",
+  "avianDescription" : "Makes me feel like kicking back and relaxing.",
+  "floranDescription" : "Thisss not make sssense to floran.",
+  "glitchDescription" : "Merry. This poster is statistically likely to be accurate!",
+  "humanDescription" : "Sure, whatever. I'll toast to that.",
+  "hylotlDescription" : "Something about this advertisement makes me feel dirty.",
+  "novakidDescription" : "I like this guy- he gets it.",
+
+  "inventoryIcon" : "lofty_irisil_froggoclocksomewhere_icon.png",
+  "orientations" : [
+    {
+	  "image" : "lofty_irisil_froggoclocksomewhere_unlit.png:<color>.<frame>",
+	  "direction" : "right",
+	  
+      "imagePosition" : [-40, -16],
+	  
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "soundEffect" : "/sfx/objects/fluorescent_light_quiet.ogg",
+  "soundEffectRangeMultiplier" : 0.5,
+
+  "animation" : "/objects/wired/light/lighttogglebgfullbright.animation",
+  "animationParts" : {
+    "bg" : "lofty_irisil_froggoclocksomewhere_unlit.png",
+    "fg" : "lofty_irisil_froggoclocksomewhere_lit.png"
+  },
+  "animationPosition" : [-40, -16],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+  
+  "interactive" : false,
+
+  "inputNodes" : [ [1, -1] ]
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_smallfish_peepgill",
+  "category" : "lofty_irisil_smallfish_peepgill",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_smallfish_peepgill.png"
+  }
+}

@@ -753,6 +753,16 @@
 	]
   ],
   
+  "lofty_irisil_fishingUpgrade_reelsOnly" : [
+    [0, {
+      "pool" : [
+        {"weight" : 1.0, "item" : "fishingreelstrong"},
+        {"weight" : 1.0, "item" : "fishingreellong"},
+        {"weight" : 1.0, "item" : "fishingreelfast"}
+      ]
+    }]
+  ],
+  
   "lofty_irisil_tertiaryfishinggear" : 
   [
 	[
@@ -765,7 +775,8 @@
 			],
 			"pool" : 
 			[
-				{"weight" : 0.4, "pool" : "fishingUpgrade"},
+				//basically we only want to give the user upgrades they're allowed to use
+				{"weight" : 0.4, "pool" : "lofty_irisil_fishingUpgrade_reelsOnly"},
 				{"weight" : 0.8, "item" : [ "lofty_irisil_slimefishinglure", 1]},
 				{"weight" : 0.6, "item" : [ "smashabledrink1", 1]}
 			],
@@ -799,6 +810,20 @@
 				{"item" : [ "petball", 1]}
 			],
 			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_froggoclocksomewhere" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_froggoclocksomewhere", 1]}
+			],
+			"allowDuplication" : true
 		}
 	]
   ]

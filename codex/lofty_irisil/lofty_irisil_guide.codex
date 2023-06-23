@@ -133,29 +133,30 @@ lofty_irisil_clingy
 
 ^cyan;Food^reset;:
 lofty_irisil_eyeslices
-lofty_irisil_irislushie",
+lofty_irisil_irislushie
+
+^cyan;Fishing^reset;:
+lofty_irisil_slimefishinglure",
 
 "^yellow;ITEM IDS (2/4)^reset;
 
 ^cyan;Decorations^reset;:
 lofty_irisilaf
 lofty_irisil_alpacastatue
-lofty_irisil_irisastatue
-lofty_irisil_challengeroomarrow_upleft
 lofty_irisil_eyetrophy
+lofty_irisil_froggoclocksomewhere
 lofty_irisil_irisaplushie
+lofty_irisil_irisastatue
 lofty_irisil_lurkingirisa
 lofty_irisil_scleramite
-
-^cyan;Other Objects^reset;:
-lofty_irisil_invisibledockingfieldsmall
-lofty_irisil_irisamerchantv1",
+lofty_irisil_smalltacklebox",
 
 "^yellow;ITEM IDS (3/4)^reset;
 
 ^cyan;Codices^reset;:
 lofty_irisil_alpaca-codex
 lofty_irisil_apex-codex
+lofty_irisil_frog-codex
 lofty_irisil_glitch-codex
 lofty_irisil_guide-codex
 lofty_irisil_threadtheneedlelore-codex
@@ -171,7 +172,13 @@ lofty_irisilfossil_legs",
 lofty_irisil_eyepoker
 
 ^cyan;Augments^reset;:
-lofty_irisil_irisadandruffaugment"
+lofty_irisil_irisadandruffaugment
+
+^cyan;Other Objects^reset;:
+lofty_irisil_challengeroomarrow_upleft
+lofty_irisil_daynightsensor
+lofty_irisil_invisibledockingfieldsmall
+lofty_irisil_irisamerchantv1"
 
   ],
     "itemConfig" : {
