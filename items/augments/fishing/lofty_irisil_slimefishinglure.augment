@@ -8,7 +8,7 @@
   "description" : "A lure designed for hooking fish in viscous slime.",
   "shortdescription" : "Slime Fishing Lure",
 
-  "lureType" : "sinking",
+  "lureType" : "lofty_irisil_slimefishinglure",
   "lureName" : "Slime Fishing Lure",
   "lureIcon" : "/items/augments/fishing/lofty_irisil_slimefishinglure.png",
   "lureProjectile" : "lofty_irisil_slimefishinglure",

@@ -10,7 +10,7 @@
   "power" : 0.0,
   "speed" : 35,
   "damageKind" : "nodamage",
-  "physics" : "fishinglure",
+  "physics" : "fishingluresinking",
   "bounces" : -1,
   "piercing" : true,
   "timeToLive" : 1,

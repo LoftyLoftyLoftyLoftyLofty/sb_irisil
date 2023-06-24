@@ -1,12 +1,10 @@
 {
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
-	{ "item" : "larvahead", "count" : 1 },
-	{ "item" : "scuttleploom", "count" : 1 },
-	{ "item" : "flameroach", "count" : 1 }
+	{ "item" : "fishingluresinking", "count" : 1 }
   ],
   "output" : {
-    "item" : "lofty_irisil_scleramite",
+    "item" : "lofty_irisil_slimefishinglure",
     "count" : 1
   },
   "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_fossils" ]
