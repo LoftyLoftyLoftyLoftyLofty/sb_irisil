@@ -826,5 +826,19 @@
 			"allowDuplication" : true
 		}
 	]
+  ],
+  
+  "lofty_irisil_scleramite" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_scleramite", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
   ]
 }
