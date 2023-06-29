@@ -1,0 +1,12 @@
+[
+	{
+		"op" : "add",
+		"path" : "/labels/lofty_irisil_challengedoor",
+		"value" : "Challenge Door"
+	},
+	{
+		"op" : "add",
+		"path" : "/labels/lofty_irisil_dungeontransponder",
+		"value" : "Destination Transponder"
+	}
+]

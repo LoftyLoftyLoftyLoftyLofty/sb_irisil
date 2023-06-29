@@ -36,5 +36,39 @@
 	  "worldEdgeForceRegions" : "TopAndBottom",
 	  "biome" : "lofty_irisil_fisheye"
     }
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/lofty_irisil_challengerooms_threadtheneedle",
+	"value" : {
+      "primaryDungeon" : "lofty_irisil_challengerooms_threadtheneedle",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 810,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/event-horizon.ogg",
+      "environmentStatusEffects" : ["dontstarve"]
+    }
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/lofty_irisil_challengerooms_pickmeup",
+	"value" : {
+      "primaryDungeon" : "lofty_irisil_challengerooms_pickmeup",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 810,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/event-horizon.ogg",
+      "environmentStatusEffects" : ["dontstarve"]
+    }
   }
 ]

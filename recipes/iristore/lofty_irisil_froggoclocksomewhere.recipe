@@ -10,5 +10,5 @@
     "count" : 1
   },
   //like the alpaca statue, this doesn't really belong in the irisa vendor but we don't have a better place to put it right now and i want people to be able to get the items
-  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_special" ]
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_decor_misc" ]
 }

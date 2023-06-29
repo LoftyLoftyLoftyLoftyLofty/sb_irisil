@@ -1,0 +1,41 @@
+{
+  "objectName" : "lofty_irisil_monsternamesensor",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "wire",
+  "price" : 0,
+  "health" : 0.1,
+  "description" : "...",
+  "shortdescription" : "Invisible Proximity Sensor (Monster Type)",
+  "race" : "generic",
+
+  "smashOnBreak" : true,
+
+  "inventoryIcon" : "lofty_irisil_monsternamesensor_icon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_monsternamesensor.png:<color>.off",
+      "imagePosition" : [-8, 0],
+      "direction" : "right"
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/lofty_irisil_monsternamesensor/lofty_irisil_monsternamesensor.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/switch/switchtoggle.animation",
+  "animationParts" : {
+    "switch" : "lofty_irisil_monsternamesensorhidden.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "outputNodes" : [ [0, 0] ],
+  
+  "interactive" : false,
+
+  "detectDuration" : 0.5,
+  "detectEntityTypes" : [ "monster" ],//changing this won't do anything because the script uses world.monsterQuery
+  "detectEntityNames" : [ ],
+  "detectArea" : [ [-4, -4], [4, 4] ]
+}

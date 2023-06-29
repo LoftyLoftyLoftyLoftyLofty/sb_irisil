@@ -1,0 +1,29 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_challengerooms_pickmeup",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "lofty_irisil_pickMeUp" ],
+	"gravity": 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 65,
+    "protected" : true
+  },
+
+  "parts" : [
+  
+	//////////////////////////////////////////////////////////////////////
+	//the house atop the cliff
+	//////////////////////////////////////////////////////////////////////
+	
+    {
+			"name" : "lofty_irisil_pickMeUp",
+			"rules" : 
+			[
+				[ "maxSpawnCount", [1] ]
+			],
+			"def" : [ "tmx", "lofty_irisil_pickMeUp.json" ]
+	}
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "itemName" : "lofty_irisil_miniknogasteroidspawner",
+  "level" : 1,
+  "price" : 50,
+  "rarity" : "Legendary",
+  "description" : "Used to spawn the Miniknog Asteroid Base dungeon.",
+  "shortdescription" : "Miniknog Asteroid Base",
+  "category" : "lofty_irisil_dungeontransponder",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : [],
+
+  "inventoryIcon" : "lofty_irisil_miniknogasteroidspawner.png",
+  "animation" : "lofty_irisil_miniknogasteroidspawner.animation",
+  "animationParts" : {
+    "transponder" : "lofty_irisil_miniknogasteroidspawner.png"
+  },
+  "scripts" : ["lofty_irisil_miniknogasteroidspawner.lua"],
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/lofty_irisil/miniknoglab/lofty_irisil_miniknogasteroidspawner.config"
+}

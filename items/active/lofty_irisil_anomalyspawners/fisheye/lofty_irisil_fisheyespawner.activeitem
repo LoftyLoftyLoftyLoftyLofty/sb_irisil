@@ -1,0 +1,22 @@
+{
+  "itemName" : "lofty_irisil_fisheyespawner",
+  "level" : 1,
+  "price" : 50,
+  "rarity" : "Legendary",
+  "description" : "Used to spawn the Fishing Eye space encounter.",
+  "shortdescription" : "Fishing Eye",
+  "category" : "lofty_irisil_dungeontransponder",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : [],
+
+  "inventoryIcon" : "lofty_irisil_fisheyespawner.png",
+  "animation" : "lofty_irisil_fisheyespawner.animation",
+  "animationParts" : {
+    "transponder" : "lofty_irisil_fisheyespawner.png"
+  },
+  "scripts" : ["lofty_irisil_fisheyespawner.lua"],
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/lofty_irisil/fisheye/lofty_irisil_fisheyespawner.config"
+}

@@ -840,5 +840,52 @@
 			"allowDuplication" : false
 		}
 	]
+  ],
+  
+  "lofty_irisil_pickmeup_relocator" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "relocator", 1]},
+				{"item" : [ "relocator", 1]},
+				{"item" : [ "relocator", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  "lofty_irisil_pickmeup_grapplinghook" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "grapplinghook", 1]},
+				{"item" : [ "grapplinghook", 1]},
+				{"item" : [ "grapplinghook", 1]},
+				{"item" : [ "grapplinghook", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  "lofty_irisil_pickmeup_capturepod" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "capturepod", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
   ]
 }

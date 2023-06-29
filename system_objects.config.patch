@@ -20,7 +20,7 @@
 	  "lifeTime" : [1500, 2100],
 	  "parameters" : {
 		"icon" : "/celestial/system/anomaly/lofty_irisil_miniknoglab_map_icon.png",
-		"displayName" : "???",
+		"displayName" : "Miniknog Asteroid Base",
 		"description" : "This asteroid isn't emitting any signals at all, which is suspicious for an object of this size."
 	  }
 	}
@@ -47,7 +47,7 @@
 	  "lifeTime" : [1500, 2100],
 	  "parameters" : {
 		"icon" : "/celestial/system/anomaly/lofty_irisil_fisheye_map_icon.png",
-		"displayName" : "???",
+		"displayName" : "Fishing Eye",
 		"description" : "This appears to be a giant eyeball drifting through space."
 	  }
 	}

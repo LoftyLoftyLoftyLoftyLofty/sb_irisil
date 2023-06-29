@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_bunnykeycritter_green",
+  "category" : "lofty_irisil_bunnykeycritter_green",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_bunnykeycritter_green.png"
+  }
+}
