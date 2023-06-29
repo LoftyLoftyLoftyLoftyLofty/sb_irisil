@@ -3184,18 +3184,6 @@
                 {
                  "gid":342,
                  "height":8,
-                 "id":2178,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":1832,
-                 "y":832
-                }, 
-                {
-                 "gid":342,
-                 "height":8,
                  "id":2179,
                  "name":"",
                  "rotation":0,
@@ -4488,8 +4476,7 @@
                  "width":16,
                  "x":2304,
                  "y":512
-                },
-            
+                }, 
                 {
                  "gid":650,
                  "height":16,
@@ -4507,7 +4494,8 @@
                  "width":16,
                  "x":2304,
                  "y":480
-                }, 
+                },
+            
                 {
                  "gid":2688,
                  "height":40,
@@ -6715,6 +6703,18 @@
                  "width":16,
                  "x":1688,
                  "y":984
+                }, 
+                {
+                 "gid":1648,
+                 "height":8,
+                 "id":3455,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":1832,
+                 "y":832
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -14032,26 +14032,6 @@
                 }, 
                 {
                  "height":0,
-                 "id":3365,
-                 "name":"",
-                 "polyline":[
-                        {
-                         "x":0,
-                         "y":0
-                        }, 
-                        {
-                         "x":208,
-                         "y":568
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":1632,
-                 "y":256
-                }, 
-                {
-                 "height":0,
                  "id":3387,
                  "name":"",
                  "polyline":[
@@ -14249,6 +14229,26 @@
                  "width":0,
                  "x":1544,
                  "y":384
+                }, 
+                {
+                 "height":0,
+                 "id":3456,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":200,
+                         "y":568
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":1632,
+                 "y":256
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -18605,7 +18605,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":3455,
+ "nextobjectid":3457,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

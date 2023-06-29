@@ -8,5 +8,10 @@
 		"op" : "add",
 		"path" : "/labels/lofty_irisil_dungeontransponder",
 		"value" : "Destination Transponder"
+	},
+	{
+		"op" : "add",
+		"path" : "/labels/lofty_irisil_irisamerchant",
+		"value" : "Dancing Mascot"
 	}
 ]
