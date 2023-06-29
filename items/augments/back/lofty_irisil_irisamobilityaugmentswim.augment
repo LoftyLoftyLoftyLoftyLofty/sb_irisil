@@ -1,0 +1,22 @@
+{
+  "itemName" : "lofty_irisil_irisamobilityaugmentswim",
+  "price" : 30000,
+  "rarity" : "Legendary",
+  //"tooltipKind" : "eppAugment",
+  "category" : "eppAugment",
+  "inventoryIcon" : "lofty_irisil_irisamobilityaugmentswim.png",
+  "description" : "An upgraded EPP module that combines alien dander with enhanced movement speed and swimming mobility.",
+  "shortdescription" : "Irisa Mobility Augment (S)",
+
+  "augment" : {
+    "type" : "back",
+    "name" : "lofty_irisil_irisamobilityswim",
+    "displayName" : "Irisa Mobility (S)",
+    "displayIcon" : "/items/augments/back/lofty_irisil_irisamobilityaugmentswim.png",
+    "effects" : [ "lofty_irisil_irisadandruffaugment", "runboostaugment", "jumpboostaugment", "swimboost" ]
+  },
+
+  "radioMessagesOnPickup" : [ "pickupaugment" ],
+
+  "scripts" : [ "/scripts/augments/augment.lua" ]
+}

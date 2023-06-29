@@ -1,13 +1,12 @@
 {
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
-	{ "item" : "thornsaugment", "count" : 1 },
-	{ "item" : "burningeyeballs", "count" : 1 },
-	{ "item" : "sprinkler", "count" : 1 },
+	{ "item" : "lofty_irisil_irisamobilityaugment", "count" : 1 },
+	{ "item" : "swimaugment", "count" : 1 },
 	{ "item" : "upgrademodule", "count" : 1 }
   ],
   "output" : {
-    "item" : "lofty_irisil_irisadandruffaugment",
+    "item" : "lofty_irisil_irisamobilityaugmentswim",
     "count" : 1
   },
   "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_combat" ]

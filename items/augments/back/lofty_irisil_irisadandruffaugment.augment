@@ -4,15 +4,15 @@
   "rarity" : "Legendary",
   //"tooltipKind" : "eppAugment",
   "category" : "eppAugment",
-  "inventoryIcon" : "dandruffaugment.png",
-  "description" : "An EPP module that releases venomous dander when you take damage. Yuck.",
+  "inventoryIcon" : "lofty_irisil_irisadandruffaugment.png",
+  "description" : "An upgraded EPP module that releases venomous dander when you take damage. Yuck.",
   "shortdescription" : "Irisa Dander Augment",
 
   "augment" : {
     "type" : "back",
     "name" : "lofty_irisil_irisadandruff",
     "displayName" : "Irisa Dander",
-    "displayIcon" : "/items/augments/back/dandruffaugment.png",
+    "displayIcon" : "/items/augments/back/lofty_irisil_dandruffaugment.png",
     "effects" : [ "lofty_irisil_irisadandruffaugment" ]
   },
 
