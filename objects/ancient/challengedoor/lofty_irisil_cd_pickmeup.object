@@ -7,7 +7,7 @@
   "printable" : false,
 
   "description" : "A mysterious door. Adventure awaits!
-^white;Length:          ^yellow;^#888888;
+^white;Length:          ^red;^#888888;
 ^white;Threat Level: ^yellow;^#888888;",
 
   "shortdescription" : "Pick Me Up",

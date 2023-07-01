@@ -849,8 +849,6 @@
 		{
 			"fill" : 
 			[
-				{"item" : [ "relocator", 1]},
-				{"item" : [ "relocator", 1]},
 				{"item" : [ "relocator", 1]}
 			],
 			"allowDuplication" : true

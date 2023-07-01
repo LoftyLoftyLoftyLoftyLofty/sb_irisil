@@ -3,7 +3,7 @@
   "level" : 1,
   "price" : 50,
   "rarity" : "Legendary",
-  "description" : "Used to spawn the Miniknog Asteroid Base dungeon.",
+  "description" : "Used to spawn the Miniknog Asteroid Base space encounter.",
   "shortdescription" : "Miniknog Asteroid Base",
   "category" : "lofty_irisil_dungeontransponder",
   "twoHanded" : true,
