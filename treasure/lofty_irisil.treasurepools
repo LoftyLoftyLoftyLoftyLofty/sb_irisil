@@ -885,5 +885,74 @@
 			"allowDuplication" : true
 		}
 	]
+  ],
+  
+  "lofty_irisil_pickmeup_challengeChestTreasure_red" : 
+  [
+    [0, {
+      "fill" : [
+		{"item" : [ "lofty_irisil_ct_pickmeup", 1] },
+		//red bunny suit
+        {"pool" : "goodWeapon"},
+        {"pool" : "valuableTreasure"}
+      ],
+      "poolRounds" : [
+        [0.4, 1],
+        [0.4, 2],
+        [0.2, 3]
+      ],
+      "pool" : [
+        {"weight" : 0.8, "pool" : "basicTreasure"},
+        {"weight" : 0.1, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "pool" : "costume"},
+        {"weight" : 0.05, "pool" : "instrument"}
+      ]
+    }]
+  ],
+  
+  "lofty_irisil_pickmeup_challengeChestTreasure_green" : 
+  [
+    [0, {
+      "fill" : [
+		//codex
+		//green bunny suit
+        {"pool" : "goodWeapon"},
+        {"pool" : "valuableTreasure"}
+      ],
+      "poolRounds" : [
+        [0.4, 1],
+        [0.4, 2],
+        [0.2, 3]
+      ],
+      "pool" : [
+        {"weight" : 0.8, "pool" : "basicTreasure"},
+        {"weight" : 0.1, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "pool" : "costume"},
+        {"weight" : 0.05, "pool" : "instrument"}
+      ]
+    }]
+  ],
+  
+  "lofty_irisil_pickmeup_challengeChestTreasure_blue" : 
+  [
+    [0, {
+      "fill" : [
+		//instrument?
+		//blue bunny suit
+        {"pool" : "goodWeapon"},
+        {"pool" : "valuableTreasure"}
+      ],
+      "poolRounds" : [
+        [0.4, 1],
+        [0.4, 2],
+        [0.2, 3]
+      ],
+      "pool" : [
+        {"weight" : 0.8, "pool" : "basicTreasure"},
+        {"weight" : 0.1, "pool" : "valuableTreasure"},
+        {"weight" : 0.05, "pool" : "costume"},
+        {"weight" : 0.05, "pool" : "instrument"}
+      ]
+    }]
   ]
 }

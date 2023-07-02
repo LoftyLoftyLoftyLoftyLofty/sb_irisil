@@ -1,0 +1,14 @@
+{
+  "type" : "lofty_irisil_pickmeup_manager",
+  "keepAlive" : true,
+
+  "scripts" : ["/stagehands/lofty_irisil_pickmeup_manager.lua"],
+  "scriptDelta" : 20,
+
+  "broadcastArea" : [-5, -5, 5, 5],
+
+  "signalRegion" : [-200, -400, 800, 300],
+
+  "goodTime" : 5000,
+  "badTime" : 80000
+}
