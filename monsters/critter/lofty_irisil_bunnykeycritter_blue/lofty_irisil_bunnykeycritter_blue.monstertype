@@ -15,11 +15,13 @@
 
   "baseParameters" : {
     "scripts" : [
-      "/monsters/monster.lua"
+      "/monsters/lofty_irisil_critterDefaultBehaviorOnRez.lua",
+	  "/monsters/lofty_irisil_monsterHooks.lua",
+	  "/monsters/monster.lua"
     ],
 
-    "behavior" : "walkingcritter",
-
+    "behavior" : "lofty_irisil_hooked_walkingcritter",
+	
     "metaBoundBox" : [-0.5, -0.5, 0.5, 0.5],
     "scale" : 1.0,
 

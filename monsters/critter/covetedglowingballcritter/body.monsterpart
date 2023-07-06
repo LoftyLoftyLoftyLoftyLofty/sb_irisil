@@ -1,9 +1,0 @@
-{
-  "name" : "lofty_irisil_covetedglowingballcritter",
-  "category" : "lofty_irisil_covetedglowingballcritter",
-  "type" : "body",
-
-  "frames" : {
-    "body" : "body.png"
-  }
-}

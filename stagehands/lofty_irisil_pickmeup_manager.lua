@@ -1,14 +1,6 @@
 require "/scripts/rect.lua"
 require "/scripts/lofty_irisil_util.lua"
 
-enableDebug = true
-scriptName = "LI-MGR-PickMeUp"
-function yeek(s)
-	if enableDebug then
-		sb.logInfo(scriptName .. " -> " .. s)
-	end
-end
-
 function init()
   self.containsPlayers = {}
   self.broadcastArea = rect.translate(config.getParameter("broadcastArea", {-8, -8, 8, 8}), entity.position())
@@ -20,11 +12,11 @@ function init()
 		
 		function(_, _, sender)
 			liu_SEM(sender, "lofty_irisil_pickmeup_dungeonFlags", dungeonFlags())
-			yeek("Sent dungeon flags to " .. sb.print(sender))
+			yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - sent dungeon flags to " .. sb.print(sender))
 		end
 	)
 	
-	yeek("Stagehand initialized!")
+	yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - manager stagehand initialized!")
 end
 
 function update(dt)
@@ -38,7 +30,7 @@ function queryPlayers()
   for _, id in pairs(newPlayerList) do
     if not self.containsPlayers[id] then
       liu_SEM(id, "lofty_irisil_pickmeup_manager_ID", entity.id())
-	  yeek("Sent dungeon mgr ID to " .. sb.print(id))
+	  yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - sent dungeon mgr ID to " .. sb.print(id))
     end
     newPlayers[id] = true
   end

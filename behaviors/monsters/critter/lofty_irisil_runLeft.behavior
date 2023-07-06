@@ -1,0 +1,68 @@
+{
+  "name": "lofty_irisil_critterRunLeft",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua"
+  ],
+  "parameters": {
+    "idleTime": [2, 8],
+    "wanderTime": 4
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+      {
+        "title": "setDirection",
+        "type": "action",
+        "name": "setDirection",
+        "parameters": {
+			"direction" : { "value" : -1 }
+		},
+        "output": {
+          "direction": "walk"
+        }
+      },
+      {
+        "title": "setAnimationState",
+        "type": "action",
+        "name": "setAnimationState",
+        "parameters": {
+          "state": {"value": "walk"},
+          "type": {"value": "movement"}
+        }
+      },
+	  {
+		"title": "move",
+		"type": "action",
+		"name": "move",
+		"parameters": {
+		  "direction": {"key": "walk"},
+		  "run": {"value": false}
+		}
+	  },
+	  //when we're done moving go idle
+	  {
+        "title": "setAnimationState",
+        "type": "action",
+        "name": "setAnimationState",
+        "parameters": {
+          "state": {"value": "idle"},
+          "type": {"value": "movement"}
+        }
+      },
+	  {
+		"title": "setVelocity",
+		"type": "action",
+		"name": "setVelocity",
+		"parameters": {
+		  "velocity": {"value": [0, 0]}
+		}
+	  }
+    ]
+  }
+}

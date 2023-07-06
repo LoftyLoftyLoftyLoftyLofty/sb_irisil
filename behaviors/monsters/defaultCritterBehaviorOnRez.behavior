@@ -1,0 +1,28 @@
+//this template is not actually used, it is here for my own reference while rebuilding hooked monster behaviors
+
+{
+  "name": "lofty_irisil_critterDefaultBehaviorOnRez",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+	"/monsters/lofty_irisil_critterDefaultBehaviorOnRez.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": 
+	[
+	  {
+		"title": "li_initDefaultBehavior",
+		"type": "action",
+		"name": "li_initDefaultBehavior",
+		"parameters": {}
+	  }
+    ]
+  }
+}

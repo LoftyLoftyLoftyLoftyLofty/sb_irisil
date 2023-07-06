@@ -3,25 +3,12 @@ require "/quests/scripts/questutil.lua"
 require "/scripts/vec2.lua"
 require "/scripts/lofty_irisil_util.lua"
 
-enableDebug = true
-scriptName = "LI-RM-PickMeUp"
-function yeek(s)
-	if enableDebug then
-		sb.logInfo(scriptName .. " -> " .. s)
-	end
-end
-
 function initDialogSequences()
 	self.msgSet1Index = 0
 	self.msgSet1Timer = 4.0
 end
 
 function init()
-
-	--disable this script unless the player is in the appropriate dungeon for it
-	if world.type() ~= "lofty_irisil_challengerooms_pickmeup" then
-		return
-	end
 
 	initDialogSequences()
 	
@@ -31,7 +18,7 @@ function init()
 		
 		function(_, _, f)
 			self.pickMeUp_dungeonFlags = f
-			yeek("Got dungeon flags: " .. sb.print(f))
+			yeek("(PLAYER) LI-RM-PickMeUp", "Got dungeon flags: " .. sb.print(f))
 		end
 	)
 
@@ -42,7 +29,7 @@ function init()
 		function(_, _, id)
 			initDialogSequences()
 			self.pickMeUp_managerID = id
-			yeek("Got dungeon mgr ID: " .. sb.print(id))
+			yeek("(PLAYER) LI-RM-PickMeUp", "Got dungeon mgr ID: " .. sb.print(id))
 			liu_SEM(self.pickMeUp_managerID, "lofty_irisil_pickmeup_requestDungeonFlags",entity.id())
 		end
 	)
@@ -52,11 +39,11 @@ function init()
 		"lofty_irisil_enterArea", 
 		function(_, _, areaName)
 			stageEnterArea(areaName)
-			yeek("Area triggered: " .. areaName)
+			yeek("(PLAYER) LI-RM-PickMeUp", "Area triggered: " .. areaName)
 		end
 	)
 	
-	yeek("Player script initialized!")
+	yeek("(PLAYER) LI-RM-PickMeUp", "Player script initialized!")
 
 end
 
@@ -73,6 +60,12 @@ end
 
 --prettymuch just used for handling the timer gaps between broadcasted messages
 function update(dt)
+
+	--disable this script unless the player is in the appropriate dungeon for it
+	if world.type() ~= "lofty_irisil_challengerooms_pickmeup" then
+		return
+	end
+
 	updateMsgSequence1(dt)
 end
 

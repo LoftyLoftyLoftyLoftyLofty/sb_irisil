@@ -1,0 +1,44 @@
+HOW TO MAKE MONSTER USE FUNNY TRIGGER LOCATIONS:
+
+PART 1 - SETTING UP THE TRIGGER IN-GAME
+
+	Step 1: 
+		Make your own template version of the messenger stagehand because the default one only respects players
+	Step 2: 
+		Adjust your template to use whatever categories of entity you want
+			player
+			npc
+			monster
+			object
+			vehicle
+			itemDrop
+			projectile
+			creature
+		
+	Step 3: 
+		Place your trigger ingame somewhere. 
+		Most of the missions have a messenger stagehand near the boss door that you can copypaste and edit to use your custom stagehand type
+	
+PART 2 - SETTING UP YOUR CREATURE TO USE HOOKS
+
+	Step 1: 
+		Make a new behavior hook script. For an example see:
+		/monsters/lofty_irisil_monsterHooks.lua
+		This script needs to contain a message handler func for each type of message you want to send with your ingame trigger.
+	
+	Step 2: 
+		In order for this script to get used by your creature you need to give your creature a behavior that uses it.
+		For an example of how to do this see:
+		/behaviors/monsters/critter/lofty_irisil_hooked_walking.behavior
+		
+		In this example we initialize (in this case, both of) our hook scripts.
+		The first one turns on our listener, the second is a basic switcheroo that swaps us back to the vanilla critter behavior once our listener is running.
+		
+		To add a behavior with a custom script hook callback you need to add a behavior .nodes entry too
+		Check out /behaviors/nodes/lofty_irisil.nodes for examples
+	
+	Step 3:
+		You need to add the scripts you made to the scripts list in your monster's .monstertype file or it will not spawn correctly
+	
+	Step 4:
+		Now that your monster is listening for messages and your messenger is set up ingame, it should be able to send a message to your monster.

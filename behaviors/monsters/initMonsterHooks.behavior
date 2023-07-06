@@ -1,0 +1,28 @@
+//this template is not actually used, it is here for my own reference while rebuilding hooked monster behaviors
+
+{
+  "name": "lofty_irisil_monsterHook_init",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+	"/monsters/lofty_irisil_monsterHooks.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": 
+	[
+	  {
+		"title": "li_initHooks",
+		"type": "action",
+		"name": "li_initHooks",
+		"parameters": {}
+	  }
+    ]
+  }
+}

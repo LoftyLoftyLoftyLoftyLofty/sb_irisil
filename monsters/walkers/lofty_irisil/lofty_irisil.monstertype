@@ -13,10 +13,12 @@
 
   "baseParameters" : {
     "scripts" : [
+	  "/monsters/lofty_irisil_critterDefaultBehaviorOnRez.lua",
+	  "/monsters/lofty_irisil_monsterHooks.lua",
       "/monsters/monster.lua"
     ],
 
-    "behavior" : "monster",
+    "behavior" : "lofty_irisil_hooked_monster",
 	"seeThroughLiquid" : true,
 	
     "behaviorConfig" : {
