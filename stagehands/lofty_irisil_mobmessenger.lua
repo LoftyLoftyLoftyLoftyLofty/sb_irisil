@@ -56,7 +56,7 @@ QUEUE_MSG_TYPE = 1
 QUEUE_MSG_PAYLOAD = 2
 
 function update(dt)
-  local newPlayers = broadcastAreaQuery({ includedTypes = {"creature", "monster"} })
+  local newPlayers = broadcastAreaQuery({ includedTypes = {"monster"} })
   local oldPlayers = table.concat(self.containsPlayers, ",")
   for _, id in pairs(newPlayers) do
     if not string.find(oldPlayers, id) then

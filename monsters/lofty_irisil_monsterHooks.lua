@@ -1,8 +1,41 @@
 require "/scripts/rect.lua"
 require "/scripts/lofty_irisil_util.lua"
 
+triggerZoneRegistrationForwarding = {}
+dungeonManagerStagehandID = nil
+
 function li_initHooks(args, board)
   
+  --basically stagehands don't have a good way to find each other
+  --what I did to work around this is have the stagehands all do an entity query for a coordinator mob
+  --the coordinator mob then passes everything along to the scripted manager stagehand for the dungeon
+  
+  --this handler is used for dungeon manager stagehands to register with a dungeon coordinator entity/monster
+  message.setHandler
+	(
+		"lofty_irisil_registerManager", 
+		
+		function(_, _, sender)
+			--respond to SYN with ACK and our ID
+			yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - coordinator received manager registration with id: " .. sender)
+			
+			dungeonManagerStagehandID = sender
+			
+			--acknowledge the manager so it quits polling us
+			liu_SEM(sender, "lofty_irisil_managerAccepted", entity.id())
+			
+			--send any other queued messages too
+			if #triggerZoneRegistrationForwarding > 0 then
+				for i, v in pairs(triggerZoneRegistrationForwarding) do
+					yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - dequeueing triggerZone id: " .. v)
+					liu_SEM(dungeonManagerStagehandID, "lofty_irisil_stagehandRegistration", v)
+				end
+				triggerZoneRegistrationForwarding = {}
+			end
+			
+		end
+	)
+	
   --this handler is used for trigger zones to register with a dungeon coordinator entity/monster
   message.setHandler
 	(
@@ -10,7 +43,20 @@ function li_initHooks(args, board)
 		
 		function(_, _, sender)
 			--respond to SYN with ACK and our ID
-			yeek("LI-MonsterHooks", entity.id() .. " - registered trigger zone with id: " .. sender)
+			yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - coordinator queueing registration for trigger zone with id: " .. sender)
+			
+			--because this stuff can happen in whatever zany order it wants on dungeon init, we queue the request to pass it to the manager stagehand for the dungeon (if any)
+			if dungeonManagerStagehandID == nil then
+			
+				table.insert(triggerZoneRegistrationForwarding,sender)
+				
+			else
+			
+				liu_SEM(dungeonManagerStagehandID, "lofty_irisil_stagehandRegistration", sender)
+				
+			end
+			
+			--we send a response immediately so that it stops polling
 			liu_SEM(sender, "lofty_irisil_registeredWithCoordinator", entity.id())
 		end
 	)
@@ -64,31 +110,31 @@ function li_initHooks(args, board)
 						if splitsies[3] == monster.type() or splitsies[3] == "*" then
 							
 							liu_setBehavior(splitsies[4])
-							yeek("LI-MonsterHooks", entity.id() .. " - setting behavior to '" .. splitsies[4] .. "'!")
+							yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - setting behavior to '" .. splitsies[4] .. "'!")
 							
 						else
 							
-							yeek("LI-MonsterHooks", entity.id() .. " - monster type doesn't match. Skipping.")
+							yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - monster type doesn't match. Skipping.")
 							
 						end
 					else
 					
-						yeek("LI-MonsterHooks", entity.id() .. " - monster unique ID doesn't match. Skipping.")
+						yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - monster unique ID doesn't match. Skipping.")
 						
 					end
 				else
 				
-					yeek("LI-MonsterHooks", entity.id() .. " - entity ID doesn't match. Skipping.")
+					yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - entity ID doesn't match. Skipping.")
 					
 				end
 			else
 			
-				yeek("LI-MonsterHooks", entity.id() .. " - not enough parameters to set behavior with hook! See monsterHooks.lua for documentation")
+				yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - not enough parameters to set behavior with hook! See monsterHooks.lua for documentation")
 				
 			end
 		end
 	)
 	
-	yeek("LI-MonsterHooks", entity.id() .. " - Listener initialized!")
+	yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - Listener initialized!")
 	return true
 end

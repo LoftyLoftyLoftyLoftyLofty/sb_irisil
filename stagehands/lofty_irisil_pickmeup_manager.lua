@@ -8,11 +8,31 @@ function init()
   
   message.setHandler
 	(
+		"lofty_irisil_stagehandRegistration", 
+		
+		function(_, _, sender)
+			yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - received stagehand registration for entity with ID: " .. sb.print(sender))
+			--this is the part where we ping the stagehand to figure out what type the stagehand is
+		end
+	)
+  
+  message.setHandler
+	(
 		"lofty_irisil_pickmeup_requestDungeonFlags", 
 		
 		function(_, _, sender)
 			liu_SEM(sender, "lofty_irisil_pickmeup_dungeonFlags", dungeonFlags())
 			yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - sent dungeon flags to " .. sb.print(sender))
+		end
+	)
+	
+  message.setHandler
+	(
+		"lofty_irisil_managerAccepted", 
+		
+		function(_, _, sender)
+			coordinatorACK = true
+			yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - got ACK from coordinator: " .. sb.print(sender))
 		end
 	)
 	
@@ -22,6 +42,8 @@ end
 function update(dt)
   world.loadRegion(self.signalRegion)
   queryPlayers()
+  findCoordinator()
+  SYNcoordinator()
 end
 
 function queryPlayers()
@@ -39,4 +61,30 @@ end
 
 function dungeonFlags()
 	return 1
+end
+
+coordinator = nil
+coordinatorACK = false
+function findCoordinator()
+	
+	if coordinator ~= nil then return end
+	
+	yeek("LI-MGR-PickMeUp", entity.id() .. " - seeking coordinator")
+	local finder = world.entityQuery({-9999,-9999}, {9999,9999}, {includedTypes = {"monster"}})
+	for _, id in pairs(finder) do
+		if world.entityUniqueId(id) == "coordinator" then
+			yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - coordinator identified: " .. id)
+			coordinator = id
+			break
+		end
+	end
+end
+
+function SYNcoordinator()
+	if coordinatorACK == true then return end
+	
+	if coordinator ~= nil then
+		yeek("(SERVER) LI-MGR-PickMeUp", entity.id() .. " - SYNing coordinator")
+		liu_SEM(coordinator, "lofty_irisil_registerManager", entity.id())
+	end
 end
