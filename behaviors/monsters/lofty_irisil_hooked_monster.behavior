@@ -1,0 +1,33 @@
+{
+  "name": "lofty_irisil_hooked_monster",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua"
+  ],
+  "parameters": {
+    "idleTime": [2, 8],
+    "wanderTime": 4
+  },
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+	  {
+		"title": "li_initHooks",
+		"type": "action",
+		"name": "li_initHooks",
+		"parameters": {}
+	  },
+	  {
+		"title": "li_initDefaultBehavior",
+		"type": "action",
+		"name": "li_initDefaultBehavior",
+		"parameters": { "behavior" : { "value" : "monster"} }
+	  }
+    ]
+  }
+}

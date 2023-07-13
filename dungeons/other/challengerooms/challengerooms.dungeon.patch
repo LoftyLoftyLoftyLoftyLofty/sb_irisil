@@ -6,11 +6,6 @@
 	},
 	{
 		"op" : "add",
-		"path" : "/metadata/anchor/-",
-		"value" : "lofty_irisil_pickMeUp"
-	},
-	{
-		"op" : "add",
 		"path" : "/parts/-",
 		"value" :
 		{
@@ -20,19 +15,6 @@
 				[ "maxSpawnCount", [1] ]
 			],
 			"def" : [ "tmx", "lofty_irisil_threadTheNeedle.json" ]
-		}
-	},
-	{
-		"op" : "add",
-		"path" : "/parts/-",
-		"value" :
-		{
-			"name" : "lofty_irisil_pickMeUp",
-			"rules" : 
-			[
-				[ "maxSpawnCount", [1] ]
-			],
-			"def" : [ "tmx", "lofty_irisil_pickMeUp.json" ]
 		}
 	}
 ]

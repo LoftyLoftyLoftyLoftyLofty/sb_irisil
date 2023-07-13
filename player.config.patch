@@ -1,0 +1,7 @@
+[
+	{
+		"op" : "add",
+		"path" : "/deploymentConfig/scripts/-",
+		"value" : "/scripts/player/lofty_irisil_pickmeup_radiomessagehandler.lua"
+	}
+]

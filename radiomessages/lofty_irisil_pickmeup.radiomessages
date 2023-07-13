@@ -1,0 +1,41 @@
+{
+	"lofty_irisil_pickMeUp_welcomeToOurHome_1" : 
+	{
+		"type" : "mission",
+		"senderName" : "Burrito",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Oh, a visitor! Welcome! We've found ourselves in quite the ^#ff0000;predicament^reset;- maybe you can help us out?"
+	},
+	
+	"lofty_irisil_pickMeUp_welcomeToOurHome_2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Burrito",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "This is all Green's fault."
+	},
+	
+	"lofty_irisil_pickMeUp_welcomeToOurHome_3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Burrito",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "HI HOW ARE YOU DOING IT'S SO EXCITING TO HAVE COMPANY OVER CAN WE BE FRIENDS I LOVE YOU"
+	},
+	
+	"lofty_irisil_pickMeUp_welcomeToOurHome_4" : 
+	{
+		"type" : "mission",
+		"senderName" : "Burrito",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Fate has brought our paths together! Please help my siblings and I out of these cages- we'll reward you for your help!"
+	},
+	
+	"lofty_irisil_pickMeUp_welcomeToOurHome_5" : 
+	{
+		"type" : "mission",
+		"senderName" : "Burrito",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "YOU ARE THE BEST AND I LOVE YOU PLEASE BE FRIENDS WITH ME FOREVER"
+	}
+}

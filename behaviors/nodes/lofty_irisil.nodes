@@ -1,0 +1,22 @@
+{
+  "li_initHooks": {
+    "type": "action",
+    "name": "li_initHooks",
+    "title": "li_initHooks",
+    "properties": {},
+    "category": "lofty_irisil",
+    "script": "/monsters/lofty_irisil_monsterHooks.lua",
+    "output": {}
+  },
+  "li_initDefaultBehavior": {
+    "type": "action",
+    "name": "li_initDefaultBehavior",
+    "title": "li_initDefaultBehavior",
+    "properties": {
+	  "behavior": {"type": "string", "value": "walkingcritter"}
+	},
+    "category": "lofty_irisil",
+    "script": "/monsters/lofty_irisil_critterDefaultBehaviorOnRez.lua",
+    "output": {}
+  }
+}

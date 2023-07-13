@@ -7,7 +7,7 @@
 
   "category" : "wire",
   "price" : 0,
-  "description" : "...",
+  "description" : "9x2 or 2x9",
   "shortdescription" : "Invisible Docking Field (Small)",
   "race" : "generic",
   
@@ -19,79 +19,79 @@
   "inventoryIcon" : "dockingfieldicon.png",
   "orientations" : [
     {
-      "image" : "dockingfieldsmall.png:<color>.off",
+      "image" : "dockingfieldsmall.png:<color>.on",
       "imagePosition" : [-4, 0],
 
       "direction" : "left",
       "flipImages" : true,
 
       "animationParts" : {
-        "bg" : "dockingfieldsmall.png",
+        "bg" : "dockingfieldsmalllit.png",
         "fg" : "dockingfieldsmalllit.png"
       },
       "animationPosition" : [-4, 0],
 
-      "detectArea" : [ [-0.5, 0], [0.5, 9] ],
+      "detectArea" : [ [0.5, 0], [1.5, 9] ],
 
-      "spaceScan" : 0.1,
+      "spaces" : [ [-1, 0], [0, 0], [-1, 8], [0, 8] ],
       "anchors" : [ "top", "bottom" ],
 
       "enableCollision" : "barrierVertical"
     },
     {
-      "image" : "dockingfieldsmall.png:<color>.off",
+      "image" : "dockingfieldsmall.png:<color>.on",
       "imagePosition" : [-4, 0],
 
       "direction" : "right",
 
       "animationParts" : {
-        "bg" : "dockingfieldsmall.png",
+        "bg" : "dockingfieldsmalllit.png",
         "fg" : "dockingfieldsmalllit.png"
       },
       "animationPosition" : [-4, 0],
 
-      "detectArea" : [ [-0.5, 0], [0.5, 9] ],
+      "detectArea" : [ [0.5, 0], [1.5, 9] ],
 
-      "spaceScan" : 0.1,
+      "spaces" : [ [-1, 0], [0, 0], [-1, 8], [0, 8] ],
       "anchors" : [ "top", "bottom" ],
 
       "enableCollision" : "barrierVertical"
     },
     {
-      "image" : "dockingfieldhorizontalsmall.png:<color>.off",
+      "image" : "dockingfieldhorizontalsmall.png:<color>.on",
       "imagePosition" : [-32, 4],
 
       "direction" : "left",
       "flipImages" : true,
 
       "animationParts" : {
-        "bg" : "dockingfieldhorizontalsmall.png",
+        "bg" : "dockingfieldhorizontalsmalllit.png",
         "fg" : "dockingfieldhorizontalsmalllit.png"
       },
       "animationPosition" : [-32, 4],
 
-      "detectArea" : [ [-5, 0.5], [4, 1.5] ],
+      "detectArea" : [ [0, 0.5], [9, 1.5] ],
 
-      "spaceScan" : 0.1,
+      "spaces" : [ [-4, 1], [-4, 0], [4, 1], [4, 0] ],
       "anchors" : [ "left", "right" ],
 
       "enableCollision" : "barrierHorizontal"
     },
     {
-      "image" : "dockingfieldhorizontalsmall.png:<color>.off",
+      "image" : "dockingfieldhorizontalsmall.png:<color>.on",
       "imagePosition" : [-32, 4],
 
       "direction" : "right",
 
       "animationParts" : {
-        "bg" : "dockingfieldhorizontalsmall.png",
+        "bg" : "dockingfieldhorizontalsmalllit.png",
         "fg" : "dockingfieldhorizontalsmalllit.png"
       },
       "animationPosition" : [-32, 4],
 
-      "detectArea" : [ [-5, 0.5], [4, 1.5] ],
+      "detectArea" : [ [0, 0.5], [9, 1.5] ],
 
-      "spaceScan" : 0.1,
+      "spaces" : [ [-4, 1], [-4, 0], [4, 1], [4, 0] ],
       "anchors" : [ "left", "right" ],
 
       "enableCollision" : "barrierHorizontal"
@@ -112,10 +112,10 @@
     },
     "barrierHorizontal" : {
       "collision" : [
-        [-5, 0.75],
-        [4, 0.75],
-        [4, 1.25],
-        [-5, 1.25]
+        [-4, 0.75],
+        [5, 0.75],
+        [5, 1.25],
+        [-4, 1.25]
       ],
       "collisionKind" : "slippery",
       "categoryWhitelist" : ["monster", "npc"],

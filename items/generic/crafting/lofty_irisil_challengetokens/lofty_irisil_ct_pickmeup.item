@@ -1,0 +1,11 @@
+{
+  "itemName" : "lofty_irisil_ct_pickmeup",
+  "price" : 50,
+  "rarity" : "Legendary",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "lofty_irisil_ct_pickmeup.png",
+  "description" : "A gift from the Glowbunnies.",
+  "shortdescription" : "Glowbunny Talisman",
+  "itemTags" : [ "reagent" ],
+  "maxStack" : 1000
+}

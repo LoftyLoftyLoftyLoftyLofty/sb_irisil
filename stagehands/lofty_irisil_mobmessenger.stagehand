@@ -1,0 +1,12 @@
+{
+  // please don't modify this file, it's a generically configurable stagehand to be used by dungeons
+  "type" : "lofty_irisil_mobmessenger",
+
+  "scripts" : ["/stagehands/lofty_irisil_mobmessenger.lua"],
+  "scriptDelta" : 1,
+
+  "broadcastArea" : [-5, -5, 5, 5],
+
+  "messageType" : "",
+  "messageArgs" : []
+}
