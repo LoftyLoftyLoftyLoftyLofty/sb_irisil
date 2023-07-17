@@ -2,6 +2,7 @@
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
 	{ "item" : "teleportercore", "count" : 1 },
+	{ "item" : "bunnyhead", "count" : 1 },
     { "item" : "essence", "count" : 5000 }
   ],
   "output" : {

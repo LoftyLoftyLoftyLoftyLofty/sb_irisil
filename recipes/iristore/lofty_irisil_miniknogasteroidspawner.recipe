@@ -7,5 +7,5 @@
     "item" : "lofty_irisil_miniknogasteroidspawner",
     "count" : 1
   },
-  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_util" ]
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_challenge" ]
 }

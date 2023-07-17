@@ -1,0 +1,49 @@
+{
+  "objectName" : "lofty_irisil_medievalnoticeboard",
+  "colonyTags" : ["glitch", "glitchvillage", "knowledge", "storage"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+
+  "category" : "storage",
+  "price" : 50,
+  "description" : "Hear ye, hear ye!",
+  "shortdescription" : "Medieval Notice Board",
+  "race" : "generic",
+  "health" : 1.5,
+
+  "apexDescription" : "Curiously free of Miniknog propaganda.",
+  "avianDescription" : "A board for posting news and announcements.",
+  "floranDescription" : "Sssign won't ssstop Floran, becaussse Floran can't read!",
+  "glitchDescription" : "Informed. This board is for royal decrees.",
+  "humanDescription" : "Booooring.",
+  "hylotlDescription" : "This appears to be some kind of traditional classifieds space.",
+  "novakidDescription" : "Eeyup, it's a board alright.",
+
+  "inventoryIcon" : "lofty_irisil_medievalnoticeboardicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "lofty_irisil_medievalnoticeboard.png:<color>",
+      "imagePosition" : [0, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/glitch/lofty_irisil_medievalnoticeboard/thankyoufornoticing.lua" ],
+  "scriptDelta" : 20,
+  "animation" : "lofty_irisil_medievalnoticeboard.animation",
+  "animationParts" : {
+    "bg" : "lofty_irisil_medievalnoticeboard.png"
+  },
+  
+  "codexWhitelist" : ["lofty_irisil_glitch-codex"],
+  
+  "openSounds" : [ "/sfx/objects/bookcase_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/bookcase_close.ogg" ],
+  "slotCount" : 1,
+  "uiConfig" : "/interface/chests/chest1.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+}

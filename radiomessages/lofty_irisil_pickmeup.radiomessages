@@ -2,40 +2,402 @@
 	"lofty_irisil_pickMeUp_welcomeToOurHome_1" : 
 	{
 		"type" : "mission",
-		"senderName" : "Burrito",
+		"senderName" : "Bluefull",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
-		"text" : "Oh, a visitor! Welcome! We've found ourselves in quite the ^#ff0000;predicament^reset;- maybe you can help us out?"
+		"text" : "Oh, a visitor! Welcome! Please help my siblings and I out of these cages- we'll reward you for your help!",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	},
 	
 	"lofty_irisil_pickMeUp_welcomeToOurHome_2" : 
 	{
 		"type" : "mission",
-		"senderName" : "Burrito",
+		"senderName" : "Redria",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
-		"text" : "This is all Green's fault."
+		"text" : "This is all Green's fault.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	},
 	
 	"lofty_irisil_pickMeUp_welcomeToOurHome_3" : 
 	{
 		"type" : "mission",
-		"senderName" : "Burrito",
+		"senderName" : "Greenill",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
-		"text" : "HI HOW ARE YOU DOING IT'S SO EXCITING TO HAVE COMPANY OVER CAN WE BE FRIENDS I LOVE YOU"
+		"text" : "HI HOW ARE YOU DOING IT'S SO EXCITING TO HAVE COMPANY OVER CAN WE BE FRIENDS I LOVE YOU",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	},
 	
 	"lofty_irisil_pickMeUp_welcomeToOurHome_4" : 
 	{
 		"type" : "mission",
-		"senderName" : "Burrito",
+		"senderName" : "Bluefull",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
-		"text" : "Fate has brought our paths together! Please help my siblings and I out of these cages- we'll reward you for your help!"
+		"text" : "You look like an adventurer, so you should know how to use a ^green;Relocator^reset; and ^green;Grappling Hook^reset;, right?",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_pickMeUp_welcomeToOurHome_5" : 
+	"lofty_irisil_pickMeUp_youAreBadAtGrapplingHook" : 
 	{
 		"type" : "mission",
-		"senderName" : "Burrito",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Didn't practice with your ^green;Grappling Hook^reset; very much, did you?",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterRedRoom" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Hi. To open my cage, you'll need to press a bunch of buttons. If you're fast enough, you can have the treasure in my closet, too.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_failRedTimeAttack" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Not fast enough! Maybe next time.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_succeedRedTimeAttack" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Nice.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_completeRedRoom" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Cool. Use your ^green;Relocator^reset; to pick me up, then let's get out of here.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_putRedOnPedestal" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "To enter the next area, you'll need to put me on this pedestal.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "There's nothing up there.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
-		"text" : "YOU ARE THE BEST AND I LOVE YOU PLEASE BE FRIENDS WITH ME FOREVER"
+		"text" : "YES THERE IS",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "THAT IS WHERE I KEEP MY SECRET CACTUS",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry4" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "...Your what?",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry5" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "SECRET",
+		"persistTime" : 2.0,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry6" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "CACTUS",
+		"persistTime" : 4.0,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry7" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Incredible.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry8" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "You can't just put a cactus in the wall, you'll hurt it.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry9" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "HIS NAME IS BURRITO",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry10" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Where did you even get a cactus?",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry11" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Sounds like a good name for a cactus to me.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry12" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Please don't encourage him.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry13" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "I LOVE BURRITO SO MUCH",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry14" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Okay, great. I stand corrected. 
+There's a cactus in there I guess.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_nothingInThereSorry15" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "YAY CACTUS",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterGreenWing" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "HIIIIIIIIIIIIIII",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_gravityChatter" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "I LOVE GRAVITY",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_gravityChatter2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "DO YOU WANT TO HEAR A SONG I WROTE ABOUT GRAVITY",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_gravityChatter3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "IT GOES
+NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
+		"persistTime" : 5.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_youShouldGoFast" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "THIS IS THE PART WHERE YOU GO FAST AND PRESS THE BUTTON",
+		"persistTime" : 5.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_failGreenTimeAttack" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "YOU ARE NOT FAST",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_failGreenTimeAttack2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "IT'S OK THOUGH I STILL LOVE YOU",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_failGreenTimeAttack3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "YOU CAN TRY AGAIN NEXT TIME YOU COME VISIT",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_failGreenTimeAttack4" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "WE CAN HAVE A SLEEPOVER",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_failGreenTimeAttack5" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "IT'LL BE GREAT",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_succeedGreenTimeAttack" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "WOO I LOVE FAST PEOPLE",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_succeedGreenTimeAttack2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "SAVE THE FRAMES",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_greenillVerticalShaft" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "HAVE YOU EVER WONDERED WHAT WOULD HAPPEN IF GRAVITY WENT UP INSTEAD",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_greenillVerticalShaft2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "WZZBZZBZZBZBZZBZZBZZBZZBZBZZZBZZZZ",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_greenillVerticalShaft3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "YAY GRAVITY",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	}
 }

@@ -73,10 +73,10 @@ function saveConfiguration()
     widget.setVisible("configure", false)
     widget.setVisible("toggleConfigure", false)
 
-    widget.setVisible("nameLabel", true)
+    widget.setVisible("nameLabel", false)
     widget.setText("nameLabel", config.getParameter("nameLabel")..name)
 
-    widget.setVisible("descriptionLabel", true)
+    widget.setVisible("descriptionLabel", false)
     widget.setText("descriptionLabel", config.getParameter("descriptionLabel")..description)
     widget.focus("consoleScreenCanvas")
   end

@@ -13,7 +13,8 @@
   "inventoryIcon" : "lofty_irisil_fisheyespawner.png",
   "animation" : "lofty_irisil_fisheyespawner.animation",
   "animationParts" : {
-    "transponder" : "lofty_irisil_fisheyespawner.png"
+    "transponder" : "lofty_irisil_fisheyespawner.png",
+    "transponderfullbright" : "lofty_irisil_fisheyespawner_fullbright.png"
   },
   "scripts" : ["lofty_irisil_fisheyespawner.lua"],
 

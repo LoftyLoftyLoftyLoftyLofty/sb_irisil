@@ -2,6 +2,11 @@
 	{
 		"op" : "add",
 		"path" : "/deploymentConfig/scripts/-",
-		"value" : "/scripts/player/lofty_irisil_pickmeup_radiomessagehandler.lua"
+		"value" : "/scripts/player/lofty_irisil_dungeonutils.lua"
+	},
+	{
+		"op" : "add",
+		"path" : "/deploymentConfig/scripts/-",
+		"value" : "/scripts/player/lofty_irisil_dungeonmanager_pickmeup.lua"
 	}
 ]

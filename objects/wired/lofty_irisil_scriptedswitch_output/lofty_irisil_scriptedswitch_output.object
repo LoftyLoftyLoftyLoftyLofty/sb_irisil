@@ -1,0 +1,38 @@
+{
+  "objectName" : "lofty_irisil_scriptedswitch_output",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "wire",
+  "price" : 0,
+  "health" : 0.1,
+  "description" : "...",
+  "shortdescription" : "A scripted switch. This connects dungeon variables to wire!",
+  "race" : "generic",
+
+  "smashOnBreak" : true,
+
+  "inventoryIcon" : "lofty_irisil_scriptedswitch_output.png:default.1",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_scriptedswitch_output.png:<color>.off",
+      "imagePosition" : [-8, -8],
+      "spaceScan" : 0.1,
+      "direction" : "right"
+    }
+  ],
+  
+  "scripts" : [ "/objects/wired/lofty_irisil_scriptedswitch_output/lofty_irisil_scriptedswitch_output.lua" ],
+  "scriptDelta" : 1,
+
+  "animation" : "/objects/wired/logic/logic.animation",
+
+  "animationParts" : {
+    "switch" : "invisiblelogicgatehidden.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "outputNodes" : [ [0, -1] ],
+
+  "variableHook" : "none"
+}

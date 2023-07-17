@@ -1,0 +1,42 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "noticeState" : {
+        "default" : "noNotice",
+        "states" : {
+          "noNotice" : {
+			"properties" : {
+            }
+		  },
+          "hasNotice" : {
+			"properties" : {
+            }
+		  }
+        }
+      }
+    },
+	
+    "parts" : {
+	  "bg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "noticeState" : {
+            "noNotice" : {
+              "properties" : {
+                "image" : "<partImage>:default"
+              }
+            },
+            "hasNotice" : {
+              "properties" : {
+                "image" : "<partImage>:notice"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

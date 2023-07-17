@@ -1,0 +1,259 @@
+[
+	//the crime scene chicken coop is mutually exclusive with the populated one
+	{
+		"op" : "add",
+		"path" : "/parts/11/rules/-",
+		"value" : [ "doNotCombineWith", [ "lofty_irisil_glitchvillage_chickenstealer_hut" ] ]
+	},
+
+	//tell the existing rooms that would normally be unable to connect to a vanilla chicken hut to not connect to ours either
+	
+	//index 11 is "6"
+	{
+		"op" : "add",
+		"path" : "/parts/11/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 12 is "7a"
+	{
+		"op" : "add",
+		"path" : "/parts/12/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 13 is "7b"
+	{
+		"op" : "add",
+		"path" : "/parts/13/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 14 is "8a"
+	{
+		"op" : "add",
+		"path" : "/parts/14/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 15 is "8b"
+	{
+		"op" : "add",
+		"path" : "/parts/15/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 27 is "17a"
+	{
+		"op" : "add",
+		"path" : "/parts/27/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 28 is "17b"
+	{
+		"op" : "add",
+		"path" : "/parts/28/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 29 is "18a"
+	{
+		"op" : "add",
+		"path" : "/parts/29/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 30 is "18b"
+	{
+		"op" : "add",
+		"path" : "/parts/30/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 31 is "19a"
+	{
+		"op" : "add",
+		"path" : "/parts/31/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 32 is "19b"
+	{
+		"op" : "add",
+		"path" : "/parts/32/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 33 is "20a"
+	{
+		"op" : "add",
+		"path" : "/parts/33/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 34 is "20b"
+	{
+		"op" : "add",
+		"path" : "/parts/34/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 35 is "21a"
+	{
+		"op" : "add",
+		"path" : "/parts/35/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 36 is "21b"
+	{
+		"op" : "add",
+		"path" : "/parts/36/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 37 is "22a"
+	{
+		"op" : "add",
+		"path" : "/parts/37/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 38 is "22b"
+	{
+		"op" : "add",
+		"path" : "/parts/38/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 39 is "23a"
+	{
+		"op" : "add",
+		"path" : "/parts/39/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 40 is "23b"
+	{
+		"op" : "add",
+		"path" : "/parts/40/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 41 is "slope1"
+	{
+		"op" : "add",
+		"path" : "/parts/41/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 42 is "slope2"
+	{
+		"op" : "add",
+		"path" : "/parts/42/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 43 is "slope3"
+	{
+		"op" : "add",
+		"path" : "/parts/43/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 44 is "slope4"
+	{
+		"op" : "add",
+		"path" : "/parts/44/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 45 is "slope5"
+	{
+		"op" : "add",
+		"path" : "/parts/45/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 46 is "slope6"
+	{
+		"op" : "add",
+		"path" : "/parts/46/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 47 is "slope7"
+	{
+		"op" : "add",
+		"path" : "/parts/47/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 48 is "slope8"
+	{
+		"op" : "add",
+		"path" : "/parts/48/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 49 is "slope9"
+	{
+		"op" : "add",
+		"path" : "/parts/49/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 50 is "slope10"
+	{
+		"op" : "add",
+		"path" : "/parts/50/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 51 is "slope11"
+	{
+		"op" : "add",
+		"path" : "/parts/51/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 52 is "slope12"
+	{
+		"op" : "add",
+		"path" : "/parts/52/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 53 is "slope13"
+	{
+		"op" : "add",
+		"path" : "/parts/53/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//index 54 is "slope14"
+	{
+		"op" : "add",
+		"path" : "/parts/54/rules/1/1/-",
+		"value" : "lofty_irisil_glitchvillage_chickenstealer_hut"
+	},
+	
+	//same chance as the other hut to spawn, it's just a lore book
+	{
+		"op" : "add",
+		"path" : "/parts/-",
+		"value" : 
+		{
+			"name" : "lofty_irisil_glitchvillage_chickenstealer_hut",
+			"rules" : 
+			[
+				[ "maxSpawnCount", [1] ],
+				[ "doNotConnectToPart", [ "towncenter1", "towncenter1-clue3", "towncenter2", "towncenter2-clue5", "6", "7a", "7b", "8a", "8b", "17a", "17b", "18a", "18b", "19a", "19b", "20a", "20b", "21a", "21b", "22a", "22b", "23a", "23b" ] ],
+				[ "doNotCombineWith", [ "6" ] ]
+			],
+			"def" : [ "tmx", "lofty_irisil_glitchvillage_chickenstealer_hut.json" ],
+			"chance" : 1
+		}
+	}
+]
