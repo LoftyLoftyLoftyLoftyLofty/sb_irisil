@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcHwI4XNA3EckjsEhjsvMGAK4D41GFqeHmZYE\/FsCxdjESnCYOQNq7gwkdg2SXZoEMC53omNkMyXx+EESh5kg\/VOR8HAyUxIJU9NMYShGN9NymJmpgIYHyp2zkTC6mcTggS5bScUAgUHZYA==",
+         "data":"eJw7zsDAcHwIYUssuI9EjG7mDDQMMzMGiUbG6GLYzMTlTkrMrAHiqUgY3UxsuAQJk2OmJgGMy8zZSBjdTEk87pXEYyY2d6Lro9TMdUiYWmYGIGF8ZuJKn+SYCRIThmJ0My2HmZkKaJgcMwnFOzFmYkvzlJRLgx0DANdZ2xE=",
          "encoding":"base64",
          "height":19,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBha4BwQ9xGJY3CI4zKTEEA2E12cHmZaoonj8hcuv2IzcwbUXGQ7arDYhQvgcie1zcRmx3Axk1D6JMdMdPNHzRxYM4nBQw0AAGaIM0M=",
+         "data":"eJxjYBhawBIL7iMRo4MZaBhmZgwO9ehi2NTgciclZmKzA9lMQn4lx0xCYKDNxBWn5Jq5DglTw0xiAKH0SQ3zR83EDWgR79QolwY7AAAnHi2L",
          "encoding":"base64",
          "height":19,
          "id":2,
@@ -59,7 +59,7 @@
                  "visible":true,
                  "width":32,
                  "x":16,
-                 "y":96
+                 "y":72
                 }, 
                 {
                  "gid":2147487094,
@@ -128,18 +128,6 @@
                  "y":64
                 }, 
                 {
-                 "gid":5742,
-                 "height":40,
-                 "id":962,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":32,
-                 "y":64
-                }, 
-                {
                  "gid":2147490944,
                  "height":16,
                  "id":964,
@@ -154,6 +142,217 @@
                  "type":"",
                  "visible":true,
                  "width":16,
+                 "x":128,
+                 "y":80
+                }, 
+                {
+                 "gid":5742,
+                 "height":40,
+                 "id":972,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":48,
+                 "y":120
+                }, 
+                {
+                 "gid":7824,
+                 "height":16,
+                 "id":973,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":96,
+                 "y":40
+                }, 
+                {
+                 "gid":7769,
+                 "height":8,
+                 "id":974,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":40,
+                 "y":48
+                }, 
+                {
+                 "gid":7769,
+                 "height":8,
+                 "id":975,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":112,
+                 "y":112
+                }, 
+                {
+                 "gid":7280,
+                 "height":16,
+                 "id":980,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"minidrone\"], \"monsterParams\" : { \"aggressive\" : true }, \"position\" : [5, -5], \"positionVariance\" : [0, 0], \"frequency\" : [0.25, 0.75], \"stock\" : 3, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":80,
+                 "y":72
+                }, 
+                {
+                 "gid":7870,
+                 "height":8,
+                 "id":981,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"detectArea\" : [ [-1, -9], [7, 4] ], \"detectEntityTypes\" : [ \"player\" ] }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":80,
+                 "y":56
+                }, 
+                {
+                 "gid":7833,
+                 "height":16,
+                 "id":983,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":80,
+                 "y":40
+                }, 
+                {
+                 "gid":8998,
+                 "height":16,
+                 "id":986,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":32,
+                 "y":96
+                }, 
+                {
+                 "gid":2147492516,
+                 "height":8,
+                 "id":987,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":24,
+                 "y":96
+                }, 
+                {
+                 "gid":6300,
+                 "height":8,
+                 "id":988,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":10,
+                 "x":128,
+                 "y":96
+                }, 
+                {
+                 "gid":7966,
+                 "height":16,
+                 "id":991,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"delay\" : 10.0 }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":128,
+                 "y":128
+                }, 
+                {
+                 "gid":7969,
+                 "height":16,
+                 "id":992,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":128,
+                 "y":112
+                }, 
+                {
+                 "gid":7967,
+                 "height":16,
+                 "id":993,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":128,
+                 "y":64
+                }, 
+                {
+                 "gid":7962,
+                 "height":16,
+                 "id":994,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":104,
+                 "y":80
+                },
+            
+                {
+                 "gid":5742,
+                 "height":40,
+                 "id":1005,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":64,
+                 "y":120
+                }, 
+                {
+                 "gid":8850,
+                 "height":8,
+                 "id":1006,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
                  "x":120,
                  "y":80
                 }],
@@ -168,7 +367,207 @@
          "draworder":"topdown",
          "id":5,
          "name":"wiring - lights & guns",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":984,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-8,
+                         "y":24
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":88,
+                 "y":32
+                }, 
+                {
+                 "height":0,
+                 "id":989,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":40,
+                         "y":56
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":88,
+                 "y":32
+                }, 
+                {
+                 "height":0,
+                 "id":996,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":40,
+                         "y":0
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":88,
+                 "y":48
+                }, 
+                {
+                 "height":0,
+                 "id":1001,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-56,
+                         "y":-32
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":136,
+                 "y":56
+                }, 
+                {
+                 "height":0,
+                 "id":1002,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":40,
+                         "y":64
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":88,
+                 "y":32
+                }, 
+                {
+                 "height":0,
+                 "id":1003,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":40,
+                         "y":80
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":88,
+                 "y":32
+                }, 
+                {
+                 "height":0,
+                 "id":1004,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-56,
+                         "y":-88
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":136,
+                 "y":120
+                }, 
+                {
+                 "height":0,
+                 "id":1007,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-32,
+                         "y":-40
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":136,
+                 "y":104
+                }, 
+                {
+                 "height":0,
+                 "id":1008,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":16,
+                         "y":-16
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":112,
+                 "y":72
+                }, 
+                {
+                 "height":0,
+                 "id":1009,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":48,
+                         "y":0
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":88,
+                 "y":104
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -214,7 +613,87 @@
          "draworder":"topdown",
          "id":7,
          "name":"wiring - locked door",
-         "objects":[],
+         "objects":[
+                {
+                 "height":0,
+                 "id":976,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":56,
+                         "y":-16
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":40,
+                 "y":40
+                }, 
+                {
+                 "height":0,
+                 "id":977,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-16,
+                         "y":-72
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":112,
+                 "y":104
+                }, 
+                {
+                 "height":0,
+                 "id":978,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-56,
+                         "y":48
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":104,
+                 "y":32
+                }, 
+                {
+                 "height":0,
+                 "id":979,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":40,
+                         "y":-48
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":64,
+                 "y":80
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -290,7 +769,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":966,
+ "nextobjectid":1010,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
