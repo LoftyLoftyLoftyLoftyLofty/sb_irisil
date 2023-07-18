@@ -1,0 +1,41 @@
+{
+  "objectName" : "lofty_irisil_invisiblesoundemitter",
+  "colonyTags" : ["wired"],
+  "printable" : false,
+  "rarity" : "Common",
+  "category" : "wire",
+  "price" : 0,
+  "health" : 0.1,
+  "description" : "...",
+  "shortdescription" : "Invisible Sound Source",
+  "race" : "generic",
+
+  "smashOnBreak" : true,
+  "lightColor" : [0, 0, 0],
+
+  "inventoryIcon" : "lofty_irisil_invisiblesoundemitter.png:default.1",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_invisiblesoundemitter.png:default.1",
+      "imagePosition" : [-8, -8],
+      "spaces" : [ [0, 0] ],
+      "direction" : "right"
+    }
+  ],
+
+  "animation" : "lofty_irisil_invisiblesoundemitter.animation",
+
+  "animationParts" : {
+    "light" : "invisiblesoundhidden.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "scripts" : [ "/objects/wired/lofty_irisil_invisiblesoundemitter/light.lua" ],
+  "scriptDelta" : 60,
+
+  // "interactive" : false,
+
+  "inputNodes" : [ [0, 0] ],
+
+  "soundEffectRangeMultiplier" : 1.5
+}
