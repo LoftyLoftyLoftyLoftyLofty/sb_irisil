@@ -1,0 +1,21 @@
+[
+	{
+		"op" : "add",
+		"path" : "/undergroundPlaceables/items/-",
+		"value" : 
+		{
+			"mode" : "floor",
+			"priority" : 1.0,
+			"variants" : 1,
+			"distribution" : "/biomes/distributions.config:lofty_irisil_dungeonDoors",
+
+			"type" : "object",
+			"objectSets" : [
+			  {
+				"pool" : [ [1, "lofty_irisil_cd_pickmeup" ] ],
+				"parameters" : { }
+			  }
+			]
+		}
+	}
+]
