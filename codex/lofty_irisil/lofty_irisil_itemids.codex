@@ -1,0 +1,71 @@
+{
+  "id" : "lofty_irisil_itemids",
+  "title" : "Irisil Mod IDs",
+  "description" : "A list of asset names and IDs from Project Irisil for server administrators' convenience.",
+  "icon" : "lofty_irisil_itemids.png",
+  "contentPages" : [
+
+//we can fit 15 lines of text per page, so 13 if including page title and whitespace
+"^yellow;ITEM IDS (1/4)^reset;
+
+^cyan;Crafting Materials^reset;:
+lofty_irisileye
+
+^cyan;Costume Parts^reset;:
+lofty_irisil_clingy
+
+^cyan;Food^reset;:
+lofty_irisil_eyeslices
+lofty_irisil_irislushie
+
+^cyan;Fishing^reset;:
+lofty_irisil_slimefishinglure",
+
+"^yellow;ITEM IDS (2/4)^reset;
+
+^cyan;Decorations^reset;:
+lofty_irisilaf
+lofty_irisil_alpacastatue
+lofty_irisil_eyetrophy
+lofty_irisil_froggoclocksomewhere
+lofty_irisil_irisaplushie
+lofty_irisil_irisastatue
+lofty_irisil_lurkingirisa
+lofty_irisil_scleramite
+lofty_irisil_smalltacklebox",
+
+"^yellow;ITEM IDS (3/4)^reset;
+
+^cyan;Codices^reset;:
+lofty_irisil_alpaca-codex
+lofty_irisil_apex-codex
+lofty_irisil_frog-codex
+lofty_irisil_glitch-codex
+lofty_irisil_guide-codex
+lofty_irisil_threadtheneedlelore-codex
+
+^cyan;Fossils^reset;:
+lofty_irisilfossil_head
+lofty_irisilfossil_torso
+lofty_irisilfossil_legs",
+
+"^yellow;ITEM IDS (4/4)^reset;
+
+^cyan;Weapons^reset;:
+lofty_irisil_eyepoker
+
+^cyan;Augments^reset;:
+lofty_irisil_irisadandruffaugment
+
+^cyan;Other Objects^reset;:
+lofty_irisil_challengeroomarrow_upleft
+lofty_irisil_daynightsensor
+lofty_irisil_invisibledockingfieldsmall
+lofty_irisil_irisamerchantv1"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

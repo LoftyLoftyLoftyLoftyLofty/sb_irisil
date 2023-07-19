@@ -34,6 +34,7 @@
   "primaryAbilityType" : "spearstab",
   "primaryAbility" : {
     "fireTime" : 0.125,
+	//drill spear and rare spear both have baseDps of 10.5 so this is a decent upgrade
     "baseDps" : 12.0,
 	"knockback" : 25
   },

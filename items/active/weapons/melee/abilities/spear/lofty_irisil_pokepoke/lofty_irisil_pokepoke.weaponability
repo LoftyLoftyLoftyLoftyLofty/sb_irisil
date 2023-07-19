@@ -17,13 +17,23 @@
     "minCooldownTime" : 0.0625,
     "cooldownSwingReduction" : 0.05,
 
-    "energyUsage" : 18.0,
+	//normal energy usage on flurry is 9.0. 
+	//This hits a bit harder though
+	
+    "energyUsage" : 12.0,
     "cooldownTime" : 0.0625,
 
+	//a rare spear with flurry has an average cooldown time of 0.2
+	//the eye poker has a cooldown time of 0.0625, which is 3 to 4 times as fast, meaning 3x to 4x dps
+	
+	//flurry's default config has a baseDamage of 3.0
+	//the eye poker has a baseDamage of 2.5 which is 0.8333x damage
+	
+	//this means that the eye poker on average should put out about 3.333x the damage of a rare spear
     "damageConfig" : {
       "damageSourceKind" : "spear",
       "statusEffects" : [ ],
-      "baseDamage" : 6,
+      "baseDamage" : 2.5,
       "knockback" : 10,
       "timeout" : 0.0625,
       "timeoutGroup" : "alt"
