@@ -114,7 +114,10 @@ function triggerThorns(damage)
   end
 
   local damageConfig = {
-    power = damage
+	//normal thorns hits with a damage factor of 1.0 and 1 projectile
+	//our thorns his with up to 8 projectiles: we divide by 4 here for approx 0.25x damage per projectile
+	//this gives us a thorn damage output of about 2x the damage we took in, but only if all 8 projectiles land
+    power = damage / 4.0
   }
   world.spawnProjectile(self.damageProjectileType, mcontroller.position(), entity.id(), {0, 1}, false, damageConfig)
   world.spawnProjectile(self.damageProjectileType, mcontroller.position(), entity.id(), {1, 1}, false, damageConfig)
