@@ -1609,7 +1609,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"aggressive\" : false, \"colors\" : \"generated\", \"captureHealthFraction\" : 1.0 }"
+                         "value":"{ \"aggressive\" : false, \"colors\" : \"generated\", \"captureHealthFraction\" : 1.0, \"damageTeamType\" : \"friendly\" }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -1678,6 +1678,11 @@
                          "name":"npc",
                          "type":"string",
                          "value":"hylotl"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"damageTeam\" : 1, \"damageTeamType\" : \"assistant\"}"
                         }, 
                         {
                          "name":"typeName",

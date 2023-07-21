@@ -108,7 +108,7 @@
 	"value" : {
 	
 	  "worldProperties" : {
-      "nonCombat" : true
+      "nonCombat" : false
       },
 	
 	  "type" : "FloatingDungeon",
