@@ -42,3 +42,8 @@ function yeek(n, s)
 		sb.logInfo(n .. " -> " .. s)
 	end
 end
+
+--thanks Silver
+function liu_itemExists(itemName)
+	return root.itemConfig(itemName) ~= nil
+end

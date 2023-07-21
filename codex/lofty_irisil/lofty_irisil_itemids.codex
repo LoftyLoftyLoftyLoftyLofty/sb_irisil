@@ -1,67 +1,277 @@
 {
   "id" : "lofty_irisil_itemids",
-  "title" : "Irisil Mod IDs",
+  "title" : "Project Irisil - Mod IDs",
   "description" : "A list of asset names and IDs from Project Irisil for server administrators' convenience.",
   "icon" : "lofty_irisil_itemids.png",
   "contentPages" : [
 
-//we can fit 15 lines of text per page, so 13 if including page title and whitespace
-"^yellow;ITEM IDS (1/4)^reset;
+"^yellow;PROJECT IRISIL MOD IDS^reset;
 
-^cyan;Crafting Materials^reset;:
+Hello friend!
+
+This guide contains IDs for most of the spawnable items, monsters, dungeons, and other assets added by the Project Irisil mod.
+
+Some pages contain ^green;additional notes^reset; that I hope are helpful!
+
+Cheers,
+-^red;Lofty^reset;
+",
+
+"^yellow;TABLE OF CONTENTS^reset;
+-  3 Crafting Materials
+-  4 Costumes
+-  6 Food
+-  7 Fishing
+-  8 Destination Transponders
+-  9 Challenge Doors
+- 10 Decorations
+- 13 Codices
+- 14 Fossils
+- 15 Combat
+- 16 Other Objects
+- 17 Monsters
+- 18 NPCs
+- 19 Planetside Dungeons",
+  
+//we can fit 15 lines of text per page
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Crafting Materials^reset;:
+
 lofty_irisileye
+^#888888;Crafting material used for most Irishop recipes.^reset;
 
-^cyan;Costume Parts^reset;:
+lofty_irisil_ct_pickmeup
+^#888888;Proof of completion for the 'Pick Me Up' dungeon.^reset;",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Costume Parts^reset; (1/2):
+
 lofty_irisil_clingy
+^#888888;Irisa backpack^reset;
 
-^cyan;Food^reset;:
+lofty_irisil_invis_head
+lofty_irisil_invis_chest
+lofty_irisil_invis_legs
+lofty_irisil_invis_back
+^#888888;Body hiders so I'm not relying on other mods for those.^reset;",
+
+//==============================================
+
+"^cyan;Costume Parts^reset; (2/2):
+
+lofty_irisil_bunnysuit_blue
+lofty_irisil_bunnysuit_green
+lofty_irisil_bunnysuit_red
+^#888888;Pants that replace your sprite with the Glowbunny sprites.^reset;",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Food^reset;:
+
 lofty_irisil_eyeslices
+^#888888;Irislices.^reset;
+
 lofty_irisil_irislushie
+^#888888;Community suggestion.^reset;",
 
-^cyan;Fishing^reset;:
-lofty_irisil_slimefishinglure",
+//==============================================
+//==============================================
+//==============================================
 
-"^yellow;ITEM IDS (2/4)^reset;
+"^cyan;Fishing^reset;:
 
-^cyan;Decorations^reset;:
+lofty_irisil_slimefishinglure
+^#888888;This lure is configured to work in any fluid, but only while you are in a whitelisted world type from the lure's config file.^reset;",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Destination Transponders^reset;:
+
+lofty_irisil_fisheyespawner
+^#888888;This spawns the large eyeball fishing area.^reset;
+
+lofty_irisil_miniknogasteroidspawner
+^#888888;This spawns the Miniknog asteroid base. Threat level displays as 6 but is actually 7. Guaranteed Irisa Action Figure.^reset;",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Challenge Doors^reset;:
+
+lofty_irisil_cd_threadtheneedle
+^#888888;Challenge room with focus on tight spaces and precise movement. Guaranteed (hidden) Irisa Statue.^reset;
+
+^cyan;Dungeon Doors^reset;:
+
+lofty_irisil_cd_pickmeup
+^#888888;Sprawling dungeon with focus on Grappling Hook mechanics. GLHF^reset;
+
+lofty_irisil_challengereturndoor
+^#888888;Dungeon exit door. GGWP.^reset;",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Decorations^reset; (1/3):
+
 lofty_irisilaf
+^#888888;Irisa Action Figure^reset;
+
 lofty_irisil_alpacastatue
+^#888888;Alpaca Statue^reset;
+
 lofty_irisil_eyetrophy
+^#888888;Irisa Eye Trophy^reset;
+
 lofty_irisil_froggoclocksomewhere
+^#888888;Frogg O'Clock Somewhere^reset;",
+
+//==============================================
+
+"^cyan;Decorations^reset; (2/3):
+
 lofty_irisil_irisaplushie
+^#888888;Irisa Plushie^reset;
+
 lofty_irisil_irisastatue
+^#888888;Irisa Statue^reset;
+
 lofty_irisil_lurkingirisa
+^#888888;Lurking Irisa^reset;
+
+lofty_irisil_medievalnoticeboard
+^#888888;Medieval Notice Board^reset;",
+
+//==============================================
+
+"^cyan;Decorations^reset; (3/3):
+
 lofty_irisil_scleramite
-lofty_irisil_smalltacklebox",
+^#888888;Scleramite (Captured Insect)^reset;
 
-"^yellow;ITEM IDS (3/4)^reset;
+lofty_irisil_secretcactus
+^#888888;Secret Cactus^reset;
 
-^cyan;Codices^reset;:
+lofty_irisil_smalltacklebox
+^#888888;Small Tackle Box^reset;",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Codices^reset;:
+
 lofty_irisil_alpaca-codex
 lofty_irisil_apex-codex
 lofty_irisil_frog-codex
 lofty_irisil_glitch-codex
 lofty_irisil_guide-codex
-lofty_irisil_threadtheneedlelore-codex
+lofty_irisil_itemids-codex
+lofty_irisil_threadtheneedlelore-codex",
 
-^cyan;Fossils^reset;:
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Fossils^reset;:
+
 lofty_irisilfossil_head
 lofty_irisilfossil_torso
 lofty_irisilfossil_legs",
 
-"^yellow;ITEM IDS (4/4)^reset;
+//==============================================
+//==============================================
+//==============================================
 
-^cyan;Weapons^reset;:
+"^cyan;Weapons^reset;:
+
 lofty_irisil_eyepoker
 
 ^cyan;Augments^reset;:
-lofty_irisil_irisadandruffaugment
 
-^cyan;Other Objects^reset;:
+lofty_irisil_irisadandruffaugment
+lofty_irisil_irisamobilityaugment
+lofty_irisil_irisamobilityaugmentswim",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Other Objects^reset;:
+
 lofty_irisil_challengeroomarrow_upleft
 lofty_irisil_daynightsensor
 lofty_irisil_invisibledockingfieldsmall
-lofty_irisil_irisamerchantv1"
+lofty_irisil_irisamerchantv1
+lofty_irisil_invisiblesoundemitter
+lofty_irisil_monsternamesensor
+lofty_irisil_scriptedswitch_input
+lofty_irisil_scriptedswitch_output",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^red;Monsters^reset;:
+
+lofty_irisil_fatgleap
+lofty_irisil_scleramite
+lofty_irisil_bunnykeycritter_blue
+lofty_irisil_bunnykeycritter_green
+lofty_irisil_bunnykeycritter_red
+lofty_irisil_covetedglowingballcritter
+lofty_irisil
+lofty_irisil_smallfish_peepgill",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^yellow;NPCs^reset;:
+
+lofty_irisil_apexhazmat
+lofty_irisil_apexitdepartment
+",
+
+//==============================================
+//==============================================
+//==============================================
+
+"^cyan;Planetside Dungeons^reset; (1/2):
+^#888888;/^red;placedungeon^reset; dungeonName^reset;
+
+lofty_irisil_alpacairisillair
+^#888888;Alpaca home with multiple room variations and randomized mineshaft layers underneath.^reset;
+
+lofty_irisil_dungeoncrawler
+^#888888;This is the Glitch dungeoncrawler dungeon with a guaranteed Irisa lair at the bottom.^reset;",
+
+//==============================================
+
+"^cyan;Planetside Dungeons^reset; (2/2):
+
+lofty_irisil_eyehoard
+^#888888;This Irisa den normally spawns in Eyepatch biomes.^reset;
+
+lofty_irisil_irisamerchant
+^#888888;Outpost merchant near Treasured Trophies.^reset;
+"
+
+//==============================================
+//==============================================
+//==============================================
 
   ],
     "itemConfig" : {

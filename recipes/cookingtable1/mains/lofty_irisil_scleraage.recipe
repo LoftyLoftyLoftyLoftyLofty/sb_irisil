@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+    { "item" : "rawtentacle", "count" : 1 },
+    { "item" : "wheat", "count" : 1 },
+    { "item" : "liquidoil", "count" : 1 }
+  ],
+  "output" : { "item" : "lofty_irisil_scleraage", "count" : 1 },
+  "groups" : [ "craftingfood", "mains" ],
+  "collectables" : { "cooking" : "lofty_irisil_scleraage" }
+}

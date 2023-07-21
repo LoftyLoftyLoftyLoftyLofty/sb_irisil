@@ -1,47 +1,52 @@
 {
-  "itemName" : "lofty_irisil_irislushie",
+  "itemName" : "lofty_irisil_scleraage",
+  //	it's a wordplay on sclera and karaage
+  //	https://en.wikipedia.org/wiki/Karaage
   
   //Betabound considers everything above or at 30 food value to be uncommon, 
   //above or at 45 to be rare, 
   //and above or at 65 to be legendary
-  "rarity" : "Legendary",
+  "rarity" : "Rare",
   
-  //using sb_foodsum gives us 550 as price and 70+5 as fill value (nonfood ingredients = 5 fv)
+  //using sb_foodsum gives us 185 as price and 40+10 as fill value (nonfood ingredients = 5 fv)
   //food bar normally only goes to 70 but I guess this is to prevent players from "wasting" components
   //some mods make your food bar bigger tho
   
   //the rarity of an irisa eye is more in its utility than its pixel value so we don't bother accounting for that
   
-  "price" : 550,
+  "price" : 185,
   "category" : "preparedFood",
-  "inventoryIcon" : "lofty_irisil_irislushie.png",
-  "description" : "Shaved ice and sweet blended juices whirled around an enormous alien eyeball.",
-  "shortdescription" : "Irislushie",
+  "inventoryIcon" : "lofty_irisil_scleraage.png",
+  "description" : "Alien eyes and tentacles coated in flour and fried in hot oil. Crispy outside, tender inside!",
+  "shortdescription" : "Scleraage",
   
   //rebalanced according to vanilla food rules:
   // buff length = flr( 9 * foodValue / helpfulBuffCount )
   // in this case 225 sec
   // negative buffs only last 5 sec
-  
   "effects" : [ [
     {
         "effect" : "lowgrav",
-        "duration" : 225
+        "duration" : 240
+    },
+    {
+        "effect" : "thorns",
+        "duration" : 240
     },
 	{
-        "effect" : "jumpboost",
-        "duration" : 225
+        "effect" : "maxenergyscalingboostfood",
+        "duration" : 240
     },
 	{
-        "effect" : "nofalldamage",
-        "duration" : 225
+        "effect" : "ragefood",
+        "duration" : 240
     },
 	{
         "effect" : "lofty_irisil_slow_5",
-        "duration" : 5
+        "duration" : 15
     }
   ] ],
-  "foodValue" : 75,
+  "foodValue" : 50,
   "tooltipKind" : "food",
   "builder" : "/items/buildscripts/buildfood.lua",
   "maxStack" : 1,

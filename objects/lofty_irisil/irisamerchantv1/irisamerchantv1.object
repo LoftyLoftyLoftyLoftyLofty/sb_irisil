@@ -57,5 +57,76 @@
     }
   ],
 
-  "npcToy" : {}
+  "npcToy" : {},
+  
+  "scripts" : ["/objects/lofty_irisil/irisamerchantv1/collab.lua"],
+  
+  //the script will add the recipe, the filters will put them in the right spots
+  "storeInventory" : 
+  [
+	//challenge doors
+		"lofty_irisil_cd_threadtheneedle",
+		"lofty_irisil_cd_pickmeup",
+	
+	//codices
+		"lofty_irisil_alpaca-codex",
+		"lofty_irisil_apex-codex",
+		"lofty_irisil_frog-codex",
+		"lofty_irisil_glitch-codex",
+		"lofty_irisil_guide-codex",
+		"lofty_irisil_itemids-codex",
+		"lofty_irisil_threadtheneedlelore-codex",
+	
+	//costume parts
+		"lofty_irisil_clingy",
+		
+		"lofty_irisil_invis_head",
+		"lofty_irisil_invis_chest",
+		"lofty_irisil_invis_legs",
+		"lofty_irisil_invis_back",
+		
+		"lofty_irisil_bunnysuit_blue",
+		"lofty_irisil_bunnysuit_green",
+		"lofty_irisil_bunnysuit_red",
+	
+	//decorations
+		"lofty_irisil_alpacastatue",
+		"lofty_irisil_eyetrophy",
+		"lofty_irisil_froggoclocksomewhere",
+		"lofty_irisil_irisaplushie",
+		"lofty_irisil_irisastatue",
+		"lofty_irisil_lurkingirisa",
+		"lofty_irisil_medievalnoticeboard",
+		"lofty_irisil_scleramite",
+		"lofty_irisil_secretcactus",
+		"lofty_irisil_smalltacklebox",
+		
+	//destination transponders
+		"lofty_irisil_fisheyespawner",
+		"lofty_irisil_miniknogasteroidspawner",
+		
+	//fishing
+		"lofty_irisil_slimefishinglure",
+		
+	//food
+		"lofty_irisil_eyeslices",
+		"lofty_irisil_irislushie",
+		
+	//fossils
+		"lofty_irisilfossil_head",
+		"lofty_irisilfossil_torso",
+		"lofty_irisilfossil_legs",
+		
+	//combat
+		"lofty_irisil_eyepoker",
+		"lofty_irisil_irisadandruffaugment",
+		"lofty_irisil_irisamobilityaugment",
+		"lofty_irisil_irisamobilityaugmentswim",
+	
+	//util / wire
+		"lofty_irisil_daynightsensor",
+		
+	//special / other
+		"lofty_irisil_irisamerchantv1"
+  ]
 }

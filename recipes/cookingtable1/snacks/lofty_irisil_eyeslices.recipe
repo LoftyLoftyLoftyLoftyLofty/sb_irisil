@@ -6,6 +6,6 @@
     { "item" : "alienfruitjam", "count" : 1 }
   ],
   "output" : { "item" : "lofty_irisil_eyeslices", "count" : 1 },
-  "groups" : [ "craftingfood", "desserts" ],
+  "groups" : [ "craftingfood", "snacks" ],
   "collectables" : { "cooking" : "lofty_irisil_eyeslices" }
 }

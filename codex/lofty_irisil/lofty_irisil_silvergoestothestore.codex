@@ -1,0 +1,11 @@
+{
+  "id" : "lofty_irisil_silvergoestothestore",
+  "title" : "Silver Goes to the Store",
+  "description" : "A saucy story about picking up meatballs.",
+  "icon" : "lofty_irisil_silvergoestothestore.png",
+  "contentPages" : [""],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

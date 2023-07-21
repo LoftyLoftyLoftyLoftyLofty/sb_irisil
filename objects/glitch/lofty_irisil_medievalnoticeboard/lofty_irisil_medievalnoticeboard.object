@@ -38,7 +38,8 @@
     "bg" : "lofty_irisil_medievalnoticeboard.png"
   },
   
-  "codexWhitelist" : ["lofty_irisil_glitch-codex"],
+  //commenting this out so any codex puts the notice on the board
+  //"codexWhitelist" : ["lofty_irisil_glitch-codex"],
   
   "openSounds" : [ "/sfx/objects/bookcase_open.ogg" ],
   "closeSounds" : [ "/sfx/objects/bookcase_close.ogg" ],

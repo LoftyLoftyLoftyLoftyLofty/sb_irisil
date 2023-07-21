@@ -16,5 +16,14 @@
 		  "order" : 9002,
 		  "item" : "lofty_irisil_irislushie"
 		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_scleraage",
+		"value" : 
+		{
+		  "order" : 9003,
+		  "item" : "lofty_irisil_scleraage"
+		}
 	}
 ]
