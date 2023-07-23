@@ -955,5 +955,121 @@
         {"weight" : 0.05, "pool" : "instrument"}
       ]
     }]
+  ],
+  
+  "lofty_irisil_hylotlPostOffice_lore" : 
+  [
+	[
+		1, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_threadtheneedlelore-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_hylotlPostOffice_mailTreasure" : 
+  [
+	[0, {
+      "poolRounds" : [
+        [0.3, 0],
+        [0.6, 1],
+        [0.075, 2],
+		[0.025, 3]
+      ],
+      "pool" : [
+		//basic city treasure that might happen
+        {"weight" : 0.05, "pool" : "hylotloceancityTreasure"},
+		{"weight" : 0.025, "pool" : "basicTreasure"},
+        {"weight" : 0.0125, "pool" : "hylotloceancityChestTreasure"},
+		{"weight" : 0.00625, "pool" : "valuableTreasure"},
+		
+		//huge clump of might-be-lore that can show up in the book piles
+		{"weight" : 0.00625, "pool" : "hylotloceancityLore"},
+		{"weight" : 0.00625, "pool" : "hylotlruinedcityLore"},
+		{"weight" : 0.00625, "pool" : "hylotlruinedcastleLore"},
+		{"weight" : 0.00625, "pool" : "hylotlcityLore"},
+		
+		{"weight" : 0.00625, "pool" : "apextestfacilityLore"},
+		{"weight" : 0.00625, "pool" : "apexbaseLore"},
+		{"weight" : 0.00625, "pool" : "apexcampLore"},
+		{"weight" : 0.00625, "pool" : "apexcityLore"},
+		
+		{"weight" : 0.00625, "pool" : "aviantempleLore"},
+		{"weight" : 0.00625, "pool" : "aviantombLore"},
+		{"weight" : 0.00625, "pool" : "avianvillageLore"},
+		{"weight" : 0.00625, "pool" : "aviannativevillageLore"},
+		{"weight" : 0.00625, "pool" : "aviannativevillageLoreDiary1"},
+		{"weight" : 0.00625, "pool" : "aviannativevillageLoreDiary2"},
+		{"weight" : 0.00625, "pool" : "aviannativevillageLoreDiary3"},
+		{"weight" : 0.00625, "pool" : "aviannativevillageLoreDiary4"},
+		{"weight" : 0.00625, "pool" : "avianairshipLore"},
+		
+		{"weight" : 0.00625, "pool" : "floranhuntinggroundsLore"},
+		{"weight" : 0.00625, "pool" : "florancanyonLore"},
+		{"weight" : 0.00625, "pool" : "floranvillagetowerLore"},
+		{"weight" : 0.00625, "pool" : "floranhutvillageLore"},
+		
+		{"weight" : 0.00625, "pool" : "dungeoncrawlerLore"},
+		{"weight" : 0.00625, "pool" : "evilfortressLore"},
+		{"weight" : 0.00625, "pool" : "glitchcastleLore"},
+		{"weight" : 0.00625, "pool" : "glitchvillageLore"},
+		{"weight" : 0.00625, "pool" : "glitchsewerLore"},
+		
+		{"weight" : 0.00625, "pool" : "humanprisonLore"},
+		{"weight" : 0.00625, "pool" : "humancampLore"},
+		
+		{"weight" : 0.00625, "pool" : "novakidvillageLore"},
+		
+		//the mailbox and lockers and stuff
+		{"weight" : 0.0125, "item" : [ "hylotlmailbox" ]},
+		{"weight" : 0.0125, "item" : [ "locker1" ]},
+		{"weight" : 0.0125, "item" : [ "locker2" ]},
+		{"weight" : 0.0125, "item" : [ "index" ]},
+        
+		//junk
+		{"weight" : 0.01, "item" : [ "paper", 1 ]},
+		{"weight" : 0.01, "item" : [ "paper", 2 ]},
+		{"weight" : 0.01, "item" : [ "paper", 3 ]},
+		{"weight" : 0.01, "item" : [ "paper", 4 ]},
+		{"weight" : 0.01, "item" : [ "paper", 5 ]},
+		{"weight" : 0.01, "item" : [ "paper", 6 ]},
+		{"weight" : 0.01, "item" : [ "paper", 7 ]},
+		{"weight" : 0.01, "item" : [ "paper", 8 ]},
+		{"weight" : 0.01, "item" : [ "paper", 9 ]},
+		{"weight" : 0.01, "item" : [ "paper", 10 ]},
+		
+        {"weight" : 0.025, "item" : [ "soggypaper" ]},
+        
+		{"weight" : 0.01, "item" : [ "paperplane", 1 ]},
+        {"weight" : 0.01, "item" : [ "paperplane", 2 ]},
+        {"weight" : 0.01, "item" : [ "paperplane", 3 ]},
+        {"weight" : 0.01, "item" : [ "paperplane", 4 ]},
+        {"weight" : 0.01, "item" : [ "paperplane", 5 ]},
+		
+		//better treasure
+        {"weight" : 0.05, "pool" : "lofty_irisil_hylotlPostOffice_presentTreasure"},
+		
+		//bOOksSsSs
+		{"weight" : 0.05, "item" : [ "bookpiles", 50]}
+      ]
+    }]
+  ],
+  
+  "lofty_irisil_hylotlPostOffice_presentTreasure" : 
+  [
+	[0, {
+      "poolRounds" : [
+        [1.0, 1]
+      ],
+      "pool" : [
+        {"weight" : 1.0, "pool" : "valuableTreasure"},
+        {"weight" : 1.0, "pool" : "costume"},
+        {"weight" : 1.0, "pool" : "instrument"}
+      ]
+    }]
   ]
 }

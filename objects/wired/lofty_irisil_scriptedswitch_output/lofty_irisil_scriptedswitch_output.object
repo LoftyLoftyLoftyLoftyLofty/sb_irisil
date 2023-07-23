@@ -6,8 +6,8 @@
   "category" : "wire",
   "price" : 0,
   "health" : 0.1,
-  "description" : "...",
-  "shortdescription" : "A scripted switch. This connects dungeon variables to wire!",
+  "description" : "A scripted switch. This connects dungeon variables to wire!",
+  "shortdescription" : "Scripted Switch - Output",
   "race" : "generic",
 
   "smashOnBreak" : true,

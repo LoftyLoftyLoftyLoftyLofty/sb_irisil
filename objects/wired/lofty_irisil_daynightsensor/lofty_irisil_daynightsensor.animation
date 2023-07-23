@@ -1,0 +1,51 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "switchState" : {
+        "default" : "day",
+        "states" : {
+          "day" : {
+			"properties" : {
+            }
+		  },
+          "night" : {
+			"properties" : {
+            }
+		  },
+		  "invisible" : {
+			"properties" : {
+            }
+		  }
+        }
+      }
+    },
+	
+    "parts" : {
+	  "switch" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+        "partStates" : {
+          "switchState" : {
+            "day" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.day"
+              }
+            },
+            "night" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.night"
+              }
+            },
+			"invisible" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.invisible"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

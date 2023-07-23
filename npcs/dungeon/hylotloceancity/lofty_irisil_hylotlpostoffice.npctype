@@ -1,0 +1,335 @@
+{
+  "type" : "lofty_irisil_hylotlpostoffice",
+  "baseType" : "base",
+
+  "levelVariance" : [3, 3],
+  "persistent" : true,
+
+  "damageTeamType" : "friendly",
+
+  "scriptConfig" : {
+    "behavior" : "guard",
+
+    "behaviorConfig" : {
+      //"greetingChance" : 0.5,
+
+      "hostileDamageTeam" : { "type" : "enemy", "team" : 1 }
+    },
+
+    "questGenerator" : {
+      "pools" : ["common"],
+      "enableParticipation" : true,
+
+      // Every 30 seconds, decide whether to generate a quest and if so, spend
+      // the rest of the 30s window trying to generate it.
+      "timeLimit" : 30,
+
+      // Don't generate new quests if there are already more than <nearbyQuestLimit>
+      // questmanager stagehands nearby, within a <nearbyQuestRange> tile range.
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "questCountRange" : [1, 4],
+      
+	  //post office worker probably isn't making chemical cocktails or doing surgery in their spare time
+      "graduation" : {
+        "nextNpcType" : [
+          [1, "crewmember"],
+          //[0.25, "crewmemberchemistblue"],
+          //[0.25, "crewmemberchemistgreen"],
+          //[0.25, "crewmemberchemistyellow"],
+          //[0.25, "crewmemberchemistorange"],
+          [1, "crewmemberengineer"],
+          [1, "crewmembermechanic"],
+          //[1, "crewmembermedic"],
+          [1, "crewmemberjanitor"],
+          [1, "crewmembertailor"]
+        ]
+      }
+    },
+
+    "reactions" : {
+      "spontaneous" : [
+        [5.0, "sleep", { "timeRange" : [0.7, 0.9] }],
+        [1.0, "sit", { "timeRange" : [0.6,0.2]}],
+        [1.0, "wander"]
+      ]
+    },
+
+    "dialog" : {
+      "tenant" : {
+        "grumbles" : {
+          "tagCriteria" : "/dialog/grumble.config:tagCriteria",
+          "enclosedArea" : "/dialog/grumble.config:enclosedArea",
+          "otherDeed" : "/dialog/grumble.config:otherDeed",
+          "severe" : "/dialog/grumble.config:severe",
+          "final" : "/dialog/grumble.config:final"
+        },
+        "arrivedHome" : {
+          "beacon" : "/dialog/arrivedhome.config:beacon",
+          "rent" : "/dialog/arrivedhome.config:rent"
+        }
+      },
+      "flee" : {
+        "helpme" : "/dialog/flee.config:helpme",
+        "safe" : "/dialog/flee.config:safe"
+      },
+      "breakObject" : "/dialog/converse.config:breakObject",
+      "greeting" : "/dialog/converse.config:greeting",
+	  
+      "converse" : {
+        "default" : {
+          "default" : [
+            "Need something delivered?",
+            "There's a lot of mail to sort. Are you here to help?",
+			"Please check your postage before sending.",
+			"I don't have your shipping numbers, sorry. Check the website."
+          ]
+		},
+		"apex" : {
+		  "default" : [
+			"Need something delivered discretely?",
+			"We'll get it there. No questions asked.",
+			"As long as it has correct postage, we'll deliver it.",
+			"We treat all mail as equally confidential."
+		  ]
+		},
+		"avian" : {
+		  "default" : [
+			"Need something airmailed?",
+			"We deliver everywhere, even to moving ships!",
+			"We're always hiring if you're looking for work!",
+			"Check our shipping catalog for prices."
+		  ]
+		},
+		"hylotl" : {
+		  "default" : [
+		    "Need something delivered, friend?",
+			"It's important that every envelope is neatly sorted.",
+			"We're happy to help you with your mail.",
+			"We deliver anywhere, even the bottom of the ocean!"
+		  ]
+		},
+		"glitch" : {
+		  "default" : [
+		    "Helpful. Need something delivered?",
+			"Dutiful. I am an expert at sorting mail.",
+			"Eager. How can we help?",
+			"Proud. Our shipments are almost always on time."
+		  ]
+		},
+		"floran" : {
+		  "default" : [
+			"Need sssomething delivered?",
+			"Floran can ship it!",
+			"No ssstab required. Only ssstamp.",
+			"Sssorting mail makes Floran hungry."
+		  ]
+		},
+		"novakid" : {
+		  "default" : [
+			"Howdy! Need something delivered?",
+			"We'll get 'er there in a jiff.",
+			"Always on time, pard'ner!",
+			"We ship anything, anywhere, anytime! Yee-haw!"
+		  ]
+		},
+		"neki" : {
+		  "default" : [
+			"Need a mail escort?",
+			"Got your package right here!",
+			"One sits coming right up!",
+			"Special delivery!"
+		  ]
+        }
+      },
+	  
+      "accuse" : "/dialog/thief.config:accuse",
+      "alert" : "/dialog/thief.config:alert"
+    }
+  },
+
+  "matchColorIndices" : false,
+  
+  "items" : {
+	"default" : [
+      [0, [
+          {
+			"head" : [ { "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"human" : [
+      [0, [
+          {
+			"head" : [ { "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"avian" : [
+      [0, [
+          {
+			"head" : [ { "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"apex" : [
+      [0, [
+          {
+			"head" : [ { "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"floran" : [
+      [0, [
+          {
+			"head" : [ { "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"glitch" : [
+      [0, [
+          {
+			"head" : [ { "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"novakid" : [
+      [0, [
+          {
+			"head" : [ { "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } } ],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	//hylotl get a special exception to also add glasses to their headwear
+	"hylotl" : [
+      [0, [
+          {
+			"head" : [ 
+				{ "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "glasses3eyes" }
+			],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "apexofficerpants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+      "maxHealth" : {
+        "baseValue" : 50.0
+      },
+      "powerMultiplier" : {
+        "baseValue" : 0.0
+      },
+      "protection" : {
+        "baseValue" : 1.0
+      },
+      "healthRegen" : {
+        "baseValue" : 0.0
+      }
+    }
+  }
+}

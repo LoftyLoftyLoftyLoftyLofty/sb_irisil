@@ -1,7 +1,7 @@
 {
   "id" : "lofty_irisil_guide",
   "title" : "Irisil Field Guide",
-  "description" : "Everything you need to know (and then some) about irisil.",
+  "description" : "Everything you need to know (and then some) about Irisil.",
   "icon" : "lofty_irisil_guide.png",
   "contentPages" : [
 
@@ -21,7 +21,7 @@ By ^red;Lofty^reset;
 
 "^yellow;INTRODUCTION^reset;
 
-Since their recent discovery, ^cyan;irisil^reset; (singular irisa) have become a topic of intense interest in a multitude of interstellar circles. Their innocuous appearance and impish stature landed irisil in the hearts of countless fans and spawned a plethora of advertising campaigns, mascots, and grassroots movements with a renewed interest in ^cyan;eyepatch^reset; habitat preservation and awareness, ^red;despite irisil being both invasive and highly prolific^reset;.",
+Since their recent discovery, ^cyan;Irisil^reset; (singular irisa) have become a topic of intense interest in a multitude of interstellar circles. Their innocuous appearance and impish stature landed Irisil in the hearts of countless fans and spawned a plethora of advertising campaigns, mascots, and grassroots movements with a renewed interest in ^cyan;Eyepatch^reset; habitat preservation and awareness, ^red;despite Irisil being both invasive and highly prolific^reset;.",
 
 "^yellow;APPEARANCE^reset;
 
@@ -29,22 +29,22 @@ Irisil are bipedal, standing around 3 feet (90cm) tall. Their arms are short wit
 
 "^yellow;LOCATION^reset;
 
-Habitually covering themselves in dirt, dust, or other particulate to better blend with their natural surroundings, irisil are often mistaken for native fauna on the planets they spread to. 
+Habitually covering themselves in dirt, dust, or other particulate to better blend with their natural surroundings, Irisil are often mistaken for native fauna on the planets they spread to. 
 
-Irisil are generally found on ^#7800ff;mutated^reset; or ^#12a003;jungle^reset; planets with large clusters of ^cyan;eyepatch trees^reset;. Their primary source of food is ^yellow;oculemons^reset;, but irisil are known to attack spacefarers to eat their eyes, and are particularly hostile toward hylotl.",
+Irisil are generally found on ^#7800ff;mutated^reset; or ^#12a003;jungle^reset; planets with large clusters of ^cyan;eyepatch trees^reset;. Their primary source of food is ^yellow;oculemons^reset;, but Irisil are known to attack spacefarers to eat their eyes, and are particularly hostile toward Hylotl.",
 
 "^yellow;BEHAVIOR^reset;
 
-Opportunists and scavengers, irisil will typically ^yellow;try to flee^reset; when threatened. They will ^red;throw items^reset; they may have on hand at their aggressor, which usually includes eyes or other spherical objects. Irisil are also capable of shaking the dust out of their fur, ^red;releasing a cloud^reset; of oily flakes that can cause allergic reactions, dizziness and numbness. Irisa legs possess a unique plate similar to Earth's fleas, allowing irisil to ^red;leap into the air^reset; to escape danger.",
+Opportunists and scavengers, Irisil will typically ^yellow;try to flee^reset; when threatened. They will ^red;throw items^reset; they may have on hand at their aggressor, which usually includes eyes or other spherical objects. Irisil are also capable of shaking the dust out of their fur, ^red;releasing a cloud^reset; of oily flakes that can cause allergic reactions, dizziness and numbness. Irisa legs possess a unique plate similar to Earth's fleas, allowing Irisil to ^red;leap into the air^reset; to escape danger.",
 
 "^yellow;TREASURE^reset;
 
-^red;Much like the rest of this universe's inhabitants, irisil are compulsive hoarders^reset;. They collect eyes and eye-shaped items and jealously guard the unevenly-stacked hoards of rounded oddities within their lairs.
-In a macabre display of cosmic irony, ^yellow;irisil eyes^reset; are considered a ^green;culinary delicacy^reset; on several planets. Florans have been observed taking these large eyes as rites of passage or keeping irisil as pets, kindred spirits for carving trophies out of their prey.",
+^red;Much like the rest of this universe's inhabitants, Irisil are compulsive hoarders^reset;. They collect eyes and eye-shaped items and jealously guard the unevenly-stacked hoards of rounded oddities within their lairs.
+In a macabre display of cosmic irony, ^yellow;Irisil eyes^reset; are considered a ^green;culinary delicacy^reset; on several planets. Florans have been observed taking these large eyes as rites of passage or keeping Irisil as pets, kindred spirits for carving trophies out of their prey.",
 
 "^yellow;HISTORY (1/2)^reset;
 
-^#888888;The first known encounter with irisil is detailed in the ship log of a cargo hauler operated by the Letheia Corporation returning from Exibiir Traverse II. The log describes the incident as follows:
+^#888888;The first known encounter with Irisil is detailed in the ship log of a cargo hauler operated by the Letheia Corporation returning from Exibiir Traverse II. The log describes the incident as follows:
 ^reset;\"We opened the rear bay to refuel and it was like we hit the jackpot at one of those hylotl stuffed animal arcades. They poured out of the back of the ship, climbing over us and each other, scattering everywhere.\"
 ^#8888CC;>>^reset;",
 
@@ -69,7 +69,7 @@ Version ^green;1.4^reset; Released: 2023/06/23
 
 "^yellow;PROJECT INFO (2/2)^reset;
 
-If you want to spawn irisil that aren't biome-colored, you can use this command:
+If you want to spawn Irisil that aren't biome-colored, you can use this command:
 ^green;/spawnmonster ^cyan;lofty_irisil 
 ^yellow;10 ^green;'^red;{ ^white;\"^#8888cc;colors^white;\" ^#888888;: ^white;\"^#8888cc;default^white;\" ^red;}^green;'^reset;
 

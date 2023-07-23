@@ -1447,6 +1447,11 @@
                          "name":"object",
                          "type":"string",
                          "value":"lofty_irisil_daynightsensor"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"invisible\" : true }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -1569,7 +1574,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 

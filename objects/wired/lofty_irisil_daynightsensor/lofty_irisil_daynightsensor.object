@@ -6,19 +6,19 @@
   "printable" : false,
   "price" : 250,
   "description" : "Outputs true when it's nighttime.",
-  "shortdescription" : "Night Sensor",
+  "shortdescription" : "Day / Night Sensor",
   "race" : "generic",
 
   "inventoryIcon" : "lofty_irisil_daynightsensoricon.png",
   "orientations" : [
     {
-	  "image" : "lofty_irisil_daynightsensor.png:<color>",
+	  "image" : "lofty_irisil_daynightsensor.png:<color>.day",
       "imagePosition" : [0, 0],
       "frames" : 1,
       "animationCycle" : 0.5,
 
       "spaces" : [ [0, 0] ],
-      "anchors" : []
+      "anchors" : ["background"]
     }
   ],
 
@@ -27,5 +27,10 @@
   ],
   "scriptDelta" : 5,
 
-  "outputNodes" : [ [0, 0] ]
+  "outputNodes" : [ [0, 0] ],
+  
+  "animation" : "lofty_irisil_daynightsensor.animation",
+  "animationParts" : {
+    "switch" : "lofty_irisil_daynightsensor.png"
+  }
 }

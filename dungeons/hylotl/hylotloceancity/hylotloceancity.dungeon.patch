@@ -1,0 +1,17 @@
+[
+	{
+		"op" : "add",
+		"path" : "/parts/-",
+		"value" : 
+		{
+			"name" : "lofty_irisil_hylotlpostoffice",
+			"rules" : 
+			[
+				[ "maxSpawnCount", [1] ],
+				[ "doNotConnectToPart", [ "lofty_irisil_hylotlpostoffice" ] ]
+			],
+			"def" : [ "tmx", "lofty_irisil_hylotlpostoffice.json" ],
+			"chance" : 1
+		}
+	}
+]

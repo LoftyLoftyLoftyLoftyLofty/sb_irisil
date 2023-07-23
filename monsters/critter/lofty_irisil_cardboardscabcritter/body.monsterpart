@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_cardboardscabcritter",
+  "category" : "lofty_irisil_cardboardscabcritter",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}
