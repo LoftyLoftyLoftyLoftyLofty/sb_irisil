@@ -1,8 +1,6 @@
 require "/interface/cockpit/cockpitview.lua"
 require "/interface/cockpit/cockpitutil.lua"
 
-desiredDungeon = "lofty_irisil_miniknoglab"
-
 -- engine callbacks
 function init()
   View:init()
@@ -21,6 +19,17 @@ function init()
   self.extraPadding = config.getParameter("extraOrbitPadding")
 
   pane.playSound(self.sounds.open)
+  
+  self.desiredDungeon = config.getParameter("desiredDungeon")
+  self.nameFrom = config.getParameter("nameFrom")
+  self.descFrom = config.getParameter("descFrom")
+  self.activeTextPrefix = config.getParameter("activeTextPrefix")
+  self.errorTextPrefix = config.getParameter("errorTextPrefix")
+  self.miscTextPrefix = config.getParameter("miscTextPrefix")
+  self.activeColor = config.getParameter("activeColor")
+  self.errorColor = config.getParameter("errorColor")
+  self.deadZoneColor = config.getParameter("deadZoneColor")
+  
 end
 
 function dismissed()
@@ -45,24 +54,10 @@ function update(dt)
   self.state:update(dt)
 end
 
-function toggleConfigure()
-  pane.playSound(self.sounds.configure)
-  widget.setVisible("configure", true)
-  widget.focus("configure.name")
-end
-
-function configurationChanged()
-  -- play every other change
-  self.play = not self.play
-  if self.play then
-    pane.playSound(self.sounds.typing)
-  end
-end
-
 function saveConfiguration()
 
-  local name = root.assetJson("/system_objects.config:lofty_irisil_miniknoglab.parameters.displayName")
-  local description = root.assetJson("/system_objects.config:lofty_irisil_miniknoglab.parameters.description")
+  local name = root.assetJson(self.nameFrom)
+  local description = root.assetJson(self.descFrom)
   if name ~= "" and description ~= "" then
     self.configuration = {
       name = name,
@@ -70,14 +65,7 @@ function saveConfiguration()
     }
     self.configuration.name = name
     self.configuration.description = description
-    widget.setVisible("configure", false)
-    widget.setVisible("toggleConfigure", false)
-
-    widget.setVisible("nameLabel", false)
-    widget.setText("nameLabel", config.getParameter("nameLabel")..name)
-
-    widget.setVisible("descriptionLabel", false)
-    widget.setText("descriptionLabel", config.getParameter("descriptionLabel")..description)
+	
     widget.focus("consoleScreenCanvas")
   end
 end
@@ -111,7 +99,7 @@ function connectState()
   end
   util.wait(connect.connectTime, function()
     dotTimer = (dotTimer + script.updateDt()) % dotCycle
-    widget.setText("connectingLabel", string.format("%s%s", connect.connectText, dots()))
+    widget.setText("connectingLabel", string.format("%s%s%s", self.activeTextPrefix, connect.connectText, dots()))
   end)
 
   if player.worldId() == player.ownShipWorldId() then
@@ -120,19 +108,19 @@ function connectState()
 
     util.wait(connect.successTime, function()
       dotTimer = (dotTimer + script.updateDt()) % dotCycle
-      widget.setText("connectingLabel", string.format("%s\n%s%s", connect.connectText, connect.successText, dots()))
+      widget.setText("connectingLabel", string.format("%s%s\n%s%s", self.activeTextPrefix, connect.connectText, connect.successText, dots()))
 
       planets = celestial.children(system)
     end)
     while #celestial.children(system) == 0 do
       coroutine.yield()
     end
-    widget.setText("connectingLabel", config.getParameter("connectedText"))
+    widget.setText("connectingLabel", string.format("%s%s", self.activeTextPrefix, config.getParameter("connectedText")))
     self.state:set(placeState, system, planets)
 	saveConfiguration()
   else
     pane.playSound(self.sounds.error)
-    widget.setText("connectingLabel", string.format("%s\n%s", connect.connectText, connect.failText))
+    widget.setText("connectingLabel", string.format("%s%s\n%s", self.errorTextPrefix, connect.connectText, connect.failText))
     while true do
       coroutine.yield()
     end
@@ -140,8 +128,6 @@ function connectState()
 end
 
 function placeState(system, planets)
-  widget.setVisible("configure", true)
-  widget.focus("configure.name")
   widget.setVisible("coordinateLabel", true);
   local coordinateText = config.getParameter("coordinateText")
   local connectedText = config.getParameter("connectedText")
@@ -154,17 +140,16 @@ function placeState(system, planets)
   while true do
     dotTimer = (dotTimer + script.updateDt()) % 0.5
     local dot = dotTimer > (0.5 / 2) and "." or ""
-    widget.setText("connectingLabel", connectedText .. dot)
+    widget.setText("connectingLabel", self.activeTextPrefix .. connectedText .. dot)
     View.canvas:clear()
 
     local mousePos = View:mousePosition()
     local selectPosition = View:toSystem(mousePos)
-    widget.setText("coordinateLabel", string.format(coordinateText, math.floor(selectPosition[1]), math.floor(selectPosition[2])))
+    widget.setText("coordinateLabel", string.format("%s" .. coordinateText, self.miscTextPrefix, math.floor(selectPosition[1]), math.floor(selectPosition[2])))
 
     local selectDistance = vec2.mag(selectPosition)
     local validDistance = true
 
-    local color = {150, 150, 150}
     local starSize = celestial.planetSize(system) / 2
 
     if selectDistance < starSize + self.padding + self.extraPadding then
@@ -220,7 +205,6 @@ function placeState(system, planets)
 end
 
 function deployState(system, planets, deployPosition)
-  widget.setVisible("toggleConfigure", false)
 
   local sequence = config.getParameter("deploySequence")
   local sequenceText = config.getParameter("deployingText")
@@ -242,11 +226,11 @@ function deployState(system, planets, deployPosition)
   util.wait(sequence.dispatching, function()
     View.canvas:clear()
     dotTimer = (dotTimer + script.updateDt()) % dotCycle
-    widget.setText("connectingLabel", sequenceText.dispatching .. dots())
+    widget.setText("connectingLabel", self.activeTextPrefix .. sequenceText.dispatching .. dots())
 
     View.canvas:clear()
     renderOrbits(system, planets, celestial.systemObjects(), self.padding + self.extraPadding, false)
-    View.canvas:drawPoly(circle(orbit, points, View:sToScreen({0, 0})), {53, 186, 255})
+    View.canvas:drawPoly(circle(orbit, points, View:sToScreen({0, 0})), self.activeColor)
   end)
   pane.stopAllSounds(self.sounds.dispatch)
 
@@ -257,12 +241,12 @@ function deployState(system, planets, deployPosition)
     timer = timer + script.updateDt()
     View.canvas:clear()
     dotTimer = (dotTimer + script.updateDt()) % dotCycle
-    widget.setText("connectingLabel", sequenceText.traveling .. dots())
+    widget.setText("connectingLabel", self.activeTextPrefix .. sequenceText.traveling .. dots())
 
     View.canvas:clear()
     renderOrbits(system, planets, celestial.systemObjects(), self.padding + self.extraPadding, false)
 
-    View.canvas:drawPoly(circle(orbit, points, View:sToScreen({0, 0})), {53, 186, 255})
+    View.canvas:drawPoly(circle(orbit, points, View:sToScreen({0, 0})), self.activeColor)
     local ratio = 1 - ((1 - (timer / sequence.traveling)) ^ 2)
     local pos = vec2.add(probeStart, vec2.mul(vec2.sub(deployPosition, probeStart), ratio))
     View.canvas:drawRect(rect.translate(objectRect, View:sToScreen(pos)), "white")
@@ -277,7 +261,7 @@ function deployState(system, planets, deployPosition)
   while true do
     timer = timer + script.updateDt()
     dotTimer = (dotTimer + script.updateDt()) % dotCycle
-    widget.setText("connectingLabel", sequenceText.deploying .. dots())
+    widget.setText("connectingLabel", self.activeTextPrefix .. sequenceText.deploying .. dots())
 
     View.canvas:clear()
     renderOrbits(system, planets, celestial.systemObjects(), self.padding + self.extraPadding, false)
@@ -303,7 +287,7 @@ function deployState(system, planets, deployPosition)
           displayName = self.configuration.name,
           description = self.configuration.description
         }
-        uuid = celestial.systemSpawnObject(desiredDungeon, deployPosition, nil, parameters)
+        uuid = celestial.systemSpawnObject(self.desiredDungeon, deployPosition, nil, parameters)
         deployed = true
       end
 
@@ -323,7 +307,7 @@ function deployState(system, planets, deployPosition)
     pane.playSound(self.sounds.complete)
     pane.playSound(self.sounds.success)
 
-    widget.setText("connectingLabel", sequenceText.deployed)
+    widget.setText("connectingLabel", self.activeTextPrefix .. sequenceText.deployed)
     util.wait(2.0, function()
       View.canvas:clear()
       renderOrbits(system, planets, celestial.systemObjects(), self.padding + self.extraPadding, false)
@@ -334,8 +318,7 @@ function deployState(system, planets, deployPosition)
       coroutine.yield()
     end
   else
-    widget.setText("connectingLabel", sequenceText.error)
-    widget.setFontColor("connectingLabel", config.getParameter("errorColor"))
+    widget.setText("connectingLabel", self.errorTextPrefix .. sequenceText.error)
     pane.playSound(self.sounds.error)
     util.wait(4.0, function()
       View.canvas:clear()
@@ -360,7 +343,7 @@ function renderOrbits(system, planets, objects, padding, withDeadzones)
     local orbit = vec2.mag(planetPosition) * View.systemCamera.scale
     local width = celestial.clusterSize(planet) + padding * 2
     if withDeadzones then
-      View.canvas:drawTriangles(wideCircle(orbit, 5 * math.sqrt(orbit), width * View.systemCamera.scale, View:sToScreen({0, 0})), {9, 30, 41, 255})
+      View.canvas:drawTriangles(wideCircle(orbit, 5 * math.sqrt(orbit), width * View.systemCamera.scale, View:sToScreen({0, 0})), self.deadZoneColor)
     end
     View.canvas:drawPoly(poly.translate(circle(orbit, 4 * math.sqrt(orbit)), View:sToScreen({0, 0})), color, 1.0)
     View.canvas:drawTriangles(fillCircle(size * View.systemCamera.scale, 12, View:sToScreen(planetPosition)), color)
@@ -381,7 +364,7 @@ function renderOrbits(system, planets, objects, padding, withDeadzones)
       local orbit = vec2.mag(position) * View.systemCamera.scale
       local width = padding * 2
       if withDeadzones then
-        View.canvas:drawTriangles(wideCircle(orbit, 5 * math.sqrt(orbit), width * View.systemCamera.scale, View:sToScreen({0, 0})), {9, 30, 41, 255})
+        View.canvas:drawTriangles(wideCircle(orbit, 5 * math.sqrt(orbit), width * View.systemCamera.scale, View:sToScreen({0, 0})), self.deadZoneColor)
       end
       View.canvas:drawPoly(poly.translate(circle(orbit, 4 * math.sqrt(orbit)), View:sToScreen({0, 0})), "white", 0.5)
       View.canvas:drawRect(rect.translate(objectRect, View:sToScreen(position)), "white")
@@ -394,9 +377,9 @@ function renderSelection(mousePos, selectDistance, validSelection)
 
   local color
   if validSelection then
-    color = {53, 168, 255, 255}
+    color = self.activeColor
   else
-    color = {255, 0, 0, 255}
+    color = self.errorColor
   end
   View.canvas:drawPoly(circle(selectDistance * View.systemCamera.scale, 40, View:sToScreen({0, 0})), color, 1.0)
   View.canvas:drawLine({0, mousePos[2]}, {View.windowSize[1], mousePos[2]}, {255, 255, 255, 255})

@@ -19,5 +19,5 @@
   "scripts" : ["lofty_irisil_fisheyespawner.lua"],
 
   "interactAction" : "ScriptPane",
-  "interactData" : "/interface/lofty_irisil/fisheye/lofty_irisil_fisheyespawner.config"
+  "interactData" : "/interface/lofty_irisil/lofty_irisil_fisheyespawner.config"
 }
