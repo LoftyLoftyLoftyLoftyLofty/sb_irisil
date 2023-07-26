@@ -66,7 +66,7 @@ end
 function selectedVariationScriptHook(args)
 
 	--this function is intended to be called when you want to make changes to one particular variation of NPC, regardless of what its final parameters may be
-	--example: adding more possible NPC types (such as frogmerchant) if the intended use is frog villager
+	--example: adding a weapon or hat for the NPC regardless of what race it might be
 	--at this stage we don't know the specific details of the NPC yet, only the category it will choose traits from
 		
 	--run the (original or modified by someone else) script hook chain for this func

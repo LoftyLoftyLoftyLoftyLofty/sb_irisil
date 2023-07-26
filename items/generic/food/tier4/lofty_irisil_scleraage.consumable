@@ -26,12 +26,12 @@
   // negative buffs only last 5 sec
   "effects" : [ [
     {
-        "effect" : "lowgrav",//bonus hp from wheat/bread
-        "duration" : 240
+        "effect" : "maxhealthscalingboostfood",//bonus hp from wheat/bread
+        "duration" : 225
     },
     {
-        "effect" : "thorns",//food regen
-        "duration" : 240
+        "effect" : "regenerationfood",//food regen
+        "duration" : 225
     },
 	{
         "effect" : "lofty_irisil_slow_5",
