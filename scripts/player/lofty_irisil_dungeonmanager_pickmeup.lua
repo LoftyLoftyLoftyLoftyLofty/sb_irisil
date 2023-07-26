@@ -3,9 +3,9 @@ require "/quests/scripts/questutil.lua"
 require "/scripts/vec2.lua"
 require "/scripts/lofty_irisil_util.lua"
 
-local originalInit = init
-local originalUpdate = update
-local originalUninit = uninit
+local lofty_irisil_dungeonmanager_pickmeup_originalInit = init
+local lofty_irisil_dungeonmanager_pickmeup_originalUpdate = update
+local lofty_irisil_dungeonmanager_pickmeup_originalUninit = uninit
 
 function lofty_irisil_initDialogSequences()
 
@@ -56,7 +56,7 @@ end
 
 function init()
 
-	originalInit()
+	lofty_irisil_dungeonmanager_pickmeup_originalInit()
 	
 	lofty_irisil_initDialogSequences()
 	
@@ -291,7 +291,7 @@ end
 --prettymuch just used for handling the timer gaps between broadcasted messages
 function update(dt)
 
-	originalUpdate(dt)
+	lofty_irisil_dungeonmanager_pickmeup_originalUpdate(dt)
 
 	--disable this script unless the player is in the appropriate dungeon for it
 	if world.type() ~= "lofty_irisil_challengerooms_pickmeup" then
@@ -522,5 +522,5 @@ function lofty_irisil_updateMsgSequenceGreenTimeAttackFail(dt)
 end
 
 function uninit()
-	originalUninit()
+	lofty_irisil_dungeonmanager_pickmeup_originalUninit()
 end

@@ -1,0 +1,85 @@
+//SEE lofty_irisil_modfriendlynpcspawner.lua FOR DOCUMENTATION
+
+{
+  "objectName" : "lofty_irisil_modfriendlynpcspawner",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "This NPC spawner is intended to be simple to integrate with.",
+  "shortdescription" : "Mod-Friendly NPC Spawner",
+  "race" : "generic",
+  "printable" : false,
+  "category" : "spawner",
+  "price" : 100,
+
+  "inventoryIcon" : "defaulticon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_modfriendlynpcspawner.png",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+    }
+  ],
+
+  "scripts" : 
+  [ 
+	"/objects/spawner/spawners/lofty_irisil_modfriendlynpcspawner.lua",
+	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_neki.lua"
+  ],
+  "scriptDelta" : 1,
+  //6000,
+
+  "animation" : "/objects/spawner/spawners/lofty_irisil_modfriendlynpcspawner.animation",
+
+  "animationParts" : {
+    "switch" : "lofty_irisil_modfriendlynpcspawner.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "inputNodes" : [ ],
+  "outputNodes" : [ ],
+
+  "smashOnBreak" : true,
+  "offscreenOnly" : true,
+  
+  "spawner" : {
+    "searchRadius" : 32.0,
+	
+	"possibleVariations" : 
+	[ 
+		{ 
+			"intendedUsage" : "Hylotl Post Office - any species", 
+			
+			//this is basically wild west for trying to add useful tags for scripts that modify stuff at runtime
+			//be responsible :3
+			
+			"scriptedTargetTags" : 
+				[
+					"faction:lofty_irisil_hylotlpostoffice",
+					"species:any",
+					"friendly"
+				],
+			"npcSpeciesOptions" : 
+				[ 
+					"apex",
+					"avian",
+					"floran",
+					"glitch",
+					"human",
+					"hylotl",
+					"novakid"
+				], 
+			"npcTypeOptions" : 
+				[ 
+					"lofty_irisil_hylotlpostoffice" 
+				], 
+			"npcParameterOptions" : 
+				[], 
+			"npcSeedOptions" : 
+				[]
+		} 
+	]
+  }
+}

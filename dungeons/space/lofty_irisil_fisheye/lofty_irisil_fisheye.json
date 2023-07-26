@@ -1430,6 +1430,12 @@
                  "height":16,
                  "id":2611,
                  "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"treasurePools\" : [ \"canYouPLEASEReplaceTheBagNextTime\" ] }"
+                        }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
@@ -1459,6 +1465,44 @@
                  "width":8,
                  "x":952,
                  "y":344
+                }, 
+                {
+                 "gid":7270,
+                 "height":40,
+                 "id":2620,
+                 "name":"Frogg",
+                 "properties":[
+                        {
+                         "name":"\/\/description",
+                         "type":"string",
+                         "value":"This NPC spawner is intended to be simple to integrate with."
+                        }, 
+                        {
+                         "name":"\/\/name",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"\/\/shortdescription",
+                         "type":"string",
+                         "value":"Mod-Friendly NPC Spawner"
+                        }, 
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"possibleVariations\" : [ { \"intendedUsage\" : \"Frogg\", \"scriptedTargetTags\" : [ \"species:frogg\", \"friendly\"], \"npcSpeciesOptions\" : [ \"hylotl\" ], \"npcTypeOptions\" : [ \"frogvillager\" ], \"npcParameterOptions\" : [{ \"damageTeam\" : 1, \"damageTeamType\" : \"assistant\"}], \"npcSeedOptions\" : [] } ] } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":1032,
+                 "y":640
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1676,33 +1720,6 @@
                 }, 
                 {
                  "height":8,
-                 "id":2486,
-                 "name":"Frog",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"hylotl"
-                        }, 
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"damageTeam\" : 1, \"damageTeamType\" : \"assistant\"}"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"frogvillager"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":1152,
-                 "y":568
-                }, 
-                {
-                 "height":8,
                  "id":2493,
                  "name":"Frog Critter",
                  "properties":[
@@ -1787,7 +1804,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":2620,
+ "nextobjectid":2621,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

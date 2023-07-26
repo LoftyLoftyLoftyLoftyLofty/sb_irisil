@@ -11,6 +11,7 @@ function init()
 		oldInit()
 	end
 	
+	world.setUniverseFlag("lofty_irisil_fixoutpostteleporter")
 end
 
 function onInteraction(args)
