@@ -1,3 +1,5 @@
+require "/scripts/lofty_irisil_util.lua"
+
 function init()
   if storage.state == nil then storage.state = config.getParameter("defaultLightState", true) end
 
@@ -29,6 +31,19 @@ end
 function processWireInput()
   if object.isInputNodeConnected(0) then
     object.setInteractive(false)
+	
+	--only send sound pings to players if the state actually changed
+	if storage.state ~= object.getInputNodeLevel(0) then
+	
+		--only send sound pings to players if the state is also on
+		if object.getInputNodeLevel(0) ~= false then
+			for _, k in pairs( world.players()) do
+				liu_SEM(k, "lofty_irisil_triggerSound", config.getParameter("sfx"))
+			end
+		end
+		
+	end
+	
     storage.state = object.getInputNodeLevel(0)
     setLightState(storage.state)
   elseif self.interactive then

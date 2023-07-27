@@ -58,7 +58,20 @@ function init()
 
 	lofty_irisil_dungeonmanager_pickmeup_originalInit()
 	
+	--disable this script unless the player is in the appropriate dungeon for it
+	if world.type() ~= "lofty_irisil_challengerooms_pickmeup" then
+		return
+	end
+	
 	lofty_irisil_initDialogSequences()
+	
+	message.setHandler
+	(
+		"lofty_irisil_triggerSound", 
+		function(_, _, tbl)
+			lofty_irisil_triggerSound_pickMeUp(tbl)
+		end
+	)
 	
 	message.setHandler
 	(
@@ -84,6 +97,11 @@ function init()
 		end
 	)
 	
+end
+
+--triggered when the player receives a sound command
+function lofty_irisil_triggerSound_pickMeUp(sound)
+	localAnimator.playAudio(sound)
 end
 
 --triggered when player hits an area marker
