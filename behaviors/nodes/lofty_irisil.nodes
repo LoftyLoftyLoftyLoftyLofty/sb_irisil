@@ -36,10 +36,7 @@
     "type": "action",
     "name": "li_setWorldPropertyBool",
     "title": "li_setWorldPropertyBool",
-    "properties": {
-      "flag": {"type": "string", "value": "none"},
-      "value": {"type": "bool", "value": true}
-    },
+    "properties": {},
     "category": "lofty_irisil",
     "script": "/monsters/lofty_irisil_monsterHooks.lua",
     "output": {}

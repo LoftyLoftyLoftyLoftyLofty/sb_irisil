@@ -74,8 +74,8 @@ function li_initHooks(args, board)
 		end
 	)
   
-  --sets behavior on a monster
-  message.setHandler
+    --sets behavior on a monster
+    message.setHandler
 	(
 		"lofty_irisil_monsterHook_setBehavior", 
 		
@@ -83,6 +83,19 @@ function li_initHooks(args, board)
 		function(_, _, b)
 			if validTarget(b) then
 				liu_setBehavior(b.behaviorType)
+			end
+		end
+	)
+	
+	--begone thot
+    message.setHandler
+	(
+		"lofty_irisil_monsterHook_despawn", 
+		
+		--hook for behavior
+		function(_, _, b)
+			if validTarget(b) then
+				liu_despawn()
 			end
 		end
 	)
@@ -112,6 +125,13 @@ function li_initHooks(args, board)
 	
 	--yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - Listener initialized! " .. monster.type())
 	return true
+end
+
+function liu_despawn(args)
+	monster.setDeathSound()
+	monster.setDeathParticleBurst()
+	monster.setDropPool("lofty_irisil_noTreasure")
+	status.setResource("health", 0)
 end
 
 --{ 
@@ -162,10 +182,10 @@ function liu_setPos(args)
 	end
 end
 
--- param flag
--- param value
+-- passing params through this one in particular was being a pain in my ass so we do it this way instead
 function li_setWorldPropertyBool(args, board, node)
-	world.setProperty(args.flag, args.value)
+	local w = config.getParameter("lofty_irisil_setWorldPropertyBool_onDeath")
+	world.setProperty(w.flag, w.value)
 end
 
 -- param direction

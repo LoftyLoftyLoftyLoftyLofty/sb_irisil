@@ -1071,5 +1071,13 @@
         {"weight" : 1.0, "pool" : "instrument"}
       ]
     }]
+  ],
+  
+  "lofty_irisil_noTreasure" : 
+  [
+	[0, {
+      "poolRounds" : [[1.0, 0]],
+      "pool" : []
+    }]
   ]
 }

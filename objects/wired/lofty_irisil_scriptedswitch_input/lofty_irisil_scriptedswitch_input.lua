@@ -10,6 +10,11 @@ function init()
 	self.variableHook = config.getParameter("variableHook")
 	self.messageAllPlayers = config.getParameter("messageAllPlayers")
 	self.messageArgs = config.getParameter("messageArgs") or {}
+	self.desiredValue = config.getParameter("value")
+	
+	if self.desiredValue == nil then
+		self.desiredValue = true
+	end
 	
 	--if we have a variableHook defined in the object parameters
 	if self.variableHook ~= nil then
@@ -37,9 +42,11 @@ function update(dt)
     if object.getInputNodeLevel(0) then
 	  if self.triggered == false then
 	    self.triggered = true
-        world.setProperty(self.variableHook, true)
-		yeek("Scripted Input Switch", "SET VAR -> " .. self.variableHook)
+        world.setProperty(self.variableHook, self.desiredValue)
+		yeek("Scripted Input Switch", "SET VAR -> " .. self.variableHook .. " -> " .. sb.print(self.desiredValue))
 	  end
+	else
+	  self.triggered = false
 	end
   end
   if self.messageAllPlayers ~= nil then

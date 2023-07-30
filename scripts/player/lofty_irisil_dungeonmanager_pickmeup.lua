@@ -15,6 +15,9 @@ function lofty_irisil_initDialogSequences()
 	self.lofty_irisil_msgSetSecretCactusIndex = 0
 	self.lofty_irisil_msgSetSecretCactusTimer = 4.5
 	
+	self.lofty_irisil_msgSetSecretTunnelIndex = 0
+	self.lofty_irisil_msgSetSecretTunnelTimer = 4.5
+	
 	self.lofty_irisil_msgSetKatamariIndex = 0
 	self.lofty_irisil_msgSetKatamariTimer = 4.5
 	
@@ -57,6 +60,8 @@ end
 --	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT
 --	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog
 --	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sentDialog- .. uuid
+--
+--  lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog- .. uuid
 
 function init()
 
@@ -144,6 +149,16 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 			world.setProperty("lofty_irisil_dungeon_pickMeUp_noSecretInTheOilChamber-" .. uuid, true)
 			self.lofty_irisil_msgSetSecretCactusIndex = 1
 			self.lofty_irisil_msgSetSecretCactusTimer = self.lofty_irisil_timerSpeed_medium
+		end
+	end
+	
+	--easter egg message if player manages to get into the rabbit tunnel
+	if areaName == "nothingInThereSorry" then
+		if world.getProperty("lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog-" .. uuid) ~= true then
+			player.radioMessage("lofty_irisil_dungeon_pickMeUp_secretTunnel1")
+			world.setProperty("lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog-" .. uuid, true)
+			self.lofty_irisil_msgSetSecretTunnelIndex = 1
+			self.lofty_irisil_msgSetSecretTunnelTimer = self.lofty_irisil_timerSpeed_medium
 		end
 	end
 
@@ -324,6 +339,7 @@ function update(dt)
 
 	lofty_irisil_updateMsgSequence1(dt)
 	lofty_irisil_updateMsgSequenceSecretCactus(dt)
+	lofty_irisil_updateMsgSequenceSecretTunnel(dt)
 	lofty_irisil_updateMsgSequenceKatamari(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackSuccess(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackFail(dt)
@@ -425,6 +441,42 @@ function lofty_irisil_updateMsgSequenceSecretCactus(dt)
 				
 				if self.lofty_irisil_msgSetSecretCactusIndex == 6 then
 					self.lofty_irisil_msgSetSecretCactusTimer = self.lofty_irisil_timerSpeed_long
+				end
+			end
+		end
+	end
+end
+
+--list format in case other radio messages need to be inserted later
+lofty_irisil_secretTunnelMessages = 
+{
+	"lofty_irisil_pickMeUp_secretTunnel1",
+	"lofty_irisil_pickMeUp_secretTunnel2",
+	"lofty_irisil_pickMeUp_secretTunnel3"
+}
+
+function lofty_irisil_updateMsgSequenceSecretTunnel(dt)
+	--we only care about the msg sequence timers if we're in a nonzero message state
+	if self.lofty_irisil_msgSetSecretTunnelIndex > 0 then
+		
+		--begin sequence
+		if self.lofty_irisil_msgSetSecretTunnelTimer > 0 then
+		
+			--handle time difference
+			self.lofty_irisil_msgSetSecretTunnelTimer = self.lofty_irisil_msgSetSecretTunnelTimer - dt
+		
+			--if it's been 4 seconds
+			if self.lofty_irisil_msgSetSecretTunnelTimer <= 0 then
+			
+				--reset the timer
+				self.lofty_irisil_msgSetSecretTunnelTimer = self.lofty_irisil_timerSpeed_medium
+				
+				--increment the set index
+				self.lofty_irisil_msgSetSecretTunnelIndex = self.lofty_irisil_msgSetSecretTunnelIndex + 1
+				
+				--send message
+				if lofty_irisil_secretCactusMessages[self.lofty_irisil_msgSetSecretTunnelIndex] ~= nil then
+					player.radioMessage(lofty_irisil_secretTunnelMessages[self.lofty_irisil_msgSetSecretTunnelIndex])					
 				end
 			end
 		end

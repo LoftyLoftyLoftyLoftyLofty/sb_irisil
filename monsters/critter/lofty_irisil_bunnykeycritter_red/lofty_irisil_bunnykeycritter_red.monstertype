@@ -19,19 +19,24 @@
 	  "/monsters/lofty_irisil_monsterHooks.lua",
       "/monsters/monster.lua"
     ],
+	
+	"persistent" : true,
 
     "behavior" : "lofty_irisil_hooked_walkingcritter",
 	"deathBehavior" : "monster-death",
-
+	
+	"lofty_irisil_setWorldPropertyBool_onDeath" : 
+	{
+		"flag" : "lofty_irisil_bunnykeycritter_red-needsRespawn",
+		"value": true
+	},
+	
 	"behaviorConfig" : 
 	{
 		"deathActions" : [
 		{
           "name" : "li_setWorldPropertyBool",
-          "parameters" : {
-            "flag" : "lofty_irisil_bunnykeycritter_red-needsRespawn",
-			"value": true
-          }
+          "parameters" : {}
         }
       ]
 	},
