@@ -399,5 +399,15 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"text" : "YAY GRAVITY",
 		"persistTime" : 3.5,
 		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Excellent work! We still need your help before we can give you your rewards - we'll meet you at the bottom!",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	}
 }

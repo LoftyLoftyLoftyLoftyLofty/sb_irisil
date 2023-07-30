@@ -53,6 +53,10 @@ end
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft_sentDialog- .. uuid
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft2_sentDialog- .. uuid
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft3_sentDialog- .. uuid
+--
+--	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT
+--	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog
+--	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sentDialog- .. uuid
 
 function init()
 
@@ -315,12 +319,21 @@ function update(dt)
 	if world.type() ~= "lofty_irisil_challengerooms_pickmeup" then
 		return
 	end
+	
+	local uuid = player.serverUuid()
 
 	lofty_irisil_updateMsgSequence1(dt)
 	lofty_irisil_updateMsgSequenceSecretCactus(dt)
 	lofty_irisil_updateMsgSequenceKatamari(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackSuccess(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackFail(dt)
+	
+	if world.getProperty("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog") == true then
+		if world.getProperty("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog-" .. uuid) ~= true then
+			player.radioMessage("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog")
+			world.setProperty("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sentDialog-" .. uuid, true)
+		end
+	end
 end
 
 --welcome messages

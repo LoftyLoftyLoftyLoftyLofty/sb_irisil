@@ -28,7 +28,7 @@ function init()
 				if k == sender then
 				
 					--send the initial message
-					liu_SEM(k, self.messageType, self.messageArgs)
+					liu_SEM(k, self.messageType, preprocess(self.messageArgs))
 					
 					--dequeue
 					table.liu_removeKey(queue,k)
@@ -43,6 +43,16 @@ function init()
 
 	)
 	
+end
+
+function preprocess(args)
+	for k, v in pairs(args) do
+		if v == "<SENDER_ID>" then
+			args[k] = entity.id()
+		end
+	end
+	
+	return args
 end
 
 queue = {}

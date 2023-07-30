@@ -21,6 +21,20 @@
     ],
 
     "behavior" : "lofty_irisil_hooked_walkingcritter",
+	"deathBehavior" : "monster-death",
+	
+	"behaviorConfig" : 
+	{
+		"deathActions" : [
+		{
+          "name" : "li_setWorldPropertyBool",
+          "parameters" : {
+            "flag" : "lofty_irisil_bunnykeycritter_blue-needsRespawn",
+			"value": true
+          }
+        }
+      ]
+	},
 	
     "metaBoundBox" : [-0.5, -0.5, 0.5, 0.5],
     "scale" : 1.0,
