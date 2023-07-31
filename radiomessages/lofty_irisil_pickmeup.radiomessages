@@ -9,7 +9,7 @@
 		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_pickMeUp_welcomeToOurHome_2" : 
+	"lofty_irisil_pickMeUp_welcomeToOurHome_3" : 
 	{
 		"type" : "mission",
 		"senderName" : "Redria",
@@ -19,7 +19,7 @@
 		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_pickMeUp_welcomeToOurHome_3" : 
+	"lofty_irisil_pickMeUp_welcomeToOurHome_4" : 
 	{
 		"type" : "mission",
 		"senderName" : "Greenill",
@@ -29,7 +29,7 @@
 		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_pickMeUp_welcomeToOurHome_4" : 
+	"lofty_irisil_pickMeUp_welcomeToOurHome_2" : 
 	{
 		"type" : "mission",
 		"senderName" : "Bluefull",
@@ -397,6 +397,56 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"senderName" : "Greenill",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
 		"text" : "YAY GRAVITY",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Excellent work! We still need your help before we can give you your rewards - we'll meet you at the bottom!",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_dungeon_pickMeUp_secretTunnel1" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "You're not supposed to be in here.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_dungeon_pickMeUp_secretTunnel2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "SECRET TUNNELLLLLLLLLLLL",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_dungeon_pickMeUp_secretTunnel3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Oh my GOD shut UP.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_putGreenOnPedestal" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "WOO YEAH PUT ME ON THE THING",
 		"persistTime" : 3.5,
 		"textSpeed" : 50
 	}

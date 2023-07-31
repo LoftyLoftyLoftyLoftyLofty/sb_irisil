@@ -1,11 +1,11 @@
 {
-  "name": "lofty_irisil_critterDefaultBehaviorOnRez",
+  "name": "li_setWorldPropertyBool",
   "description": "",
   "scripts": [
     "/scripts/actions/animator.lua",
     "/scripts/actions/time.lua",
     "/scripts/actions/movement.lua",
-	"/monsters/lofty_irisil_critterDefaultBehaviorOnRez.lua"
+	"/monsters/lofty_irisil_monsterHooks.lua"
   ],
   "parameters": {},
   "root": {
@@ -16,9 +16,9 @@
     "children": 
 	[
 	  {
-		"title": "li_initDefaultBehavior",
+		"title": "li_setWorldPropertyBool",
 		"type": "action",
-		"name": "li_initDefaultBehavior",
+		"name": "li_setWorldPropertyBool",
 		"parameters": {}
 	  }
     ]

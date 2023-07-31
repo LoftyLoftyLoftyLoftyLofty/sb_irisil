@@ -4,7 +4,8 @@
   "scripts": [
     "/scripts/actions/animator.lua",
     "/scripts/actions/time.lua",
-    "/scripts/actions/movement.lua"
+    "/scripts/actions/movement.lua",
+	"/monsters/lofty_irisil_monsterHooks.lua"
   ],
   "parameters": {
     "idleTime": [2, 8],
@@ -37,12 +38,13 @@
         }
       },
 	  {
-		"title": "move",
+		"title": "li_move",
 		"type": "action",
-		"name": "move",
+		"name": "li_move",
 		"parameters": {
 		  "direction": {"key": "walk"},
-		  "run": {"value": false}
+		  "run": {"value": false},
+		  "respectLedges": {"value" : true}
 		}
 	  },
 	  //when we're done moving go idle

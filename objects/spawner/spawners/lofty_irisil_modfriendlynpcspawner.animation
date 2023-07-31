@@ -1,39 +1,38 @@
 {
   "animatedParts" : {
     "stateTypes" : {
-      "light" : {
+      "switchState" : {
         "default" : "off",
         "states" : {
           "off" : {
             "frames" : 1
           },
           "on" : {
-            "frames" : 1,
-			"properties" : {
-				//"immediateSound" : "/sfx/interface/clickon_error.ogg"
-			}
+            "frames" : 4,
+            "cycle" : 0.5,
+            "mode" : "loop"
           }
         }
       }
     },
 
     "parts" : {
-      "light" : {
+      "switch" : {
         "properties" : {
           "centered" : false
         },
 
         "partStates" : {
-          "light" : {
+          "switchState" : {
             "off" : {
               "properties" : {
-                "image" : "<partImage>:<color>.off"
+                "image" : "lofty_irisil_modfriendlynpcspawner.png"
               }
             },
 
             "on" : {
               "properties" : {
-                "image" : "<partImage>:<color>.<frame>"
+                "image" : "lofty_irisil_modfriendlynpcspawner.png"
               }
             }
           }

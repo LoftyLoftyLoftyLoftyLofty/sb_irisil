@@ -24,6 +24,7 @@
   ],
 
   "animation" : "lofty_irisil_invisiblesoundemitter.animation",
+  "sfx" : "/sfx/interface/clickon_error.ogg",
 
   "animationParts" : {
     "light" : "invisiblesoundhidden.png"

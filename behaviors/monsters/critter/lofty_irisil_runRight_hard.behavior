@@ -1,5 +1,5 @@
 {
-  "name": "lofty_irisil_critterRunLeft",
+  "name": "lofty_irisil_critterRunRight_hard",
   "description": "",
   "scripts": [
     "/scripts/actions/animator.lua",
@@ -22,7 +22,7 @@
         "type": "action",
         "name": "setDirection",
         "parameters": {
-			"direction" : { "value" : -1 }
+			"direction" : { "value" : 1 }
 		},
         "output": {
           "direction": "walk"
@@ -44,7 +44,7 @@
 		"parameters": {
 		  "direction": {"key": "walk"},
 		  "run": {"value": false},
-		  "respectLedges": {"value" : true}
+		  "respectLedges": {"value" : false}
 		}
 	  },
 	  //when we're done moving go idle

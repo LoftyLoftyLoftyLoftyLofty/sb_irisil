@@ -320,19 +320,6 @@
                  "y":64
                 }, 
                 {
-                 "gid":7962,
-                 "height":16,
-                 "id":994,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":104,
-                 "y":80
-                },
-            
-                {
                  "gid":5742,
                  "height":40,
                  "id":1005,
@@ -343,7 +330,8 @@
                  "width":16,
                  "x":64,
                  "y":120
-                }, 
+                },
+            
                 {
                  "gid":8850,
                  "height":8,
@@ -354,6 +342,56 @@
                  "visible":true,
                  "width":8,
                  "x":120,
+                 "y":80
+                }, 
+                {
+                 "gid":7270,
+                 "height":40,
+                 "id":1010,
+                 "name":"Apex Scientist",
+                 "properties":[
+                        {
+                         "name":"\/\/description",
+                         "type":"string",
+                         "value":"This NPC spawner is intended to be simple to integrate with."
+                        }, 
+                        {
+                         "name":"\/\/name",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"\/\/shortdescription",
+                         "type":"string",
+                         "value":"Mod-Friendly NPC Spawner"
+                        }, 
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"possibleVariations\" : [ { \"intendedUsage\" : \"Apex Scientist\", \"scriptedTargetTags\" : [ \"species:apex\", \"hostile\", \"miniknog\"], \"npcSpeciesOptions\" : [ \"apex\" ], \"npcTypeOptions\" : [ \"apexscientist\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":104,
+                 "y":104
+                }, 
+                {
+                 "gid":7962,
+                 "height":16,
+                 "id":1011,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":16,
                  "y":80
                 }],
          "opacity":1,
@@ -510,46 +548,6 @@
                 }, 
                 {
                  "height":0,
-                 "id":1007,
-                 "name":"",
-                 "polyline":[
-                        {
-                         "x":0,
-                         "y":0
-                        }, 
-                        {
-                         "x":-32,
-                         "y":-40
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":136,
-                 "y":104
-                }, 
-                {
-                 "height":0,
-                 "id":1008,
-                 "name":"",
-                 "polyline":[
-                        {
-                         "x":0,
-                         "y":0
-                        }, 
-                        {
-                         "x":16,
-                         "y":-16
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":112,
-                 "y":72
-                }, 
-                {
-                 "height":0,
                  "id":1009,
                  "name":"",
                  "polyline":[
@@ -567,6 +565,46 @@
                  "width":0,
                  "x":88,
                  "y":104
+                }, 
+                {
+                 "height":0,
+                 "id":1012,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-120,
+                         "y":-40
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":136,
+                 "y":104
+                }, 
+                {
+                 "height":0,
+                 "id":1013,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":104,
+                         "y":-16
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":24,
+                 "y":72
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -579,29 +617,7 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[
-                {
-                 "height":8,
-                 "id":960,
-                 "name":"The A\/C is on and he is listening to his favorite music",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"apex"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"apexscientist"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":112,
-                 "y":96
-                }],
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -769,7 +785,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1010,
+ "nextobjectid":1014,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

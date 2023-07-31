@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt3U1u2zAQBWCdpJdIN7mbFzlAtwUKOOdpdu2VWqERwBIaiT\/z80g+Aw8N4jARyc\/jkeykH9u2fTAMwzAMwzAMwzBMYX4qJ3o+zNjR9ki3jFaibNIsU5Joj\/TKjGqTXtdOtDVaZWa1Sa9zJ9oSrTLeNs9u0te+n4RWGWujpU7PfHp4jV53Jt5nidMSn9Zeo\/eAiTcqOW3xaek1ei+YOJ8jOaVVrHgblZzun3\/8zXch+32vQh6Gxxq9P0yMUTplvI22Pj+f3VCd0uq4RjV6yTOvJU7zY\/FwSqtjOdXyKXlFdkqr+EatfOYpcZqP8XRKq7hG0ZxK\/ek3IXQ6Xnr2586J5KvU2fb571PI3X1eTmkV12jqNP98rdNj3HE7nG3bteWrPBXmR6sYQXX68nmfV2\/xrrAWtIppNHUqnceUOpXGezrV9Bq9t7Okdt2lPs+6P41wquE1en9nCZ3ae43e4xmi1Yvt5ypvQkqc7l83q1NaxTC6Z\/f04yRa9TR6PHvV8Y0eTpGdITilVwyn0l4jOENySqsxRpGcSsfVO95izWiWTkdySq8+RkucSq+9l74+X+osP0evdSqN93BKq7ZGf23\/u3zJ8taZGftTevU3ejg9uy7Vm1nPo+jV32heT7WD4NTzfYErWvUwapG039Xob3vHRzqd3aunUas6WlMP35Kk\/fF+39ebPDa5n454\/+oqVr3raOpKsy+tfd4+xuZOv9wkdZrP4TWZZ7TTWbxark3p83RUPZW+T379QcrVsaRzjTY6utUoo7lTjbm0Ok293tXQvJ4eH0s+Ea2O5tV6LUZ02lK7r+oostlofwhGS6zO4rTnGgWtxhu9szqr099CUK0ieo1ah5Wcjuo12uaqTkuu03s875dajXaK4hXJ6Az19C61TmkVzyiiU+3XGkauqVFW0YwiOtVKqdMRrHp7RfJ57JGF09RKrVPtx0rPeVW0zQirCDbP9krbyJ7nNofTFa0i+DzbJwunPc\/71k5Htzqa0RqbV\/tDp2VWkcyiO22xebc3KzrttRrtFtVpj8+7PbHuT2uv8yM4XdVqhM2Svcidage5nmpaXdGpl88zp9q\/czq6U2SrkU69jbKe6lmdoaYi+rTqT1tfjzqC6BT1OoC1Uw2XvT7RnD4V19vCKaJVS6dIRpGcPhTXexWn2lYtnGoYpdPxrdIpnbY49baq6TS3qmV2BKel1\/lH6E9LnXp61XYqWdVwi+y09nxf85pYtFMvr95Oe+yO7FT771mWOO15bLfWk1Gctlot9TqqU4t6egTJqZVVC6eWVlGc9rwe1TLGs0+6clpjeQSnSFa1ne7peT+\/tdNeo6VOPa1aOrWyiuC0x9yoTnt7BASn0rGlVkvmYLEPKznVMFrrtMZqq1lLo1ahU1ujZ+56egUNt6PYbN2PX5t9f1r7fv6WMV4+W432Or3KSDW01WjuNDIW9dTaaOuao1jVtKZtNB+X7rfF\/yNl+Tf9JafaPntr6UxOW+fXu07RdVS7nnoZbf1ZKEZrrfbMLfpxrBUNp1Y+NY1q74XW+YRGDTybW+TjF9Gph0sNo6hOc68ac5vFJprTmuNFcKptNI3GvGbyGem095hnq6U9ZqP9zOLU+vgjfr6XU8lttBkEp7XX+Vd7fEcZlfrZVZJfnyqtp0eij39VpwzDMMy\/\/AGtXTa3",
+         "data":"eJzt3U1u2zAQBWCdpJdoN7mbFzlAtwUKOOdpdsmVWqEVwBIaiT\/z80g+Aw8N4jARyc\/jkeyk79u2vTMMwzAMwzAMwzBMYX4pJ3o+zNjR9ki3jFaibNIsU5Joj\/TKjGqTXtdOtDVaZWa1Sa9zJ9oSrTLeNs9u0te+nYRWGWujpU7PfHp4jV53Jt5nidMSn9Zeo\/eAiTcqOW3xaek1ei+YOJ8jOaVVrHgblZzun3\/8yQ8h+30vQh6Gxxq9P0yMUTplvI22Pj+f3VCd0uq4RjV6yTOvJU7zY\/FwSqtjOdXyKXlFdkqr+EatfOYpcZqP8XRKq7hG0ZxK\/el3IXQ6Xnr2586J5KvU2fbv36eQu\/u8nNIqrtHUaf75WqfHuOOWO5UsX+WpMD9axQi6U6\/e4k1hLWgV02jqVDqPKXUqjfd0quk1em9nSe26S32edX8a4VTDa\/T+zhI6tfcavcczRKsX289VXoWUON2\/blantIphdM\/u6edJtOpp9Hj2quMbPZwiO0NwSq8YTqW9RnCG5JRWY4wiOZWOq3e8xZrRLJ2O5JRefYyWOJVeey99fb7UWX6OXutUGu\/hlFZtjX5s\/7v8muW1MzP2p\/Tqb\/RwenZdqjeznkfRq7\/RvJ5qB8Gp5\/sCV7TqYdQiab+r0d\/2jo90OrtXT6NWdbSmHr4mSfvj\/b5vN3lscj8d8f7VVax619HUlWZfWvu8fYzNnX65Seo0n8NLMs9op7N4tVyb0ufpqHoqfZ\/8+oOUq2NJ5xptdHSrUUZzpxpzaXWaer2roXk9PT6WfCJaHc2r9VqM6LSldl\/VUWSz0f4QjJZYncVpzzUKWo03emd1VqefQlCtInqNWoeVnI7qNdrmqk5LrtN7PO+XWo12iuIVyegM9fQutU5pFc8oolPt1xpGrqlRVtGMIjrVSqnTEax6e0XyeeyRhdPUSq1T7cdKz3lVtM0Iqwg2z\/ZK28ie5zaH0xWtIvg82ycLpz3P+9ZOR7c6mtEam1f7Q6dlVpHMojttsXm3Nys67bUa7RbVaY\/Puz2x7k9rr\/MjOF3VaoTNkr3InWoHuZ5qWl3RqZfPM6fav3M6ulNkq5FOvY2ynupZnaGmIvq06k9bX486gugU9TqAtVMNl70+0Zw+FdfbwimiVUunSEaRnD4U13sVp9pWLZxqGKXT8a3SKZ22OPW2quk0t6pldgSnpdf5R+hPS516etV2KlnVcIvstPZ8X\/OaWLRTL6\/eTnvsjuxU++9ZljjteWy31pNRnLZaLfU6qlOLenoEyamVVQunllZRnPa8HtUyxrNPunJaY3kEp0hWtZ3u6Xk\/v7XTXqOlTj2tWjq1sorgtMfcqE57ewQEp9KxpVZL5mCxDys51TBa67TGaqtZS6NWoVNbo2fuenoFDbej2Gzdj4\/Nvj+tfT9\/yxgvn61Ge51eZaQa2mo0dxoZi3pqbbR1zVGsalrTNpqPS\/fb4v+Rsvyb\/pJTbZ+9tXQmp63z612n6DqqXU+9jLb+LBSjtVZ75hb9ONaKhlMrn5pGtfdC63xCowaezS3y8Yvo1MOlhlFUp7lXjbnNYhPNac3xIjjVNppGY14z+Yx02nvMs9XSHrPRfmZxan38ET\/fy6nkNtoMgtPa6\/yrPb6jjEr97CrJr0+V1tMj0ce\/qlOGYRjmb34D30o2Ww==",
          "encoding":"base64",
          "height":90,
          "id":1,
@@ -1170,6 +1170,120 @@
                  "width":16,
                  "x":624,
                  "y":408
+                }, 
+                {
+                 "gid":7270,
+                 "height":40,
+                 "id":931,
+                 "name":"Alpaca",
+                 "properties":[
+                        {
+                         "name":"\/\/description",
+                         "type":"string",
+                         "value":"This NPC spawner is intended to be simple to integrate with."
+                        }, 
+                        {
+                         "name":"\/\/name",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"\/\/shortdescription",
+                         "type":"string",
+                         "value":"Mod-Friendly NPC Spawner"
+                        }, 
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"possibleVariations\" : [ { \"intendedUsage\" : \"Alpaca\", \"scriptedTargetTags\" : [ \"species:alpaca\", \"friendly\"], \"npcSpeciesOptions\" : [ \"human\" ], \"npcTypeOptions\" : [ \"alpaca\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":464,
+                 "y":248
+                }, 
+                {
+                 "gid":7270,
+                 "height":40,
+                 "id":932,
+                 "name":"Alpaca",
+                 "properties":[
+                        {
+                         "name":"\/\/description",
+                         "type":"string",
+                         "value":"This NPC spawner is intended to be simple to integrate with."
+                        }, 
+                        {
+                         "name":"\/\/name",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"\/\/shortdescription",
+                         "type":"string",
+                         "value":"Mod-Friendly NPC Spawner"
+                        }, 
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"possibleVariations\" : [ { \"intendedUsage\" : \"Alpaca\", \"scriptedTargetTags\" : [ \"species:alpaca\", \"friendly\"], \"npcSpeciesOptions\" : [ \"human\" ], \"npcTypeOptions\" : [ \"alpaca\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":624,
+                 "y":208
+                }, 
+                {
+                 "gid":7270,
+                 "height":40,
+                 "id":933,
+                 "name":"Alpaca",
+                 "properties":[
+                        {
+                         "name":"\/\/description",
+                         "type":"string",
+                         "value":"This NPC spawner is intended to be simple to integrate with."
+                        }, 
+                        {
+                         "name":"\/\/name",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"\/\/shortdescription",
+                         "type":"string",
+                         "value":"Mod-Friendly NPC Spawner"
+                        }, 
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_modfriendlynpcspawner"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"possibleVariations\" : [ { \"intendedUsage\" : \"Alpaca\", \"scriptedTargetTags\" : [ \"species:alpaca\", \"friendly\"], \"npcSpeciesOptions\" : [ \"human\" ], \"npcTypeOptions\" : [ \"alpaca\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":560,
+                 "y":336
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -1194,73 +1308,7 @@
          "draworder":"topdown",
          "id":6,
          "name":"monsters & npcs",
-         "objects":[
-                {
-                 "height":8,
-                 "id":726,
-                 "name":"Alpaca",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"human"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"alpaca"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":568,
-                 "y":304
-                }, 
-                {
-                 "height":8,
-                 "id":798,
-                 "name":"Alpaca",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"human"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"alpaca"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":416,
-                 "y":216
-                }, 
-                {
-                 "height":8,
-                 "id":888,
-                 "name":"Alpaca",
-                 "properties":[
-                        {
-                         "name":"npc",
-                         "type":"string",
-                         "value":"human"
-                        }, 
-                        {
-                         "name":"typeName",
-                         "type":"string",
-                         "value":"alpaca"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":624,
-                 "y":176
-                }],
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -1777,7 +1825,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -2009,12 +2057,12 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":931,
+ "nextobjectid":934,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

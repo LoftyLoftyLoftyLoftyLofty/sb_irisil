@@ -9,5 +9,21 @@
 			"targetInstance" : "outpost",
 			"targetPosition" : [602, 650]
 		}
+	},
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_fixoutpostteleporter",
+		"value" : 
+		{
+			"actions" : 
+			[
+				{
+					"type" : "placeDungeon",
+					"dungeonId" : "lofty_irisil_fixoutpostteleporter",
+					"targetInstance" : "outpost",
+					"targetPosition" : [651, 664]
+				}
+			]
+		}
 	}
 ]
