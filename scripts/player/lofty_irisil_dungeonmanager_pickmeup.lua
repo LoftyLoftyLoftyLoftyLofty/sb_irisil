@@ -153,7 +153,7 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	end
 	
 	--easter egg message if player manages to get into the rabbit tunnel
-	if areaName == "nothingInThereSorry" then
+	if areaName == "secretTunnel" then
 		if world.getProperty("lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_dungeon_pickMeUp_secretTunnel1")
 			world.setProperty("lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog-" .. uuid, true)
@@ -216,6 +216,12 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 			
 		--greenill's circuit completed
 		else
+			
+			--if we haven't sent the message to this uuid yet
+			if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
+				player.radioMessage("lofty_irisil_pickMeUp_putGreenOnPedestal")
+				world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_putMeOnThePedestal_sentDialog-" .. uuid, true)
+			end
 			
 		end
 	
@@ -450,9 +456,9 @@ end
 --list format in case other radio messages need to be inserted later
 lofty_irisil_secretTunnelMessages = 
 {
-	"lofty_irisil_pickMeUp_secretTunnel1",
-	"lofty_irisil_pickMeUp_secretTunnel2",
-	"lofty_irisil_pickMeUp_secretTunnel3"
+	"lofty_irisil_dungeon_pickMeUp_secretTunnel1",
+	"lofty_irisil_dungeon_pickMeUp_secretTunnel2",
+	"lofty_irisil_dungeon_pickMeUp_secretTunnel3"
 }
 
 function lofty_irisil_updateMsgSequenceSecretTunnel(dt)

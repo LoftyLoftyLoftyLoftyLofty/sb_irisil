@@ -439,5 +439,15 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"text" : "Oh my GOD shut UP.",
 		"persistTime" : 3.5,
 		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_putGreenOnPedestal" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "WOO YEAH PUT ME ON THE THING",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	}
 }
