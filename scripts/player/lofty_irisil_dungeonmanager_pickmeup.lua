@@ -21,6 +21,9 @@ function lofty_irisil_initDialogSequences()
 	self.lofty_irisil_msgSetKatamariIndex = 0
 	self.lofty_irisil_msgSetKatamariTimer = 4.5
 	
+	self.lofty_irisil_msgSetBlueWingIndex = 0
+	self.lofty_irisil_msgSetBlueWingTimer = 4.5
+	
 	self.lofty_irisil_msgSetGreenTimeAttackSuccessIndex = 0
 	self.lofty_irisil_msgSetGreenTimeAttackSuccessTimer = 4.5
 	
@@ -56,6 +59,11 @@ end
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft_sentDialog- .. uuid
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft2_sentDialog- .. uuid
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft3_sentDialog- .. uuid
+--  lofty_irisil_dungeon_pickMeUp_GREEN_entered_sentDialog- .. uuid
+--  lofty_irisil_dungeon_pickMeUp_GREEN_completed_sentDialog- .. uuid
+--  lofty_irisil_dungeon_pickMeUp_GREEN_completeGreenRoom
+--
+--  lofty_irisil_dungeon_pickMeUp_BLUE_enterBlueWing_sentDialog- .. uuid
 --
 --  lofty_irisil_dungeon_pickMeUp_runFennixRun
 --  lofty_irisil_dungeon_pickMeUp_fennixStayStill
@@ -277,6 +285,55 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 		end
 	end
 	
+	--entering the green rabbit's chamber
+	if areaName == "greenillRoom" then
+
+		--have we sent the letsgo message yet?
+		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_entered_sentDialog-" .. uuid) ~= true then
+			player.radioMessage("lofty_irisil_pickMeUp_enterGreenRoom")
+			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_entered_sentDialog-" .. uuid, true)
+		end
+		
+	end
+	
+	--completing the green rabbit's chamber
+	if areaName == "greenillRoomCompleted" then
+
+		--have we sent the letsgo message yet?
+		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_completed_sentDialog-" .. uuid) ~= true then
+			player.radioMessage("lofty_irisil_pickMeUp_completeGreenRoom")
+			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_completed_sentDialog-" .. uuid, true)
+		end
+		
+	end
+	
+	--entering or exiting bluefull's wing
+	if areaName == "bluefullPedestalTutorial" then
+	
+		--if bluefull's circuit has not yet been completed
+		if world.getProperty("lofty_irisil_dungeon_pickMeUp_BLUE_completed") ~= true then
+		
+			--if we haven't sent the message to this uuid yet
+			if world.getProperty("lofty_irisil_dungeon_pickMeUp_BLUE_enterBlueWing_sentDialog-" .. uuid) ~= true then
+				player.radioMessage("lofty_irisil_pickMeUp_enterBlueWing1")
+				world.setProperty("lofty_irisil_dungeon_pickMeUp_BLUE_enterBlueWing_sentDialog-" .. uuid, true)
+				self.lofty_irisil_msgSetBlueWingIndex = 1
+				self.lofty_irisil_msgSetBlueWingTimer = self.lofty_irisil_timerSpeed_medium
+			end
+			
+		--bluefull's circuit completed
+		else
+			
+			--if we haven't sent the message to this uuid yet
+			if world.getProperty("lofty_irisil_dungeon_pickMeUp_BLUE_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
+				player.radioMessage("lofty_irisil_pickMeUp_putBlueOnPedestal")
+				world.setProperty("lofty_irisil_dungeon_pickMeUp_BLUE_putMeOnThePedestal_sentDialog-" .. uuid, true)
+			end
+			
+		end
+	
+	end
+	
 end
 
 --our wire switches may fire multiple times as they load or unload so it's important to close the gate behind ourselves
@@ -351,6 +408,7 @@ function update(dt)
 	lofty_irisil_updateMsgSequenceSecretCactus(dt)
 	lofty_irisil_updateMsgSequenceSecretTunnel(dt)
 	lofty_irisil_updateMsgSequenceKatamari(dt)
+	lofty_irisil_updateMsgSequenceBlueWing(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackSuccess(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackFail(dt)
 	
@@ -487,6 +545,47 @@ function lofty_irisil_updateMsgSequenceSecretTunnel(dt)
 				--send message
 				if lofty_irisil_secretCactusMessages[self.lofty_irisil_msgSetSecretTunnelIndex] ~= nil then
 					player.radioMessage(lofty_irisil_secretTunnelMessages[self.lofty_irisil_msgSetSecretTunnelIndex])					
+				end
+			end
+		end
+	end
+end
+
+--list format in case other radio messages need to be inserted later
+lofty_irisil_blueWingMessages = 
+{
+	"lofty_irisil_pickMeUp_enterBlueWing1",
+	"lofty_irisil_pickMeUp_enterBlueWing2",
+	"lofty_irisil_pickMeUp_enterBlueWing3",
+	"lofty_irisil_pickMeUp_enterBlueWing4"
+}
+
+function lofty_irisil_updateMsgSequenceBlueWing(dt)
+	--we only care about the msg sequence timers if we're in a nonzero message state
+	if self.lofty_irisil_msgSetBlueWingIndex > 0 then
+		
+		--first set of messages welcoming the player to the dungeon
+		if self.lofty_irisil_msgSetBlueWingTimer > 0 then
+		
+			--handle time difference
+			self.lofty_irisil_msgSetBlueWingTimer = self.lofty_irisil_msgSetBlueWingTimer - dt
+		
+			--if it's been 4 seconds
+			if self.lofty_irisil_msgSetBlueWingTimer <= 0 then
+			
+				--reset the timer
+				self.lofty_irisil_msgSetBlueWingTimer = self.lofty_irisil_timerSpeed_medium
+				
+				--increment the set index
+				self.lofty_irisil_msgSetBlueWingIndex = self.lofty_irisil_msgSetBlueWingIndex + 1
+				
+				--send message
+				if lofty_irisil_blueWingMessages[self.lofty_irisil_msgSetBlueWingIndex] ~= nil then
+					player.radioMessage(lofty_irisil_blueWingMessages[self.lofty_irisil_msgSetBlueWingIndex])					
+				end
+				
+				--special triggers
+				if self.lofty_irisil_msgSetBlueWingIndex == -1 then
 				end
 			end
 		end

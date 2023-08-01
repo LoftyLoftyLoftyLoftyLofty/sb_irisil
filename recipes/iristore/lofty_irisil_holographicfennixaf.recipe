@@ -1,6 +1,7 @@
 {
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
+    { "item" : "hylotlfashionhologram", "count" : 1 },
 	{ "item" : "fennixaf", "count" : 1 }
   ],
   "output" : {

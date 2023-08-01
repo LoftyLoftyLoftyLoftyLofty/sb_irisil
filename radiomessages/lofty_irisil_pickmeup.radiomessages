@@ -14,7 +14,7 @@
 		"type" : "mission",
 		"senderName" : "Redria",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
-		"text" : "This is all Green's fault.",
+		"text" : "Hopefully this one doesn't melt like the last one did.",
 		"persistTime" : 3.5,
 		"textSpeed" : 50
 	},
@@ -446,7 +446,67 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"type" : "mission",
 		"senderName" : "Greenill",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
-		"text" : "WOO YEAH PUT ME ON THE THING",
+		"text" : "PUT ME ON THE THING",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterGreenRoom" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "I AM PRETTY SURE THESE THINGS WANT TO EAT ME CAN YOU SHOOT THEM PLEASE LOVE YOU",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_completeGreenRoom" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "WOOHOO LETS GOOOOOOOOO",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterBlueWing1" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "We truly are grateful for your help. It's very embarrassing to welcome you into our home when it's in such a state- I look forward to cleaning all of this mess up when this is over.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterBlueWing2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "It's cute seeing you try to act coy when putting sawblades everywhere was YOUR idea.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterBlueWing3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "...",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterBlueWing4" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "I THINK THEY'RE NEAT",
 		"persistTime" : 3.5,
 		"textSpeed" : 50
 	}
