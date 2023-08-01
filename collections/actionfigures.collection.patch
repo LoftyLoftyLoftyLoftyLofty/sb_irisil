@@ -7,5 +7,14 @@
 		"order" : 9001,
 		"item" : "lofty_irisilaf"
 	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/lofty_irisil_holographicfennixaf",
+	  "value": 		
+	  {
+		"order" : 9002,
+		"item" : "lofty_irisil_holographicfennixaf"
+	  }
 	}
 ]

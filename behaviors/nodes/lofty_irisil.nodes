@@ -32,6 +32,17 @@
     "script": "/monsters/lofty_irisil_monsterHooks.lua",
     "output": {}
   },
+  "li_face": {
+    "type": "action",
+    "name": "li_face",
+    "title": "li_face",
+    "properties": {
+      "direction": {"type": "number", "value": 1}
+    },
+    "category": "lofty_irisil",
+    "script": "/monsters/lofty_irisil_monsterHooks.lua",
+    "output": {}
+  },
   "li_setWorldPropertyBool": {
     "type": "action",
     "name": "li_setWorldPropertyBool",

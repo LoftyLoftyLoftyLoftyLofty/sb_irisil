@@ -1,0 +1,23 @@
+{
+  "projectileName" : "lofty_irisil_holoflame",
+  "image" : "lofty_irisil_holoflame.png",
+  "physics" : "flame",
+  "animationCycle" : 1.05,
+  "animationLoops" : false,
+  "damageKindImage" : "/interface/statuses/fire.png",
+  "frameNumber" : 12,
+  "power" : 50,
+  "speed" : 25,
+  "timeToLive" : 1,
+  "bounces" : 4,
+  "piercing" : false,
+  "damagePoly" : [ [-9, 0], [-6, -6], [0, -9], [6, -6], [9, 0], [6, 6], [0, 9], [-6, 6] ],
+  "lightColor" : [16, 32, 128],
+  "fullbright" : true,
+  "damageKind" : "plasma",
+  "statusEffects" : [
+    "burning",
+	"hologramglow"
+  ],
+  "hydrophobic" : true
+}

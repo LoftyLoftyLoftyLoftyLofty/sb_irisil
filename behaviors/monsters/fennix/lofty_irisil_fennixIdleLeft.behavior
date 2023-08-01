@@ -1,0 +1,35 @@
+{
+  "name": "lofty_irisil_fennixIdleLeft",
+  "description": "",
+  "scripts": [
+    "/scripts/actions/animator.lua",
+    "/scripts/actions/time.lua",
+    "/scripts/actions/movement.lua",
+	"/monsters/lofty_irisil_monsterHooks.lua"
+  ],
+  "parameters": {},
+  "root": {
+    "title": "sequence",
+    "type": "composite",
+    "name": "sequence",
+    "parameters": {},
+    "children": [
+	  {
+		"title": "li_face",
+		"type": "action",
+		"name": "li_face",
+		"parameters": {
+		  "direction": {"value": -1}
+		}
+	  },
+	  {
+		"title": "setVelocity",
+		"type": "action",
+		"name": "setVelocity",
+		"parameters": {
+		  "velocity": {"value": [0, 0]}
+		}
+	  }
+    ]
+  }
+}

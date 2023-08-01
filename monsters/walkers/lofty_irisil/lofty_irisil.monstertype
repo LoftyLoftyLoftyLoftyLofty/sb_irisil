@@ -18,7 +18,9 @@
       "/monsters/monster.lua"
     ],
 
+	//IF YOU USE HOOKED MONSTER, ADD THE HOOK SCRIPTS ABOVE
     "behavior" : "lofty_irisil_hooked_monster",
+	
 	"seeThroughLiquid" : true,
 	
     "behaviorConfig" : {

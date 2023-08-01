@@ -57,6 +57,10 @@ end
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft2_sentDialog- .. uuid
 --  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft3_sentDialog- .. uuid
 --
+--  lofty_irisil_dungeon_pickMeUp_runFennixRun
+--  lofty_irisil_dungeon_pickMeUp_fennixStayStill
+--  lofty_irisil_dungeon_pickMeUp_BLUE_secretFennix
+--
 --	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT
 --	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog
 --	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sentDialog- .. uuid

@@ -1,0 +1,36 @@
+{
+  "objectName" : "lofty_irisil_holographicfennixaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "lofty_irisil_holographicfennixaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"Sometimes when chasing its own tail it trips over its own light projector.\"",
+  "shortdescription" : "Holographic Fennix Figurine",
+
+  "lightColor" : [8, 16, 64],
+
+  "inventoryIcon" : "lofty_irisil_holographicfennixaficon.png",
+  "orientations" : [
+    {
+	  "imageLayers" : [ { "image" : "lofty_irisil_holographicfennixaf.png:<color>", "fullbright" : true }, { "image" : "lofty_irisil_holographicfennixaflit.png:<color>" } ],
+      //"image" : "lofty_irisil_holographicfennixaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+	  "imageLayers" : [ { "image" : "lofty_irisil_holographicfennixaf.png:<color>", "fullbright" : true }, { "image" : "lofty_irisil_holographicfennixaflit.png:<color>" } ],
+      //"image" : "lofty_irisil_holographicfennixaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

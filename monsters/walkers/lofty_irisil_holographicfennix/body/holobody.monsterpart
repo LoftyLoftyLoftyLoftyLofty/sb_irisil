@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_holographicfennix",
+  "category" : "lofty_irisil_holographicfennix",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_holographicfennix.png"
+  }
+}

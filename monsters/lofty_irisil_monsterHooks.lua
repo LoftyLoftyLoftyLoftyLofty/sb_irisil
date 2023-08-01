@@ -21,6 +21,20 @@ function liu_enableRelocation()
     end)
 end
 
+function liu_disableCapture()
+	storage.lofty_irisil_capturable = false
+	message.setHandler("pet.attemptCapture", function (_, _, ...)
+      return nil
+    end)
+end
+
+function liu_enableCapture()
+	storage.lofty_irisil_capturable = true
+	message.setHandler("pet.attemptCapture", function (_, _, ...)
+      return capturable.attemptCapture(...)
+    end)
+end
+
 triggerZoneRegistrationForwarding = {}
 dungeonManagerStagehandID = nil
 
@@ -57,6 +71,22 @@ function li_initHooks(args, board)
 					liu_enableRelocation()
 				else
 					liu_disableRelocation()
+				end
+			end
+		end
+	)
+	
+  --enable or disable capture
+  message.setHandler
+	(
+		"lofty_irisil_monsterHook_setCapturable", 
+		
+		function(_, _, b)
+			if validTarget(b) then
+				if b.capturable then
+					liu_enableCapture()
+				else
+					liu_disableCapture()
 				end
 			end
 		end
@@ -113,15 +143,68 @@ function li_initHooks(args, board)
 		end
 	)
 	
-	if storage.relocatable ~= nil then
-		if storage.relocatable then
+	--if this mob was saved as not being relocatable, when it re-inits, disable relocation
+	if storage.lofty_irisil_relocatable ~= nil then
+		if storage.lofty_irisil_relocatable then
 			liu_enableRelocation()
 		else
 			liu_disableRelocation()
 		end
+	--mob was not saved with relocatable data
+	else
+		--check to see if it should be relocatable by default
+		local d = config.getParameter("relocatable", false)
+		
+		--assume the default behavior if any
+		storage.lofty_irisil_reloctable = d
+		if d then
+			liu_enableRelocation()
+		else
+			liu_disableRelocation()
+		end
+		
+		--check to see if we have an override
+		local c = config.getParameter("lofty_irisil_reloctable")
+		
+		if c ~= nil then
+			if c then
+				liu_enableRelocation()
+			else
+				liu_disableRelocation()
+			end
+		end
 	end
 	
-	storage.lofty_irisil_relocatable = config.getParameter("relocatable", false)
+	--if this mob was saved as not being capturable, when it re-inits, disable capture
+	if storage.lofty_irisil_capturable ~= nil then
+		if storage.lofty_irisil_capturable then
+			liu_enableCapture()
+		else
+			liu_disableCapture()
+		end
+	--mob was not saved with capturable data
+	else
+		--check to see if it should be capturable by default
+		local d = config.getParameter("capturable", false)
+		
+		--assume default behavior if any
+		storage.lofty_irisil_capturable = d
+		if d then
+			liu_enableCapture()
+		else
+			liu_disableCapture()
+		end
+		
+		--check to see if we have an override
+		local c = config.getParameter("lofty_irisil_capturable")
+		if c ~= nil then
+			if c then
+				liu_enableCapture()
+			else
+				liu_disableCapture()
+			end
+		end
+	end
 	
 	--yeek("(SERVER) LI-MonsterHooks", entity.id() .. " - Listener initialized! " .. monster.type())
 	return true
@@ -188,6 +271,21 @@ function li_setWorldPropertyBool(args, board, node)
 	world.setProperty(w.flag, w.value)
 end
 
+--makes monster face a given direction
+-- param direction
+function li_face(args, board, node)
+	controlFace(args.direction)
+	
+	--not sure how to sanity check this correctly
+	--for now there's just a gate here for the one monster that uses this
+	if monster.type() == "lofty_irisil_holographicfennix" then
+		animator.setAnimationState("body","idle",false)
+	end
+	
+	return false
+end
+
+--makes monster move until it hits a wall
 -- param direction
 -- param run
 -- param respectLedges
@@ -195,6 +293,7 @@ function li_move(args, board, node)
   local bounds = mcontroller.boundBox()
 
   while true do
+  
     local direction = util.toDirection(args.direction)
     local run = args.run
     if config.getParameter("pathing.forceWalkingBackwards", false) then
