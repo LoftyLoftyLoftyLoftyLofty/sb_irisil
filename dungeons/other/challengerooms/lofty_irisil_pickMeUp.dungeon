@@ -13,10 +13,8 @@
 
   "parts" : [
   
-	//////////////////////////////////////////////////////////////////////
-	//the house atop the cliff
-	//////////////////////////////////////////////////////////////////////
-	
+	//DUNGEON BASE
+  
     {
 			"name" : "lofty_irisil_pickMeUp",
 			"rules" : 
@@ -24,6 +22,20 @@
 				[ "maxSpawnCount", [1] ]
 			],
 			"def" : [ "tmx", "lofty_irisil_pickMeUp.json" ]
+	},
+	
+	//INVISIBLE MAZE VARIATIONS
+	//only one of these really felt fun. the rest were just kind of awful
+	//maybe I will add more in the future
+	{
+			"name" : "lofty_irisil_pickMeUp_invisimaze1",
+			"rules" : 
+			[
+				[ "maxSpawnCount", [1] ],
+				[ "ignorePartMaximumRule" ]
+			],
+			"def" : [ "tmx", "lofty_irisil_pickMeUp_invisimaze1.json" ],
+			"chance" : 1
 	}
   ]
 }

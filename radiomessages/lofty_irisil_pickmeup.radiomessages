@@ -401,7 +401,7 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog" : 
+	"lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog" : 
 	{
 		"type" : "mission",
 		"senderName" : "Bluefull",
@@ -411,7 +411,7 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_dungeon_pickMeUp_secretTunnel1" : 
+	"lidpmu_secretTunnel1" : 
 	{
 		"type" : "mission",
 		"senderName" : "Bluefull",
@@ -421,7 +421,7 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_dungeon_pickMeUp_secretTunnel2" : 
+	"lidpmu_secretTunnel2" : 
 	{
 		"type" : "mission",
 		"senderName" : "Greenill",
@@ -431,7 +431,7 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"textSpeed" : 50
 	},
 	
-	"lofty_irisil_dungeon_pickMeUp_secretTunnel3" : 
+	"lidpmu_secretTunnel3" : 
 	{
 		"type" : "mission",
 		"senderName" : "Redria",
@@ -507,6 +507,136 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"senderName" : "Greenill",
 		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
 		"text" : "I THINK THEY'RE NEAT",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_putBlueOnPedestal" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Place me on this pedestal, please. I can get the door opened for us.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_dontLeaveMeHere_RED" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Aren't you FORGETTING someone?",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_dontLeaveMeHere_GREEN" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "OK I GUESS I WILL JUST HANG OUT HERE UNTIL YOU COME BACK FOR ME IT'S OK I'M NOT CRYING OR ANYTHING",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_dontLeaveMeHere_BLUE" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Bring me with you! We still have some work to do together before this is over.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_fennixRoomInstructions" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "To open this next door, you'll need to defeat all of these Snuffish. Please don't hurt my Fennix!",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_fennixRoomDead" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Oh. That's unfortunate. I'll have to repair him again when this is done.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_fennixRoomSafe" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Great work! I'm glad my Fennix is unharmed.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_fennixCapturable" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "...It looks like my Fennix likes you. Perhaps you'd like to take him for a walk? He could use the exercise.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_B_letsGo" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Anyway, thanks for getting me out of here! We'll need to move quickly once you pick me up- ready?",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_B_letsRoll" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Let's roll!",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_B_TA_fail" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Hmmn, not fast enough. Maybe next try.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_B_TA1_success" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "We're not done yet! There's another button above.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_B_TA2_success" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Good work. Catch your breath, then we can go open those chests.",
 		"persistTime" : 3.5,
 		"textSpeed" : 50
 	}

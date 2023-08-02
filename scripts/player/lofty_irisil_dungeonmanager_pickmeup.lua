@@ -1,3 +1,7 @@
+--  I know this is very ugly and inefficient
+--  I am still learning Lua 
+--  Perhaps someday I will come back and clean up this code
+
 require "/scripts/util.lua"
 require "/quests/scripts/questutil.lua"
 require "/scripts/vec2.lua"
@@ -36,44 +40,52 @@ function lofty_irisil_initDialogSequences()
 end
 
 --WORLD STATE VARIABLES
---  lofty_irisil_dungeon_pickMeUp_welcome_sentDialog- .. uuid
---	lofty_irisil_dungeon_pickMeUp_completedTutorialGrappleRoom- .. uuid
---	lofty_irisil_dungeon_pickMeUp_RED_enter-
---	lofty_irisil_dungeon_pickMeUp_RED_completed
---	lofty_irisil_dungeon_pickMeUp_RED_completed_sentDialog- .. uuid
---	lofty_irisil_dungeon_pickMeUp_RED_secretSwitch
---	lofty_irisil_dungeon_pickMeUp_RED_timeAttack
---	lofty_irisil_dungeon_pickMeUp_RED_timeAttack_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_RED_putMeOnThePedestal_sentDialog- .. uuid
+--  lidpmu_welcome_sentDialog- .. uuid
+--	lidpmu_completedTutorialGrappleRoom- .. uuid
+--	lidpmu_R_enter-
+--	lidpmu_R_completed
+--	lidpmu_R_completed_sentDialog- .. uuid
+--	lidpmu_R_secretSwitch
+--	lidpmu_R_timeAttack
+--	lidpmu_R_timeAttack_sentDialog- .. uuid
+--  lidpmu_R_putMeOnThePedestal_sentDialog- .. uuid
 --
---  lofty_irisil_dungeon_pickMeUp_noSecretInTheOilChamber- .. uuid
---  lofty_irisil_dungeon_pickMeUp_secretCactus
+--  lidpmu_noSecretInTheOilChamber- .. uuid
+--  lidpmu_secretCactus
 --  
---  lofty_irisil_dungeon_pickMeUp_GREEN_enterGreenWing_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_completed
---  lofty_irisil_dungeon_pickMeUp_GREEN_gravityChatter_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_greenSwitchChatter_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_timeAttack
---  lofty_irisil_dungeon_pickMeUp_GREEN_timeAttack_sentDialog- .. uuid
---	lofty_irisil_dungeon_pickMeUp_GREEN_secretSwitch
---  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft2_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft3_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_entered_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_completed_sentDialog- .. uuid
---  lofty_irisil_dungeon_pickMeUp_GREEN_completeGreenRoom
+--  lidpmu_G_enterGreenWing_sentDialog- .. uuid
+--  lidpmu_G_completed
+--  lidpmu_G_gravityChatter_sentDialog- .. uuid
+--  lidpmu_G_greenSwitchChatter_sentDialog- .. uuid
+--  lidpmu_G_timeAttack
+--  lidpmu_G_timeAttack_sentDialog- .. uuid
+--	lidpmu_G_secretSwitch
+--  lidpmu_G_greenillVerticalShaft_sentDialog- .. uuid
+--  lidpmu_G_greenillVerticalShaft2_sentDialog- .. uuid
+--  lidpmu_G_greenillVerticalShaft3_sentDialog- .. uuid
+--  lidpmu_G_entered_sentDialog- .. uuid
+--  lidpmu_G_completed_sentDialog- .. uuid
+--  lidpmu_G_completeGreenRoom
 --
---  lofty_irisil_dungeon_pickMeUp_BLUE_enterBlueWing_sentDialog- .. uuid
+--  lidpmu_B_enterBlueWing_sentDialog- .. uuid
+--  lidpmu_fennixInstructions_sentDialog- .. uuid
+--  lidpmu_runFennixRun
+--  lidpmu_fennixStayStill
+--  lidpmu_B_secretFennix
+--  lidpmu_B_completed
+--  lidpmu_fennixResult_sentDialog- .. uuid
+--  lidpmu_fennixCapturable_sentDialog- .. uuid
+--  lidpmu_letsRoll_sentDialog- .. uuid
+--  lidpmu_letsRoll_sentDialog2- .. uuid
+--	lidpmu_B_TA_f- .. uuid
+--	lidpmu_B_TA1_w1- .. uuid
+--	lidpmu_B_TA2_w2- .. uuid
 --
---  lofty_irisil_dungeon_pickMeUp_runFennixRun
---  lofty_irisil_dungeon_pickMeUp_fennixStayStill
---  lofty_irisil_dungeon_pickMeUp_BLUE_secretFennix
+--	lidpmu_COMPLETE_KEY_CIRCUIT
+--	lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog
+--	lidpmu_COMPLETE_KEY_CIRCUIT_sentDialog- .. uuid
 --
---	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT
---	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog
---	lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sentDialog- .. uuid
---
---  lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog- .. uuid
+--  lidpmu_secretTunnel_sentDialog- .. uuid
 
 function init()
 
@@ -104,7 +116,7 @@ function init()
 	
 	message.setHandler
 	(
-		"lofty_irisil_dungeon_pickMeUp_RED_timeAttackDialog", 
+		"lidpmu_R_timeAttackDialog", 
 		function(_, _, tbl)
 			lofty_irisil_handleTimeAttackDialog_RED()
 		end
@@ -112,7 +124,111 @@ function init()
 	
 	message.setHandler
 	(
-		"lofty_irisil_dungeon_pickMeUp_GREEN_timeAttackDialog", 
+		"lidpmu_R_dontLeaveMeHere", 
+		function(_, _, tbl)
+			lofty_irisil_dontLeaveMeHere_RED()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_G_dontLeaveMeHere", 
+		function(_, _, tbl)
+			lofty_irisil_dontLeaveMeHere_GREEN()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_dontLeaveMeHere", 
+		function(_, _, tbl)
+			lofty_irisil_dontLeaveMeHere_BLUE()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_fennixInstructions", 
+		function(_, _, tbl)
+			lofty_irisil_fennixInstructionsDialog()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_fennixDead", 
+		function(_, _, tbl)
+			lofty_irisil_fennixResultDialog(false)
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_fennixLiving", 
+		function(_, _, tbl)
+			lofty_irisil_fennixResultDialog(true)
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_fennixCapturable", 
+		function(_, _, tbl)
+			lofty_irisil_fennixCapturable()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_letsRoll", 
+		function(_, _, tbl)
+			lofty_irisil_blueLetsRollDialog()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_letsRoll2", 
+		function(_, _, tbl)
+			lofty_irisil_blueLetsRollDialog2()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_TA1_fail", 
+		function(_, _, tbl)
+			lofty_irisil_blueFailTA1()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_TA2_fail", 
+		function(_, _, tbl)
+			lofty_irisil_blueFailTA2()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_TA1_win", 
+		function(_, _, tbl)
+			lofty_irisil_blueWinTA1()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_TA2_win", 
+		function(_, _, tbl)
+			lofty_irisil_blueWinTA2()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_G_timeAttackDialog", 
 		function(_, _, tbl)
 			lofty_irisil_handleTimeAttackDialog_GREEN()
 		end
@@ -133,8 +249,8 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 
 	--enter the dungeon dialog
 	if areaName == "entryway" then
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_welcome_sentDialog-" .. uuid) ~= true then
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_welcome_sentDialog-" .. uuid, true)
+		if world.getProperty("lidpmu_welcome_sentDialog-" .. uuid) ~= true then
+			world.setProperty("lidpmu_welcome_sentDialog-" .. uuid, true)
 			player.radioMessage("lofty_irisil_pickMeUp_welcomeToOurHome_1")
 			self.lofty_irisil_msgSet1Index = 1
 			self.lofty_irisil_msgSet1Timer = self.lofty_irisil_timerSpeed_medium
@@ -143,22 +259,22 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 
 	--disable easter egg below
 	if areaName == "disableYouSuckMessage" then
-		world.setProperty("lofty_irisil_dungeon_pickMeUp_completedTutorialGrappleRoom-" .. uuid, true)
+		world.setProperty("lidpmu_completedTutorialGrappleRoom-" .. uuid, true)
 	end
 	
 	--easter egg message that pops if you dunk in the lava in the first room on your first pass
 	if areaName == "youAreBadAtGrapplingHook" then
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_completedTutorialGrappleRoom-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_completedTutorialGrappleRoom-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_youAreBadAtGrapplingHook")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_completedTutorialGrappleRoom-" .. uuid, true)
+			world.setProperty("lidpmu_completedTutorialGrappleRoom-" .. uuid, true)
 		end
 	end
 	
 	--easter egg message if player climbs into the oil chamber
 	if areaName == "nothingInThereSorry" then
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_noSecretInTheOilChamber-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_noSecretInTheOilChamber-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_nothingInThereSorry")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_noSecretInTheOilChamber-" .. uuid, true)
+			world.setProperty("lidpmu_noSecretInTheOilChamber-" .. uuid, true)
 			self.lofty_irisil_msgSetSecretCactusIndex = 1
 			self.lofty_irisil_msgSetSecretCactusTimer = self.lofty_irisil_timerSpeed_medium
 		end
@@ -166,9 +282,9 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	
 	--easter egg message if player manages to get into the rabbit tunnel
 	if areaName == "secretTunnel" then
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog-" .. uuid) ~= true then
-			player.radioMessage("lofty_irisil_dungeon_pickMeUp_secretTunnel1")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_secretTunnel_sentDialog-" .. uuid, true)
+		if world.getProperty("lidpmu_secretTunnel_sentDialog-" .. uuid) ~= true then
+			player.radioMessage("lidpmu_secretTunnel1")
+			world.setProperty("lidpmu_secretTunnel_sentDialog-" .. uuid, true)
 			self.lofty_irisil_msgSetSecretTunnelIndex = 1
 			self.lofty_irisil_msgSetSecretTunnelTimer = self.lofty_irisil_timerSpeed_medium
 		end
@@ -178,21 +294,21 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	if areaName == "redriaRoom" then
 	
 		--if this area has not been completed
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_completed") ~= true then
+		if world.getProperty("lidpmu_R_completed") ~= true then
 		
 			--if we haven't sent the message to this uuid yet
-			if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_enter-" .. uuid) ~= true then
+			if world.getProperty("lidpmu_R_enter-" .. uuid) ~= true then
 				player.radioMessage("lofty_irisil_pickMeUp_enterRedRoom")
-				world.setProperty("lofty_irisil_dungeon_pickMeUp_RED_enter-" .. uuid, true)
+				world.setProperty("lidpmu_R_enter-" .. uuid, true)
 			end
 			
 		--area has been completed
 		else
 		
 			--have we sent the letsgo message yet?
-			if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_completed_sentDialog-" .. uuid) ~= true then
+			if world.getProperty("lidpmu_R_completed_sentDialog-" .. uuid) ~= true then
 				player.radioMessage("lofty_irisil_pickMeUp_completeRedRoom")
-				world.setProperty("lofty_irisil_dungeon_pickMeUp_RED_completed_sentDialog-" .. uuid, true)
+				world.setProperty("lidpmu_R_completed_sentDialog-" .. uuid, true)
 			end
 		
 		end
@@ -203,12 +319,12 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	if areaName == "redriaPedestalTutorial" then
 	
 		--if redria's circuit has been completed
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_completed") == true then
+		if world.getProperty("lidpmu_R_completed") == true then
 		
 			--if we haven't sent the message to this uuid yet
-			if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
+			if world.getProperty("lidpmu_R_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
 				player.radioMessage("lofty_irisil_pickMeUp_putRedOnPedestal")
-				world.setProperty("lofty_irisil_dungeon_pickMeUp_RED_putMeOnThePedestal_sentDialog-" .. uuid, true)
+				world.setProperty("lidpmu_R_putMeOnThePedestal_sentDialog-" .. uuid, true)
 			end
 			
 		end
@@ -218,21 +334,21 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	if areaName == "greenillPedestalTutorial" then
 	
 		--if greenill's circuit has not yet been completed
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_completed") ~= true then
+		if world.getProperty("lidpmu_G_completed") ~= true then
 		
 			--if we haven't sent the message to this uuid yet
-			if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_enterGreenWing_sentDialog-" .. uuid) ~= true then
+			if world.getProperty("lidpmu_G_enterGreenWing_sentDialog-" .. uuid) ~= true then
 				player.radioMessage("lofty_irisil_pickMeUp_enterGreenWing")
-				world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_enterGreenWing_sentDialog-" .. uuid, true)
+				world.setProperty("lidpmu_G_enterGreenWing_sentDialog-" .. uuid, true)
 			end
 			
 		--greenill's circuit completed
 		else
 			
 			--if we haven't sent the message to this uuid yet
-			if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
+			if world.getProperty("lidpmu_G_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
 				player.radioMessage("lofty_irisil_pickMeUp_putGreenOnPedestal")
-				world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_putMeOnThePedestal_sentDialog-" .. uuid, true)
+				world.setProperty("lidpmu_G_putMeOnThePedestal_sentDialog-" .. uuid, true)
 			end
 			
 		end
@@ -243,9 +359,9 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	if areaName == "greenillGravityChatter" then
 	
 		--if we haven't sent the message to this uuid yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_gravityChatter_sentDialog-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_G_gravityChatter_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_gravityChatter")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_gravityChatter_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_gravityChatter_sentDialog-" .. uuid, true)
 			self.lofty_irisil_msgSetKatamariIndex = 1
 			self.lofty_irisil_msgSetKatamariTimer = self.lofty_irisil_timerSpeed_medium
 		end
@@ -255,33 +371,33 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	--greenill telling the player to go quickly
 	if areaName == "greenillSwitchChatter" then 
 		--if we haven't sent the message to this uuid yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenSwitchChatter_sentDialog-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_G_greenSwitchChatter_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_youShouldGoFast")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenSwitchChatter_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_greenSwitchChatter_sentDialog-" .. uuid, true)
 		end
 	end
 	
 	if areaName == "greenillVerticalShaft" then
 		--if we haven't sent the message to this uuid yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft_sentDialog-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_G_greenillVerticalShaft_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_greenillVerticalShaft")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_greenillVerticalShaft_sentDialog-" .. uuid, true)
 		end
 	end
 	
 	if areaName == "greenillVerticalShaft2" then
 		--if we haven't sent the message to this uuid yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft2_sentDialog-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_G_greenillVerticalShaft2_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_greenillVerticalShaft2")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft2_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_greenillVerticalShaft2_sentDialog-" .. uuid, true)
 		end
 	end
 	
 	if areaName == "greenillVerticalShaft3" then
 		--if we haven't sent the message to this uuid yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft3_sentDialog-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_G_greenillVerticalShaft3_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_greenillVerticalShaft3")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_greenillVerticalShaft3_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_greenillVerticalShaft3_sentDialog-" .. uuid, true)
 		end
 	end
 	
@@ -289,9 +405,9 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	if areaName == "greenillRoom" then
 
 		--have we sent the letsgo message yet?
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_entered_sentDialog-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_G_entered_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_enterGreenRoom")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_entered_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_entered_sentDialog-" .. uuid, true)
 		end
 		
 	end
@@ -300,9 +416,9 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	if areaName == "greenillRoomCompleted" then
 
 		--have we sent the letsgo message yet?
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_completed_sentDialog-" .. uuid) ~= true then
+		if world.getProperty("lidpmu_G_completed_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_completeGreenRoom")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_completed_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_completed_sentDialog-" .. uuid, true)
 		end
 		
 	end
@@ -311,12 +427,12 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	if areaName == "bluefullPedestalTutorial" then
 	
 		--if bluefull's circuit has not yet been completed
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_BLUE_completed") ~= true then
+		if world.getProperty("lidpmu_B_completed") ~= true then
 		
 			--if we haven't sent the message to this uuid yet
-			if world.getProperty("lofty_irisil_dungeon_pickMeUp_BLUE_enterBlueWing_sentDialog-" .. uuid) ~= true then
+			if world.getProperty("lidpmu_B_enterBlueWing_sentDialog-" .. uuid) ~= true then
 				player.radioMessage("lofty_irisil_pickMeUp_enterBlueWing1")
-				world.setProperty("lofty_irisil_dungeon_pickMeUp_BLUE_enterBlueWing_sentDialog-" .. uuid, true)
+				world.setProperty("lidpmu_B_enterBlueWing_sentDialog-" .. uuid, true)
 				self.lofty_irisil_msgSetBlueWingIndex = 1
 				self.lofty_irisil_msgSetBlueWingTimer = self.lofty_irisil_timerSpeed_medium
 			end
@@ -325,9 +441,9 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 		else
 			
 			--if we haven't sent the message to this uuid yet
-			if world.getProperty("lofty_irisil_dungeon_pickMeUp_BLUE_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
+			if world.getProperty("lidpmu_B_putMeOnThePedestal_sentDialog-" .. uuid) ~= true then
 				player.radioMessage("lofty_irisil_pickMeUp_putBlueOnPedestal")
-				world.setProperty("lofty_irisil_dungeon_pickMeUp_BLUE_putMeOnThePedestal_sentDialog-" .. uuid, true)
+				world.setProperty("lidpmu_B_putMeOnThePedestal_sentDialog-" .. uuid, true)
 			end
 			
 		end
@@ -336,27 +452,175 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	
 end
 
+function lofty_irisil_dontLeaveMeHere_RED()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_R_dontLeaveMeHere_sentDialog-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_dontLeaveMeHere_RED")
+		world.setProperty("lidpmu_R_dontLeaveMeHere_sentDialog-" .. uuid, true)
+	end
+	
+end
+
+function lofty_irisil_dontLeaveMeHere_GREEN()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_G_dontLeaveMeHere_sentDialog-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_dontLeaveMeHere_GREEN")
+		world.setProperty("lidpmu_G_dontLeaveMeHere_sentDialog-" .. uuid, true)
+	end
+	
+end
+
+function lofty_irisil_dontLeaveMeHere_BLUE()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_B_dontLeaveMeHere_sentDialog-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_dontLeaveMeHere_BLUE")
+		world.setProperty("lidpmu_B_dontLeaveMeHere_sentDialog-" .. uuid, true)
+	end
+	
+end
+
+function lofty_irisil_fennixResultDialog(living)
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_fennixResult_sentDialog-" .. uuid) ~= true then
+		if living then
+			player.radioMessage("lofty_irisil_pickMeUp_fennixRoomSafe")
+		else
+			player.radioMessage("lofty_irisil_pickMeUp_fennixRoomDead")
+		end
+		world.setProperty("lidpmu_fennixResult_sentDialog-" .. uuid, true)
+	end
+	
+end
+
+function lofty_irisil_fennixInstructionsDialog()
+
+	local uuid = player.serverUuid()
+
+	--if we haven't sent the message to this uuid yet
+	if world.getProperty("lidpmu_fennixInstructions_sentDialog-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_fennixRoomInstructions")
+		world.setProperty("lidpmu_fennixInstructions_sentDialog-" .. uuid, true)
+	end
+
+end
+
+function lofty_irisil_fennixCapturable()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_fennixCapturable_sentDialog-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_fennixCapturable")
+		world.setProperty("lidpmu_fennixCapturable_sentDialog-" .. uuid, true)
+	end
+	
+end
+
+function lofty_irisil_blueLetsRollDialog()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_letsRoll_sentDialog-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_B_letsGo")
+		world.setProperty("lidpmu_letsRoll_sentDialog-" .. uuid, true)
+	end
+	
+end
+
+function lofty_irisil_blueLetsRollDialog2()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_letsRoll_sentDialog2-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_B_letsRoll")
+		world.setProperty("lidpmu_letsRoll_sentDialog2-" .. uuid, true)
+	end
+	
+end
+
+function lofty_irisil_blueFailTA1()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_B_TA_f-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_B_TA_fail")
+		world.setProperty("lidpmu_B_TA_f-" .. uuid, true)
+	end
+
+end
+
+function lofty_irisil_blueFailTA2()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_B_TA_f-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_B_TA_fail")
+		world.setProperty("lidpmu_B_TA_f-" .. uuid, true)
+	end
+
+end
+
+function lofty_irisil_blueWinTA1()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_B_TA1_w1-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_B_TA1_success")
+		world.setProperty("lidpmu_B_TA1_w1-" .. uuid, true)
+	end
+
+end
+
+function lofty_irisil_blueWinTA2()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_B_TA1_w2-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_B_TA2_success")
+		world.setProperty("lidpmu_B_TA1_w2-" .. uuid, true)
+	end
+
+end
+
 --our wire switches may fire multiple times as they load or unload so it's important to close the gate behind ourselves
 function lofty_irisil_handleTimeAttackDialog_RED()
 
 	local uuid = player.serverUuid()
 
 	--successfully completed time attack
-	if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_timeAttack") == true then
+	if world.getProperty("lidpmu_R_timeAttack") == true then
 	
 		--send player success message if it hasn't been sent yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_timeAttack_sentDialog") ~= true then
+		if world.getProperty("lidpmu_R_timeAttack_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_succeedRedTimeAttack")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_RED_timeAttack_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_R_timeAttack_sentDialog-" .. uuid, true)
 		end
 		
 	--failed time attack
 	else
 		
 		--send player fail message if it hasn't been sent yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_RED_timeAttack_sentDialog") ~= true then
+		if world.getProperty("lidpmu_R_timeAttack_sentDialog-") ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_failRedTimeAttack")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_RED_timeAttack_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_R_timeAttack_sentDialog-" .. uuid, true)
 		end
 		
 	end
@@ -368,12 +632,12 @@ function lofty_irisil_handleTimeAttackDialog_GREEN()
 	local uuid = player.serverUuid()
 
 	--successfully completed time attack
-	if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_timeAttack") == true then
+	if world.getProperty("lidpmu_G_timeAttack") == true then
 	
 		--send player success message if it hasn't been sent yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_timeAttack_sentDialog") ~= true then
+		if world.getProperty("lidpmu_G_timeAttack_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_succeedGreenTimeAttack")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_timeAttack_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_timeAttack_sentDialog-" .. uuid, true)
 			self.lofty_irisil_msgSetGreenTimeAttackSuccessIndex = 1
 			self.lofty_irisil_msgSetGreenTimeAttackSuccessTimer = self.lofty_irisil_timerSpeed_medium
 		end
@@ -382,9 +646,9 @@ function lofty_irisil_handleTimeAttackDialog_GREEN()
 	else
 		
 		--send player fail message if it hasn't been sent yet
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_GREEN_timeAttack_sentDialog") ~= true then
+		if world.getProperty("lidpmu_G_timeAttack_sentDialog-" .. uuid) ~= true then
 			player.radioMessage("lofty_irisil_pickMeUp_failGreenTimeAttack")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_GREEN_timeAttack_sentDialog-" .. uuid, true)
+			world.setProperty("lidpmu_G_timeAttack_sentDialog-" .. uuid, true)
 			self.lofty_irisil_msgSetGreenTimeAttackFailIndex = 1
 			self.lofty_irisil_msgSetGreenTimeAttackFailTimer = self.lofty_irisil_timerSpeed_medium
 		end
@@ -412,10 +676,10 @@ function update(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackSuccess(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackFail(dt)
 	
-	if world.getProperty("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog") == true then
-		if world.getProperty("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog-" .. uuid) ~= true then
-			player.radioMessage("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sendDialog")
-			world.setProperty("lofty_irisil_dungeon_pickMeUp_COMPLETE_KEY_CIRCUIT_sentDialog-" .. uuid, true)
+	if world.getProperty("lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog") == true then
+		if world.getProperty("lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog-" .. uuid) ~= true then
+			player.radioMessage("lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog")
+			world.setProperty("lidpmu_COMPLETE_KEY_CIRCUIT_sentDialog-" .. uuid, true)
 		end
 	end
 end
@@ -504,7 +768,7 @@ function lofty_irisil_updateMsgSequenceSecretCactus(dt)
 				--special triggers
 				if self.lofty_irisil_msgSetSecretCactusIndex == 5 then
 					self.lofty_irisil_msgSetSecretCactusTimer = self.lofty_irisil_timerSpeed_short
-					world.setProperty("lofty_irisil_dungeon_pickMeUp_secretCactus", true)
+					world.setProperty("lidpmu_secretCactus", true)
 				end
 				
 				if self.lofty_irisil_msgSetSecretCactusIndex == 6 then
@@ -518,9 +782,9 @@ end
 --list format in case other radio messages need to be inserted later
 lofty_irisil_secretTunnelMessages = 
 {
-	"lofty_irisil_dungeon_pickMeUp_secretTunnel1",
-	"lofty_irisil_dungeon_pickMeUp_secretTunnel2",
-	"lofty_irisil_dungeon_pickMeUp_secretTunnel3"
+	"lidpmu_secretTunnel1",
+	"lidpmu_secretTunnel2",
+	"lidpmu_secretTunnel3"
 }
 
 function lofty_irisil_updateMsgSequenceSecretTunnel(dt)
