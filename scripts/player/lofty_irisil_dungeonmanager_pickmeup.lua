@@ -28,6 +28,9 @@ function lofty_irisil_initDialogSequences()
 	self.lofty_irisil_msgSetBlueWingIndex = 0
 	self.lofty_irisil_msgSetBlueWingTimer = 4.5
 	
+	self.lofty_irisil_msgSetEnterPuzzleWingIndex = 0
+	self.lofty_irisil_msgSetEnterPuzzleWingTimer = 4.5
+	
 	self.lofty_irisil_msgSetGreenTimeAttackSuccessIndex = 0
 	self.lofty_irisil_msgSetGreenTimeAttackSuccessTimer = 4.5
 	
@@ -80,6 +83,13 @@ end
 --	lidpmu_B_TA_f- .. uuid
 --	lidpmu_B_TA1_w1- .. uuid
 --	lidpmu_B_TA2_w2- .. uuid
+--
+--  lidpmu_enterPuzzle_sentDialog- .. uuid
+--  lidpmu_easyStuff_sentDialog- .. uuid
+--  lidpmu_P_redInstructions_sentDialog- .. uuid
+--  lidpmu_P_completeRed- .. uuid
+--  lidpmu_P_completeWing- .. uuid
+--  lidpmu_P_teamwork- .. uuid
 --
 --	lidpmu_COMPLETE_KEY_CIRCUIT
 --	lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog
@@ -143,6 +153,39 @@ function init()
 		"lidpmu_B_dontLeaveMeHere", 
 		function(_, _, tbl)
 			lofty_irisil_dontLeaveMeHere_BLUE()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_B_easyStuff", 
+		function(_, _, tbl)
+			lofty_irisil_easyStuff()
+		end
+	)
+	
+	
+	message.setHandler
+	(
+		"lidpmu_B_goodTeamwork", 
+		function(_, _, tbl)
+			lofty_irisil_goodTeamwork()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_completeRedBunnyPuzzle", 
+		function(_, _, tbl)
+			lofty_irisil_completeRedBunnyPuzzle()
+		end
+	)
+	
+	message.setHandler
+	(
+		"lidpmu_completePuzzleWing", 
+		function(_, _, tbl)
+			lofty_irisil_completePuzzleWing()
 		end
 	)
 	
@@ -450,6 +493,28 @@ function lofty_irisil_enterArea_pickMeUp(tbl)
 	
 	end
 	
+	--entering bunny puzzle gauntlet
+	if areaName == "beginPuzzleArea" then
+	
+		--have we sent the letsgo message yet?
+		if world.getProperty("lidpmu_enterPuzzle_sentDialog-" .. uuid) ~= true then
+			player.radioMessage("lofty_irisil_pickMeUp_enterPuzzleWing1")
+			world.setProperty("lidpmu_enterPuzzle_sentDialog-" .. uuid, true)
+			self.lofty_irisil_msgSetEnterPuzzleWingIndex = 1
+			self.lofty_irisil_msgSetEnterPuzzleWingTimer = self.lofty_irisil_timerSpeed_medium
+		end
+	
+	end
+	
+	--red bunny puzzle
+	if areaName == "redBunnyDropPuzzleInstructions" then
+	
+		--if we haven't sent the message to this uuid yet
+		if world.getProperty("lidpmu_P_redInstructions_sentDialog-" .. uuid) ~= true then
+			player.radioMessage("lofty_irisil_pickMeUp_redBunnyPuzzleInstructions")
+			world.setProperty("lidpmu_P_redInstructions_sentDialog-" .. uuid, true)
+		end
+	end
 end
 
 function lofty_irisil_dontLeaveMeHere_RED()
@@ -486,6 +551,39 @@ function lofty_irisil_dontLeaveMeHere_BLUE()
 		world.setProperty("lidpmu_B_dontLeaveMeHere_sentDialog-" .. uuid, true)
 	end
 	
+end
+
+function lofty_irisil_completeRedBunnyPuzzle()
+	
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_P_completeRed-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_redBunnyPuzzleComplete")
+		world.setProperty("lidpmu_P_completeRed-" .. uuid, true)
+	end
+end
+
+function lofty_irisil_completePuzzleWing()
+	
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_P_completeWing-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_completePuzzleWing")
+		world.setProperty("lidpmu_P_completeWing-" .. uuid, true)
+	end
+end
+
+function lofty_irisil_goodTeamwork()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_P_teamwork-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_goodTeamwork")
+		world.setProperty("lidpmu_P_teamwork-" .. uuid, true)
+	end
 end
 
 function lofty_irisil_fennixResultDialog(living)
@@ -526,6 +624,18 @@ function lofty_irisil_fennixCapturable()
 		world.setProperty("lidpmu_fennixCapturable_sentDialog-" .. uuid, true)
 	end
 	
+end
+
+function lofty_irisil_easyStuff()
+
+	local uuid = player.serverUuid()
+
+	--send players message if it hasn't been sent yet
+	if world.getProperty("lidpmu_easyStuff_sentDialog-" .. uuid) ~= true then
+		player.radioMessage("lofty_irisil_pickMeUp_enterPuzzleWing5")
+		world.setProperty("lidpmu_easyStuff_sentDialog-" .. uuid, true)
+	end
+
 end
 
 function lofty_irisil_blueLetsRollDialog()
@@ -675,6 +785,7 @@ function update(dt)
 	lofty_irisil_updateMsgSequenceBlueWing(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackSuccess(dt)
 	lofty_irisil_updateMsgSequenceGreenTimeAttackFail(dt)
+	lofty_irisil_updateMsgSequenceEnterPuzzleWing(dt)
 	
 	if world.getProperty("lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog") == true then
 		if world.getProperty("lidpmu_COMPLETE_KEY_CIRCUIT_sendDialog-" .. uuid) ~= true then
@@ -773,6 +884,43 @@ function lofty_irisil_updateMsgSequenceSecretCactus(dt)
 				
 				if self.lofty_irisil_msgSetSecretCactusIndex == 6 then
 					self.lofty_irisil_msgSetSecretCactusTimer = self.lofty_irisil_timerSpeed_long
+				end
+			end
+		end
+	end
+end
+
+--list format in case other radio messages need to be inserted later
+lofty_irisil_enterPuzzleWingMessages = 
+{
+	"lofty_irisil_pickMeUp_enterPuzzleWing1",
+	"lofty_irisil_pickMeUp_enterPuzzleWing2",
+	"lofty_irisil_pickMeUp_enterPuzzleWing3",
+	"lofty_irisil_pickMeUp_enterPuzzleWing4"
+}
+
+function lofty_irisil_updateMsgSequenceEnterPuzzleWing(dt)
+	--we only care about the msg sequence timers if we're in a nonzero message state
+	if self.lofty_irisil_msgSetEnterPuzzleWingIndex > 0 then
+		
+		--begin sequence
+		if self.lofty_irisil_msgSetEnterPuzzleWingTimer > 0 then
+		
+			--handle time difference
+			self.lofty_irisil_msgSetEnterPuzzleWingTimer = self.lofty_irisil_msgSetEnterPuzzleWingTimer - dt
+		
+			--if it's been 4 seconds
+			if self.lofty_irisil_msgSetEnterPuzzleWingTimer <= 0 then
+			
+				--reset the timer
+				self.lofty_irisil_msgSetEnterPuzzleWingTimer = self.lofty_irisil_timerSpeed_medium
+				
+				--increment the set index
+				self.lofty_irisil_msgSetEnterPuzzleWingIndex = self.lofty_irisil_msgSetEnterPuzzleWingIndex + 1
+				
+				--send message
+				if lofty_irisil_enterPuzzleWingMessages[self.lofty_irisil_msgSetEnterPuzzleWingIndex] ~= nil then
+					player.radioMessage(lofty_irisil_enterPuzzleWingMessages[self.lofty_irisil_msgSetEnterPuzzleWingIndex])					
 				end
 			end
 		end

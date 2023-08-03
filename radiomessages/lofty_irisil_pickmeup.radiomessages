@@ -639,5 +639,95 @@ NAAAAAA NANANA NANA NA NA NANANANANA GRAVITYYYYYYYYY",
 		"text" : "Good work. Catch your breath, then we can go open those chests.",
 		"persistTime" : 3.5,
 		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterPuzzleWing1" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "I'll be damned. Look who made it!",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterPuzzleWing2" : 
+	{
+		"type" : "mission",
+		"senderName" : "Greenill",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_green.png:<frame>",
+		"text" : "WE'RE ALMOST HOME",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterPuzzleWing3" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Incredible work, adventurer! Just a few more rooms and you'll be swimming in loot.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterPuzzleWing4" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "We'll need to work together to open the rest of these doors. I can handle the first one! Place me on the blue tiles to our right, please.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_enterPuzzleWing5" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "See? Easy stuff. Let's do this.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_redBunnyPuzzleInstructions" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "This one's for me- you'll need to get me in through the top so you can press the button. Let's get this over with.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_redBunnyPuzzleComplete" : 
+	{
+		"type" : "mission",
+		"senderName" : "Redria",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_red.png:<frame>",
+		"text" : "Neat.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_completePuzzleWing" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Excellent, the door is open! One more challenge ahead- I hope you're ready, adventurer.",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
+	},
+	
+	"lofty_irisil_pickMeUp_goodTeamwork" : 
+	{
+		"type" : "mission",
+		"senderName" : "Bluefull",
+		"portraitImage" : "/interface/chatbubbles/glowbunny_blue.png:<frame>",
+		"text" : "Teamwork!",
+		"persistTime" : 3.5,
+		"textSpeed" : 50
 	}
 }
