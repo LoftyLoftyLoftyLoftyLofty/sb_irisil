@@ -277,6 +277,18 @@ function init()
 		end
 	)
 	
+	message.setHandler
+	(
+		"lidpmu_fat",
+		function(_, _, tbl)
+			lofty_irisil_wayTooFat()
+		end
+	)
+	
+end
+
+function lofty_irisil_wayTooFat()
+	status.setResource("health",0)
 end
 
 --triggered when the player receives a sound command
