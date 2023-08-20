@@ -1,0 +1,192 @@
+{
+	"type" : "lofty_irisil_fatgleap",
+	"shortdescription" : "Fat Gleap",
+	"categories" : ["lofty_irisil_fatgleap"],
+	"parts" : ["lofty_irisil_fatgleap"],
+	
+	"animation" : "lofty_irisil_fatgleap.animation",
+	"reversed" : false,
+	
+	"dropPools" : [ "lofty_irisil_fatGleapTreasure" ],
+	
+	"baseParameters" : 
+	{
+		"monsterClass" : "boss",
+		
+		"damageBar" : "None",
+		
+		"attackConfig" : {
+			"testBehavior" : 
+			{
+			
+			}
+		},
+		
+		"lofty_irisil_setWorldPropertyBool_onDeath" : 
+		{
+			"flag" : "lofty_irisil_fatgleapdead",
+			"value": true
+		},
+		
+		"scripts" : 
+		[
+			"/monsters/boss/lofty_irisil_fatgleap/lofty_irisil_fatgleap.lua",
+			"/monsters/lofty_irisil_monsterHooks.lua"
+		],
+		"initialScriptDelta" : 3,
+		"animationScripts" : 
+		[
+			//do we need a telegraph script? probably
+		],
+		
+		//these come from the leveling folder under levelingmultipliers.functions
+		//but we only need to override them for space monsters or enemies intended to be fought with a mech
+		//"healthLevelFunction" : "monsterLevelHealthMultiplier",
+		//"powerLevelFunction" : "monsterLevelPowerMultiplier",
+		
+		"renderLayer" : "Projectile-10",
+		
+		//136x120
+		"metaBoundBox" : [-68, -60, 68, 60],
+		"scale" : 1.0,
+		
+		"movementSettings" : {
+			//"collisionPoly" : [ [-5, -7.5], [5, -7.5], [5, 1.5], [-5, 1.5] ],
+			"collisionPoly" : [ 
+					[-4, -6.5],
+					[-3, -7.5],
+					[3, -7.5],
+					[4, -6.5],
+					[4, -0.5],
+					[3, 0.5],
+					[-3, 0.5],
+					[-4, -0.5]
+			],
+			"physicsEffectCategories" : ["boss"]
+		},
+		
+		//these knockout settings are required or the world thread will crash when you kill the boss
+		"knockoutTime" : 0.1,
+		"knockoutEffect" : "blink",
+		
+		"deathParticles" : "deathPoof",
+		
+		"touchDamage" : 
+		{
+			"poly" : [ 
+					[-4, -6.5],
+					[-3, -7.5],
+					[3, -7.5],
+					[4, -6.5],
+					[4, -0.5],
+					[3, 0.5],
+					[-3, 0.5],
+					[-4, -0.5]
+			],
+			"damage" : 37.5,
+
+			"teamType" : "enemy",
+			"damageSourceKind" : "default",
+			"statusEffects" : [ ]
+		},
+		
+		//not sure if we need this
+		//"selfDamagePoly" : [ [2.5, 4], [2.5, -4], [-2.5, -4], [-2.5, 4] ],
+		
+		//this seems to prevent being knocked around or juggled
+		"physicsEffectCategories" : ["boss"],
+		
+		"statusSettings" : {
+			"statusProperties" : 
+			{
+				"targetMaterialKind" : "organic",
+				"damageFlashColor" : "ff0000=0.15"
+			},
+
+			"appliesEnvironmentStatusEffects" : false,
+			"appliesWeatherStatusEffects" : false,
+			"minimumLiquidStatusEffectPercentage" : 0.1,
+
+			"primaryScriptSources" : 
+			[
+				"/stats/monster_primary.lua"
+			],
+			"primaryScriptDelta" : 5,
+
+			"stats" : 
+			{
+				"knockbackStunTime" : 
+				{
+					"baseValue" : 0.25
+				},
+				"grit" : 
+				{
+					"baseValue" : 1.0
+				},
+				"maxHealth" : 
+				{
+					"baseValue" : 3750
+				},
+				"protection" : 
+				{
+					"baseValue" : 0.0
+				},
+				"healthRegen" : 
+				{
+					"baseValue" : 0.0
+				},
+				"fireStatusImmunity" : 
+				{
+					"baseValue" : 1.0
+				},
+				"iceStatusImmunity" : 
+				{
+					"baseValue" : 1.0
+				},
+				"electricStatusImmunity" : 
+				{
+					"baseValue" : 1.0
+				},
+				"poisonStatusImmunity" : 
+				{
+					"baseValue" : 1.0
+				},
+				"specialStatusImmunity" : 
+				{
+					"baseValue" : 1.0
+				},
+				"healingStatusImmunity" : 
+				{
+					"baseValue" : 1.0
+				},
+				"stunImmunity" : 
+				{
+					"baseValue" : 1.0
+				},
+				"powerMultiplier" : 
+				{
+					"baseValue" : 1.0
+				}
+			},
+
+			"resources" : 
+			{
+				"stunned" : 
+				{
+					"deltaValue" : -1.0,
+					"initialValue" : 0.0,
+					"maxValue" : 0.0
+				},
+				"health" : 
+				{
+					"maxStat" : "maxHealth",
+					"deltaStat" : "healthRegen",
+					"defaultPercentage" : 1.0
+				}
+			}
+		},
+		
+		"mouthOffset" : [0, 0],
+		"feetOffset" : [0, -4]
+	}
+}

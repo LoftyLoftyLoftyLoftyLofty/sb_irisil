@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_fatgleap",
+  "category" : "lofty_irisil_fatgleap",
+  "type" : "lofty_irisil_fatgleap",
+
+  "frames" : {
+    "body" : "lofty_irisil_fatgleap.png"
+  }
+}

@@ -34,11 +34,11 @@
 	"behaviorConfig" : 
 	{
 		"deathActions" : [
-		{
-          "name" : "li_setWorldPropertyBool",
-          "parameters" : {}
-        }
-      ]
+			{
+			  "name" : "li_setWorldPropertyBool",
+			  "parameters" : {}
+			}
+		]
 	},
 	
     "metaBoundBox" : [-0.5, -0.5, 0.5, 0.5],

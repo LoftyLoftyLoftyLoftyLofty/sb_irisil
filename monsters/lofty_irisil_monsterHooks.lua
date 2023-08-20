@@ -60,6 +60,22 @@ end
 
 function li_initHooks(args, board)
   
+  --enable or disable invuln
+  message.setHandler
+	(
+		"lofty_irisil_monsterHook_setInvulnerable", 
+		
+		function(_, _, b)
+			if validTarget(b) then
+				if b.invulnerable then
+					status.addEphemeralEffect("invulnerable", 999999999)
+				else
+					status.removeEphemeralEffect("invulnerable")
+				end
+			end
+		end
+	)
+  
   --enable or disable relocator
   message.setHandler
 	(
@@ -268,7 +284,9 @@ end
 -- passing params through this one in particular was being a pain in my ass so we do it this way instead
 function li_setWorldPropertyBool(args, board, node)
 	local w = config.getParameter("lofty_irisil_setWorldPropertyBool_onDeath")
-	world.setProperty(w.flag, w.value)
+	while world.getProperty(w.flag) ~= w.value do
+		world.setProperty(w.flag, w.value)
+	end
 end
 
 --makes monster face a given direction

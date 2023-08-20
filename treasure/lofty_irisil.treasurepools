@@ -1108,5 +1108,13 @@
         {"weight" : 0.002, "item" : "lofty_irisil_holographicfennixaf"}
       ]
     } ]
+  ],
+  
+  "lofty_irisil_fatGleapTreasure" : 
+  [
+	[0, {
+      "poolRounds" : [[1.0, 0]],
+      "pool" : []
+    }]
   ]
 }

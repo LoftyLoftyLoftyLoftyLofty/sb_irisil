@@ -1,0 +1,17 @@
+{
+  "frameGrid" : {
+    "size" : [136, 120],
+    "dimensions" : [8, 4],
+
+    "names" : [
+      [ "idle.1", null, null, null, null, null, null, null],
+      [ "roll.1", "roll.2", "roll.3", "roll.4", "roll.5", "roll.6", "roll.7", "roll.8" ],
+	  [ "jump.1", "jump.2", "jump.3", "fall.1", "fall.2", "fall.3", null, null ],
+	  [ null, null, null, null, null, null, null, null ]
+    ]
+  },
+  "aliases" : {
+    "deafult" : "idle.1",
+  	"idle" : "idle.1"
+  }
+}

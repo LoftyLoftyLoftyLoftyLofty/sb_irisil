@@ -23,7 +23,9 @@ function init()
 		if world.getProperty(self.variableHook) == nil then
 		
 			--set it false
-			world.setProperty(self.variableHook, false)
+			while world.getProperty(self.variableHook) ~= false do
+				world.setProperty(self.variableHook, false)
+			end
 		end
 	else
 		self.variableHook = "none"
@@ -44,7 +46,9 @@ function update(dt)
 		if object.getInputNodeLevel(0) then
 			if self.triggered == false then
 				self.triggered = true
-				world.setProperty(self.variableHook, self.desiredValue)
+				while world.getProperty(self.variableHook) ~= self.desiredValue do
+					world.setProperty(self.variableHook, self.desiredValue)
+				end
 				yeek("Scripted Input Switch", "SET VAR -> " .. self.variableHook .. " -> " .. sb.print(self.desiredValue))
 			end
 
