@@ -9,7 +9,20 @@
             "frames" : 1,
             "cycle" : 2.5,
             "mode" : "loop"
-          }
+          },
+		  "roll" : {
+		    "frames" : 8,
+			"cycle" : 0.5,
+			"mode" : "loop"
+		  },
+		  "jump" : {
+			"frames" : 3,
+			"cycle" : 0.75
+		  },
+		  "fall" : {
+			"frames" : 3,
+			"cycle" : 0.75
+		  }
         }
       },
       "damage" : {
@@ -58,7 +71,22 @@
               "properties" : {
                 "image" : "<partImage>:idle.<frame>"
               }
-            }
+            },
+			"roll" : {
+			  "properties" : {
+			    "image" : "<partImage>:roll.<frame>"
+			  }
+			},
+			"jump" : {
+			  "properties" : {
+			    "image" : "<partImage>:jump.<frame>"
+			  }
+			},
+			"fall" : {
+			  "properties" : {
+			    "image" : "<partImage>:fall.<frame>"
+			  }
+			}
 		  }
         }
       }

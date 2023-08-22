@@ -1,0 +1,21 @@
+{
+  "projectileName" : "lofty_irisil_gleapgoop",
+  "physics" : "grenade",
+  "bounces" : 0,
+  "timeToLive" : 5.5,
+  "image" : "lofty_irisil_gleapgoop.png",
+  "damageKindImage" : "icon.png",
+  "damagePoly" : [ [-3, 0], [0, -3], [3, 0], [0, 3] ],
+  "animationCycle" : 0.3,
+  "frameNumber" : 1,
+  "speed" : 19,
+  "power" : 50,
+  "damageKind" : "default",
+  "emitters" : [ "defaultorange" ],
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/paintexplosionorange/lofty_irisil_paintexplosionorange.config"
+    }
+  ]
+}

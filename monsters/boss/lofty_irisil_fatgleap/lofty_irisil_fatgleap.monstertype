@@ -16,9 +16,27 @@
 		"damageBar" : "None",
 		
 		"attackConfig" : {
+			"maxAdds" : 5,
+			
 			"testBehavior" : 
 			{
+				"irisil_are_the_cutest" : true
+			},
 			
+			"roll" : 
+			{
+				"minimumRollSpeed" : 24,
+				"maximumRollSpeed" : 24,
+				"rollSpeedIncrement" : 2
+			},
+			"gleapGoop" : 
+			{
+				"power" : 10,
+				"projectileVel" : 16
+			},
+			"hopSplat" : 
+			{
+				
 			}
 		},
 		
@@ -47,7 +65,7 @@
 		"renderLayer" : "Projectile-10",
 		
 		//136x120
-		"metaBoundBox" : [-68, -60, 68, 60],
+		"metaBoundBox" : [-4, -7.5, 4, 0.5],
 		"scale" : 1.0,
 		
 		"movementSettings" : {
@@ -90,8 +108,21 @@
 			"statusEffects" : [ ]
 		},
 		
+		"damageTeamType" : "enemy",
+		"alwaysAggressive" : true,
+		"aggressive" : true,
+		
 		//not sure if we need this
-		//"selfDamagePoly" : [ [2.5, 4], [2.5, -4], [-2.5, -4], [-2.5, 4] ],
+		"selfDamagePoly" : [ 
+			[-4, -6.5],
+			[-3, -7.5],
+			[3, -7.5],
+			[4, -6.5],
+			[4, -0.5],
+			[3, 0.5],
+			[-3, 0.5],
+			[-4, -0.5] 
+		],
 		
 		//this seems to prevent being knocked around or juggled
 		"physicsEffectCategories" : ["boss"],

@@ -47,3 +47,10 @@ end
 function liu_itemExists(itemName)
 	return root.itemConfig(itemName) ~= nil
 end
+
+function liu_debugRect(rect, color)
+    world.debugLine({rect[1], rect[2]}, {rect[3], rect[2]}, color)
+    world.debugLine({rect[3], rect[2]}, {rect[3], rect[4]}, color)
+    world.debugLine({rect[3], rect[4]}, {rect[1], rect[4]}, color)
+    world.debugLine({rect[1], rect[4]}, {rect[1], rect[2]}, color)
+end
