@@ -165,7 +165,7 @@ activeState = async(function(attackConfig)
 	end)
 	
 	-- Run phase 1 until health is 0
-	self.shouldDie = false
+	self.shouldDie = false --we set this to false here because we expect a death sequence to play when we hit 0 hp
 	local mainAttacks = attackSequence()
 	while status.resource("health") > 0 do
 		coroutine.yield(tick(mainAttacks))
@@ -180,8 +180,10 @@ activeState = async(function(attackConfig)
 	--try to gracefully exit the loop above if we get here somehow
 	self.target = nil
 	
+	--todo death animation
+	
 	--ok NOW you can die
-	self.shouldDie = false
+	self.shouldDie = true
 end)
 
 testBehavior = async(function()
