@@ -13,7 +13,7 @@
     "name" : "lofty_irisil_irisamobilityswim",
     "displayName" : "Irisa Mobility (S)",
     "displayIcon" : "/items/augments/back/lofty_irisil_irisamobilityaugmentswim.png",
-    "effects" : [ "lofty_irisil_irisadandruffaugment", "runboostaugment", "jumpboostaugment", "swimboost" ]
+    "effects" : [ "lofty_irisil_irisadandruffaugment", "runboostaugment", "jumpboostaugment", "lofty_irisil_subtleswimboost" ]
   },
 
   "radioMessagesOnPickup" : [ "pickupaugment" ],
