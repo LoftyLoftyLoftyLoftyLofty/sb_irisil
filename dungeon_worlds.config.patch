@@ -70,5 +70,23 @@
       "musicTrack" : "/music/event-horizon.ogg",
       "environmentStatusEffects" : ["dontstarve"]
     }
+  },
+  
+  {
+	"op" : "add",
+	"path" : "/lofty_irisil_techchallenge_irisamorph",
+	"value" : {
+      "primaryDungeon" : "lofty_irisil_techchallenge_irisamorph",
+      "threatLevel" : 1,
+      "gravity" : 80,
+      "worldSize" : [2000, 2000],
+      "dungeonBaseHeight" : 1000,
+      "dungeonSurfaceHeight" : 810,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/desert-exploration2.ogg",
+	  "overrideTech" : ["lofty_irisil_irisamorph"],
+      "environmentStatusEffects" : ["dontstarve"]
+    }
   }
 ]

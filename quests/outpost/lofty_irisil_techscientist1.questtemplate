@@ -1,0 +1,59 @@
+{
+  "id" : "lofty_irisil_techscientist1",
+  "prerequisites" : [ "techscientist6" ],
+  "title" : "^orange;Animal Testing",
+  "text" : 
+"We've been offered a whole lot of pixels to have someone try out this ^orange;new tech^white;. Normally, I'd turn these kinds of offers down, but we need to fund some repairs for this facility's water heater. We've all been taking ice-cold showers for a week!
+  
+^green;Try this tech out on the new obstacle course^white;, and if you can- avoid the urge to chew on any wires you find.
+  
+^green;Talk to me again when you're ready to go in.",
+
+  "completionText" : "It's a relief to see that you didn't get stuck that way- my last tester wasn't so lucky. I'll get these results over to our client so we can get the water heater fixed. I can't wait to take a hot shower again!",
+  "moneyRange" : [300, 300],
+  "rewards" : [],
+
+  "updateDelta" : 10,
+  "script" : "/quests/scripts/instance.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/outpost/techlab/techlabscientistportrait.png"} ],
+        "title" : "Elliott"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/outpost/techlab/techlabscientistportrait.png"} ],
+        "title" : "Elliott"
+      }
+    },
+
+    "descriptions" : {
+      "enterInstance" : "Talk to ^orange;Elliott^reset; to enter the ^orange;obsctacle course^reset;",
+      "findGoal" : "Complete the ^orange;Irisa Morph Tech obstacle course^reset;",
+      "turnIn" : "Return to ^orange;Elliott^reset; at the ^orange;Outpost^reset;"
+    },
+
+    "warpEntityUid" : "techlabscientist",
+    "warpAction" : "instanceworld:lofty_irisil_techchallenge_irisamorph",
+    "warpDialog" : "/interface/confirmation/teleportconfirmation.config:lofty_irisil_techscientist_irisamorph",
+
+    "goalTrigger" : "proximity",
+    "proximityRange" : 10,
+    "goalEntityUid" : "morphballchallengeteleporter",
+    "indicateGoal" : false,
+    "trackGoalEntity" : false,
+
+    "turnInEntityUid" : "techlabscientist",
+
+    // Completion actions
+    "showTech" : [
+	  "lofty_irisil_irisamorph"
+    ],
+
+    "equipTech" : [
+      "lofty_irisil_irisamorph"
+    ],
+
+    "setUniverseFlags" : ["lofty_irisil_outpost_techscientist1"]
+  }
+}

@@ -1,144 +1,178 @@
 [
-  {
-	"op" : "add",
-	"path" : "/lofty_irisil_challengerooms_threadtheneedle",
-	"value" : {
-      "type" : "FloatingDungeon",
-      "dungeonWorld" : "lofty_irisil_challengerooms_threadtheneedle",
-      "spawningEnabled" : false,
-      "beamUpRule" : "AnywhereWithWarning",
-      "disableDeathDrops" : true,
-      
-      "skyParameters" : {
-        "dayLength" : 10000,
-        "surfaceLevel" : 1000,
-        "spaceLevel" : 3000,
-        "seed" : -5288806180628666923,
-      
-        "skyType" : "barren",
-        "skyColoring" : {
-          "mainColor" : [200, 200, 255],
-      
-          "morningColors" : [[200, 200, 255], [200, 200, 255]],
-          "dayColors" : [[200, 200, 255], [200, 200, 255]],
-          "eveningColors" : [[200, 200, 255], [200, 200, 255]],
-          "nightColors" : [[200, 200, 255], [200, 200, 255]],
-      
-          "morningLightColor" : [200, 200, 200],
-          "dayLightColor" : [200, 200, 200],
-          "eveningLightColor" : [200, 200, 200],
-          "nightLightColor" : [200, 200, 200]
-        }
-      }
-    }
-  },
-  
-  {
-	"op" : "add",
-	"path" : "/lofty_irisil_challengerooms_pickmeup",
-	"value" : {
-      "type" : "FloatingDungeon",
-      "dungeonWorld" : "lofty_irisil_challengerooms_pickmeup",
-      "spawningEnabled" : false,
-      "beamUpRule" : "AnywhereWithWarning",
-      "disableDeathDrops" : true,
-      
-      "skyParameters" : {
-        "dayLength" : 10000,
-        "surfaceLevel" : 1000,
-        "spaceLevel" : 3000,
-        "seed" : -5288806180628666923,
-      
-        "skyType" : "barren",
-        "skyColoring" : {
-          "mainColor" : [200, 200, 255],
-      
-          "morningColors" : [[200, 200, 255], [200, 200, 255]],
-          "dayColors" : [[200, 200, 255], [200, 200, 255]],
-          "eveningColors" : [[200, 200, 255], [200, 200, 255]],
-          "nightColors" : [[200, 200, 255], [200, 200, 255]],
-      
-          "morningLightColor" : [200, 200, 200],
-          "dayLightColor" : [200, 200, 200],
-          "eveningLightColor" : [200, 200, 200],
-          "nightLightColor" : [200, 200, 200]
-        }
-      }
-    }
-  },
-  
-  {
-	"op" : "add",
-	"path" : "/lofty_irisil_miniknoglab",
-	"value" : {
-	  "type" : "FloatingDungeon",
-	  "dungeonWorld" : "lofty_irisil_miniknoglab",
-	  "beamUpRule" : "Anywhere",
-	  "disableDeathDrops" : true,
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_techchallenge_irisamorph",
+		"value" : {
+			"type" : "FloatingDungeon",
+			"dungeonWorld" : "lofty_irisil_techchallenge_irisamorph",
+			"spawningEnabled" : false,
+			"beamUpRule" : "AnywhereWithWarning",
+			"disableDeathDrops" : true,
 
-	  "tempWorldDeleteTime" : 600000,
+			"skyParameters" : {
+				"dayLength" : 10000,
+				"surfaceLevel" : 1000,
+				"spaceLevel" : 3000,
+				"seed" : -5288806180628666923,
 
-	  "skyParameters" : {
-		"dayLength" : 10000,
-		"surfaceLevel" : 1000,
-		"spaceLevel" : 3000,
-		"seed" : -5288806180628666923,
+				"skyType" : "barren",
+				"skyColoring" : {
+				"mainColor" : [200, 200, 255],
 
-		"skyType" : "barren",
-		"skyColoring" : {
-		  "mainColor" : [200, 200, 255],
+				"morningColors" : [[200, 200, 255], [200, 200, 255]],
+				"dayColors" : [[200, 200, 255], [200, 200, 255]],
+				"eveningColors" : [[200, 200, 255], [200, 200, 255]],
+				"nightColors" : [[200, 200, 255], [200, 200, 255]],
 
-		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
-		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
-		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
-		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
-
-		  "morningLightColor" : [120, 120, 120],
-		  "dayLightColor" : [120, 120, 120],
-		  "eveningLightColor" : [120, 120, 120],
-		  "nightLightColor" : [120, 120, 120]
+				"morningLightColor" : [200, 200, 200],
+				"dayLightColor" : [200, 200, 200],
+				"eveningLightColor" : [200, 200, 200],
+				"nightLightColor" : [200, 200, 200]
+				}
+			}
 		}
-	  }
-	}
-  },
-  
-  {
-	"op" : "add",
-	"path" : "/lofty_irisil_fisheye",
-	"value" : {
-	
-	  "worldProperties" : {
-      "nonCombat" : false
-      },
-	
-	  "type" : "FloatingDungeon",
-	  "dungeonWorld" : "lofty_irisil_fisheye",
-	  "beamUpRule" : "Anywhere",
-	  "disableDeathDrops" : true,
+	},
 
-	  "tempWorldDeleteTime" : 600000,
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_challengerooms_threadtheneedle",
+		"value" : {
+			"type" : "FloatingDungeon",
+			"dungeonWorld" : "lofty_irisil_challengerooms_threadtheneedle",
+			"spawningEnabled" : false,
+			"beamUpRule" : "AnywhereWithWarning",
+			"disableDeathDrops" : true,
 
-	  "skyParameters" : {
-		"dayLength" : 600,
-		"surfaceLevel" : 1000,
-		"spaceLevel" : 3000,
-		"seed" : -5288806180628666923,
+			"skyParameters" : {
+				"dayLength" : 10000,
+				"surfaceLevel" : 1000,
+				"spaceLevel" : 3000,
+				"seed" : -5288806180628666923,
 
-		"skyType" : "barren",
-		"skyColoring" : {
-		  "mainColor" : [200, 200, 255],
+				"skyType" : "barren",
+				"skyColoring" : {
+				"mainColor" : [200, 200, 255],
 
-		  "morningColors" : [[200, 200, 255], [200, 200, 255]],
-		  "dayColors" : [[200, 200, 255], [200, 200, 255]],
-		  "eveningColors" : [[200, 200, 255], [200, 200, 255]],
-		  "nightColors" : [[200, 200, 255], [200, 200, 255]],
+				"morningColors" : [[200, 200, 255], [200, 200, 255]],
+				"dayColors" : [[200, 200, 255], [200, 200, 255]],
+				"eveningColors" : [[200, 200, 255], [200, 200, 255]],
+				"nightColors" : [[200, 200, 255], [200, 200, 255]],
 
-		  "morningLightColor" : [140, 71, 0],
-		  "dayLightColor" : [200, 200, 200],
-		  "eveningLightColor" : [160, 120, 180],
-		  "nightLightColor" : [40, 20, 60]
+				"morningLightColor" : [200, 200, 200],
+				"dayLightColor" : [200, 200, 200],
+				"eveningLightColor" : [200, 200, 200],
+				"nightLightColor" : [200, 200, 200]
+				}
+			}
 		}
-	  }
+	},
+
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_challengerooms_pickmeup",
+		"value" : {
+			"type" : "FloatingDungeon",
+			"dungeonWorld" : "lofty_irisil_challengerooms_pickmeup",
+			"spawningEnabled" : false,
+			"beamUpRule" : "AnywhereWithWarning",
+			"disableDeathDrops" : true,
+
+			"skyParameters" : {
+				"dayLength" : 10000,
+				"surfaceLevel" : 1000,
+				"spaceLevel" : 3000,
+				"seed" : -5288806180628666923,
+
+				"skyType" : "barren",
+				"skyColoring" : {
+				"mainColor" : [200, 200, 255],
+
+				"morningColors" : [[200, 200, 255], [200, 200, 255]],
+				"dayColors" : [[200, 200, 255], [200, 200, 255]],
+				"eveningColors" : [[200, 200, 255], [200, 200, 255]],
+				"nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+				"morningLightColor" : [200, 200, 200],
+				"dayLightColor" : [200, 200, 200],
+				"eveningLightColor" : [200, 200, 200],
+				"nightLightColor" : [200, 200, 200]
+				}
+			}
+		}
+	},
+
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_miniknoglab",
+		"value" : {
+			"type" : "FloatingDungeon",
+			"dungeonWorld" : "lofty_irisil_miniknoglab",
+			"beamUpRule" : "Anywhere",
+			"disableDeathDrops" : true,
+
+			"tempWorldDeleteTime" : 600000,
+
+			"skyParameters" : {
+				"dayLength" : 10000,
+				"surfaceLevel" : 1000,
+				"spaceLevel" : 3000,
+				"seed" : -5288806180628666923,
+
+				"skyType" : "barren",
+				"skyColoring" : {
+				"mainColor" : [200, 200, 255],
+
+				"morningColors" : [[200, 200, 255], [200, 200, 255]],
+				"dayColors" : [[200, 200, 255], [200, 200, 255]],
+				"eveningColors" : [[200, 200, 255], [200, 200, 255]],
+				"nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+				"morningLightColor" : [120, 120, 120],
+				"dayLightColor" : [120, 120, 120],
+				"eveningLightColor" : [120, 120, 120],
+				"nightLightColor" : [120, 120, 120]
+				}
+			}
+		}
+	},
+
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_fisheye",
+		"value" : {
+
+			"worldProperties" : {
+			"nonCombat" : false
+			},
+
+			"type" : "FloatingDungeon",
+			"dungeonWorld" : "lofty_irisil_fisheye",
+			"beamUpRule" : "Anywhere",
+			"disableDeathDrops" : true,
+
+			"tempWorldDeleteTime" : 600000,
+
+			"skyParameters" : {
+				"dayLength" : 600,
+				"surfaceLevel" : 1000,
+				"spaceLevel" : 3000,
+				"seed" : -5288806180628666923,
+
+				"skyType" : "barren",
+				"skyColoring" : {
+				"mainColor" : [200, 200, 255],
+
+				"morningColors" : [[200, 200, 255], [200, 200, 255]],
+				"dayColors" : [[200, 200, 255], [200, 200, 255]],
+				"eveningColors" : [[200, 200, 255], [200, 200, 255]],
+				"nightColors" : [[200, 200, 255], [200, 200, 255]],
+
+				"morningLightColor" : [140, 71, 0],
+				"dayLightColor" : [200, 200, 200],
+				"eveningLightColor" : [160, 120, 180],
+				"nightLightColor" : [40, 20, 60]
+				}
+			}
+		}
 	}
-  }
 ]

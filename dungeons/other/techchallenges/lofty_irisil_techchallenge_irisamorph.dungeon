@@ -1,0 +1,23 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_techchallenge_irisamorph",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "lofty_irisil_techchallenge_irisamorph" ],
+    "gravity" : 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 100,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "lofty_irisil_techchallenge_irisamorph",
+      "rules" : [
+        [ "maxSpawnCount", [1] ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_techchallenge_irisamorph.json" ]
+    }
+  ]
+}

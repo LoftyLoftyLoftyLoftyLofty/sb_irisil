@@ -1,0 +1,13 @@
+{
+	"lofty_irisil_techchallenge_irisamorph1" : 
+	{
+		"type" : "mission",
+    "text" : "To use the ^orange;Irisa Morph Tech^white; ^#71f2f6;press F^white;. Try not to get dander everywhere."
+	},
+	
+	"lofty_irisil_techchallenge_irisamorph2" : 
+	{
+		"type" : "mission",
+		"text" : "Ah. Right. Sorry about that! I always forget to turn the pit traps off."
+	}
+}

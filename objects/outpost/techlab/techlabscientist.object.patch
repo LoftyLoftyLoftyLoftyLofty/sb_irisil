@@ -1,0 +1,12 @@
+[
+	{
+		"op" : "add",
+		"path" : "/offeredQuests/-",
+		"value" : "lofty_irisil_techscientist1"
+	},
+	{
+		"op" : "add",
+		"path" : "/turnInQuests/-",
+		"value" : "lofty_irisil_techscientist1"
+	}
+]

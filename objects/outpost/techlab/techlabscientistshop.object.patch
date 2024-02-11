@@ -1,0 +1,7 @@
+[
+	{
+		"op" : "add",
+		"path" : "/offeredQuests/-",
+		"value" : "lofty_irisil_techscientist1"
+	}
+]
