@@ -10,7 +10,7 @@
 ^green;Talk to me again when you're ready to go in.",
 
   "completionText" : "It's a relief to see that you didn't get stuck that way- my last tester wasn't so lucky. I'll get these results over to our client so we can get the water heater fixed. I can't wait to take a hot shower again!",
-  "moneyRange" : [300, 300],
+  "moneyRange" : [0, 0],
   "rewards" : [],
 
   "updateDelta" : 10,
