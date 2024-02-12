@@ -3,7 +3,7 @@
   "effectConfig" : {
     "movementParameters" : {
       "liquidImpedance" : 0.1,
-      "liquidForce" : 35,
+      "liquidForce" : 150,
       "liquidJumpProfile" : {
         "jumpSpeed" : 35
       }
