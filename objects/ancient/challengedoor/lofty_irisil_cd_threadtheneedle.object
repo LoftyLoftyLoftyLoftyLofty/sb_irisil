@@ -7,7 +7,7 @@
   "printable" : false,
 
   "description" : "A mysterious door. Adventure awaits!
-^white;Length:          ^green;^#888888;
+^white;Length: ^green;^#888888;
 ^white;Threat Level: ^cyan;^#888888;",
 
   "shortdescription" : "Thread The Needle",
