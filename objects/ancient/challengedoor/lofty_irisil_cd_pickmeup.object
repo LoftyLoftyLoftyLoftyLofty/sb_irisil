@@ -6,8 +6,8 @@
   "price" : 0,
   "printable" : false,
 
-  "description" : "A mysterious door. Adventure awaits!
-^white;Length:          ^red;^#888888;
+  "description" : "(WIP) A mysterious door. Adventure awaits!
+^white;Length: ^red;^#888888;
 ^white;Threat Level: ^red;^#888888;",
 
   "shortdescription" : "Pick Me Up",
