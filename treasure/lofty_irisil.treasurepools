@@ -489,8 +489,8 @@
 			[
 				{"item" : [ "lofty_irisil_glitch-codex", 1]},
 				{"item" : [ "lanternstickback", 1]},
-				{"item" : [ "rarespear", 1]}
-				//{"pool" : "lofty_irisil_irisilweapons"}
+				//{"item" : [ "rarespear", 1]}
+				{"pool" : "lofty_irisil_irisilweapons"}
 			],
 			"allowDuplication" : false
 		}
@@ -690,8 +690,8 @@
 				{"item" : [ "lanternstickback", 1]},
 				{"item" : [ "climbingrope", 10]},
 				{"pool" : "healingItem"},
-				{"item" : [ "rarespear", 1]}
-				//{"pool" : "lofty_irisil_irisilweapons"}
+				//{"item" : [ "rarespear", 1]}
+				{"pool" : "lofty_irisil_irisilweapons"}
 			],
 			"allowDuplication" : false
 		}
@@ -1116,5 +1116,33 @@
       "poolRounds" : [[1.0, 0]],
       "pool" : []
     }]
+  ],
+  
+  "lofty_irisil_animalCrateSpaceStationTreasure" : 
+  [
+	[1, {
+			"fill" : 
+			[
+				{"item" : [ "capturepod", 1]}
+			],
+			"poolRounds" : 
+			[
+				[0.25, 0],
+				[0.50, 1],
+				[0.20, 2],
+				[0.05, 3]
+			],
+			"pool" : 
+			[
+				{"weight" : 0.35, "pool" : "basicSpaceTreasure"},
+				{"weight" : 0.25, "item" : [ "capturepod", 1]},
+				{"weight" : 0.15, "item" : [ "capturepod", 2]},
+				{"weight" : 0.10, "pool" : "petcollars"},
+				{"weight" : 0.05, "item" : [ "relocator", 1]},
+				{"weight" : 0.10, "item" : [ "bugnet", 1]}
+			],
+			"allowDuplication" : true
+		}]
   ]
+  
 }

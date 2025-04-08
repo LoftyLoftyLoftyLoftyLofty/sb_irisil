@@ -51,5 +51,34 @@
 		"description" : "This appears to be a giant eyeball drifting through space."
 	  }
 	}
+  },
+  
+  {
+    "op" : "add",
+	"path" : "/lofty_irisil_spacestation_exoticanimals",
+	"value" : {
+      "warpAction" : "InstanceWorld:lofty_irisil_spacestation_exoticanimals",
+      "threatLevel" : 1,
+      "skyParameters" : {
+        "seed" : 0,
+        "horizonClouds" : false,
+        "horizonImages" : [ { "left": "/celestial/system/spacestation/stationhorizonleft.png", "right": "/celestial/system/spacestation/stationhorizonright.png" } ]
+      },
+      
+      "permanent" : true,
+      
+      "moving" : false,
+      "speed" : 5.0,
+      "orbitRange" : [10, 10],
+      "lifeTime" : [0, 0],
+      "parameters" : {
+        "icon" : "/celestial/system/spacestation/spacestationicon.png",
+      
+        "displayName" : "Exotic Animals Station",
+        "description" : "This station is a hub for intergalactic animal trading.",
+      
+        "bookmarkIcon" : "spacestation"
+      }
+	}
   }
 ]

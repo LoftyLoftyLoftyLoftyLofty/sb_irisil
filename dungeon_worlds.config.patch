@@ -88,5 +88,25 @@
 	  "overrideTech" : ["lofty_irisil_irisamorph"],
       "environmentStatusEffects" : ["dontstarve"]
     }
+  },
+  
+  {
+    "op" : "add",
+	"path" : "/lofty_irisil_spacestation_exoticanimals",
+	"value" : {
+      "primaryDungeon" : "lofty_irisil_spacestation_exoticanimals",
+      "threatLevel" : 1,
+      "gravity" : 0,
+      "airless" : true,
+      "worldSize" : [1200, 500],
+      "dungeonBaseHeight" : 300,
+      "dungeonSurfaceHeight" : 300,
+      "ambientLightLevel" : [32, 32, 32],
+      "ambientNoises" : "/sfx/environmental/space_loop4.ogg",
+      "musicTrack" : "/music/tranquility-base.ogg",
+      "environmentStatusEffects" : ["biomeairless"],
+      "worldEdgeForceRegions" : "TopAndBottom",
+      "biome" : "space"
+	}
   }
 ]

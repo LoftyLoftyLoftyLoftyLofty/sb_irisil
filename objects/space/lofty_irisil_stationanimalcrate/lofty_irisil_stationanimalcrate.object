@@ -1,0 +1,56 @@
+{
+  "objectName" : "lofty_irisil_stationanimalcrate",
+  "colonyTags" : ["station","storage","commerce","lofty_irisil"],
+  "rarity" : "Common",
+  "objectType" : "container",
+  "tooltipKind" : "container",
+  "description" : "A secure shipping crate, with holes to let its occupants breathe.",
+  "shortdescription" : "Animal Crate",
+  "race" : "generic",
+  "category" : "storage",
+  "price" : 110,
+  "health" : 1.5,
+
+  "apexDescription" : "This reinforced crate is designed to prevent escape.",
+  "avianDescription" : "This metal crate looks like it could secure a large animal.",
+  "floranDescription" : "Thisss box makes ssstab easssy.",
+  "glitchDescription" : "Wary. This industrial crate looks nefarious.",
+  "humanDescription" : "Large animal crate. Great for intergalactic safaris in a can.",
+  "hylotlDescription" : "I'm not sure what's worse - the barbarism of confining creatures like this, or the creatures themselves.",
+  "novakidDescription" : "That there's a box for big ol' varmints.",
+
+  "inventoryIcon" : "lofty_irisil_stationanimalcrateicon.png",
+  "orientations" : [
+    {
+
+      "image" : "lofty_irisil_stationanimalcrate.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+    {
+
+      "image" : "lofty_irisil_stationanimalcrate.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ],
+
+  "openSounds" : [ "/sfx/objects/metalbox_open.ogg" ],
+  "closeSounds" : [ "/sfx/objects/metalbox_close.ogg" ],
+  "slotCount" : 24,
+  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600
+
+}

@@ -1,0 +1,46 @@
+{
+  "objectName" : "lofty_irisil_stationanimalcrateeyes",
+  "colonyTags" : ["station","storage","commerce","lofty_irisil"],
+  "rarity" : "Common",
+  "description" : "An occupied secure shipping crate, with holes to let its occupants breathe.",
+  "shortdescription" : "Animal Crate (Occupied)",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 110,
+  "health" : 1.5,
+
+  "apexDescription" : "I'm confident in this crate's ability to prevent escape.",
+  "avianDescription" : "He doesn't look too happy to be in there.",
+  "floranDescription" : "Fassst food!",
+  "glitchDescription" : "Intimidated. The creature inside this crate is terrifying.",
+  "humanDescription" : "Critter crate. Don't stick your hand in it!",
+  "hylotlDescription" : "There's a certain beauty in caged ferocity. I could write a poem about this!",
+  "novakidDescription" : "Golly, that's a big one!",
+
+  "inventoryIcon" : "lofty_irisil_stationanimalcrateeyesicon.png",
+  "orientations" : [
+    {
+
+      "image" : "lofty_irisil_stationanimalcrateeyes.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    },
+    {
+
+      "image" : "lofty_irisil_stationanimalcrateeyes.png:<color>",
+      "imagePosition" : [-16, 0],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

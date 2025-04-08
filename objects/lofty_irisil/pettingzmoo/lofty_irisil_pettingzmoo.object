@@ -1,0 +1,30 @@
+{
+  "objectName" : "lofty_irisil_pettingzmoo",
+  "colonyTags" : ["pretty", "mooshi", "lofty_irisil"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 1000,
+
+  "description" : "Petting ZMoo!",
+  "shortdescription" : "Petting ZMoo Sign",
+  "race" : "generic",
+
+  "apexDescription" : "I've always wanted to be friends with a mooshi.",
+  "avianDescription" : "Mooshi are softer than avians.",
+  "floranDescription" : "Petting meatss ssign.",
+  "glitchDescription" : "Enamored. These creatures are adorable!",
+  "humanDescription" : "If you moo at a mooshi and it moos back, that means you're friends now.",
+  "hylotlDescription" : "Finally, a civilized species.",
+  "novakidDescription" : "Wranglin' practice, here I come!",
+
+  "inventoryIcon" : "pettingzmooicon.png",
+  "orientations" : [
+    {
+      "image" : "pettingzmoo.png:<color>",
+      "imagePosition" : [-48, -16],
+	  "direction" : "right",
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

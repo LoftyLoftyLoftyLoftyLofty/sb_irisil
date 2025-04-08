@@ -1,0 +1,9 @@
+{
+  "itemName" : "lofty_irisil_exoticanimalsgoods",
+  "rarity" : "common",
+  "category" : "tradeGoods",
+  "inventoryIcon" : "lofty_irisil_exoticanimalsgoods.png",
+  "description" : "A sealed crate full of exotic animals, valuable for interstellar trade.",
+  "shortdescription" : "Exotic Animal Goods",
+  "price" : 100
+}

@@ -17,5 +17,13 @@
     "op": "add",
     "path": "/objectSpawnPool/-",
     "value": [0.025, "lofty_irisil_fisheye"]
+  },
+  
+  //Space Stations
+  //This is how the Scyphojel villages do it but I think Maple32 is replacing this after I load into it
+  {
+    "op": "add",
+    "path": "/initialObjectPools/-",
+    "value": [0.25, [1, [[0.25, "lofty_irisil_spacestation_exoticanimals"]]]]
   }
 ]
