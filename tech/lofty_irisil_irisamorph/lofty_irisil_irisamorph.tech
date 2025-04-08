@@ -1,0 +1,76 @@
+{
+  "name" : "lofty_irisil_irisamorph",
+  "type" : "head",
+
+  "scripts": ["/tech/lofty_irisil_irisamorph/vehicle.lua"],
+  "animator": "mech.animation",
+
+  "description" : "No warranty. No refunds. ^green;[F]",
+  "shortDescription" : "Irisa Morph",
+  "rarity" : "Legendary",
+  "icon" : "/tech/irisamorph.png",
+
+  "chipCost" : 8,
+  
+  "mechStats": [{
+      "stat": "breathProtection",
+      "amount": 1
+    }, {
+      "stat": "fallDamageMultiplier",
+      "effectiveMultiplier": 0
+    }, {
+      "stat": "grit",
+      "amount": 9
+    }
+  ],
+
+  "mechCustomMovementParameters": { //3x 3.7
+    "collisionPoly": [[-3.5, -2.5], [-2, -5], [2, -5], [3.5, -2.5], [3.5, 2], [2, 3], [-2, 3], [-3.5, 2]],
+    "crouchingPoly": [[-3.5, -2.5], [-2, -5], [2, -5], [3.5, -2.5], [3.5, 2], [2, 3], [-2, 3], [-3.5, 2]],
+    "mass": 5,
+
+    "groundFriction": 50,
+    "ambulatingGroundFriction": 0,
+    "skiddingGroundFriction": 0,
+
+    "groundForce": 60,
+    "airForce": 50,
+    "liquidForce": 70,
+
+    "walkSpeed": 24,
+    "runSpeed": 24,
+
+    "airJumpProfile": {
+      "jumpSpeed": 60,
+      "jumpControlForce": 800,
+      "jumpInitialPercentage": 0.45,
+      "jumpHoldTime": 0.15
+    },
+
+    "liquidJumpProfile": {
+      "jumpSpeed": 60,
+      "jumpControlForce": 400,
+      "jumpInitialPercentage": 0.75,
+      "jumpHoldTime": 0.15,
+      "multiJump": false
+    }
+  },
+
+  "energyCostPerSecond": 0.0,
+  "warpDirectives": "?fade=CCFF=0.25",
+  "walkOffset": [[0, 0.375], [0, 0.125], [0, 0], [0, 0.125], [0, 0.25], [0, 0.375], [0, 0.125], [0, 0], [0, 0.125], [0, 0.25]],
+  "mechTransformPositionChange": [0, 0],
+  "parentOffset": [2, 1.2],
+  "suppressTools": true,
+  "mechCollisionTest": [-3.5, -2.5, 3.5, 5],
+  "mechType": "irisa",
+  "mechGunType": "human",
+  "mechAimLimit": 40,
+  "mechBackGunAngle": 3.1,
+  "mechFireCycle": 0.5,
+  "mechProjectileL": "lofty_irisil_eyeball",
+  "mechProjectileR": "lofty_irisil_largeslowcloud",
+  "mechProjectileConfig": {
+    "power": 3
+  }
+}
