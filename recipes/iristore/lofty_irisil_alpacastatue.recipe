@@ -2,6 +2,8 @@
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
     { "item" : "throwingboulder", "count" : 1 },
+	{ "item" : "alpacahead", "count" : 1 },
+	{ "item" : "alpacachest", "count" : 1 },
 	{ "item" : "alpacalegs", "count" : 1 },
     { "item" : "diamonddrill", "count" : 1 }
   ],
