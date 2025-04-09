@@ -6,7 +6,10 @@
     "rules" : [
     ],
     "anchor" : [
-	  "lofty_irisil_trade_exoticanimals_top1b"
+	  "lofty_irisil_trade_exoticanimals_top1a",
+	  "lofty_irisil_trade_exoticanimals_top1b",
+	  "lofty_irisil_trade_exoticanimals_bottom1a",
+	  "lofty_irisil_trade_exoticanimals_bottom1b"
     ],
     "gravity" : 80,
     "breathable" : true,
