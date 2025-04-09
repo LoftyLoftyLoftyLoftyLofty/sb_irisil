@@ -6,7 +6,7 @@
     "rules" : [
     ],
     "anchor" : [
-	  "lofty_irisil_trade_exoticanimals_bottom1b"
+	  "lofty_irisil_trade_exoticanimals_top1b"
     ],
     "gravity" : 80,
     "breathable" : true,
@@ -305,6 +305,7 @@
         [ "ignorePartMaximumRule" ],
         [ "doNotCombineWith", [
           "lofty_irisil_trade_exoticanimals_top1a",
+          "lofty_irisil_trade_exoticanimals_top1b",
 		  "lofty_irisil_trade_exoticanimals_bottom1a",
 		  "lofty_irisil_trade_exoticanimals_bottom1b"
         ] ]
@@ -313,11 +314,26 @@
       "chance" : 0
     },
 	{
+      "name" : "lofty_irisil_trade_exoticanimals_top1b",
+      "rules" : [
+        [ "ignorePartMaximumRule" ],
+        [ "doNotCombineWith", [
+          "lofty_irisil_trade_exoticanimals_top1a",
+          "lofty_irisil_trade_exoticanimals_top1b",
+		  "lofty_irisil_trade_exoticanimals_bottom1a",
+		  "lofty_irisil_trade_exoticanimals_bottom1b"
+        ] ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_trade_exoticanimals_top1b.json" ],
+      "chance" : 0
+    },
+	{
       "name" : "lofty_irisil_trade_exoticanimals_bottom1a",
       "rules" : [
         [ "ignorePartMaximumRule" ],
         [ "doNotCombineWith", [
           "lofty_irisil_trade_exoticanimals_top1a",
+          "lofty_irisil_trade_exoticanimals_top1b",
 		  "lofty_irisil_trade_exoticanimals_bottom1a",
 		  "lofty_irisil_trade_exoticanimals_bottom1b"
         ] ]
@@ -331,6 +347,7 @@
         [ "ignorePartMaximumRule" ],
         [ "doNotCombineWith", [
           "lofty_irisil_trade_exoticanimals_top1a",
+          "lofty_irisil_trade_exoticanimals_top1b",
 		  "lofty_irisil_trade_exoticanimals_bottom1a",
 		  "lofty_irisil_trade_exoticanimals_bottom1b"
         ] ]

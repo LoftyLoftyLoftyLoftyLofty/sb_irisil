@@ -16,12 +16,17 @@
   "humanDescription" : "Critter crate. Don't stick your hand in it!",
   "hylotlDescription" : "There's a certain beauty in caged ferocity. I could write a poem about this!",
   "novakidDescription" : "Golly, that's a big one!",
+  
+  "scripts" : [ 
+	"/objects/space/lofty_irisil_stationanimalcrateeyes/crittercrate.lua",
+	"/scripts/npcToyObject.lua"  
+  ],
 
   "inventoryIcon" : "lofty_irisil_stationanimalcrateeyesicon.png",
   "orientations" : [
     {
 
-      "image" : "lofty_irisil_stationanimalcrateeyes.png:<color>",
+      "image" : "lofty_irisil_stationanimalcrateeyes.png:<color>.<frame>",
       "imagePosition" : [-16, 0],
 
       "direction" : "left",
@@ -33,7 +38,7 @@
     },
     {
 
-      "image" : "lofty_irisil_stationanimalcrateeyes.png:<color>",
+      "image" : "lofty_irisil_stationanimalcrateeyes.png:<color>.<frame>",
       "imagePosition" : [-16, 0],
 
       "direction" : "right",
@@ -42,5 +47,11 @@
       "anchors" : [ "bottom" ],
       "collision" : "platform"
     }
-  ]
+  ],
+  
+  "animation" : "lofty_irisil_stationanimalcrateeyes.animation",
+  "animationParts" : {
+    "fg" : "lofty_irisil_stationanimalcrateeyes.png"
+  },
+  "animationPosition" : [-16, 0]
 }

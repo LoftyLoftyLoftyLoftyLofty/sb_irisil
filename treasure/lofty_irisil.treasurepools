@@ -1143,6 +1143,15 @@
 			],
 			"allowDuplication" : true
 		}]
-  ]
+  ],
   
+  "lofty_irisil_pettingZMooGarbageBag" : 
+  [
+	[1, {
+			"fill" : 
+			[
+				{"pool" : "augments"}
+			]
+		}]
+  ]
 }
