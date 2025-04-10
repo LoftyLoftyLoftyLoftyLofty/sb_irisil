@@ -941,7 +941,7 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":64,
+                 "x":96,
                  "y":272
                 }, 
                 {
@@ -979,8 +979,8 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":88,
-                 "y":272
+                 "x":56,
+                 "y":336
                 }, 
                 {
                  "gid":2147491127,
@@ -1459,6 +1459,11 @@
                          "name":"monster",
                          "type":"string",
                          "value":"quagmutt"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"aggressive\" : false, \"captureHealthFraction\" : 1.0, \"damageTeamType\" : \"friendly\" }"
                         }],
                  "rotation":0,
                  "type":"",

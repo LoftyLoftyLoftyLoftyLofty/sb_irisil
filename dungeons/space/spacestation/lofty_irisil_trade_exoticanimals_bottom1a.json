@@ -2329,8 +2329,8 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":184,
-                 "y":408
+                 "x":96,
+                 "y":320
                 }, 
                 {
                  "gid":7270,
@@ -2367,7 +2367,7 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":224,
+                 "x":56,
                  "y":408
                 }, 
                 {
@@ -2408,6 +2408,11 @@
                          "name":"monster",
                          "type":"string",
                          "value":"tentacleclam"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"aggressive\" : false, \"captureHealthFraction\" : 1.0, \"damageTeamType\" : \"friendly\" }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -2425,6 +2430,11 @@
                          "name":"monster",
                          "type":"string",
                          "value":"pulpin"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"aggressive\" : false, \"captureHealthFraction\" : 1.0, \"damageTeamType\" : \"friendly\" }"
                         }],
                  "rotation":0,
                  "type":"",
