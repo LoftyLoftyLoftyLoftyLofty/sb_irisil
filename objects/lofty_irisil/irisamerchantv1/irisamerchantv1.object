@@ -109,6 +109,7 @@
 	//destination transponders
 		"lofty_irisil_fisheyespawner",
 		"lofty_irisil_miniknogasteroidspawner",
+		"lofty_irisil_exoticanimalsstationspawner",
 		
 	//fishing
 		"lofty_irisil_slimefishinglure",

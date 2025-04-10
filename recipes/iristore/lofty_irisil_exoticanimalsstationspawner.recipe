@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "stationtransponder", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_exoticanimalsstationspawner",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_challenge" ]
+}

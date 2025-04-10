@@ -1,0 +1,23 @@
+{
+  "itemName" : "lofty_irisil_exoticanimalsstationspawner",
+  "level" : 1,
+  "price" : 50,
+  "rarity" : "Legendary",
+  "description" : "Used to spawn a space station which specializes in trading exotic animals.",
+  "shortdescription" : "Exotic Animals Station",
+  "category" : "lofty_irisil_dungeontransponder",
+  "twoHanded" : true,
+  "maxStack" : 1,
+  "itemTags" : [],
+
+  "inventoryIcon" : "lofty_irisil_exoticanimalsstationspawner.png",
+  "animation" : "lofty_irisil_exoticanimalsstationspawner.animation",
+  "animationParts" : {
+    "transponder" : "lofty_irisil_exoticanimalsstationspawner.png",
+    "transponderfullbright" : "lofty_irisil_exoticanimalsstationspawner_fullbright.png"
+  },
+  "scripts" : ["lofty_irisil_exoticanimalsstationspawner.lua"],
+
+  "interactAction" : "ScriptPane",
+  "interactData" : "/interface/lofty_irisil/lofty_irisil_exoticanimalsstationspawner.config"
+}

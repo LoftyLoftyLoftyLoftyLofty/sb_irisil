@@ -1,0 +1,22 @@
+{
+  "animatedParts" : {
+    "parts" : {
+      "transponder" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "image" : "<partImage>"
+        }
+      },
+	  "transponderfullbright" : {
+        "properties" : {
+          "centered" : true,
+          "offset" : [0.0, 0.0],
+          "image" : "<partImage>",
+		  "zLevel" : 1,
+		  "fullbright" : true
+        }
+      }
+    }
+  }
+}
