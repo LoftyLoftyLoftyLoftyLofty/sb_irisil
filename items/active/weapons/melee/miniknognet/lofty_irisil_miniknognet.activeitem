@@ -12,10 +12,11 @@
   "itemTags" : ["weapon", "melee", "shortsword", "lofty_irisil"],
   "inventoryIcon" : "bugneticon.png",
 
-  "animation" : "/items/active/unsorted/bugnet/bugnet.animation",
+  "animation" : "/items/active/weapons/melee/miniknognet/lofty_irisil_miniknognet.animation",
   "animationParts" : {
     "bugnet" : "lofty_irisil_miniknognet.png",
-    "swoosh" : "swoosh.png"
+    "bugnetfullbright" : "lofty_irisil_miniknognet_fb.png",
+	"swoosh" : "swoosh.png"
   },
 
   "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],

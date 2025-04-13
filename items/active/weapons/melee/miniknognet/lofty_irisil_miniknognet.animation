@@ -1,4 +1,8 @@
 {
+  "globalTagDefaults" : {
+    "paletteSwaps" : ""
+  },
+  
   "animatedParts" : {
     "stateTypes" : {
       "net" : {
@@ -47,17 +51,50 @@
           "net" : {
             "idle" : {
               "properties" : {
-                "image" : "<partImage>:idle"
+                "image" : "<partImage>:idle<paletteSwaps>"
               }
             },
             "hang" : {
               "properties" : {
-                "image" : "<partImage>:hang.<frame>"
+                "image" : "<partImage>:hang.<frame><paletteSwaps>"
               }
             },
             "swing" : {
               "properties" : {
-                "image" : "<partImage>:swing.<frame>"
+                "image" : "<partImage>:swing.<frame><paletteSwaps>"
+              }
+            }
+          }
+        }
+      },
+	  
+	  "bugnetfullbright" : {
+        "properties" : {
+          "zLevel" : 1,
+          "centered" : true,
+          "offset" : [-0.75, 1.0],
+          "transformationGroups" : ["weapon"],
+		  "fullbright" : true
+        },
+
+        "partStates" : {
+          "net" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle<paletteSwaps>",
+		        "fullbright" : true
+              }
+            },
+            "hang" : {
+              "properties" : {
+                "image" : "<partImage>:hang.<frame><paletteSwaps>",
+		        "fullbright" : true
+              }
+            },
+            "swing" : {
+              "properties" : {
+                "image" : "<partImage>:swing.<frame><paletteSwaps>",
+		        "fullbright" : true
               }
             }
           }
