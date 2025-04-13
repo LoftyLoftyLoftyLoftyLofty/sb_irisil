@@ -1,0 +1,74 @@
+{
+  "itemName" : "lofty_irisil_miniknognet",
+  "price" : 500,
+  "level" : 3,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "category" : "sword",
+  "tooltipKind" : "base",
+  "description" : "A net for catching pesky animals!",
+  "shortdescription" : "Animal Control Net",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "melee", "shortsword", "lofty_irisil"],
+  "inventoryIcon" : "bugneticon.png",
+
+  "animation" : "/items/active/unsorted/bugnet/bugnet.animation",
+  "animationParts" : {
+    "bugnet" : "lofty_irisil_miniknognet.png",
+    "swoosh" : "swoosh.png"
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+  "builder" : "/items/buildscripts/buildunrandweapon.lua", 
+  
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/melee/meleeslash.lua"],
+    "class" : "MeleeSlash",
+
+    "fireTime" : 1.5,
+    "baseDps" : 0.01,
+    "damageConfig" : {
+      "damageSourceKind" : "bugnet",
+      "statusEffects" : [ ],
+      "knockback" : 0,
+      "knockbackMode" : "facing",
+      "timeoutGroup" : "primary"
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : -90,
+        "weaponRotation" : -10,
+        "allowRotate" : false,
+        "allowFlip" : true
+      },
+      "windup" : {
+        "duration" : 0.3,
+        "armRotation" : 60,
+        "weaponRotation" : 10,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : true,
+
+        "animationStates" : {
+          "net" : "hang"
+        }
+      },
+      "fire" : {
+        "duration" : 0.4,
+        "armRotation" : -45,
+        "weaponRotation" : -55,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false,
+
+        "animationStates" : {
+          "net" : "swing"
+        }
+      }
+    }
+  }
+}
