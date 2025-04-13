@@ -8,5 +8,10 @@
 		"op" : "add",
 		"path" : "/deploymentConfig/scripts/-",
 		"value" : "/scripts/player/lofty_irisil_dungeonmanager_pickmeup.lua"
+	},
+	{
+		"op" : "add",
+		"path" : "/deploymentConfig/scripts/-",
+		"value" : "/scripts/player/lofty_irisil_dungeonmanager_morphtech.lua"
 	}
 ]

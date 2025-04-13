@@ -2,12 +2,18 @@
 	"lofty_irisil_techchallenge_irisamorph1" : 
 	{
 		"type" : "mission",
-    "text" : "To use the ^orange;Irisa Morph Tech^white; ^#71f2f6;press F^white;. Try not to get dander everywhere."
+        "text" : "To use the ^orange;Irisa Morph Tech^white; ^#71f2f6;press F^white;. Try not to get dander everywhere."
 	},
 	
-	"lofty_irisil_techchallenge_irisamorph2" : 
+	"lofty_irisil_morphtech_lockmorph" : 
 	{
 		"type" : "mission",
-		"text" : "Ah. Right. Sorry about that! I always forget to turn the pit traps off."
+		"text" : "Something isn't right.\nI'm detecting a lot of ^#ffcc55;signal interference^reset;."
+	},
+	
+	"lofty_irisil_morphtech_unlockmorph" : 
+	{
+		"type" : "mission",
+		"text" : "The signal interference seems to be dissipating."
 	}
 }
