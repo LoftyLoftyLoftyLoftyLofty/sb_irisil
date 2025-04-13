@@ -12,57 +12,71 @@
 
   "chipCost" : 8,
   
-  "mechStats": [{
-      "stat": "breathProtection",
-      "amount": 1
-    }, {
-      "stat": "fallDamageMultiplier",
-      "effectiveMultiplier": 0
-    }, {
-      "stat": "grit",
-      "amount": 9
-    }
+  "mechStats": [
+    {
+      "stat": "fireResistance",
+      "amount": 0.25
+    },
+	{
+      "stat": "iceResistance",
+      "amount": 0.25
+    },
+	{
+      "stat": "electricResistance",
+      "amount": 0.25
+    },
+	{
+      "stat": "poisonResistance",
+      "amount": 0.25
+    },
+	{
+	  "stat" : "slimeImmunity",
+	  "amount" : 1.0
+	},
+	{
+	  "stat" : "fallDamageMultiplier",
+	  "effectiveMultiplier" : 0.25
+	}
   ],
 
   "mechCustomMovementParameters": { //3x 3.7
-    "collisionPoly": [[-3.5, -2.5], [-2, -5], [2, -5], [3.5, -2.5], [3.5, 2], [2, 3], [-2, 3], [-3.5, 2]],
-    "crouchingPoly": [[-3.5, -2.5], [-2, -5], [2, -5], [3.5, -2.5], [3.5, 2], [2, 3], [-2, 3], [-3.5, 2]],
-    "mass": 5,
-
-    "groundFriction": 50,
-    "ambulatingGroundFriction": 0,
-    "skiddingGroundFriction": 0,
-
-    "groundForce": 60,
-    "airForce": 50,
-    "liquidForce": 70,
-
-    "walkSpeed": 24,
-    "runSpeed": 24,
-
+    "collisionPoly": [ [-0.85, -0.45], [-0.45, -0.85], [0.45, -0.85], [0.85, -0.45], [0.85, 0.45], [0.45, 0.85], [-0.45, 0.85], [-0.85, 0.45] ],
+    "crouchingPoly": [ [-0.85, -0.45], [-0.45, -0.85], [0.45, -0.85], [0.85, -0.45], [0.85, 0.45], [0.45, 0.85], [-0.45, 0.85], [-0.85, 0.45] ],
+	
+    "mass": 1,
+	"gravityMultipler" : 0.85,
+	"airFriction" : 0.5,
+    "groundForce": 100,
+    "airForce": 20,
+    "liquidForce": 30,
+    "walkSpeed": 8,
+    "runSpeed": 18,
+	
     "airJumpProfile": {
-      "jumpSpeed": 60,
-      "jumpControlForce": 800,
-      "jumpInitialPercentage": 0.45,
-      "jumpHoldTime": 0.15
+      "jumpSpeed": 35,
+	  "jumpControlForce" : 900.0,
+      "jumpInitialPercentage": 0.75,
+      "jumpHoldTime": 0.2,
+	  "multiJump" : false,
+      "reJumpDelay" : 0.05,
+      "autoJump" : false,
+      "collisionCancelled" : true
     },
-
+	
     "liquidJumpProfile": {
-      "jumpSpeed": 60,
+      "jumpSpeed": 25,
       "jumpControlForce": 400,
       "jumpInitialPercentage": 0.75,
-      "jumpHoldTime": 0.15,
-      "multiJump": false
+      "jumpHoldTime": 0.25,
+      "multiJump" : true,
+      "reJumpDelay" : 0.25,
+      "autoJump" : true,
+      "collisionCancelled" : false
     }
   },
-
+  "transformFadeTime" : 0.3,
   "energyCostPerSecond": 0.0,
   "warpDirectives": "?fade=CCFF=0.25",
-  "walkOffset": [[0, 0.375], [0, 0.125], [0, 0], [0, 0.125], [0, 0.25], [0, 0.375], [0, 0.125], [0, 0], [0, 0.125], [0, 0.25]],
-  "mechTransformPositionChange": [0, 0],
-  "parentOffset": [2, 1.2],
-  "suppressTools": true,
-  "mechCollisionTest": [-3.5, -2.5, 3.5, 5],
   "mechType": "irisa",
   "mechGunType": "human",
   "mechAimLimit": 40,
@@ -70,7 +84,8 @@
   "mechFireCycle": 0.5,
   "mechProjectileL": "lofty_irisil_eyeball",
   "mechProjectileR": "lofty_irisil_largeslowcloud",
-  "mechProjectileConfig": {
-    "power": 3
-  }
+  "eyeEnergyCost" : 14,
+  "danderEnergyCost" : 77,
+  "eyeFireRate" : 0.125,
+  "danderFireRate" : 0.75
 }
