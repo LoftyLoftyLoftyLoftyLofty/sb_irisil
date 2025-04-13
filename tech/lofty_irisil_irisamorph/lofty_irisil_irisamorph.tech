@@ -79,10 +79,13 @@
   "warpDirectives": "?fade=CCFF=0.25",
   "mechProjectileL": "lofty_irisil_eyeball",
   "mechProjectileR": "lofty_irisil_largeslowcloud",
+  
   "eyeEnergyCost" : 14,
   "danderEnergyCost" : 77,
+  "morphEnergyCost" : 50,
+  
   "eyeFireRate" : 0.125,
   "danderFireRate" : 0.75,
   "eyeDamage" : 25,
-  "danderDamage" : 25
+  "danderDamage" : 25  
 }

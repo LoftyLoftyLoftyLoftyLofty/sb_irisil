@@ -27,16 +27,6 @@
             "cycle" : 0.25,
             "mode" : "loop"
           },
-		  "backWalk" : {
-            "frames" : 8,
-            "cycle" : 0.8,
-            "mode" : "loop"
-          },
-		  "backRun" : {
-            "frames" : 8,
-            "cycle" : 0.25,
-            "mode" : "loop"
-          },
 		  "jump" : {
             "frames" : 2,
 			"cycle" : 0.25

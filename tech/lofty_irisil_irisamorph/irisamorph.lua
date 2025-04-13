@@ -65,6 +65,7 @@ function initParams()
   energyCostDander = config.getParameter("danderEnergyCost")
   cooldownEye = config.getParameter("eyeFireRate")
   cooldownDander = config.getParameter("danderFireRate")
+  energyCostMorph = config.getParameter("morphEnergyCost")
   
   --when this value is <= 0, the leftclick OR rightclick can fire 
   fireTimerEye = 0
@@ -85,8 +86,9 @@ function activate()
     tech.setVisible(true)
     --hide the player
     tech.setParentHidden(true)
-	--cargo cult code from distortion sphere
-	tech.setParentOffset({0, 0})
+	--we set the parent offset so that the particles you make when jumping or landing appear at the correct spot near your feet
+	tech.setParentOffset({0, 1.5})
+	--this moves the irisa graphic up out of the ground
 	animator.translateTransformationGroup("body", {0,0.5})
     --turn the player's guns off (unfortunately this means we can't press buttons or open doors)
     tech.setToolUsageSuppressed(true)
@@ -98,6 +100,8 @@ function activate()
 	transformFadeTimer = transformFadeTime
 	--not required but i don't want to fix particle offsets for all the other techs rn
 	status.setPersistentEffects("movementAbility", {{stat = "activeMovementAbilities", amount = 1}})
+	--initial morph energy cost
+	status.overConsumeResource("energy", energyCostMorph)
   end
 end
 
@@ -106,7 +110,7 @@ function deactivate()
 	--sound
 	animator.playSound("deactivate")
 	--hide irisa layer
-    tech.setVisible(false)
+    --tech.setVisible(false)
 	--show the player
 	tech.setParentHidden(false)
 	--cargo cult code from distortion sphere
@@ -225,8 +229,18 @@ function updateTransformFade(dt)
   elseif transformFadeTimer < 0 then
     transformFadeTimer = math.min(0, transformFadeTimer + dt)
     tech.setParentDirectives(string.format("?fade=FFFFFFFF;%.1f", math.min(1.0, -transformFadeTimer / (transformFadeTime - 0.15))))
+	animator.setGlobalTag("directives", "?multiply=00000000;")
   else
-    animator.setGlobalTag("directives", "")
+    
+	--do nothing with directives while active
+	if active then
+      animator.setGlobalTag("directives", "")
+	  
+	--keep invisible while inactive
+	else
+	  animator.setGlobalTag("directives", "?multiply=00000000;")
+	end
+	
     tech.setParentDirectives()
   end
 end
@@ -329,7 +343,7 @@ function handleInputs(args)
 	  status.resourcePositive("energy") then
         local aimRotation = {math.cos(aimAngle), math.sin(aimAngle)}
         if fireTimerEye <= 0 then
-          spawnProjectile(mechProjectileL, 1, aimRotation, eyeSFX, 25 + math.random(0,24))
+          spawnProjectile(mechProjectileL, 1, aimRotation, eyeSFX, 42 + math.random(0,7))
           fireTimerEye = cooldownEye
 	    end
 	  end
@@ -386,6 +400,10 @@ function handleInputs(args)
 	  --running
 	  elseif mcontroller.running() then
           animator.setAnimationState("body", "run")
+		  
+      --damage anim when crouching
+      --elseif mcontroller.crouching() then
+	      --animator.setAnimationState("body", "damage")
 
 	  --idle
       else
