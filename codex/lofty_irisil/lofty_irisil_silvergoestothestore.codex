@@ -3,7 +3,7 @@
   "title" : "Silver Goes to the Store",
   "description" : "A saucy story about picking up meatballs.",
   "icon" : "lofty_irisil_silvergoestothestore.png",
-  "contentPages" : [""],
+  "contentPages" : ["This is an example of an item with a recipe that is automatically enabled in the Irisa Merchant's inventory if you have compatible mods installed! This codex will be updated in the future with some fun fiction- in the meantime, hi Silver."],
     "itemConfig" : {
     "rarity" : "Common",
     "price" : 25

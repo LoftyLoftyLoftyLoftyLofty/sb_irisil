@@ -65,6 +65,7 @@ Version ^green;1.1^reset; Released: 2023/06/07
 Version ^green;1.2^reset; Released: 2023/06/12
 Version ^green;1.3^reset; Released: 2023/06/18
 Version ^green;1.4^reset; Released: 2023/06/23
+Version ^green;1.5^reset; Released: 2025/04/13
 ",
 
 "^yellow;PROJECT INFO (2/2)^reset;
@@ -97,7 +98,8 @@ This mod was used as a reference in many ways, especially treasure and mob spawn
 Additional help and feedback with dungeon setup.
 
 ^cyan;Armok^reset;, ^cyan;Bluey^reset;, ^cyan;Crimsie^reset;, 
-^cyan;Nori^reset;, ^cyan;NotGhost^reset;, ^cyan;WinterLune^reset;
+^cyan;Nori^reset;, ^cyan;NotGhost^reset;, ^cyan;WinterLune^reset;,
+^cyan;ShyDispatch^reset;
 Testing, feedback, and bug reports.",
 
 "^yellow;SPECIAL THANKS (3/3)^reset;

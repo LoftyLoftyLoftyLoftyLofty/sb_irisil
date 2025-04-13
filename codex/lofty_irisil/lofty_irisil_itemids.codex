@@ -20,18 +20,18 @@ Cheers,
 "^yellow;TABLE OF CONTENTS^reset;
 -  3 Crafting Materials
 -  4 Costumes
--  6 Food
--  7 Fishing
--  8 Destination Transponders
--  9 Challenge Doors
-- 10 Decorations
-- 13 Codices
-- 14 Fossils
-- 15 Combat
-- 16 Other Objects
-- 17 Monsters
-- 18 NPCs
-- 19 Planetside Dungeons",
+-  5 Food
+-  6 Fishing
+-  7 Destination Transponders
+-  8 Challenge Doors
+-  9 Decorations
+- 14 Codices
+- 15 Fossils
+- 16 Combat
+- 17 Other Objects
+- 18 Monsters
+- 19 NPCs
+- 20 Planetside Dungeons",
   
 //we can fit 15 lines of text per page
 //==============================================
@@ -50,25 +50,10 @@ lofty_irisil_ct_pickmeup
 //==============================================
 //==============================================
 
-"^cyan;Costume Parts^reset; (1/2):
+"^cyan;Costume Parts^reset;:
 
 lofty_irisil_clingy
-^#888888;Irisa backpack^reset;
-
-lofty_irisil_invis_head
-lofty_irisil_invis_chest
-lofty_irisil_invis_legs
-lofty_irisil_invis_back
-^#888888;Body hiders so I'm not relying on other mods for those.^reset;",
-
-//==============================================
-
-"^cyan;Costume Parts^reset; (2/2):
-
-lofty_irisil_bunnysuit_blue
-lofty_irisil_bunnysuit_green
-lofty_irisil_bunnysuit_red
-^#888888;Pants that replace your sprite with the Glowbunny sprites.^reset;",
+^#888888;Irisa backpack^reset;",
 
 //==============================================
 //==============================================
@@ -80,7 +65,10 @@ lofty_irisil_eyeslices
 ^#888888;Irislices.^reset;
 
 lofty_irisil_irislushie
-^#888888;Community suggestion.^reset;",
+^#888888;Community suggestion.^reset;
+
+lofty_irisil_scleraage
+^#888888;Scleraage.^reset;",
 
 //==============================================
 //==============================================
@@ -97,11 +85,14 @@ lofty_irisil_slimefishinglure
 
 "^cyan;Destination Transponders^reset;:
 
+lofty_irisil_exoticanimalsstationspawner
+^#888888;This spawns a space station with exotic animal trading merchants.^reset;
+
 lofty_irisil_fisheyespawner
 ^#888888;This spawns the large eyeball fishing area.^reset;
 
 lofty_irisil_miniknogasteroidspawner
-^#888888;This spawns the Miniknog asteroid base. Threat level displays as 6 but is actually 7. Guaranteed Irisa Action Figure.^reset;",
+^#888888;This spawns the Miniknog asteroid base. Threat level displays as 6 but is actually 7.^reset;",
 
 //==============================================
 //==============================================
@@ -115,7 +106,7 @@ lofty_irisil_cd_threadtheneedle
 ^cyan;Dungeon Doors^reset;:
 
 lofty_irisil_cd_pickmeup
-^#888888;Sprawling dungeon with focus on Grappling Hook mechanics. GLHF^reset;
+^#888888;(WIP) Sprawling dungeon with focus on Grappling Hook mechanics. GLHF^reset;
 
 lofty_irisil_challengereturndoor
 ^#888888;Dungeon exit door. GGWP.^reset;",
@@ -124,7 +115,7 @@ lofty_irisil_challengereturndoor
 //==============================================
 //==============================================
 
-"^cyan;Decorations^reset; (1/3):
+"^cyan;Decorations^reset; (1/5):
 
 lofty_irisilaf
 ^#888888;Irisa Action Figure^reset;
@@ -140,7 +131,7 @@ lofty_irisil_froggoclocksomewhere
 
 //==============================================
 
-"^cyan;Decorations^reset; (2/3):
+"^cyan;Decorations^reset; (2/5):
 
 lofty_irisil_irisaplushie
 ^#888888;Irisa Plushie^reset;
@@ -156,7 +147,7 @@ lofty_irisil_medievalnoticeboard
 
 //==============================================
 
-"^cyan;Decorations^reset; (3/3):
+"^cyan;Decorations^reset; (3/5):
 
 lofty_irisil_scleramite
 ^#888888;Scleramite (Captured Insect)^reset;
@@ -166,6 +157,26 @@ lofty_irisil_secretcactus
 
 lofty_irisil_smalltacklebox
 ^#888888;Small Tackle Box^reset;",
+
+//==============================================
+
+"^cyan;Decorations^reset; (4/5):
+
+lofty_irisil_stationanimalcrate
+^#888888;A station crate that looks like an animal cage.^reset;
+
+lofty_irisil_stationanimalcrateeyes
+^#888888;Interactive crate that makes hissing noises.^reset;
+
+lofty_irisil_stationtradesignexoticanimals
+^#888888;Animated station trade goods sign with egg logo.^reset;",
+
+//==============================================
+
+"^cyan;Decorations^reset; (5/5):
+
+lofty_irisil_pettingzmoo
+^#888888;Petting ZMoo sign.^reset;",
 
 //==============================================
 //==============================================
@@ -179,7 +190,8 @@ lofty_irisil_frog-codex
 lofty_irisil_glitch-codex
 lofty_irisil_guide-codex
 lofty_irisil_itemids-codex
-lofty_irisil_threadtheneedlelore-codex",
+lofty_irisil_threadtheneedlelore-codex
+lofty_irisil_silvergoestothestore-codex",
 
 //==============================================
 //==============================================
@@ -198,6 +210,7 @@ lofty_irisilfossil_legs",
 "^cyan;Weapons^reset;:
 
 lofty_irisil_eyepoker
+lofty_irisil_miniknognet
 
 ^cyan;Augments^reset;:
 
@@ -231,6 +244,7 @@ lofty_irisil_scleramite
 lofty_irisil_bunnykeycritter_blue
 lofty_irisil_bunnykeycritter_green
 lofty_irisil_bunnykeycritter_red
+lofty_irisil_cardboardscabcritter
 lofty_irisil_covetedglowingballcritter
 lofty_irisil
 lofty_irisil_smallfish_peepgill",
@@ -241,8 +255,10 @@ lofty_irisil_smallfish_peepgill",
 
 "^yellow;NPCs^reset;:
 
+lofty_irisil_apexescape
 lofty_irisil_apexhazmat
 lofty_irisil_apexitdepartment
+lofty_irisil_exoticanimalsgoodstrader
 ",
 
 //==============================================
