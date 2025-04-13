@@ -1,6 +1,6 @@
 {
   "lofty_irisilTreasure" : [
-    [1, {
+    [0, {
       "pool" : [
 	  
 		//69.69% chance of just getting pixels
@@ -43,7 +43,7 @@
     }]
   ],
   "lofty_irisilHunting" : [
-    [1, {
+    [0, {
       "pool" : [
 	  
 		//55% chance of oculemon
@@ -78,7 +78,7 @@
   "lofty_irisil_eyehoardTreasureSphericalThings" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"pool" : 
 			[
@@ -250,7 +250,7 @@
   "lofty_irisil_eyehoardTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -311,7 +311,7 @@
   "lofty_irisil_miniknogLabTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -326,7 +326,7 @@
   "lofty_irisil_apexITdepartmentTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -341,7 +341,7 @@
   "lofty_irisil_apexCodexTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -355,7 +355,7 @@
   "lofty_irisil_apexMDFTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -377,7 +377,7 @@
   "lofty_irisil_apexBathroomTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -391,7 +391,7 @@
   "lofty_irisil_apexHazmatTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -408,7 +408,7 @@
   "lofty_irisil_apexHazmatHelmetTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -422,7 +422,7 @@
   "lofty_irisil_apexHazmatTreasureNoHelmet" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -438,7 +438,7 @@
   "canYouPLEASEReplaceTheBagNextTime" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -469,7 +469,7 @@
   "lofty_irisil_chickenSnatcherLore" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -483,7 +483,7 @@
   "lofty_irisil_dungeoncrawlerTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -500,7 +500,7 @@
   "lofty_irisil_covetedglowingballcrittertreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -514,7 +514,7 @@
   "lofty_irisil_robotChickenTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -551,7 +551,7 @@
   "lofty_irisil_challengeCheaterTreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -633,7 +633,7 @@
 	"lofty_irisil_alpacamine_tombhiddentreasure" : 
 	[
 		[
-			1, 
+			0, 
 			{
 				"fill" : 
 				[
@@ -648,7 +648,7 @@
   "lofty_irisil_alpacamine_tombtreasure" : 
 	[
 		[
-			1, 
+			0, 
 			{
 				"fill" : 
 				[
@@ -666,7 +666,7 @@
   "lofty_irisil_alpacamine_miningcratebombs" : 
   [
 		[
-			1, 
+			0, 
 			{
 				"fill" : 
 				[
@@ -683,7 +683,7 @@
   "lofty_irisil_alpacamininghousetreasurebarrel" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -701,7 +701,7 @@
   "lofty_irisil_rootbeercrate" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -726,7 +726,7 @@
   "lofty_irisil_rootbeercratewithtreasure" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -754,7 +754,7 @@
   "lofty_irisil_fishinggearbox" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -780,7 +780,7 @@
   "lofty_irisil_tertiaryfishinggear" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"poolRounds" : 
 			[
@@ -802,7 +802,7 @@
   "lofty_irisil_fishinglore" : 
 	[
 		[
-			1, 
+			0, 
 			{
 				"fill" : 
 				[
@@ -816,7 +816,7 @@
   "lofty_irisil_petCollarAndBall" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -831,7 +831,7 @@
   "lofty_irisil_froggoclocksomewhere" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -845,7 +845,7 @@
   "lofty_irisil_scleramite" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -859,7 +859,7 @@
   "lofty_irisil_pickmeup_relocator" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -877,7 +877,7 @@
   "lofty_irisil_pickmeup_capturepod" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -960,7 +960,7 @@
   "lofty_irisil_hylotlPostOffice_lore" : 
   [
 	[
-		1, 
+		0, 
 		{
 			"fill" : 
 			[
@@ -1083,7 +1083,7 @@
   
   "lofty_irisil_holographicfennixTreasure" : 
   [
-	[1, {
+	[0, {
       "pool" : [
         {"weight" : 0.799, "pool" : "robotTreasure"},
         {"weight" : 0.100, "item" : "stickofram"},
@@ -1100,7 +1100,7 @@
   
   "lofty_irisil_holographicfennixHunting" : 
   [
-	[1, {
+	[0, {
       "pool" : [
         {"weight" : 0.333, "item" : "phasematter"},
         {"weight" : 0.333, "item" : "stickofram"},
@@ -1120,7 +1120,7 @@
   
   "lofty_irisil_animalCrateSpaceStationTreasure" : 
   [
-	[1, {
+	[0, {
 			"fill" : 
 			[
 				{"item" : [ "capturepod", 1]}
@@ -1147,11 +1147,53 @@
   
   "lofty_irisil_pettingZMooGarbageBag" : 
   [
-	[1, {
+	[0, {
 			"fill" : 
 			[
 				{"pool" : "augments"}
 			]
 		}]
+  ],
+  
+  "lofty_irisil_irisamorphnet" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_miniknognet", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_irisamorphclingy" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_clingy", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_irisamorphfieldguide" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_guide-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
   ]
 }
