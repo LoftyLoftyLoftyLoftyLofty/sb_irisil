@@ -43,22 +43,7 @@ function initParams()
   
   --used for determining whether or not there's room to unmorph
   basePoly = mcontroller.baseParameters().standingPoly
-  
-  --this appears to be a constraint to keep the mech weapons pointed forward. TODO remove
-  mechAimLimit = config.getParameter("mechAimLimit") * math.pi / 180
-  
-  --TODO remove
-  mechFrontRotationPoint = config.getParameter("mechFrontRotationPoint")
-  
-  --fix this
-  mechFrontFirePosition = config.getParameter("mechFrontFirePosition")
-  
-  --TODO remove
-  mechBackRotationPoint = config.getParameter("mechBackRotationPoint")
-  
-  --TODO remove
-  mechBackFirePosition = config.getParameter("mechBackFirePosition")
-  
+
   --Links to the .animation file to use specific sfx lists when firing weapons
   eyeSFX = "fire"
   cloudSFX = "hiss"
@@ -73,10 +58,6 @@ function initParams()
   mechProjectileR = type(mechProjectileR) == "string" and {mechProjectileR, mechProjectileR} or mechProjectileR
   mechActionR = config.getParameter("mechAction", "mechFireR")
   
-  --Do we need this?
-  animator.setGlobalTag("mechType", config.getParameter("mechType", ""))
-  animator.setGlobalTag("mechGunType", config.getParameter("mechGunType", ""))
-  
   --apply irisa elemental resistances while morphed
   mechStats = config.getParameter("mechStats")
   
@@ -89,14 +70,15 @@ function initParams()
   fireTimerEye = 0
   fireTimerDander = 0
   
-  lockedMorph = false
+  powerMultiplierEye = config.getParameter("eyeDamage")
+  powerMultiplierDander = config.getParameter("danderDamage")
+  
+  shakeit = false
   
 end
 
 function activate()
   if not active then 
-    --make some particles
-    animator.burstParticleEmitter("activateParticles")
     --make the noise
     animator.playSound("activate")
     --irisa on
@@ -104,7 +86,8 @@ function activate()
     --hide the player
     tech.setParentHidden(true)
 	--cargo cult code from distortion sphere
-	tech.setParentOffset({0, positionOffset()})
+	tech.setParentOffset({0, 0})
+	animator.translateTransformationGroup("body", {0,0.5})
     --turn the player's guns off (unfortunately this means we can't press buttons or open doors)
     tech.setToolUsageSuppressed(true)
     --set sctive flag
@@ -113,15 +96,13 @@ function activate()
     status.setPersistentEffects("lofty_irisil_irisamorph", mechStats)
 	--fzde timer
 	transformFadeTimer = transformFadeTime
-	--unfortunate
+	--not required but i don't want to fix particle offsets for all the other techs rn
 	status.setPersistentEffects("movementAbility", {{stat = "activeMovementAbilities", amount = 1}})
   end
 end
 
 function deactivate()
   if active then
-    --particles
-    animator.burstParticleEmitter("deactivateParticles")
 	--sound
 	animator.playSound("deactivate")
 	--hide irisa layer
@@ -130,6 +111,7 @@ function deactivate()
 	tech.setParentHidden(false)
 	--cargo cult code from distortion sphere
 	tech.setParentOffset({0, 0})
+	animator.resetTransformationGroup("body")
 	--enable guns and stuff again
     tech.setToolUsageSuppressed(false)
 	--disable active flag
@@ -137,7 +119,7 @@ function deactivate()
 	--clear elemental resistances when no longer morphed
 	status.clearPersistentEffects("lofty_irisil_irisamorph")
 	--clear morph directives
-	animator.setGlobalTag("ballDirectives", "")
+	animator.setGlobalTag("directives", "")
 	--fzde timer
 	transformFadeTimer = -transformFadeTime
 	--womp
@@ -175,15 +157,6 @@ function inputRClick(args)
     return mechActionR
   end
   return nil
-end
-
-function flipMech()
-  for i = 1, polySize do
-    mechCustomMovementParameters.collisionPoly[i][1] = -mechCustomMovementParameters.collisionPoly[i][1]
-  end
-  mcontroller.controlParameters(mechCustomMovementParameters)
-  flipped = not flipped
-  animator.setFlipped(flipped)
 end
 
 function minY(poly)
@@ -248,12 +221,12 @@ end
 function updateTransformFade(dt)
   if transformFadeTimer > 0 then
     transformFadeTimer = math.max(0, transformFadeTimer - dt)
-    animator.setGlobalTag("ballDirectives", string.format("?fade=FFFFFFFF;%.1f", math.min(1.0, transformFadeTimer / (transformFadeTime - 0.15))))
+    animator.setGlobalTag("directives", string.format("?fade=FFFFFFFF;%.1f", math.min(1.0, transformFadeTimer / (transformFadeTime - 0.15))))
   elseif transformFadeTimer < 0 then
     transformFadeTimer = math.min(0, transformFadeTimer + dt)
     tech.setParentDirectives(string.format("?fade=FFFFFFFF;%.1f", math.min(1.0, -transformFadeTimer / (transformFadeTime - 0.15))))
   else
-    animator.setGlobalTag("ballDirectives", "")
+    animator.setGlobalTag("directives", "")
     tech.setParentDirectives()
   end
 end
@@ -272,82 +245,62 @@ function handleInputs(args)
   --handle the F button
   
   --Attempting to ACTIVATE
-  if
-	--not already active
-    not active and 
-	--not transformed into something else already - this should never happen unless someone puts tech in a dumb slot
-	not status.statPositive("activeMovementAbilities") and 
-	--pressing F. this 'morphActivate' value comes from input() func
-	currentInputF == CMD_ACTIVATE and
-	--no transform while sitting
-    not tech.parentLounging()
-  then
-    
-	--debug REMOVE ME
-	--local mpos = mcontroller.position()
-    --sb.logInfo("Starting position: " .. mpos[1] .. ", " .. mpos[2])
-    
-	--get the transformed position for the ball
-	local pos = transformPosition()
-	
-	--debug REMOVE ME
-	--if pos then
-	  --sb.logInfo("Transformed position: " .. pos[1] .. ", " .. pos[2])
-	--else
-	  --sb.logInfo("Transformed position is nil")
-	--end
-	
-	--valid position, attempt to activate
-    if pos then
-      mcontroller.setPosition(pos)
-      activate()
+  if currentInputF == CMD_ACTIVATE or currentInputF == CMD_DEACTIVATE then
+    if
+	  --not already active
+      not active and 
+	  --not transformed into something else already - this should never happen unless someone puts tech in a dumb slot
+	  not status.statPositive("activeMovementAbilities") and 
+	  --pressing F. this 'morphActivate' value comes from input() func
+	  currentInputF == CMD_ACTIVATE and
+	  --no transform while sitting
+      not tech.parentLounging()
+    then
+      
+	  --get the transformed position for the ball
+	  local pos = transformPosition()
+	  
+	  --valid position, attempt to activate
+      if pos then
+        mcontroller.setPosition(pos)
+        activate()
+      end
+	  
+    --Attempting to DEACTIVATE
+    elseif 
+        active and 
+	    currentInputF == CMD_DEACTIVATE 
+    then
+	  --get the unmorphed position for the character
+      local pos = restorePosition()
+
+	  --handle activate and deactivate for the tech challenge
+	  if world.type() == "lofty_irisil_techchallenge_irisamorph" then
+	  	local locked = world.getProperty("lofty_irisil_lockmorph")
+	  	if locked == false then
+	  		if pos then
+	  			mcontroller.setPosition(pos)
+	  			deactivate()
+	  		end
+	  	else
+	  		local unlocked = world.getProperty("lofty_irisil_unlockmorph")
+	  		if unlocked then
+	  			if pos then
+	  				mcontroller.setPosition(pos)
+	  				deactivate()
+	  			end
+	  		else
+	  			animator.playSound("error")
+	  		end
+	  	end
+	  	--if it's not a tech challenge world just deactivate
+	  	else
+	  	if pos then
+	  		mcontroller.setPosition(pos)
+	  		deactivate()
+	  	end
+	  end
     end
-	
-  --Attempting to DEACTIVATE
-  elseif 
-      active and 
-	  currentInputF == CMD_DEACTIVATE 
-  then
-    --debug REMOVE ME
-    --local mpos = mcontroller.position()
-    --sb.logInfo("Starting position: " .. mpos[1] .. ", " .. mpos[2])
-	
-	--get the unmorphed position for the character
-    local pos = restorePosition()
-	
-	--debug REMOVE ME
-	--if pos then
-	  --sb.logInfo("Transformed position: " .. pos[1] .. ", " .. pos[2])
-	--else
-	  --sb.logInfo("Transformed position is nil")
-	--end
-	
-	--handle activate and deactivate for the tech challenge
-	if world.type() == "lofty_irisil_techchallenge_irisamorph" then
-		local locked = world.getProperty("lofty_irisil_lockmorph")
-		if locked == false then
-			if pos then
-				mcontroller.setPosition(pos)
-				deactivate()
-			end
-		else
-			local unlocked = world.getProperty("lofty_irisil_unlockmorph")
-			if unlocked then
-				if pos then
-					mcontroller.setPosition(pos)
-					deactivate()
-				end
-			else
-				animator.playSound("error")
-			end
-		end
-		--if it's not a tech challenge world just deactivate
-		else
-		if pos then
-			mcontroller.setPosition(pos)
-			deactivate()
-		end
-	end
   end
   
   if active then 
@@ -368,53 +321,81 @@ function handleInputs(args)
     
 	--[1, 0.35] <- offset for firing for later
 	
-    if currentInputLClick == "mechFireL" and
-	not status.resourceLocked("energy") and
-	status.resourcePositive("energy") then
-      local aimRotation = {math.cos(aimAngle), math.sin(aimAngle)}
-      if fireTimerEye <= 0 then
-        spawnProjectile(mechProjectileL, 1, aimRotation, eyeSFX, 25 + math.random(0,24))
-        fireTimerEye = cooldownEye
+	shakeit = false
+	
+    if currentInputLClick == "mechFireL" then
+	  shakeit = true
+	  if  not status.resourceLocked("energy") and
+	  status.resourcePositive("energy") then
+        local aimRotation = {math.cos(aimAngle), math.sin(aimAngle)}
+        if fireTimerEye <= 0 then
+          spawnProjectile(mechProjectileL, 1, aimRotation, eyeSFX, 25 + math.random(0,24))
+          fireTimerEye = cooldownEye
+	    end
 	  end
     end
     
-    if currentInputRClick == "mechFireR" and
-	not status.resourceLocked("energy") and
-	status.resourcePositive("energy") then
-      local aimRotation = {math.cos(aimAngle), math.sin(aimAngle)}
-      if fireTimerDander <= 0 then
-		puffCloud()
-        fireTimerDander = cooldownDander
-      end
+    if currentInputRClick == "mechFireR" then
+	  shakeit = true
+	  if not status.resourceLocked("energy") and
+	  status.resourcePositive("energy") then
+        local aimRotation = {math.cos(aimAngle), math.sin(aimAngle)}
+        if fireTimerDander <= 0 then
+		  puffCloud()
+          fireTimerDander = cooldownDander
+        end
+	  end
     end
 	
 	--primitive animation overrider i guess
-	local moving =
-      ((mcontroller.walking() or mcontroller.running() or
-      (math.floor(mcontroller.xVelocity()) < -1 or math.floor(mcontroller.xVelocity()) > 1)) and
-      mcontroller.onGround())
-    
-    mcontroller.controlParameters(mechCustomMovementParameters)
-    mcontroller.controlFace(flipped and -1 or 1)
+	mcontroller.controlParameters(mechCustomMovementParameters)
+	
+    --mcontroller.controlFace(leftways)
+	if mcontroller.xVelocity() > 0.1 then
+	  animator.setFlipped(false)
+	elseif mcontroller.xVelocity() < -0.1 then
+	  animator.setFlipped(true)
+	else 
+	  --this manually sets the facing direction
+      local lookvector = tech.aimPosition()
+	  local playerpos = mcontroller.position()
+	  local delta = lookvector[1] - playerpos[1]
+      local leftways = -1
+      if delta >= 0 then
+	    leftways = 1
+      end
+	  animator.setFlipped(leftways ~= 1)
+	end
+	
+	--world.debugText("^shadow;" .. leftways, {entity.position()[1] + 4, entity.position()[2] + 4}, "green")
+	
+	if not shakeit then
+	  
+	  --jumping falling
+      if not mcontroller.onGround() then
+        if mcontroller.jumping() then
+          animator.setAnimationState("body", "jump")
+        elseif mcontroller.falling() then
+          animator.setAnimationState("body", "fall")
+        end
+		
+	  --walking
+      elseif mcontroller.walking() then
+          animator.setAnimationState("body", "walk")
+		
+	  --running
+	  elseif mcontroller.running() then
+          animator.setAnimationState("body", "run")
 
-    if not mcontroller.onGround() then
-      if mcontroller.jumping() then
-        animator.setAnimationState("movement", "jump")
-      elseif mcontroller.falling() then
-        animator.setAnimationState("movement", "fall")
-      end
-    elseif mcontroller.walking() or mcontroller.running() then
-      if flipped and mcontroller.movingDirection() == 1 or not flipped and mcontroller.movingDirection() == -1 then
-        animator.setAnimationState("movement", "backWalk")
+	  --idle
       else
-        animator.setAnimationState("movement", "walk")
+        animator.setAnimationState("body", "idle")
       end
-      if not mcontroller.movingDirection() then
-	  --awa
-      end
-    else
-      animator.setAnimationState("movement", "idle")
-    end
+	  
+	--attack higher prio animation
+	else
+	  animator.setAnimationState("body", "shakeit")
+	end
   end
 end
 
@@ -432,6 +413,9 @@ function update(args)
   end
   
   --if the player logged out morphed, restore them to their morph position
+  --this doesn't seem to work i just kind of copypasted it from the spike sphere
+  --the spike sphere doesn't work for this either
+  --might be a modpack issue idk
   restoreStoredPosition()
   
   --graphics for transforming
@@ -446,9 +430,9 @@ function update(args)
   end
   
   --display polygon with debug numbers
-  for i = 1, polySize do
-    world.debugText("^shadow;" .. i, {entity.position()[1] + mechCustomMovementParameters.collisionPoly[i][1], entity.position()[2] + mechCustomMovementParameters.collisionPoly[i][2]}, "green")
-  end
+  --for i = 1, polySize do
+    --world.debugText("^shadow;" .. i, {entity.position()[1] + mechCustomMovementParameters.collisionPoly[i][1], entity.position()[2] + mechCustomMovementParameters.collisionPoly[i][2]}, "green")
+  --end
   
   handleInputs(args)
   if mcontroller.groundMovement() then 
@@ -465,13 +449,14 @@ function spawnProjectile(projectileList, projectile, aimRotation, sfx, spd)
     entity.id(),
     {aimRotation[1] * spd, aimRotation[2] * spd},
     false,
-    {speed = spd}
+    {speed = spd, powerMultiplierEye * status.stat("powerMultiplier") }
   )
   animator.playSound(sfx, 0)
   status.overConsumeResource("energy", energyCostEye) 
 end
 
 function puffCloud()
+  local damageConfig = { power = powerMultiplierDander * status.stat("powerMultiplier"), speed = 1.5 }
   world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {0, 1},   false, {})
   world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 1},   false, {})
   world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 0},   false, {})

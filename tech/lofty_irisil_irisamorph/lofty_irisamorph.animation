@@ -1,0 +1,185 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "body" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : {
+            "frames" : 1,
+			"cycle" : 4.0,
+            "mode" : "transition",
+			"transition" : "idleBlink"
+          },
+		  "idleBlink" : {
+            "frames" : 1,
+			"cycle" : 0.125,
+            "mode" : "transition",
+			"transition" : "idle"
+          },
+          "walk" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+		  "run" : {
+            "frames" : 8,
+            "cycle" : 0.25,
+            "mode" : "loop"
+          },
+		  "backWalk" : {
+            "frames" : 8,
+            "cycle" : 0.8,
+            "mode" : "loop"
+          },
+		  "backRun" : {
+            "frames" : 8,
+            "cycle" : 0.25,
+            "mode" : "loop"
+          },
+		  "jump" : {
+            "frames" : 2,
+			"cycle" : 0.25
+          },
+		  "shakeit" : {
+            "frames" : 4,
+			"cycle" : 0.25,
+			"mode" : "loop"
+          },
+		  "hop" : {
+            "frames" : 4,
+            "cycle" : 0.125,
+            "mode" : "loop",
+            "properties" : {
+              "immediateSound" : "/sfx/npc/monsters/monster_hop.ogg",
+              "immediateSoundRangeMultiplier" : 0.5
+            }
+          },
+		  "land" : {
+            "frames" : 1,
+            "cycle" : 0.25,
+            "mode" : "transition",
+			"transition" : "idle"
+          },
+		  "fall" : {
+            "frames" : 3,
+			"cycle" : 0.25
+          }
+        }
+      },
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 1
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "transformationGroups" : [ "body" ],
+          "offset" : [0.0, 0.625]
+        },
+        "partStates" : {
+          "body" : {
+            "idle" : {
+              "properties" : {
+                "image" : "irisil.png:idle.<frame><directives>"
+              }
+            },
+			"idleBlink" : {
+              "properties" : {
+                "image" : "irisil.png:blink.<frame><directives>"
+              }
+            },
+            "walk" : {
+              "properties" : {
+                "image" : "irisil.png:walk.<frame><directives>"
+              }
+            },
+			"run" : {
+              "properties" : {
+                "image" : "irisil.png:run.<frame><directives>"
+              }
+            },
+			"jump" : {
+              "properties" : {
+                "image" : "irisil.png:jump.<frame><directives>"
+              }
+            },
+			"shakeit" : {
+              "properties" : {
+                "image" : "irisil.png:shakeit.<frame><directives>"
+              }
+            },
+			//somewhere something is using 'fire' instead of 'shakeit' but it might be a game bug
+			"fire" : {
+              "properties" : {
+                "image" : "irisil.png:shakeit.<frame><directives>"
+              }
+            },
+            "fall" : {
+              "properties" : {
+                "image" : "irisil.png:fall.<frame><directives>"
+              }
+            },
+			"hop" : {
+              "properties" : {
+                "image" : "irisil.png:hop.<frame><directives>"
+              }
+            },
+			"land" : {
+              "properties" : {
+                "image" : "irisil.png:land.<frame><directives>"
+              }
+            }
+          },
+          "damage" : {
+            "stunned" : {
+              "properties" : {
+                "image" : "irisil.png:hurt.<frame><directives>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "body" : { "interpolated" : true }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0,
+      "directives" : "fade=ffffff;0.5"
+    }
+  },
+
+  "particleEmitters" : {
+    "activateParticles" : {
+      "particles" : [ ]
+    },
+    "deactivateParticles" : {
+      "particles" : [ ]
+    }
+  },
+
+  "sounds" : {
+	"fire" : [ "/sfx/gun/evileye1.ogg", "/sfx/gun/evileye2.ogg", "/sfx/gun/evileye3.ogg", "/sfx/gun/evileye4.ogg", "/sfx/gun/evileye5.ogg", "/sfx/gun/evileye6.ogg" ],
+	"hiss" : [ "/sfx/projectiles/toy_throw1.ogg", "/sfx/projectiles/toy_throw2.ogg" ],
+	"jump" : [ "/sfx/npc/monsters/monster_hop.ogg" ],
+	"activate" : [ "/sfx/tech/tech_sphere_transform.ogg" ],
+    "deactivate" : [ "/sfx/tech/tech_sphere_transform.ogg" ],
+	"error" : [ "/sfx/interface/clickon_error.ogg" ]
+  }
+}

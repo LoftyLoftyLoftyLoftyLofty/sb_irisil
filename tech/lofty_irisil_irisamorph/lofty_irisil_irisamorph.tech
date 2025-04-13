@@ -2,8 +2,8 @@
   "name" : "lofty_irisil_irisamorph",
   "type" : "head",
 
-  "scripts": ["/tech/lofty_irisil_irisamorph/vehicle.lua"],
-  "animator": "mech.animation",
+  "scripts": ["/tech/lofty_irisil_irisamorph/irisamorph.lua"],
+  "animator": "lofty_irisamorph.animation",
 
   "description" : "No warranty. No refunds. ^green;[F]",
   "shortDescription" : "Irisa Morph",
@@ -77,15 +77,12 @@
   "transformFadeTime" : 0.3,
   "energyCostPerSecond": 0.0,
   "warpDirectives": "?fade=CCFF=0.25",
-  "mechType": "irisa",
-  "mechGunType": "human",
-  "mechAimLimit": 40,
-  "mechBackGunAngle": 3.1,
-  "mechFireCycle": 0.5,
   "mechProjectileL": "lofty_irisil_eyeball",
   "mechProjectileR": "lofty_irisil_largeslowcloud",
   "eyeEnergyCost" : 14,
   "danderEnergyCost" : 77,
   "eyeFireRate" : 0.125,
-  "danderFireRate" : 0.75
+  "danderFireRate" : 0.75,
+  "eyeDamage" : 25,
+  "danderDamage" : 25
 }
