@@ -65,7 +65,7 @@ end
 function update(dt)
 
 	lofty_irisil_dungeonmanager_morphtech_originalUpdate(dt)
-
+	
 	--disable this script unless the player is in the appropriate dungeon for it
 	if world.type() ~= "lofty_irisil_techchallenge_irisamorph" then
 		return
