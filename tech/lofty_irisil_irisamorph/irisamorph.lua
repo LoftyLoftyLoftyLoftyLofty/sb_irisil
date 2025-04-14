@@ -590,7 +590,7 @@ function spawnProjectile(projectileList, projectile, aimRotation, sfx, spd)
 end
 
 function puffCloud()
-  local damageConfig = { power = powerMultiplierDander * status.stat("powerMultiplier"), speed = 1.5 }
+  local damageConfig = { power = powerMultiplierDander * status.stat("powerMultiplier") }
   world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {0, 1},   false, damageConfig)
   world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 1},   false, damageConfig)
   world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 0},   false, damageConfig)
