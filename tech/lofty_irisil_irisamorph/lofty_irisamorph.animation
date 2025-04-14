@@ -170,6 +170,7 @@
 	"jump" : [ "/sfx/npc/monsters/monster_hop.ogg" ],
 	"activate" : [ "/sfx/tech/tech_sphere_transform.ogg" ],
     "deactivate" : [ "/sfx/tech/tech_sphere_transform.ogg" ],
-	"error" : [ "/sfx/interface/clickon_error.ogg" ]
+	"error" : [ "/sfx/interface/clickon_error.ogg" ],
+	"forceDeactivate" : [ "/sfx/tech/tech_sonicsphere_charge1.ogg" ]
   }
 }

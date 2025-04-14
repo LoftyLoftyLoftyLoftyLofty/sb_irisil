@@ -87,5 +87,8 @@
   "eyeFireRate" : 0.125,
   "danderFireRate" : 0.75,
   "eyeDamage" : 25,
-  "danderDamage" : 25  
+  "danderDamage" : 12.5,
+  
+  "forceDeactivateTime" : 3.0,
+  "forceShakeMagnitude" : 0.125
 }

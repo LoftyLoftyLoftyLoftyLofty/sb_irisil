@@ -10,6 +10,7 @@ function initParams()
 
   CMD_ACTIVATE = "morphActivate"
   CMD_DEACTIVATE = "morphDeactivate"
+  F_HELD = "holdingF"
   
   --This is used for making sure the morph doesn't clip the ground
   collisionSet = {"Null", "Block", "Dynamic", "Slippery"}
@@ -76,6 +77,15 @@ function initParams()
   
   shakeit = false
   
+  --for holding the button to force a deactivation
+  forceTimer = 0
+  forceDeactivateTime = config.getParameter("forceDeactivateTime")
+  forceShakeMagnitude = config.getParameter("forceShakeMagnitude", 0.125)
+  needsTransformationGroupReset = false
+  
+  veryLoudDeactivateLatch = false
+  initialTransformLatch = false
+  
 end
 
 function activate()
@@ -102,6 +112,8 @@ function activate()
 	status.setPersistentEffects("movementAbility", {{stat = "activeMovementAbilities", amount = 1}})
 	--initial morph energy cost
 	status.overConsumeResource("energy", energyCostMorph)
+	--set initial transform latch to prevent odd sfx
+	initialTransformLatch = true
   end
 end
 
@@ -128,6 +140,11 @@ function deactivate()
 	transformFadeTimer = -transformFadeTime
 	--womp
 	status.clearPersistentEffects("movementAbility")
+	--duplicated code is bad but yknow whatever
+	initialTransformLatch = false
+    animator.stopAllSounds("forceDeactivate")
+	forceTimer = 0
+	veryLoudDeactivateLatch = false
   end
 end
 
@@ -145,6 +162,14 @@ function inputF(args)
 	else 
 	  return CMD_ACTIVATE
 	end
+  end
+  return nil
+end
+
+function inputFL(args)
+  --this is an edge trigger
+  if args.moves["special1"] then
+    return F_HELD
   end
   return nil
 end
@@ -276,8 +301,14 @@ function handleInputs(args)
 	  
 	  --valid position, attempt to activate
       if pos then
-        mcontroller.setPosition(pos)
-        activate()
+	    if not status.resourceLocked("energy") then
+          mcontroller.setPosition(pos)
+          activate()
+		else
+		  animator.playSound("error")
+		end
+	  else
+	    animator.playSound("error")
       end
 	  
     --Attempting to DEACTIVATE
@@ -295,6 +326,8 @@ function handleInputs(args)
 	  		if pos then
 	  			mcontroller.setPosition(pos)
 	  			deactivate()
+			else
+			  animator.playSound("error")
 	  		end
 	  	else
 	  		local unlocked = world.getProperty("lofty_irisil_unlockmorph")
@@ -302,6 +335,8 @@ function handleInputs(args)
 	  			if pos then
 	  				mcontroller.setPosition(pos)
 	  				deactivate()
+				else
+			      animator.playSound("error")
 	  			end
 	  		else
 	  			animator.playSound("error")
@@ -312,6 +347,8 @@ function handleInputs(args)
 	  	if pos then
 	  		mcontroller.setPosition(pos)
 	  		deactivate()
+	    else
+			animator.playSound("error")
 	  	end
 	  end
     end
@@ -339,7 +376,7 @@ function handleInputs(args)
 	
     if currentInputLClick == "mechFireL" then
 	  shakeit = true
-	  if  not status.resourceLocked("energy") and
+	  if not status.resourceLocked("energy") and
 	  status.resourcePositive("energy") then
         local aimRotation = {math.cos(aimAngle), math.sin(aimAngle)}
         if fireTimerEye <= 0 then
@@ -363,6 +400,12 @@ function handleInputs(args)
 	
 	--primitive animation overrider i guess
 	mcontroller.controlParameters(mechCustomMovementParameters)
+	if shakeit then 
+	  mcontroller.controlModifiers(
+	  {
+        movementSuppressed = true
+      })
+	end
 	
     --mcontroller.controlFace(leftways)
 	if mcontroller.xVelocity() > 0.1 then
@@ -385,12 +428,21 @@ function handleInputs(args)
 	
 	if not shakeit then
 	  
-	  --jumping falling
+	  --jumping falling swimming
       if not mcontroller.onGround() then
+	  
         if mcontroller.jumping() then
           animator.setAnimationState("body", "jump")
+		  
         elseif mcontroller.falling() then
           animator.setAnimationState("body", "fall")
+		  
+		elseif mcontroller.liquidMovement() then
+		  if mcontroller.yVelocity() > 0 then
+		    animator.setAnimationState("body", "jump")
+		  else
+		    animator.setAnimationState("body", "fall")
+		  end
         end
 		
 	  --walking
@@ -417,6 +469,58 @@ function handleInputs(args)
   end
 end
 
+function handleForceDeactivate(args)
+  --currently active
+  if active then
+    --holding the button
+    local holdingF = inputFL(args)
+    if holdingF == F_HELD then
+	  if not initialTransformLatch then 
+	    --update the amount of time we have been holding
+        forceTimer = forceTimer + args.dt
+	    --don't allow player to move while force-unmorphing
+        mcontroller.controlModifiers({
+          movementSuppressed = true
+        })
+	    --make the sound
+	    if not veryLoudDeactivateLatch then
+	      animator.playSound("forceDeactivate", -1)
+	      veryLoudDeactivateLatch = true
+	    end
+	    
+        --shake the player
+        local shake = vec2.mul(vec2.withAngle((math.random() * math.pi * 2), forceShakeMagnitude), forceTimer / forceDeactivateTime)
+        animator.resetTransformationGroup("body")
+	    animator.translateTransformationGroup("body", {0,0.5})
+        animator.translateTransformationGroup("body", shake)
+	    --if we decide to let go of F then we need to reset the offset
+	    needsTransformationGroupReset = true
+	    --time to pop
+        if forceTimer >= forceDeactivateTime then
+          deactivate()
+          forceTimer = 0
+		  veryLoudDeactivateLatch = false
+        end
+	  end
+	--if we aren't holding F
+	else
+	  initialTransformLatch = false
+	  animator.stopAllSounds("forceDeactivate")
+	  veryLoudDeactivateLatch = false
+	  forceTimer = 0
+	  if needsTransformationGroupReset then 
+	    animator.resetTransformationGroup("body")
+	    animator.translateTransformationGroup("body", {0,0.5})
+	  end
+	end
+  else
+    initialTransformLatch = false
+    animator.stopAllSounds("forceDeactivate")
+	forceTimer = 0
+	veryLoudDeactivateLatch = false
+  end
+end
+
 function update(args)
 
   --if the player walks into the trap room, lock their tech on
@@ -427,7 +531,19 @@ function update(args)
           activate()
 		end
       end
+	else
+	  if world.getProperty("lofty_irisil_lockmorph") == true then
+	    if world.getProperty("lofty_irisil_unlockmorph") == true then
+	      handleForceDeactivate(args)
+		end
+	  else
+	    handleForceDeactivate(args)
+	  end
     end
+	
+  --if we are not in the tech challenge, check for held force deactivation
+  else
+    handleForceDeactivate(args)
   end
   
   --if the player logged out morphed, restore them to their morph position
@@ -475,14 +591,14 @@ end
 
 function puffCloud()
   local damageConfig = { power = powerMultiplierDander * status.stat("powerMultiplier"), speed = 1.5 }
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {0, 1},   false, {})
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 1},   false, {})
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 0},   false, {})
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, -1},  false, {})
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {0, -1},  false, {})
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {-1, -1}, false, {})
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {-1, 0},  false, {})
-  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {-1, 1},  false, {})
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {0, 1},   false, damageConfig)
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 1},   false, damageConfig)
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, 0},   false, damageConfig)
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {1, -1},  false, damageConfig)
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {0, -1},  false, damageConfig)
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {-1, -1}, false, damageConfig)
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {-1, 0},  false, damageConfig)
+  world.spawnProjectile("lofty_irisil_largeslowcloud", mcontroller.position(), entity.id(), {-1, 1},  false, damageConfig)
   animator.playSound(cloudSFX, 0)
   status.overConsumeResource("energy", energyCostDander)
 end
