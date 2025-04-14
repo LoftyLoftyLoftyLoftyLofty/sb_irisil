@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "bugnet", "count" : 1 },
+	{ "item" : "nanowrap", "count" : 10 },
+	{ "item" : "upgrademodule", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_miniknognet",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_bugnet" ]
+}

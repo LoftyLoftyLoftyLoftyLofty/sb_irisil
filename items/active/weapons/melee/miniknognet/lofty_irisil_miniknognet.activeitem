@@ -4,13 +4,14 @@
   "level" : 3,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "category" : "sword",
-  "tooltipKind" : "base",
+  "category" : "Tool",
+  "tooltipKind" : "tool",
   "description" : "A net for catching pesky animals!",
   "shortdescription" : "Animal Control Net",
   "twoHanded" : true,
   "itemTags" : ["weapon", "melee", "shortsword", "lofty_irisil"],
   "inventoryIcon" : "bugneticon.png",
+  "largeImage" : "bugnetbig.png",
 
   "animation" : "/items/active/weapons/melee/miniknognet/lofty_irisil_miniknognet.animation",
   "animationParts" : {
