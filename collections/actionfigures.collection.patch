@@ -16,5 +16,14 @@
 		"order" : 9002,
 		"item" : "lofty_irisil_holographicfennixaf"
 	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/lofty_irisil_tombspookitaf",
+	  "value": 		
+	  {
+		"order" : 9003,
+		"item" : "lofty_irisil_tombspookitaf"
+	  }
 	}
 ]
