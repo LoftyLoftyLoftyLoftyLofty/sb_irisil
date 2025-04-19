@@ -1,0 +1,33 @@
+{
+  "objectName" : "lofty_irisil_wedjatbanner",
+  "colonyTags" : ["lofty_irisil","egyptian","pretty"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 800,
+
+  "description" : "A thick woven banner depicting a holy eye.",
+  "shortdescription" : "Wedjat Banner",
+  "race" : "generic",
+
+  "apexDescription" : "Banners like this would get you arrested back home.",
+  "avianDescription" : "I like this banner.",
+  "floranDescription" : "Hanging eye isss watching.",
+  "glitchDescription" : "Intimidated. Did that banner just blink?",
+  "humanDescription" : "Makes me feel like somebody's watching me.",
+  "hylotlDescription" : "This banner gives me a pervasive sense of being judged.",
+  "novakidDescription" : "Ain't got enough holes in it.",
+
+
+  "inventoryIcon" : "lofty_irisil_wedjatbannericon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_wedjatbanner.png",
+      "imagePosition" : [-8, -32],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "bgAnchors" : [ [0, 0], [-1, 0], [1, 0] ]
+    }
+  ]
+}

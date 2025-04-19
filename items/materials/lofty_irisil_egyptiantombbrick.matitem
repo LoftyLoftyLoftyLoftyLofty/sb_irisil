@@ -1,0 +1,16 @@
+{
+  "itemName" : "lofty_irisil_egyptiantombbrick",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "lofty_irisil_egyptiantombbrick.png",
+  "shortdescription" : "Egyptian Tomb Brick",
+  "description" : "Dusty and ancient bricks, colored to match Egyptian-themed decorations.",
+  "glitchdescription" : "Surprised. Closer inspection suggests these bricks are quite old.",
+  "florandescription" : "Dusssty old bricks.",
+  "novakiddescription" : "Just some ol' dusty bricks.",
+
+  "materialId" : 3802,
+  "learnBlueprintsOnPickup" : [ "lofty_irisil_egyptiantombbrick" ]
+}
+

@@ -1,0 +1,29 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_bastetdungeon",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "lofty_irisil_bastetdungeon" ],
+	"gravity": 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 65,
+    "protected" : true
+  },
+
+  "parts" : [
+  
+	//////////////////////////////////////////////////////////////////////
+	//the house atop the cliff
+	//////////////////////////////////////////////////////////////////////
+	
+    {
+      "name" : "lofty_irisil_bastetdungeon",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_bastetdungeon.json" ]
+    }
+  ]
+}

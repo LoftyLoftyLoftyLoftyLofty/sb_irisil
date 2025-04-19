@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "slopedscrappanel", "count" : 1 },
+    { "item" : "aztectech", "count" : 1 }
+  ],
+  "output" : { "item" : "lofty_irisil_slopedavianscrappanel", "count" : 2 },
+  "duration" : 0.25,
+  "groups"  : [ "craftingfurniture2", "materials", "all" ]
+}

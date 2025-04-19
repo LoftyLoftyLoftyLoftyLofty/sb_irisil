@@ -1,0 +1,25 @@
+{
+  "materialId" : 3803,
+  "materialName" : "lofty_irisil_slopedavianscrappanel",
+  "particleColor" : [11, 98, 90, 255],
+  "itemDrop" : "lofty_irisil_slopedavianscrappanel",
+
+  "description" : "Rusted scrap metal paneling in a state of severe disrepair.",
+  "glitchDescription" : "Worried. This metal surface looks very jagged and rusty.",
+  "floranDescription" : "Metal sssso russty, Floran wouldn't even ussse it.",
+  "novakidDescription" : "This metal panel is just a buncha rusted scrap.",
+  "shortdescription" : "Avian Scrap Panel",
+  "footstepSound" : "/sfx/blocks/footstep_lightmetal.ogg",
+  "health" : 16,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/slopedmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "lofty_irisil_slopedavianscrappanel.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 4998
+  }
+}

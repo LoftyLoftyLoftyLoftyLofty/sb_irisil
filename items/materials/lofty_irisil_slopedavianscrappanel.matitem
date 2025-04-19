@@ -1,0 +1,15 @@
+{
+  "itemName" : "lofty_irisil_slopedavianscrappanel",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "lofty_irisil_slopedavianscrappanel.png",
+  "shortdescription" : "Avian Scrap Panel",
+  "description" : "Rusted scrap metal panelling in a state of severe disrepair.",
+  "glitchdescription" : "Worried. This metal surface looks very jagged and rusty.",
+  "florandescription" : "Metal sssso russty, Floran wouldn't even ussse it.",
+  "novakiddescription" : "This metal panel is just a buncha rusted scrap.",
+
+  "materialId" : 3803,
+  "learnBlueprintsOnPickup" : [ "lofty_irisil_slopedavianscrappanel" ]
+}
