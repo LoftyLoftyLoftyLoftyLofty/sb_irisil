@@ -1240,5 +1240,25 @@
       ],
       "allowDuplication" : false
     } ]
+  ],
+  
+  "lofty_irisil_bastetdungeon_smashablepots" : [
+    [1, {
+	  "pool" : [
+		{"weight" : 0.74, "pool" : "smashMoney"},
+		{"weight" : 0.05, "item" : "liquidoil"},
+		{"weight" : 0.05, "item" : "bandage"},
+		{"weight" : 0.05, "item" : "fabric"},
+		{"weight" : 0.05, "item" : "plantfibre"},
+		{"weight" : 0.01, "item" : "capturepod"}
+	  ],
+	  "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+	  "allowDuplication" : false
+    } ]
   ]
+  
+  //pharaohhead
 }
