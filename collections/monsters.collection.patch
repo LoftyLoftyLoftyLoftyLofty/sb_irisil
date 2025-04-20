@@ -18,5 +18,15 @@
 		  "monsterType" : "lofty_irisil_holographicfennix",
 		  "icon" : "/monsters/walkers/lofty_irisil_holographicfennix/body/lofty_irisil_holographicfennix.png:idle.5"
 		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_tombspookit",
+		"value" : 
+		{
+		  "order" : 9003,
+		  "monsterType" : "lofty_irisil_tombspookit",
+		  "icon" : "/monsters/ghosts/lofty_irisil_tombspookit/body/lofty_irisil_tombspookit.png:idle.1"
+		}
 	}
 ]

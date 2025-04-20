@@ -1,0 +1,42 @@
+{
+  "objectName" : "lofty_irisil_botd_offerings",
+  "colonyTags" : ["lofty_irisil","egyptian","pretty"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 500,
+
+  "shortdescription" : "Funerary Offerings",
+  "description" : "A meticulously organized stack of offerings to the departed.",
+  "race" : "generic",
+
+  "apexDescription" : "Food rationed to the deceased? How strange.",
+  "avianDescription" : "This looks delicious, but it's only for the dead.",
+  "floranDescription" : "Floran seesss many treatsss!",
+  "glitchDescription" : "Awestruck. What an assortment of food!",
+  "humanDescription" : "Overdoing it a little? He's dead.",
+  "hylotlDescription" : "The arrangement of each layer of gifts is in fine taste.",
+  "novakidDescription" : "Yup. Stack of stuff.",
+
+  "inventoryIcon" : "lofty_irisil_botd_offeringsicon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_botd_offerings.png",
+      "imagePosition" : [-16, -32],
+
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisil_botd_offerings.png:",
+      "imagePosition" : [-16, -32],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

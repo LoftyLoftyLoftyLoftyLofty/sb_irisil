@@ -1,0 +1,8 @@
+{
+  "input" : [
+    { "item" : "tombbrick", "count" : 1 }
+  ],
+  "output" : { "item" : "lofty_irisil_egyptiantombbrick", "count" : 1 },
+  "duration" : 0.2,
+  "groups"  : [ "craftingfurniture", "materials", "all" ]
+}

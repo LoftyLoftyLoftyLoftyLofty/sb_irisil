@@ -1,0 +1,32 @@
+{
+  "objectName" : "lofty_irisil_wedjatemblem",
+  "colonyTags" : ["egyptian","lofty_irisil","pretty"],
+  "rarity" : "Rare",
+  "category" : "decorative",
+  "price" : 500,
+
+  "description" : "This emblem is said to protect its bearer.",
+  "shortdescription" : "Wedjat Emblem",
+  "race" : "generic",
+
+  "apexDescription" : "This symbol is contraband back home.",
+  "avianDescription" : "Looking at this makes me feel safer.",
+  "floranDescription" : "Pretty eyesss.",
+  "glitchDescription" : "Perplexed. What could this strange emblem mean?",
+  "humanDescription" : "Seeing symbols from Earth in a place like this makes me wonder if the old gods actually exist.",
+  "hylotlDescription" : "A fashionable style. I wonder how my eyes would look gilded.",
+  "novakidDescription" : "Can't trust a single one of them richy-rich, gaudy, gold-eyed priests.",
+
+  "inventoryIcon" : "lofty_irisil_wedjatemblemicon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_wedjatemblem.png",
+      "imagePosition" : [-16, -16],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ]
+}

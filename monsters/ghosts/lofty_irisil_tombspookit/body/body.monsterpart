@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_tombspookit",
+  "category" : "lofty_irisil_tombspookit",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_tombspookit.png"
+  }
+}

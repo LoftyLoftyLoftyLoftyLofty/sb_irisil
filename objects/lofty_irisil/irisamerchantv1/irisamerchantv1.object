@@ -79,15 +79,6 @@
 	
 	//costume parts
 		"lofty_irisil_clingy",
-		
-		"lofty_irisil_invis_head",
-		"lofty_irisil_invis_chest",
-		"lofty_irisil_invis_legs",
-		"lofty_irisil_invis_back",
-		
-		"lofty_irisil_bunnysuit_blue",
-		"lofty_irisil_bunnysuit_green",
-		"lofty_irisil_bunnysuit_red",
 	
 	//decorations
 		"lofty_irisil_alpacastatue",
@@ -95,6 +86,7 @@
 		"lofty_irisil_froggoclocksomewhere",
 		"lofty_irisilaf",
 		"lofty_irisil_holographicfennixaf",
+		"lofty_irisil_tombspookitaf",
 		"lofty_irisil_irisaplushie",
 		"lofty_irisil_irisastatue",
 		"lofty_irisil_lurkingirisa",
@@ -102,9 +94,17 @@
 		"lofty_irisil_pettingzmoo",
 		"lofty_irisil_stationanimalcrate",
 		"lofty_irisil_stationanimalcrateeyes",
-		"lofty_irisil_scleramite",
 		"lofty_irisil_secretcactus",
 		"lofty_irisil_smalltacklebox",
+		
+	//book of the dead stuff
+		"lofty_irisil_botd_offerings",
+		"lofty_irisil_wedjatbanner",
+		"lofty_irisil_wedjatemblem",
+		
+	//insects
+		"lofty_irisil_scleramite",
+		"lofty_irisil_miniknognet",
 		
 	//destination transponders
 		"lofty_irisil_fisheyespawner",
@@ -125,7 +125,6 @@
 		
 	//combat
 		"lofty_irisil_eyepoker",
-		"lofty_irisil_miniknognet",
 		"lofty_irisil_irisadandruffaugment",
 		"lofty_irisil_irisamobilityaugment",
 		"lofty_irisil_irisamobilityaugmentswim",
