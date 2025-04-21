@@ -1,0 +1,51 @@
+{
+  "type" : "lofty_irisil_sirene_crewmemberjanitor",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+    "crew" : {
+      "role" : {
+        "type" : "janitor",
+        "name" : "Janitor",
+        "field" : "Cleanliness",
+        "uniformColorIndex" : 11
+      },
+	  
+	  "defaultUniform" : {
+	    "head" : "lofty_irisil_sirenemaskhead",
+        "chest" : "protectoratechest",
+        "legs" : "lofty_irisil_sirenecompatibilitylegs"
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "I'm <selfname>... The janitor.",
+              "The name's <selfname>... The janitor."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "protectoratechest" } ],
+            "legs" : [ { "name" : "lofty_irisil_sirenecompatibilitylegs" } ],
+            "primary" : [ "broom" ],
+            "sheathedprimary" : [ "npcassaultrifle", "npcdagger" ]
+          }
+        ] ]
+    ]
+  }
+}

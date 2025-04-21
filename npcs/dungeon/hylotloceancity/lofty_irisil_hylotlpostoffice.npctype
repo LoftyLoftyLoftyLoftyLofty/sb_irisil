@@ -144,7 +144,14 @@
       },
 	  
       "accuse" : "/dialog/thief.config:accuse",
-      "alert" : "/dialog/thief.config:alert"
+      "alert" : "/dialog/thief.config:alert",
+	  "attack" : "/dialog/combat.config:attack",
+	  "reattack" : "/dialog/combat.config:reattack",
+      "killedTarget" : "/dialog/combat.config:killedTarget",
+      "lostTarget" : "/dialog/combat.config:lostTarget",
+      "outOfSight" : "/dialog/combat.config:outOfSight",
+      "cheerOn" : "/dialog/combat.config:cheerOn",
+      "cantReach" : "/dialog/combat.config:cantReach"
     }
   },
 
@@ -309,6 +316,68 @@
 				{ "name" : "snowinfantrypants", "parameters" : { "colorIndex" : 11 } },
 				{ "name" : "humantier1pants", "parameters" : { "colorIndex" : 11 } },
 				{ "name" : "hikerlegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+  
+    //modded race outfits
+    "sirene" : [
+      [0, [
+          {
+			"head" : [ 
+				{ "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "glasses3eyes" },
+				{ "name" : "lofty_irisil_sirenemaskhead" }
+			],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "lofty_irisil_sirenecompatibilitylegs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"mollopod" : [
+      [0, [
+          {
+			"head" : [ 
+				{ "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } }
+			],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "mollopodoutfit1legs", "parameters" : { "colorIndex" : 11 } }
+			],
+            "sheathedprimary" : [ "npcmachinepistol" ]
+          }
+        ] ]
+    ],
+	
+	"shizubelle" : [
+      [0, [
+          {
+			"head" : [ 
+				{ "name" : "fancaphead", "parameters" : { "colorIndex" : 11 } }
+			],
+            "chest" : [ 
+				{ "name" : "merchantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "peasantchest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "florantier4chest", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "shizubelleoutfit1chest", "parameters" : { "colorIndex" : 11 } }
+			],
+            "legs" : [ 
+				{ "name" : "shizubelleoutfit1legs", "parameters" : { "colorIndex" : 11 } },
+				{ "name" : "shizubelleoutfit4legs", "parameters" : { "colorIndex" : 11 } }
 			],
             "sheathedprimary" : [ "npcmachinepistol" ]
           }

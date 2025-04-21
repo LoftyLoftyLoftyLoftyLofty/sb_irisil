@@ -1,0 +1,69 @@
+{
+  "type" : "lofty_irisil_sirene_crewmembertailor",
+  "baseType" : "crewmember",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : true
+    },
+
+    "crew" : {
+      "role" : {
+        "type" : "tailor",
+        "name" : "Tailor",
+        "field" : "Fashion",
+        "uniformColorIndex" : 9
+      },
+
+      // This interactActions only happens when in a crew, and only when
+      // interacted with by the captain.
+      "interactAction" : "Message",
+      "interactData" : {
+        "messageType" : "recruits.offerUniformUpdate",
+        "messageArgs" : [ ]
+      },
+	  
+	  "defaultUniform" : {
+	    "head" : "lofty_irisil_sirenemaskhead",
+        "chest" : "protectoratechest",
+        "legs" : "lofty_irisil_sirenecompatibilitylegs"
+      }
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "roleDescription" : {
+          "default" : {
+            "default" : [
+              "Come to me if you want to update your crew's uniform!",
+              "My tailoring skills let me update your crew's uniform. Just speak to me when you need my services!"
+            ]
+          }
+        }
+      },
+      "converse" : {
+        "default" : {
+          "default" : [
+            "That look is definitely in this season!",
+            "Looking good!",
+            "This outfit will make your crew really stand out. Great choice, captain!",
+            "Incredible fashion sense, captain!"
+          ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "chest" : [ { "name" : "protectoratechest" } ],
+            "legs" : [ { "name" : "lofty_irisil_sirenecompatibilitylegs" } ],
+            //"primary" : ["flowerbouquet"]
+            "sheathedprimary" : [ "npcpistol", "npcshortsword" ]
+          }
+        ] ]
+    ]
+  }
+}

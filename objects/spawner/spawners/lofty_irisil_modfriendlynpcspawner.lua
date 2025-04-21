@@ -96,6 +96,9 @@ function update(dt)
 	npcSpecies = util.randomFromList(selectedOption.npcSpeciesOptions)
   end
   
+  --trying to spawn a variant we don't have a race for - abort mission
+  if npcSpecies == "notInstalled" then return nil end
+  
   local npcType = "villager"
   if #selectedOption.npcTypeOptions > 0 then
     npcType = util.randomFromList(selectedOption.npcTypeOptions)

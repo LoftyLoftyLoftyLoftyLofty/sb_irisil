@@ -26,7 +26,9 @@
   "scripts" : 
   [ 
 	"/objects/spawner/spawners/lofty_irisil_modfriendlynpcspawner.lua",
-	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_neki.lua"
+	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_neki.lua",
+	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_sirene.lua",
+	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_shizubelle.lua"
   ],
   "scriptDelta" : 1,
   //6000,

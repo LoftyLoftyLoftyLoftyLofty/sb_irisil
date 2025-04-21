@@ -31,40 +31,40 @@ function possibleVariationsScriptHook(args)
 	--run the (original or modified by someone else) script hook chain for this func
 	args = oldPossibleVariationsScriptHook(args)
 	
-	--we assume that if there is a neki flag, the neki race is installed
-	if liu_itemExists("flagneki") then
+	--we assume that if we have sirene masking body items, sirene race is installed
+	if liu_itemExists("sirenemaskchest") then
 		
 		--go through all of the possible variations this spawner can produce
 		for _, variation in pairs(args) do
 			
 			--look at the scripted tags for the variation
 			for __, tag in pairs(variation.scriptedTargetTags) do
-				
-				--if the tag is species:any, add neki
+			
+				--if the tag is species:any, add sirene
 				if tag == "species:any" then
 				
-					--don't put neki in the list twice
-					if tableContains( variation.npcSpeciesOptions, "neki" ) == false then
+					--don't put sirene in the list twice
+					if tableContains( variation.npcSpeciesOptions, "sirene" ) == false then
 					
-						table.insert( variation.npcSpeciesOptions, "neki" )
-						--variation.npcSpeciesOptions = { "neki" }
+						table.insert( variation.npcSpeciesOptions, "sirene" )
+						--variation.npcSpeciesOptions = { "sirene" }
 					
 					end
 					
 				end
-				
+			
 				--the useVariantIfRaceInstalled is intended for spawner variants that only use the specific race
+			
+				--if the tag is useVariantIfRaceInstalled:sirene, adjust the variant
+				if tag == "useVariantIfRaceInstalled:sirene" then
 				
-				--if the tag is useVariantIfRaceInstalled:neki, adjust the variant
-				if tag == "useVariantIfRaceInstalled:neki" then
-				
-					--don't put neki in the list twice
-					if tableContains( variation.npcSpeciesOptions, "neki" ) == false then
+					--don't put sirene in the list twice
+					if tableContains( variation.npcSpeciesOptions, "sirene" ) == false then
 					
-						--table.insert( variation.npcSpeciesOptions, "neki" )
+						--table.insert( variation.npcSpeciesOptions, "sirene" )
 						
-						--swap out "notInstalled" for "neki" so the spawner has a valid race to use
-						variation.npcSpeciesOptions = { "neki" }
+						--swap out "notInstalled" for "sirene" so the spawner has a valid race to use
+						variation.npcSpeciesOptions = { "sirene" }
 					
 					end
 					
@@ -109,7 +109,7 @@ function finalResultScriptHook(args)
 	if args.fnpcType == "lofty_irisil_hylotlpostoffice" then
 	
 		--and it's a neki
-		if args.fnpcSpecies == "neki" then
+		if args.fnpcSpecies == "sirene" then
 		
 			--nil params, load defaults
 			if args.fnpcParameter == nil then
@@ -119,13 +119,15 @@ function finalResultScriptHook(args)
 			--plug in the script config from the hylotl post office template
 			args.fnpcParameter.scriptConfig = root.assetJson("/npcs/dungeon/hylotloceancity/lofty_irisil_hylotlpostoffice.npctype").scriptConfig
 			
-			--update their crew graduation possibilities to use the neki ones
+			--set crew member advancement to sirene outfits
 			args.fnpcParameter.scriptConfig.questGenerator.graduation.nextNpcType = 
 			{
-				{0.5, "nekiengineer"},
-				{0.5, "nekimechanic"}
+				{0.5, "lofty_irisil_sirene_crewmember"},
+				{0.5, "lofty_irisil_sirene_crewmemberengineer"},
+				{0.5, "lofty_irisil_sirene_crewmemberjanitor"},
+				{0.5, "lofty_irisil_sirene_crewmembertailor"},
+				{0.5, "lofty_irisil_sirene_crewmembermechanic"}
 			}
-		
 		end
 		
 	end
