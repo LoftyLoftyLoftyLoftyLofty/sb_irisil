@@ -81,6 +81,17 @@ function update(dt)
 	  end
   end
   
+  --force the RNG to do stuff several times across several ticks to make sure it gets seeded properly
+  if not storage.multiplayer then
+    storage.multiplayer = 1
+  else
+    storage.multiplayer = storage.multiplayer + math.random(1,10)
+  end
+  
+  if storage.multiplayer < 49 then
+    return nil
+  end
+  
   --grab the list of possible variations this spawner can make, use script hooks to dynamically modify
   local options = possibleVariationsScriptHook(config.getParameter("spawner.possibleVariations"))
   
@@ -92,7 +103,7 @@ function update(dt)
   
   --set up spawn parameters for our new NPC
   
-  local npcSpecies = "human"
+  local npcSpecies = "notInstalled"
   if #selectedOption.npcSpeciesOptions > 0 then
 	npcSpecies = selectedOption.npcSpeciesOptions[math.random(1,#selectedOption.npcSpeciesOptions)]
   end
