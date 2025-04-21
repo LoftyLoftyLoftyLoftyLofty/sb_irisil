@@ -1,5 +1,6 @@
 --	MOD-FRIENDLY NPC SPAWNER
 --	LOFTY 2023-07-25
+--  updated 2025-04-21
 --
 --	WTFPLV2
 --
@@ -84,7 +85,7 @@ function update(dt)
   local options = possibleVariationsScriptHook(config.getParameter("spawner.possibleVariations"))
   
   --choose one of our available options
-  local selectedOption = util.randomFromList(options)
+  local selectedOption = options[math.random(1,#options)]
   
   --pipe the selected option through a scripted hook in case this particular variation needs additional changes
   selectedOption = selectedVariationScriptHook(selectedOption)
@@ -93,7 +94,7 @@ function update(dt)
   
   local npcSpecies = "human"
   if #selectedOption.npcSpeciesOptions > 0 then
-	npcSpecies = util.randomFromList(selectedOption.npcSpeciesOptions)
+	npcSpecies = selectedOption.npcSpeciesOptions[math.random(1,#selectedOption.npcSpeciesOptions)]
   end
   
   --trying to spawn a variant we don't have a race for - abort mission
@@ -101,17 +102,17 @@ function update(dt)
   
   local npcType = "villager"
   if #selectedOption.npcTypeOptions > 0 then
-    npcType = util.randomFromList(selectedOption.npcTypeOptions)
+    npcType = selectedOption.npcTypeOptions[math.random(1,#selectedOption.npcTypeOptions)]
   end
   
   local npcParameter = nil
   if #selectedOption.npcParameterOptions > 0 then
-    npcParameter = util.randomFromList(selectedOption.npcParameterOptions)
+    npcParameter = selectedOption.npcParameterOptions[math.random(1,#selectedOption.npcParameterOptions)]
   end
   
   local npcSeed = nil;
   if #selectedOption.npcSeedOptions > 0 then
-	npcSeed = util.randomFromList(selectedOption.npcSeedOptions)
+	npcSeed = selectedOption.npcSeedOptions[math.random(1,#selectedOption.npcSeedOptions)]
   end
   
   --now that we've set up our spawn parameters, do one final script-hook sanitycheck for our params
