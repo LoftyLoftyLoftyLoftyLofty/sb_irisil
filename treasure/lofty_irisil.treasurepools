@@ -1,6 +1,6 @@
 {
   "lofty_irisilTreasure" : [
-    [0, {
+    [1, {
       "pool" : [
 	  
 		//69.69% chance of just getting pixels
@@ -43,7 +43,7 @@
     }]
   ],
   "lofty_irisilHunting" : [
-    [0, {
+    [1, {
       "pool" : [
 	  
 		//55% chance of oculemon
@@ -408,7 +408,7 @@
   "lofty_irisil_apexHazmatHelmetTreasure" : 
   [
 	[
-		0, 
+		1, 
 		{
 			"fill" : 
 			[
@@ -487,10 +487,9 @@
 		{
 			"fill" : 
 			[
+				{"pool" : "lofty_irisil_irisilweapons"},
 				{"item" : [ "lofty_irisil_glitch-codex", 1]},
-				{"item" : [ "lanternstickback", 1]},
-				//{"item" : [ "rarespear", 1]}
-				{"pool" : "lofty_irisil_irisilweapons"}
+				{"item" : [ "lanternstickback", 1]}
 			],
 			"allowDuplication" : false
 		}
@@ -500,7 +499,7 @@
   "lofty_irisil_covetedglowingballcrittertreasure" : 
   [
 	[
-		0, 
+		1, 
 		{
 			"fill" : 
 			[
@@ -514,7 +513,7 @@
   "lofty_irisil_robotChickenTreasure" : 
   [
 	[
-		0, 
+		1, 
 		{
 			"fill" : 
 			[
@@ -614,10 +613,9 @@
 			{
 				"poolRounds" : 
 				[
-					[0.3, 0],
-					[0.3, 1],
-					[0.2, 2],
-					[0.2, 3]
+					[0.6, 1],
+					[0.3, 2],
+					[0.1, 3]
 				],
 				"pool" : 
 				[
@@ -687,11 +685,10 @@
 		{
 			"fill" : 
 			[
+				{"pool" : "lofty_irisil_irisilweapons"},
 				{"item" : [ "lanternstickback", 1]},
 				{"item" : [ "climbingrope", 10]},
-				{"pool" : "healingItem"},
-				//{"item" : [ "rarespear", 1]}
-				{"pool" : "lofty_irisil_irisilweapons"}
+				{"pool" : "healingItem"}
 			],
 			"allowDuplication" : false
 		}
@@ -874,10 +871,11 @@
 	]
   ],
   
+  //snuffish drops
   "lofty_irisil_pickmeup_capturepod" : 
   [
 	[
-		0, 
+		1, 
 		{
 			"fill" : 
 			[
@@ -1083,7 +1081,7 @@
   
   "lofty_irisil_holographicfennixTreasure" : 
   [
-	[0, {
+	[1, {
       "pool" : [
         {"weight" : 0.799, "pool" : "robotTreasure"},
         {"weight" : 0.100, "item" : "stickofram"},
@@ -1100,7 +1098,7 @@
   
   "lofty_irisil_holographicfennixHunting" : 
   [
-	[0, {
+	[1, {
       "pool" : [
         {"weight" : 0.333, "item" : "phasematter"},
         {"weight" : 0.333, "item" : "stickofram"},
@@ -1112,7 +1110,7 @@
   
   "lofty_irisil_fatGleapTreasure" : 
   [
-	[0, {
+	[1, {
       "poolRounds" : [[1.0, 0]],
       "pool" : []
     }]
@@ -1206,6 +1204,7 @@
 			[
 				{"pool" : "lofty_irisil_irisilweapons"},
 				{"item" : [ "lanternstickback", 1]},
+				{"item" : [ "fireflowerpot", 1]},
 				{"pool" : "healingItem"}
 			],
 			"allowDuplication" : false
@@ -1243,7 +1242,7 @@
   ],
   
   "lofty_irisil_bastetdungeon_smashablepots" : [
-    [1, {
+    [0, {
 	  "pool" : [
 		{"weight" : 0.74, "pool" : "smashMoney"},
 		{"weight" : 0.05, "item" : "liquidoil"},
@@ -1258,6 +1257,38 @@
       ],
 	  "allowDuplication" : false
     } ]
+  ],
+  
+  "lofty_irisil_tombyokatTreasure" : [
+    [1, {
+	  "fill" : [
+	    {"item" : [ "bandage", 1]}
+	  ],
+      "pool" : [
+        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "lofty_irisil_tombyokataf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_irisil_tombyokatHunting" : [
+    [1, {
+	  "fill" : [
+	    {"item" : [ "bandage", 1]}
+	  ],
+      "pool" : [
+        {"weight" : 0.599, "item" : "bandage"},
+        {"weight" : 0.400, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "lofty_irisil_tombyokataf"}
+      ],
+      "allowDuplication" : false
+    }]
   ]
   
   //pharaohhead
