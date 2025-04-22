@@ -6,7 +6,7 @@
   "collectablesOnPickup" : { "actionfigures" : "lofty_irisil_tombspookitaf" },
   "price" : 5000,
   "printable" : false,
-  "description" : "The label reads, \"When it closes its eyes it becomes immune to attacks by entering a different plane of existence.\"",
+  "description" : "The label reads, \"These territorial spirits guard long-forgotten tombs from would-be raiders.\"",
   "shortdescription" : "Tomb Spookit Figurine",
 
   "inventoryIcon" : "lofty_irisil_tombspookitaf.png",

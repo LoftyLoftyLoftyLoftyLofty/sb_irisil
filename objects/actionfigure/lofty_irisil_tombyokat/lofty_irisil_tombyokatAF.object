@@ -1,0 +1,34 @@
+{
+  "objectName" : "lofty_irisil_tombyokataf",
+  "colonyTags" : ["egyptian", "lofty_irisil", "pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "lofty_irisil_tombyokataf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"This enbalmed Yokat is still doing the things it did in life - maybe death isn't such a big deal after all.\"",
+  "shortdescription" : "Tomb Yokat Figurine",
+
+
+
+  "inventoryIcon" : "lofty_irisil_tombyokataf.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_tombyokataf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisil_tombyokataf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

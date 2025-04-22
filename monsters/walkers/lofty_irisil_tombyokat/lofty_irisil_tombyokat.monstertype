@@ -1,14 +1,14 @@
 {
-  "type" : "lofty_irisil_tombspookit",
-  "shortdescription" : "Tomb Spookit",
-  "description" : "These territorial spirits guard long-forgotten tombs from would-be raiders.",
+  "type" : "lofty_irisil_tombyokat",
+  "shortdescription" : "Tomb Yokat",
+  "description" : "This enbalmed Yokat is still doing the things it did in life - maybe death isn't such a big deal after all.",
 
-  "categories" : [ "lofty_irisil_tombspookit" ],
+  "categories" : [ "lofty_irisil_tombyokat" ],
   "parts" : [ "body" ],
 
-  "animation" : "lofty_irisil_tombspookit.animation",
+  "animation" : "lofty_irisil_tombyokat.animation",
 
-  "dropPools" : [ { "default" : "lofty_irisil_tombspookitTreasure", "bow" : "lofty_irisil_tombspookitHunting" } ],
+  "dropPools" : [ { "default" : "lofty_irisil_tombyokatTreasure", "bow" : "lofty_irisil_tombyokatHunting" } ],
 
   "baseParameters" : {
     "scripts" : [
@@ -17,59 +17,33 @@
 
     "behavior" : "monster",
 
-    "renderLayer" : "foregroundEntity",
-
     "behaviorConfig" : {
       "damageOnTouch" : true,
 
       "targetQueryRange" : 20,
       "targetOnDamage" : true,
-      "keepTargetInSight" : false,
+      "keepTargetInSight" : true,
       "keepTargetInRange" : 50,
-      "targetOutOfSightTime" : 5.0,
-
-      "hurtTime" : 0.25,
-      "hurtWaitForGround" : false,
-
-      "damageTakenActions" : [
-        {
-          "name" : "action-invulnerable",
-          "parameters" : {
-            "windupTime" : 0,
-            "windupState" : "",
-            "winddownTime" : 0,
-            "winddownState" : "idle",
-
-            "invulnerableTime" : 2
-          }
-        }
-      ],
-
-      // Special hook for behavior during the invulnerable action
-      // If this behavior succeeds, invulnerability ends
-      "invulnerableActions" : [
-        {
-          "name" : "approach-fly",
-          "parameters" : {
-            "usePathfinding" : false,
-            "flyState" : ""
-          }
-        }
-      ],
+      "targetOutOfSightTime" : 2.5,
 
       "foundTargetActions" : [ ],
 
-      "fleeActions" : [ ],
+      "fleeActions" : [],
 
-      "hostileActions" : [ ],
+      "hostileActions" : [],
 
-      "periodicActions" : [ ],
+      "periodicActions" : [],
 
       "approachActions" : [
         {
-          "name" : "approach-fly",
+          "name" : "approach-walk",
           "parameters" : {
-            "usePathfinding" : false
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10
           }
         }
       ],
@@ -81,27 +55,52 @@
           }
         },
         {
-          "name" : "approach-fly",
+          "name" : "approach-walk",
           "parameters" : {
-            "usePathfinding" : false
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10
           }
         }
       ],
 
       "wanderActions" : [
         {
-          "name" : "emerge-fly"
+          "name" : "wander-walk",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "wanderTime" : [5, 15]
+          }
         }
       ],
 
-      "concurrentActions" : [ { "name" : "action-ghostsparkle" } ],
+      "concurrentActions" : [
+        {
+          "name" : "action-animate",
+          "parameters" : {
+            "stateType" : "aggro",
+            "state" : "deaggro"
+          }
+        }
+      ],
 
-      "concurrentHostileActions" : [ { "name" : "action-ghostsparkle" } ]
+      "concurrentHostileActions" : [
+        {
+          "name" : "action-animate",
+          "parameters" : {
+            "stateType" : "aggro",
+            "state" : "aggro"
+          }
+        }
+      ]
     },
 
     "touchDamage" : {
-      "poly" : [ [0.125, 1.25], [0.625, 0.75], [0.625, -0.75], [0.125, -1.25], [-0.125, -1.25], [-0.625, -0.75], [-0.625, 0.75], [-0.125, 1.25] ],
-      "damage" : 8,
+      "poly" : [ [0.4375, 1.625], [0.9375, 1.125], [0.9375, -1.125], [0.4375, -1.625], [-0.4375, -1.625], [-0.9375, -1.125], [-0.9375, 1.125], [-0.4375, 1.625] ],
+      "damage" : 14,
 
       "teamType" : "enemy",
       "damageSourceKind" : "slash",
@@ -113,17 +112,19 @@
     "scale" : 1.0,
 
     "movementSettings" : {
-      "collisionEnabled" : false,
-      "collisionPoly" : [ [0.125, 1.25], [0.625, 0.75], [0.625, -0.75], [0.125, -1.25], [-0.125, -1.25], [-0.625, -0.75], [-0.625, 0.75], [-0.125, 1.25] ],
+      "collisionPoly" : [ [0.4375, 1.625], [0.9375, 1.125], [0.9375, -1.125], [0.4375, -1.625], [-0.4375, -1.625], [-0.9375, -1.125], [-0.9375, 1.125], [-0.4375, 1.625] ],
 
       "mass" : 1.0,
-      "walkSpeed" : 4,
-      "runSpeed" : 12,
-      "gravityEnabled" : false,
+      "walkSpeed" : 3,
+      "runSpeed" : 5,
 
-      "airFriction" : 0.5,
-      "airForce" : 10,
-      "flySpeed" : 8
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 45.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
     },
 
     "bodyMaterialKind" : "organic",
@@ -157,7 +158,7 @@
           "baseValue" : 9
         },
         "maxHealth" : {
-          "baseValue" : 45
+          "baseValue" : 80
         },
         "protection" : {
           "baseValue" : 0.0
@@ -169,7 +170,7 @@
           "baseValue" : 1.0
         },
         "physicalResistance" : {
-          "baseValue" : 0.5
+          "baseValue" : 0.0
         },
         "fireResistance" : {
           "baseValue" : 0.0
@@ -178,16 +179,16 @@
           "baseValue" : 0.0
         },
         "iceResistance" : {
-          "baseValue" : 0.0
+          "baseValue" : -0.5
         },
         "iceStatusImmunity" : {
           "baseValue" : 0.0
         },
         "electricResistance" : {
-          "baseValue" : 0.0
+          "baseValue" : 0.5
         },
         "electricStatusImmunity" : {
-          "baseValue" : 0.0
+          "baseValue" : 1.0
         },
         "poisonResistance" : {
           "baseValue" : 0.0
@@ -215,6 +216,6 @@
     "capturable" : true,
     "captureHealthFraction" : 0.5,
     "nametagColor" : [64, 200, 255],
-    "captureCollectables" : { "monsters" : "lofty_irisil_tombspookit" }
+    "captureCollectables" : { "monsters" : "lofty_irisil_tombyokat" }
   }
 }

@@ -25,5 +25,14 @@
 		"order" : 9003,
 		"item" : "lofty_irisil_tombspookitaf"
 	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/lofty_irisil_tombyokataf",
+	  "value": 		
+	  {
+		"order" : 9004,
+		"item" : "lofty_irisil_tombyokataf"
+	  }
 	}
 ]
