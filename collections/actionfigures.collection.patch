@@ -19,10 +19,19 @@
 	},
 	{
 	  "op": "add", 
-	  "path": "/collectables/lofty_irisil_tombspookitaf",
+	  "path": "/collectables/lofty_irisil_tombbatongaf",
 	  "value": 		
 	  {
 		"order" : 9003,
+		"item" : "lofty_irisil_tombbatongaf"
+	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/lofty_irisil_tombspookitaf",
+	  "value": 		
+	  {
+		"order" : 9004,
 		"item" : "lofty_irisil_tombspookitaf"
 	  }
 	},
@@ -31,7 +40,7 @@
 	  "path": "/collectables/lofty_irisil_tombyokataf",
 	  "value": 		
 	  {
-		"order" : 9004,
+		"order" : 9005,
 		"item" : "lofty_irisil_tombyokataf"
 	  }
 	}

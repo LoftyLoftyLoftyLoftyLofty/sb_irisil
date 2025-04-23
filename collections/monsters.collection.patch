@@ -21,10 +21,20 @@
 	},
 	{
 		"op" : "add",
-		"path" : "/collectables/lofty_irisil_tombspookit",
+		"path" : "/collectables/lofty_irisil_tombbatong",
 		"value" : 
 		{
 		  "order" : 9003,
+		  "monsterType" : "lofty_irisil_tombbatong",
+		  "icon" : "/monsters/ghosts/lofty_irisil_tombbatong/body/lofty_irisil_tombbatong.png:idle.1"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_tombspookit",
+		"value" : 
+		{
+		  "order" : 9004,
 		  "monsterType" : "lofty_irisil_tombspookit",
 		  "icon" : "/monsters/ghosts/lofty_irisil_tombspookit/body/lofty_irisil_tombspookit.png:idle.1"
 		}
@@ -34,7 +44,7 @@
 		"path" : "/collectables/lofty_irisil_tombyokat",
 		"value" : 
 		{
-		  "order" : 9003,
+		  "order" : 9005,
 		  "monsterType" : "lofty_irisil_tombyokat",
 		  "icon" : "/monsters/walkers/lofty_irisil_tombyokat/body/lofty_irisil_tombyokat.png:idle.1"
 		}

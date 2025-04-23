@@ -1,0 +1,21 @@
+{
+  "id" : "lofty_irisil_pyramid1",
+  "title" : "Coming Forth by Day",
+  "description" : "An ancient manuscript explaining afterlife etiquette.",
+  "icon" : "lofty_irisil_pyramid1.png",
+  
+  "contentPages" : [
+"awa
+^#8888CC;>>",
+
+"awawa
+^#8888CC;>>",
+
+"awawawa"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

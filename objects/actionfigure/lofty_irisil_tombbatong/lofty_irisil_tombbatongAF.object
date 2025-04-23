@@ -1,0 +1,34 @@
+{
+  "objectName" : "lofty_irisil_tombbatongaf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "lofty_irisil_tombbatongaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"It's believed that a golden tongue allows the deceased to speak to the gods in the afterlife.\"",
+  "shortdescription" : "Tomb Batong Figurine",
+
+
+
+  "inventoryIcon" : "lofty_irisil_tombbatongaf.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_tombbatongaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisil_tombbatongaf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}

@@ -1289,7 +1289,22 @@
       ],
       "allowDuplication" : false
     }]
-  ]
+  ],
   
-  //pharaohhead
+  "lofty_irisil_bastet_finishpyramidlevel1" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramid1-codex", 1]},
+				{"item" : [ "pharaohhead", 1]},
+				{"item" : [ "fireflowerpot", 1]},
+				{"item" : [ "climbingrope", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ]
 }
