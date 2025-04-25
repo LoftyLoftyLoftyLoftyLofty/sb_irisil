@@ -1,0 +1,84 @@
+//SEE lofty_irisil_villagebuildingspawner.lua FOR DOCUMENTATION
+
+{
+  "objectName" : "lofty_irisil_villagebuildingspawner",
+  "colonyTags" : ["misc"],
+  "rarity" : "Common",
+  "description" : "This village building spawner is used for dynamic town construction.",
+  "shortdescription" : "Village Building Spawner",
+  "race" : "generic",
+  "printable" : false,
+  "category" : "spawner",
+  "price" : 100,
+
+  "inventoryIcon" : "defaulticon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_villagebuildingspawner.png",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ ]
+    }
+  ],
+
+  "scripts" : 
+  [ 
+	"/objects/spawner/spawners/villagebuildingspawner/lofty_irisil_villagebuildingspawner.lua"
+  ],
+  "scriptDelta" : 1,
+  //6000,
+
+  "animation" : "/objects/spawner/spawners/villagebuildingspawner/lofty_irisil_villagebuildingspawner.animation",
+
+  "animationParts" : {
+    "switch" : "lofty_irisil_villagebuildingspawner.png"
+  },
+  "animationPosition" : [-8, 0],
+
+  "inputNodes" : [ ],
+  "outputNodes" : [ ],
+
+  "smashOnBreak" : true,
+  "offscreenOnly" : true,
+  
+  "spawner" : {
+    "searchRadius" : 32.0,
+	
+	"possibleVariations" : 
+	[ 
+		{ 
+			"intendedUsage" : "Hylotl Post Office - any species", 
+			
+			//this is basically wild west for trying to add useful tags for scripts that modify stuff at runtime
+			//be responsible :3
+			
+			"scriptedTargetTags" : 
+				[
+					"faction:lofty_irisil_hylotlpostoffice",
+					"species:any",
+					"friendly"
+				],
+			"npcSpeciesOptions" : 
+				[ 
+					"apex",
+					"avian",
+					"floran",
+					"glitch",
+					"human",
+					"hylotl",
+					"novakid"
+				], 
+			"npcTypeOptions" : 
+				[ 
+					"lofty_irisil_hylotlpostoffice" 
+				], 
+			"npcParameterOptions" : 
+				[], 
+			"npcSeedOptions" : 
+				[]
+		} 
+	]
+  }
+}

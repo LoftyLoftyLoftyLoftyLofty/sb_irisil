@@ -25,16 +25,16 @@
 
   "scripts" : 
   [ 
-	"/objects/spawner/spawners/lofty_irisil_modfriendlynpcspawner.lua",
-	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_neki.lua",
-	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_sirene.lua",
-	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_shizubelle.lua",
-	"/objects/spawner/spawners/lofty_irisil_mfnpcs_hotpatch_postoffice_kyterran.lua"
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_modfriendlynpcspawner.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_neki.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_sirene.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_shizubelle.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_kyterran.lua"
   ],
   "scriptDelta" : 1,
   //6000,
 
-  "animation" : "/objects/spawner/spawners/lofty_irisil_modfriendlynpcspawner.animation",
+  "animation" : "/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_modfriendlynpcspawner.animation",
 
   "animationParts" : {
     "switch" : "lofty_irisil_modfriendlynpcspawner.png"
