@@ -8,7 +8,7 @@
 
   "animation" : "lofty_irisil_tombbatong.animation",
 
-  "dropPools" : [ { "default" : "lofty_irisil_tombbatongTreasure", "bow" : "lofty_irisil_tombbatongHunting" } ],
+  "dropPools" : [ { "default" : "lofty_irisil_tombbatongTreasure", "bow" : "lofty_irisil_tombbatongHunting", "avikanhunting" : "lofty_irisil_tombbatongHunting", "keffridersspear" : "lofty_irisil_tombbatongHunting" } ],
 
   "baseParameters" : {
     "scripts" : [
