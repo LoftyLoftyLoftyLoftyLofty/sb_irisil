@@ -24,6 +24,16 @@
 		[ "ignorePartMaximumRule" ]
       ],
       "def" : [ "tmx", "lofty_irisil_bastetdungeon.json" ]
-    }
+    },
+	
+	{
+	  "name" : "lofty_irisil_bastetdungeon_sublevel_A",
+	  "rules" : [
+	    [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+	  ],
+	  "def" : [ "tmx", "lofty_irisil_bastetdungeon_sublevel_A.json" ],
+	  "chance" : 1
+	}
   ]
 }
