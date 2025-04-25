@@ -1205,7 +1205,8 @@
 				{"pool" : "lofty_irisil_irisilweapons"},
 				{"item" : [ "lanternstickback", 1]},
 				{"item" : [ "fireflowerpot", 1]},
-				{"pool" : "healingItem"}
+				{"pool" : "healingItem"},
+				{"item" : [ "climbingrope", 10]}
 			],
 			"allowDuplication" : false
 		}
@@ -1237,6 +1238,7 @@
         [0.6, 0],
         [0.4, 1]
       ],
+	  //duplication doesn't technically matter for this loot pool - vanilla spookits disallow it
       "allowDuplication" : false
     } ]
   ],
@@ -1259,13 +1261,34 @@
     } ]
   ],
   
+  "lofty_irisil_bastetdungeon_smashablepots_augment" : [
+    [0, {
+	  "fill" : [
+	    {"pool" : "augments"}
+	  ],
+	  "pool" : [
+		{"weight" : 0.74, "pool" : "smashMoney"},
+		{"weight" : 0.05, "item" : "liquidoil"},
+		{"weight" : 0.05, "item" : "bandage"},
+		{"weight" : 0.05, "item" : "fabric"},
+		{"weight" : 0.05, "item" : "plantfibre"},
+		{"weight" : 0.01, "item" : "capturepod"}
+	  ],
+	  "poolRounds" : [
+        [0.6, 0],
+        [0.4, 1]
+      ],
+	  "allowDuplication" : false
+    } ]
+  ],
+  
   "lofty_irisil_tombyokatTreasure" : [
     [1, {
 	  "fill" : [
 	    {"item" : [ "bandage", 1]}
 	  ],
       "pool" : [
-        {"weight" : 0.799, "pool" : "basicMonsterTreasure"},
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
         {"weight" : 0.200, "item" : "sharpenedclaw"},
         {"weight" : 0.001, "item" : "lofty_irisil_tombyokataf"}
       ],
@@ -1287,7 +1310,12 @@
         {"weight" : 0.400, "item" : "sharpenedclaw"},
         {"weight" : 0.001, "item" : "lofty_irisil_tombyokataf"}
       ],
-      "allowDuplication" : false
+	  
+	  //vanilla yokats disallow duplication in this treasure pool because it always drops items,
+	  //but it doesn't matter because it only rolls once and all items are unique.
+	  //dropping 2 bandages instead of 1 bandage while hunting is fine though
+	  
+	  "allowDuplication" : true
     }]
   ],
   
@@ -1301,10 +1329,45 @@
 				{"item" : [ "lofty_irisil_pyramid1-codex", 1]},
 				{"item" : [ "pharaohhead", 1]},
 				{"item" : [ "fireflowerpot", 1]},
-				{"item" : [ "climbingrope", 1]}
+				{"item" : [ "climbingrope", 10]}
 			],
 			"allowDuplication" : false
 		}
 	]
+  ],
+  
+  "lofty_irisil_tombbatongTreasure" : [
+    [1, {
+	  "fill" : [
+	    {"item" : [ "bandage", 1]}
+	  ],
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.200, "item" : "leather"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_irisil_tombbatongHunting" : [
+    [1, {
+	  "fill" : [
+	    {"item" : [ "bandage", 1]}
+	  ],
+      "pool" : [
+        {"weight" : 0.599, "item" : "bandage"},
+        {"weight" : 0.400, "item" : "leather"},
+        {"weight" : 0.001, "item" : "batongaf"}
+      ],
+	  
+	  //same as tomb yokat pool, dropping 2 bandages occasionally instead of 1 is fine
+	  
+	  "allowDuplication" : true
+    }]
   ]
 }
