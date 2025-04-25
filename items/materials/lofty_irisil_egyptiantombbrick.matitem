@@ -10,7 +10,7 @@
   "florandescription" : "Dusssty old bricks.",
   "novakiddescription" : "Just some ol' dusty bricks.",
 
-  "materialId" : 3802,
+  "materialId" : 58702,
   "learnBlueprintsOnPickup" : [ "lofty_irisil_egyptiantombbrick" ]
 }
 

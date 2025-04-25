@@ -1,6 +1,6 @@
 {
-  "materialId" : 58702,
-  "materialName" : "lofty_irisil_egyptiantombbrick",
+  "materialId" : 58704,
+  "materialName" : "lofty_irisil_prepainted_egyptiantombbrick_gold",
   "particleColor" : [124, 120, 154, 255],
   "itemDrop" : "lofty_irisil_egyptiantombbrick",
   "shortdescription" : "Tomb Brick",
@@ -14,7 +14,7 @@
 
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
-    "texture" : "lofty_irisil_egyptiantombbrick.png",
+    "texture" : "lofty_irisil_prepainted_egyptiantombbrick_gold.png",
     "variants" : 25,
     "lightTransparent" : false,
     "occludesBelow" : true,

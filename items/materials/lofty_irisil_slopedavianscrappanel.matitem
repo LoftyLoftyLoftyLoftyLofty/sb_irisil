@@ -10,6 +10,6 @@
   "florandescription" : "Metal sssso russty, Floran wouldn't even ussse it.",
   "novakiddescription" : "This metal panel is just a buncha rusted scrap.",
 
-  "materialId" : 3803,
+  "materialId" : 58703,
   "learnBlueprintsOnPickup" : [ "lofty_irisil_slopedavianscrappanel" ]
 }
