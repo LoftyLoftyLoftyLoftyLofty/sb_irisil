@@ -1369,5 +1369,13 @@
 	  
 	  "allowDuplication" : true
     }]
+  ],
+  
+  "lofty_irisil_tombmooshiHarvest" : [
+    [1, {
+      "fill" : [
+	    {"item" : [ "bandage", 1]}
+	  ]
+    } ]
   ]
 }

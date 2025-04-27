@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_tombmooshi",
+  "category" : "lofty_irisil_tombmooshi",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

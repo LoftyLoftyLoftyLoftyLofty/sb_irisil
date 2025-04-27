@@ -1,4 +1,10 @@
 [
+  {
+    "op" : "add",
+	"path" : "/lofty_irisil",
+	"value" : {}
+  },
+  
   //Irisil Den @ eyepatch
   { 
 	"op" : "add",
@@ -10,6 +16,7 @@
 		"range" : 1600
 	  }
   },
+  
   //Irisil Den @ Glitch Dungeon Crawler
   { 
 	"op" : "add",
@@ -21,6 +28,7 @@
 		"range" : 1600
 	  }
   },
+  
   //ALPACA HOUSE ALPACA HOUSE ALPACA HOUSE
   { 
 	"op" : "add",
@@ -48,6 +56,20 @@
 	"value" : 
 	  {
 		"name" : "hearth in the Alpaca longhouse",
+		"tags" : [ "generic", "friendly", "largespace" ],
+		"range" : 1600
+	  }
+  },
+  
+  //Bastet Pyramid
+  
+  
+  { 
+	"op" : "add",
+	"path" : "/lofty_irisil/lofty_irisil_bastet_entrance",
+	"value" : 
+	  {
+		"name" : "entrance of the Grand Pyramid",
 		"tags" : [ "generic", "friendly", "largespace" ],
 		"range" : 1600
 	  }
