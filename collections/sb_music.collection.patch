@@ -1,0 +1,12 @@
+[
+	{
+		"op" : "add",
+		"path" : "/collectables/big_ape_and_the_miniknog_boyz_new_hit_sginle",
+		"value" : { 
+			"description": "Big Vape", 
+			"icon": "/sfx/objects/big_ape_and_the_miniknog_boyz_new_hit_sginle.ogg", 
+			"title": "Big Vape & the Miniknog Boyz", 
+			"special": true 
+		}
+	}
+]
