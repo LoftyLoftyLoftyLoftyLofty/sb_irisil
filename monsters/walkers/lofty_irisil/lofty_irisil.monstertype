@@ -9,7 +9,29 @@
   "animation" : "lofty_irisil.animation",
 
   //include support for the avikan hunting drop pools
-  "dropPools" : [ { "default" : "lofty_irisilTreasure", "bow" : "lofty_irisilHunting", "avikanhunting" : "lofty_irisilHunting", "keffridersspear" : "lofty_irisilHunting" } ],
+  "dropPools" : [ 
+    { 
+	  "default" : "lofty_irisilTreasure", 
+	  "bow" : "lofty_irisilHunting", 
+	  "avikanhunting" : "lofty_irisilHunting", 
+	  "keffridersspear" : "lofty_irisilHunting", 
+	  
+	  // There isn't really a need for crispy loot tables for irisil because they don't drop alien meat
+	  
+	  // "fire" : "lofty_irisil_crispyTreasure",
+	  // "firebarrier" : "lofty_irisil_crispyTreasure",
+	  // "firebroadsword" : "lofty_irisil_crispyTreasure",
+	  // "firedagger" : "lofty_irisil_crispyTreasure",
+	  // "firehammer" : "lofty_irisil_crispyTreasure",
+	  // "firespear" : "lofty_irisil_crispyTreasure",
+	  // "flamethrower" : "lofty_irisil_crispyTreasure",
+	  // "fireplasmashotgun" : "lofty_irisil_crispyTreasure",
+	  // "fireplasma" : "lofty_irisil_crispyTreasure",
+	  // "fireplasmabullet" : "lofty_irisil_crispyTreasure",
+	  
+	  "firebow" : "lofty_irisilHunting"
+	} 
+  ],
 
   "baseParameters" : {
     "scripts" : [
