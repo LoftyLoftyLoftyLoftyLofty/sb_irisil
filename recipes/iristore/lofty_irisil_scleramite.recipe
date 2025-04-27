@@ -1,7 +1,6 @@
 {
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
-	{ "item" : "larvahead", "count" : 1 },
 	{ "item" : "scuttleploom", "count" : 1 },
 	{ "item" : "flameroach", "count" : 1 }
   ],

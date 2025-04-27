@@ -1,7 +1,6 @@
 {
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
-	{ "item" : "lagoonhead", "count" : 1 },
 	{ "item" : "fairylights", "count" : 1 },
 	{ "item" : "bookpiles", "count" : 1 }
   ],

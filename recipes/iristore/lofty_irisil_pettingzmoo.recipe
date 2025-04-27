@@ -2,7 +2,6 @@
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
 	{ "item" : "frontierpainting3", "count" : 1 },
-	{ "item" : "mooshiegg", "count" : 1 },
 	{ "item" : "lofty_irisil_exoticanimalsgoods", "count" : 1 }
   ],
   "output" : {

@@ -1,0 +1,13 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+    { "item" : "apexbustmale", "count" : 1 },
+	{ "item" : "apexrecordplayer", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_apexrecordplayer",
+    "count" : 1
+  },
+  
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_decor_misc" ]
+}

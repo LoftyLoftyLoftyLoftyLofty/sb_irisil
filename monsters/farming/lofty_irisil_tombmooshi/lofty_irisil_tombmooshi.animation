@@ -175,6 +175,6 @@
 
   "sounds" : {
     "deathPuff" : [ "/sfx/npc/enemydeathpuff.ogg" ],
-    "harvest" : [ "/sfx/npc/monsters/mooshi_harvest1.ogg", "/sfx/npc/monsters/mooshi_harvest2.ogg", "/sfx/npc/monsters/mooshi_harvest3.ogg" ]
+    "harvest" : [ "/sfx/npc/monsters/lofty_irisil_tombmooshi_harvest1.ogg", "/sfx/npc/monsters/lofty_irisil_tombmooshi_harvest2.ogg", "/sfx/npc/monsters/lofty_irisil_tombmooshi_harvest3.ogg" ]
   }
 }
