@@ -71,6 +71,5 @@
   "defaultLightState" : false,
 
   "soundEffect" : "/sfx/objects/big_ape_and_the_miniknog_boyz_new_hit_sginle.ogg",
-  "soundEffectRangeMultiplier" : 1.0,
-  "collectablesOnPickup" : { "sb_music" : "big_ape_and_the_miniknog_boyz_new_hit_sginle" }
+  "soundEffectRangeMultiplier" : 1.0
 }
