@@ -1326,10 +1326,38 @@
 		{
 			"fill" : 
 			[
-				{"item" : [ "lofty_irisil_pyramid1-codex", 1]},
+				{"item" : [ "lofty_irisil_pyramidlore1-codex", 1]},
 				{"item" : [ "pharaohhead", 1]},
 				{"item" : [ "fireflowerpot", 1]},
 				{"item" : [ "climbingrope", 10]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_bastet_traplore1" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramidtrap1-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_bastet_traplore2" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramidtrap2-codex", 1]}
 			],
 			"allowDuplication" : false
 		}

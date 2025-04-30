@@ -1,0 +1,45 @@
+{
+  "id" : "lofty_irisil_pyramidtrap2",
+  "title" : "Effective Trap Design (Part 2)",
+  "description" : "Chapters about boulder traps, spike pits, and other dangerous surprises.",
+  "icon" : "lofty_irisil_pyramidtrap2.png",
+  
+  "contentPages" : [
+"^yellow;Chapter 2: Simple Traps^reset;
+
+Spike pits are tools that allow you to control where intruders are standing while they visit your home, crypt, etc.
+
+In many cases, spikes alone are more than enough to handle uninvited guests, but pointy objects work best in the roles of intimidation and zoning! It is better to consider the spike pit as a gentle guiding force that sets your other traps up for success.
+
+^#8888CC;>>",
+
+"^yellow;Chapter 2: Simple Traps^reset;
+
+Boulder traps are effective and elegant additions to anyone's lair. Falling stones appeal to a simpler time, and really bring back the rustic vibes of the traps of antiquity. Well-placed rocks are always in vogue!
+
+More importantly, these traps work well together with spikes - an intruder will often focus their attention on avoiding spikes, which leaves them vulnerable to falling objects!
+^#8888CC;>>",
+
+"^yellow;Chapter 2: Simple Traps^reset;
+
+Fluids like ^#5500aa;oil^reset; and ^green;slime^reset; are also simple and deadly.
+
+By themselves, these substances can suffocate intruders or slow their movements- but these fluids' properties also greatly increase the effectiveness of other traps!
+
+Running away from a rolling boulder is much more difficult for someone covered in viscous oil or sticky slime.
+^#8888CC;>>",
+
+"^yellow;Chapter 2: Simple Traps^reset;
+
+Shallow pools of just about any fluid can also be used to conceal pressure plates - the last type of simple trap we'll be covering in this chapter.
+
+Adding just enough fluid to submerge a switch can help you hide your traps in plain sight. Your visitors aren't going to check to make sure the oil is safe before they step in it.
+
+Pressure plates also work well when positioned on shelves or walls!"
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

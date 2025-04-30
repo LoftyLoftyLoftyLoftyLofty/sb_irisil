@@ -1,0 +1,61 @@
+{
+  "id" : "lofty_irisil_pyramidtrap1",
+  "title" : "Effective Trap Design (Part 1)",
+  "description" : "Reimagine your crypt defense system!",
+  "icon" : "lofty_irisil_pyramidtrap1.png",
+  
+  "contentPages" : [
+"^yellow;Introduction:^reset;
+
+Maybe you're looking to prevent bandits from stealing your valuables.
+Maybe you're looking for a little bit more security and peace of mind-
+...Or perhaps, like me, you simply enjoy adding new visitors to your growing ^yellow;mummy collection^reset;.
+
+No matter what your motivations are, it's important to have trap systems that get consistent results!
+
+^#8888CC;>>",
+
+"^yellow;Introduction:^reset;
+
+This guide covers the basic fundamentals of design, installation, and testing for many of the most popular types of traps on the market.
+
+As you work through each chapter, you'll learn to get the most out of every hidden surprise, as well as how to ^green;share these joyful moments^reset; with intruders in a way that lets them appreciate the intricacies of their engineered demise!
+^#8888CC;>>",
+
+"^yellow;Chapter 1: The Basics^reset;
+
+^green;Be an artist.^reset;
+
+Every good trap begins with the right inspiration. ^red;Do you like to hurt people? 
+^reset;Think about your favorite ways to do that as you work through this guide. 
+
+Let those inspirations flow into your design as you bring your traps to life- figuratively and literally!
+
+^#8888CC;>>",
+
+"^yellow;Chapter 1: The Basics^reset;
+
+^green;You're in control, ^red;but nobody else needs to know that.^reset;
+
+One of the biggest secrets to trap design is allowing your intruders to feel like they're in control.
+
+Careful planning can lull interlopers into a false sense of security, which is perfect for luring them right to where you want them!
+
+^#8888CC;>>",
+
+"^yellow;Chapter 1: The Basics^reset;
+
+^green;Use the right bait.^reset;
+
+Consistently attracting victims to your traps requires good bait. Think about which kinds of bait work for you and which kinds of visitors it can attract.
+
+For example, bandits love pixels, but you can attract ^red;powerful monsters^reset; by using those same bandits as bait!
+
+It's important to experiment to find the right bait that works for you."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}
