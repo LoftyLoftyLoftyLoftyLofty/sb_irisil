@@ -39,7 +39,13 @@ end
 lofty_irisil_enableDebug = true
 function yeek(n, s)
 	if lofty_irisil_enableDebug then
-		sb.logInfo(n .. " -> " .. s)
+		if s then
+			sb.logInfo(n .. " -> " .. s)
+		elseif n then
+			sb.logInfo(n);
+		else 
+			sb.logInfo("Yeek!")
+		end
 	end
 end
 
