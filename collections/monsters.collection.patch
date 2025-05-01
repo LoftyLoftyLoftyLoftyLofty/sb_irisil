@@ -26,8 +26,14 @@
 		{
 		  "order" : 9003,
 		  "monsterType" : "lofty_irisil_tombbatong",
-		  "icon" : "/monsters/ghosts/lofty_irisil_tombbatong/body/lofty_irisil_tombbatong.png:idle.1"
+		  "icon" : "/monsters/flyers/lofty_irisil_tombbatong/body/lofty_irisil_tombbatong.png:fly.1"
 		}
+	},
+	//fix this because the idle animation isn't really recognizable when silhouetted
+	{
+		"op" : "replace",
+		"path" : "/collectables/batong/icon",
+		"value" : "/monsters/flyers/batong/body/batong.png:fly.1"
 	},
 	{
 		"op" : "add",
