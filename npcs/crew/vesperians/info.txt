@@ -1,0 +1,4 @@
+These crew member types exist to allow Hylotl Post Office NPCs to be recruited by the player.
+Vesperians require special uniform adjustments to display properly as crew members.
+If you don't use the Vesperians mod, spawning these crew member types won't work.
+https://steamcommunity.com/sharedfiles/filedetails/?id=3334911053

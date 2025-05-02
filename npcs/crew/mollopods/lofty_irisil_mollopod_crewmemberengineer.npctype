@@ -1,6 +1,6 @@
 {
   "type" : "lofty_irisil_mollopod_crewmemberengineer",
-  "baseType" : "crewmember",
+  "baseType" : "lofty_irisil_mollopod_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {

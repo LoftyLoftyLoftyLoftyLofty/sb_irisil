@@ -1,6 +1,6 @@
 {
   "type" : "lofty_irisil_mollopod_crewmembermechanic",
-  "baseType" : "crewmember",
+  "baseType" : "lofty_irisil_mollopod_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -35,7 +35,7 @@
         "roleDescription" : {
           "default" : {
             "default" : [
-              "I'll keep clearing out the carborator while I'm here. Fuel efficiency is up 10%!"
+              "I'll keep clearing out the carburetor while I'm here. Fuel efficiency is up 10%!"
             ]
           }
         }

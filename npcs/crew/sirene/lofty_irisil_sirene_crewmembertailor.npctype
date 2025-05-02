@@ -1,6 +1,6 @@
 {
   "type" : "lofty_irisil_sirene_crewmembertailor",
-  "baseType" : "crewmember",
+  "baseType" : "lofty_irisil_sirene_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {

@@ -1,6 +1,6 @@
 {
-  "type" : "lofty_irisil_sirene_crewmemberjanitor",
-  "baseType" : "lofty_irisil_sirene_crewmember",
+  "type" : "lofty_irisil_lamia_crewmemberjanitor",
+  "baseType" : "lofty_irisil_lamia_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {

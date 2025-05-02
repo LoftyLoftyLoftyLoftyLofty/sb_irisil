@@ -1,6 +1,6 @@
 {
-  "type" : "lofty_irisil_sirene_crewmembermechanic",
-  "baseType" : "lofty_irisil_sirene_crewmember",
+  "type" : "lofty_irisil_vesperian_crewmembermechanic",
+  "baseType" : "lofty_irisil_vesperian_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -12,7 +12,7 @@
         "type" : "mechanic",
         "name" : "Mechanic",
         "field" : "Technical",
-        "uniformColorIndex" : 8,
+        "uniformColorIndex" : 0,
 
         "benefits" : [
           {
@@ -25,8 +25,8 @@
 	  
 	  "defaultUniform" : {
 	    "head" : "lofty_irisil_sirenemaskhead",
-        "chest" : "protectoratechest",
-        "legs" : "lofty_irisil_sirenecompatibilitylegs"
+        "chest" : "vesperianarmor61chest",
+        "legs" : "vesperianarmor53pants"
       }
     },
 
@@ -47,8 +47,8 @@
     "default" : [
       [0, [
           {
-            "chest" : [ { "name" : "protectoratechest" } ],
-            "legs" : [ { "name" : "lofty_irisil_sirenecompatibilitylegs" } ],
+            "chest" : [ { "name" : "vesperianarmor61chest" } ],
+            "legs" : [ { "name" : "vesperianarmor53pants" } ],
             "primary" : [ "npcwrench" ]
           }
         ] ]

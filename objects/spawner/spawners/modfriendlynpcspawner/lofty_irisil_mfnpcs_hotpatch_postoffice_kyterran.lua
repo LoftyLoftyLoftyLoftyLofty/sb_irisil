@@ -120,7 +120,18 @@ function finalResultScriptHook(args)
 			args.fnpcParameter.scriptConfig = root.assetJson("/npcs/dungeon/hylotloceancity/lofty_irisil_hylotlpostoffice.npctype").scriptConfig
 			
 			--patch outfit changes into the .npctype file
-		
+			
+			--update their crew graduation possibilities to use the neki ones
+			args.fnpcParameter.scriptConfig.questGenerator.graduation.nextNpcType = 
+			{
+				--allow soldier promotion for Kyterrans because it's lore friendly
+				{0.5, "lofty_irisil_kyterran_crewmember"},
+				
+				{0.5, "lofty_irisil_kyterran_crewmemberengineer"},
+				{0.5, "lofty_irisil_kyterran_crewmemberjanitor"},
+				{0.5, "lofty_irisil_kyterran_crewmembermechanic"},
+				{0.5, "lofty_irisil_kyterran_crewmembertailor"}
+			}
 		end
 		
 	end

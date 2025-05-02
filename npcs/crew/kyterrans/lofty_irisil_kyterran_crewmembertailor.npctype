@@ -1,6 +1,6 @@
 {
-  "type" : "lofty_irisil_mollopod_crewmembertailor",
-  "baseType" : "lofty_irisil_mollopod_crewmember",
+  "type" : "lofty_irisil_kyterran_crewmembertailor",
+  "baseType" : "lofty_irisil_kyterran_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -24,9 +24,9 @@
       },
 	  
 	  "defaultUniform" : {
-	    "head" : "lofty_irisil_sirenemaskhead",
-        "chest" : "protectoratechest",
-        "legs" : "mollopodoutfit1legs"
+	    "head" : "saturnnull",
+        "chest" : "kyterran_Protectoratechest",
+        "legs" : "kyterran_Protectoratelegs"
       }
     },
 
@@ -58,8 +58,8 @@
     "default" : [
       [0, [
           {
-            "chest" : [ { "name" : "protectoratechest" } ],
-            "legs" : [ { "name" : "mollopodoutfit1legs" } ],
+            "chest" : [ { "name" : "kyterran_Protectoratechest" } ],
+            "legs" : [ { "name" : "kyterran_Protectoratelegs" } ],
             //"primary" : ["flowerbouquet"]
             "sheathedprimary" : [ "npcpistol", "npcshortsword" ]
           }

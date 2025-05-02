@@ -1,6 +1,6 @@
 {
-  "type" : "lofty_irisil_mollopod_crewmembertailor",
-  "baseType" : "lofty_irisil_mollopod_crewmember",
+  "type" : "lofty_irisil_vesperian_crewmembertailor",
+  "baseType" : "lofty_irisil_vesperian_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -25,8 +25,8 @@
 	  
 	  "defaultUniform" : {
 	    "head" : "lofty_irisil_sirenemaskhead",
-        "chest" : "protectoratechest",
-        "legs" : "mollopodoutfit1legs"
+        "chest" : "vesperianarmor61chest",
+        "legs" : "vesperianarmor52pants"
       }
     },
 
@@ -58,8 +58,8 @@
     "default" : [
       [0, [
           {
-            "chest" : [ { "name" : "protectoratechest" } ],
-            "legs" : [ { "name" : "mollopodoutfit1legs" } ],
+            "chest" : [ { "name" : "vesperianarmor61chest" } ],
+            "legs" : [ { "name" : "vesperianarmor52pants" } ],
             //"primary" : ["flowerbouquet"]
             "sheathedprimary" : [ "npcpistol", "npcshortsword" ]
           }

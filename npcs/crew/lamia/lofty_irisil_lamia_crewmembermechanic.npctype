@@ -1,18 +1,26 @@
 {
-  "type" : "lofty_irisil_sirene_crewmemberjanitor",
-  "baseType" : "lofty_irisil_sirene_crewmember",
+  "type" : "lofty_irisil_lamia_crewmembermechanic",
+  "baseType" : "lofty_irisil_lamia_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
-      "emptyHands" : true
+      "emptyHands" : false
     },
 
     "crew" : {
       "role" : {
-        "type" : "janitor",
-        "name" : "Janitor",
-        "field" : "Cleanliness",
-        "uniformColorIndex" : 11
+        "type" : "mechanic",
+        "name" : "Mechanic",
+        "field" : "Technical",
+        "uniformColorIndex" : 8,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "fuelEfficiency",
+            "value" : 0.1
+          }
+        ]
       },
 	  
 	  "defaultUniform" : {
@@ -27,8 +35,7 @@
         "roleDescription" : {
           "default" : {
             "default" : [
-              "I'm <selfname>... The janitor.",
-              "The name's <selfname>... The janitor."
+              "I'll keep clearing out the carburetor while I'm here. Fuel efficiency is up 10%!"
             ]
           }
         }
@@ -42,8 +49,7 @@
           {
             "chest" : [ { "name" : "protectoratechest" } ],
             "legs" : [ { "name" : "lofty_irisil_sirenecompatibilitylegs" } ],
-            "primary" : [ "broom" ],
-            "sheathedprimary" : [ "npcassaultrifle", "npcdagger" ]
+            "primary" : [ "npcwrench" ]
           }
         ] ]
     ]

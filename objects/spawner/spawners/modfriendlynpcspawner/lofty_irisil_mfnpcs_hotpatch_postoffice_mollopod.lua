@@ -122,7 +122,7 @@ function finalResultScriptHook(args)
 			--set crew member advancement to mollopod outfits
 			args.fnpcParameter.scriptConfig.questGenerator.graduation.nextNpcType = 
 			{
-				{0.5, "lofty_irisil_mollopod_crewmember"},
+				--{0.5, "lofty_irisil_mollopod_crewmember"},
 				{0.5, "lofty_irisil_mollopod_crewmemberengineer"},
 				{0.5, "lofty_irisil_mollopod_crewmemberjanitor"},
 				{0.5, "lofty_irisil_mollopod_crewmembertailor"},

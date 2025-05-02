@@ -1,6 +1,6 @@
 {
-  "type" : "lofty_irisil_sirene_crewmemberjanitor",
-  "baseType" : "lofty_irisil_sirene_crewmember",
+  "type" : "lofty_irisil_vesperian_crewmemberjanitor",
+  "baseType" : "lofty_irisil_vesperian_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -12,13 +12,13 @@
         "type" : "janitor",
         "name" : "Janitor",
         "field" : "Cleanliness",
-        "uniformColorIndex" : 11
+        "uniformColorIndex" : 0
       },
 	  
 	  "defaultUniform" : {
 	    "head" : "lofty_irisil_sirenemaskhead",
-        "chest" : "protectoratechest",
-        "legs" : "lofty_irisil_sirenecompatibilitylegs"
+        "chest" : "vesperianarmor61chest",
+        "legs" : "vesperianarmor52pants"
       }
     },
 
@@ -40,8 +40,8 @@
     "default" : [
       [0, [
           {
-            "chest" : [ { "name" : "protectoratechest" } ],
-            "legs" : [ { "name" : "lofty_irisil_sirenecompatibilitylegs" } ],
+            "chest" : [ { "name" : "vesperianarmor61chest" } ],
+            "legs" : [ { "name" : "vesperianarmor52pants" } ],
             "primary" : [ "broom" ],
             "sheathedprimary" : [ "npcassaultrifle", "npcdagger" ]
           }

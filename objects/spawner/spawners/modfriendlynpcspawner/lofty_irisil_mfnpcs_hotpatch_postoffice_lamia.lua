@@ -31,8 +31,8 @@ function possibleVariationsScriptHook(args)
 	--run the (original or modified by someone else) script hook chain for this func
 	args = oldPossibleVariationsScriptHook(args)
 	
-	--we assume that if there is a vesperian flag, the vesperian race is installed
-	if liu_itemExists("flagvesperian") then
+	--we assume that if we have lamia fancy bed (they don't have a flag I guess), lamia race is installed
+	if liu_itemExists("lamiafancybed") then
 		
 		--go through all of the possible variations this spawner can produce
 		for _, variation in pairs(args) do
@@ -40,14 +40,14 @@ function possibleVariationsScriptHook(args)
 			--look at the scripted tags for the variation
 			for __, tag in pairs(variation.scriptedTargetTags) do
 			
-				--if the tag is species:any, add vesperian
+				--if the tag is species:any, add lamia
 				if tag == "species:any" then
 				
-					--don't put vesperian in the list twice
-					if tableContains( variation.npcSpeciesOptions, "vesperian" ) == false then
+					--don't put lamia in the list twice
+					if tableContains( variation.npcSpeciesOptions, "lamia" ) == false then
 					
-						table.insert( variation.npcSpeciesOptions, "vesperian" )
-						--variation.npcSpeciesOptions = { "vesperian" }
+						table.insert( variation.npcSpeciesOptions, "lamia" )
+						--variation.npcSpeciesOptions = { "lamia" }
 					
 					end
 					
@@ -55,16 +55,16 @@ function possibleVariationsScriptHook(args)
 			
 				--the useVariantIfRaceInstalled is intended for spawner variants that only use the specific race
 			
-				--if the tag is useVariantIfRaceInstalled:vesperian, adjust the variant
-				if tag == "useVariantIfRaceInstalled:vesperian" then
+				--if the tag is useVariantIfRaceInstalled:lamia, adjust the variant
+				if tag == "useVariantIfRaceInstalled:lamia" then
 				
-					--don't put vesperian in the list twice
-					if tableContains( variation.npcSpeciesOptions, "vesperian" ) == false then
+					--don't put lamia in the list twice
+					if tableContains( variation.npcSpeciesOptions, "lamia" ) == false then
 					
-						--table.insert( variation.npcSpeciesOptions, "vesperian" )
+						--table.insert( variation.npcSpeciesOptions, "lamia" )
 						
-						--swap out "notInstalled" for "vesperian" so the spawner has a valid race to use
-						variation.npcSpeciesOptions = { "vesperian" }
+						--swap out "notInstalled" for "lamia" so the spawner has a valid race to use
+						variation.npcSpeciesOptions = { "lamia" }
 					
 					end
 					
@@ -108,8 +108,8 @@ function finalResultScriptHook(args)
 	--if we are spawning a post office employee
 	if args.fnpcType == "lofty_irisil_hylotlpostoffice" then
 	
-		--and it's a kyterran
-		if args.fnpcSpecies == "vesperian" then
+		--and it's a lamia
+		if args.fnpcSpecies == "lamia" then
 		
 			--nil params, load defaults
 			if args.fnpcParameter == nil then
@@ -119,16 +119,15 @@ function finalResultScriptHook(args)
 			--plug in the script config from the hylotl post office template
 			args.fnpcParameter.scriptConfig = root.assetJson("/npcs/dungeon/hylotloceancity/lofty_irisil_hylotlpostoffice.npctype").scriptConfig
 			
-			--patch outfit changes into the .npctype file
-			
-			--set crew member advancement to sirene outfits
+			--set crew member advancement to lamia outfits
 			args.fnpcParameter.scriptConfig.questGenerator.graduation.nextNpcType = 
 			{
-				--{0.5, "lofty_irisil_sirene_crewmember"},
-				{0.5, "lofty_irisil_vesperian_crewmemberengineer"},
-				{0.5, "lofty_irisil_vesperian_crewmemberjanitor"},
-				{0.5, "lofty_irisil_vesperian_crewmembertailor"},
-				{0.5, "lofty_irisil_vesperian_crewmembermechanic"}
+				--unlike sirene, it's appropriate for lamiae to promote to soldier
+				{0.5, "lofty_irisil_lamia_crewmember"},
+				{0.5, "lofty_irisil_lamia_crewmemberengineer"},
+				{0.5, "lofty_irisil_lamia_crewmemberjanitor"},
+				{0.5, "lofty_irisil_lamia_crewmembertailor"},
+				{0.5, "lofty_irisil_lamia_crewmembermechanic"}
 			}
 		end
 		

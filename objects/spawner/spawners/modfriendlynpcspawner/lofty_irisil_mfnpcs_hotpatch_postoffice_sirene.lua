@@ -122,7 +122,7 @@ function finalResultScriptHook(args)
 			--set crew member advancement to sirene outfits
 			args.fnpcParameter.scriptConfig.questGenerator.graduation.nextNpcType = 
 			{
-				{0.5, "lofty_irisil_sirene_crewmember"},
+				--{0.5, "lofty_irisil_sirene_crewmember"},
 				{0.5, "lofty_irisil_sirene_crewmemberengineer"},
 				{0.5, "lofty_irisil_sirene_crewmemberjanitor"},
 				{0.5, "lofty_irisil_sirene_crewmembertailor"},

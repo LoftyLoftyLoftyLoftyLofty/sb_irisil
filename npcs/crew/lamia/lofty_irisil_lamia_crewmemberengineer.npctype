@@ -1,6 +1,6 @@
 {
-  "type" : "lofty_irisil_sirene_crewmemberjanitor",
-  "baseType" : "lofty_irisil_sirene_crewmember",
+  "type" : "lofty_irisil_lamia_crewmemberengineer",
+  "baseType" : "lofty_irisil_lamia_crewmember",
 
   "scriptConfig" : {
     "behaviorConfig" : {
@@ -9,10 +9,18 @@
 
     "crew" : {
       "role" : {
-        "type" : "janitor",
-        "name" : "Janitor",
-        "field" : "Cleanliness",
-        "uniformColorIndex" : 11
+        "type" : "engineer",
+        "name" : "Engineer",
+        "field" : "Engineering",
+        "uniformColorIndex" : 5,
+
+        "benefits" : [
+          {
+            "type" : "ShipUpgradeBenefit",
+            "property" : "shipSpeed",
+            "value" : 3.75
+          }
+        ]
       },
 	  
 	  "defaultUniform" : {
@@ -27,8 +35,7 @@
         "roleDescription" : {
           "default" : {
             "default" : [
-              "I'm <selfname>... The janitor.",
-              "The name's <selfname>... The janitor."
+              "I'll keep your engines in good shape. Thrust velocity is up by 25%!"
             ]
           }
         }
@@ -42,8 +49,7 @@
           {
             "chest" : [ { "name" : "protectoratechest" } ],
             "legs" : [ { "name" : "lofty_irisil_sirenecompatibilitylegs" } ],
-            "primary" : [ "broom" ],
-            "sheathedprimary" : [ "npcassaultrifle", "npcdagger" ]
+            "sheathedprimary" : [ "npcpistol", "npcshortsword" ]
           }
         ] ]
     ]
