@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_enbalmedbunny",
+  "category" : "lofty_irisil_enbalmedbunny",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_enbalmedbunny.png"
+  }
+}
