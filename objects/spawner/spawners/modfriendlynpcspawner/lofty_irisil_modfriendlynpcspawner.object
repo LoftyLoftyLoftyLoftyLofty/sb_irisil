@@ -29,7 +29,12 @@
 	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_neki.lua",
 	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_sirene.lua",
 	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_shizubelle.lua",
-	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_kyterran.lua"
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_kyterran.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_vesperian.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_spaceskunks.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_renamon.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_lamia.lua",
+	"/objects/spawner/spawners/modfriendlynpcspawner/lofty_irisil_mfnpcs_hotpatch_postoffice_burmecian.lua"
   ],
   "scriptDelta" : 1,
   //6000,
