@@ -1027,6 +1027,12 @@
 		{"weight" : 0.0125, "item" : [ "locker1" ]},
 		{"weight" : 0.0125, "item" : [ "locker2" ]},
 		{"weight" : 0.0125, "item" : [ "index" ]},
+		
+		{"weight" : 0.00625, "item" : [ "present1" ]},
+		{"weight" : 0.00625, "item" : [ "present2" ]},
+		{"weight" : 0.00625, "item" : [ "present3" ]},
+		{"weight" : 0.00625, "item" : [ "present4" ]},
+		{"weight" : 0.00625, "item" : [ "bigpresent" ]},
         
 		//junk
 		{"weight" : 0.01, "item" : [ "paper", 1 ]},
