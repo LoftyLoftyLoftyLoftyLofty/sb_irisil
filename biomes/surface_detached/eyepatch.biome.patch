@@ -28,5 +28,41 @@
 		"type" : "microdungeon",
 		"microdungeons" : [ "lofty_irisil_eyehoard" ]
 	}
-  }
+  },
+  { 
+		"op" : "add",
+		"path" : "/spawnProfile/groups/-",
+		"value" : 
+		{
+			"select": 1,
+			"pool": 
+			[
+				[ 1.0, "lofty_irisil_observer_air_eyepatch" ]
+			]
+		}
+	},
+	{ 
+		"op" : "add",
+		"path" : "/spawnProfile/groups/-",
+		"value" : 
+		{
+			"select": 1,
+			"pool": 
+			[
+				[ 1.0, "lofty_irisil_observer_surface_eyepatch" ]
+			]
+		}
+	},
+	{ 
+		"op" : "add",
+		"path" : "/spawnProfile/groups/-",
+		"value" : 
+		{
+			"select": 1,
+			"pool": 
+			[
+				[ 1.0, "lofty_irisil_observer_liquid_eyepatch" ]
+			]
+		}
+	}
 ]

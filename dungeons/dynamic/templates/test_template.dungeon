@@ -1,0 +1,25 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_dynamicvillage_test",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "lofty_irisil_dynamicvillage_test" ],
+	"gravity": 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 1,
+    "protected" : false
+  },
+
+  "parts" : [
+  
+    {
+      "name" : "lofty_irisil_dynamicvillage_test",
+      "rules" : [
+        [ "maxSpawnCount", [5] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_dynamicvillage_template.json" ]
+    }
+  ]
+}

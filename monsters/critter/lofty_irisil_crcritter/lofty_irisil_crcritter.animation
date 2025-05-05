@@ -1,0 +1,129 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "damage" : {
+        "priority" : 3,
+        "default" : "none",
+        "states" : {
+          "none" : {
+            "frames" : 1
+          },
+          "stunned" : {
+            "frames" : 1
+          }
+        }
+      },
+      "movement" : {
+        "priority" : 0,
+        "default" : "idle",
+        "states" : {
+          "idle" : { },
+          "bloop" : {
+            "frames" : 4,
+            "cycle" : 0.8,
+            "mode" : "transition",
+            "transition" : "idle"
+          }
+        }
+      },
+      "releaseParticles" : {
+        "default" : "off",
+        "states" : {
+          "off" : {
+            "frames" : 1,
+            "properties" : {
+              "particleEmittersOff" : [ "releaseParticles" ]
+            }
+          },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.1,
+            "mode" : "transition",
+            "transition" : "off",
+            "properties" : {
+              "particleEmittersOn" : [ "releaseParticles" ]
+            }
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "body" : {
+        "properties" : {
+          "rotationGroup" : "body"
+        },
+        "partStates" : {
+          "movement" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle.<frame>"
+              }
+            },
+            "bloop" : {
+              "properties" : {
+                "image" : "<partImage>:move.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "rotationGroups" : {
+    "body" : {
+      "rotationCenter" : [0, 0],
+      "angularVelocity" : 5
+    }
+  },
+
+  "effects" : {
+    "blink" : {
+      "type" : "flash",
+      "time" : 0,
+      "directives" : "fade=ffffff;0.5"
+    }
+  },
+
+  "particleEmitters" : {
+     "deathPoof" : {
+      "particles" : []
+    },
+
+
+    "captureParticles":{
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "releaseParticles":{
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    },
+    "teleportOut":{
+      "particles" : [
+        { "particle" : "monstercapture" }
+      ]
+    },
+    "teleportIn":{
+      "particles" : [
+        { "particle" : "monsterrelease" }
+      ]
+    }
+  },
+
+  "sounds" : {
+    "turnHostile" : [ ],
+    "deathPuff" : [ ]
+  },
+  "lights" : {
+    "Glow" : {
+      "active" : false,
+      "position" : [0, 0],
+      "color" : [100, 150, 150],
+      "pointLight" : true
+    }
+  }
+}

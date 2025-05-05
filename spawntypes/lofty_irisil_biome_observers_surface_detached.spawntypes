@@ -1,0 +1,1118 @@
+[
+
+/////////////////////////////////////////////////////////////////////////////////	
+//	ALPINE
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_alpine",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "alpine"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_alpine",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "alpine"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_alpine",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "alpine"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	BIOLUMINESCENCE
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_bioluminescence",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "bioluminescence"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_bioluminescence",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "bioluminescence"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_bioluminescence",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "bioluminescence"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	BONES
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_bones",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "bones"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_bones",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "bones"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_bones",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "bones"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	RAINBOW
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_colourful",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "colourful"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_colourful",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "colourful"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_colourful",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "colourful"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	HOME
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_eyepatch",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "eyepatch"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_eyepatch",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "eyepatch"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_eyepatch",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "eyepatch"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	FLESH
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_flesh",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "flesh"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_flesh",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "flesh"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_flesh",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "flesh"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	GEODE
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_geode",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "geode"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_geode",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "geode"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_geode",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "geode"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	GIANTFLOWERS
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_giantflowers",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "giantflowers"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_giantflowers",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "giantflowers"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_giantflowers",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "giantflowers"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	HIVE
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_hive",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "hive"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_hive",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "hive"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_hive",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "hive"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	ICE
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_ice",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "ice"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_ice",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "ice"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_ice",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "ice"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	MUSHROOM PATCH
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_mushroompatch",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "mushroompatch"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_mushroompatch",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "mushroompatch"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_mushroompatch",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "mushroompatch"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	OASIS
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_oasis",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "oasis"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_oasis",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "oasis"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_oasis",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "oasis"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	PRISM
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_prism",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "prism"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_prism",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "prism"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_prism",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "prism"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	RUST
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_rust",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "rust"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_rust",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "rust"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_rust",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "rust"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	SPRING
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_spring",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "spring"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_spring",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "spring"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_spring",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "spring"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	STEAMSPRING
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_steamspring",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "steamspring"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_steamspring",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "steamspring"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_steamspring",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "steamspring"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	SWAMP
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_swamp",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "swamp"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_swamp",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "swamp"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_swamp",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "swamp"
+		}
+	},
+	
+/////////////////////////////////////////////////////////////////////////////////	
+//	TAR
+/////////////////////////////////////////////////////////////////////////////////
+	
+	{
+		"name" : "lofty_irisil_observer_air_tar",
+		"spawnParameters" : 
+		{
+			"area" : "air",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "tar"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_surface_tar",
+		"spawnParameters" : 
+		{
+			"area" : "surface",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "tar"
+		}
+	},
+	{
+		"name" : "lofty_irisil_observer_liquid_tar",
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+		"groupSize" : [1, 1],
+		"spawnChance" : 0.15,
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_crcritter"]
+		],
+		"monsterParameters" : 
+		{
+			"biomeType" : "tar"
+		}
+	}
+]

@@ -1,4 +1,15 @@
 {
+  "li_initObserverBehavior": {
+    "type": "action",
+    "name": "li_initObserverBehavior",
+    "title": "li_initObserverBehavior",
+    "properties": {
+	  "behavior": {"type": "string", "value": "walkingcritter"}
+	},
+    "category": "lofty_irisil",
+    "script": "/monsters/lofty_irisil_critterObserverBehaviorOnRez.lua",
+    "output": {}
+  },
   "li_initHooks": {
     "type": "action",
     "name": "li_initHooks",

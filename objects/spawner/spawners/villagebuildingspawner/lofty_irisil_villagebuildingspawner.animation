@@ -26,13 +26,13 @@
           "switchState" : {
             "off" : {
               "properties" : {
-                "image" : "lofty_irisil_modfriendlynpcspawner.png"
+                "image" : "lofty_irisil_villagebuildingspawner.png"
               }
             },
 
             "on" : {
               "properties" : {
-                "image" : "lofty_irisil_modfriendlynpcspawner.png"
+                "image" : "lofty_irisil_villagebuildingspawner.png"
               }
             }
           }

@@ -1,0 +1,38 @@
+[
+  { 
+	"op" : "add",
+	"path" : "/spawnProfile/groups/-",
+	"value" : 
+	{
+      "select": 1,
+      "pool": 
+	  [
+		[ 1.0, "lofty_irisil_observer_air_jungle" ]
+      ]
+    }
+  },
+  { 
+	"op" : "add",
+	"path" : "/spawnProfile/groups/-",
+	"value" : 
+	{
+      "select": 1,
+      "pool": 
+	  [
+		[ 1.0, "lofty_irisil_observer_surface_jungle" ]
+      ]
+    }
+  },
+  { 
+	"op" : "add",
+	"path" : "/spawnProfile/groups/-",
+	"value" : 
+	{
+      "select": 1,
+      "pool": 
+	  [
+		[ 1.0, "lofty_irisil_observer_liquid_jungle" ]
+      ]
+    }
+  }
+]
