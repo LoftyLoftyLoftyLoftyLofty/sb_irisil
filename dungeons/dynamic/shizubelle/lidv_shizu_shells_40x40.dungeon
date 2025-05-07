@@ -1,0 +1,41 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_shizu_shells_40x40",
+		"species": "shizubelle",
+		"rules": [],
+		"anchor": ["lidv_shizu_shells_40x40"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 2,
+		"protected": false
+	},
+	"parts": 
+	[
+		//primary structure
+		
+		{
+			"name": "lidv_shizu_shells_40x40",
+			"rules": [["maxSpawnCount", [1]]],
+			"def": ["tmx", "lidv_shizu_shells_40x40.json"]
+		},
+		
+		//shell display variations
+		
+		{
+			"name": "lidv_shizu_shells_display_1",
+			"rules": [[ "ignorePartMaximumRule" ]],
+			"def": ["tmx", "lidv_shizu_shells_display_1.json"]
+		},
+		{
+			"name": "lidv_shizu_shells_display_2",
+			"rules": [[ "ignorePartMaximumRule" ]],
+			"def": ["tmx", "lidv_shizu_shells_display_2.json"]
+		},
+		{
+			"name": "lidv_shizu_shells_display_3",
+			"rules": [[ "ignorePartMaximumRule" ]],
+			"def": ["tmx", "lidv_shizu_shells_display_3.json"]
+		}
+	]
+}
