@@ -596,7 +596,7 @@ function update(dt)
 					end
 					
 					--handling parts we shouldn't mix together
-					if microdungeonProperty == "doNotMixWith" then
+					if microdungeonProperty == "doNotCombineWith" then
 					
 						--if the array is empty, skip it
 						if #microdungeonValue > 0 then
