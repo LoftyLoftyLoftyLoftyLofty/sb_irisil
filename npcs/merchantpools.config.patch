@@ -1,0 +1,35 @@
+[
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_shizubelle_shellmerchant",
+		"value" : 
+		[
+			[
+				0, 
+				[
+					{ "item" : { "name" : "seashell1" }, "rarity" : 1.0, "price" : 100 },
+					{ "item" : { "name" : "seashell2" }, "rarity" : 1.0, "price" : 100 },
+					{ "item" : { "name" : "seashell3" }, "rarity" : 1.0, "price" : 100 },
+					{ "item" : { "name" : "seashell4" }, "rarity" : 1.0, "price" : 100 },
+					{ "item" : { "name" : "seashell5" }, "rarity" : 1.0, "price" : 100 },
+					{ "item" : { "name" : "seashell6" }, "rarity" : 1.0, "price" : 100 },
+					{ "item" : { "name" : "seashell7" }, "rarity" : 1.0, "price" : 100 },
+					
+					{ "item" : { "name" : "embercoral1" }, "rarity" : 0.5, "price" : 100 },
+					{ "item" : { "name" : "embercoral2" }, "rarity" : 0.5, "price" : 100 },
+					{ "item" : { "name" : "embercoral3" }, "rarity" : 0.5, "price" : 100 },
+					{ "item" : { "name" : "embercoral4" }, "rarity" : 0.5, "price" : 100 },
+					{ "item" : { "name" : "embercoral5" }, "rarity" : 0.5, "price" : 100 },
+					
+					{ "item" : { "name" : "seabed" }, "rarity" : 0.125 },
+					{ "item" : { "name" : "seachair" }, "rarity" : 0.125 },
+					{ "item" : { "name" : "coralmirror" }, "rarity" : 0.125 },
+					{ "item" : { "name" : "sealamp" }, "rarity" : 0.125 },
+					
+					{ "item" : { "name" : "seashellshield" }, "rarity" : 0.05 },
+					{ "item" : { "name" : "deepdiverhead" }, "rarity" : 0.05 }
+				]
+			]
+		]
+	}
+]

@@ -125,6 +125,25 @@ function finalResultScriptHook(args)
 		
 	end
 	
+	--we can reasonably expect this to only be shizubelle if it spawns
+	if args.fnpcType == "lofty_irisil_shizubelle_shellmerchant" then
+	
+		--if the player has WW furnishing installed
+		--add nautical items
+		--add seashore items
+		
+		--if the player has starforge installed
+		--add cephalowurm shell?
+		--add certain misc tide decoration items
+		
+		--if the player has mollopods installed
+		--add mollopod items
+		
+		--if the player has krakoth installed
+		--add relevant krakoth items
+	
+	end
+	
 	return args
 end
 
