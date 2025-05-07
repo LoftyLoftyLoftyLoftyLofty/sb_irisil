@@ -1,0 +1,57 @@
+{
+  "metadata" : {
+    "name" : "lidv_mostlyflat_1",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "lidv_mostlyflat_structure_40x40_1" ],
+	"gravity": 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 20,
+    "protected" : false
+  },
+
+  "parts" : 
+  [
+  
+	//structures
+  
+    {
+      "name" : "lidv_mostlyflat_structure_40x40_1",
+      "rules" : [
+        [ "maxSpawnCount", [8] ],
+		[ "doNotConnectToPart", [ "lidv_mostlyflat_structure_40x40_1" ] ]
+      ],
+      "def" : [ "tmx", "lidv_mostlyflat_structure_40x40_1.json" ]
+    },
+	
+	{
+      "name" : "lidv_mostlyflat_structure_20x20_1",
+      "rules" : [
+        [ "maxSpawnCount", [8] ],
+		[ "doNotConnectToPart", [ "lidv_mostlyflat_structure_20x20_1" ] ]
+      ],
+      "def" : [ "tmx", "lidv_mostlyflat_structure_20x20_1.json" ]
+    },
+	
+	//minor terrain height changes
+	
+	{
+      "name" : "lidv_mostlyflat_ramp_1",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "doNotConnectToPart", [ "lidv_mostlyflat_ramp_1", "lidv_mostlyflat_ramp_2" ] ]
+      ],
+      "def" : [ "tmx", "lidv_mostlyflat_ramp_1.json" ]
+    },
+	
+	{
+      "name" : "lidv_mostlyflat_ramp_2",
+      "rules" : [
+        [ "maxSpawnCount", [4] ],
+		[ "doNotConnectToPart", [ "lidv_mostlyflat_ramp_1", "lidv_mostlyflat_ramp_2" ] ]
+      ],
+      "def" : [ "tmx", "lidv_mostlyflat_ramp_2.json" ]
+    }
+  ]
+}
