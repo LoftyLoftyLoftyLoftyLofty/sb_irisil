@@ -1,0 +1,26 @@
+{
+  "materialId" : 58705,
+  "materialName" : "lofty_irisil_grassy_allow_sapling",
+  "particleColor" : [98, 127, 65, 255],
+  "itemDrop" : "grassy",
+  "description" : "A block of sod roofing with growing grass.",
+  "shortdescription" : "Sod Block",
+  "glitchDescription" : "Charmed. It seems this sod roofing has live grass.",
+  "floranDescription" : "Floran likess grasssy ssod roofing.",
+  "novakidDescription" : "Grassy sod roofing, somethin' nice about the simplicity of it.",
+  "footstepSound" : "/sfx/blocks/footstep_tallgrass.ogg",
+  "health" : 2,
+  "soil" : true,
+  "category" : "materials",
+  "damageTable" : "/tiles/flammableDamage.config",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "grassy.png",
+    "variants" : 5,
+    "lightTransparent" : false,
+    "occludesBelow" : true,
+    "multiColored" : true,
+    "zLevel" : 3515
+  }
+}
