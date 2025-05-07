@@ -1,14 +1,14 @@
 [
-	[
-	 {
-		"op": "add",
-		"path": "/planetTypes/forest/layers/surface/dungeons/-",
-		"value": [
-		  200.5,
-		  "lofty_irisil_dynamicvillage_test"
-		]
-	  }
-	],
+	//[
+	// {
+	//	"op": "add",
+	//	"path": "/planetTypes/forest/layers/surface/dungeons/-",
+	//	"value": [
+	//	  200.5,
+	//	  "lidv_mostlyflat_1"
+	//	]
+	//  }
+	//],
 	[
 	 {
 		"op": "add",
