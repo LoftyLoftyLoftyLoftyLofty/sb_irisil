@@ -1,0 +1,21 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_shizu_tree_sapling_5",
+		"species": "shizubelle",
+		"rules": [],
+		"anchor": ["lidv_shizu_tree_sapling_5"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 1,
+		"protected": false
+	},
+	"parts": 
+	[
+		{
+			"name": "lidv_shizu_tree_sapling_5",
+			"rules": [[ "ignorePartMaximumRule" ]],
+			"def": ["tmx", "lidv_shizu_tree_sapling_5.json"]
+		}
+	]
+}
