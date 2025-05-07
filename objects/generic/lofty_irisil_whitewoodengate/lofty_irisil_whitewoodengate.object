@@ -1,0 +1,56 @@
+{
+  "objectName" : "lofty_irisil_whitewoodengate",
+  "colonyTags" : ["door"],
+  "printable" : false,
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 10,
+  "description" : "A painted wooden gate. Not very secure, but at least it matches the fence.",
+  "shortdescription" : "White Wooden Gate",
+  "race" : "generic",
+
+  "apexDescription" : "A small wooden gate.",
+  "avianDescription" : "A gate. Easy to hop over.",
+  "floranDescription" : "Thin twigss make a door.",
+  "glitchDescription" : "Neutral. This is a gate.",
+  "humanDescription" : "A good gate for a garden fence.",
+  "hylotlDescription" : "A little gate made of wood.",
+  "novakidDescription" : "A woven wooden gate.",
+
+  "inventoryIcon" : "lofty_irisil_whitewoodengateicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "lofty_irisil_whitewoodengate.png:closed",
+      "imagePosition" : [-16, 0],
+      "renderLayer" : "Object+5",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "scripts" : [ "/objects/wired/door/door.lua" ],
+  "scriptDelta" : 5,
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/woodendoor_open.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/woodendoor_close.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "lofty_irisil_whitewoodengate.png"
+  },
+  "animationPosition" : [-16, 0],
+
+  "inputNodes" : [ [0, 2] ],
+  "outputNodes" : [ [0, 0] ]
+}
