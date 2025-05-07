@@ -145,7 +145,13 @@ function update(dt)
   end
   
   --spawn the NPC and smash the spawner
-  world.spawnNpc(object.toAbsolutePosition({ 0.0, 2.0 }), npcSpecies, npcType, math.max(object.level(), 1), npcSeed, npcParameter);
+  local worldPos = object.toAbsolutePosition({ 0.0, 2.0 })
+  local offset = config.getParameter("spawner.offset")
+  if offset then 
+	worldPos[1] = worldPos[1] + offset[1]
+	worldPos[2] = worldPos[2] + offset[2]
+  end
+  world.spawnNpc(worldPos, npcSpecies, npcType, math.max(object.level(), 1), npcSeed, npcParameter);
   object.smash()
   
 end
