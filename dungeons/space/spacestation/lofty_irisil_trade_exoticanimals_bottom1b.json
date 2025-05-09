@@ -676,7 +676,7 @@
                  "y":136
                 }, 
                 {
-                 "gid":8702,
+                 "gid":8754,
                  "height":18,
                  "id":1248,
                  "name":"",
@@ -688,7 +688,7 @@
                  "y":80
                 }, 
                 {
-                 "gid":8704,
+                 "gid":8756,
                  "height":24,
                  "id":1249,
                  "name":"",
@@ -700,7 +700,7 @@
                  "y":88
                 }, 
                 {
-                 "gid":8701,
+                 "gid":8753,
                  "height":20,
                  "id":1253,
                  "name":"",
@@ -754,7 +754,7 @@
                  "y":224
                 }, 
                 {
-                 "gid":8701,
+                 "gid":8753,
                  "height":20,
                  "id":1260,
                  "name":"",
@@ -772,7 +772,7 @@
                  "y":192
                 }, 
                 {
-                 "gid":8701,
+                 "gid":8753,
                  "height":20,
                  "id":1261,
                  "name":"",
@@ -831,7 +831,7 @@
                  "y":128
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1318,
                  "name":"",
@@ -843,7 +843,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1319,
                  "name":"",
@@ -855,7 +855,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1320,
                  "name":"",
@@ -867,7 +867,7 @@
                  "y":344
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1321,
                  "name":"",
@@ -879,7 +879,7 @@
                  "y":264
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1322,
                  "name":"",
@@ -891,7 +891,7 @@
                  "y":264
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1349,
                  "name":"",
@@ -903,7 +903,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1350,
                  "name":"",
@@ -915,7 +915,7 @@
                  "y":432
                 }, 
                 {
-                 "gid":8712,
+                 "gid":8764,
                  "height":8,
                  "id":1351,
                  "name":"",
@@ -969,7 +969,7 @@
                  "y":320
                 }, 
                 {
-                 "gid":8722,
+                 "gid":8774,
                  "height":24,
                  "id":1359,
                  "name":"",
@@ -993,7 +993,7 @@
                  "y":320
                 }, 
                 {
-                 "gid":2147492372,
+                 "gid":2147492424,
                  "height":24,
                  "id":1361,
                  "name":"Animal Crate - Eyes",
@@ -1011,7 +1011,7 @@
                  "y":408
                 }, 
                 {
-                 "gid":8724,
+                 "gid":8776,
                  "height":24,
                  "id":1362,
                  "name":"Animal Crate",
@@ -1034,7 +1034,7 @@
                  "y":408
                 }, 
                 {
-                 "gid":2147492372,
+                 "gid":2147492424,
                  "height":24,
                  "id":1378,
                  "name":"Animal Crate",
@@ -1057,7 +1057,7 @@
                  "y":408
                 }, 
                 {
-                 "gid":2147492372,
+                 "gid":2147492424,
                  "height":24,
                  "id":1379,
                  "name":"Animal Crate",
@@ -1194,7 +1194,7 @@
                  "y":448
                 }, 
                 {
-                 "gid":2147492455,
+                 "gid":2147492507,
                  "height":16,
                  "id":1401,
                  "name":"",
@@ -1248,7 +1248,7 @@
                  "y":376
                 }, 
                 {
-                 "gid":8702,
+                 "gid":8754,
                  "height":18,
                  "id":1411,
                  "name":"",
@@ -1612,7 +1612,7 @@
                  "y":384
                 }, 
                 {
-                 "gid":8704,
+                 "gid":8756,
                  "height":24,
                  "id":1310,
                  "name":"",
@@ -1680,7 +1680,7 @@
                  "y":384
                 }, 
                 {
-                 "gid":8702,
+                 "gid":8754,
                  "height":18,
                  "id":1314,
                  "name":"",
@@ -1925,7 +1925,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"spawner\" : { \"possibleVariations\" : [ { \"intendedUsage\" : \"Generic Space Villager\", \"scriptedTargetTags\" : [ \"species:any\", \"friendly\"], \"npcSpeciesOptions\" : [ \"apex\", \"avian\", \"floran\", \"glitch\", \"human\", \"hylotl\", \"novakid\" ], \"npcTypeOptions\" : [ \"spacevillager\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                         "value":"{ \"spawner\" : { \"possibleVariations\" : [ { \"intendedUsage\" : \"lofty_irisil_pettingzmoo_villager\", \"scriptedTargetTags\" : [ \"species:anyVanilla\", \"friendly\"], \"npcSpeciesOptions\" : [ \"apex\", \"avian\", \"floran\", \"glitch\", \"human\", \"hylotl\", \"novakid\" ], \"npcTypeOptions\" : [ \"spacevillager\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -1994,147 +1994,147 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/materials.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/materials.json"
         }, 
         {
          "firstgid":198,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/miscellaneous.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/miscellaneous.json"
         }, 
         {
          "firstgid":222,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/liquids.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/liquids.json"
         }, 
         {
          "firstgid":250,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/supports.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/supports.json"
         }, 
         {
          "firstgid":287,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/generic.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/generic.json"
         }, 
         {
          "firstgid":2271,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/ancient.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/ancient.json"
         }, 
         {
          "firstgid":2434,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/apex.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/apex.json"
         }, 
         {
          "firstgid":2805,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/avian.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/avian.json"
         }, 
         {
          "firstgid":3110,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/floran.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/floran.json"
         }, 
         {
          "firstgid":3305,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/glitch.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/glitch.json"
         }, 
         {
          "firstgid":3531,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/human.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/human.json"
         }, 
         {
          "firstgid":3819,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/hylotl.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/hylotl.json"
         }, 
         {
          "firstgid":4051,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-race\/novakid.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/novakid.json"
         }, 
         {
          "firstgid":4115,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/crafting.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/crafting.json"
         }, 
         {
          "firstgid":4195,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/decorative.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/decorative.json"
         }, 
         {
          "firstgid":5636,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/door.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/door.json"
         }, 
         {
          "firstgid":5768,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/farmable.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/farmable.json"
         }, 
         {
          "firstgid":5843,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/furniture.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/furniture.json"
         }, 
         {
          "firstgid":6197,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/light.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/light.json"
         }, 
         {
          "firstgid":6655,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/other.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/other.json"
         }, 
         {
          "firstgid":6967,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/pot.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/pot.json"
         }, 
         {
          "firstgid":7264,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/sapling.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/sapling.json"
         }, 
         {
          "firstgid":7265,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/spawner.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/spawner.json"
         }, 
         {
          "firstgid":7281,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/storage.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/storage.json"
         }, 
         {
          "firstgid":7515,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/teleporter.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/teleporter.json"
         }, 
         {
          "firstgid":7557,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/tools.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/tools.json"
         }, 
         {
          "firstgid":7562,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/trap.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/trap.json"
         }, 
         {
          "firstgid":7766,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/wire.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/wire.json"
         }, 
         {
          "firstgid":7988,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-type\/container.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-type\/container.json"
         }, 
         {
          "firstgid":8273,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-type\/farmable.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-type\/farmable.json"
         }, 
         {
          "firstgid":8351,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-type\/loungeable.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-type\/loungeable.json"
         }, 
         {
          "firstgid":8632,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-type\/noisy.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-type\/noisy.json"
         }, 
         {
          "firstgid":8673,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-type\/teleporter.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-type\/teleporter.json"
         }, 
         {
-         "firstgid":8700,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-category\/railpoint.json"
+         "firstgid":8752,
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/railpoint.json"
         }, 
         {
-         "firstgid":8705,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-colonytag\/station.json"
+         "firstgid":8757,
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-colonytag\/station.json"
         }, 
         {
-         "firstgid":8735,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked\/tilesets\/packed\/objects-by-colonytag\/outpost.json"
+         "firstgid":8787,
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-colonytag\/outpost.json"
         }],
  "tilewidth":8,
  "type":"map",
