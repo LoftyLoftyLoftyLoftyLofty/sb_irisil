@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt00EKg1AQRMF\/dE+nu5wpCcRtojBoen49aLIRsQayjbFstozwZrLuzWTd4+XtFC9vp3h5O7R+fn95169vyYmXlzc3Xl7e3Hh5efPj5e3QbP9fXl7e3Hh5eXPj5eXN7aj3zm+sjJf3vcfrmU7j5e00Xt5O4+1rPmJNdp\/1pbqrnJU3qL7hFcazN6i+290++\/89AYJBqS8=",
+         "data":"eJzt1TEKhDAARcEcfU+n3Z5JC+vVYjUPnAcfmyCSKVzH+KyW39CtsejFohePVjxa8WjFoxWPVjxa8WjFoxWPRsvxPPNYfr5F\/4pHKx6teLTi0YpHKx6teLTi0YpHKx6teLTi0YxHKx6teDTy\/2jFoxWPVjxa8WjFoxWPVjxa8WjFoxWPVjxa8Wh11WPmN74pHq14tLrq8d3P2HPj0RqP1ni0xqM1Hq3xaI1Ha2ceTFoWXDr3z6XtwKhtwKhv8Aab2Xdp87YBMazGxQ==",
          "encoding":"base64",
          "height":60,
          "id":1,
@@ -13,13 +13,13 @@
          "opacity":0.5,
          "type":"tilelayer",
          "visible":true,
-         "width":60,
+         "width":100,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt1LENgDAQBEGXSNWE1ERKhrA52H\/tSJ8e3oQxdGe\/3B\/fllZsRe7NXjp7GVsp9jK2UuxlbKXYy9hKsZexlWIvYyvFXsZWir2MrRR7GVsp9jK2UuxlbKXYy9hKsZexlWIvYyvFXsZWir2MrRR7Jam\/Cv++2Tcezc5eezudvfZ2Onv7Nj\/193vTfVW7v7D6pgqNd2beVK1RbCfgQgNl",
+         "data":"eJzt1jsSglAQRUGX6KoNXZMpZn6ezEG6q25KwZyEy4Wju23GMzeBWVdbslVWPuus9GjRo0WPFj1a9GjRo0WPFj1a9GjRo0WPFj1a9GjRo0WPFj1a9GjRo0WPFj1a9GjRo0WPFj1a9GjRo0WPFj1a9GjRo0WPFj1a9GhxQwBgy7\/B9z694d12nR6t6dGaHq3p0ZoerenRmh6tvWL6Hc+yd02\/779tlenvOPr2MP2N9RVM32B6ZdO3Ocud+a0HAJjl5A==",
          "encoding":"base64",
          "height":60,
          "id":2,
@@ -27,7 +27,7 @@
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":60,
+         "width":100,
          "x":0,
          "y":0
         }, 
@@ -53,7 +53,7 @@
                  "gid":7935,
                  "height":8,
                  "id":1090,
-                 "name":"40x40",
+                 "name":"80x40",
                  "properties":[
                         {
                          "name":"object",
@@ -63,7 +63,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"offscreenOnly\" : false, \"sizeCategory\" : \"40x40\", \"designTagsConfig\" : \"\/dungeons\/dynamic\/templates\/mostlyflat\/mostlyflat_1.config\" }"
+                         "value":"{ \"offscreenOnly\" : false, \"sizeCategory\" : \"80x40\", \"designTagsConfig\" : \"\/dungeons\/dynamic\/templates\/mostlyflat\/mostlyflat_1.config\" }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -139,7 +139,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":424,
+                 "x":744,
                  "y":392
                 }, 
                 {
@@ -163,7 +163,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":440,
+                 "x":760,
                  "y":360
                 }, 
                 {
@@ -187,7 +187,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":440,
+                 "x":760,
                  "y":360
                 }, 
                 {
@@ -223,7 +223,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":448,
+                 "x":768,
                  "y":360
                 }],
          "opacity":1,
@@ -389,5 +389,5 @@
  "tilewidth":8,
  "type":"map",
  "version":"1.10",
- "width":60
+ "width":100
 }

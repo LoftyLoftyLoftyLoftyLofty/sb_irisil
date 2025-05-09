@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJztzrENwDAMA0GNnu3cZaYEyAKSLZMO8AS+Y3Ej4ho\/LMQ72VYxumxZIz58+PDhw4cPHz58+PDh+7rfjzN8+E72OY0Zm8tYsamNMzaVccW229ll63Lu8HQYVa6q0+XKWN0eVQ8wPpOQ",
+         "data":"eJztzrENACAMA8GMznZ0zAQSCwRIMEhv6TsXV81K\/TC7vJdtK0aVzWvEhw8fPnz48OHDhw8fPnyzNj7K8OHDh0\/lUxo9NoV1x5XpjPBEOzNNJ1aFy2NVe27VASfhhds=",
          "encoding":"base64",
          "height":40,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJzt07ENACEMBEFKpHJq+gZIEL73Iu1KTk+TeAwzdjN0lb7q9HE29XG2Epv6OFuJTX2crcSmPrN3o\/8HybeaT58+sq\/TeBLZ9rfxJrIt7UxE81QYu6K6dpFtyT7B9Bjg",
+         "data":"eJzt07ENACAMxMCMyOTMxALQoLziwpbSvq5JlRm7FbpOX3f6OJv6OFuJTX2crcSmPs5WYlOfmaUi\/e8ePn369Omb8k0af6K6ks5kRNMrqusW1ZXuAEmUL5Y=",
          "encoding":"base64",
          "height":40,
          "id":2,
