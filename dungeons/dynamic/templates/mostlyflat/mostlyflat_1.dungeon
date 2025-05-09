@@ -4,10 +4,10 @@
     "species" : "generic",
     "rules" : [
     ],
-    "anchor" : [ "lidv_mostlyflat_structure_40x40_1" ],
+    "anchor" : [ "lidv_mostlyflat_structure_80x40_1" ],
 	"gravity": 80,
-    "maxRadius" : 1000000,
-    "maxParts" : 20,
+    "maxRadius" : 2400,
+    "maxParts" : 24,
     "protected" : false
   },
 
@@ -16,6 +16,15 @@
   
 	//structures
   
+	{
+      "name" : "lidv_mostlyflat_structure_80x40_1",
+      "rules" : [
+        [ "maxSpawnCount", [2] ],
+		[ "doNotConnectToPart", [ "lidv_mostlyflat_structure_80x40_1" ] ]
+      ],
+      "def" : [ "tmx", "lidv_mostlyflat_structure_80x40_1.json" ]
+    },
+	
     {
       "name" : "lidv_mostlyflat_structure_40x40_1",
       "rules" : [
@@ -52,6 +61,22 @@
 		[ "doNotConnectToPart", [ "lidv_mostlyflat_ramp_1", "lidv_mostlyflat_ramp_2" ] ]
       ],
       "def" : [ "tmx", "lidv_mostlyflat_ramp_2.json" ]
+    },
+	
+	//endcaps
+	
+	{
+      "name" : "lidv_mostlyflat_leftcap_20x20",
+      "rules" : [[ "ignorePartMaximumRule" ]],
+      "def" : [ "tmx", "lidv_mostlyflat_leftcap_20x20.json" ],
+	  "chance" : 0
+    },
+	
+	{
+      "name" : "lidv_mostlyflat_rightcap_20x20",
+      "rules" : [[ "ignorePartMaximumRule" ]],
+      "def" : [ "tmx", "lidv_mostlyflat_rightcap_20x20.json" ],
+	  "chance" : 0
     }
   ]
 }
