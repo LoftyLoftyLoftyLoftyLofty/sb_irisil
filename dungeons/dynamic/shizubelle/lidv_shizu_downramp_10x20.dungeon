@@ -1,0 +1,21 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_shizu_downramp_10x20",
+		"species": "shizubelle",
+		"rules": [],
+		"anchor": ["lidv_shizu_downramp_10x20"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 1,
+		"protected": false
+	},
+	"parts": 
+	[
+		{
+			"name": "lidv_shizu_downramp_10x20",
+			"rules": [],
+			"def": ["tmx", "lidv_shizu_downramp_10x20.json"]
+		}
+	]
+}
