@@ -12,53 +12,10 @@
 	},
 	"parts": 
 	[
-		//planter
 		{
 			"name": "lidv_shizu_tree_20x20",
 			"rules": [],
 			"def": ["tmx", "lidv_shizu_tree_20x20.json"]
-		},
-		
-		//no fruit
-		{
-			"name": "lidv_shizu_tree_sapling_1",
-			"rules": [[ "ignorePartMaximumRule" ]],
-			"def": ["tmx", "lidv_shizu_tree_sapling_1.json"]
 		}
-		
-		////apple
-		//{
-		//	"name": "lidv_shizu_tree_sapling_2",
-		//	"rules": [[ "ignorePartMaximumRule" ]],
-		//	"def": ["tmx", "lidv_shizu_tree_sapling_2.json"]
-		//},
-		//
-		////cherry
-		//{
-		//	"name": "lidv_shizu_tree_sapling_3",
-		//	"rules": [[ "ignorePartMaximumRule" ]],
-		//	"def": ["tmx", "lidv_shizu_tree_sapling_3.json"]
-		//},
-		//
-		////orange
-		//{
-		//	"name": "lidv_shizu_tree_sapling_4",
-		//	"rules": [[ "ignorePartMaximumRule" ]],
-		//	"def": ["tmx", "lidv_shizu_tree_sapling_4.json"]
-		//},
-		//
-		////pear
-		//{
-		//	"name": "lidv_shizu_tree_sapling_5",
-		//	"rules": [[ "ignorePartMaximumRule" ]],
-		//	"def": ["tmx", "lidv_shizu_tree_sapling_5.json"]
-		//},
-		//
-		////peach
-		//{
-		//	"name": "lidv_shizu_tree_sapling_6",
-		//	"rules": [[ "ignorePartMaximumRule" ]],
-		//	"def": ["tmx", "lidv_shizu_tree_sapling_6.json"]
-		//}
 	]
 }

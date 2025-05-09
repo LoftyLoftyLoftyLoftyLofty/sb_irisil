@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcHwUj+JRPIpH8SgeBLgHByZXHS3MPYeEjdH4pGB8eo0pxOS6iRQMANqNi+A=",
+         "data":"eJw7zsDAcHwUj+JRPIpH8SgeBLiHQkwPc88hYWM0PikYn15jCjG5biIFAwBNv4oI",
          "encoding":"base64",
          "height":24,
          "id":1,
@@ -173,7 +173,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":40,
+                 "width":112,
                  "x":32,
                  "y":152
                 }, 
@@ -244,70 +244,124 @@
                  "y":168
                 }, 
                 {
-                 "height":16,
-                 "id":1434,
+                 "height":8,
+                 "id":1445,
                  "name":"",
                  "properties":[
                         {
-                         "name":"back",
-                         "type":"string",
-                         "value":"fence"
-                        }, 
-                        {
                          "name":"colorVariant",
                          "type":"string",
-                         "value":"8"
+                         "value":"5"
+                        }, 
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"castlewalls1"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":40,
-                 "x":104,
-                 "y":152
+                 "width":128,
+                 "x":24,
+                 "y":176
                 }, 
                 {
                  "height":8,
-                 "id":1443,
+                 "id":1448,
                  "name":"",
                  "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"5"
+                        }, 
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"castlewalls1"
+                        }, 
                         {
                          "name":"mod",
                          "type":"string",
                          "value":"aridgrass"
-                        }, 
-                        {
-                         "name":"surface",
-                         "type":"string",
-                         "value":"0"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":64,
-                 "x":152,
+                 "width":72,
+                 "x":144,
                  "y":168
                 }, 
                 {
                  "height":8,
-                 "id":1444,
+                 "id":1449,
                  "name":"",
                  "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"5"
+                        }, 
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"castlewalls1"
+                        }, 
                         {
                          "name":"mod",
                          "type":"string",
                          "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":72,
+                 "x":-40,
+                 "y":168
+                }, 
+                {
+                 "height":8,
+                 "id":1450,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"5"
                         }, 
                         {
-                         "name":"surface",
+                         "name":"material",
                          "type":"string",
-                         "value":"0"
+                         "value":"castlewalls1"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":64,
                  "x":-40,
-                 "y":168
+                 "y":176
+                }, 
+                {
+                 "height":8,
+                 "id":1451,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"5"
+                        }, 
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"castlewalls1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":64,
+                 "x":152,
+                 "y":176
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -428,7 +482,7 @@
          "y":0
         }],
  "nextlayerid":21,
- "nextobjectid":1445,
+ "nextobjectid":1452,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
