@@ -14,7 +14,7 @@
 	[
 		{
 			"name": "lidv_shizu_tree_sapling_3",
-			"rules": [[ "ignorePartMaximumRule" ]],
+			"rules": [],
 			"def": ["tmx", "lidv_shizu_tree_sapling_3.json"]
 		}
 	]

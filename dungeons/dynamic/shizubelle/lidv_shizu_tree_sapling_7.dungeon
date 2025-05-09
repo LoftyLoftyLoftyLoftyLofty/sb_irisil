@@ -1,10 +1,10 @@
 {
 	"metadata": 
 	{
-		"name": "lidv_shizu_tree_sapling_4",
+		"name": "lidv_shizu_tree_sapling_7",
 		"species": "shizubelle",
 		"rules": [],
-		"anchor": ["lidv_shizu_tree_sapling_4"],
+		"anchor": ["lidv_shizu_tree_sapling_7"],
 		"gravity": 80,
 		"maxRadius": 1000000,
 		"maxParts": 1,
@@ -13,9 +13,9 @@
 	"parts": 
 	[
 		{
-			"name": "lidv_shizu_tree_sapling_4",
+			"name": "lidv_shizu_tree_sapling_7",
 			"rules": [],
-			"def": ["tmx", "lidv_shizu_tree_sapling_4.json"]
+			"def": ["tmx", "lidv_shizu_tree_sapling_7.json"]
 		}
 	]
 }

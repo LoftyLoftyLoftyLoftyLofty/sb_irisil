@@ -33,6 +33,39 @@
         }, 
         {
          "draworder":"topdown",
+         "id":5,
+         "name":"mods",
+         "objects":[
+                {
+                 "height":8,
+                 "id":14,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"lofty_irisil_grassy_allow_sapling"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"gold"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":8,
+                 "y":24
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
          "id":2,
          "name":"objects",
          "objects":[
@@ -40,12 +73,12 @@
                  "gid":532,
                  "height":20,
                  "id":8,
-                 "name":"Peach",
+                 "name":"Bell",
                  "properties":[
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"stemName\" : \"lofty_irisil_acstem\", \"foliageName\" : \"lofty_irisil_acfoliage_peach\", \"stages\" : [ { \"tree\" : true } ] }"
+                         "value":"{ \"stemName\" : \"lofty_irisil_acstem\", \"foliageName\" : \"lofty_irisil_acfoliage_bells\", \"stages\" : [ { \"tree\" : true } ] }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -61,7 +94,7 @@
          "y":0
         }],
  "nextlayerid":6,
- "nextobjectid":14,
+ "nextobjectid":15,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
