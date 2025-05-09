@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt1TEKACAMQ9Ee3du5eSZXB9uaqIiQwF\/fmmpW6uUM2EkrMxkrMuXJkydP3huvDbFec0I8z0C8FSPzUOMXz\/vzkxbjRRZqrliIiXiZiVqRyVozc9di6qFAuwc=",
+         "data":"eJzt1sENACAIQ1FGdzq9OZMLANqqiSYl+UdeONLMSruYgXPSykzWiswfvPr4ffLkyZOHet2J8TyH8TIH8VacyEN25b3tef\/LKYfxMgd1EWvmstZOAytwkQw=",
          "encoding":"base64",
          "height":36,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztzLENACAMxMDsPxwz0dIE8uGbSLbk9iKIiIhmt44dRtfLDMWrGC9PNaZ4WU6r41VyWoqp5rRu5m9Oq9MGMKJrBw==",
+         "data":"eJzt0MEJADAIQ1FHdOoeO1MXsDYRQaR+yNF3UGT6pRWc5yk5xENDPLbxxhuvl7eNRTzLiXiew3iIc\/OY20pPCUNBj1mH\/1llORGPKdN6uRUdBF6lCQ==",
          "encoding":"base64",
          "height":36,
          "id":2,
@@ -48,7 +48,30 @@
          "draworder":"topdown",
          "id":4,
          "name":"objects",
-         "objects":[],
+         "objects":[
+                {
+                 "gid":7935,
+                 "height":8,
+                 "id":1091,
+                 "name":"10x20_UpRamp",
+                 "properties":[
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_villagebuildingspawner"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"offscreenOnly\" : false, \"sizeCategory\" : \"10x20_UpRamp\", \"designTagsConfig\" : \"\/dungeons\/dynamic\/templates\/mostlyflat\/mostlyflat_1.config\" }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":24,
+                 "y":56
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -116,7 +139,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":16,
+                 "x":8,
                  "y":200
                 }, 
                 {
@@ -149,7 +172,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1091,
+ "nextobjectid":1092,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

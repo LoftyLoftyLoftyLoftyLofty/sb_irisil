@@ -1,13 +1,13 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "height":34,
+ "height":36,
  "infinite":false,
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJzt1SEOwDAMQ9Ecvbcr25k2MqkkaWy5KnGkTwIe9YwY83ABnNLamYxVmfbs2bNnT+M93\/9P7aE24nVs1stshbeWbabaY83KY8ydh5odr+MiTmWyzu1ebLWUsg==",
+         "data":"eJzt1jEOACEIRFGO7um080yrrVGEERM3GZLfULxQUkRSuZg4J9LSTNRamX\/w8uP30aNHj16vtt1YtOdxPZ7FRTzNPfFm0Yv1Tk3tL4r2ENfiWUyrszMRB+kDSjyRDA==",
          "encoding":"base64",
-         "height":34,
+         "height":36,
          "id":1,
          "name":"back",
          "opacity":0.5,
@@ -19,9 +19,9 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztzzEKADAMw8D8\/3F9U9cuBScI2kECrweuMjMz+6t1jPYI++ZN7cTr2F0vsWlvatLfk2gvcadRzus224xVTQ==",
+         "data":"eJztz7sNACAMQ0FGzNSUzESFRIGCDeZT5EluT0lK0Y\/lbmqPnecZOe+f5qEhHlt44YX33iuDqT3EXfE8d8cbuQoPuf2UZ4RhoMfs1r+7ppfaW3HRVM7MvFUF++Ko5w==",
          "encoding":"base64",
-         "height":34,
+         "height":36,
          "id":2,
          "name":"front",
          "opacity":1,
@@ -48,7 +48,30 @@
          "draworder":"topdown",
          "id":4,
          "name":"objects",
-         "objects":[],
+         "objects":[
+                {
+                 "gid":7935,
+                 "height":8,
+                 "id":1091,
+                 "name":"10x20_DownRamp",
+                 "properties":[
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_villagebuildingspawner"
+                        }, 
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"offscreenOnly\" : false, \"sizeCategory\" : \"10x20_DownRamp\", \"designTagsConfig\" : \"\/dungeons\/dynamic\/templates\/mostlyflat\/mostlyflat_1.config\" }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":24,
+                 "y":56
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -128,7 +151,7 @@
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":16,
+                 "x":8,
                  "y":168
                 }],
          "opacity":1,
@@ -149,7 +172,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1091,
+ "nextobjectid":1092,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
