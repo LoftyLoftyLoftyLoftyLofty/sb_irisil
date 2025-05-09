@@ -92,6 +92,27 @@ pipeRegex = "[^\\|]+"
 newlineRegex = "[^\\\n]+"
 unrecoverableError = false
 
+function tableWeightSorter(entryA, entryB)
+	local weightA = 0
+	local weightB = 0
+	
+	for k, v in pairs(entryA.dspVal) do
+		if k == "weight" then
+			weightA = v
+			break
+		end
+	end
+	
+	for k, v in pairs(entryB.dspVal) do
+		if k == "weight" then
+			weightB = v
+			break
+		end
+	end
+	
+	return weightA < weightB
+end
+
 function update(dt)
 
 	if unrecoverableError then
@@ -842,6 +863,40 @@ function update(dt)
 						end
 					
 					end
+					
+					--don't spawn two copies of the same microdungeon too close to each other
+					if microdungeonProperty == "maxRadius" then
+					
+						--verify positive radius
+						if microdungeonValue > 0 then
+						
+							--walk through the lines from our world value
+							for lineIndex, lineValue in ipairs(lines) do
+							
+								--break into tokens separated by pipes
+								local tokens = {}
+								for i in string.gmatch(lineValue, pipeRegex) do
+									table.insert(tokens,i)
+								end
+								
+								--if dungeon id matches
+								if tokens[1] == myDungeonId then
+									--and partName matches
+									if tokens[2] == partName then
+										--and distance too small
+										local spawnedPos = { tokens[4], tokens[5] }
+										if world.magnitude(spawnedPos, myPos) < microdungeonValue then
+											okToSpawnThisItem = false
+											break
+										end
+									end
+								end
+							end
+						else
+							okToSpawnThisItem = false
+						end
+					
+					end
 				
 				end
 				
@@ -877,9 +932,71 @@ function update(dt)
 	--now that we've narrowed down the village category, size category, and valid spawning options
 	--we can finally select the microdungeon we want and place it
 	
-	--TODO evaluate weights here
+	--sort microdungeons by weight to make sure anything with weight <= 0 is only selected as a last resort
+	table.sort(dungeonSpawnPool, tableWeightSorter)
 	
-	local spawnIndex = math.random(#dungeonSpawnPool)
+	--evaluate weights here
+	local totalWeights = 0.0
+	for twName, twVal in pairs(dungeonSpawnPool) do
+		local entryWeight = 0
+		for extrKey, extrVal in pairs(twVal.dspVal) do
+			if extrKey == "weight" then
+				entryWeight = extrVal
+				break
+			end
+		end
+		
+		yeek("Evaluating weight: " .. twVal.dspName .. " (" .. tostring(entryWeight) .. ")")
+		--don't add negative weights
+		if entryWeight > 0 then
+			totalWeights = totalWeights + entryWeight
+		end
+	end
+	
+	local randFloat = math.random() --between 0 and 1, don't allow 0
+	local emergencyExit = 0
+	while (randFloat == 0.0) or (randFloat == 1.0) do
+		randFloat = math.random()
+		emergencyExit = emergencyExit + 1
+		if emergencyExit > 10 then
+			--should never happen but you know whatever
+			return nil
+		end
+	end
+	
+	randFloat = randFloat * totalWeights
+	--yeek("chosen value: " .. tostring(randFloat))
+	
+	--local spawnIndex = math.random(#dungeonSpawnPool)
+	local spawnIndex = 0
+	local accumulatedWeight = 0.0
+	local accumulatedIndex = 1
+	for twName, twVal in pairs(dungeonSpawnPool) do
+	
+		for extrKey, extrVal in pairs(twVal.dspVal) do
+			if extrKey == "weight" then
+				accumulatedWeight = accumulatedWeight + extrVal
+				break
+			end
+		end
+	
+		if randFloat < accumulatedWeight then
+			spawnIndex = accumulatedIndex
+		else
+			accumulatedIndex = accumulatedIndex + 1
+		end
+	end
+	
+	--yeek("totalWeight = " .. totalWeights)
+	--yeek("accumulatedWeight = " .. accumulatedWeight)
+	--yeek("accumulatedIndex = " .. accumulatedIndex)
+	
+	--choose an item
+	if spawnIndex <= 0 then
+		spawnIndex = math.random(#dungeonSpawnPool)
+		--yeek("Something went wrong attempting to pick a weighted item from the spawn pool")
+	end
+	
 	local dungeonData = dungeonSpawnPool[spawnIndex]
 	local dungeonParameters = {}
 	local partName = "???"
