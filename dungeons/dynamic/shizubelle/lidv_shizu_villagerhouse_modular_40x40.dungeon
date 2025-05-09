@@ -1,0 +1,23 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_shizu_villagerhouse_modular_40x40",
+		"species": "shizubelle",
+		"rules": [],
+		"anchor": ["lidv_shizu_villagerhouse_modular_40x40"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 1,
+		"protected": false
+	},
+	"parts": 
+	[
+		//primary structure
+		
+		{
+			"name": "lidv_shizu_villagerhouse_modular_40x40",
+			"rules": [],
+			"def": ["tmx", "lidv_shizu_villagerhouse_modular_40x40.json"]
+		}
+	]
+}
