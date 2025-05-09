@@ -46,7 +46,7 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":8,
+                 "x":24,
                  "y":168
                 }, 
                 {
@@ -58,7 +58,7 @@
                  "type":"",
                  "visible":true,
                  "width":24,
-                 "x":144,
+                 "x":128,
                  "y":168
                 }],
          "opacity":1,
@@ -78,14 +78,19 @@
                  "name":"",
                  "properties":[
                         {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"5"
+                        }, 
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"castlewalls1"
+                        }, 
+                        {
                          "name":"mod",
                          "type":"string",
                          "value":"aridgrass"
-                        }, 
-                        {
-                         "name":"surface",
-                         "type":"string",
-                         "value":"0"
                         }],
                  "rotation":0,
                  "type":"",
@@ -93,6 +98,28 @@
                  "width":256,
                  "x":-40,
                  "y":168
+                }, 
+                {
+                 "height":8,
+                 "id":1288,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"5"
+                        }, 
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"castlewalls1"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":256,
+                 "x":-40,
+                 "y":176
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -224,7 +251,7 @@
          "y":0
         }],
  "nextlayerid":21,
- "nextobjectid":1288,
+ "nextobjectid":1289,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

@@ -7,7 +7,7 @@
 		"anchor": ["lidv_shizu_lamps_20x20"],
 		"gravity": 80,
 		"maxRadius": 1000000,
-		"maxParts": 2,
+		"maxParts": 1,
 		"protected": false
 	},
 	"parts": 
