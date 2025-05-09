@@ -1,0 +1,21 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_shizu_upramp_10x20",
+		"species": "shizubelle",
+		"rules": [],
+		"anchor": ["lidv_shizu_upramp_10x20"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 2,
+		"protected": false
+	},
+	"parts": 
+	[
+		{
+			"name": "lidv_shizu_upramp_10x20",
+			"rules": [],
+			"def": ["tmx", "lidv_shizu_upramp_10x20.json"]
+		}
+	]
+}
