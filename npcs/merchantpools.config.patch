@@ -31,5 +31,115 @@
 				]
 			]
 		]
+	},
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_shizubelle_saplingmerchant",
+		"value" : 
+		[
+			[
+				0, 
+				[
+					{ 
+						"item" : 
+						{ 
+							"name" : "sapling", 
+							"parameters" : 
+							{ 
+								"stemName" : "lofty_irisil_acstem", 
+								"foliageName" : "lofty_irisil_acfoliage", 
+								"description" : "This sapling will mature into a leafy tree.",
+								"shortdescription" : "Leafy Sapling"
+							} 
+						}, 
+						"rarity" : 1.0, "price" : 1000 
+					},
+					{ 
+						"item" : 
+						{ 
+							"name" : "sapling", 
+							"parameters" : 
+							{ 
+								"stemName" : "lofty_irisil_acstem", 
+								"foliageName" : "lofty_irisil_acfoliage_apple", 
+								"description" : "This sapling will mature into an apple tree.",
+								"shortdescription" : "Apple Sapling"
+							} 
+						}, 
+						"rarity" : 1.0, "price" : 1000 
+					},
+					{ 
+						"item" : 
+						{ 
+							"name" : "sapling", 
+							"parameters" : 
+							{ 
+								"stemName" : "lofty_irisil_acstem", 
+								"foliageName" : "lofty_irisil_acfoliage_cherry", 
+								"description" : "This sapling will mature into a cherry tree.",
+								"shortdescription" : "Cherry Sapling"
+							} 
+						}, 
+						"rarity" : 1.0, "price" : 1000 
+					},
+					{ 
+						"item" : 
+						{ 
+							"name" : "sapling", 
+							"parameters" : 
+							{ 
+								"stemName" : "lofty_irisil_acstem", 
+								"foliageName" : "lofty_irisil_acfoliage_orange", 
+								"description" : "This sapling will mature into an orange tree.",
+								"shortdescription" : "Orange Sapling" 
+							} 
+						}, 
+						"rarity" : 1.0, "price" : 1000 
+					},
+					{ 
+						"item" : 
+						{ 
+							"name" : "sapling", 
+							"parameters" : 
+							{ 
+								"stemName" : "lofty_irisil_acstem", 
+								"foliageName" : "lofty_irisil_acfoliage_peach", 
+								"description" : "This sapling will mature into a peach tree.",
+								"shortdescription" : "Peach Sapling"
+							} 
+						}, 
+						"rarity" : 1.0, "price" : 1000 
+					},
+					{ 
+						"item" : 
+						{ 
+							"name" : "sapling", 
+							"parameters" : 
+							{ 
+								"stemName" : "lofty_irisil_acstem", 
+								"foliageName" : "lofty_irisil_acfoliage_pear", 
+								"description" : "This sapling will mature into a pear tree.",
+								"shortdescription" : "Pear Sapling"
+							} 
+						}, 
+						"rarity" : 1.0, "price" : 1000 
+					},
+					{ 
+						"item" : 
+						{ 
+							"name" : "sapling", 
+							"parameters" : 
+							{ 
+								"stemName" : "lofty_irisil_acstem", 
+								"foliageName" : "lofty_irisil_acfoliage_bells", 
+								"description" : "This sapling will mature into a bell tree.",
+								"shortdescription" : "Bell Sapling"
+							} 
+						}, 
+						"rarity" : 1.0, "price" : 9750
+					}
+				]
+			]
+		]
 	}
 ]
