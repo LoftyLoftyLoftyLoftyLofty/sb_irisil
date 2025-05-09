@@ -4,7 +4,7 @@
 
   "dropConfig" : {
     "drops" : [
-      [ { "item" : "sapling" }, { "item" : "apple" } ]
+      [ { "item" : "sapling" }, { "item" : "redapple" } ]
     ],
     
     "particles" : {
