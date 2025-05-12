@@ -1,0 +1,32 @@
+{
+  "objectName" : "lofty_irisil_shizubellefossilframe",
+  "colonyTags" : ["shizubelle","pretty","valuable"],
+  "rarity" : "Common",
+  "description" : "A fancy gold frame.",
+  "shortdescription" : "Fossil Frame",
+  "race" : "shizubelle",
+  "category" : "decorative",
+  "price" : 100,
+  "printable" : false,
+
+  "apexDescription" : "Gold trim makes me nervous.",
+  "avianDescription" : "Classy.",
+  "floranDescription" : "Ssshiny frame!",
+  "glitchDescription" : "Impressed. Extra effort went into this gilded border.",
+  "humanDescription" : "Is this really necessary?",
+  "hylotlDescription" : "Slightly too gaudy for my tastes, but at least they tried.",
+  "novakidDescription" : "Reckon this frame's just for show?",
+
+  "inventoryIcon" : "lofty_irisil_shizubellefossilframeicon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_shizubellefossilframe.png:<color>",
+      "imagePosition" : [0, -32],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [0, 0] ],
+      "anchors" : [ "background" ]
+    }
+  ]
+}
