@@ -22,7 +22,8 @@
         [ "maxSpawnCount", [2] ],
 		[ "doNotConnectToPart", [ "lidv_mostlyflat_structure_80x40_1" ] ]
       ],
-      "def" : [ "tmx", "lidv_mostlyflat_structure_80x40_1.json" ]
+      "def" : [ "tmx", "lidv_mostlyflat_structure_80x40_1.json" ],
+	  "chance" : 0.25
     },
 	
     {
