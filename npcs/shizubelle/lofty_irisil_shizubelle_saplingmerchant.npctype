@@ -232,7 +232,7 @@
 	
 	"merchant" : {
       "waitTime" : 40,
-      "storeRadius" : 4,
+      "storeRadius" : 6,
       "categories" : {
         "shizubelle" : ["lofty_irisil_shizubelle_saplingmerchant" ]
       },

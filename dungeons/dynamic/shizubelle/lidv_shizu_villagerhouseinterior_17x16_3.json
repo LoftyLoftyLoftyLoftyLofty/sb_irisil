@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcJxO2AUJU2JOAxZMjjlTgbgGiGWRcA1UnFRz8JlFrHlTiTSLkHnYwocQJhRfpGJkc0Bu16cA16CZFQPEa4C4BIqJZcfgMUsRiollD0WzqBFefRRgdLMUKMDIZjUwUJa+Ghjw5ydyMADyQbHU",
+         "data":"eJw7zsDAcJxO2AUJU2JOAxZMjjlTgbgGiGWRcA1UnFRz8JlFrHlTiTSLkHnYwocQJhRfpGJkc0Bu16cA16CZFQPEa4C4BIqJZcfgMUsRiollD0WziAkjYs3qI4BJMUuBAF6DxkY3q4GBsvTVwIA\/P5GDAcyJsmY=",
          "encoding":"base64",
          "height":18,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFIwEIMSIwvcFsNPtJxbORzKqh0C01ONiUmjUKyAfMjMRjbECfCpjaAACEsgfI",
+         "data":"eJxjYBgFIwEIMSIwvcFsNPtJxbORzKqh0C01ONiUmjUKyAfMjPgxIaBPBUxtAAB8dQe8",
          "encoding":"base64",
          "height":18,
          "id":2,
@@ -55,7 +55,7 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":88,
+                 "width":64,
                  "x":32,
                  "y":112
                 }],
@@ -124,13 +124,13 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -15.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_saplingmerchant\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"lofty_irisil_shizubelle_saplingmerchant\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -17.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_saplingmerchant\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"lofty_irisil_shizubelle_saplingmerchant\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":72,
+                 "x":104,
                  "y":-24
                 }, 
                 {
@@ -184,24 +184,6 @@
                 {
                  "gid":7264,
                  "height":20,
-                 "id":1099,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"stages\" : [ { \"duration\" : [ 9999999, 9999999 ] }, { \"tree\" : true } ], \"stemName\" : \"lofty_irisil_acstem\", \"foliageName\" : \"lofty_irisil_acfoliage\", \"shortdescription\" : \"Display Sapling\", \"description\" : \"This sapling will never grow into a tree. It belongs in the sapling shop.\nPlease put it back :(\" }"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":104,
-                 "y":112
-                }, 
-                {
-                 "gid":7264,
-                 "height":20,
                  "id":1113,
                  "name":"",
                  "properties":[
@@ -216,36 +198,6 @@
                  "width":16,
                  "x":80,
                  "y":112
-                }, 
-                {
-                 "gid":7769,
-                 "height":8,
-                 "id":1115,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"defaultSwitchState\" : true}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":8,
-                 "x":120,
-                 "y":104
-                }, 
-                {
-                 "gid":6652,
-                 "height":8,
-                 "id":1116,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":104,
-                 "y":80
                 }, 
                 {
                  "gid":6652,
@@ -282,6 +234,42 @@
                  "width":16,
                  "x":32,
                  "y":80
+                }, 
+                {
+                 "gid":7813,
+                 "height":16,
+                 "id":1124,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":104,
+                 "y":112
+                }, 
+                {
+                 "gid":7962,
+                 "height":16,
+                 "id":1128,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":104,
+                 "y":96
+                }, 
+                {
+                 "gid":6652,
+                 "height":8,
+                 "id":1133,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":104,
+                 "y":80
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -296,7 +284,7 @@
          "objects":[
                 {
                  "height":0,
-                 "id":1120,
+                 "id":1129,
                  "name":"",
                  "polyline":[
                         {
@@ -304,19 +292,19 @@
                          "y":0
                         }, 
                         {
-                         "x":80,
-                         "y":24
+                         "x":-8,
+                         "y":-24
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":40,
-                 "y":72
+                 "x":112,
+                 "y":104
                 }, 
                 {
                  "height":0,
-                 "id":1121,
+                 "id":1130,
                  "name":"",
                  "polyline":[
                         {
@@ -324,8 +312,28 @@
                          "y":0
                         }, 
                         {
-                         "x":56,
-                         "y":24
+                         "x":-24,
+                         "y":-16
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":112,
+                 "y":88
+                }, 
+                {
+                 "height":0,
+                 "id":1131,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":48,
+                         "y":16
                         }],
                  "rotation":0,
                  "type":"",
@@ -336,7 +344,7 @@
                 }, 
                 {
                  "height":0,
-                 "id":1122,
+                 "id":1132,
                  "name":"",
                  "polyline":[
                         {
@@ -344,19 +352,19 @@
                          "y":0
                         }, 
                         {
-                         "x":32,
-                         "y":24
+                         "x":-72,
+                         "y":-16
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":88,
-                 "y":72
+                 "x":112,
+                 "y":88
                 }, 
                 {
                  "height":0,
-                 "id":1123,
+                 "id":1134,
                  "name":"",
                  "polyline":[
                         {
@@ -364,8 +372,8 @@
                          "y":0
                         }, 
                         {
-                         "x":8,
-                         "y":24
+                         "x":0,
+                         "y":16
                         }],
                  "rotation":0,
                  "type":"",
@@ -381,7 +389,7 @@
          "y":0
         }],
  "nextlayerid":12,
- "nextobjectid":1124,
+ "nextobjectid":1135,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
