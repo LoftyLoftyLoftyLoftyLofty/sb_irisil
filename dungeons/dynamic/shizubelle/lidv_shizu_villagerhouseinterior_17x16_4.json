@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcJxO2AUJU2JOAxZMjjlTgbgGiGWRcA1UnFRz8JlFrHlTiTSLkHnYwocQJhRfpGJkc0Bu16cA16CZpUMBHjVr8JhFrTTRQKFZDQz48xM5GAADUJsf",
+         "data":"eJw7zsDAcJxO2AUJU2JOAxZMjjlTgbgGiGWRcA1UnFRz8JlFrHlTiTSLkHnYwocQJhRfpGJkc0Bu16cA16CZpUMBHjWLMrMSKMDoZlErTTRQaFYDA\/78RA4GADQNnis=",
          "encoding":"base64",
          "height":18,
          "id":1,
@@ -36,7 +36,29 @@
          "draworder":"topdown",
          "id":3,
          "name":"mods",
-         "objects":[],
+         "objects":[
+                {
+                 "height":40,
+                 "id":1106,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"back",
+                         "type":"string",
+                         "value":"cheapwallpaper"
+                        }, 
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"2"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":120,
+                 "x":16,
+                 "y":72
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -249,7 +271,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1106,
+ "nextobjectid":1108,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
