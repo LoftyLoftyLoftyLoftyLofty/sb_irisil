@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDQcJyGGADZex6p",
+         "data":"eJw7zsDQcHyAMQACBSoo",
          "encoding":"base64",
          "height":3,
          "id":1,
@@ -13,13 +13,13 @@
          "opacity":0.5,
          "type":"tilelayer",
          "visible":true,
-         "width":8,
+         "width":11,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYKAtAAAAYAAB",
+         "data":"eJxjYBh4AAAAhAAB",
          "encoding":"base64",
          "height":3,
          "id":2,
@@ -27,7 +27,7 @@
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":8,
+         "width":11,
          "x":0,
          "y":0
         }, 
@@ -36,19 +36,7 @@
          "draworder":"topdown",
          "id":4,
          "name":"objects",
-         "objects":[
-                {
-                 "gid":6156,
-                 "height":24,
-                 "id":1091,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":64,
-                 "x":0,
-                 "y":24
-                }],
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -93,8 +81,7 @@
         {
          "firstgid":2805,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/avian.json"
-        },
-    
+        }, 
         {
          "firstgid":3110,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/floran.json"
@@ -106,7 +93,8 @@
         {
          "firstgid":3531,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/human.json"
-        }, 
+        },
+    
         {
          "firstgid":3819,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-race\/hylotl.json"
@@ -126,8 +114,7 @@
         {
          "firstgid":5636,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/door.json"
-        },
-    
+        }, 
         {
          "firstgid":5768,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/farmable.json"
@@ -151,7 +138,8 @@
         {
          "firstgid":7264,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/sapling.json"
-        }, 
+        },
+    
         {
          "firstgid":7265,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/spawner.json"
@@ -159,8 +147,7 @@
         {
          "firstgid":7281,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/storage.json"
-        },
-    
+        }, 
         {
          "firstgid":7515,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/teleporter.json"
@@ -192,12 +179,12 @@
         {
          "firstgid":8632,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-type\/noisy.json"
-        },
-    
+        }, 
         {
          "firstgid":8673,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-type\/teleporter.json"
-        }, 
+        },
+    
         {
          "firstgid":8752,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/huge-objects.json"
@@ -205,5 +192,5 @@
  "tilewidth":8,
  "type":"map",
  "version":"1.10",
- "width":8
+ "width":11
 }
