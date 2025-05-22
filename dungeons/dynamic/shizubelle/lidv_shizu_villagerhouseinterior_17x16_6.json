@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFIwEIMSIwvcFsNPtJxbORzKqh0C01ONiUmjUSgRwjYUwPoE8FTG0AAIfXCLM=",
+         "data":"eJxjYBgFIwEIMSIwvcFsNPtJxbORzKqh0C01ONiUmjWSgBwjdjxQQJ8KmNoAADCqCFY=",
          "encoding":"base64",
          "height":18,
          "id":2,
@@ -37,33 +37,6 @@
          "id":3,
          "name":"mods",
          "objects":[
-                {
-                 "height":8,
-                 "id":1131,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"colorVariant",
-                         "type":"string",
-                         "value":"1"
-                        }, 
-                        {
-                         "name":"front",
-                         "type":"string",
-                         "value":"polygonplatform"
-                        }, 
-                        {
-                         "name":"mod",
-                         "type":"string",
-                         "value":"snow"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":72,
-                 "x":40,
-                 "y":112
-                }, 
                 {
                  "height":8,
                  "id":1132,
@@ -169,6 +142,33 @@
                  "width":16,
                  "x":112,
                  "y":64
+                }, 
+                {
+                 "height":8,
+                 "id":1152,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"colorVariant",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"front",
+                         "type":"string",
+                         "value":"polygonplatform"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"snow"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":48,
+                 "x":24,
+                 "y":112
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -245,18 +245,6 @@
                  "y":128
                 }, 
                 {
-                 "gid":4200,
-                 "height":24,
-                 "id":1106,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":64,
-                 "y":112
-                }, 
-                {
                  "gid":2147488438,
                  "height":16,
                  "id":1108,
@@ -267,30 +255,6 @@
                  "width":16,
                  "x":40,
                  "y":88
-                }, 
-                {
-                 "gid":4810,
-                 "height":24,
-                 "id":1111,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":88,
-                 "y":112
-                }, 
-                {
-                 "gid":4415,
-                 "height":24,
-                 "id":1115,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":40,
-                 "y":112
                 }, 
                 {
                  "gid":4422,
@@ -399,6 +363,66 @@
                  "width":24,
                  "x":112,
                  "y":96
+                }, 
+                {
+                 "gid":2147487776,
+                 "height":32,
+                 "id":1148,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":88,
+                 "y":128
+                }, 
+                {
+                 "gid":4867,
+                 "height":16,
+                 "id":1151,
+                 "name":"Irisa Plushie",
+                 "properties":[
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_irisaplushie"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":24,
+                 "y":112
+                }, 
+                {
+                 "gid":7358,
+                 "height":12,
+                 "id":1153,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"lofty_irisil_shizubelle_village_xmas\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":13,
+                 "x":56,
+                 "y":112
+                }, 
+                {
+                 "gid":5477,
+                 "height":16,
+                 "id":1157,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":40,
+                 "y":112
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -407,7 +431,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1148,
+ "nextobjectid":1167,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

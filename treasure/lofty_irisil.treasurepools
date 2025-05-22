@@ -1411,5 +1411,14 @@
 	    {"item" : [ "bandage", 1]}
 	  ]
     } ]
+  ],
+  
+  "lofty_irisil_shizubelle_village_xmas" : 
+  [
+    [1, {
+      "fill" : [
+	    {"item" : [ "holidayspirit", 20]}
+	  ]
+    } ]
   ]
 }

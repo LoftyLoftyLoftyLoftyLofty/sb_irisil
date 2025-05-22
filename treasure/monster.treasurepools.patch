@@ -1,0 +1,54 @@
+[
+	[
+		{
+			"op" : "test",
+			"path" : "/smallGiftMonsterBoxTreasure",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/smallGiftMonsterBoxTreasure",
+			"value" : 
+			[
+				[
+					1, 
+					{
+						"fill" : 
+						[
+							{"item" : [ "holidayspirit", 1]},
+							{"item" : [ "lofty_irisil_smallpresent", 1]}
+						]
+					} 
+				]
+			]
+		}
+	],
+	[
+		{
+			"op" : "test",
+			"path" : "/giftMonsterBoxTreasure",
+			"inverse" : true
+		},
+		{
+			"op" : "add",
+			"path" : "/giftMonsterBoxTreasure",
+			"value" : 
+			[
+				[
+					1, 
+					{
+						"fill" : 
+						[
+							//costs 3 holiday spirit to make the monster box
+							//costs 2 holiday spirit to make the big present
+							//so if you defeat the big box you get your remaining 1x holiday spirit back
+							
+							{"item" : [ "holidayspirit", 1]},
+							{"item" : [ "bigpresent", 1]}
+						]
+					} 
+				]
+			]
+		}
+	]
+]
