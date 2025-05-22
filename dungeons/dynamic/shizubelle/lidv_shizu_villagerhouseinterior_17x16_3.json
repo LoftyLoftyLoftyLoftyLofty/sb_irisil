@@ -124,7 +124,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -17.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_saplingmerchant\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"lofty_irisil_shizubelle_saplingmerchant\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -17.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_saplingmerchant_houseinterior_3\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"lofty_irisil_shizubelle_saplingmerchant\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
                         }],
                  "rotation":0,
                  "type":"",

@@ -102,7 +102,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -18.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_villager\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"villager\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -18.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_villager_houseinterior_1\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"villager\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
                         }],
                  "rotation":0,
                  "type":"",
@@ -122,6 +122,60 @@
                  "width":8,
                  "x":16,
                  "y":128
+                }, 
+                {
+                 "gid":7391,
+                 "height":16,
+                 "id":1096,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":80,
+                 "y":128
+                }, 
+                {
+                 "gid":2147491046,
+                 "height":24,
+                 "id":1097,
+                 "name":"Shizubelle Villager Spawner",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"lofty_irisil_shizubelle_village_vacanthouse_spawner\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":32,
+                 "y":128
+                }, 
+                {
+                 "gid":2147490992,
+                 "height":16,
+                 "id":1098,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":104,
+                 "y":128
+                }, 
+                {
+                 "gid":2147490992,
+                 "height":16,
+                 "id":1099,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":88,
+                 "y":112
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -130,7 +184,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1096,
+ "nextobjectid":1100,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

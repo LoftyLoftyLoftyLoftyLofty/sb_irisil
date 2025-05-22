@@ -243,7 +243,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -18.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_shellmerchant\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"lofty_irisil_shizubelle_shellmerchant\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -18.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_shellmerchant_houseinterior_4\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"lofty_irisil_shizubelle_shellmerchant\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
                         }],
                  "rotation":0,
                  "type":"",
