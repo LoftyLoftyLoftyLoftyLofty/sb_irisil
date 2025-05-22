@@ -1,0 +1,23 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_shizu_villagerhouseinterior_17x16_7",
+		"species": "shizubelle",
+		"rules": [],
+		"anchor": ["lidv_shizu_villagerhouseinterior_17x16_7"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 1,
+		"protected": false
+	},
+	"parts": 
+	[
+		//primary structure
+		
+		{
+			"name": "lidv_shizu_villagerhouseinterior_17x16_7",
+			"rules": [],
+			"def": ["tmx", "lidv_shizu_villagerhouseinterior_17x16_7.json"]
+		}
+	]
+}

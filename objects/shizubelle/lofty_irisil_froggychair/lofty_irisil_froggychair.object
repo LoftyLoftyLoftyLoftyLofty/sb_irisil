@@ -1,0 +1,38 @@
+{
+  "objectName" : "lofty_irisil_froggychair",
+  "colonyTags" : ["shizubelle","frogg"],
+  "rarity" : "Uncommon",
+  "category" : "furniture",
+  "price" : 1200,
+  "description" : "A froggy chair. Ribbit.",
+  "shortdescription" : "Froggy Chair",
+  "race" : "shizubelle",
+
+  "apexDescription" : "A chair in the shape of a smiling amphibian.",
+  "avianDescription" : "A cute, froggy chair.",
+  "floranDescription" : "Chair isss friend!",
+  "glitchDescription" : "Confused. Do frogs enjoy being sat upon?",
+  "humanDescription" : "What a cute chair.",
+  "hylotlDescription" : "There is something unsettling about the uncanny smile of this chair.",
+  "novakidDescription" : "Well hey there, little feller!",
+  "nicemiceDescription" : "Vroggy chair. A little ztrange, no?",
+
+  "inventoryIcon" : "lofty_irisil_froggychairicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "lofty_irisil_froggychair.png:<color>",
+      "imagePosition" : [-8, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "objectType" : "loungeable",
+  "sitFlipDirection" : false,
+  "sitPosition" : [1, 19]
+
+}
