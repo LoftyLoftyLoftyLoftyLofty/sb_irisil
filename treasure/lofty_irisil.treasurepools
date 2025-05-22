@@ -1420,5 +1420,14 @@
 	    {"item" : [ "holidayspirit", 20]}
 	  ]
     } ]
+  ],
+  
+  "lofty_irisil_shizubelle_village_vacanthouse_spawner" : 
+  [
+    [1, {
+      "fill" : [
+	    {"item" : [ "spawnershizubelle", 1]}
+	  ]
+    } ]
   ]
 }
