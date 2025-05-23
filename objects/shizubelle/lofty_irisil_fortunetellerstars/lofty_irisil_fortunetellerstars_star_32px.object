@@ -1,0 +1,49 @@
+{
+  "objectName" : "lofty_irisil_fortunetellerstars_star_32px",
+  "colonyTags" : ["light","shizubelle","occult"],
+  "rarity" : "Common",
+  "description" : "A faintly-glowing, star-shaped lamp.",
+  "shortdescription" : "Star Lamp",
+  "race" : "shizubelle",
+
+  "category" : "decorative",
+  "price" : 40,
+  "lightColor" : [25, 25, 0],
+
+  "apexDescription" : "",
+  "avianDescription" : "",
+  "floranDescription" : "",
+  "glitchDescription" : "",
+  "humanDescription" : "",
+  "hylotlDescription" : "",
+  "novakidDescription" : "",
+  "nicemiceDescription" : "",
+
+  "inventoryIcon" : "icon-star.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_fortunetellerstars_star_32px_fullbright.png:<color>.on",
+      "imagePosition" : [-8, -24],
+      "flipImages" : true,
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    },
+    {
+      "image" : "lofty_irisil_fortunetellerstars_star_32px_fullbright.png:<color>.on",
+      "imagePosition" : [-8, -24],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "top" ]
+    }
+  ],
+
+  "animation" : "lofty_irisil_fortunetellerstars.animation",
+  "animationParts" : {
+    "bg" : "lofty_irisil_fortunetellerstars_star_32px_fullbright.png",
+    "fg" : "lofty_irisil_fortunetellerstars_star_32px.png"
+  },
+  "animationPosition" : [-8, -24]
+}

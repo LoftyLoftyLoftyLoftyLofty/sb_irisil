@@ -1,0 +1,35 @@
+{
+  "objectName" : "lofty_irisil_fortunetellertable",
+  "colonyTags" : ["commerce","shizubelle","occult"],
+  "printable" : false,
+  "rarity" : "Uncommon",
+  "description" : "A table with a deep purple cloth draped over the top. Good for dramatic fortune telling!",
+  "shortdescription" : "Fortune-Teller's Table",
+  "race" : "shizubelle",
+  "category" : "furniture",
+  "price" : 1600,
+
+  "apexDescription" : "This table is spooky. I don't like it.",
+  "avianDescription" : "This is certainly less scary than a sacrificial altar, but it still creeps me out.",
+  "floranDescription" : "Floran doess not believe in ghostsss!",
+  "glitchDescription" : "Concerned. Being near this table makes my circuits tingle.",
+  "humanDescription" : "Looks like a typical fortune-teller's table. What's your sign?",
+  "hylotlDescription" : "Such undignified traditions are absent in a civilized society.",
+  "novakidDescription" : "Talked to me old grandmammy with one of these once. She was real angry, tell you what!",
+  "nicemiceDescription" : "Zomeone who knowz how to uze zheze tablez appropriately can make an abzurd amount of money.",
+
+  "inventoryIcon" : "lofty_irisil_fortunetellertableicon.png",
+  "orientations" : [
+    {
+      "dualImage" : "lofty_irisil_fortunetellertable.png:<color>",
+
+      "imagePosition" : [-16, 0],
+      "frames" : 1,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform"
+    }
+  ]
+}

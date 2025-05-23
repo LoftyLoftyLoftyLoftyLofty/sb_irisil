@@ -1,0 +1,60 @@
+{
+  "objectName" : "lofty_irisil_fortunetellerball",
+  "colonyTags" : ["commerce","shizubelle","occult"],
+  "rarity" : "Rare",
+  "description" : "A large crystal ball used for fortune-telling.",
+  "shortdescription" : "Fortune-Teller's Ball",
+  "race" : "shizubelle",
+
+  "category" : "decorative",
+  "price" : 4444,
+  "lightColor" : [92, 133, 153],
+  "flickerDistance" : 0.2,
+  "flickerStrength" : 0.05,
+  "flickerTiming" : 4,
+
+  "apexDescription" : "I can't look away. Is this some kind of mind control device?",
+  "avianDescription" : "The light refracting inside this ball is extremely distracting.",
+  "floranDescription" : "What wasss floran doing?",
+  "glitchDescription" : "Enthralled. I could stare at this for years.",
+  "humanDescription" : "I think I see something in the ball! It looks like... Starbound 1.5?",
+  "hylotlDescription" : "Gaudy baubles like this belong in a sitcom.",
+  "novakidDescription" : "WoooOOOooOOOO- spooky!",
+  "nicemiceDescription" : "Normally, you vant a ball vith lotz of imperfectionz in order to uze it properly. Ziz clear one is very fanzy, but uzelezz.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_fortunetellerball.png:<color>.off",
+      "imagePosition" : [-8, -8],
+      "flipImages" : true,
+      "direction" : "left",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisil_fortunetellerball.png:<color>.off",
+      "imagePosition" : [-8, -8],
+      "direction" : "right",
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  //"soundEffect" : "/sfx/objects/outpostmonitor_static.ogg",
+
+  "animation" : "lofty_irisil_fortunetellerball.animation",
+  "animationParts" : {
+    "bg" : "lofty_irisil_fortunetellerball_fullbright.png",
+    "fg" : "lofty_irisil_fortunetellerball.png"
+  },
+  "animationPosition" : [-8, -8],
+
+  "scripts" : [ "/objects/wired/light/light.lua" ],
+  "scriptDelta" : 60,
+
+  "inputNodes" : [ [0, 0] ]
+
+}

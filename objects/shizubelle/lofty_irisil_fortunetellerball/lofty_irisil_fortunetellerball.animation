@@ -1,0 +1,103 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "light" : {
+        "default" : "on",
+        "states" : {
+          "off" : {
+		    "properties" : {
+              "particleEmittersOff" : [ "dust" ]
+            }
+		  },
+          "on" : {
+            "frames" : 1,
+            "cycle" : 0.3,
+            "mode" : "loop",
+			"properties" : {
+			  "particleEmittersOn" : [ "dust" ]
+			}
+          }
+        }
+      }
+    },
+
+    "parts" : {
+      "bg" : {
+        "properties" : {
+          "centered" : false
+        },
+
+        "partStates" : {
+          "light" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>",
+                "fullbright" : true
+              }
+            }
+          }
+        }
+      },
+      "fg" : {
+        "properties" : {
+          "centered" : false,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "light" : {
+            "off" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.off"
+              }
+            },
+
+            "on" : {
+              "properties" : {
+                "image" : "<partImage>:<color>.<frame>"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "particleEmitters" : {
+    "dust" : {
+      "emissionRate" : 4.0,
+      "emissionRateVariance" : 0.125,
+      "active" : true,
+
+      "particles" : [
+        {
+          "particle" : {
+            "type" : "ember",
+            "position" : [1.5, 1.0],
+            "size" : 1.0,
+            "color" : [160, 255, 255, 128],
+            "light" : [25, 90, 90],
+            "fade" : 0.0,
+            "initialVelocity" : [0.0, 0.0],
+            "finalVelocity" : [0.0, 0.75],
+            "approach" : [0, 10],
+            "timeToLive" : 1.0,
+            "layer" : "middle",
+			"destructionAction" : "shrink",
+			"destructionTime" : 0.5,
+            "variance" : {
+              "initialVelocity" : [1.0, 1.0],
+              "finalVelocity" : [1.0, 1.0],
+			  "position" : [0.5, 0.25]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
