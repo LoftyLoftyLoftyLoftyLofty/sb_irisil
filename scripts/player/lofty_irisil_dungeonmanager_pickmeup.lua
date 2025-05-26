@@ -99,6 +99,7 @@ end
 
 function init()
 
+	player.setUniverseFlag("lofty_irisil_fixoutpostteleporter")
 	lofty_irisil_dungeonmanager_pickmeup_originalInit()
 	
 	--disable this script unless the player is in the appropriate dungeon for it
