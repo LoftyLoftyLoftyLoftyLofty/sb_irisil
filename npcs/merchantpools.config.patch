@@ -141,5 +141,18 @@
 				]
 			]
 		]
+	},
+	{
+		"op" : "add",
+		"path" : "/lofty_irisil_shizubelle_carmerchant",
+		"value" : 
+		[
+			[
+				0, 
+				[
+					{ "item" : { "name" : "carbed" }, "rarity" : 1.0, "price" : 10000 }
+				]
+			]
+		]
 	}
 ]

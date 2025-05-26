@@ -1,0 +1,112 @@
+{
+  "type" : "lofty_irisil_shizubelle_carmerchant",
+  "baseType" : "merchant",
+  
+  "identity" : {
+	"gender" : "female"
+  },
+  
+  "dropPools" : [],
+  
+  "items" : 
+  {
+		"override" : 
+		[
+			[
+				0, 
+				[
+					{
+						"chest" : 
+						[
+							{ "name" : "isabellesummerchest", "parameters" : { "colorIndex" : 5 } }
+						],
+						"legs" : 
+						[
+							{ "name" : "isabellesummerskirtlegs", "parameters" : { "colorIndex" : 5 } }
+						]
+					}
+				]
+			]
+		]
+  },
+
+  "scriptConfig" : {
+    "questGenerator" : {
+      "pools" : ["common", "merchant"],
+	  "enableParticipation" : true,
+	  "timeLimit" : 30,
+      "nearbyQuestLimit" : 2,
+      "nearbyQuestRange" : 50,
+      "chance" : 0.01
+    },
+	
+	"merchant" : {
+      "waitTime" : 40,
+      "storeRadius" : 6,
+      "categories" : {
+        "shizubelle" : ["lofty_irisil_shizubelle_carmerchant" ]
+      },
+	  "numItems" : 1,
+      "buyFactorRange" : [ 1.0, 1.0 ],
+      "sellFactorRange" : [ 0.2, 0.2 ],
+      "paneLayoutOverride" : {
+        "windowtitle" : {
+          "title" : "Car Shop",
+          "subtitle" : "With a car, you can go anywhere"
+
+        }
+      }
+    },
+	
+	"dialog" : {
+      "merchant" : {
+        "start" : {
+          "default" : {
+            "default" : [
+              "Drive home in your new car today!",
+			  "Take it on a test drive! I'm sure you'll love it!",
+			  "These great deals have no brakes!"
+            ]
+          }  
+        },
+        "welcome" : {
+          "default" : {
+            "default" : [
+              "Welcome to your chance at the deal of a lifetime!",
+              "This is where the cars live! Interested?",
+              "Here she is - fresh off the production line! Have a seat!"
+            ]
+          }  
+        },
+        "end" : {
+          "default" : {
+            "default" : [
+              "You won't regret it!",
+              "Stop by again soon for more great deals!",
+              "Remember- if you ever need roadside assistance, just give us a call!",
+              "Our customer service department is available from 11:30AM to 11:37AM, every other wednesday through thursday!"
+            ]
+          }
+        },
+        "follow" : {
+          "default" : {
+            "default" : [
+              "Follow me for a glimpse of your dream car!",
+              "Hey there! Wanna' buy a car?"
+            ]
+          }
+		},
+        "tout" : {
+          "default" : {
+            "default" : [
+              "We've got the only vehicle you'll ever need!",
+              "Four on the floor! Come check out our sweet deals before they leave you in the dust!",
+              "Looking for a ride?",
+              "You're missing out on the sweetest deals around! Follow me!"
+            ]
+		  }
+        }
+      }
+    }
+  }
+}
