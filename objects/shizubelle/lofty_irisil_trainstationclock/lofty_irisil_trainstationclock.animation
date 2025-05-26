@@ -1,0 +1,112 @@
+{
+	"animatedParts" : 
+	{
+		"stateTypes" : 
+		{
+			"movement" : 
+			{
+				"priority" : 0,
+				"default" : "idle",
+
+				"states" : 
+				{
+					"idle" : 
+					{
+						"frames" : 1
+					}
+				}
+			}
+		},
+
+		"parts" : 
+		{
+			"hour" : 
+			{
+				"properties" : 
+				{
+					"offset" : [0, 0],
+					"rotationGroup" : "hour",
+					"centered" : false,
+					"zLevel" : 2
+				},
+
+				"partStates" : 
+				{
+					"movement" : 
+					{
+						"idle" : 
+						{
+							"properties" : 
+							{
+								"image" : "<partImage>:hour"
+							}
+						}
+					}
+				}
+			},
+			
+			"minute" : 
+			{
+				"properties" : 
+				{
+					"offset" : [0, 0],
+					"rotationGroup" : "minute",
+					"centered" : false,
+					"zLevel" : 1
+				},
+
+				"partStates" : 
+				{
+					"movement" : 
+					{
+						"idle" : 
+						{
+							"properties" : 
+							{
+								"image" : "<partImage>:minute"
+							}
+						}
+					}
+				}
+			},
+
+			"clock" : 
+			{
+				"properties" : 
+				{
+					"offset" : [0, 0],
+					"centered" : false,
+					"zLevel" : 0
+				},
+
+				"partStates" : 
+				{
+					"movement" : 
+					{
+						"idle" : 
+						{
+							"properties" : 
+							{
+								"image" : "<partImage>:clock"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+
+	"rotationGroups" : 
+	{
+		"hour" : 
+		{
+			"rotationCenter" : [3, 3],
+			"angularVelocity" : 1.0
+		},
+		"minute" : 
+		{
+			"rotationCenter" : [3, 3],
+			"angularVelocity" : 1.0
+		}
+	}
+}

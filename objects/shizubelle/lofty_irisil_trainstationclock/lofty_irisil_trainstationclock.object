@@ -1,0 +1,56 @@
+{
+  "objectName" : "lofty_irisil_trainstationclock",
+  "colonyTags" : ["shizubelle"],
+  "rarity" : "Uncommon",
+
+  "category" : "wire",
+  "price" : 400,
+  "description" : "A clock. What time is it, anyway?",
+  "shortdescription" : "Train Station Clock",
+  "race" : "shizubelle",
+  "printable" : false,
+
+  "apexDescription" : 	"What time is it? Banana time.",
+  "avianDescription" : 	"What time is it? Time to bird up.",
+  "floranDescription" : "What time isss it? Ssstabby time!",
+  "glitchDescription" : "Quizzical. What time is it?",
+  "humanDescription" : 	"What time is it? Nobody truly knows.",
+  "hylotlDescription" : "What time is it? The Masters ponder these kinds of questions as part of their journeys.",
+  "novakidDescription" :"What time is it? Any time's a good time, really.",
+  "nicemiceDescription" : "Vat time iz it? Naptime zoundz good.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "imageLayers" : [ { "image" : "lofty_irisil_trainstationclock.png:clock" }, { "image" : "lofty_irisil_trainstationclock.png:minute" }, { "image" : "lofty_irisil_trainstationclock.png:hour" } ],
+      "spaces" : 
+	  [
+						  [-1, -2],[0,-2],
+				 [-2, -1],[-1,-1], [0,-1], [1,-1],
+		[-3, 0], [-2, 0], [-1, 0], [0, 0], [1,0], [2,0],
+		[-3, 1], [-2, 1], [-1, 1], [0, 1], [1,1], [2,1],
+				 [-2, 2], [-1, 2], [0, 2], [1,2],
+						  [-1, 3], [0, 3]
+      ],
+      "anchors" : [ "background" ],
+      "direction" : "right",
+      "imagePosition" : [-24, -16]
+    }
+  ],
+  
+  "animationPosition" : [-24, -16],
+
+  "scripts" : [
+    "/objects/shizubelle/lofty_irisil_trainstationclock/lofty_irisil_trainstationclock.lua",
+    "/scripts/util.lua",
+    "/scripts/vec2.lua"
+  ],
+  "animation" : "lofty_irisil_trainstationclock.animation",
+  "animationParts" : {
+    "clock" : "lofty_irisil_trainstationclock.png",
+    "hour" : "lofty_irisil_trainstationclock.png",
+    "minute" : "lofty_irisil_trainstationclock.png"
+  },
+
+  "scriptDelta" : 5
+}
