@@ -226,64 +226,10 @@
                  "y":112
                 }, 
                 {
-                 "gid":2147489867,
-                 "height":32,
-                 "id":1154,
-                 "name":"star lamp 32",
-                 "properties":[
-                        {
-                         "name":"object",
-                         "type":"string",
-                         "value":"lofty_irisil_fortunetellerstars_star_32px"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":13,
-                 "x":112,
-                 "y":104
-                }, 
-                {
-                 "gid":6219,
-                 "height":32,
-                 "id":1155,
-                 "name":"star lamp 32",
-                 "properties":[
-                        {
-                         "name":"object",
-                         "type":"string",
-                         "value":"lofty_irisil_fortunetellerstars_star_32px"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":13,
-                 "x":24,
-                 "y":104
-                }, 
-                {
-                 "gid":2147490108,
-                 "height":24,
-                 "id":1158,
-                 "name":"star lamp 24",
-                 "properties":[
-                        {
-                         "name":"object",
-                         "type":"string",
-                         "value":"lofty_irisil_fortunetellerstars_star_24px"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":88,
-                 "y":80
-                }, 
-                {
-                 "gid":6460,
-                 "height":24,
-                 "id":1159,
-                 "name":"moon lamp 24",
+                 "gid":6242,
+                 "height":8,
+                 "id":1160,
+                 "name":"Moon",
                  "properties":[
                         {
                          "name":"object",
@@ -293,9 +239,63 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":48,
-                 "y":80
+                 "width":8,
+                 "x":56,
+                 "y":88
+                }, 
+                {
+                 "gid":2147489890,
+                 "height":8,
+                 "id":1161,
+                 "name":"Star Short",
+                 "properties":[
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_fortunetellerstars_star_24px"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":88,
+                 "y":88
+                }, 
+                {
+                 "gid":6242,
+                 "height":8,
+                 "id":1162,
+                 "name":"Star Long",
+                 "properties":[
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_fortunetellerstars_star_32px"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":32,
+                 "y":96
+                }, 
+                {
+                 "gid":2147489890,
+                 "height":8,
+                 "id":1163,
+                 "name":"Star Long",
+                 "properties":[
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_fortunetellerstars_star_32px"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":112,
+                 "y":96
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -304,7 +304,7 @@
          "y":0
         }],
  "nextlayerid":11,
- "nextobjectid":1160,
+ "nextobjectid":1164,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
