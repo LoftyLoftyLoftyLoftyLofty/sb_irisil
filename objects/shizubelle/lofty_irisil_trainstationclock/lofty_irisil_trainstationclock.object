@@ -41,9 +41,7 @@
   "animationPosition" : [-24, -16],
 
   "scripts" : [
-    "/objects/shizubelle/lofty_irisil_trainstationclock/lofty_irisil_trainstationclock.lua",
-    "/scripts/util.lua",
-    "/scripts/vec2.lua"
+    "/objects/shizubelle/lofty_irisil_trainstationclock/lofty_irisil_trainstationclock.lua"
   ],
   "animation" : "lofty_irisil_trainstationclock.animation",
   "animationParts" : {

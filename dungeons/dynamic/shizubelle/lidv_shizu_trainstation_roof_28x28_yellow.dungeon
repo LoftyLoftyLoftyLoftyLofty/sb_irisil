@@ -1,0 +1,23 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_shizu_trainstation_roof_28x28_yellow",
+		"species": "shizubelle",
+		"rules": [],
+		"anchor": ["lidv_shizu_trainstation_roof_28x28_yellow"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 1,
+		"protected": false
+	},
+	"parts": 
+	[
+		//primary structure
+		
+		{
+			"name": "lidv_shizu_trainstation_roof_28x28_yellow",
+			"rules": [],
+			"def": ["tmx", "lidv_shizu_trainstation_roof_28x28_yellow.json"]
+		}
+	]
+}
