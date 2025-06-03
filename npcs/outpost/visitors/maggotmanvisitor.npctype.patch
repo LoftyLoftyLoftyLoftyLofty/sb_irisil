@@ -1,0 +1,27 @@
+[
+	{
+		"op" : "add",
+		"path" : "/scriptConfig/dialog/converse/default/default/-",
+		"value" : "Maggot Man says: Falling trees sound like a forest."
+	},
+	{
+		"op" : "add",
+		"path" : "/scriptConfig/dialog/converse/default/default/-",
+		"value" : "Maggot Man says: All of my wells have ends."
+	},
+	{
+		"op" : "add",
+		"path" : "/scriptConfig/dialog/converse/default/default/-",
+		"value" : "Maggot Man says: I believe in seeing."
+	},
+	{
+		"op" : "add",
+		"path" : "/scriptConfig/dialog/converse/default/default/-",
+		"value" : "Maggot Man says: The green side is always on the grass."
+	},
+	{
+		"op" : "add",
+		"path" : "/scriptConfig/dialog/converse/default/default/-",
+		"value" : "Maggot Man says: Hurting someone is a fun game."
+	}
+]
