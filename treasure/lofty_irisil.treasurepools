@@ -1413,6 +1413,27 @@
     } ]
   ],
   
+  "lofty_irisil_shizubelle_village_miniknog" : 
+  [
+    [1, {
+      "fill" : [
+		{"pool" : "apextestfacilityChestTreasure" }
+	  ]
+    } ]
+  ],
+  
+  "lofty_irisil_shizubelle_village_wargroove" : 
+  [
+    [1, {
+      "fill" : [
+	    {"item" : [ "wargroovebanner1", 1]},
+	    {"item" : [ "wargroovebanner2", 1]},
+	    {"item" : [ "wargroovebanner3", 1]},
+	    {"item" : [ "wargroovebanner4", 1]}
+	  ]
+    } ]
+  ],
+  
   "lofty_irisil_shizubelle_village_xmas" : 
   [
     [1, {

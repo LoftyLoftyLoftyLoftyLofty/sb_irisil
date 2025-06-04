@@ -1,13 +1,13 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "height":18,
+ "height":34,
  "infinite":false,
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcJxO2AUJU2JOAxZMjjlTgbgGiGWRcA1UnFRz8JlFrHlTiTSLkHnYwocQJhRfpGJkc0Bu16cA16CZpUMBHjVr8JhFrTTRQKFZDQz48xM5GAADUJsf",
+         "data":"eJzt08EJgDAMQNEuIvQqCIIzOIAD9dAJcnML9+haVlAIkiZtU0TQwzso9VNNDcaY8JAZ0XQ8oaazRi7qEHfeL+1wrdzemtmSetT3kUjzKoU7x95HBXdrDQp\/6z2tVmfCK1ve8P\/TAaKJABnPUq0tssimbAHCtUBQ2loSvt5KsQyqRa2TZlizr7\/Vdo7c9eVq9Q3UvnfKDht0NB4=",
          "encoding":"base64",
-         "height":18,
+         "height":34,
          "id":1,
          "name":"back",
          "opacity":0.5,
@@ -19,9 +19,9 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJxjYBgFIwEIMSIwvcFsNPtJxbORzKqh0C01ONiUmjUKBg7oUwFTGwAAY70HnA==",
+         "data":"eJxjYBgFIwEIMSIwvcFsNPtJxbORzKqh0C01ONiUmjVUAXpYD0WgjwcTq54QMCJRHB\/oI1Gcmmb1EcAg8B8Jk2MHue4iZNZAuUuGETvG5y584QsCnEiYVIBuFi6A7i5KzCIGDHV3DZRZmlTAhPI1qRgAwBw94g==",
          "encoding":"base64",
-         "height":18,
+         "height":34,
          "id":2,
          "name":"front",
          "opacity":1,
@@ -102,200 +102,315 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -18.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_villager_houseinterior_2_A\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"villager\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -18.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_villager_houseinterior_10\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"villager\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":48,
+                 "x":64,
                  "y":-24
                 }, 
                 {
-                 "gid":2147489601,
-                 "height":16,
-                 "id":1098,
+                 "gid":7822,
+                 "height":4,
+                 "id":1095,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":48,
-                 "x":64,
+                 "width":8,
+                 "x":16,
                  "y":128
                 }, 
                 {
-                 "gid":2147488363,
-                 "height":16,
-                 "id":1101,
+                 "gid":8374,
+                 "height":20,
+                 "id":1121,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":40,
-                 "x":72,
-                 "y":112
+                 "x":24,
+                 "y":128
                 }, 
                 {
-                 "gid":6209,
-                 "height":16,
-                 "id":1105,
+                 "gid":2147488958,
+                 "height":32,
+                 "id":1123,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":8,
+                 "width":24,
                  "x":104,
+                 "y":128
+                }, 
+                {
+                 "gid":2700,
+                 "height":32,
+                 "id":1125,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":8,
+                 "y":256
+                }, 
+                {
+                 "gid":2731,
+                 "height":24,
+                 "id":1126,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":72,
+                 "y":104
+                }, 
+                {
+                 "gid":2466,
+                 "height":16,
+                 "id":1127,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":120,
                  "y":96
                 }, 
                 {
-                 "gid":5194,
-                 "height":12,
-                 "id":1106,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{ \"smashOnBreak\" : true, \"smashDropPool\" : \"smashMoney\" }"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":56,
-                 "y":112
-                }, 
-                {
-                 "gid":5904,
-                 "height":24,
-                 "id":1108,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":48,
-                 "y":128
-                }, 
-                {
-                 "gid":2147489552,
-                 "height":24,
-                 "id":1109,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":112,
-                 "y":128
-                }, 
-                {
-                 "gid":7375,
+                 "gid":2466,
                  "height":16,
-                 "id":1111,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":24,
-                 "y":128
-                }, 
-                {
-                 "gid":7290,
-                 "height":12,
-                 "id":1112,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"parameters",
-                         "type":"string",
-                         "value":"{\"treasurePools\":[\"lofty_irisil_shizubelle_village_wargroove\"]}"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":13,
-                 "x":32,
-                 "y":112
-                }, 
-                {
-                 "gid":7187,
-                 "height":16,
-                 "id":1113,
+                 "id":1128,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
                  "x":24,
-                 "y":112
-                }, 
-                {
-                 "gid":5632,
-                 "height":24,
-                 "id":1114,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":16,
                  "y":96
                 }, 
                 {
-                 "gid":5633,
-                 "height":24,
-                 "id":1115,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":48,
-                 "y":96
-                }, 
-                {
-                 "gid":5634,
-                 "height":24,
-                 "id":1116,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":80,
-                 "y":96
-                }, 
-                {
-                 "gid":5635,
-                 "height":24,
-                 "id":1117,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":24,
-                 "x":112,
-                 "y":96
-                }, 
-                {
-                 "gid":6209,
+                 "gid":2764,
                  "height":16,
-                 "id":1118,
+                 "id":1129,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":64,
+                 "y":160
+                }, 
+                {
+                 "gid":2147486444,
+                 "height":48,
+                 "id":1130,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":112,
+                 "y":256
+                }, 
+                {
+                 "gid":2487,
+                 "height":24,
+                 "id":1131,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":24,
+                 "y":232
+                }, 
+                {
+                 "gid":2147486110,
+                 "height":16,
+                 "id":1134,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":48,
+                 "y":240
+                }, 
+                {
+                 "gid":2634,
+                 "height":16,
+                 "id":1135,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{\"treasurePools\":[\"lofty_irisil_shizubelle_village_miniknog\"]}"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":24,
+                 "y":256
+                }, 
+                {
+                 "gid":2147486252,
+                 "height":24,
+                 "id":1136,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":64,
+                 "y":256
+                }, 
+                {
+                 "gid":2147486205,
+                 "height":16,
+                 "id":1137,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":48,
+                 "y":104
+                }, 
+                {
+                 "gid":6602,
+                 "height":8,
+                 "id":1138,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":48,
+                 "y":216
+                }, 
+                {
+                 "gid":3660,
+                 "height":24,
+                 "id":1141,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":32,
+                 "y":192
+                },
+            
+                {
+                 "gid":8864,
+                 "height":8,
+                 "id":1144,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":24,
+                 "y":240
+                }, 
+                {
+                 "gid":8857,
+                 "height":8,
+                 "id":1145,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":32,
+                 "y":240
+                }, 
+                {
+                 "gid":8859,
+                 "height":8,
+                 "id":1146,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
                  "x":40,
-                 "y":96
+                 "y":240
+                }, 
+                {
+                 "gid":8877,
+                 "height":56,
+                 "id":1147,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":88,
+                 "y":-8
+                }, 
+                {
+                 "gid":3660,
+                 "height":24,
+                 "id":1258,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":8,
+                 "y":192
+                }, 
+                {
+                 "gid":6602,
+                 "height":8,
+                 "id":1259,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":8,
+                 "y":216
+                }, 
+                {
+                 "gid":7822,
+                 "height":4,
+                 "id":1260,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":80,
+                 "y":256
+                }, 
+                {
+                 "gid":6300,
+                 "height":8,
+                 "id":1261,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":10,
+                 "x":120,
+                 "y":208
                 }, 
                 {
                  "gid":7270,
                  "height":40,
-                 "id":1119,
-                 "name":"Villager",
+                 "id":1263,
+                 "name":"Miniknog Scientist",
                  "properties":[
                         {
                          "name":"\/\/description",
@@ -320,35 +435,169 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -18.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_villager_houseinterior_2_B\", \"scriptedTargetTags\" : [ \"faction:animalcrossing\", \"species:shizubelle\", \"friendly\"], \"npcSpeciesOptions\" : [ \"shizubelle\" ], \"npcTypeOptions\" : [ \"villager\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
+                         "value":"{ \"offscreenOnly\" : false, \"spawner\" : { \"offset\" : [ 0.0, -34.0 ], \"possibleVariations\" : [ { \"intendedUsage\" : \"shizubelle_villager_houseinterior_10_miniknog\", \"scriptedTargetTags\" : [ \"faction:miniknog\", \"species:apex\", \"hostile\"], \"npcSpeciesOptions\" : [ \"apex\" ], \"npcTypeOptions\" : [ \"labscientist\" ], \"npcParameterOptions\" : [], \"npcSeedOptions\" : [] } ] } }"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":112,
+                 "x":40,
                  "y":-24
                 }, 
                 {
-                 "gid":7822,
-                 "height":4,
-                 "id":1120,
+                 "gid":2147490964,
+                 "height":24,
+                 "id":1264,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":96,
+                 "y":256
+                }, 
+                {
+                 "gid":5743,
+                 "height":16,
+                 "id":1265,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":64,
+                 "y":144
+                }, 
+                {
+                 "gid":7769,
+                 "height":8,
+                 "id":1266,
                  "name":"",
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":8,
-                 "x":16,
-                 "y":128
+                 "x":72,
+                 "y":16
+                }, 
+                {
+                 "gid":7280,
+                 "height":16,
+                 "id":1269,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"parameters",
+                         "type":"string",
+                         "value":"{ \"spawner\" : { \"monsterTypes\" : [\"minidrone\"], \"monsterParams\" : { \"aggressive\" : true }, \"position\" : [2, 2], \"positionVariance\" : [0, 0], \"frequency\" : [0.025, 0.075], \"stock\" : 1, \"trigger\" : \"wire\", \"outOfSight\" : false } }"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":104,
+                 "y":232
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
          "x":0,
          "y":0
+        }, 
+        {
+         "color":"#00ff00",
+         "draworder":"topdown",
+         "id":11,
+         "name":"wire",
+         "objects":[
+                {
+                 "height":0,
+                 "id":1268,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":24,
+                         "y":48
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":96,
+                 "y":152
+                }, 
+                {
+                 "height":0,
+                 "id":1270,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":24,
+                         "y":80
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":96,
+                 "y":152
+                }, 
+                {
+                 "height":0,
+                 "id":1271,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-8,
+                         "y":-64
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":104,
+                 "y":216
+                }, 
+                {
+                 "height":0,
+                 "id":1272,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-8,
+                         "y":120
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":72,
+                 "y":8
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":false,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":11,
- "nextobjectid":1121,
+ "nextlayerid":12,
+ "nextobjectid":1273,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
@@ -493,7 +742,11 @@
         }, 
         {
          "firstgid":8853,
-         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/breakable.json"
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-colonytag\/science.json"
+        }, 
+        {
+         "firstgid":8871,
+         "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-colonytag\/outpost.json"
         }],
  "tilewidth":8,
  "type":"map",
