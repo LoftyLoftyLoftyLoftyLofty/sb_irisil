@@ -1,5 +1,5 @@
 {
-  "name" : "lofty_irisil_acstem",
+  "name" : "lofty_irisil_ac",
   "shape" : "forest",
   "health" : 10,
   "middleMinSize" : 1,
@@ -72,7 +72,7 @@
       "attachment" : {
         "bx" : -4,
         "by" : 0,
-        "x" : 0,
+        "x" : 4,
         "y" : 15
       }
     }
@@ -81,7 +81,7 @@
     "crown1" : {
       "image" : "crown1.png",
       "attachment" : {
-        "bx" : -68,
+        "bx" : -72,
         "by" : -10
       }
     }
@@ -90,9 +90,9 @@
     "middle1" : {
       "image" : "middle1.png",
       "attachment" : {
-        "bx" : 0,
+        "bx" : -4,
         "by" : 0,
-        "x" : 0,
+        "x" : 4,
         "y" : 20
       }
     }

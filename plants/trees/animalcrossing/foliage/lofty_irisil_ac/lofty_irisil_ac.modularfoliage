@@ -1,10 +1,10 @@
 {
-  "name" : "lofty_irisil_acfoliage_cherry",
+  "name" : "lofty_irisil_ac",
   "shape" : "forest",
 
   "dropConfig" : {
     "drops" : [
-      [ { "item" : "sapling" }, { "item" : "alienfruit" } ]
+      [ { "item" : "sapling" } ]
     ],
     
     "particles" : {

@@ -1,10 +1,10 @@
 {
-  "name" : "lofty_irisil_acfoliage_orange",
+  "name" : "lofty_irisil_ac_apple",
   "shape" : "forest",
 
   "dropConfig" : {
     "drops" : [
-      [ { "item" : "sapling" }, { "item" : "orange" } ]
+      [ { "item" : "sapling" }, { "item" : "redapple" } ]
     ],
     
     "particles" : {

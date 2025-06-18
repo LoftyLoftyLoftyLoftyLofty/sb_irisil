@@ -14314,24 +14314,6 @@
                  "y":232
                 }, 
                 {
-                 "gid":2908,
-                 "height":72,
-                 "id":1066,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"object",
-                         "type":"string",
-                         "value":"lofty_irisil_invisibledockingfieldsmall"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":3872,
-                 "y":272
-                }, 
-                {
                  "gid":4943,
                  "height":40,
                  "id":1067,
@@ -24954,6 +24936,24 @@
                  "width":8,
                  "x":2224,
                  "y":784
+                }, 
+                {
+                 "gid":2908,
+                 "height":72,
+                 "id":1066,
+                 "name":"TODO: Replace this with a 1x9 door because players keep just jumping immediately to the left and ignoring the entire trap sequence to the right",
+                 "properties":[
+                        {
+                         "name":"object",
+                         "type":"string",
+                         "value":"lofty_irisil_invisibledockingfieldsmall"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":3872,
+                 "y":272
                 }],
          "opacity":1,
          "type":"objectgroup",

@@ -45,7 +45,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"stemName\" : \"lofty_irisil_acstem\", \"foliageName\" : \"lofty_irisil_acfoliage_pear\", \"stages\" : [ { \"tree\" : true } ] }"
+                         "value":"{ \"stemName\" : \"lofty_irisil_ac\", \"foliageName\" : \"lofty_irisil_ac_pear\", \"stages\" : [ { \"tree\" : true } ] }"
                         }],
                  "rotation":0,
                  "type":"",

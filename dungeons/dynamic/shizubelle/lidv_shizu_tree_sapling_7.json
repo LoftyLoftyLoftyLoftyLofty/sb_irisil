@@ -78,7 +78,7 @@
                         {
                          "name":"parameters",
                          "type":"string",
-                         "value":"{ \"stemName\" : \"lofty_irisil_acstem\", \"foliageName\" : \"lofty_irisil_acfoliage_bells\", \"stages\" : [ { \"tree\" : true } ] }"
+                         "value":"{ \"stemName\" : \"lofty_irisil_ac\", \"foliageName\" : \"lofty_irisil_ac_bells\", \"stages\" : [ { \"tree\" : true } ] }"
                         }],
                  "rotation":0,
                  "type":"",
