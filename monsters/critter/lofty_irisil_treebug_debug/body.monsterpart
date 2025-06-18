@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_treebug_debug",
+  "category" : "lofty_irisil_treebug_debug",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "body.png"
+  }
+}

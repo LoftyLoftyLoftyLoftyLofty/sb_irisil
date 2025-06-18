@@ -1,7 +1,7 @@
 require "/scripts/rect.lua"
 require "/scripts/lofty_irisil_util.lua"
 require "/scripts/companions/capturable.lua"
-
+require "/scripts/lofty_irisil_util_tree.lua"
 --oldCapturableInit = capturable.init or function() end
 --function capturable.init()
 --	oldCapturableInit()

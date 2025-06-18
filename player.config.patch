@@ -13,5 +13,10 @@
 		"op" : "add",
 		"path" : "/deploymentConfig/scripts/-",
 		"value" : "/scripts/player/lofty_irisil_dungeonmanager_morphtech.lua"
+	},
+	{
+		"op" : "add",
+		"path" : "/deploymentConfig/scripts/-",
+		"value" : "/scripts/player/lofty_irisil_debugutils.lua"
 	}
 ]

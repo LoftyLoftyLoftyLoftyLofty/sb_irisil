@@ -1,4 +1,15 @@
 {
+  "li_initTreeBugBehavior": {
+    "type": "action",
+    "name": "li_initTreeBugBehavior",
+    "title": "li_initTreeBugBehavior",
+    "properties": {
+	  "behavior": {"type": "string", "value": "walkingcritter"}
+	},
+    "category": "lofty_irisil",
+    "script": "/monsters/lofty_irisil_critterTreeBugBehaviorOnRez.lua",
+    "output": {}
+  },
   "li_initObserverBehavior": {
     "type": "action",
     "name": "li_initObserverBehavior",
