@@ -7,32 +7,32 @@
 		"op": "add",
 		"path": "/panels/-",
 		"value": 
-			{
-				"drawables": 
-				[	
-					{
-						"image": "/objects/lofty_irisil/irisamerchantv1/irisamerchantv1.png:default.<frame>"
-					}
-				],
-				"animationFrames": 12,
-				"startTime": 4.0,
-				"keyframes": 
-				[
-					{
-						"timecode": 0,
-						"alpha": 1,
-						"position": [50,50],
-						"zoom": 1,
-						"frame": 0
-					},
-					
-					{
-						"timecode" : 10000,
-						"alpha" : 1,
-						"zoom" : 1,
-						"frame" : 80000
-					}
-				]
-			}
+		{
+			"drawables": 
+			[	
+				{
+					"image": "/objects/lofty_irisil/irisamerchantv1/irisamerchantv1.png:default.<frame>"
+				}
+			],
+			"animationFrames": 12,
+			"startTime": 4.0,
+			"keyframes": 
+			[
+				{
+					"timecode": 0,
+					"alpha": 1,
+					"position": [60,137],
+					"zoom": 1,
+					"frame": 0
+				},
+				
+				{
+					"timecode" : 10000,
+					"alpha" : 1,
+					"zoom" : 1,
+					"frame" : 80000
+				}
+			]
+		}
     }
 ]
