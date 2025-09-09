@@ -133,57 +133,61 @@ function liu_scanForClimbableTrees( position, radius, logInfo )
 						local maximumNumberOfMiddleSegments = 0
 						local stemDir = root.treeStemDirectory( stem )
 						if stemDir then
-							local rootStem = root.assetJson( stemDir .. stem .. ".modularstem" )
-							if rootStem then
+							local successLoadStem, rootStem = pcall( function() return root.assetJson( stemDir .. stem .. ".modularstem" ) end )
+							if successLoadStem then
+								if rootStem then
+								
+									--  tree trunk offsets will usually be within 1 or 2 pixels of a center
+									--  so if we get the average of all the trunk bases
+									--  it will usually give a sane result
 							
-								--  tree trunk offsets will usually be within 1 or 2 pixels of a center
-								--  so if we get the average of all the trunk bases
-								--  it will usually give a sane result
-						
-								if rootStem.base then
-									local cumulativeXOffset = 0
-									local cumulativeYOffset = 0
-									local baseCount = 0
-									for k_b, v_b in pairs( rootStem.base ) do
-										cumulativeXOffset = cumulativeXOffset + v_b.attachment.x + v_b.attachment.bx
-										cumulativeYOffset = cumulativeYOffset + v_b.attachment.y + v_b.attachment.by
-										baseCount = baseCount + 1
+									if rootStem.base then
+										local cumulativeXOffset = 0
+										local cumulativeYOffset = 0
+										local baseCount = 0
+										for k_b, v_b in pairs( rootStem.base ) do
+											cumulativeXOffset = cumulativeXOffset + v_b.attachment.x + v_b.attachment.bx
+											cumulativeYOffset = cumulativeYOffset + v_b.attachment.y + v_b.attachment.by
+											baseCount = baseCount + 1
+										end
+										if baseCount > 0 then
+											--  this is measured in pixels, so we convert to tiles here
+											averageTrunkXOffset = (cumulativeXOffset / baseCount) / 8
+											averageTrunkYOffset = (cumulativeYOffset / baseCount) / 8
+										end
 									end
-									if baseCount > 0 then
-										--  this is measured in pixels, so we convert to tiles here
-										averageTrunkXOffset = (cumulativeXOffset / baseCount) / 8
-										averageTrunkYOffset = (cumulativeYOffset / baseCount) / 8
+									
+									--  we also want to determine a sane minimum and maximum Y climb range
+									
+									--  as a minimum value, we get the vertical offset average of the bases (we get this above)
+									--  the maximum value is the vertical offset average of the middles * minimum # of middle segments
+									
+									if rootStem.middle then
+										local cumulativeXOffset = 0
+										local cumulativeYOffset = 0
+										local middleCount = 0
+										for k_m, v_m in pairs( rootStem.middle ) do
+											cumulativeXOffset = cumulativeXOffset + v_m.attachment.x + v_m.attachment.bx
+											cumulativeYOffset = cumulativeYOffset + v_m.attachment.y + v_m.attachment.by
+											middleCount = middleCount + 1
+										end
+										if middleCount > 0 then
+											averageMiddleXOffset = (cumulativeXOffset / middleCount) / 8
+											averageMiddleYOffset = (cumulativeYOffset / middleCount) / 8
+										end
+									end
+									
+									if rootStem.middleMinSize then
+										minimumNumberOfMiddleSegments = rootStem.middleMinSize
+										maximumNumberOfMiddleSegments = rootStem.middleMaxSize
 									end
 								end
-								
-								--  we also want to determine a sane minimum and maximum Y climb range
-								
-								--  as a minimum value, we get the vertical offset average of the bases (we get this above)
-								--  the maximum value is the vertical offset average of the middles * minimum # of middle segments
-								
-								if rootStem.middle then
-									local cumulativeXOffset = 0
-									local cumulativeYOffset = 0
-									local middleCount = 0
-									for k_m, v_m in pairs( rootStem.middle ) do
-										cumulativeXOffset = cumulativeXOffset + v_m.attachment.x + v_m.attachment.bx
-										cumulativeYOffset = cumulativeYOffset + v_m.attachment.y + v_m.attachment.by
-										middleCount = middleCount + 1
-									end
-									if middleCount > 0 then
-										averageMiddleXOffset = (cumulativeXOffset / middleCount) / 8
-										averageMiddleYOffset = (cumulativeYOffset / middleCount) / 8
-									end
-								end
-								
-								if rootStem.middleMinSize then
-									minimumNumberOfMiddleSegments = rootStem.middleMinSize
-									maximumNumberOfMiddleSegments = rootStem.middleMaxSize
-								end
+							else
+								-- we should probably just exit here, but try with default params anyway
 							end
 						end
 						
-						--  use the current height of the tree to figure out a reasomable estimate of midsegments
+						--  use the current height of the tree to figure out a reasonable estimate of midsegments
 						local verticalStitching = averageTrunkYOffset
 						local reasonableEstimateOfMiddleSegments = 0
 						while (reasonableEstimateOfMiddleSegments < maximumNumberOfMiddleSegments) and (verticalStitching < treeHeight) do
