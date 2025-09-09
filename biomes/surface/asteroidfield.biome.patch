@@ -1,5 +1,9 @@
 [
   { 
+	"op" : "test",
+	"path" : "/spawnProfile/groups/-"
+  },
+  { 
 	"op" : "add",
 	"path" : "/spawnProfile/groups/-",
 	"value" : 
