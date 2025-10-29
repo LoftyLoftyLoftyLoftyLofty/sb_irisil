@@ -39,6 +39,9 @@ function liu_scanForClimbableTrees( position, radius, logInfo )
 
 	local result = {}
 	
+	--  disabling this due to steam user feedback about poor performance
+	return result
+	
 	--  Scan for all types of plants
 	local q = world.entityQuery(position, radius, { includedTypes = { "plant" } }) --, "plantDrop"
 	
