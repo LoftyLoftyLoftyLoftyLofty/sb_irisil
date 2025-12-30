@@ -764,6 +764,7 @@
 	]
   ],
   
+  //currently unused, leaving this here in case someone's worldgen is using it somewhere
   "lofty_irisil_fishingUpgrade_reelsOnly" : [
     [0, {
       "pool" : [
@@ -786,8 +787,9 @@
 			],
 			"pool" : 
 			[
-				//basically we only want to give the user upgrades they're allowed to use
-				{"weight" : 0.4, "pool" : "lofty_irisil_fishingUpgrade_reelsOnly"},
+				//user pointed out that giving someone reel upgrades in a chest skips progression
+				//{"weight" : 0.4, "pool" : "lofty_irisil_fishingUpgrade_reelsOnly"},
+				
 				{"weight" : 0.8, "item" : [ "lofty_irisil_slimefishinglure", 1]},
 				{"weight" : 0.6, "item" : [ "smashabledrink1", 1]}
 			],
