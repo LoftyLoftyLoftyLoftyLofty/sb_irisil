@@ -1372,6 +1372,20 @@
 	]
   ],
   
+  "lofty_irisil_bastet_traplore3" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramidtrap3-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
   "lofty_irisil_tombbatongTreasure" : [
     [1, {
 	  "fill" : [
@@ -1380,7 +1394,7 @@
       "pool" : [
         {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
         {"weight" : 0.200, "item" : "leather"},
-        {"weight" : 0.001, "item" : "batongaf"}
+        {"weight" : 0.001, "item" : "lofty_irisil_tombbatongaf"}
       ],
       "poolRounds" : [
         [0.20, 0],
@@ -1398,7 +1412,7 @@
       "pool" : [
         {"weight" : 0.599, "item" : "bandage"},
         {"weight" : 0.400, "item" : "leather"},
-        {"weight" : 0.001, "item" : "batongaf"}
+        {"weight" : 0.001, "item" : "lofty_irisil_tombbatongaf"}
       ],
 	  
 	  //same as tomb yokat pool, dropping 2 bandages occasionally instead of 1 is fine
@@ -1413,6 +1427,79 @@
 	    {"item" : [ "bandage", 1]}
 	  ]
     } ]
+  ],
+  
+  "lofty_irisil_seaCreatureBasicTreasure" : 
+  [
+    [0, {
+      "pool" : [
+        {"weight" : 0.70, "pool" : "chestMoney"},
+        {"weight" : 0.16, "item" : "kelp"},
+        {"weight" : 0.08, "item" : "manipulatormodule"},
+        {"weight" : 0.03, "item" : "techcard"},
+        {"weight" : 0.01, "item" : "upgrademodule"},
+        {"weight" : 0.01, "pool" : "instrument"},
+        {"weight" : 0.01, "pool" : "costume"}
+      ]
+    }]
+  ],
+  
+  "lofty_irisil_flajavTreasure" : [
+    [1, {
+	  "fill" : [
+	  ],
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_irisil_seaCreatureBasicTreasure"},
+        {"weight" : 0.200, "item" : "cellmatter"},
+        {"weight" : 0.001, "item" : "lofty_irisil_flajavaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_irisil_flajavHunting" : [
+    [1, {
+	  "fill" : [
+	  ],
+      "pool" : [
+        {"weight" : 0.998, "item" : "cellmatter"},
+        {"weight" : 0.002, "item" : "lofty_irisil_flajavaf"}
+      ],
+	  "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_irisil_flajavCrispyTreasure" : [
+    [1, {
+	  "fill" : [
+	  ],
+      "pool" : [
+        {"weight" : 0.799, "pool" : "lofty_irisil_seaCreatureBasicTreasure"},
+        {"weight" : 0.200, "item" : "cellmatter"},
+        {"weight" : 0.001, "item" : "lofty_irisil_flajavaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_irisil_flajavCrispyHunting" : [
+    [1, {
+	  "fill" : [
+	  ],
+      "pool" : [
+        {"weight" : 0.998, "item" : "cellmatter"},
+        {"weight" : 0.002, "item" : "lofty_irisil_flajavaf"}
+      ],
+	  "allowDuplication" : true
+    }]
   ],
   
   "lofty_irisil_shizubelle_village_miniknog" : 

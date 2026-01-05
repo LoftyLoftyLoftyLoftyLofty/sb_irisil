@@ -24593,7 +24593,7 @@
                  "gid":5516,
                  "height":16,
                  "id":2803,
-                 "name":"TODO",
+                 "name":"",
                  "properties":[
                         {
                          "name":"parameters",
@@ -25278,6 +25278,18 @@
                  "width":16,
                  "x":2208,
                  "y":1776
+                }, 
+                {
+                 "gid":2802,
+                 "height":8,
+                 "id":2897,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":8,
+                 "x":3120,
+                 "y":904
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -29351,6 +29363,26 @@
                  "width":0,
                  "x":3384,
                  "y":1816
+                }, 
+                {
+                 "height":0,
+                 "id":2898,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":-512,
+                         "y":168
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":3120,
+                 "y":896
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -31613,7 +31645,7 @@
          "y":0
         }],
  "nextlayerid":22,
- "nextobjectid":2897,
+ "nextobjectid":2899,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

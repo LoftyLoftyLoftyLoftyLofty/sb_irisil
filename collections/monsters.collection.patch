@@ -54,5 +54,15 @@
 		  "monsterType" : "lofty_irisil_tombyokat",
 		  "icon" : "/monsters/walkers/lofty_irisil_tombyokat/body/lofty_irisil_tombyokat.png:idle.1"
 		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_flajav",
+		"value" : 
+		{
+		  "order" : 9006,
+		  "monsterType" : "lofty_irisil_flajav",
+		  "icon" : "/monsters/swimming/lofty_irisil_flajav/body/lofty_irisil_flajav.png:idle.1?flipx"
+		}
 	}
 ]

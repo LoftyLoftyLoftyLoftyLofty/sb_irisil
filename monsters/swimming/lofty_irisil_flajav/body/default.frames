@@ -1,0 +1,26 @@
+{
+  "frameGrid" : {
+    "size" : [64, 16],
+    "dimensions" : [1, 4],
+
+    "names" : [
+      [ "swim.1" ],
+      [ "swim.2" ],
+      [ "swim.3" ],
+	  [ "swim.4" ]
+    ]
+  },
+
+  "aliases" : {
+    "idle" : "swim.1",
+    "idle.1" : "swim.1",
+    "flop.1" : "swim.1",
+    "flop.2" : "swim.2",
+    "flop.3" : "swim.3",
+    "flop.4" : "swim.4",
+	"melee.1" : "swim.1",
+	"melee.2" : "swim.2",
+	"melee.3" : "swim.3",
+	"melee.4" : "swim.4"
+  }
+}

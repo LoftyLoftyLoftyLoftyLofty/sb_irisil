@@ -43,5 +43,14 @@
 		"order" : 9005,
 		"item" : "lofty_irisil_tombyokataf"
 	  }
+	},
+	{
+	  "op": "add", 
+	  "path": "/collectables/lofty_irisil_flajavaf",
+	  "value": 		
+	  {
+		"order" : 9006,
+		"item" : "lofty_irisil_flajavaf"
+	  }
 	}
 ]

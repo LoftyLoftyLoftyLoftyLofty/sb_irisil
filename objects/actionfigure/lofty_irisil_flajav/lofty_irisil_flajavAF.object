@@ -1,0 +1,34 @@
+{
+  "objectName" : "lofty_irisil_flajavaf",
+  "colonyTags" : ["lofty_irisil", "pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "lofty_irisil_flajavaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"These elongated organisms spear prey with their sharp anterior shells.\"",
+  "shortdescription" : "Flajav Figurine",
+
+
+
+  "inventoryIcon" : "lofty_irisil_flajavaf.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_flajavaf.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisil_flajavaf.png:<color>",
+      "imagePosition" : [-8, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
