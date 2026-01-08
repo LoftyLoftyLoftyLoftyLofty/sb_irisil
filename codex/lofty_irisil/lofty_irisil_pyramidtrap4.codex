@@ -1,0 +1,55 @@
+{
+  "id" : "lofty_irisil_pyramidtrap4",
+  "title" : "Effective Trap Design 4/5",
+  "description" : "Design and implementation of nefarious devices.",
+  "icon" : "lofty_irisil_pyramidtrap4.png",
+  
+  "contentPages" : [
+"^yellow;Chapter 4: Practical Applications^reset;
+
+Now that you're familiar with the necessary ingredients for a good trap, here are some sample setups that you can adapt to fit your lair.
+
+^green;Bait and Switch:^reset;
+Place a visible chest next to a button or switch that opens an obvious door. Wire the switch to a boulder trap that rolls a rock through the door as it opens. Surprise!
+
+^#8888CC;>>",
+
+"^yellow;Chapter 4: Practical Applications^reset;
+
+So, what is Chaos Management?
+It's easiest to think of this discipline as a workflow for creating mistakes. ^green;At their core, all traps rely on a victim making at least one mistake.^reset;
+
+Making mistakes easy for your guests without exposing yourself to the same pitfalls ^#888888;(literally or figuratively)^reset; can make the difference between an adventurer escaping with your treasure or enriching your treasury!
+^#8888CC;>>",
+
+"^yellow;Chapter 4: Practical Applications^reset;
+
+The first step in creating mistakes is creating ^green;distractions!^reset;
+
+From spotlights to spike pits, it's important that intruders always have something interesting or provocative to look at to keep their focus away from the traps intended to cripple them or finish them off.
+
+^red;Monsters, ^yellow;shiny objects, ^reset;and ^green;baited chests^reset; are all effective distractions!
+^#8888CC;>>",
+
+"^yellow;Chapter 4: Practical Applications^reset;
+
+The second step in creating mistakes is creating ^green;syncopation!^reset;
+
+If you're not familiar with this funny word, syncopation is when something occurs that's off-rhythm or off-beat. ^green;Most species struggle with arrythmic timings,^reset; and even the faintest patterns, like the soft pulses of a crystal lamp, can have a huge impact on the potency of a surprise attack.
+
+^#8888CC;>>",
+
+"^yellow;Chapter 4: Practical Applications^reset;
+
+The final step in creating mistakes is ^green;subverting expectations!^reset;
+
+A platform that drops out from beneath your feet... A door that locks behind you... A mimic that looks like a treasure chest...
+
+Each of these classic examples deceives intruders in different ways, but what they all have in common is the conversion of something familiar and safe into something deadly."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

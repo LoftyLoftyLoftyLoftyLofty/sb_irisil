@@ -1,0 +1,56 @@
+{
+  "id" : "lofty_irisil_pyramidtrap3",
+  "title" : "Effective Trap Design 3/5",
+  "description" : "Chaos Management and Mistake Theory.",
+  "icon" : "lofty_irisil_pyramidtrap3.png",
+  
+  "contentPages" : [
+"^yellow;Chapter 3: Chaos Management^reset;
+
+On paper, it's easy to fall into the trap ^#888888;(if you'll excuse the pun)^reset; of assuming that increasing the complexity of your traps or adding more layers will always result in better success rates.
+
+Unfortunately, this premise is only partially true. 
+
+To get the best results, what you actually require is ^red;Chaos Management.^reset;
+
+^#8888CC;>>",
+
+"^yellow;Chapter 3: Chaos Management^reset;
+
+So, what is Chaos Management?
+It's easiest to think of this discipline as a workflow for creating mistakes. ^green;At their core, all traps rely on a victim making at least one mistake.^reset;
+
+Making mistakes easy for your guests without exposing yourself to the same pitfalls ^#888888;(literally or figuratively)^reset; can make the difference between an adventurer escaping with your treasure or enriching your treasury!
+^#8888CC;>>",
+
+"^yellow;Chapter 3: Chaos Management^reset;
+
+The first step in creating mistakes is creating ^green;distractions!^reset;
+
+From spotlights to spike pits, it's important that intruders always have something interesting or provocative to look at to keep their focus away from the traps intended to cripple them or finish them off.
+
+^red;Monsters, ^yellow;shiny objects, ^reset;and ^green;baited chests^reset; are all effective distractions!
+^#8888CC;>>",
+
+"^yellow;Chapter 3: Chaos Management^reset;
+
+The second step in creating mistakes is creating ^green;syncopation!^reset;
+
+If you're not familiar with this funny word, syncopation is when something occurs that's off-rhythm or off-beat. ^green;Most species struggle with arrythmic timings,^reset; and even the faintest patterns, like the soft pulses of a crystal lamp, can have a huge impact on the potency of a surprise attack.
+
+^#8888CC;>>",
+
+"^yellow;Chapter 3: Chaos Management^reset;
+
+The final step in creating mistakes is ^green;subverting expectations!^reset;
+
+A platform that drops out from beneath your feet... A door that locks behind you... A mimic that looks like a treasure chest...
+
+Each of these classic examples deceives intruders in different ways, but what they all have in common is the conversion of something familiar and safe into something deadly."
+
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

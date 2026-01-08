@@ -1,7 +1,7 @@
 {
   "id" : "lofty_irisil_pyramidtrap2",
-  "title" : "Effective Trap Design (Part 2)",
-  "description" : "Chapters about boulder traps, spike pits, and other dangerous surprises.",
+  "title" : "Effective Trap Design 2/5",
+  "description" : "Boulder traps, spike pits, and other dangerous surprises.",
   "icon" : "lofty_irisil_pyramidtrap2.png",
   
   "contentPages" : [
@@ -24,7 +24,7 @@ More importantly, rock traps work well together with spike pits - an intruder wi
 
 Fluids like ^#5500aa;oil^reset; and ^green;slime^reset; are also simple and deadly.
 
-By themselves, these substances can suffocate intruders or slow their movements- but these fluids' properties also greatly increase the effectiveness of other traps!
+By themselves, these substances can suffocate intruders or slow their movements- but these fluids' properties also greatly increase the efficacy of other traps!
 
 Running away from a rolling boulder is much more difficult for someone covered in viscous oil or sticky slime.
 ^#8888CC;>>",

@@ -1,18 +1,38 @@
 {
   "id" : "lofty_irisil_pyramidlore1",
-  "title" : "Coming Forth by Day",
-  "description" : "An ancient manuscript explaining afterlife etiquette.",
+  "title" : "Coming Forth by Day 1/3",
+  "description" : "An introduction to the afterlife.",
   "icon" : "lofty_irisil_pyramidlore1.png",
   
   "contentPages" : [
-"awa
+"^yellow;Eventually, death comes for all of us.^reset;
+
+Not even the mightiest gods can escape death's grasp- but the timescales of the lives of such beings are so vast that our tiny, irrelevant civilizations will cease to exist long before most deities come face to face with the ends of their natural lives.
+
+When you do inevitably die ^#888888;(and you WILL die),^reset; it's helpful to understand what happens next on your journey into the afterlife and beyond.
 ^#8888CC;>>",
 
-"awawa
+"^yellow;Your soul is a complex structure made up of a myriad of distinct parts, ^reset;many of which are tethered together by your physical body.^reset;
+
+From the moment of your death, until the last remnants of your vessel are destroyed, the constituent elements of your soul slowly drift apart, each performing a specific task as it is released from the grip of your mortal coil. The results of these tasks ultimately determine \"your fate\".
+
 ^#8888CC;>>",
 
-"awawawa"
+"^yellow;As your soul untangles itself, some of your essence is immediately reclaimed by the primordial seas^reset; from which life and energy continuously erupt. 
 
+^yellow;Some of your essence lingers behind, stratified into different densities of consciousness,^reset; ranging from abject awareness to hazy, suggestible, dreamlike ecstasy.
+
+This fragmentation is very different from the experiences of our lives, but it is a necessary step in rebirth!
+^#8888CC;>>",
+
+"^yellow;Each component of your soul is judged individually;^reset; the elements that pass inspection are either entrusted with new purposes for their next reincarnation or separated into higher or lower realms.
+
+^yellow;It is said that the gods have distinct rituals for evaluating each part of your soul,^reset; from the weighing of your \"heart\" against the Feather of ^cyan;Ma'at,^reset; to tests of your willpower, your intellect, and the impact you had on the lives of those around you.
+^#8888CC;>>",
+
+"^yellow;Like a cosmic centrifuge, the fragments of your soul that fail inspection are returned to this realm to try again.^reset; 
+
+In many cases, these fragments aren't all allocated to the same destination body; under the right circumstances, multiple \"individuals\" ^#888888;(an illusion created by physicality)^reset; may come into possession of memory shards from \"your life\" at the same time. From this perspective, the notion of having lived a \"past life\" is both reasonable and ridiculous!"
   ],
     "itemConfig" : {
     "rarity" : "Common",
