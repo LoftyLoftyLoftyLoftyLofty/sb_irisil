@@ -1,0 +1,15 @@
+{
+  "input" : [
+    { "item" : "lofty_irisileye", "count" : 1 },
+	{ "item" : "birdaltar2", "count" : 1 },
+	{ "item" : "royalchalice", "count" : 1 },
+	{ "item" : "fireflowerpot", "count" : 1 },
+	{ "item" : "wflowerpot", "count" : 1 },
+	{ "item" : "medievalcandle", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "lofty_irisil_botd_offerings",
+    "count" : 1
+  },
+  "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_decor_misc" ]
+}

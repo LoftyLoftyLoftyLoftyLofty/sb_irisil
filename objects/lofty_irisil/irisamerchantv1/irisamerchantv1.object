@@ -69,12 +69,20 @@
 		"lofty_irisil_cd_pickmeup",
 	
 	//codices
+		"lofty_irisil_guide-codex",
+		"lofty_irisil_itemids-codex",
+		
 		"lofty_irisil_alpaca-codex",
 		"lofty_irisil_apex-codex",
 		"lofty_irisil_frog-codex",
 		"lofty_irisil_glitch-codex",
-		"lofty_irisil_guide-codex",
-		"lofty_irisil_itemids-codex",
+		"lofty_irisil_pyramidlore1-codex",
+		"lofty_irisil_pyramidtrap1-codex",
+		"lofty_irisil_pyramidtrap2-codex",
+		"lofty_irisil_pyramidtrap3-codex",
+		"lofty_irisil_pyramidtrap4-codex",
+		"lofty_irisil_pyramidtrap5-codex",
+		
 		"lofty_irisil_threadtheneedlelore-codex",
 	
 	//party stuff
@@ -87,7 +95,10 @@
 		"lofty_irisil_froggoclocksomewhere",
 		"lofty_irisilaf",
 		"lofty_irisil_holographicfennixaf",
+		"lofty_irisil_tombbatongaf",
 		"lofty_irisil_tombspookitaf",
+		"lofty_irisil_tombyokataf",
+		"lofty_irisil_flajavaf",
 		"lofty_irisil_irisaplushie",
 		"lofty_irisil_irisastatue",
 		"lofty_irisil_lurkingirisa",

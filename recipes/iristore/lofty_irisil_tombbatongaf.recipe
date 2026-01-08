@@ -3,11 +3,11 @@
     { "item" : "lofty_irisileye", "count" : 1 },
 	{ "item" : "bandage", "count" : 1 },
     { "item" : "lofty_irisil_botd_offerings", "count" : 1 },
-    { "item" : "pharaohhead", "count" : 1 },
-	{ "item" : "spookitaf", "count" : 1 }
+    { "item" : "lofty_irisil_wedjatbanner", "count" : 1 },
+	{ "item" : "batongaf", "count" : 1 }
   ],
   "output" : {
-    "item" : "lofty_irisil_tombspookitaf",
+    "item" : "lofty_irisil_tombbatongaf",
     "count" : 1
   },
   "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_decor_misc" ]
