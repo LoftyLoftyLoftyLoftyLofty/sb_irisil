@@ -1327,6 +1327,7 @@
     }]
   ],
   
+  //i would prefer to rename this but i'm leaving it alone so nobody's worlds get bricked
   "lofty_irisil_bastet_finishpyramidlevel1" : 
   [
 	[
@@ -1338,6 +1339,34 @@
 				{"item" : [ "pharaohhead", 1]},
 				{"item" : [ "fireflowerpot", 1]},
 				{"item" : [ "climbingrope", 10]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_bastet_pyramidlore2" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramidlore2-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_bastet_pyramidlore3" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramidlore3-codex", 1]}
 			],
 			"allowDuplication" : false
 		}
@@ -1386,6 +1415,34 @@
 	]
   ],
   
+  "lofty_irisil_bastet_traplore4" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramidtrap4-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
+  "lofty_irisil_bastet_traplore5" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_pyramidtrap5-codex", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
   "lofty_irisil_tombbatongTreasure" : [
     [1, {
 	  "fill" : [
@@ -1418,6 +1475,42 @@
 	  //same as tomb yokat pool, dropping 2 bandages occasionally instead of 1 is fine
 	  
 	  "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_irisil_tombyokatCrypt" : [
+    [1, {
+	  "fill" : [
+	    {"item" : [ "bandage", 3]},
+		{"item" : [ "sharpenedclaw", 1]}
+	  ],
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.200, "item" : "sharpenedclaw"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_irisil_tombspookitCrypt" : [
+    [1, {
+	  "fill" : [
+	    {"item" : [ "bandage", 3]},
+		{"item" : [ "phasematter", 1]}
+	  ],
+      "pool" : [
+        {"weight" : 0.799, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.200, "item" : "phasematter"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : true
     }]
   ],
   
