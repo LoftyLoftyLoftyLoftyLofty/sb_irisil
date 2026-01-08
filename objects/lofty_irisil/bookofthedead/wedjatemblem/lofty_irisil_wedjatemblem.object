@@ -1,6 +1,6 @@
 {
   "objectName" : "lofty_irisil_wedjatemblem",
-  "colonyTags" : ["egyptian","lofty_irisil","pretty"],
+  "colonyTags" : ["egyptian", "lofty_irisil", "pretty"],
   "rarity" : "Rare",
   "category" : "decorative",
   "price" : 500,
@@ -16,6 +16,7 @@
   "humanDescription" : "Seeing symbols from Earth in a place like this makes me wonder if the old gods actually exist.",
   "hylotlDescription" : "A fashionable style. I wonder how my eyes would look gilded.",
   "novakidDescription" : "Can't trust a single one of them richy-rich, gaudy, gold-eyed priests.",
+  "nicemiceDescription" : "Perhapz a little too ornate for my liking.",
 
   "inventoryIcon" : "lofty_irisil_wedjatemblemicon.png",
   "orientations" : [

@@ -1,6 +1,6 @@
 {
   "objectName" : "lofty_irisil_wedjatbanner",
-  "colonyTags" : ["lofty_irisil","egyptian","pretty"],
+  "colonyTags" : ["lofty_irisil", "egyptian", "pretty"],
   "rarity" : "Rare",
   "category" : "decorative",
   "price" : 800,
@@ -16,7 +16,7 @@
   "humanDescription" : "Makes me feel like somebody's watching me.",
   "hylotlDescription" : "This banner gives me a pervasive sense of being judged.",
   "novakidDescription" : "Ain't got enough holes in it.",
-
+  "nicemiceDescription" : "Ziz banner vatchez over ze chozen.",
 
   "inventoryIcon" : "lofty_irisil_wedjatbannericon.png",
   "orientations" : [
