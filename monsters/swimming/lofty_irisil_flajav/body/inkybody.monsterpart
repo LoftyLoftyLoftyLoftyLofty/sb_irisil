@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_inkyflajav",
+  "category" : "lofty_irisil_inkyflajav",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_inkyflajav.png"
+  }
+}

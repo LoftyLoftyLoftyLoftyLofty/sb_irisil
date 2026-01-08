@@ -3,5 +3,15 @@
 		"op" : "replace",
 		"path" : "/collectables/poisonbatong/icon",
 		"value" : "/monsters/flyers/batong/body/poisonbatong.png:fly.1"
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_inkyflajav",
+		"value" : 
+		{
+		  "order" : 9002,
+		  "monsterType" : "lofty_irisil_inkyflajav",
+		  "icon" : "/monsters/swimming/lofty_irisil_flajav/body/lofty_irisil_inkyflajav.png:idle.1?flipx"
+		}
 	}
 ]

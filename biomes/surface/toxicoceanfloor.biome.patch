@@ -1,42 +1,103 @@
 [
-  { 
-    "op" : "test",
-    "path" : "/spawnProfile/groups/-"
-  },
-  { 
-	"op" : "add",
-	"path" : "/spawnProfile/groups/-",
-	"value" : 
-	{
-      "select": 1,
-      "pool": 
-	  [
-		[ 1.0, "lofty_irisil_observer_air_toxicoceanfloor" ]
-      ]
+  //vanilla fish replacement
+  [
+    { 
+        "op" : "test",
+        "path" : "/spawnProfile/groups/0/pool/3"
+    },
+    { 
+        "op" : "test",
+        "path" : "/spawnProfile/groups/0/pool/3/0",
+		"value" : 1
+    },
+	{ 
+        "op" : "test",
+        "path" : "/spawnProfile/groups/0/pool/3/1",
+		"value" : "aggroLargeFish"
+    },
+    { 
+        "op" : "replace",
+        "path" : "/spawnProfile/groups/0/pool/3",
+        "value" : [ 0.75, "aggroLargeFish", 0.25, "lofty_irisil_flajav" ]
     }
-  },
-  { 
-	"op" : "add",
-	"path" : "/spawnProfile/groups/-",
-	"value" : 
-	{
-      "select": 1,
-      "pool": 
-	  [
-		[ 1.0, "lofty_irisil_observer_surface_toxicoceanfloor" ]
-      ]
+  ],
+  //toxic ocean fish fixer replacement
+  [
+    { 
+        "op" : "test",
+        "path" : "/spawnProfile/groups/0/pool/3"
+    },
+    { 
+        "op" : "test",
+        "path" : "/spawnProfile/groups/0/pool/3/0",
+		"value" : 1
+    },
+	{ 
+        "op" : "test",
+        "path" : "/spawnProfile/groups/0/pool/3/1",
+		"value" : "aggroLargeFishToxicOcean"
+    },
+    { 
+        "op" : "replace",
+        "path" : "/spawnProfile/groups/0/pool/3",
+        "value" : [ 0.75, "aggroLargeFishToxicOcean", 0.25, "lofty_irisil_flajav" ]
     }
-  },
-  { 
-	"op" : "add",
-	"path" : "/spawnProfile/groups/-",
-	"value" : 
-	{
-      "select": 1,
-      "pool": 
-	  [
-		[ 1.0, "lofty_irisil_observer_liquid_toxicoceanfloor" ]
-      ]
+  ],
+  //if we failed to replace the default aggro fish, just add flajav to the possible spawns
+  [
+    { 
+        "op" : "test",
+        "path" : "/spawnProfile/groups/0/pool/3/3",
+		"value" : "lofty_irisil_flajav",
+		"inverse" : true
+    },
+    { 
+        "op" : "add",
+        "path" : "/spawnProfile/groups/0/pool/-",
+        "value" : [ 1, "lofty_irisil_flajav" ]
     }
-  }
+  ],
+  //observers
+  [
+    { 
+      "op" : "test",
+      "path" : "/spawnProfile/groups/-"
+    },
+    { 
+      "op" : "add",
+      "path" : "/spawnProfile/groups/-",
+      "value" : 
+      {
+        "select": 1,
+        "pool": 
+        [
+          [ 1.0, "lofty_irisil_observer_air_toxicoceanfloor" ]
+        ]
+      }
+    },
+    { 
+      "op" : "add",
+      "path" : "/spawnProfile/groups/-",
+      "value" : 
+      {
+        "select": 1,
+        "pool": 
+        [
+          [ 1.0, "lofty_irisil_observer_surface_toxicoceanfloor" ]
+        ]
+      }
+    },
+    { 
+      "op" : "add",
+      "path" : "/spawnProfile/groups/-",
+      "value" : 
+      {
+        "select": 1,
+        "pool": 
+        [
+          [ 1.0, "lofty_irisil_observer_liquid_toxicoceanfloor" ]
+        ]
+      }
+    }
+  ]
 ]

@@ -1,9 +1,9 @@
 {
-  "type" : "lofty_irisil_flajav",
-  "shortdescription" : "Flajav",
-  "description" : "These elongated organisms spear prey with their sharp anterior shells.",
+  "type" : "lofty_irisil_inkyflajav",
+  "shortdescription" : "Inky Flajav",
+  "description" : "The light-absorbing ink these creatures produce is coveted for its applications in stealth technology.",
 
-  "categories" : [ "lofty_irisil_flajav" ],
+  "categories" : [ "lofty_irisil_inkyflajav" ],
   "parts" : [ "body" ],
 
   "animation" : "lofty_irisil_flajav.animation",
@@ -98,6 +98,12 @@
       ],
       "primaryScriptDelta" : 5,
 
+      //the stat differences between various rare monsters and their common counterparts are very inconsistent
+	  //for example, albino adult poptops have lower base HP but gain active HP regen
+	  //by contrast, the electric capricoat is functionally identical to a normal capricoat
+	  //for the Inky Flajav, I decided to increase their HP pool and elemental defenses slightly, as well as add a tiny amount of regen
+      //they lose half of their innate poison resistance, though
+	  
       "stats" : {
         "knockbackStunTime" : {
           "baseValue" : 0.25
@@ -106,19 +112,37 @@
           "baseValue" : 9
         },
         "maxHealth" : {
-          "baseValue" : 72
+          "baseValue" : 96
         },
         "protection" : {
           "baseValue" : 0.0
         },
         "healthRegen" : {
-          "baseValue" : 0.0
+          "baseValue" : 0.025
         },
         "powerMultiplier" : {
           "baseValue" : 1.0
         },
+		"fireResistance" : {
+          "baseValue" : 0.25
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.25
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : 0.25
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 0.0
+        },
 		"poisonResistance" : {
-          "baseValue" : 0.5
+          "baseValue" : 0.25
         },
         "poisonStatusImmunity" : {
           "baseValue" : 1.0
@@ -143,7 +167,7 @@
     "capturable" : true,
     "captureHealthFraction" : 0.5,
     "nametagColor" : [64, 200, 255],
-	"captureCollectables" : { "monsters" : "lofty_irisil_flajav" }
+	"captureCollectables" : { "raremonsters" : "lofty_irisil_inkyflajav" }
   },
 
   "dropPools" : [ 
