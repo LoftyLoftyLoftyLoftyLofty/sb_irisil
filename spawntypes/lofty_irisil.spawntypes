@@ -54,5 +54,26 @@
 		{
 			"aggressive" : false
 		}
+	},
+	{
+		"name" : "lofty_irisil_flajav",
+
+		"spawnParameters" : 
+		{
+			"area" : "liquid",
+			"region" : "all",
+			"time" : "all"
+		},
+
+		"spawnChance" : 0.003,
+		"monsterType" : 
+		[
+			[0.99, "lofty_irisil_flajav"],
+			[0.01, "lofty_irisil_inkyflajav"]
+		],
+		"monsterParameters" : 
+		{
+			"aggressive" : true
+		}
 	}
 ]
