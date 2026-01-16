@@ -8,7 +8,18 @@
 
   "animation" : "lofty_irisil_tombyokat.animation",
 
-  "dropPools" : [ { "default" : "lofty_irisil_tombyokatTreasure", "bow" : "lofty_irisil_tombyokatHunting", "avikanhunting" : "lofty_irisil_tombyokatHunting", "keffridersspear" : "lofty_irisil_tombyokatHunting" } ],
+  "dropPools" : [ 
+    { 
+	  "default" : "lofty_irisil_tombyokatTreasure", 
+	  "bow" : "lofty_irisil_tombyokatHunting", 
+	  "avikanhunting" : "lofty_irisil_tombyokatHunting", 
+	  "keffridersspear" : "lofty_irisil_tombyokatHunting",
+	  "firebow" : "lofty_irisil_tombyokatHunting",
+	  "icebow" : "lofty_irisil_tombyokatHunting",
+	  "poisonbow" : "lofty_irisil_tombyokatHunting",
+	  "electricbow" : "lofty_irisil_tombyokatHunting"
+	} 
+  ],
 
   "baseParameters" : {
     "scripts" : [

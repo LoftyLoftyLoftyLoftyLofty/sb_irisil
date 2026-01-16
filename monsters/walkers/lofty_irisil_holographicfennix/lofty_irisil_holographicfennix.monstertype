@@ -8,7 +8,19 @@
 
   "animation" : "lofty_irisil_holographicfennix.animation",
 
-  "dropPools" : [ { "default" : "lofty_irisil_holographicfennixTreasure", "bow" : "lofty_irisil_holographicfennixHunting", "avikanhunting" : "lofty_irisil_holographicfennixHunting", "keffridersspear" : "lofty_irisil_holographicfennixHunting" } ],
+  "dropPools" : 
+  [ 
+    { 
+	  "default" : "lofty_irisil_holographicfennixTreasure", 
+	  "bow" : "lofty_irisil_holographicfennixHunting", 
+	  "avikanhunting" : "lofty_irisil_holographicfennixHunting", 
+	  "keffridersspear" : "lofty_irisil_holographicfennixHunting",
+	  "firebow" : "lofty_irisil_holographicfennixHunting",
+	  "icebow" : "lofty_irisil_holographicfennixHunting",
+	  "poisonbow" : "lofty_irisil_holographicfennixHunting",
+	  "electricbow" : "lofty_irisil_holographicfennixHunting"
+	} 
+  ],
 
   "baseParameters" : {
     "scripts" : [

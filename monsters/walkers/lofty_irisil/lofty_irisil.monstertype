@@ -30,7 +30,10 @@
 	  // "fireplasma" : "lofty_irisil_crispyTreasure",
 	  // "fireplasmabullet" : "lofty_irisil_crispyTreasure",
 	  
-	  "firebow" : "lofty_irisilHunting"
+	  "firebow" : "lofty_irisilHunting",
+	  "icebow" : "lofty_irisilHunting",
+	  "poisonbow" : "lofty_irisilHunting",
+	  "electricbow" : "lofty_irisilHunting"
 	} 
   ],
 

@@ -8,7 +8,19 @@
 
   "animation" : "lofty_irisil_tombspookit.animation",
 
-  "dropPools" : [ { "default" : "lofty_irisil_tombspookitTreasure", "bow" : "lofty_irisil_tombspookitHunting", "avikanhunting" : "lofty_irisil_tombspookitHunting", "keffridersspear" : "lofty_irisil_tombspookitHunting" } ],
+  "dropPools" : 
+  [ 
+    { 
+	  "default" : "lofty_irisil_tombspookitTreasure", 
+	  "bow" : "lofty_irisil_tombspookitHunting", 
+	  "avikanhunting" : "lofty_irisil_tombspookitHunting", 
+	  "keffridersspear" : "lofty_irisil_tombspookitHunting",
+	  "firebow" : "lofty_irisil_tombspookitHunting",
+	  "icebow" : "lofty_irisil_tombspookitHunting",
+	  "poisonbow" : "lofty_irisil_tombspookitHunting",
+	  "electricbow" : "lofty_irisil_tombspookitHunting"
+	} 
+  ],
 
   "baseParameters" : {
     "scripts" : [
