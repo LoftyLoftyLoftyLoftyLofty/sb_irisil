@@ -756,8 +756,24 @@
 			"fill" : 
 			[
 				{"item" : [ "swamphat", 1]},
-				{"item" : [ "durablefishingrod", 1]},
+				{"item" : [ "lofty_irisil_slimefishingrod", 1]},
 				{"item" : [ "lofty_irisil_slimefishinglure", 1]}
+			],
+			"allowDuplication" : true
+		}
+	]
+  ],
+  
+  "lofty_irisil_pyramidfishinggearbox" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "swamphat", 1]},
+				{"item" : [ "lofty_irisil_tombfishingrod", 1]},
+				{"item" : [ "lofty_irisil_tombfishinglure", 1]}
 			],
 			"allowDuplication" : true
 		}
@@ -1325,6 +1341,62 @@
 	  
 	  "allowDuplication" : true
     }]
+  ],
+  
+  "lofty_irisil_setricubTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.71, "pool" : "money"},
+        {"weight" : 0.08, "item" : "alienmeat"},
+        {"weight" : 0.009, "pool" : "basicTreasure"},
+		
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "lofty_irisil_setricubaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_irisil_crispySetricubTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.71, "pool" : "money"},
+        {"weight" : 0.08, "item" : "alienmeat"},
+        {"weight" : 0.009, "pool" : "basicTreasure"},
+		
+        {"weight" : 0.200, "item" : "sharpenedclaw"},
+        {"weight" : 0.001, "item" : "lofty_irisil_setricubaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_irisil_setricubHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "alienmeat"},
+        {"weight" : 0.399, "item" : "sharpenedclaw"},
+        {"weight" : 0.002, "item" : "lofty_irisil_setricubaf"}
+      ]
+    } ]
+  ],
+  
+  "lofty_irisil_crispySetricubHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "cookedalienmeat"},
+        {"weight" : 0.399, "item" : "sharpenedclaw"},
+        {"weight" : 0.002, "item" : "lofty_irisil_setricubaf"}
+      ]
+    } ]
   ],
   
   //i would prefer to rename this but i'm leaving it alone so nobody's worlds get bricked
