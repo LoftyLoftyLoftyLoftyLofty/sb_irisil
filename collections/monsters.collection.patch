@@ -57,10 +57,20 @@
 	},
 	{
 		"op" : "add",
-		"path" : "/collectables/lofty_irisil_flajav",
+		"path" : "/collectables/lofty_irisil_setricub",
 		"value" : 
 		{
 		  "order" : 9006,
+		  "monsterType" : "lofty_irisil_setricub",
+		  "icon" : "/monsters/walkers/lofty_irisil_setricub/body/lofty_irisil_setricub.png:idle.1"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_flajav",
+		"value" : 
+		{
+		  "order" : 9007,
 		  "monsterType" : "lofty_irisil_flajav",
 		  "icon" : "/monsters/swimming/lofty_irisil_flajav/body/lofty_irisil_flajav.png:idle.1?flipx"
 		}

@@ -1,0 +1,10 @@
+{
+  "name" : "lofty_irisil_setricub",
+  "category" : "lofty_irisil_setricub",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_setricub.png",
+	"bodyfullbright" : "lofty_irisil_setricub_eyes.png"
+  }
+}
