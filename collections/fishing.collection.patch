@@ -8,5 +8,25 @@
 			"monsterType" : "lofty_irisil_smallfish_peepgill",
 			"icon" : "/monsters/fishing/small/lofty_irisil_smallfish_peepgill/lofty_irisil_smallfish_peepgill.png:swim.1"
 		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_largefish_medjed",
+		"value" : 
+		{		
+			"order" : 9002,
+			"monsterType" : "lofty_irisil_largefish_medjed",
+			"icon" : "/monsters/fishing/large/lofty_irisil_largefish_medjed/lofty_irisil_largefish_medjed.png:swim.1"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_largefish_crownedmedjed",
+		"value" : 
+		{		
+			"order" : 9003,
+			"monsterType" : "lofty_irisil_largefish_crownedmedjed",
+			"icon" : "/monsters/fishing/large/lofty_irisil_largefish_medjed/lofty_irisil_largefish_crownedmedjed.png:swim.1"
+		}
 	}
 ]

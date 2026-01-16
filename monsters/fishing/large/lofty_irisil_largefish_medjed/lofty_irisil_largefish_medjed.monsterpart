@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_largefish_medjed",
+  "category" : "lofty_irisil_largefish_medjed",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_largefish_medjed.png"
+  }
+}
