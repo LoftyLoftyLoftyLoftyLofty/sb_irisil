@@ -1,0 +1,19 @@
+{
+  "itemName" : "lofty_irisil_tombfishinglure",
+  "price" : 500,
+  "rarity" : "Uncommon",
+  "tooltipKind" : "fishingupgrade",
+  "category" : "fishingLure",
+  "inventoryIcon" : "lofty_irisil_tombfishinglure.png",
+  "description" : "A glimmering lure decorated with gold and lapis lazuli. Very fancy!",
+  
+  //https://www.academia.edu/43664310/The_Hook_as_a_Fishing_Tool_in_Ancient_Egypt
+  "shortdescription" : "Gilded Sennara",
+
+  "lureType" : "lofty_irisil_tombfishinglure",
+  "lureName" : "Gilded Sennara",
+  "lureIcon" : "/items/augments/fishing/lofty_irisil_tombfishinglure.png",
+  "lureProjectile" : "lofty_irisil_tombfishinglure",
+
+  "scripts" : [ "/scripts/augments/fishing.lua" ]
+}

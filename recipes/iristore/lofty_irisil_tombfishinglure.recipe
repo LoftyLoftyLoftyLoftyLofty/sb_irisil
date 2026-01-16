@@ -1,11 +1,11 @@
 {
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
-	{ "item" : "fishingluresinking", "count" : 1 },
-	{ "item" : "greenslime", "count" : 1 }
+	{ "item" : "fishinglurecontrol", "count" : 1 },
+	{ "item" : "goldenducky", "count" : 1 }
   ],
   "output" : {
-    "item" : "lofty_irisil_slimefishinglure",
+    "item" : "lofty_irisil_tombfishinglure",
     "count" : 1
   },
   "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_fishing" ]

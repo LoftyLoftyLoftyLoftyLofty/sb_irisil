@@ -1,8 +1,8 @@
 {
-  "projectileName" : "lofty_irisil_slimefishinglure",
+  "projectileName" : "lofty_irisil_tombfishinglure",
   
-  "image" : "lofty_irisil_slimefishinglure.png",
-  "fancyLureType" : "lofty_irisil_slimefishinglure",
+  "image" : "lofty_irisil_tombfishinglure.png",
+  "fancyLureType" : "lofty_irisil_tombfishinglure",
   
   "animationCycle" : 1.0,
   "frameNumber" : 1,
@@ -13,7 +13,7 @@
   "power" : 0.0,
   "speed" : 35,
   "damageKind" : "nodamage",
-  "physics" : "fishingluresinking",
+  "physics" : "fishinglure",
   "bounces" : -1,
   "piercing" : true,
   "timeToLive" : 1,

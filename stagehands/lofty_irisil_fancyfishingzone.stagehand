@@ -1,0 +1,7 @@
+{
+  "type" : "lofty_irisil_fancyfishingzone",
+  "keepAlive" : true,
+
+  "scripts" : ["/stagehands/lofty_irisil_fancyfishingzone.lua"],
+  "scriptDelta" : 1
+}

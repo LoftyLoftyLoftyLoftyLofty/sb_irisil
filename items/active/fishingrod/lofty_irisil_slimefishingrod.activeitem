@@ -1,0 +1,85 @@
+{
+  "itemName" : "lofty_irisil_slimefishingrod",
+  "level" : 1,
+  "price" : 1500,
+  "maxStack" : 1,
+  "rarity" : "rare",
+  "description" : "A fishing rod tailored for angling in muck.",
+  "shortdescription" : "Slime Fishing Rod",
+  "tooltipKind" : "fishingrod",
+  "category" : "fishingRod",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "lofty_irisil_slimefishingrod.png:light",
+
+  "animation" : "fishingrod.animation",
+  "animationParts" : {
+    "fishingrod" : "lofty_irisil_slimefishingrod.png"
+  },
+  "animationScripts" : ["/items/active/effects/renderrope.lua"],
+
+  "ropeWidth" : 0.5,
+  "ropeColor" : [200, 150, 250, 100],
+  "ropeFlashColor" : [220, 200, 250, 200],
+
+  "scripts" : ["fishingrod.lua"],
+
+  "corrodeLiquidIds" : [],
+  "corrodeParticle" : "poisonswoosh2",
+
+  "burnLiquidIds" : [8],
+  "burnParticle" : "fireswoosh1",
+
+  "usesFishingUpgrades" : true,
+
+  "lureType" : "basic",
+  "lureName" : "Basic Lure",
+  "lureIcon" : "/items/augments/fishing/lurebasic.png",
+  "lureProjectile" : "fishinglure",
+
+  "reelType" : "basic",
+  "reelName" : "Basic Reel",
+  "reelIcon" : "/items/augments/fishing/reelbasic.png",
+  "reelParameters" : {
+    "reelOutLength" : 50,
+    "lineBreakMargin" : 10,
+    "reelSpeed" : 11,
+    "lineBreakTime" : 0.7
+  },
+
+  "stances" : {
+    "idle" : {
+      "armRotation" : -80,
+      "allowRotate" : false,
+      "allowFlip" : true
+    },
+    "windup" : {
+      "armRotation" : -80,
+      "twoHanded" : true,
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "cast" : {
+      "armRotation" : -40,
+      "twoHanded" : true,
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "reel" : {
+      "armRotation" : -35,
+      "twoHanded" : true,
+      "allowRotate" : false,
+      "allowFlip" : false
+    },
+    "catch" : {
+      "duration" : 0.25,
+      "transition" : "idle",
+      "armRotation" : -30,
+      "twoHanded" : true,
+      "allowRotate" : false,
+      "allowFlip" : false
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildfishingrod.lua"
+}
