@@ -1,11 +1,11 @@
 {
   "input" : [
     { "item" : "lofty_irisileye", "count" : 1 },
-	{ "item" : "lightaugment1", "count" : 1 },
+	{ "item" : "lightaugment3", "count" : 1 },
 	{ "item" : "bookpiles", "count" : 1 }
   ],
   "output" : {
-    "item" : "lofty_irisil_pyramidlore1-codex",
+    "item" : "lofty_irisil_pyramidlore3-codex",
     "count" : 1
   },
   "groups" : [ "lofty_irisil_irishop", "lofty_irisil_irishop_codices" ]
