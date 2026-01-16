@@ -77,6 +77,8 @@
 		"lofty_irisil_frog-codex",
 		"lofty_irisil_glitch-codex",
 		"lofty_irisil_pyramidlore1-codex",
+		"lofty_irisil_pyramidlore2-codex",
+		"lofty_irisil_pyramidlore3-codex",
 		"lofty_irisil_pyramidtrap1-codex",
 		"lofty_irisil_pyramidtrap2-codex",
 		"lofty_irisil_pyramidtrap3-codex",
@@ -104,6 +106,7 @@
 		"lofty_irisil_lurkingirisa",
 		"lofty_irisil_medievalnoticeboard",
 		"lofty_irisil_pettingzmoo",
+		"lofty_irisil_setricubaf",
 		"lofty_irisil_stationanimalcrate",
 		"lofty_irisil_stationanimalcrateeyes",
 		"lofty_irisil_secretcactus",
@@ -125,6 +128,9 @@
 		
 	//fishing
 		"lofty_irisil_slimefishinglure",
+		"lofty_irisil_slimefishingrod",
+		"lofty_irisil_tombfishinglure",
+		"lofty_irisil_tombfishingrod",
 		
 	//food
 		"lofty_irisil_eyeslices",
