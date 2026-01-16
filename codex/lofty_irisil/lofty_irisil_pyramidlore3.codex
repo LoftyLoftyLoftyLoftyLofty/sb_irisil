@@ -1,0 +1,52 @@
+{
+  "id" : "lofty_irisil_pyramidlore3",
+  "title" : "Coming Forth by Day 3/3",
+  "description" : "Resurrection, rebirth, and beyond.",
+  "icon" : "lofty_irisil_pyramidlore3.png",
+  
+  "contentPages" : [
+"^yellow;Reincarnation is a lot easier to understand once you're aware of how a soul splits apart when you die.^reset;
+
+As fragments of souls gather together, they occasionally combine or attach to new bodies before reaching the gods for judgment. Whether or not this happens intentionally, it only delays the inevitable- but several methods do exist that create the conditions necessary for full or partial reincarnations in a new body!
+^#8888CC;>>",
+
+"^yellow;Sometimes, it is useful to engineer the specific circumstances of your reincarnation and rebirth.^reset;
+
+Some gods grow attached to their most devout worshipers, granting dynastic resurrections and rebirths to those who have proven themselves useful or otherwise worthy.
+
+For those not shown such favor by deities, several alternative options are available to help preserve your soul's cohesion upon death.
+^#8888CC;>>",
+
+"^yellow;In simple terms, your soul's \"name\" (sometimes also called your \"identity\") is the fragment responsible for keeping your soul fused together.^reset;
+
+Preserving the name of a soul through prayers, poems, or songs can dramatically increase the amount of time it takes for spiritual separation to set in, giving the deceased an opportunity to regroup and find a new host body. ^#888888;(That is an exercise left to the reader, as different bodies have different requirements.)^reset;
+^#8888CC;>>",
+"^yellow;Once your name is preserved, the next step in reliable reincarnation is attaching yourself to your new body.^reset;
+
+Methods for this will vary between cultures and species, but several ^red;underworld brokers^reset; specialize in this field of occult research, often making their homes in the ^cyan;darkest depths^reset; of forgotten planets. Some brokers even offer specialized services to choose which parts of your soul you want to keep when you reincarnate.
+
+^#8888CC;>>",
+
+"^yellow;The final step in engineered reincarnation is reconnecting your consciousness to your memories.^reset;
+
+This process is physically demanding- younger bodies aren't usually capable of surviving it, and adults that restore their memories must then conquer the resulting identity crisis that arises from their body containing more than one lifetime of experience. Suicides after completion of this last step of a successful reincarnation are ironically quite common.
+^#8888CC;>>",
+
+"^yellow;For those that survive their own reincarnation, ^cyan;what comes next?^reset;
+
+The short answer is death, again, but maybe you get a few more years to live first.^reset;
+
+Even this very small taste of what some would incorrectly label \"immortality\" comes with a lot of weight- an unnaturally long lifespan means that you bear witness to the deaths of those around you, all the while accumulating more memories.
+^#8888CC;>>",
+
+"^yellow;The cumulative weight of successive reincarnations has created a market for partial memory restoration.^reset;
+
+Some people prefer this selective memory loss. The punchline of this cosmic joke is quite poetic; ^red;trying to cheat the fragmentation of death ultimately results in the voluntary fragmentation of your own life.^reset;
+
+...but if you're going to keep making memories, ^green;you should try your best to make those memories worth keeping for next time, just in case."
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}

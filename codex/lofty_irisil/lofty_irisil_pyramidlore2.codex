@@ -1,0 +1,28 @@
+{
+  "id" : "lofty_irisil_pyramidlore2",
+  "title" : "Coming Forth by Day 2/3",
+  "description" : "Soul fragmentation and the manifestation of a necropolis.",
+  "icon" : "lofty_irisil_pyramidlore2.png",
+  
+  "contentPages" : [
+"^yellow;It is important to correctly preserve certain parts of your body when you die- at least for awhile.^reset;
+
+The amalgam of the soul takes a long time to refine. Normally, as each fragment of your essence separates from the gestalt existence that was once tethered to your vessel, it drifts naturally toward the realm of the gods and final judgment.
+
+This journey is complex and defies our understanding of time. 
+^#8888CC;>>",
+
+"^yellow;For a drifting shard, the journey to the realm of the gods takes mere moments,^reset; but under the right conditions, the residual imprints of the departed can linger in this lower realm for millenia, attracting more transient shards to the same area over time. ^cyan;These volatile whirlpools of echoing memories and ethereal strays coalesce into magnificent structures,^reset; warping the landscape into a dreamy, ephemeral mirage that quietly dissipates when fragmented souls eventually find their way home.
+^#8888CC;>>",
+
+"^yellow;A properly enbalmed body allows each piece of your soul to move on at its own pace,^reset; which is important because it prevents the runaway accumulation of essence that ultimately results in the formation of another necropolis.
+
+^red;These structures may be impressive, but they corrupt everything that they touch, and when a necropolis dissolves, it takes everyone inside with it - living or dead, ready or not.^reset; 
+
+^cyan;If you find yourself within a city of the dead, ^red;escape while you can."
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}
