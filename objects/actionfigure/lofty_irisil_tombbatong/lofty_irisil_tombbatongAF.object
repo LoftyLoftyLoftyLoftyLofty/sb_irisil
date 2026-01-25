@@ -9,10 +9,10 @@
   "description" : "The label reads, \"It's believed that a golden tongue allows the deceased to speak to the gods in the afterlife.\"",
   "shortdescription" : "Tomb Batong Figurine",
 
-  "inventoryIcon" : "lofty_irisil_tombbatongaf.png",
+  "inventoryIcon" : "lofty_irisil_tombbatongAF.png",
   "orientations" : [
     {
-      "image" : "lofty_irisil_tombbatongaf.png:<color>",
+      "image" : "lofty_irisil_tombbatongAF.png:<color>",
       "imagePosition" : [-2, 0],
       "direction" : "left",
       "flipImages" : true,
@@ -21,7 +21,7 @@
       "anchors" : [ "bottom" ]
     },
     {
-      "image" : "lofty_irisil_tombbatongaf.png:<color>",
+      "image" : "lofty_irisil_tombbatongAF.png:<color>",
       "imagePosition" : [-2, 0],
       "direction" : "right",
 
