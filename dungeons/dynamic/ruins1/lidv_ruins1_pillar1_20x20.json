@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJw7xsDAcIxGmNpg1NxRc0fNHTV3uJnLDsWUApg5QzUc0AEvI8JPhDBILTHmkmImLrNBZp6jEQYAJhlClw==",
+         "data":"eJztzTESgDAIRFGsrLz\/jSg9k022yQRhV+zCzB8qHm5m\/lPds93tdrjXYXaO3eXCRCubdWczshk3MpHiMmbVZc2Kq5iZq5pv7hczcjPzFtyKiaouY2Y+XNWM\/jh5w\/QAPSJVmA==",
          "encoding":"base64",
          "height":22,
          "id":2,
@@ -36,55 +36,7 @@
          "draworder":"topdown",
          "id":4,
          "name":"objects",
-         "objects":[
-                {
-                 "gid":4743,
-                 "height":48,
-                 "id":1290,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":64,
-                 "x":56,
-                 "y":152
-                }, 
-                {
-                 "gid":2147487891,
-                 "height":32,
-                 "id":1291,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":8,
-                 "y":168
-                }, 
-                {
-                 "gid":4243,
-                 "height":32,
-                 "id":1292,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":152,
-                 "y":168
-                }, 
-                {
-                 "gid":9091,
-                 "height":8,
-                 "id":1298,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":152,
-                 "y":128
-                }],
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -95,73 +47,7 @@
          "draworder":"topdown",
          "id":20,
          "name":"mods",
-         "objects":[
-                {
-                 "height":8,
-                 "id":1287,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"material",
-                         "type":"string",
-                         "value":"darksmoothstone"
-                        }, 
-                        {
-                         "name":"mod",
-                         "type":"string",
-                         "value":"aridgrass"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":160,
-                 "x":8,
-                 "y":168
-                }, 
-                {
-                 "height":8,
-                 "id":1296,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"material",
-                         "type":"string",
-                         "value":"darksmoothstone"
-                        }, 
-                        {
-                         "name":"mod",
-                         "type":"string",
-                         "value":"aridgrass"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":8,
-                 "y":128
-                }, 
-                {
-                 "height":8,
-                 "id":1297,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"material",
-                         "type":"string",
-                         "value":"darksmoothstone"
-                        }, 
-                        {
-                         "name":"mod",
-                         "type":"string",
-                         "value":"aridgrass"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":152,
-                 "y":128
-                }],
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
