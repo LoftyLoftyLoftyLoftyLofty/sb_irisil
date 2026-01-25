@@ -1,0 +1,23 @@
+{
+  "itemName" : "lofty_irisil_goldenstationtram",
+  "level" : 1,
+  "price" : 1000,
+  "rarity" : "Rare",
+  "category" : "railPlatform",
+  "description" : "Place a fancy golden user-controlled tram that works with rail tram stops",
+  "shortdescription" : "Gilded Rail Tram",
+  "twoHanded" : true,
+  "maxStack" : 10,
+
+  "inventoryIcon" : "lofty_irisil_goldenstationtramicon.png",
+
+  "scripts" : ["railplatform.lua"],
+  "animationScripts" : ["placementpreview.lua"],
+
+  "placementRange" : 15,
+  "placementBounds" : [-2.5, -0.25, 2.5, 3.75],
+  "placementPreviewImage" : "/items/active/unsorted/railplatform/lofty_irisil_goldenstationtrampreview.png",
+  "previewOffset" : [0, 2.0],
+
+  "platformType" : "lofty_irisil_goldenstationtram"
+}
