@@ -21,10 +21,20 @@
 	},
 	{
 		"op" : "add",
-		"path" : "/collectables/lofty_irisil_tombbatong",
+		"path" : "/collectables/lofty_irisil_kephrae",
 		"value" : 
 		{
 		  "order" : 9003,
+		  "monsterType" : "lofty_irisil_kephrae",
+		  "icon" : "/monsters/flyers/lofty_irisil_kephrae/body/lofty_irisil_kephrae.png:idle.1"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_tombbatong",
+		"value" : 
+		{
+		  "order" : 9004,
 		  "monsterType" : "lofty_irisil_tombbatong",
 		  "icon" : "/monsters/flyers/lofty_irisil_tombbatong/body/lofty_irisil_tombbatong.png:fly.1"
 		}
@@ -40,7 +50,7 @@
 		"path" : "/collectables/lofty_irisil_tombspookit",
 		"value" : 
 		{
-		  "order" : 9004,
+		  "order" : 9005,
 		  "monsterType" : "lofty_irisil_tombspookit",
 		  "icon" : "/monsters/ghosts/lofty_irisil_tombspookit/body/lofty_irisil_tombspookit.png:idle.1"
 		}
@@ -50,7 +60,7 @@
 		"path" : "/collectables/lofty_irisil_tombyokat",
 		"value" : 
 		{
-		  "order" : 9005,
+		  "order" : 9006,
 		  "monsterType" : "lofty_irisil_tombyokat",
 		  "icon" : "/monsters/walkers/lofty_irisil_tombyokat/body/lofty_irisil_tombyokat.png:idle.1"
 		}
@@ -60,9 +70,19 @@
 		"path" : "/collectables/lofty_irisil_setricub",
 		"value" : 
 		{
-		  "order" : 9006,
+		  "order" : 9007,
 		  "monsterType" : "lofty_irisil_setricub",
 		  "icon" : "/monsters/walkers/lofty_irisil_setricub/body/lofty_irisil_setricub.png:idle.1"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/collectables/lofty_irisil_miasmaat",
+		"value" : 
+		{
+		  "order" : 9008,
+		  "monsterType" : "lofty_irisil_miasmaat",
+		  "icon" : "/monsters/walkers/lofty_irisil_miasmaat/body/lofty_irisil_miasmaat.png:idle.1"
 		}
 	},
 	{
@@ -70,7 +90,7 @@
 		"path" : "/collectables/lofty_irisil_flajav",
 		"value" : 
 		{
-		  "order" : 9007,
+		  "order" : 9009,
 		  "monsterType" : "lofty_irisil_flajav",
 		  "icon" : "/monsters/swimming/lofty_irisil_flajav/body/lofty_irisil_flajav.png:idle.1?flipx"
 		}
