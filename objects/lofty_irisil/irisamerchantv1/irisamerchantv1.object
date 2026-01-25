@@ -149,6 +149,7 @@
 	
 	//util / wire
 		"lofty_irisil_daynightsensor",
+		"lofty_irisil_goldenstationtram",
 		
 	//special / other
 		"lofty_irisil_irisamerchantv1"
