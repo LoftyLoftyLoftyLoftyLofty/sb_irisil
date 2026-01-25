@@ -1237,6 +1237,21 @@
 	]
   ],
   
+  "lofty_irisil_pyramidgrandprize" : 
+  [
+	[
+		0, 
+		{
+			"fill" : 
+			[
+				{"item" : [ "lofty_irisil_sistrum", 1]},
+				{"item" : [ "fireflowerpot", 1]}
+			],
+			"allowDuplication" : false
+		}
+	]
+  ],
+  
   "lofty_irisil_tombspookitTreasure" : [
     [1, {
       "pool" : [
@@ -1331,8 +1346,40 @@
 	  ],
       "pool" : [
         {"weight" : 0.599, "item" : "bandage"},
-        {"weight" : 0.400, "item" : "sharpenedclaw"},
-        {"weight" : 0.001, "item" : "lofty_irisil_tombyokataf"}
+        {"weight" : 0.399, "item" : "sharpenedclaw"},
+        {"weight" : 0.002, "item" : "lofty_irisil_tombyokataf"}
+      ],
+	  
+	  //vanilla yokats disallow duplication in this treasure pool because it always drops items,
+	  //but it doesn't matter because it only rolls once and all items are unique.
+	  //dropping 2 bandages instead of 1 bandage while hunting is fine though
+	  
+	  "allowDuplication" : true
+    }]
+  ],
+  
+  "lofty_irisil_kephraeTreasure" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "pool" : "noMeatMonsterTreasure"},
+        {"weight" : 0.300, "item" : "hardenedcarapace"},
+        {"weight" : 0.100, "item" : "bugshell"},
+        {"weight" : 0.001, "item" : "lofty_irisil_kephraeaf"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+  ],
+  
+  "lofty_irisil_kephraeHunting" : [
+    [1, {
+      "pool" : [
+        {"weight" : 0.599, "item" : "hardenedcarapace"},
+        {"weight" : 0.399, "item" : "bugshell"},
+        {"weight" : 0.002, "item" : "lofty_irisil_kephraeaf"}
       ],
 	  
 	  //vanilla yokats disallow duplication in this treasure pool because it always drops items,
@@ -1540,8 +1587,8 @@
 	  ],
       "pool" : [
         {"weight" : 0.599, "item" : "bandage"},
-        {"weight" : 0.400, "item" : "leather"},
-        {"weight" : 0.001, "item" : "lofty_irisil_tombbatongaf"}
+        {"weight" : 0.399, "item" : "leather"},
+        {"weight" : 0.002, "item" : "lofty_irisil_tombbatongaf"}
       ],
 	  
 	  //same as tomb yokat pool, dropping 2 bandages occasionally instead of 1 is fine
