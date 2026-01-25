@@ -122,6 +122,9 @@
         },
         "poisonStatusImmunity" : {
           "baseValue" : 1.0
+        },
+		"electricResistance" : {
+          "baseValue" : -0.5
         }
       },
 
