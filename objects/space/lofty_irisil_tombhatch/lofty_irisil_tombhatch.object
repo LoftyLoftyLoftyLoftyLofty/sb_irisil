@@ -1,0 +1,77 @@
+{
+  "objectName" : "lofty_irisil_tombhatch",
+  "colonyTags" : ["station","door","rails"],
+  "rarity" : "Common",
+
+  "category" : "door",
+  "price" : 150,
+  "description" : "These heavy bricks have a built-in rail connector for use with elevators.",
+  "shortdescription" : "Tomb Rail Hatch",
+  "race" : "generic",
+
+  "apexDescription" : "Integrating old and new technologies together... Is this art?",
+  "avianDescription" : "Grooved bricks are common in temples to Kluex.",
+  "floranDescription" : "Bricksss dumb. Where food?",
+  "glitchDescription" : "Dismissive. Everything about this rail design is inefficient.",
+  "humanDescription" : "Rails running through bricks... I suppose you work with what you've got.",
+  "hylotlDescription" : "Despite the precise craftsmanship required to make such devices, they're still very ugly.",
+  "novakidDescription" : "Some folks just can't stop overcomplicatin' everything- even bricks.",
+  "nicemiceDescription" : "Vhile it may not be ze mozt appealink to look at, ziz railgate iz functional.",
+
+  "inventoryIcon" : "icon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_tombhatch_preview.png:default",
+      "imagePosition" : [-24, -8],
+      "renderLayer" : "Object+5",
+      "animationPosition" : [-24, -8],
+      "direction" : "right",
+
+      "anchors" : [ "left", "right" ],
+	  
+	  "spaces" : [
+        [-3, 0],
+        [-3, -1],
+        [-2, 0],
+        [-2, -1],
+        [-1, 0],
+        [-1, -1],
+		[0, 0],
+		[0, -1],
+        [1, 0],
+        [1, -1],
+        [2, 0],
+        [2, -1],
+        [3, 0],
+        [3, -1]
+      ]
+    }
+  ],
+
+  "scripts" : [ "secretrailhatch.lua" ],
+  "scriptDelta" : 5,
+
+  "openMaterialSpaces" : [
+    [[0, -1], "metamaterial:rail"], [[0, 0], "metamaterial:rail"]
+  ],
+
+  "animation" : "/objects/wired/door/door.animation",
+  "animationCustom" : {
+    "sounds" : {
+      "open" : {
+        "pool" : [ "/sfx/objects/stonedoor_open_fast.ogg" ],
+        "rangeMultiplier" : 0.5
+      },
+      "close" : {
+        "pool" : [ "/sfx/objects/stonedoor_close_fast.ogg" ],
+        "rangeMultiplier" : 0.5
+      }
+    }
+  },
+  "animationParts" : {
+    "door" : "lofty_irisil_tombhatch.png"
+  },
+
+  "inputNodes" : [ [-3, 0] ],
+  "outputNodes" : [ [3, -1] ]
+}
