@@ -1,0 +1,47 @@
+{
+  "objectName" : "lofty_irisil_bastetstatue",
+  "colonyTags" : ["lofty_irisil","egyptian","pretty"],
+  "rarity" : "Essential",
+  "category" : "decorative",
+  "price" : 50000,
+
+  "shortdescription" : "Bastet Statue",
+  "description" : "A golden statue depicting a Kemetic goddess. Almost as pretty as the real thing!",
+  "race" : "neki",
+
+  "apexDescription" : "This statue moves with more freedom than my homeworld.",
+  "avianDescription" : "Terrified. Awestruck. Is this love?",
+  "floranDescription" : "Can't eat thisss.",
+  "glitchDescription" : "Reverent. This opulent idol exudes an aura of calculated power.",
+  "humanDescription" : "Cat goddess. Is she single?",
+  "hylotlDescription" : "Elegant, but... distracting.",
+  "novakidDescription" : "Well that's one way to get the whole town's attention.",
+  "nicemiceDescription" : "Dezpite her feline appearanze, Baztet enjoys plenty of admiration from Nizemize.",
+  "nekiDescription" : "Do you think her litterbox is solid gold, too?",
+  
+  "inventoryIcon" : "lofty_irisil_bastetstatueicon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_bastetstatue.png:",
+      "imagePosition" : [-72, -32],
+
+      "direction" : "right",
+
+      "spaceScan" : 0.3,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "collisionSpaces" : [ [-6, 16], [-7, 16], [-3, -1], [-2, -1], [-1, -1], [0, -1], [1, -1], [2, -1] ]
+    },
+	    {
+      "image" : "lofty_irisil_bastetstatue_left.png",
+      "imagePosition" : [-72, -32],
+
+      "direction" : "left",
+
+      "spaceScan" : 0.3,
+      "anchors" : [ "bottom" ],
+      "collision" : "platform",
+      "collisionSpaces" : [ [5, 16], [6, 16], [-3, -1], [-2, -1], [-1, -1], [0, -1], [1, -1], [2, -1] ]
+    }
+  ]
+}
