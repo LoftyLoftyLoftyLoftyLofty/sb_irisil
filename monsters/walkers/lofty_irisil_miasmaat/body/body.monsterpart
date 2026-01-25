@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_miasmaat",
+  "category" : "lofty_irisil_miasmaat",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_miasmaat.png"
+  }
+}

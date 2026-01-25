@@ -1,0 +1,295 @@
+{
+  "type" : "lofty_irisil_miasmaat",
+  "shortdescription" : "Miasma'at",
+  "description" : "A chemical reaction in its belly makes its hot breath toxic.",
+
+  "categories" : [ "lofty_irisil_miasmaat" ],
+  "parts" : [ "body" ],
+
+  "animation" : "lofty_irisil_miasmaat.animation",
+
+  "dropPools" : [ { "default" : "smoglinTreasure", "bow" : "smoglinHunting" } ],
+
+  "baseParameters" : {
+    "scripts" : [
+      "/monsters/monster.lua"
+    ],
+
+    "behavior" : "monster",
+
+    "behaviorConfig" : {
+      "damageOnTouch" : true,
+
+      "targetQueryRange" : 32,
+      "targetOnDamage" : true,
+      "keepTargetInSight" : true,
+      "keepTargetInRange" : 50,
+      "targetOutOfSightTime" : 2.5,
+
+      "foundTargetActions" : [ { "name" : "action-aggrohop" } ],
+
+      "fleeActions" : [],
+
+      "hostileActions" : [
+		{
+          "name" : "action-fire",
+          "cooldown" : 0.5,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maxYRange" : 40,
+            "maximumRange" : 40,
+            "minimumRange" : 20,
+            "windupState" : "firewindup",
+            "windupTime" : 0.5,
+            "fireDelay" : 0.0,
+
+            "projectileType" : "minidragon",
+            "fireOffset" : [3.5 , 0.35],
+            "projectileCount" : 1,
+            "projectileInterval" : 0.125,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : true,
+            "fireSound" : "fireball",
+            "fireState" : "fire",
+
+            "winddownState" : "firewinddown",
+            "winddownTime" : 0.25
+          }
+        },
+		{
+          "name" : "action-fire",
+          "cooldown" : 0.5,
+          "parameters" : {
+            "requireLineOfSight" : true,
+            "maxYRange" : 8,
+            "maximumRange" : 12,
+            "minimumRange" : 0,
+            "windupState" : "firewindup",
+            "windupTime" : 0.5,
+            "fireDelay" : 0.0,
+
+            "projectileType" : "smoglingas",
+            "fireOffset" : [3.5 , 0.35],
+            "projectileCount" : 1 ,
+            "projectileInterval" : 0.01,
+            "aimDirection" : [1, 0],
+            "aimAtTarget" : false,
+            "fireSound" : "fire",
+            "fireState" : "fire",
+
+            "winddownState" : "firewinddown",
+            "winddownTime" : 0.25
+          }
+        },
+		{
+          "name" : "action-hop",
+          "cooldown" : 4.0,
+          "parameters" : {
+			"minimumRange" : 2,
+            "maximumRange" : 8,
+			
+			"canJump" : true,
+			"maxJumps" : 1,
+			
+            "verticalSpeed" : 35,
+            "horizontalSpeed" : -15,
+            "hopSequence" : 1,
+            "windupTime" : 0,
+            "landTime" : 0.25,
+            "timeBetweenHops" : 0.00,
+            "hopAwayFromWall" : false
+          }
+        },
+		{
+          "name" : "action-hop",
+          "cooldown" : 4.0,
+          "parameters" : {
+			"minimumRange" : 0,
+            "maximumRange" : 2,
+			
+			"canJump" : true,
+			"maxJumps" : 1,
+			
+            "verticalSpeed" : 35,
+            "horizontalSpeed" : -15,
+            "hopSequence" : 1,
+            "windupTime" : 0,
+            "landTime" : 0.25,
+            "timeBetweenHops" : 0.00,
+            "hopAwayFromWall" : false
+          }
+        }
+      ],
+
+      "periodicActions" : [],
+
+      "approachActions" : [
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+            "run" : true
+          }
+        }
+      ],
+
+      "followActions" : [
+        {
+          "name" : "approach-teleport",
+          "parameters" : {
+          }
+        },
+        {
+          "name" : "approach-walk",
+          "parameters" : {
+            "canJump" : true,
+            "maxJumps" : 6,
+            "jumpXVelocity" : 12,
+            "jumpYVelocity" : 30,
+            "jumpXControlForce" : 50,
+            "minXRange" : 10,
+            "run" : true
+          }
+        }
+      ],
+
+      "wanderActions" : [
+        {
+          "name" : "wander-walk",
+          "cooldown" : 6.0,
+          "parameters" : {
+            "wanderTime" : [5, 15]
+          }
+        }
+      ]
+    },
+
+    "touchDamage" : {
+      "poly" : [ [1.3125, 1.25], [1.8125, 0.75],  [1.8125, -0.6], [1.3125, -1.2],  [-1.3125, -1.2], [-1.8125, -0.6],  [-1.8125, 0.75], [-1.3125, 1.25] ],
+      "damage" : 10,
+
+      "teamType" : "enemy",
+      "damageSourceKind" : "slash",
+      "knockback" : 20,
+      "statusEffects" : [ ]
+    },
+
+    "metaBoundBox" : [-4, -4, 4, 4],
+    "scale" : 1.0,
+
+    "movementSettings" : {
+      "collisionPoly" : [ [1.3125, 1.25], [1.8125, 0.75],  [1.8125, -0.6], [1.3125, -1.2],  [-1.3125, -1.2], [-1.8125, -0.6],  [-1.8125, 0.75], [-1.3125, 1.25] ],
+
+      "mass" : 1.0,
+      "walkSpeed" : 7,
+      "runSpeed" : 13,
+
+      "airFriction" : 0,
+
+      "airJumpProfile" : {
+        "jumpSpeed" : 55.0,
+        "jumpInitialPercentage" : 1.0,
+        "jumpHoldTime" : 0.0
+      }
+    },
+
+    "bodyMaterialKind" : "organic",
+
+    "knockoutTime" : 0.3,
+    "knockoutAnimationStates" : {
+      "damage" : "stunned"
+    },
+    "deathParticles" : "deathPoof",
+    "knockoutEffect" : "",
+
+    "statusSettings" : {
+      "statusProperties" : {
+        "targetMaterialKind" : "organic"
+      },
+
+      "appliesEnvironmentStatusEffects" : false,
+      "appliesWeatherStatusEffects" : true,
+      "minimumLiquidStatusEffectPercentage" : 0.1,
+
+      "primaryScriptSources" : [
+        "/stats/monster_primary.lua"
+      ],
+      "primaryScriptDelta" : 5,
+
+      "stats" : {
+        "knockbackStunTime" : {
+          "baseValue" : 0.25
+        },
+        "knockbackThreshold" : {
+          "baseValue" : 9
+        },
+        "maxHealth" : {
+          "baseValue" : 125
+        },
+        "protection" : {
+          "baseValue" : 0.0
+        },
+        "healthRegen" : {
+          "baseValue" : 0.0
+        },
+        "lavaImmunity" : {
+          "baseValue" : 0.0
+        },
+        "powerMultiplier" : {
+          "baseValue" : 1.0
+        },
+        "physicalResistance" : {
+          "baseValue" : 0.0
+        },
+        "fireResistance" : {
+          "baseValue" : 0.25
+        },
+        "fireStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "iceResistance" : {
+          "baseValue" : 0.25
+        },
+        "iceStatusImmunity" : {
+          "baseValue" : 0.0
+        },
+        "electricResistance" : {
+          "baseValue" : 0.5
+        },
+        "electricStatusImmunity" : {
+          "baseValue" : 1.0
+        },
+        "poisonResistance" : {
+          "baseValue" : 0.5
+        },
+        "poisonStatusImmunity" : {
+          "baseValue" : 1.0
+        }
+      },
+
+      "resources" : {
+        "stunned" : {
+          "deltaValue" : -1.0,
+          "initialValue" : 0.0
+        },
+        "health" : {
+          "maxStat" : "maxHealth",
+          "deltaStat" : "healthRegen",
+          "defaultPercentage" : 100
+        }
+      }
+    },
+
+    "mouthOffset" : [0, 0],
+    "feetOffset" : [0, -8],
+    "capturable" : true,
+    "captureHealthFraction" : 0.5,
+    "nametagColor" : [64, 200, 255],
+    "captureCollectables" : { "monsters" : "lofty_irisil_miasmaat" }
+  }
+}
