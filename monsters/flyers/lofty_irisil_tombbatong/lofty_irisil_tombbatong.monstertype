@@ -167,7 +167,7 @@
           "baseValue" : 0.0
         },
         "fireResistance" : {
-          "baseValue" : 0.0
+          "baseValue" : -0.5
         },
         "fireStatusImmunity" : {
           "baseValue" : 0.0
