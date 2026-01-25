@@ -1,0 +1,9 @@
+{
+  "name" : "lofty_irisil_kephrae",
+  "category" : "lofty_irisil_kephrae",
+  "type" : "body",
+
+  "frames" : {
+    "body" : "lofty_irisil_kephrae.png"
+  }
+}

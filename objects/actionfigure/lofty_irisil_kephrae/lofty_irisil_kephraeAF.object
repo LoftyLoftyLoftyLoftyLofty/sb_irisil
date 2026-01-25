@@ -1,0 +1,32 @@
+{
+  "objectName" : "lofty_irisil_kephraeaf",
+  "colonyTags" : ["egyptian", "lofty_irisil", "pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "lofty_irisil_kephraeaf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"These enormous scarabs are believed to be symbols of rebirth and immortality.\"",
+  "shortdescription" : "Kephrae Figurine",
+
+  "inventoryIcon" : "lofty_irisil_kephraeAF.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_kephraeAF.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],  
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisil_kephraeAF.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
