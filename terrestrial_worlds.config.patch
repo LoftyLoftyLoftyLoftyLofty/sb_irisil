@@ -10,6 +10,8 @@
 	//  }
 	//],
 	[
+	
+	 //alpaca house
 	 {
 		"op": "add",
 		"path": "/planetTypes/snow/layers/surface/dungeons/-",
@@ -25,8 +27,20 @@
 		  2.5,
 		  "lofty_irisil_alpacairisillair"
 		]
+	  },
+	  
+	  //grand pyramid
+	  {
+		"op": "add",
+		"path": "/planetTypes/desert/layers/surface/dungeons/-",
+		"value": [
+		  200.5,
+		  "lofty_irisil_bastetdungeon"
+		]
 	  }
 	],
+	
+	//maple32 steppe alpaca house
 	[
 	  {
 		"op": "test",
