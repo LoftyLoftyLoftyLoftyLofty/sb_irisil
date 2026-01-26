@@ -5,48 +5,60 @@
   "icon" : "lofty_irisil_pyramidtrap5.png",
   
   "contentPages" : [
-"^yellow;Chapter 3: Chaos Management^reset;
+"^yellow;Chapter 5: Final Thoughts^reset;
 
-On paper, it's easy to fall into the trap ^#888888;(if you'll excuse the pun)^reset; of assuming that increasing the complexity of your traps or adding more layers will always result in better success rates.
+With all of the information that's been covered so far in mind, it's important to step back and put the craft of trapping a lair in perspective.
 
-Unfortunately, this premise is only partially true. 
+Ideally, your traps will catch a victim off guard, and usually that's enough. Sometimes, however, traps don't finish the job.
 
-To get the best results, what you actually require is ^red;Chaos Management.^reset;
-
-^#8888CC;>>",
-
-"^yellow;Chapter 3: Chaos Management^reset;
-
-So, what is Chaos Management?
-It's easiest to think of this discipline as a workflow for creating mistakes. ^green;At their core, all traps rely on a victim making at least one mistake.^reset;
-
-Making mistakes easy for your guests without exposing yourself to the same pitfalls ^#888888;(literally or figuratively)^reset; can make the difference between an adventurer escaping with your treasure or enriching your treasury!
-^#8888CC;>>",
-
-"^yellow;Chapter 3: Chaos Management^reset;
-
-The first step in creating mistakes is creating ^green;distractions!^reset;
-
-From spotlights to spike pits, it's important that intruders always have something interesting or provocative to look at to keep their focus away from the traps intended to cripple them or finish them off.
-
-^red;Monsters, ^yellow;shiny objects, ^reset;and ^green;baited chests^reset; are all effective distractions!
-^#8888CC;>>",
-
-"^yellow;Chapter 3: Chaos Management^reset;
-
-The second step in creating mistakes is creating ^green;syncopation!^reset;
-
-If you're not familiar with this funny word, syncopation is when something occurs that's off-rhythm or off-beat. ^green;Most species struggle with arrythmic timings,^reset; and even the faintest patterns, like the soft pulses of a crystal lamp, can have a huge impact on the potency of a surprise attack.
+^cyan;Always have a backup plan.^reset;
 
 ^#8888CC;>>",
 
-"^yellow;Chapter 3: Chaos Management^reset;
+"^yellow;Chapter 5: Final Thoughts^reset;
 
-The final step in creating mistakes is ^green;subverting expectations!^reset;
+^green;If you're out of options, ask for help.^reset;
 
-A platform that drops out from beneath your feet... A door that locks behind you... A mimic that looks like a treasure chest...
+Veteran adventurers survive traps, but for as nimble as they might be, ^red;they're not usually terribly clever.^reset; Simply asking them to go fight monsters on your behalf is often enough incentive for adventurers!
 
-Each of these classic examples deceives intruders in different ways, but what they all have in common is the conversion of something familiar and safe into something deadly."
+^#888888;Being cute helps a lot here, but keep some pixels ready in case you need to use a bribe instead.^reset;
+^#8888CC;>>",
+
+"^yellow;Chapter 5: Final Thoughts^reset;
+
+^green;Sometimes you just have to kill them yourself.^reset;
+
+If interlopers have made it all the way to your personal chambers, thwarted your traps, and dispatched of your minions, you may occasionally have to get your hands dirty.
+
+Most adventurers are gullible, though, ^cyan;so just stab them in the back if you can get away with it.^reset;
+^#8888CC;>>",
+
+"^yellow;Chapter 5: Final Thoughts^reset;
+
+^green;Let the door hit them on the way out.^reset;
+
+While it's technically riskier, another approach to dealing with especially troublesome adventurers is to simply let them load up on treasure before trying to actually kill them.
+
+Placing traps along the exit route to target intruders who have their hands full works great for small parties, but lacks staying power against raids.
+^#8888CC;>>",
+
+"^yellow;Chapter 5: Final Thoughts^reset;
+
+^green;There's always another lair.^reset;
+
+If all else fails, ^cyan;it's better to relocate to a new dungeon than it is to be slain at the end of one.^reset;
+
+You can always occupy another crypt, erect another wizard tower, corrupt another temple from within, etc- and the change of scenery can be nice, too. Variety in life is good!
+
+^#8888CC;>>",
+
+"^yellow;Chapter 5: Final Thoughts^reset;
+
+^green;In a universe full of treasure to collect, there's always room for a few more deadly surprises.^reset;
+
+Hopefully this guide helps your lair become a haven for you and a beacon for prosperity!
+
+^red;...Delivered to you one dead adventurer at a time."
 
   ],
     "itemConfig" : {
