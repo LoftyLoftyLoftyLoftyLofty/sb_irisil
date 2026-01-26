@@ -1,0 +1,19 @@
+{
+  "itemName" : "lofty_irisil_sistrum",
+  "price" : 3000,
+  "category" : "musicalInstrument",
+  "inventoryIcon" : "lofty_irisil_sistrum.png",
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "Rattling discs on thin metal wires give this exotic instrument a haunting chime.",
+  "shortdescription" : "Sistrum",
+  "largeImage" : "lofty_irisil_sistrum.png",
+  "image" : "lofty_irisil_sistrum.png",
+  "tooltipKind" : "tool",
+  "activeImage" : "lofty_irisil_sistrum.png",
+  "activeAngle" : 40,
+  "activeHandPosition" : [0.375, 0.625],
+  "handPosition" : [0.375, 0.625],
+  "twoHanded" : false,
+  "kind" : "lofty_irisil_sistrum"
+}
