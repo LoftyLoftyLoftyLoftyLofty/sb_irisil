@@ -34,7 +34,7 @@
 		"op": "add",
 		"path": "/planetTypes/desert/layers/surface/dungeons/-",
 		"value": [
-		  200.5,
+		  2.5,
 		  "lofty_irisil_bastetdungeon"
 		]
 	  }
