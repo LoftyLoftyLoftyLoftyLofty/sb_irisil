@@ -1,14 +1,40 @@
 {
   "type" : "lofty_irisil_miasmaat",
   "shortdescription" : "Miasma'at",
-  "description" : "A chemical reaction in its belly makes its hot breath toxic.",
+  "description" : "These cunning creatures were known in ancient civilizations as 'Sha'.",
 
   "categories" : [ "lofty_irisil_miasmaat" ],
   "parts" : [ "body" ],
 
   "animation" : "lofty_irisil_miasmaat.animation",
 
-  "dropPools" : [ { "default" : "smoglinTreasure", "bow" : "smoglinHunting" } ],
+  "dropPools" : [ 
+  { 
+	  "default" : "lofty_irisil_miasmaatTreasure", 
+	  "bow" : "lofty_irisil_miasmaatHunting", 
+	  "avikanhunting" : "lofty_irisil_miasmaatHunting", 
+	  "keffridersspear" : "lofty_irisil_miasmaatHunting", 
+	  
+	  "fire" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "fireaxe" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "firebarrier" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "firebroadsword" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "firedagger" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "firehammer" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "firespear" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "flamethrower" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "fireplasmashotgun" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "fireplasma" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "fireplasmabullet" : "lofty_irisil_crispyMiasmaatTreasure",
+	  "heat" : "lofty_irisil_crispyMiasmaatTreasure",
+	  
+	  "firebow" : "lofty_irisil_crispyMiasmaatHunting",
+	  
+	  "icebow" : "lofty_irisil_miasmaatHunting",
+	  "poisonbow" : "lofty_irisil_miasmaatHunting",
+	  "electricbow" : "lofty_irisil_miasmaatHunting"
+	}
+  ],
 
   "baseParameters" : {
     "scripts" : [
@@ -20,7 +46,7 @@
     "behaviorConfig" : {
       "damageOnTouch" : true,
 
-      "targetQueryRange" : 32,
+      "targetQueryRange" : 40,
       "targetOnDamage" : true,
       "keepTargetInSight" : true,
       "keepTargetInRange" : 50,
@@ -37,11 +63,11 @@
           "parameters" : {
             "requireLineOfSight" : true,
             "maxYRange" : 40,
-            "maximumRange" : 40,
+            "maximumRange" : 80,
             "minimumRange" : 20,
             "windupState" : "firewindup",
-            "windupTime" : 0.5,
-            "fireDelay" : 0.0,
+            "windupTime" : 0.75,
+            "fireDelay" : 0.25,
 
             "projectileType" : "minidragon",
             "fireOffset" : [3.5 , 0.35],
@@ -53,7 +79,7 @@
             "fireState" : "fire",
 
             "winddownState" : "firewinddown",
-            "winddownTime" : 0.25
+            "winddownTime" : 0.75
           }
         },
 		{
@@ -65,8 +91,8 @@
             "maximumRange" : 12,
             "minimumRange" : 0,
             "windupState" : "firewindup",
-            "windupTime" : 0.5,
-            "fireDelay" : 0.0,
+            "windupTime" : 0.75,
+            "fireDelay" : 0.25,
 
             "projectileType" : "smoglingas",
             "fireOffset" : [3.5 , 0.35],
@@ -78,7 +104,7 @@
             "fireState" : "fire",
 
             "winddownState" : "firewinddown",
-            "winddownTime" : 0.25
+            "winddownTime" : 0.75
           }
         },
 		{

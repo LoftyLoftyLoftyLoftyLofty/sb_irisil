@@ -1,0 +1,33 @@
+{
+  "objectName" : "lofty_irisil_miasmaataf",
+  "colonyTags" : ["pretty"],
+  "rarity" : "Legendary",
+  "category" : "actionFigure",
+  "collectablesOnPickup" : { "actionfigures" : "lofty_irisil_miasmaataf" },
+  "price" : 5000,
+  "printable" : false,
+  "description" : "The label reads, \"These cunning creatures were known in ancient civilizations as 'Sha'.\"",
+  "shortdescription" : "Miasma'at Figurine",
+
+
+  "inventoryIcon" : "lofty_irisil_miasmaataf.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_miasmaataf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "left",
+      "flipImages" : true,
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    },
+    {
+      "image" : "lofty_irisil_miasmaataf.png:<color>",
+      "imagePosition" : [-2, 0],
+      "direction" : "right",
+
+      "spaces" : [ [0, 0], [0, 1] ],
+      "anchors" : [ "bottom" ]
+    }
+  ]
+}
