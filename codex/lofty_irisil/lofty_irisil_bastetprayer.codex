@@ -1,0 +1,24 @@
+{
+  "id" : "lofty_irisil_bastetprayer",
+  "title" : "Bastet's Prayer",
+  "description" : "A prayer to summon a cat goddess.",
+  "icon" : "lofty_irisil_bastetprayer.png",
+  
+  "contentPages" : [
+"^orange;Lady Bastet^reset;, beloved of the Gods,
+I call to you, mighty lady of the East,
+right eye of ^orange;Ra^reset;.
+
+Thank you for your ^green;healing^reset;, your ^green;protection^reset;, and your ^green;strength^reset;.
+I find ^cyan;joy^reset; in your presence and ^cyan;humor^reset; in your playfulness.
+I revere your ^orange;fiery soul^reset;, your ^red;passion^reset;, and your ^#ffaaaa;sensuality^reset;.
+Thank you for working with me,
+and thank you for choosing me to become a part of you.
+
+^orange;I honor you^reset;."
+  ],
+    "itemConfig" : {
+    "rarity" : "Common",
+    "price" : 25
+  }
+}
