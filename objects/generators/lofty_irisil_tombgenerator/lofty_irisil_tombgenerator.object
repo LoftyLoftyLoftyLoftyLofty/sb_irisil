@@ -17,7 +17,7 @@
   "humanDescription" : "This'll keep me safe!",
   "hylotlDescription" : "A crude protection device.",
   "novakidDescription" : "Who needs a shield anyhow?",
-  "nicemiceDescription" : "It iz alvayz jarring to zee protective technologiez like ziz, becauze on our homevorld, we do not zteal from each ot'er.",
+  "nicemiceDescription" : "It iz alvayz jarring to zee protective technologiez like ziz, becauze on our homevorld, ve do not zteal from each ot'er.",
 
   "inventoryIcon" : "lofty_irisil_tombgeneratoricon.png",
   "orientations" : [
@@ -64,22 +64,22 @@
 
   "animationPosition" : [-80, -32],
 
-  "smashable" : true,
-  "smashSounds" : [ "/sfx/melee/kill_robotic1.ogg" ],
-  "health" : 250,
-  "interactive" : false,
-
-  "smashParticles" : [ { "count" : 50, "particle" : "generatorshard" }, { "count" : 50, "particle" : "generatorredshard" }, { "count" : 10, "particle" : "generatorglassshard" } ],
-  "smashDropPool" : "empty",
-  "breakDropPool" : "empty",
+  //"smashable" : true,
+  //"smashSounds" : [ "/sfx/melee/kill_robotic1.ogg" ],
+  //"health" : 250,
+  //"interactive" : false,
+  
+  //"smashParticles" : [ { "count" : 50, "particle" : "generatorshard" }, { "count" : 50, "particle" : "generatorredshard" }, { "count" : 10, "particle" : "generatorglassshard" } ],
+  //"smashDropPool" : "empty",
+  //"breakDropPool" : "empty",
 
   "scripts" : [ "/objects/wired/shieldgenerator/shieldgenerator.lua" ],
   "scriptDelta" : 5,
 
-  "outputNodes" : [ [0, 0] ],
-  "inputNodes" : [ [0, 2] ],
+  //"outputNodes" : [ [0, 0] ],
+  "inputNodes" : [ [0, 2] ]
 
-  "explodeOnSmash" : true,
-  "explosionProjectile" : "explosivegenerator",
-  "explosionOffset" : [1, 2]
+  //"explodeOnSmash" : true,
+  //"explosionProjectile" : "explosivegenerator",
+  //"explosionOffset" : [1, 2]
 }
