@@ -1245,16 +1245,14 @@
 			"fill" : 
 			[
 				{"item" : [ "lofty_irisil_sistrum", 1]},
-				{"item" : [ "voxel10k", 1]},
+				{"item" : [ "lofty_irisil_bastetprayer-codex", 1]},
 				{"item" : [ "lofty_irisileye", 3]},
-				
 				{"item" : [ "manipulatormodule", 3]},
 				{"item" : [ "techcard", 2]},
 				{"item" : [ "upgrademodule", 1]},
-				
-				{"item" : [ "treasurehoard", 250]},
-				{"item" : [ "goldbar", 21]},
-				{"item" : [ "teleportercore", 1]}
+				{"item" : [ "voxel10k", 1]},
+				{"pool" : "petcollars"},
+				{"item" : [ "treasurehoard", 250]}
 			],
 			"allowDuplication" : false
 		}
