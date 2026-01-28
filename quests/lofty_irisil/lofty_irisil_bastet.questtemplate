@@ -1,0 +1,39 @@
+{
+  "id" : "lofty_irisil_bastet",
+  "prerequisites" : [],
+  "title" : "^orange;Purging Pesky Pyramid Pests",
+  "text" : 
+"Greetings, adventurer! 
+You're exactly the person I've been waiting for.
+My scrying chamber is full of ^red;distracting monsters!^reset;
+
+You look pretty strong...
+Perhaps you can ^orange;clear them out^reset; for me?
+
+I'll make it worth your time.",
+
+  "completionText" : "^#888888;Now that all of the monsters in the scrying room have been defeated, it seems you can't find her anywhere...
+  
+^orange;Surely this pile of treasure is meant for you!",
+  "moneyRange" : [0, 0],
+  "rewards" : [ [ [ "rewardbag", 1 ] ] ],
+
+  "updateDelta" : 10,
+  "script" : "/quests/lofty_irisil/lofty_irisil_bastet.lua",
+  "scriptConfig" : {
+    "portraits" : {
+      "questStarted" : {
+        "portrait" : [ {"image" : "/objects/lofty_irisil/bookofthedead/bastetnpc/lofty_irisil_bastetnpcportrait.png"} ],
+        "title" : "Bastet"
+      },
+      "questComplete" : {
+        "portrait" : [ {"image" : "/objects/lofty_irisil/bookofthedead/bastetnpc/lofty_irisil_bastetnpcportrait.png"} ],
+        "title" : "Bastet"
+      }
+    },
+
+    "descriptions" : {
+      "findGoal" : "Clear the monsters out of the ^orange;Scrying Chamber^reset;"
+    }
+  }
+}
