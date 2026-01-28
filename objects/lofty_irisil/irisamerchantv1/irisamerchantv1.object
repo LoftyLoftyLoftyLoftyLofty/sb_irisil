@@ -84,6 +84,7 @@
 		"lofty_irisil_pyramidtrap3-codex",
 		"lofty_irisil_pyramidtrap4-codex",
 		"lofty_irisil_pyramidtrap5-codex",
+		"lofty_irisil_bastetprayer-codex",
 		
 		"lofty_irisil_threadtheneedlelore-codex",
 	
@@ -116,6 +117,7 @@
 		"lofty_irisil_botd_offerings",
 		"lofty_irisil_wedjatbanner",
 		"lofty_irisil_wedjatemblem",
+		"lofty_irisil_bastetstatue",
 		
 	//insects
 		"lofty_irisil_scleramite",
@@ -150,8 +152,10 @@
 	//util / wire
 		"lofty_irisil_daynightsensor",
 		"lofty_irisil_goldenstationtram",
+		"lofty_irisil_tombgenerator",
 		
 	//special / other
-		"lofty_irisil_irisamerchantv1"
+		"lofty_irisil_irisamerchantv1",
+		"lofty_irisil_sistrum"
   ]
 }
