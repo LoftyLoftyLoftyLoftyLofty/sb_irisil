@@ -1,0 +1,67 @@
+{
+  "objectName" : "lofty_irisil_bastetnpc",
+  "colonyTags" : ["lofty_irisil","egyptian"],
+  "rarity" : "Essential",
+  "description" : "An avatar of Bastet.",
+  "shortdescription" : "Bastet",
+  "race" : "bastet",
+  "price" : 0,
+  "category" : "quest",
+  "printable" : false,
+
+  "apexDescription" : "A beautiful feline.",
+  "avianDescription" : "The prettiest cat I've ever seen.",
+  "floranDescription" : "Ssscary cat making floran feel like ssscaredy cat.",
+  "glitchDescription" : "Impressed. What a large cat.",
+  "humanDescription" : "Mrrow!",
+  "hylotlDescription" : "Something about this tall cat terrifies me.",
+  "novakidDescription" : "Probably the one in charge 'round these parts.",
+  "nicemiceDescription" : "Zalut! Zuch an encounter iz onze in a lifetime!",
+  
+  "offeredQuests" : [ "lofty_irisil_bastet" ],
+
+  "inventoryIcon" : "lofty_irisil_bastetnpcicon.png",
+  "orientations" : [
+    {
+      "image" : "lofty_irisil_bastetnpc.png:<color>.<frame>",
+      "flipImages" : true,
+      "direction" : "left",
+
+      "imagePosition" : [-32, -40],
+      "frames" : 4,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    },
+    {
+      "image" : "lofty_irisil_bastetnpc.png:<color>.<frame>",
+      "direction" : "right",
+
+      "imagePosition" : [-32, -40],
+      "frames" : 4,
+      "animationCycle" : 1.0,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "background" ]
+    }
+  ],
+  
+  "interactive" : true,
+
+  "animation" : "lofty_irisil_bastetnpc.animation",
+  "animationCustom" : {
+  },
+  "animationParts" : {
+    "bg" : "lofty_irisil_bastetnpc.png",
+    "fg" : "lofty_irisil_bastetnpclit.png"
+  },
+
+  "animationPosition" : [-32, -40],
+
+  "smashDropPool" : "empty",
+  "breakDropPool" : "empty",
+
+  "scripts" : [ "removeBastet.lua" ],
+  "scriptDelta" : 5
+}
