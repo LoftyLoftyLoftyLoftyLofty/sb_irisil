@@ -21,7 +21,7 @@
       "/monsters/fishing/landedState.lua"
     ],
 
-    "landedTreasurePool" : "fishingrare",
+    "landedTreasurePool" : "fishinguncommon",
 
     "lookTimeRange" : [1.0, 2.5],
     "biteDistance" : 6,
