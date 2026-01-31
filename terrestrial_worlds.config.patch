@@ -1,15 +1,15 @@
 [
 	//dynamic village spawner - forests
-	[
-	 {
-		"op": "add",
-		"path": "/planetTypes/forest/layers/surface/dungeons/-",
-		"value": [
-		  100.5,
-		  "lidv_mostlyflat_1"
-		]
-	  }
-	],
+	//[
+	// {
+	//	"op": "add",
+	//	"path": "/planetTypes/forest/layers/surface/dungeons/-",
+	//	"value": [
+	//	  100.5,
+	//	  "lidv_mostlyflat_1"
+	//	]
+	//  }
+	//],
 	
 	[
 	
