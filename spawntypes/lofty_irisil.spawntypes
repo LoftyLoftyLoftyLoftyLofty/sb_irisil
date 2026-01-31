@@ -49,7 +49,10 @@
 		},
 
 		"spawnChance" : 0.001,
-		"monsterType" : "lofty_irisil_scleramite",
+		"monsterType" : 
+		[
+			[1, "lofty_irisil_scleramite"]
+		],
 		"monsterParameters" : 
 		{
 			"aggressive" : false
