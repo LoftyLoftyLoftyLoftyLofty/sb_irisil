@@ -1,0 +1,21 @@
+{
+	"metadata": 
+	{
+		"name": "lidv_ruins1_rubble2_40x40",
+		"species": "generic",
+		"rules": [],
+		"anchor": ["lidv_ruins1_rubble2_40x40"],
+		"gravity": 80,
+		"maxRadius": 1000000,
+		"maxParts": 1,
+		"protected": false
+	},
+	"parts": 
+	[
+		{
+			"name": "lidv_ruins1_rubble2_40x40",
+			"rules": [],
+			"def": ["tmx", "lidv_ruins1_rubble2_40x40.json"]
+		}
+	]
+}

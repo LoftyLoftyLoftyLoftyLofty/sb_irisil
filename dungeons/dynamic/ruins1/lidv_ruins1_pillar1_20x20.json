@@ -5,7 +5,7 @@
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcHwUj+JRPIpH8SgexUThczTCAAoieOY=",
+         "data":"eJzt0TEOACAIA0A2\/v8qN97kSghSAjLp0El6UVxEtH5+HgsPmXzZZicTJrLRTMX0ejfMyO6ambt1\/2rCRK4cZrumKDv7Bts\/mfYssj3TWsjWO0LdajYFXCz5",
          "encoding":"base64",
          "height":22,
          "id":1,
@@ -19,7 +19,7 @@
         }, 
         {
          "compression":"zlib",
-         "data":"eJztzTESgDAIRFGsrLz\/jSg9k022yQRhV+zCzB8qHm5m\/lPds93tdrjXYXaO3eXCRCubdWczshk3MpHiMmbVZc2Kq5iZq5pv7hczcjPzFtyKiaouY2Y+XNWM\/jh5w\/QAPSJVmA==",
+         "data":"eJztzjsOACEIRVGsppr978jSNU3jSwgR+ch0ktwQC0\/oRNR\/qnque90K921Ez9xVLky0sqOuNDU74momyrgR0+tGTY+bMS03a+7cE1NzpTlm\/B11rTsHy+tyU94oTcuHq5matQtu5q+nDwWMW9A=",
          "encoding":"base64",
          "height":22,
          "id":2,
@@ -47,7 +47,161 @@
          "draworder":"topdown",
          "id":20,
          "name":"mods",
-         "objects":[],
+         "objects":[
+                {
+                 "height":8,
+                 "id":1308,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":104,
+                 "y":72
+                }, 
+                {
+                 "height":8,
+                 "id":1309,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":120,
+                 "y":88
+                }, 
+                {
+                 "height":8,
+                 "id":1310,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":88,
+                 "y":88
+                }, 
+                {
+                 "height":8,
+                 "id":1311,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":88,
+                 "y":112
+                }, 
+                {
+                 "height":8,
+                 "id":1312,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":40,
+                 "x":56,
+                 "y":120
+                }, 
+                {
+                 "height":8,
+                 "id":1313,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":40,
+                 "y":136
+                }, 
+                {
+                 "height":8,
+                 "id":1314,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":64,
+                 "y":152
+                }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -178,7 +332,7 @@
          "y":0
         }],
  "nextlayerid":21,
- "nextobjectid":1308,
+ "nextobjectid":1315,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",

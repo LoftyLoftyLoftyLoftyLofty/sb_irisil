@@ -1,100 +1,40 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "height":22,
+ "height":44,
  "infinite":false,
  "layers":[
         {
          "compression":"zlib",
-         "data":"eJw7zsDAcHwUj+JRPIpH8YjA7AQwLcwkx2xizSTGbFLNImTHORphAMAkVOY=",
+         "data":"eJzt1DESxSAIRVG77H9VdllTWocBBAUdJq+4zR+THPkmvbXWEUIIIYQQQsd7hG67KjorGKs4KxirOCsYqzgzjRn3inau3vcdOjlLLclHu+0c8zojjDteas6c5YrZYhvXZjo1s+dccu9aZpzJMlNuTyeMkpfapN+zvNJMPP939nmYGWdnwLufFTN9hmWWdK3mibBKs9Jm6tnTrtVyvbaH2fqIb4Plmqi8z6DnEP2nDyvT9bg=",
          "encoding":"base64",
-         "height":22,
+         "height":44,
          "id":1,
          "name":"back",
          "opacity":0.5,
          "type":"tilelayer",
          "visible":true,
-         "width":22,
+         "width":42,
          "x":0,
          "y":0
         }, 
         {
          "compression":"zlib",
-         "data":"eJw7xsDAcIxGmNpg1NxRc0fNHTV3uJnLDsWUApg5QzUc0AEvI8JPhDBILTHmkmImLrNBZp6jEQYAJhlClw==",
+         "data":"eJzt1EEKAjEMBdC4cuX9bzTLnkmyEGNp0zT9aUfIhyAMzvTxjXMR0fUnc\/ekE5t0YpNObNKJTTqxSSc26cQmnb95dsaadH7TM74e9mecdM4k2onoknPKOZtIJ6pLzgmnJ1FOZJec3U5vIpzoLjk7nStZdRYxRDFdclacpTERXRL5nTPG1S6jnLUZEY\/T0uXnGqJLj7NlbFmL+NzlbJ1d+3pW+S6IdNb7NtpL7bv1c2f+Z5pzdK62l9p+tO4dWXtOi1H77Ue2WWvtHO2ZdqbFqL1ntZ2WTu0e9FjPkM5IT8595w3JXT14",
          "encoding":"base64",
-         "height":22,
+         "height":44,
          "id":2,
          "name":"front",
          "opacity":1,
          "type":"tilelayer",
          "visible":true,
-         "width":22,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "color":"#ff0000",
-         "draworder":"topdown",
-         "id":4,
-         "name":"objects",
-         "objects":[
-                {
-                 "gid":4743,
-                 "height":48,
-                 "id":1290,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":64,
-                 "x":56,
-                 "y":152
-                }, 
-                {
-                 "gid":2147487891,
-                 "height":32,
-                 "id":1291,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":8,
-                 "y":168
-                }, 
-                {
-                 "gid":4243,
-                 "height":32,
-                 "id":1292,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":152,
-                 "y":168
-                }, 
-                {
-                 "gid":9091,
-                 "height":8,
-                 "id":1298,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":152,
-                 "y":128
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
+         "width":42,
          "x":0,
          "y":0
         }, 
         {
          "draworder":"topdown",
          "id":20,
-         "name":"mods",
+         "name":"grassmods",
          "objects":[
                 {
                  "height":8,
@@ -114,9 +54,185 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":160,
-                 "x":8,
+                 "width":48,
+                 "x":200,
+                 "y":136
+                }, 
+                {
+                 "height":8,
+                 "id":1288,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":192,
+                 "y":152
+                }, 
+                {
+                 "height":8,
+                 "id":1289,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":15.4545454545455,
+                 "x":216,
+                 "y":175.272727272727
+                }, 
+                {
+                 "height":8,
+                 "id":1290,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":184,
                  "y":168
+                }, 
+                {
+                 "height":8,
+                 "id":1291,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":48,
+                 "x":168,
+                 "y":200
+                }, 
+                {
+                 "height":8,
+                 "id":1292,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":160,
+                 "y":224
+                }, 
+                {
+                 "height":8,
+                 "id":1293,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":184,
+                 "y":240
+                }, 
+                {
+                 "height":8,
+                 "id":1294,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":32,
+                 "x":144,
+                 "y":248
+                }, 
+                {
+                 "height":8,
+                 "id":1295,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":24,
+                 "x":144,
+                 "y":272
                 }, 
                 {
                  "height":8,
@@ -136,9 +252,9 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":8,
-                 "y":128
+                 "width":24,
+                 "x":232,
+                 "y":288
                 }, 
                 {
                  "height":8,
@@ -158,163 +274,188 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":16,
-                 "x":152,
-                 "y":128
+                 "width":32,
+                 "x":248,
+                 "y":312
                 }, 
                 {
                  "height":8,
-                 "id":1308,
+                 "id":1298,
                  "name":"",
                  "properties":[
                         {
                          "name":"material",
                          "type":"string",
                          "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":56,
-                 "x":0,
-                 "y":176
+                 "width":16,
+                 "x":224,
+                 "y":312
                 }, 
                 {
                  "height":8,
-                 "id":1309,
+                 "id":1299,
                  "name":"",
                  "properties":[
                         {
                          "name":"material",
                          "type":"string",
                          "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
+                 "x":120,
+                 "y":296
+                }, 
+                {
+                 "height":8,
+                 "id":1300,
+                 "name":"",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
                  "x":72,
-                 "y":176
+                 "y":288
                 }, 
                 {
                  "height":8,
-                 "id":1310,
+                 "id":1301,
                  "name":"",
                  "properties":[
                         {
                          "name":"material",
                          "type":"string",
                          "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":40,
-                 "x":144,
-                 "y":176
+                 "width":24,
+                 "x":40,
+                 "y":312
                 }, 
                 {
                  "height":8,
-                 "id":1311,
+                 "id":1302,
                  "name":"",
                  "properties":[
                         {
                          "name":"material",
                          "type":"string",
                          "value":"darksmoothstone"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":56,
-                 "x":80,
-                 "y":184
-                }, 
-                {
-                 "height":8,
-                 "id":1312,
-                 "name":"",
-                 "properties":[
+                        }, 
                         {
-                         "name":"material",
+                         "name":"mod",
                          "type":"string",
-                         "value":"darksmoothstone"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":24,
-                 "y":184
-                }, 
-                {
-                 "height":8,
-                 "id":1313,
-                 "name":"",
-                 "properties":[
-                        {
-                         "name":"material",
-                         "type":"string",
-                         "value":"darksmoothstone"
+                         "value":"aridgrass"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":32,
                  "x":16,
-                 "y":192
+                 "y":320
                 }, 
                 {
                  "height":8,
-                 "id":1314,
+                 "id":1303,
                  "name":"",
                  "properties":[
                         {
                          "name":"material",
                          "type":"string",
                          "value":"darksmoothstone"
+                        }, 
+                        {
+                         "name":"mod",
+                         "type":"string",
+                         "value":"aridgrass"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":40,
-                 "x":88,
-                 "y":192
+                 "width":16,
+                 "x":64,
+                 "y":280
                 }, 
                 {
                  "height":8,
-                 "id":1315,
+                 "id":1304,
                  "name":"",
                  "properties":[
                         {
                          "name":"material",
                          "type":"string",
                          "value":"darksmoothstone"
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":40,
-                 "x":152,
-                 "y":184
-                }, 
-                {
-                 "height":8,
-                 "id":1316,
-                 "name":"",
-                 "properties":[
+                        }, 
                         {
-                         "name":"material",
+                         "name":"mod",
                          "type":"string",
-                         "value":"darksmoothstone"
+                         "value":"aridgrass"
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":32,
-                 "x":144,
-                 "y":192
+                 "width":8,
+                 "x":56,
+                 "y":288
                 }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "color":"#ff0000",
+         "draworder":"topdown",
+         "id":4,
+         "name":"objects",
+         "objects":[],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "color":"#ff0000",
+         "draworder":"topdown",
+         "id":6,
+         "name":"monsters & npcs",
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -329,7 +470,7 @@
          "objects":[
                 {
                  "height":0,
-                 "id":1274,
+                 "id":1092,
                  "name":"",
                  "polyline":[
                         {
@@ -345,11 +486,11 @@
                  "visible":true,
                  "width":0,
                  "x":0,
-                 "y":168
+                 "y":328
                 }, 
                 {
                  "height":0,
-                 "id":1275,
+                 "id":1093,
                  "name":"",
                  "polyline":[
                         {
@@ -358,38 +499,58 @@
                         }, 
                         {
                          "x":0,
-                         "y":-160
+                         "y":-320
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
                  "x":8,
-                 "y":168
+                 "y":328
                 }, 
                 {
                  "height":0,
-                 "id":1277,
+                 "id":1094,
                  "name":"",
                  "polyline":[
                         {
                          "x":0,
-                         "y":16
+                         "y":0
                         }, 
                         {
-                         "x":0,
-                         "y":176
+                         "x":320,
+                         "y":0
                         }],
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":168,
-                 "y":-8
+                 "x":8,
+                 "y":8
                 }, 
                 {
                  "height":0,
-                 "id":1279,
+                 "id":1095,
+                 "name":"",
+                 "polyline":[
+                        {
+                         "x":0,
+                         "y":0
+                        }, 
+                        {
+                         "x":0,
+                         "y":320
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":0,
+                 "x":328,
+                 "y":8
+                }, 
+                {
+                 "height":0,
+                 "id":1096,
                  "name":"",
                  "polyline":[
                         {
@@ -404,48 +565,17 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":168,
-                 "y":168
-                }, 
-                {
-                 "height":0,
-                 "id":1280,
-                 "name":"",
-                 "polyline":[
-                        {
-                         "x":0,
-                         "y":0
-                        }, 
-                        {
-                         "x":160,
-                         "y":0
-                        }],
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":8,
-                 "y":8
+                 "x":328,
+                 "y":328
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
          "x":0,
          "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":12,
-         "name":"anchors",
-         "objects":[],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
         }],
- "nextlayerid":21,
- "nextobjectid":1317,
+ "nextlayerid":23,
+ "nextobjectid":1305,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.10.0",
@@ -538,8 +668,7 @@
         {
          "firstgid":7264,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/sapling.json"
-        },
-    
+        }, 
         {
          "firstgid":7265,
          "source":"..\/..\/..\/..\/..\/win32\/unpacked_assets\/tilesets\/packed\/objects-by-category\/spawner.json"
@@ -595,5 +724,5 @@
  "tilewidth":8,
  "type":"map",
  "version":"1.10",
- "width":22
+ "width":42
 }
