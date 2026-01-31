@@ -38,6 +38,7 @@
 	"/objects/spawner/spawners/villagebuildingspawner/lofty_irisil_dynamicvillages_vesperian.lua"
   ],
   "scriptDelta" : 1,
+  "keepAlive" : true,
 
   "animation" : "/objects/spawner/spawners/villagebuildingspawner/lofty_irisil_villagebuildingspawner.animation",
 

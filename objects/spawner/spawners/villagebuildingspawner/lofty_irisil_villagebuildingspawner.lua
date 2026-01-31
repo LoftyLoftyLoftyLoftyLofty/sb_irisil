@@ -66,6 +66,7 @@
 ------------------------------------------------------
 
 require "/scripts/util.lua"
+require "/scripts/rect.lua"
 require "/scripts/lofty_irisil_util.lua"
 require "/scripts/lofty_irisil_util_biome.lua"
 
@@ -113,19 +114,44 @@ function tableWeightSorter(entryA, entryB)
 	return weightA < weightB
 end
 
+fancy = nil
+
 function update(dt)
 
 	if unrecoverableError then
 		object.smash()
 		return nil
 	end
+	
+	if not fancy then
+		--yeek("Creating coroutine...")
+		fancy = coroutine.create(fancyCoroutine)
+		--yeek("Coroutine created.")
+	else
+		--yeek("Resuming coroutine...")
+		coroutine.resume(fancy)
+		--yeek("Exiting update")
+	end
+end
 
+verboseDebugEnabled = false
+function verboseSpawningDebug(s)
+	if verboseDebugEnabled then
+		yeek("(" .. entity.id() .. ") VSD -> " .. s)
+	end
+end
+
+function fancyCoroutine()
+	
+	verboseSpawningDebug("Starting spawn coro")
+	
 	--optional parameter: if player can see spawner, do nothing
 	--sometimes this can create awkward situations if you /placedungeon in view distance
 	--feel free to edit/patch offscreenOnly if you want the spawner to always fire
 
 	if config.getParameter("offscreenOnly") == true then
 		if world.isVisibleToPlayer(object.boundBox()) then
+			verboseSpawningDebug("Exiting due to offscreenOnly req")
 			return nil
 		end
 	end
@@ -141,12 +167,12 @@ function update(dt)
 	--force the RNG to do stuff several times across several ticks to make sure it gets seeded properly
 	if not storage.multiplayer then
 		storage.multiplayer = 1
-	else
-		storage.multiplayer = storage.multiplayer + math.random(1,10)
 	end
 
-	if storage.multiplayer < 99 then
-		return nil
+	while storage.multiplayer < 99 do
+		storage.multiplayer = storage.multiplayer + math.random(1,10)
+		verboseSpawningDebug("Seeding RNG: " .. storage.multiplayer .. " passes.")
+		coroutine.yield()
 	end
   
 	-- BEGIN CODE THAT WE CAN ASSUME HAS INITIALIZED PROPERLY AND SEEDED RNG PROPERLY
@@ -165,6 +191,7 @@ function update(dt)
 		villageTypeWorldFlag = myDungeonId .. "|building"
 		world.setProperty("lofty_irisil_villageTypes", villageTypeWorldFlag )
 		hosting = true
+		verboseSpawningDebug("Hosting construction")
 	end
   
 	--if the world property for village locations is already set
@@ -201,6 +228,7 @@ function update(dt)
 				world.setProperty("lofty_irisil_villageTypes", villageTypeWorldFlag )
 				
 				hosting = true
+				verboseSpawningDebug("Upgrading to host")
 			end
 		end
 	end
@@ -217,6 +245,7 @@ function update(dt)
 		
 		--if we are hosting, we can evaluate the village type options we have available now
 		--yeek("BEGIN VILLAGE SELECTION")
+		verboseSpawningDebug("Beginning village selection...")
 		
 		-- STEP 1
 		--yeek("STEP 1")
@@ -275,6 +304,7 @@ function update(dt)
 						--required races are unavailable, skip this category
 						if raceFailure then 
 							--yeek("raceFailure")
+							verboseSpawningDebug("Constraint failure: species not installed")
 							goto continue_evalBiomes 
 						end
 						
@@ -328,6 +358,7 @@ function update(dt)
 						--failed to meet tag requirements
 						if tagsFailure then 
 							--yeek("tagsFailure")
+							verboseSpawningDebug("Constraint failure: tags")
 							goto continue_evalBiomes 
 						end
 						
@@ -375,6 +406,7 @@ function update(dt)
 						--failed to spawn on an appropriate planet
 						if planetFailure then 
 							--yeek("planetFailure")
+							verboseSpawningDebug("Constraint failure: Planet type")
 							goto continue_evalBiomes 
 						end
 						
@@ -419,10 +451,13 @@ function update(dt)
 						--failed to spawn in an appropriate biome
 						if biomeFailure then 
 							--yeek("planetFailure")
+							verboseSpawningDebug("Constraint failure: Biome type")
 							goto continue_evalBiomes 
 						end
 							
 						-- PASSED ALL RULE CHECKS
+							
+						verboseSpawningDebug("Passed all constraint checks -> " .. biomeCategoryName)
 							
 						--add the biome category config to our list of valid options
 						table.insert(validCategories, { name = biomeCategoryName, details = biomeCategoryDetails.dungeonPartsConfigFile})
@@ -442,11 +477,13 @@ function update(dt)
 		
 		if #validCategories <= 0 then
 			unrecoverableError = true
+			verboseSpawningDebug("No valid categories - setting unrecoverableError flag")
 			return nil
 		end
 	  
 		-- STEP 2
 		--yeek("STEP 2")
+		verboseSpawningDebug("Begin construction phase 2")
 		--now that we've determined which config files are valid to pull from, choose one
 		chosenCategory = validCategories[1].name;
 		yeek("Host spawner chosen category: " .. chosenCategory)
@@ -535,6 +572,7 @@ function update(dt)
 	
 	-- STEP 3
 	--yeek("STEP 3")
+	verboseSpawningDebug("Begin construction phase 3")
 	--we should have a valid sizeCategory, so try to find a matching entry for the category
 	--the plan here is to put all the valid entries into a pool, verify their rules, then spawn them by weight
 	--the successfully spawned items will be placed into a world property so other scripts can see what's going on
@@ -884,7 +922,7 @@ function update(dt)
 									--and partName matches
 									if tokens[2] == partName then
 										--and distance too small
-										local spawnedPos = { tokens[4], tokens[5] }
+										local spawnedPos = { tonumber(tokens[4]), tonumber(tokens[5]) }
 										if world.magnitude(spawnedPos, myPos) < microdungeonValue then
 											okToSpawnThisItem = false
 											break
@@ -1010,15 +1048,43 @@ function update(dt)
 	local finalPos = object.toAbsolutePosition({(1.01),0.99})
 	local finalXPos = finalPos[1]
 	local finalYPos = finalPos[2]
-	world.placeDungeon(dungeonName, {finalXPos, finalYPos});
 	
-	--update the world properties now that we've spawned something
+	--TODO: this should only load what it requires from the given template area, with a margin of like 20 blocks
+	local targetRegion = rect.translate({ -120, -60, 120, 20 }, finalPos)
+	verboseSpawningDebug
+	(
+		"objectPos: " ..
+			tostring(finalPos[1]) .. ", " ..
+			tostring(finalPos[2]) .. "\n" ..
+		"targetRegion: " .. 
+			tostring(targetRegion[1]) .. ", " ..
+			tostring(targetRegion[2]) .. ", " ..
+			tostring(targetRegion[3]) .. ", " ..
+			tostring(targetRegion[4]) .. ", "
+	)
+	local readyToFire = false
+	while ( readyToFire == false ) do
+		--yeek("Ensuring region is loaded before spawning dynamic dungeon...")
+		if ( world.regionActive(targetRegion) == true ) then
+			readyToFire = true;
+		else
+			if ( world.loadRegion(targetRegion) == false ) then
+				coroutine.yield()
+			else
+				readyToFire = true
+			end
+		end
+	end
+	
+	--SPAWN IS GOOD - but update the world properties before trying to warp it in
 	if villageSpawnsWorldFlag == "" then
 		villageSpawnsWorldFlag = myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos
 	else
 		villageSpawnsWorldFlag = villageSpawnsWorldFlag .. "\n" .. myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos
 	end
 	world.setProperty("lofty_irisil_villageSpawns", villageSpawnsWorldFlag)
+	
+	world.placeDungeon(dungeonName, {finalXPos, finalYPos});
 	
 	--destroy spawner
 	object.smash()
