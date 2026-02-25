@@ -115,6 +115,7 @@ function tableWeightSorter(entryA, entryB)
 end
 
 fancy = nil
+loadMe = nil
 
 function update(dt)
 
@@ -132,9 +133,25 @@ function update(dt)
 		coroutine.resume(fancy)
 		--yeek("Exiting update")
 	end
+	
+	if not loadMe then
+		loadMe = coroutine.create(loadMeCoroutine)
+	else
+		if not unrecoverableError then
+			coroutine.resume(loadMe)
+		end
+	end
 end
 
-verboseDebugEnabled = false
+function loadMeCoroutine()
+	local targetRegion = rect.translate({ -8, -8, 8, 8 }, object.toAbsolutePosition({(1.01),0.99}))
+	while true do
+		world.loadRegion(targetRegion)
+		coroutine.yield()
+	end
+end
+
+verboseDebugEnabled = true
 function verboseSpawningDebug(s)
 	if verboseDebugEnabled then
 		yeek("(" .. entity.id() .. ") VSD -> " .. s)
@@ -192,6 +209,8 @@ function fancyCoroutine()
 		world.setProperty("lofty_irisil_villageTypes", villageTypeWorldFlag )
 		hosting = true
 		verboseSpawningDebug("Hosting construction")
+	else
+		verboseSpawningDebug("Not hosting")
 	end
   
 	--if the world property for village locations is already set
@@ -274,7 +293,7 @@ function fancyCoroutine()
 			
 		--iterate biomes
 		for worldBiomeKey, worldBiomeVal in pairs(myBiomes) do
-			yeek("Evaluating for biome: " .. worldBiomeKey)
+			verboseSpawningDebug("Evaluating for biome: " .. worldBiomeKey)
 		
 			--iterate through all biomes
 			for biomeName, biomeCategories in pairs(biomeConfig) do
@@ -329,7 +348,7 @@ function fancyCoroutine()
 										end
 									end
 									if foundTag == false then
-										--yeek("failed to find required design tag: " .. tagsVal)
+										verboseSpawningDebug("failed to find required design tag: " .. tagsVal)
 										tagsFailure = true
 										break
 									end
@@ -344,7 +363,7 @@ function fancyCoroutine()
 								local foundTag = false
 								for wtagsIterator, wtagsVal in ipairs(worldTemplateTags) do
 									if tagsVal == wtagsVal then
-										--yeek("found blacklisted design tag: " .. tagsVal)
+										verboseSpawningDebug("found blacklisted design tag: " .. tagsVal)
 										foundTag = true
 									end
 								end
@@ -357,7 +376,7 @@ function fancyCoroutine()
 						
 						--failed to meet tag requirements
 						if tagsFailure then 
-							--yeek("tagsFailure")
+							verboseSpawningDebug("tagsFailure")
 							verboseSpawningDebug("Constraint failure: tags")
 							goto continue_evalBiomes 
 						end
@@ -585,8 +604,68 @@ function fancyCoroutine()
 	
 	--nothing has spawned yet, initialize the spawned items "list"
 	if villageSpawnsWorldFlag == nil then
-		villageSpawnsWorldFlag = ""
+		villageSpawnsWorldFlag = "ready"
 	end
+	
+	--we can't guarantee that any particular spawner is going to stay loaded
+	--so we just let them fight over the controller until enough ticks have passed to assume we have a winner
+	--the winner will set the ready flag again once it finishes doing its thing
+	
+	--spinlock the spawner until a "ready" slot is open.
+	--set our object ID in the ready slot
+	--then wait SEVERAL CYCLES to make sure everyone has agreed to chill
+	local isItMyTurnYet = true
+	local noSeriouslyIsItMyTurnYet = 20
+	local getOnWithIt = 0
+	storage.iimty_expectedID = entity.id()
+	local lastKnownVillageSpawnsWorldFlag = "awa"
+	
+	while isItMyTurnYet do
+		villageSpawnsWorldFlag = world.getProperty("lofty_irisil_villageSpawns");
+		if villageSpawnsWorldFlag == nil then
+			villageSpawnsWorldFlag = "ready"
+		end
+	
+		local iimty_lines = {}
+		--split the world property into a list, separate by newlines
+		for i in string.gmatch(villageSpawnsWorldFlag, newlineRegex) do
+			table.insert(iimty_lines, i)
+		end
+		
+		if iimty_lines[#iimty_lines] == "ready" then
+			world.setProperty("lofty_irisil_villageSpawns", villageSpawnsWorldFlag .. "|" .. storage.iimty_expectedID)
+		else
+			if iimty_lines[#iimty_lines] == ("ready|" .. storage.iimty_expectedID) then
+				verboseSpawningDebug("decrementing turn delay!")
+				noSeriouslyIsItMyTurnYet = noSeriouslyIsItMyTurnYet - 1;
+				if noSeriouslyIsItMyTurnYet <= 0 then
+					isItMyTurnYet = false
+				end
+			else
+				--yeek("nawa")
+				noSeriouslyIsItMyTurnYet = 20
+				
+				--if a dungeon is in the process of being placed and resolving, chill, unless it's taking forever, in which case don't chill
+				if not string.find(iimty_lines[#iimty_lines], "spawning") then
+					if villageSpawnsWorldFlag == lastKnownVillageSpawnsWorldFlag then
+						getOnWithIt = getOnWithIt + 1
+						if getOnWithIt > 999 then
+							world.setProperty("lofty_irisil_villageSpawns", villageSpawnsWorldFlag .. "\nready")
+							verboseSpawningDebug("Expiring stale spawn reservation")
+							getOnWithIt = 0
+						end
+					else 
+						lastKnownVillageSpawnsWorldFlag = villageSpawnsWorldFlag
+						getOnWithIt = 0
+					end
+				end
+			end
+		end
+		
+		coroutine.yield()
+	end
+	
+	verboseSpawningDebug("Releasing spinlock!")
 	
 	--we basically just shove a bunch of data into lines in the following format:
 	--
@@ -621,6 +700,8 @@ function fancyCoroutine()
 					--maximum spawn count for this item per village
 					if microdungeonProperty == "maxSpawnCount" then
 					
+						verboseSpawningDebug( partName .. " -> max spawn count -> " .. microdungeonValue )
+						
 						--iterate the things we've spawned and verify we haven't hit max
 						if microdungeonValue > 0 then
 						
@@ -647,6 +728,7 @@ function fancyCoroutine()
 							--if we've hit the limit, don't use this item
 							if numSpawned >= microdungeonValue then
 								okToSpawnThisItem = false
+								verboseSpawningDebug( "not OK to spawn component - would exceed max spawns (" .. partName .. ")" )
 							end
 						else
 							okToSpawnThisItem = false
@@ -939,11 +1021,13 @@ function fancyCoroutine()
 				end
 				
 				--no failures, put this in the pool of things to pick from
-				if okToSpawnThisItem then
+				if okToSpawnThisItem == true then
 					local dspEntry = {}
 					dspEntry["dspName"] = partName
 					dspEntry["dspVal"] = microdetails
 					table.insert(dungeonSpawnPool, dspEntry )
+					
+					verboseSpawningDebug("Adding part to dsp: " .. partName)
 				end
 			
 			end
@@ -961,6 +1045,9 @@ function fancyCoroutine()
 		end
 		yeek("sizeCategory is: " .. sizeCategory)
 		yeek("Relevant config file is: " .. chosenConfig)
+		
+		world.setProperty("lofty_irisil_villageSpawns", sanitizeFlags(world.getProperty("lofty_irisil_villageSpawns","") .. "\nready"))
+		
 		object.smash()
 		return nil
 	end
@@ -1077,16 +1164,53 @@ function fancyCoroutine()
 	end
 	
 	--SPAWN IS GOOD - but update the world properties before trying to warp it in
-	if villageSpawnsWorldFlag == "" then
-		villageSpawnsWorldFlag = myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos
+	verboseSpawningDebug("Spawning dungeon...")
+	
+	--grab the world property again here. we're just attempting to prevent multiple concurrent object threads fighting over the controller
+	--this should probably eventually be consolidated into a management stagehand
+	villageSpawnsWorldFlag = world.getProperty("lofty_irisil_villageSpawns");
+	local finalizedFlag = nil
+	
+	if villageSpawnsWorldFlag == nil then
+		villageSpawnsWorldFlag = myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos .. "\nspawning"
+		finalizedFlag = myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos .. "\nready"
 	else
-		villageSpawnsWorldFlag = villageSpawnsWorldFlag .. "\n" .. myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos
+		villageSpawnsWorldFlag = villageSpawnsWorldFlag .. "\n" .. myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos .. "\nspawning"
+		finalizedFlag = villageSpawnsWorldFlag .. "\n" .. myDungeonId .. "|" .. partName .. "|" .. dungeonName .. "|" .. finalXPos .. "|" .. finalYPos .. "\nready"
 	end
-	world.setProperty("lofty_irisil_villageSpawns", villageSpawnsWorldFlag)
+	world.setProperty("lofty_irisil_villageSpawns", sanitizeFlags(villageSpawnsWorldFlag))
 	
 	world.placeDungeon(dungeonName, {finalXPos, finalYPos});
+	
+	--wait one tick
+	coroutine.yield()
+	
+	finalizedFlag = sanitizeFlags(finalizedFlag)
+	world.setProperty("lofty_irisil_villageSpawns", finalizedFlag)
 	
 	--destroy spawner
 	object.smash()
   
+end
+
+function sanitizeFlags(input)
+    local last_ready, last_spawning
+    local unique_lines = {}
+    local result = {}
+    for line in input:gmatch("([^\r\n]+)") do
+        if line:find("^ready") then
+            last_ready = line
+        elseif line:find("^spawning") then
+            last_spawning = line
+        else
+            if not unique_lines[line] then
+                table.insert(result, line)
+                unique_lines[line] = true
+            end
+        end
+    end
+    if last_spawning then table.insert(result, last_spawning) end
+    if last_ready then table.insert(result, last_ready) end
+
+    return table.concat(result, "\n")
 end
