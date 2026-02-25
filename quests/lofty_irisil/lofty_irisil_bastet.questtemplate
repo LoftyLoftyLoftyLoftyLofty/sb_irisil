@@ -4,12 +4,9 @@
   "title" : "^orange;Purging Pesky Pyramid Pests",
   "text" : 
 "Greetings, adventurer! 
-You're exactly the person I've been waiting for.
-My scrying chamber is full of ^red;distracting monsters!^reset;
-
+You're exactly the person I've been waiting for. My scrying chamber seems to be full of ^red;distracting monsters!^reset;
 You look pretty strong...
 Perhaps you can ^orange;clear them out^reset; for me?
-
 I'll make it worth your time.",
 
   "completionText" : "^#888888;Now that all of the monsters in the scrying room have been defeated, it seems you can't find her anywhere...
