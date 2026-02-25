@@ -1,0 +1,24 @@
+{
+  "metadata" : {
+    "name" : "lofty_irisil_fleshlair",
+    "species" : "generic",
+    "rules" : [
+    ],
+    "anchor" : [ "lofty_irisil_fleshlair_surface" ],
+	"gravity": 80,
+    "maxRadius" : 1000000,
+    "maxParts" : 65,
+    "protected" : true
+  },
+
+  "parts" : [
+    {
+      "name" : "lofty_irisil_fleshlair_surface",
+      "rules" : [
+        [ "maxSpawnCount", [1] ],
+		[ "ignorePartMaximumRule" ]
+      ],
+      "def" : [ "tmx", "lofty_irisil_fleshlair_surface.json" ]
+    }
+  ]
+}
