@@ -1,0 +1,12 @@
+[
+	{
+		"op" : "test",
+		"path" : "/sb_cupidmerchant/0/1/13/item/name",
+		"value" : "climbingrope"
+	},
+	{
+		"op" : "replace",
+		"path" : "/sb_cupidmerchant/0/1/13/item/name",
+		"value" : "lofty_irisil_redclimbingrope"
+	}
+]

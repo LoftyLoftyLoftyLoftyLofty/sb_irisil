@@ -18,5 +18,10 @@
 		"op" : "add",
 		"path" : "/deploymentConfig/scripts/-",
 		"value" : "/scripts/player/lofty_irisil_debugutils.lua"
+	},
+	{
+		"op" : "add",
+		"path" : "/defaultBlueprints/tier1/-",
+		"value" : { "item" : "lofty_irisil_redclimbingrope" }
 	}
 ]

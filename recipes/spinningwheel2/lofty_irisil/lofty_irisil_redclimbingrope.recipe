@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "climbingrope", "count" : 1 },
+    { "item" : "silkfibre", "count" : 1 },
+	{ "item" : "reddye", "count" : 1 }
+  ],
+  "output" : { "item" : "lofty_irisil_redclimbingrope", "count" : 1 },
+  "groups" : [ "craftingwheel2", "ingredients" ]
+}
