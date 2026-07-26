@@ -7,6 +7,5 @@
   "name" : "lofty_irisil",
   "steamContentId" : "2983639797",
   "tags" : "Crafting and Building|Miscellaneous|Planets and Environments|Musical Instruments and Songs|NPCs and Creatures|Weapons|Quests|Dungeons|Furniture and Objects|Food and Farming|In-Game Tools|Mechanics|Armor and Clothes",
-  "version" : "1.6.0.3",
-  "includes" : ["lofty_modboxes"]
+  "version" : "1.6.0.3"
 }
