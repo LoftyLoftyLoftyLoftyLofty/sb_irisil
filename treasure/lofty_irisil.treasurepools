@@ -1822,5 +1822,13 @@
 	    {"item" : [ "spawnershizubelle", 1]}
 	  ]
     } ]
+  ],
+  "lidv_ruins1_temple" : 
+  [
+    [1, {
+      "fill" : [
+	    {"item" : [ "dubloon", 1]}
+	  ]
+    } ]
   ]
 }
