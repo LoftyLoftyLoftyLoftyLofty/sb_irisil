@@ -14,7 +14,7 @@
 
   "renderTemplate" : "/tiles/classicmaterialtemplate.config",
   "renderParameters" : {
-    "texture" : "lofty_irisil_prepainted_egyptiantombbrick.png",
+    "texture" : "lofty_irisil_egyptiantombbrick.png",
     "variants" : 25,
     "lightTransparent" : false,
     "occludesBelow" : true,
