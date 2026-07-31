@@ -1,0 +1,104 @@
+[
+	{
+		"op" : "add",
+		"path" : "/animatedParts/parts/fg/partStates/modbox/icon_irisa",
+		"value" : 
+		{
+			"properties" : 
+			{
+				"image" : "<partImage>:<color>.<frame>"
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/animatedParts/parts/fg/partStates/modbox/icon_irisa_flipped",
+		"value" : 
+		{
+			"properties" : 
+			{
+				"image" : "<partImage>:<color>.<frame>"
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/animatedParts/stateTypes/modbox/states/icon_irisa",
+		
+		"value" : 
+		{
+			"properties" : 
+			{
+				"image" : "<partImage>:<color>.<frame>"
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/animatedParts/stateTypes/modbox/states/icon_irisa_flipped",
+		
+		"value" : 
+		{
+			"properties" : 
+			{
+				"image" : "<partImage>:<color>.<frame>"
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/animatedParts/parts/icon_irisa",
+		
+		"value" : 
+		{
+			"properties" : 
+			{
+				"centered" : false,
+				"zLevel" : 2,
+				"offset" : [1.75, 0.5]
+			},
+
+			"partStates" : 
+			{
+				"modbox" : 
+				{
+					"icon_irisa" : 
+					{
+						"properties" : 
+						{
+							"image" : "<partImage>:<color>.<frame>"
+						}
+					}
+				}
+			}
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/animatedParts/parts/icon_irisa_flipped",
+		
+		"value" : 
+		{
+			"properties" : 
+			{
+				"centered" : false,
+				"zLevel" : 2,
+				"offset" : [1.75, 0.5]
+			},
+
+			"partStates" : 
+			{
+				"modbox" : 
+				{
+					"icon_irisa_flipped" : 
+					{
+						"properties" : 
+						{
+							"image" : "<partImage>:<color>.<frame>"
+						}
+					}
+				}
+			}
+		}
+	}
+]

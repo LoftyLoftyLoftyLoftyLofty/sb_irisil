@@ -1,0 +1,22 @@
+[
+	{
+		"op" : "add",
+		"path" : "/animationParts/icon_irisa",
+		"value" : "icon_irisa.png"
+	},
+	{
+		"op" : "add",
+		"path" : "/availableIcons/icon_irisa",
+		"value" : "Irisa"
+	},
+	{
+		"op" : "add",
+		"path" : "/animationParts/icon_irisa_flipped",
+		"value" : "icon_irisa_flipped.png"
+	},
+	{
+		"op" : "add",
+		"path" : "/availableIcons/icon_irisa_flipped",
+		"value" : "Irisa"
+	}
+]
